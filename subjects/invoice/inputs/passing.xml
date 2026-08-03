@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invoice>
+    <item type="regular" price="5" quantity="2"/>
+</invoice>

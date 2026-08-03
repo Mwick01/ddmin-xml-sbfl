@@ -1,0 +1,27 @@
+# Compiled programs and coverage output
+build/
+*.o
+*.out
+*.exe
+*.gcda
+*.gcno
+*.gcov
+
+# Temporary DDMIN candidates
+temporary/
+tmp/
+
+# Generated experiment results
+results/*
+!results/.gitkeep
+
+# Python-generated files
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Editor and operating-system files
+.vscode/
+.DS_Store
+Thumbs.db
