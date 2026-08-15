@@ -1,0 +1,73 @@
+{
+  "buggy_source": "/home/user/ddmin-xml-sbfl/subjects/invoice/buggy/invoice.c",
+  "coverage_records": "/home/user/ddmin-xml-sbfl/results/ddmin_runs/20260804_131730_46910/coverage/coverage.jsonl",
+  "ddmin_run_directory": "/home/user/ddmin-xml-sbfl/results/ddmin_runs/20260804_131730_46910",
+  "executable_line_count": 66,
+  "failing_tests": 29,
+  "jaccard": {
+    "average_rank": 1.0,
+    "best_rank": 1,
+    "exam_percentage_average": 1.5151515151515151,
+    "exam_score_average": 0.015151515151515152,
+    "executable_line_count": 66,
+    "fault_lines": [
+      {
+        "average_rank": 1.0,
+        "best_rank": 1,
+        "exam_score_average": 0.015151515151515152,
+        "line": 144,
+        "score": 1.0,
+        "source": "total += price + quantity; /* Intentional fault */",
+        "worst_rank": 1
+      }
+    ],
+    "first_fault_line": 144,
+    "first_fault_score": 1.0,
+    "first_fault_source": "total += price + quantity; /* Intentional fault */",
+    "inspect_at_average_rank": {
+      "1": true,
+      "10": true,
+      "3": true,
+      "5": true
+    },
+    "worst_rank": 1
+  },
+  "known_fault_lines": [
+    144
+  ],
+  "ochiai": {
+    "average_rank": 1.0,
+    "best_rank": 1,
+    "exam_percentage_average": 1.5151515151515151,
+    "exam_score_average": 0.015151515151515152,
+    "executable_line_count": 66,
+    "fault_lines": [
+      {
+        "average_rank": 1.0,
+        "best_rank": 1,
+        "exam_score_average": 0.015151515151515152,
+        "line": 144,
+        "score": 1.0,
+        "source": "total += price + quantity; /* Intentional fault */",
+        "worst_rank": 1
+      }
+    ],
+    "first_fault_line": 144,
+    "first_fault_score": 1.0,
+    "first_fault_source": "total += price + quantity; /* Intentional fault */",
+    "inspect_at_average_rank": {
+      "1": true,
+      "10": true,
+      "3": true,
+      "5": true
+    },
+    "worst_rank": 1
+  },
+  "output_files": {
+    "jaccard_ranking": "/home/user/ddmin-xml-sbfl/results/ddmin_runs/20260804_131730_46910/sbfl/jaccard_ranking.csv",
+    "ochiai_ranking": "/home/user/ddmin-xml-sbfl/results/ddmin_runs/20260804_131730_46910/sbfl/ochiai_ranking.csv",
+    "spectrum": "/home/user/ddmin-xml-sbfl/results/ddmin_runs/20260804_131730_46910/sbfl/spectrum.csv"
+  },
+  "passing_tests": 57,
+  "total_tests": 86
+}

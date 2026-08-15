@@ -1,0 +1,67 @@
+best_rank,average_rank,worst_rank,line,score,ef,ep,nf,np,faulty,source
+1,1.0,1,144,1.000000000000,29,0,0,57,True,total += price + quantity; /* Intentional fault */
+2,13.0,24,17,0.467741935484,29,33,0,24,False,static int parse_integer_attribute(
+2,13.0,24,23,0.467741935484,29,33,0,24,False,"xmlGetProp(node, BAD_CAST attribute_name);"
+2,13.0,24,25,0.467741935484,29,33,0,24,False,if (attribute_value == NULL) {
+2,13.0,24,34,0.467741935484,29,33,0,24,False,char *end_pointer = NULL;
+2,13.0,24,35,0.467741935484,29,33,0,24,False,errno = 0;
+2,13.0,24,37,0.467741935484,29,33,0,24,False,long parsed_value = strtol(
+2,13.0,24,43,0.467741935484,29,33,0,24,False,if (
+2,13.0,24,44,0.467741935484,29,33,0,24,False,errno != 0 ||
+2,13.0,24,45,0.467741935484,29,33,0,24,False,end_pointer == (char *)attribute_value ||
+2,13.0,24,46,0.467741935484,29,33,0,24,False,*end_pointer != '\0' ||
+2,13.0,24,47,0.467741935484,29,33,0,24,False,parsed_value < 0 ||
+2,13.0,24,61,0.467741935484,29,33,0,24,False,*result = (int)parsed_value;
+2,13.0,24,63,0.467741935484,29,33,0,24,False,xmlFree(attribute_value);
+2,13.0,24,64,0.467741935484,29,33,0,24,False,return 0;
+2,13.0,24,120,0.467741935484,29,33,0,24,False,"xmlGetProp(node, BAD_CAST ""type"");"
+2,13.0,24,122,0.467741935484,29,33,0,24,False,if (type_value == NULL) {
+2,13.0,24,128,0.467741935484,29,33,0,24,False,int price = 0;
+2,13.0,24,129,0.467741935484,29,33,0,24,False,int quantity = 0;
+2,13.0,24,131,0.467741935484,29,33,0,24,False,if (
+2,13.0,24,132,0.467741935484,29,33,0,24,False,"parse_integer_attribute(node, ""price"", &price) != 0 ||"
+2,13.0,24,133,0.467741935484,29,33,0,24,False,"parse_integer_attribute(node, ""quantity"", &quantity) != 0"
+2,13.0,24,143,0.467741935484,29,33,0,24,False,"if (xmlStrcmp(type_value, BAD_CAST ""special"") == 0) {"
+2,13.0,24,149,0.467741935484,29,33,0,24,False,xmlFree(type_value);
+25,25.0,25,115,0.367088607595,29,50,0,7,False,"if (xmlStrcmp(node->name, BAD_CAST ""item"") != 0) {"
+26,26.0,26,112,0.361111111111,26,43,3,14,False,continue;
+27,36.5,46,67,0.337209302326,29,57,0,0,False,"int main(int argc, char **argv) {"
+27,36.5,46,68,0.337209302326,29,57,0,0,False,if (argc != 2) {
+27,36.5,46,73,0.337209302326,29,57,0,0,False,const char *xml_filename = argv[1];
+27,36.5,46,78,0.337209302326,29,57,0,0,False,xmlDocPtr document = xmlReadFile(
+27,36.5,46,84,0.337209302326,29,57,0,0,False,if (document == NULL) {
+27,36.5,46,89,0.337209302326,29,57,0,0,False,xmlNodePtr root = xmlDocGetRootElement(document);
+27,36.5,46,91,0.337209302326,29,57,0,0,False,if (
+27,36.5,46,92,0.337209302326,29,57,0,0,False,root == NULL ||
+27,36.5,46,93,0.337209302326,29,57,0,0,False,root->type != XML_ELEMENT_NODE ||
+27,36.5,46,94,0.337209302326,29,57,0,0,False,"xmlStrcmp(root->name, BAD_CAST ""invoice"") != 0"
+27,36.5,46,101,0.337209302326,29,57,0,0,False,long long total = 0;
+27,36.5,46,103,0.337209302326,29,57,0,0,False,for (
+27,36.5,46,104,0.337209302326,29,57,0,0,False,xmlNodePtr node = root->children;
+27,36.5,46,105,0.337209302326,29,57,0,0,False,node != NULL;
+27,36.5,46,106,0.337209302326,29,57,0,0,False,node = node->next
+27,36.5,46,111,0.337209302326,29,57,0,0,False,if (node->type != XML_ELEMENT_NODE) {
+27,36.5,46,152,0.337209302326,29,57,0,0,False,"printf(""TOTAL=%lld\n"", total);"
+27,36.5,46,154,0.337209302326,29,57,0,0,False,xmlFreeDoc(document);
+27,36.5,46,155,0.337209302326,29,57,0,0,False,xmlCleanupParser();
+27,36.5,46,157,0.337209302326,29,57,0,0,False,return 0;
+47,47.0,47,146,0.016129032258,1,33,28,24,False,total += (long long)price * quantity;
+48,57.0,66,26,0.000000000000,0,0,29,57,False,fprintf(
+48,57.0,66,31,0.000000000000,0,0,29,57,False,return -1;
+48,57.0,66,50,0.000000000000,0,0,29,57,False,fprintf(
+48,57.0,66,57,0.000000000000,0,0,29,57,False,xmlFree(attribute_value);
+48,57.0,66,58,0.000000000000,0,0,29,57,False,return -1;
+48,57.0,66,69,0.000000000000,0,0,29,57,False,"fprintf(stderr, ""Usage: %s <xml-file>\n"", argv[0]);"
+48,57.0,66,70,0.000000000000,0,0,29,57,False,return 2;
+48,57.0,66,85,0.000000000000,0,0,29,57,False,"fprintf(stderr, ""Could not parse XML file.\n"");"
+48,57.0,66,86,0.000000000000,0,0,29,57,False,return 1;
+48,57.0,66,96,0.000000000000,0,0,29,57,False,"fprintf(stderr, ""Root element must be <invoice>.\n"");"
+48,57.0,66,97,0.000000000000,0,0,29,57,False,xmlFreeDoc(document);
+48,57.0,66,98,0.000000000000,0,0,29,57,False,return 3;
+48,57.0,66,116,0.000000000000,0,17,29,40,False,continue;
+48,57.0,66,123,0.000000000000,0,0,29,57,False,"fprintf(stderr, ""Item is missing the 'type' attribute.\n"");"
+48,57.0,66,124,0.000000000000,0,0,29,57,False,xmlFreeDoc(document);
+48,57.0,66,125,0.000000000000,0,0,29,57,False,return 3;
+48,57.0,66,135,0.000000000000,0,0,29,57,False,xmlFree(type_value);
+48,57.0,66,136,0.000000000000,0,0,29,57,False,xmlFreeDoc(document);
+48,57.0,66,137,0.000000000000,0,0,29,57,False,return 3;

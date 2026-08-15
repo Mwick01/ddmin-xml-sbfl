@@ -1,0 +1,15 @@
+{
+  "failing_candidates": 29,
+  "input_file": "/home/user/ddmin-xml-sbfl/subjects/invoice/inputs/failing.xml",
+  "iterations": 36,
+  "minimal_candidate_id": "bcd53945738dc58c45b60d6106d2a28b221d6e15f8d06f68c5f3d2d769dffc62",
+  "minimal_file": "/home/user/ddmin-xml-sbfl/results/ddmin_runs/20260804_131730_46910/minimal_failure.xml",
+  "minimal_size_characters": 69,
+  "oracle_attempts": 2461,
+  "original_candidate_id": "3ab582b58e05f26131ee59dd550b8d849e474e2a94f8aab90698e1d0d823beb3",
+  "original_size_characters": 160,
+  "passing_candidates": 57,
+  "reduction_percentage": 56.88,
+  "unique_candidates": 585,
+  "unresolved_candidates": 499
+}
