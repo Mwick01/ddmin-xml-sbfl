@@ -153,10 +153,10 @@ def main() -> int:
     )
 
     outcome_directories = {
-        "PASS": run_directory / "passing",
-        "FAIL": run_directory / "failing",
+        "PASS": run_directory / "pass",
+        "FAIL": run_directory / "fail",
         "UNRESOLVED": run_directory / "unresolved",
-    }
+    }   
 
     for directory in outcome_directories.values():
         directory.mkdir(
