@@ -297,7 +297,7 @@ def collect_candidate_coverage(
     )
 
     return {
-        "test_id": candidate_file.stem,
+        "test_id": candidate_file.name,
         "candidate_file": str(candidate_file),
         "classification": expected_label,
         "program_exit_code": execution.returncode,
@@ -317,24 +317,31 @@ def find_candidate_files(
 ) -> list[tuple[str, Path]]:
     """Find all unique PASS and FAIL candidates."""
 
+    pass_directory = run_directory / "pass"
+    fail_directory = run_directory / "fail"
+
     passing_files = sorted(
-        (run_directory / "pass").glob("*.xml")
+        path
+        for path in pass_directory.iterdir()
+        if path.is_file()
     )
 
     failing_files = sorted(
-        (run_directory / "fail").glob("*.xml")
+        path
+        for path in fail_directory.iterdir()
+        if path.is_file()
     )
 
     if not passing_files:
         raise RuntimeError(
-            "No PASS candidates were found. SBFL needs at least "
-            "one passing test."
+            "No PASS candidates were found. "
+            "SBFL needs at least one passing test."
         )
 
     if not failing_files:
         raise RuntimeError(
-            "No FAIL candidates were found. SBFL needs at least "
-            "one failing test."
+            "No FAIL candidates were found. "
+            "SBFL needs at least one failing test."
         )
 
     candidates: list[tuple[str, Path]] = []
@@ -429,7 +436,7 @@ def main() -> int:
         ):
             print(
                 f"[{index}/{total_candidates}] "
-                f"{label} {candidate_file.stem[:12]}...",
+                f"{label} {candidate_file.name[:12]}...",
                 end=" ",
                 flush=True,
             )
