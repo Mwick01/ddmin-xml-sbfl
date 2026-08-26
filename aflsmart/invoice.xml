@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Peach
+    xmlns="http://peachfuzzer.com/2012/Peach"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://peachfuzzer.com/2012/Peach /peach/peach.xsd">
+
+    <!--
+        Peach PIT for the invoice XML subject.
+
+        This describes the structural boundaries of the XML input
+        so AFLSmart can perform structure-aware mutations.
+    -->
+
+    <DataModel name="Invoice">
+
+        <!-- Processing instruction used by the DDMIN minimal seed -->
+        <String
+            name="ProcessingInstruction"
+            value="&lt;?l?&gt;"
+            token="true"
+        />
+
+        <!-- Root element -->
+        <String
+            name="InvoiceOpen"
+            value="&lt;invoice&gt;"
+            token="true"
+        />
+
+        <!-- One or more invoice items -->
+        <Block
+            name="Items"
+            minOccurs="1"
+            maxOccurs="16">
+
+            <String
+                name="ItemOpen"
+                value="&lt;item type=&quot;"
+                token="true"
+            />
+
+            <String
+                name="Type"
+                value="special"
+            />
+
+            <String
+                name="PricePrefix"
+                value="&quot; price=&quot;"
+                token="true"
+            />
+
+            <String
+                name="Price"
+                value="0"
+            />
+
+            <String
+                name="QuantityPrefix"
+                value="&quot; quantity=&quot;"
+                token="true"
+            />
+
+            <String
+                name="Quantity"
+                value="3"
+            />
+
+            <String
+                name="ItemClose"
+                value="&quot;/&gt;"
+                token="true"
+            />
+
+        </Block>
+
+        <String
+            name="InvoiceClose"
+            value="&lt;/invoice&gt;"
+            token="true"
+        />
+
+    </DataModel>
+
+
+    <StateModel
+        name="TheState"
+        initialState="Initial">
+
+        <State name="Initial">
+
+            <Action type="output">
+
+                <DataModel ref="Invoice"/>
+
+                <!-- AFLSmart replaces/provides the actual seed data -->
+                <Data fileName="/dev/null"/>
+
+            </Action>
+
+            <Action type="close"/>
+
+        </State>
+
+    </StateModel>
+
+
+    <Test name="Default">
+
+        <StateModel ref="TheState"/>
+
+        <Publisher class="File">
+            <Param
+                name="FileName"
+                value="repaired"
+            />
+        </Publisher>
+
+        <Logger class="Filesystem">
+            <Param
+                name="Path"
+                value="logs"
+            />
+        </Logger>
+
+    </Test>
+
+</Peach>
