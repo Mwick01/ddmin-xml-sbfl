@@ -8,7 +8,9 @@ import hashlib
 import json
 import shutil
 import subprocess
-from collections import Counter
+import sys
+
+from collections import Counter, defaultdict
 from datetime import datetime
 from pathlib import Path
 
@@ -274,6 +276,137 @@ def read_fuzzer_stats(raw_directory: Path) -> dict:
 
     return stats
 
+def collect_and_analyze_coverage(
+    experiment_directory: Path,
+) -> dict:
+
+    pass_directory = experiment_directory / "pass"
+    fail_directory = experiment_directory / "fail"
+
+    pass_files = [
+        path
+        for path in pass_directory.iterdir()
+        if path.is_file()
+    ]
+
+    fail_files = [
+        path
+        for path in fail_directory.iterdir()
+        if path.is_file()
+    ]
+
+    # SBFL/coverage comparison requires both classes.
+    if not pass_files or not fail_files:
+        return {
+            "status": "skipped",
+            "reason": (
+                "Coverage collection requires at least "
+                "one PASS and one FAIL test."
+            ),
+            "pass_tests": len(pass_files),
+            "fail_tests": len(fail_files),
+        }
+
+    collector = (
+        PROJECT_ROOT
+        / "scripts"
+        / "collect_coverage.py"
+    )
+
+    subprocess.run(
+        [
+            sys.executable,
+            str(collector),
+            str(experiment_directory),
+        ],
+        cwd=PROJECT_ROOT,
+        check=True,
+    )
+
+    coverage_file = (
+        experiment_directory
+        / "coverage"
+        / "coverage.jsonl"
+    )
+
+    records = [
+        json.loads(line)
+        for line in coverage_file.read_text().splitlines()
+        if line.strip()
+    ]
+
+    result = {
+        "status": "completed",
+    }
+
+    for outcome in ("PASS", "FAIL"):
+
+        selected = [
+            record
+            for record in records
+            if record["classification"] == outcome
+        ]
+
+        profiles = defaultdict(list)
+
+        for record in selected:
+            profile = tuple(record["covered_lines"])
+
+            profiles[profile].append(
+                record["test_id"]
+            )
+
+        key = outcome.lower()
+
+        result[f"{key}_tests"] = len(selected)
+
+        result[
+            f"distinct_{key}_profiles"
+        ] = len(profiles)
+
+        result[
+            f"{key}_profile_test_counts"
+        ] = sorted(
+            len(tests)
+            for tests in profiles.values()
+        )
+
+        result[
+            f"{key}_profile_line_counts"
+        ] = sorted(
+            len(profile)
+            for profile in profiles
+        )
+
+    summary_file = (
+        experiment_directory
+        / "coverage"
+        / "summary.json"
+    )
+
+    if summary_file.exists():
+        result["collector_summary"] = json.loads(
+            summary_file.read_text()
+        )
+
+    return result
+
+
+def count_peach_chunk_structures(
+    raw_directory: Path,
+) -> int:
+
+    chunk_directory = raw_directory / "chunks"
+
+    if not chunk_directory.exists():
+        return 0
+
+    return sum(
+        1
+        for path in chunk_directory.glob("*.chunks")
+        if path.is_file()
+    )
+
 
 def main() -> None:
 
@@ -369,6 +502,25 @@ def main() -> None:
             experiment_directory,
         )
 
+        print()
+        print("Collecting source coverage")
+        print("=" * 72)
+
+        coverage_summary = collect_and_analyze_coverage(
+        experiment_directory
+        )
+
+        print()
+        print("Coverage diversity")
+        print("=" * 72)
+
+        print(
+            json.dumps(
+            coverage_summary,
+            indent=2,
+            )
+        )
+
         fuzzer_stats = read_fuzzer_stats(
             raw_directory
         )
@@ -396,6 +548,13 @@ def main() -> None:
             "afl_arguments": afl_arguments,
             "classification": classification_summary,
             "fuzzer_stats": fuzzer_stats,
+            "coverage": coverage_summary,
+
+            "peach_chunk_structures": (
+                count_peach_chunk_structures(
+                raw_directory
+                )
+            ),
         }
 
         metadata_file = (
