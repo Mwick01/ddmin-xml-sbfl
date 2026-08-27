@@ -8,9 +8,21 @@ import json
 import os
 from pathlib import Path
 import sys
-from typing import Any
+from typing import Any, Callable, Literal
 
-from oracle import Outcome, classify
+import importlib
+
+
+Outcome = Literal[
+    "PASS",
+    "FAIL",
+    "UNRESOLVED",
+]
+
+Classifier = Callable[
+    [Path],
+    Outcome,
+]
 
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
@@ -78,9 +90,11 @@ class CandidateRecorder:
         self,
         temporary_file: Path,
         output_directory: Path,
+        classifier: Classifier,
     ) -> None:
         self.temporary_file = temporary_file
         self.output_directory = output_directory
+        self.classifier = classifier
 
         self.cache: dict[str, Outcome] = {}
 
@@ -130,7 +144,7 @@ class CandidateRecorder:
         else:
             self.temporary_file.write_bytes(encoded_candidate)
 
-            outcome = classify(self.temporary_file)
+            outcome = self.classifier(self.temporary_file)
 
             self.cache[digest] = outcome
             self.unique_count += 1
@@ -348,6 +362,16 @@ def parse_arguments() -> argparse.Namespace:
         help="Temporary XML file used when executing candidates.",
     )
 
+    parser.add_argument(
+        "--oracle-module",
+        default="oracle",
+        help=(
+            "Python module containing a "
+            "classify(Path) function. "
+            "Default: oracle"
+        ),
+    )
+
     return parser.parse_args()
 
 
@@ -375,9 +399,34 @@ def main() -> int:
     run_directory = results_root / run_id
     run_directory.mkdir(parents=True, exist_ok=False)
 
+    try:
+        oracle_module = importlib.import_module(
+            arguments.oracle_module
+        )
+
+        classifier = getattr(
+            oracle_module,
+            "classify",
+        )
+
+    except (
+        ImportError,
+        AttributeError,
+    ) as error:
+
+        print(
+            "Error loading oracle module "
+            f"{arguments.oracle_module!r}: "
+            f"{error}",
+            file=sys.stderr,
+        )
+
+        return 2
+
     recorder = CandidateRecorder(
         temporary_file=arguments.temporary_file.resolve(),
         output_directory=run_directory,
+        classifier=classifier,
     )
 
     reduction_log = run_directory / "reductions.jsonl"
@@ -424,6 +473,7 @@ def main() -> int:
         "failing_candidates": recorder.outcome_counts["FAIL"],
         "unresolved_candidates": recorder.outcome_counts["UNRESOLVED"],
         "minimal_file": str(minimal_file),
+        "oracle_module": arguments.oracle_module,
     }
 
     summary_file = run_directory / "summary.json"

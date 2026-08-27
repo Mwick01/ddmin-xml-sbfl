@@ -11,7 +11,7 @@ from typing import Any
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
-BUGGY_SOURCE = (
+DEFAULT_BUGGY_SOURCE = (
     PROJECT_ROOT
     / "subjects"
     / "invoice"
@@ -481,6 +481,16 @@ def parse_arguments() -> argparse.Namespace:
     )
 
     parser.add_argument(
+        "--source",
+        type=Path,
+        default=DEFAULT_BUGGY_SOURCE,
+        help=(
+            "Buggy source file represented "
+            "by the coverage records."
+        ),
+    )
+
+    parser.add_argument(
         "run_directory",
         type=Path,
         help="Path to one results/ddmin_runs/<run-id> directory.",
@@ -510,6 +520,10 @@ def parse_arguments() -> argparse.Namespace:
 def main() -> int:
     arguments = parse_arguments()
 
+    buggy_source = (
+       arguments.source.resolve()
+    )
+
     run_directory = arguments.run_directory.resolve()
     records_file = (
         run_directory
@@ -533,9 +547,9 @@ def main() -> int:
         )
         return 2
 
-    if not BUGGY_SOURCE.is_file():
+    if not buggy_source.is_file():
         print(
-            f"Error: buggy source not found: {BUGGY_SOURCE}",
+            f"Error: buggy source not found: {buggy_source}",
             file=sys.stderr,
         )
         return 2
@@ -557,7 +571,7 @@ def main() -> int:
                 f"{sorted(missing_fault_lines)}"
             )
 
-        source_lines = BUGGY_SOURCE.read_text(
+        source_lines = buggy_source.read_text(
             encoding="utf-8"
         ).splitlines()
 
@@ -630,7 +644,7 @@ def main() -> int:
     summary = {
         "ddmin_run_directory": str(run_directory),
         "coverage_records": str(records_file),
-        "buggy_source": str(BUGGY_SOURCE),
+        "buggy_source": str(buggy_source),
         "known_fault_lines": sorted(fault_lines),
         "passing_tests": passing_count,
         "failing_tests": failing_count,

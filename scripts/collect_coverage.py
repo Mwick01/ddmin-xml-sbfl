@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import importlib
 import hashlib
 import json
 from pathlib import Path
@@ -9,18 +10,29 @@ import subprocess
 import sys
 from typing import Any
 
-from oracle import classify
 
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
-BUGGY_SOURCE = (
-    PROJECT_ROOT / "subjects" / "invoice" / "buggy" / "invoice.c"
+DEFAULT_BUGGY_SOURCE = (
+    PROJECT_ROOT
+    / "subjects"
+    / "invoice"
+    / "buggy"
+    / "invoice.c"
 )
 
-COVERAGE_BINARY = PROJECT_ROOT / "build" / "invoice_buggy_cov"
-COVERAGE_OBJECT = PROJECT_ROOT / "build" / "invoice_buggy_cov.o"
-COVERAGE_DATA = PROJECT_ROOT / "build" / "invoice_buggy_cov.gcda"
+DEFAULT_COVERAGE_BINARY = (
+    PROJECT_ROOT
+    / "build"
+    / "invoice_buggy_cov"
+)
+
+DEFAULT_COVERAGE_OBJECT = (
+    PROJECT_ROOT
+    / "build"
+    / "invoice_buggy_cov.o"
+)
 
 TIMEOUT_SECONDS = 2.0
 
@@ -77,28 +89,30 @@ def command_version(command: str) -> str:
     return output.splitlines()[0]
 
 
-def reset_coverage_data() -> None:
+def reset_coverage_data(
+    coverage_data: Path,
+) -> None:
     """
-    Delete runtime coverage from previous executions.
-
-    This is essential because GCC normally accumulates coverage counters
-    across program executions.
+    Delete runtime coverage from the previous execution.
     """
 
-    for data_file in (
-        PROJECT_ROOT / "build"
-    ).glob("invoice_buggy_cov*.gcda"):
-        data_file.unlink(missing_ok=True)
+    coverage_data.unlink(
+        missing_ok=True
+    )
 
 
 def run_instrumented_program(
     candidate_file: Path,
+    coverage_binary: Path,
+    coverage_data: Path,
 ) -> subprocess.CompletedProcess[str]:
-    """Execute the coverage-instrumented buggy program."""
 
     try:
         completed = subprocess.run(
-            [str(COVERAGE_BINARY), str(candidate_file)],
+            [
+                str(coverage_binary),
+                str(candidate_file),
+            ],
             cwd=PROJECT_ROOT,
             capture_output=True,
             text=True,
@@ -108,37 +122,42 @@ def run_instrumented_program(
 
     except subprocess.TimeoutExpired as error:
         raise RuntimeError(
-            f"Instrumented program timed out for {candidate_file}"
+            f"Instrumented program timed out "
+            f"for {candidate_file}"
         ) from error
 
     if completed.returncode != 0:
         raise RuntimeError(
-            "Instrumented buggy program returned a nonzero exit code.\n"
+            "Instrumented buggy program returned "
+            "a nonzero exit code.\n"
             f"Candidate: {candidate_file}\n"
             f"Exit code: {completed.returncode}\n"
             f"Stdout: {completed.stdout!r}\n"
             f"Stderr: {completed.stderr!r}"
         )
 
-    if not COVERAGE_DATA.is_file():
+    if not coverage_data.is_file():
         raise RuntimeError(
-            "The instrumented program did not create the expected "
-            f"coverage data file: {COVERAGE_DATA}"
+            "The instrumented program did not "
+            "create the expected coverage data "
+            f"file: {coverage_data}"
         )
 
     return completed
 
 
-def run_gcov() -> str:
-    """Run gcov and return its source-annotated output."""
+def run_gcov(
+    coverage_object: Path,
+    buggy_source: Path,
+) -> str:
 
     completed = subprocess.run(
         [
             "gcov",
             "--stdout",
             "--object-file",
-            str(COVERAGE_OBJECT),
-            str(BUGGY_SOURCE),
+            str(coverage_object),
+            str(buggy_source),
         ],
         cwd=PROJECT_ROOT,
         capture_output=True,
@@ -199,6 +218,7 @@ def parse_execution_count(count_field: str) -> int | None:
 
 def parse_gcov_output(
     gcov_output: str,
+    buggy_source: Path,
 ) -> dict[int, int]:
     """
     Parse line execution counts for the buggy invoice source.
@@ -207,7 +227,7 @@ def parse_gcov_output(
         Dictionary mapping source line number to execution count.
     """
 
-    expected_source = BUGGY_SOURCE.resolve()
+    expected_source = buggy_source.resolve()
     current_source: Path | None = None
 
     execution_counts: dict[int, int] = {}
@@ -269,48 +289,87 @@ def parse_gcov_output(
 def collect_candidate_coverage(
     candidate_file: Path,
     expected_label: str,
+    classifier,
+    buggy_source: Path,
+    coverage_binary: Path,
+    coverage_object: Path,
+    coverage_data: Path,
 ) -> dict[str, Any]:
-    """Collect independent line coverage for one candidate."""
 
-    actual_label = classify(candidate_file)
+    actual_label = classifier(
+        candidate_file
+    )
 
     if actual_label != expected_label:
         raise RuntimeError(
-            "Candidate label changed before coverage collection.\n"
+            "Candidate label changed before "
+            "coverage collection.\n"
             f"Candidate: {candidate_file}\n"
             f"Expected: {expected_label}\n"
             f"Actual: {actual_label}"
         )
 
-    reset_coverage_data()
+    reset_coverage_data(
+        coverage_data
+    )
 
-    execution = run_instrumented_program(candidate_file)
-    gcov_output = run_gcov()
+    execution = run_instrumented_program(
+        candidate_file,
+        coverage_binary,
+        coverage_data,
+    )
 
-    execution_counts = parse_gcov_output(gcov_output)
+    gcov_output = run_gcov(
+        coverage_object,
+        buggy_source,
+    )
 
-    executable_lines = sorted(execution_counts)
+    execution_counts = parse_gcov_output(
+        gcov_output,
+        buggy_source,
+    )
+
+    executable_lines = sorted(
+        execution_counts
+    )
+
     covered_lines = sorted(
         line_number
-        for line_number, count in execution_counts.items()
+        for line_number, count
+        in execution_counts.items()
         if count > 0
     )
 
     return {
         "test_id": candidate_file.name,
-        "candidate_file": str(candidate_file),
+        "candidate_file": str(
+            candidate_file
+        ),
         "classification": expected_label,
-        "program_exit_code": execution.returncode,
-        "program_stdout": execution.stdout.strip(),
-        "program_stderr": execution.stderr.strip(),
-        "executable_lines": executable_lines,
-        "covered_lines": covered_lines,
+        "program_exit_code": (
+            execution.returncode
+        ),
+        "program_stdout": (
+            execution.stdout.strip()
+        ),
+        "program_stderr": (
+            execution.stderr.strip()
+        ),
+        "executable_lines": (
+            executable_lines
+        ),
+        "covered_lines": (
+            covered_lines
+        ),
         "execution_counts": {
-            str(line_number): execution_counts[line_number]
-            for line_number in executable_lines
+            str(line_number):
+                execution_counts[
+                    line_number
+                ]
+            for line_number
+            in executable_lines
         },
     }
-
 
 def find_candidate_files(
     run_directory: Path,
@@ -373,12 +432,89 @@ def parse_arguments() -> argparse.Namespace:
         help="Path to one results/ddmin_runs/<run-id> directory.",
     )
 
+    parser.add_argument(
+        "--oracle-module",
+        default="oracle",
+        help=(
+            "Python module containing "
+            "classify(Path). Default: oracle"
+        ),
+    )
+
+    parser.add_argument(
+        "--source",
+        type=Path,
+        default=DEFAULT_BUGGY_SOURCE,
+        help="Source file whose coverage is collected.",
+    )
+
+    parser.add_argument(
+        "--binary",
+        type=Path,
+        default=DEFAULT_COVERAGE_BINARY,
+        help="Coverage-instrumented buggy executable.",
+    )
+
+    parser.add_argument(
+        "--object",
+        type=Path,
+        default=DEFAULT_COVERAGE_OBJECT,
+        help=(
+            "gcov object file corresponding "
+            "to --source."
+        ),
+    )
+
     return parser.parse_args()
 
 
 def main() -> int:
     arguments = parse_arguments()
     run_directory = arguments.run_directory.resolve()
+
+    buggy_source = (
+        arguments.source.resolve()
+    )
+
+    coverage_binary = (
+        arguments.binary.resolve()
+    ) 
+
+    coverage_object = (
+        arguments.object.resolve()
+    )
+
+    coverage_data = (
+        coverage_object.with_suffix(
+            ".gcda"
+        )
+    )
+
+    try:
+        oracle_module = (
+            importlib.import_module(
+                arguments.oracle_module
+            )
+        )
+
+        classifier = getattr(
+            oracle_module,
+            "classify",
+        )
+
+    except (
+        ImportError,
+        AttributeError,
+    ) as error:
+
+        print(
+            "Error loading oracle module "
+            f"{arguments.oracle_module!r}: "
+            f"{error}",
+            file=sys.stderr,
+        )
+
+        return 2
 
     if not run_directory.is_dir():
         print(
@@ -388,9 +524,9 @@ def main() -> int:
         return 2
 
     required_files = [
-        BUGGY_SOURCE,
-        COVERAGE_BINARY,
-        COVERAGE_OBJECT,
+        buggy_source,
+        coverage_binary,
+        coverage_object,
     ]
 
     for required_file in required_files:
@@ -444,6 +580,11 @@ def main() -> int:
             record = collect_candidate_coverage(
                 candidate_file,
                 label,
+                classifier,
+                buggy_source,
+                coverage_binary,
+                coverage_object,
+                coverage_data,
             )
 
             append_json_line(records_file, record)
@@ -470,14 +611,14 @@ def main() -> int:
         return 1
 
     finally:
-        reset_coverage_data()
+        reset_coverage_data(coverage_data)
 
     summary = {
         "ddmin_run_directory": str(run_directory),
-        "buggy_source": str(BUGGY_SOURCE),
-        "buggy_source_sha256": file_sha256(BUGGY_SOURCE),
-        "coverage_binary": str(COVERAGE_BINARY),
-        "coverage_object": str(COVERAGE_OBJECT),
+        "buggy_source": str(buggy_source),
+        "buggy_source_sha256": file_sha256(buggy_source),
+        "coverage_binary": str(coverage_binary),
+        "coverage_object": str(coverage_object),
         "gcc_version": command_version("gcc"),
         "gcov_version": command_version("gcov"),
         "total_tests": total_candidates,
