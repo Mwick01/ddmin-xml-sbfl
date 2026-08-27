@@ -1,0 +1,446 @@
+{
+  "baseline": {
+    "failing_tests": 29,
+    "jaccard": {
+      "average_rank": 1.0,
+      "best_rank": 1,
+      "exam_percentage": 1.5151515151515151,
+      "score": 1.0,
+      "worst_rank": 1
+    },
+    "ochiai": {
+      "average_rank": 1.0,
+      "best_rank": 1,
+      "exam_percentage": 1.5151515151515151,
+      "score": 1.0,
+      "worst_rank": 1
+    },
+    "passing_tests": 57,
+    "total_tests": 86
+  },
+  "baseline_run": "/home/user/ddmin-xml-sbfl/results/ddmin_runs/20260804_131730_46910",
+  "duration_seconds": 300,
+  "fault_line": 144,
+  "runs": [
+    {
+      "added_FAIL": 0,
+      "added_PASS": 6,
+      "added_fuzz_tests": 6,
+      "baseline_tests": 86,
+      "combined_FAIL": 29,
+      "combined_PASS": 63,
+      "combined_total": 92,
+      "duration_seconds": 300,
+      "jaccard": {
+        "average_rank": 1.0,
+        "best_rank": 1,
+        "exam_percentage": 1.5151515151515151,
+        "score": 1.0,
+        "worst_rank": 1
+      },
+      "mode": "afl",
+      "ochiai": {
+        "average_rank": 1.0,
+        "best_rank": 1,
+        "exam_percentage": 1.5151515151515151,
+        "score": 1.0,
+        "worst_rank": 1
+      },
+      "repetition": 1,
+      "run_name": "afl_r1_20260827_002930_193103",
+      "skipped_original_seed": 1
+    },
+    {
+      "added_FAIL": 0,
+      "added_PASS": 7,
+      "added_fuzz_tests": 7,
+      "baseline_tests": 86,
+      "combined_FAIL": 29,
+      "combined_PASS": 64,
+      "combined_total": 93,
+      "duration_seconds": 300,
+      "jaccard": {
+        "average_rank": 1.0,
+        "best_rank": 1,
+        "exam_percentage": 1.5151515151515151,
+        "score": 1.0,
+        "worst_rank": 1
+      },
+      "mode": "afl",
+      "ochiai": {
+        "average_rank": 1.0,
+        "best_rank": 1,
+        "exam_percentage": 1.5151515151515151,
+        "score": 1.0,
+        "worst_rank": 1
+      },
+      "repetition": 2,
+      "run_name": "afl_r2_20260827_003430_861386",
+      "skipped_original_seed": 1
+    },
+    {
+      "added_FAIL": 0,
+      "added_PASS": 9,
+      "added_fuzz_tests": 9,
+      "baseline_tests": 86,
+      "combined_FAIL": 29,
+      "combined_PASS": 66,
+      "combined_total": 95,
+      "duration_seconds": 300,
+      "jaccard": {
+        "average_rank": 1.0,
+        "best_rank": 1,
+        "exam_percentage": 1.5151515151515151,
+        "score": 1.0,
+        "worst_rank": 1
+      },
+      "mode": "afl",
+      "ochiai": {
+        "average_rank": 1.0,
+        "best_rank": 1,
+        "exam_percentage": 1.5151515151515151,
+        "score": 1.0,
+        "worst_rank": 1
+      },
+      "repetition": 3,
+      "run_name": "afl_r3_20260827_003931_391609",
+      "skipped_original_seed": 1
+    },
+    {
+      "added_FAIL": 0,
+      "added_PASS": 6,
+      "added_fuzz_tests": 6,
+      "baseline_tests": 86,
+      "combined_FAIL": 29,
+      "combined_PASS": 63,
+      "combined_total": 92,
+      "duration_seconds": 300,
+      "jaccard": {
+        "average_rank": 1.0,
+        "best_rank": 1,
+        "exam_percentage": 1.5151515151515151,
+        "score": 1.0,
+        "worst_rank": 1
+      },
+      "mode": "afl",
+      "ochiai": {
+        "average_rank": 1.0,
+        "best_rank": 1,
+        "exam_percentage": 1.5151515151515151,
+        "score": 1.0,
+        "worst_rank": 1
+      },
+      "repetition": 4,
+      "run_name": "afl_r4_20260827_004432_001829",
+      "skipped_original_seed": 1
+    },
+    {
+      "added_FAIL": 0,
+      "added_PASS": 8,
+      "added_fuzz_tests": 8,
+      "baseline_tests": 86,
+      "combined_FAIL": 29,
+      "combined_PASS": 65,
+      "combined_total": 94,
+      "duration_seconds": 300,
+      "jaccard": {
+        "average_rank": 1.0,
+        "best_rank": 1,
+        "exam_percentage": 1.5151515151515151,
+        "score": 1.0,
+        "worst_rank": 1
+      },
+      "mode": "afl",
+      "ochiai": {
+        "average_rank": 1.0,
+        "best_rank": 1,
+        "exam_percentage": 1.5151515151515151,
+        "score": 1.0,
+        "worst_rank": 1
+      },
+      "repetition": 5,
+      "run_name": "afl_r5_20260827_004932_638405",
+      "skipped_original_seed": 1
+    },
+    {
+      "added_FAIL": 1,
+      "added_PASS": 11,
+      "added_fuzz_tests": 12,
+      "baseline_tests": 86,
+      "combined_FAIL": 30,
+      "combined_PASS": 68,
+      "combined_total": 98,
+      "duration_seconds": 300,
+      "jaccard": {
+        "average_rank": 1.0,
+        "best_rank": 1,
+        "exam_percentage": 1.5151515151515151,
+        "score": 1.0,
+        "worst_rank": 1
+      },
+      "mode": "aflsmart-mixed",
+      "ochiai": {
+        "average_rank": 1.0,
+        "best_rank": 1,
+        "exam_percentage": 1.5151515151515151,
+        "score": 1.0,
+        "worst_rank": 1
+      },
+      "repetition": 1,
+      "run_name": "aflsmart-mixed_r1_20260827_100954_067220",
+      "skipped_original_seed": 1
+    },
+    {
+      "added_FAIL": 2,
+      "added_PASS": 11,
+      "added_fuzz_tests": 13,
+      "baseline_tests": 86,
+      "combined_FAIL": 31,
+      "combined_PASS": 68,
+      "combined_total": 99,
+      "duration_seconds": 300,
+      "jaccard": {
+        "average_rank": 1.0,
+        "best_rank": 1,
+        "exam_percentage": 1.5151515151515151,
+        "score": 1.0,
+        "worst_rank": 1
+      },
+      "mode": "aflsmart-mixed",
+      "ochiai": {
+        "average_rank": 1.0,
+        "best_rank": 1,
+        "exam_percentage": 1.5151515151515151,
+        "score": 1.0,
+        "worst_rank": 1
+      },
+      "repetition": 2,
+      "run_name": "aflsmart-mixed_r2_20260827_101454_983995",
+      "skipped_original_seed": 1
+    },
+    {
+      "added_FAIL": 1,
+      "added_PASS": 5,
+      "added_fuzz_tests": 6,
+      "baseline_tests": 86,
+      "combined_FAIL": 30,
+      "combined_PASS": 62,
+      "combined_total": 92,
+      "duration_seconds": 300,
+      "jaccard": {
+        "average_rank": 1.0,
+        "best_rank": 1,
+        "exam_percentage": 1.5151515151515151,
+        "score": 1.0,
+        "worst_rank": 1
+      },
+      "mode": "aflsmart-mixed",
+      "ochiai": {
+        "average_rank": 1.0,
+        "best_rank": 1,
+        "exam_percentage": 1.5151515151515151,
+        "score": 1.0,
+        "worst_rank": 1
+      },
+      "repetition": 3,
+      "run_name": "aflsmart-mixed_r3_20260827_101955_778079",
+      "skipped_original_seed": 1
+    },
+    {
+      "added_FAIL": 4,
+      "added_PASS": 8,
+      "added_fuzz_tests": 12,
+      "baseline_tests": 86,
+      "combined_FAIL": 33,
+      "combined_PASS": 65,
+      "combined_total": 98,
+      "duration_seconds": 300,
+      "jaccard": {
+        "average_rank": 1.0,
+        "best_rank": 1,
+        "exam_percentage": 1.5151515151515151,
+        "score": 1.0,
+        "worst_rank": 1
+      },
+      "mode": "aflsmart-mixed",
+      "ochiai": {
+        "average_rank": 1.0,
+        "best_rank": 1,
+        "exam_percentage": 1.5151515151515151,
+        "score": 1.0,
+        "worst_rank": 1
+      },
+      "repetition": 4,
+      "run_name": "aflsmart-mixed_r4_20260827_102456_534428",
+      "skipped_original_seed": 1
+    },
+    {
+      "added_FAIL": 1,
+      "added_PASS": 6,
+      "added_fuzz_tests": 7,
+      "baseline_tests": 86,
+      "combined_FAIL": 30,
+      "combined_PASS": 63,
+      "combined_total": 93,
+      "duration_seconds": 300,
+      "jaccard": {
+        "average_rank": 1.0,
+        "best_rank": 1,
+        "exam_percentage": 1.5151515151515151,
+        "score": 1.0,
+        "worst_rank": 1
+      },
+      "mode": "aflsmart-mixed",
+      "ochiai": {
+        "average_rank": 1.0,
+        "best_rank": 1,
+        "exam_percentage": 1.5151515151515151,
+        "score": 1.0,
+        "worst_rank": 1
+      },
+      "repetition": 5,
+      "run_name": "aflsmart-mixed_r5_20260827_102957_256362",
+      "skipped_original_seed": 1
+    },
+    {
+      "added_FAIL": 4,
+      "added_PASS": 11,
+      "added_fuzz_tests": 15,
+      "baseline_tests": 86,
+      "combined_FAIL": 33,
+      "combined_PASS": 68,
+      "combined_total": 101,
+      "duration_seconds": 300,
+      "jaccard": {
+        "average_rank": 1.0,
+        "best_rank": 1,
+        "exam_percentage": 1.5151515151515151,
+        "score": 1.0,
+        "worst_rank": 1
+      },
+      "mode": "aflsmart-nonstack",
+      "ochiai": {
+        "average_rank": 1.0,
+        "best_rank": 1,
+        "exam_percentage": 1.5151515151515151,
+        "score": 1.0,
+        "worst_rank": 1
+      },
+      "repetition": 1,
+      "run_name": "aflsmart-nonstack_r1_20260827_105440_840214",
+      "skipped_original_seed": 1
+    },
+    {
+      "added_FAIL": 14,
+      "added_PASS": 3,
+      "added_fuzz_tests": 17,
+      "baseline_tests": 86,
+      "combined_FAIL": 43,
+      "combined_PASS": 60,
+      "combined_total": 103,
+      "duration_seconds": 300,
+      "jaccard": {
+        "average_rank": 1.0,
+        "best_rank": 1,
+        "exam_percentage": 1.5151515151515151,
+        "score": 1.0,
+        "worst_rank": 1
+      },
+      "mode": "aflsmart-nonstack",
+      "ochiai": {
+        "average_rank": 1.0,
+        "best_rank": 1,
+        "exam_percentage": 1.5151515151515151,
+        "score": 1.0,
+        "worst_rank": 1
+      },
+      "repetition": 2,
+      "run_name": "aflsmart-nonstack_r2_20260827_105941_917613",
+      "skipped_original_seed": 1
+    },
+    {
+      "added_FAIL": 0,
+      "added_PASS": 7,
+      "added_fuzz_tests": 7,
+      "baseline_tests": 86,
+      "combined_FAIL": 29,
+      "combined_PASS": 64,
+      "combined_total": 93,
+      "duration_seconds": 300,
+      "jaccard": {
+        "average_rank": 1.0,
+        "best_rank": 1,
+        "exam_percentage": 1.5151515151515151,
+        "score": 1.0,
+        "worst_rank": 1
+      },
+      "mode": "aflsmart-nonstack",
+      "ochiai": {
+        "average_rank": 1.0,
+        "best_rank": 1,
+        "exam_percentage": 1.5151515151515151,
+        "score": 1.0,
+        "worst_rank": 1
+      },
+      "repetition": 3,
+      "run_name": "aflsmart-nonstack_r3_20260827_110442_807336",
+      "skipped_original_seed": 1
+    },
+    {
+      "added_FAIL": 8,
+      "added_PASS": 4,
+      "added_fuzz_tests": 12,
+      "baseline_tests": 86,
+      "combined_FAIL": 37,
+      "combined_PASS": 61,
+      "combined_total": 98,
+      "duration_seconds": 300,
+      "jaccard": {
+        "average_rank": 1.0,
+        "best_rank": 1,
+        "exam_percentage": 1.5151515151515151,
+        "score": 1.0,
+        "worst_rank": 1
+      },
+      "mode": "aflsmart-nonstack",
+      "ochiai": {
+        "average_rank": 1.0,
+        "best_rank": 1,
+        "exam_percentage": 1.5151515151515151,
+        "score": 1.0,
+        "worst_rank": 1
+      },
+      "repetition": 4,
+      "run_name": "aflsmart-nonstack_r4_20260827_110943_478738",
+      "skipped_original_seed": 1
+    },
+    {
+      "added_FAIL": 9,
+      "added_PASS": 8,
+      "added_fuzz_tests": 17,
+      "baseline_tests": 86,
+      "combined_FAIL": 38,
+      "combined_PASS": 65,
+      "combined_total": 103,
+      "duration_seconds": 300,
+      "jaccard": {
+        "average_rank": 1.0,
+        "best_rank": 1,
+        "exam_percentage": 1.5151515151515151,
+        "score": 1.0,
+        "worst_rank": 1
+      },
+      "mode": "aflsmart-nonstack",
+      "ochiai": {
+        "average_rank": 1.0,
+        "best_rank": 1,
+        "exam_percentage": 1.5151515151515151,
+        "score": 1.0,
+        "worst_rank": 1
+      },
+      "repetition": 5,
+      "run_name": "aflsmart-nonstack_r5_20260827_111444_172375",
+      "skipped_original_seed": 1
+    }
+  ]
+}
