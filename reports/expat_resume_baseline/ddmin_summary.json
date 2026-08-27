@@ -1,0 +1,16 @@
+{
+  "failing_candidates": 1,
+  "input_file": "/home/user/ddmin-xml-sbfl/subjects/expat_resume/inputs/failing.xml",
+  "iterations": 3,
+  "minimal_candidate_id": "630890f1ac4752b019e13c1f559d9f8f8e4be89e9f74f43dde4da95843030219",
+  "minimal_file": "/home/user/ddmin-xml-sbfl/results/expat_resume/ddmin_runs/20260827_191442_269590/minimal_failure.xml",
+  "minimal_size_characters": 6,
+  "oracle_attempts": 25,
+  "oracle_module": "oracle_expat_resume",
+  "original_candidate_id": "630890f1ac4752b019e13c1f559d9f8f8e4be89e9f74f43dde4da95843030219",
+  "original_size_characters": 6,
+  "passing_candidates": 4,
+  "reduction_percentage": 0.0,
+  "unique_candidates": 19,
+  "unresolved_candidates": 14
+}

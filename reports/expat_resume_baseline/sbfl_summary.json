@@ -1,0 +1,73 @@
+{
+  "buggy_source": "/home/user/ddmin-xml-sbfl/third_party/expat-2.2.5/expat/lib/xmlparse.c",
+  "coverage_records": "/home/user/ddmin-xml-sbfl/results/expat_resume/ddmin_runs/20260827_191442_269590/coverage/coverage.jsonl",
+  "ddmin_run_directory": "/home/user/ddmin-xml-sbfl/results/expat_resume/ddmin_runs/20260827_191442_269590",
+  "executable_line_count": 3682,
+  "failing_tests": 1,
+  "jaccard": {
+    "average_rank": 283.5,
+    "best_rank": 42,
+    "exam_percentage_average": 7.699619771863118,
+    "exam_score_average": 0.07699619771863118,
+    "executable_line_count": 3682,
+    "fault_lines": [
+      {
+        "average_rank": 283.5,
+        "best_rank": 42,
+        "exam_score_average": 0.07699619771863118,
+        "line": 2912,
+        "score": 0.2,
+        "source": "!((parser->m_parsingStatus.parsing == XML_FINISHED) || (parser->m_parsingStatus.parsing == XML_SUSPENDED))) {",
+        "worst_rank": 525
+      }
+    ],
+    "first_fault_line": 2912,
+    "first_fault_score": 0.2,
+    "first_fault_source": "!((parser->m_parsingStatus.parsing == XML_FINISHED) || (parser->m_parsingStatus.parsing == XML_SUSPENDED))) {",
+    "inspect_at_average_rank": {
+      "1": false,
+      "10": false,
+      "3": false,
+      "5": false
+    },
+    "worst_rank": 525
+  },
+  "known_fault_lines": [
+    2912
+  ],
+  "ochiai": {
+    "average_rank": 283.5,
+    "best_rank": 42,
+    "exam_percentage_average": 7.699619771863118,
+    "exam_score_average": 0.07699619771863118,
+    "executable_line_count": 3682,
+    "fault_lines": [
+      {
+        "average_rank": 283.5,
+        "best_rank": 42,
+        "exam_score_average": 0.07699619771863118,
+        "line": 2912,
+        "score": 0.4472135954999579,
+        "source": "!((parser->m_parsingStatus.parsing == XML_FINISHED) || (parser->m_parsingStatus.parsing == XML_SUSPENDED))) {",
+        "worst_rank": 525
+      }
+    ],
+    "first_fault_line": 2912,
+    "first_fault_score": 0.4472135954999579,
+    "first_fault_source": "!((parser->m_parsingStatus.parsing == XML_FINISHED) || (parser->m_parsingStatus.parsing == XML_SUSPENDED))) {",
+    "inspect_at_average_rank": {
+      "1": false,
+      "10": false,
+      "3": false,
+      "5": false
+    },
+    "worst_rank": 525
+  },
+  "output_files": {
+    "jaccard_ranking": "/home/user/ddmin-xml-sbfl/results/expat_resume/ddmin_runs/20260827_191442_269590/sbfl/jaccard_ranking.csv",
+    "ochiai_ranking": "/home/user/ddmin-xml-sbfl/results/expat_resume/ddmin_runs/20260827_191442_269590/sbfl/ochiai_ranking.csv",
+    "spectrum": "/home/user/ddmin-xml-sbfl/results/expat_resume/ddmin_runs/20260827_191442_269590/sbfl/spectrum.csv"
+  },
+  "passing_tests": 4,
+  "total_tests": 5
+}
