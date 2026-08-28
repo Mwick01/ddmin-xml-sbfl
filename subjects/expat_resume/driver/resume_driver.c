@@ -115,7 +115,26 @@ int main(
         free(input);
         return 2;
     }
+    
+    /*
+     * Make Expat's internal hash behavior deterministic.
+     *
+     * This is used only for the experimental harness so that
+     * repeated executions of the same XML produce the same
+     * coverage map.
+     */
+    if (!XML_SetHashSalt(parser, 1UL)) {
+        fprintf(
+            stderr,
+            "HASH_SALT_ERROR\n"
+        );
 
+        XML_ParserFree(parser);
+        free(input);
+
+        return 2;
+    }
+    
     XML_SetElementHandler(
         parser,
         NULL,

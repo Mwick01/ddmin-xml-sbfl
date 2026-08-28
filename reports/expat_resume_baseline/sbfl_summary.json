@@ -5,20 +5,20 @@
   "executable_line_count": 3682,
   "failing_tests": 1,
   "jaccard": {
-    "average_rank": 283.5,
+    "average_rank": 282.5,
     "best_rank": 42,
-    "exam_percentage_average": 7.699619771863118,
-    "exam_score_average": 0.07699619771863118,
+    "exam_percentage_average": 7.67246061922868,
+    "exam_score_average": 0.0767246061922868,
     "executable_line_count": 3682,
     "fault_lines": [
       {
-        "average_rank": 283.5,
+        "average_rank": 282.5,
         "best_rank": 42,
-        "exam_score_average": 0.07699619771863118,
+        "exam_score_average": 0.0767246061922868,
         "line": 2912,
         "score": 0.2,
         "source": "!((parser->m_parsingStatus.parsing == XML_FINISHED) || (parser->m_parsingStatus.parsing == XML_SUSPENDED))) {",
-        "worst_rank": 525
+        "worst_rank": 523
       }
     ],
     "first_fault_line": 2912,
@@ -30,26 +30,26 @@
       "3": false,
       "5": false
     },
-    "worst_rank": 525
+    "worst_rank": 523
   },
   "known_fault_lines": [
     2912
   ],
   "ochiai": {
-    "average_rank": 283.5,
+    "average_rank": 282.5,
     "best_rank": 42,
-    "exam_percentage_average": 7.699619771863118,
-    "exam_score_average": 0.07699619771863118,
+    "exam_percentage_average": 7.67246061922868,
+    "exam_score_average": 0.0767246061922868,
     "executable_line_count": 3682,
     "fault_lines": [
       {
-        "average_rank": 283.5,
+        "average_rank": 282.5,
         "best_rank": 42,
-        "exam_score_average": 0.07699619771863118,
+        "exam_score_average": 0.0767246061922868,
         "line": 2912,
         "score": 0.4472135954999579,
         "source": "!((parser->m_parsingStatus.parsing == XML_FINISHED) || (parser->m_parsingStatus.parsing == XML_SUSPENDED))) {",
-        "worst_rank": 525
+        "worst_rank": 523
       }
     ],
     "first_fault_line": 2912,
@@ -61,7 +61,7 @@
       "3": false,
       "5": false
     },
-    "worst_rank": 525
+    "worst_rank": 523
   },
   "output_files": {
     "jaccard_ranking": "/home/user/ddmin-xml-sbfl/results/expat_resume/ddmin_runs/20260827_191442_269590/sbfl/jaccard_ranking.csv",
