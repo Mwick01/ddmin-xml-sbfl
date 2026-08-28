@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Peach
+    xmlns="http://peachfuzzer.com/2012/Peach"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://peachfuzzer.com/2012/Peach /peach/peach.xsd">
+
+    <!--
+        Peach PIT for the Expat XML_ResumeParser regression.
+
+        DDMIN minimal failing input:
+            <doc/>
+
+        Known buggy version:
+            Expat R_2_2_5
+
+        Fixed version:
+            Expat R_2_2_6
+    -->
+
+    <DataModel name="ExpatResume">
+
+        <Block name="Document">
+
+            <String
+                name="ElementOpen"
+                value="&lt;"
+                token="true"
+            />
+
+            <String
+                name="RootName"
+                value="doc"
+            />
+
+            <String
+                name="SelfClose"
+                value="/&gt;"
+                token="true"
+            />
+
+        </Block>
+
+    </DataModel>
+
+
+    <StateModel
+        name="TheState"
+        initialState="Initial">
+
+        <State name="Initial">
+
+            <Action type="output">
+
+                <DataModel ref="ExpatResume"/>
+
+                <Data fileName="/dev/null"/>
+
+            </Action>
+
+            <Action type="close"/>
+
+        </State>
+
+    </StateModel>
+
+
+    <Test name="Default">
+
+        <StateModel ref="TheState"/>
+
+        <Publisher class="File">
+
+            <Param
+                name="FileName"
+                value="repaired"
+            />
+
+        </Publisher>
+
+        <Logger class="Filesystem">
+
+            <Param
+                name="Path"
+                value="logs"
+            />
+
+        </Logger>
+
+    </Test>
+
+</Peach>
