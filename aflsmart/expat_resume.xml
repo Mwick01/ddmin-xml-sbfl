@@ -5,32 +5,80 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://peachfuzzer.com/2012/Peach /peach/peach.xsd">
 
-    <!--
-        Peach PIT for the Expat XML_ResumeParser regression.
-
-        DDMIN minimal failing input:
-            <doc/>
-
-        Known buggy version:
-            Expat R_2_2_5
-
-        Fixed version:
-            Expat R_2_2_6
-    -->
-
     <DataModel name="ExpatResume">
 
-        <Block name="Document">
+        <Block name="ProcessingInstruction">
+
+            <String
+                name="PIOpen"
+                value="&lt;?"
+                token="true"
+                mutable="false"
+            />
+
+            <String
+                name="PIBody"
+                value="xml version=&quot;1.0&quot;"
+            />
+
+            <String
+                name="PIClose"
+                value="?&gt;"
+                token="true"
+                mutable="false"
+            />
+
+        </Block>
+
+
+        <Block name="Comment">
+
+            <String
+                name="CommentOpen"
+                value="&lt;!--"
+                token="true"
+                mutable="false"
+            />
+
+            <String
+                name="CommentBody"
+                value="probe"
+            />
+
+            <String
+                name="CommentClose"
+                value="--&gt;"
+                token="true"
+                mutable="false"
+            />
+
+        </Block>
+
+
+        <Block name="RootElement">
 
             <String
                 name="ElementOpen"
                 value="&lt;"
                 token="true"
+                mutable="false"
             />
 
             <String
                 name="RootName"
                 value="doc"
+            />
+
+            <String
+                name="NameAttributeSeparator"
+                value=" "
+                token="true"
+                mutable="false"
+            />
+
+            <String
+                name="Attributes"
+                value="a=&quot;1&quot;"
             />
 
             <String
@@ -40,6 +88,12 @@
             />
 
         </Block>
+
+
+        <String
+            name="TrailingWhitespace"
+            value=""
+        />
 
     </DataModel>
 
