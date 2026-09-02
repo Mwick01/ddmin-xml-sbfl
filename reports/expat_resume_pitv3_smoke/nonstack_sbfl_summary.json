@@ -1,0 +1,73 @@
+{
+  "buggy_source": "/home/user/ddmin-xml-sbfl/third_party/expat-2.2.5/expat/lib/xmlparse.c",
+  "coverage_records": "/home/user/ddmin-xml-sbfl/results/expat_resume/smoke_pitv3_retry/augmented/aflsmart-nonstack/coverage/coverage.jsonl",
+  "ddmin_run_directory": "/home/user/ddmin-xml-sbfl/results/expat_resume/smoke_pitv3_retry/augmented/aflsmart-nonstack",
+  "executable_line_count": 3682,
+  "failing_tests": 22,
+  "jaccard": {
+    "average_rank": 288.5,
+    "best_rank": 48,
+    "exam_percentage_average": 7.835415535035307,
+    "exam_score_average": 0.07835415535035307,
+    "executable_line_count": 3682,
+    "fault_lines": [
+      {
+        "average_rank": 288.5,
+        "best_rank": 48,
+        "exam_score_average": 0.07835415535035307,
+        "line": 2912,
+        "score": 0.5789473684210527,
+        "source": "!((parser->m_parsingStatus.parsing == XML_FINISHED) || (parser->m_parsingStatus.parsing == XML_SUSPENDED))) {",
+        "worst_rank": 529
+      }
+    ],
+    "first_fault_line": 2912,
+    "first_fault_score": 0.5789473684210527,
+    "first_fault_source": "!((parser->m_parsingStatus.parsing == XML_FINISHED) || (parser->m_parsingStatus.parsing == XML_SUSPENDED))) {",
+    "inspect_at_average_rank": {
+      "1": false,
+      "10": false,
+      "3": false,
+      "5": false
+    },
+    "worst_rank": 529
+  },
+  "known_fault_lines": [
+    2912
+  ],
+  "ochiai": {
+    "average_rank": 288.5,
+    "best_rank": 48,
+    "exam_percentage_average": 7.835415535035307,
+    "exam_score_average": 0.07835415535035307,
+    "executable_line_count": 3682,
+    "fault_lines": [
+      {
+        "average_rank": 288.5,
+        "best_rank": 48,
+        "exam_score_average": 0.07835415535035307,
+        "line": 2912,
+        "score": 0.760885910252682,
+        "source": "!((parser->m_parsingStatus.parsing == XML_FINISHED) || (parser->m_parsingStatus.parsing == XML_SUSPENDED))) {",
+        "worst_rank": 529
+      }
+    ],
+    "first_fault_line": 2912,
+    "first_fault_score": 0.760885910252682,
+    "first_fault_source": "!((parser->m_parsingStatus.parsing == XML_FINISHED) || (parser->m_parsingStatus.parsing == XML_SUSPENDED))) {",
+    "inspect_at_average_rank": {
+      "1": false,
+      "10": false,
+      "3": false,
+      "5": false
+    },
+    "worst_rank": 529
+  },
+  "output_files": {
+    "jaccard_ranking": "/home/user/ddmin-xml-sbfl/results/expat_resume/smoke_pitv3_retry/augmented/aflsmart-nonstack/sbfl/jaccard_ranking.csv",
+    "ochiai_ranking": "/home/user/ddmin-xml-sbfl/results/expat_resume/smoke_pitv3_retry/augmented/aflsmart-nonstack/sbfl/ochiai_ranking.csv",
+    "spectrum": "/home/user/ddmin-xml-sbfl/results/expat_resume/smoke_pitv3_retry/augmented/aflsmart-nonstack/sbfl/spectrum.csv"
+  },
+  "passing_tests": 16,
+  "total_tests": 38
+}
