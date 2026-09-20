@@ -8,6 +8,7 @@ import hashlib
 import importlib
 import json
 import os
+import random
 import shlex
 import shutil
 import subprocess
@@ -385,6 +386,17 @@ def main() -> None:
         help="Default: results/<subject>/formal_<duration>s",
     )
     parser.add_argument("--allow-dirty", action="store_true")
+
+    parser.add_argument(
+        "--order-seed",
+        type=int,
+        default=20260920,
+        help=(
+            "Seed used only to randomize method execution "
+            "order within each repetition."
+        ),
+    )
+
     arguments = parser.parse_args()
 
     subject = SUBJECTS[arguments.subject]
@@ -412,7 +424,23 @@ def main() -> None:
         rep_directory = results_root / f"rep{repetition:02d}"
         rep_directory.mkdir(parents=True, exist_ok=True)
 
-        for mode in arguments.modes:
+        ordered_modes = list(arguments.modes)
+
+        order_rng = random.Random(
+            arguments.order_seed + repetition
+        )
+
+        order_rng.shuffle(ordered_modes)
+
+        print(
+            f"Repetition {repetition} mode order: "
+            + " -> ".join(ordered_modes)
+        )
+
+        for order_index, mode in enumerate(
+            ordered_modes,
+            start=1,
+        ):
             run_directory = rep_directory / mode
             raw_directory = run_directory / "raw"
 
@@ -454,6 +482,9 @@ def main() -> None:
                 "mode": mode,
                 "repetition": repetition,
                 "duration_seconds": arguments.duration,
+                "execution_order_index": order_index,
+                "execution_order": ordered_modes,
+                "order_seed": arguments.order_seed,
                 "git_commit": commit,
                 "git_dirty": dirty,
                 "docker_image": IMAGE,
