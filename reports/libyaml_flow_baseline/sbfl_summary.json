@@ -1,0 +1,73 @@
+{
+  "buggy_source": "/home/user/ddmin-xml-sbfl/third_party/libyaml-588eabf/src/parser.c",
+  "coverage_records": "/home/user/ddmin-xml-sbfl/results/libyaml_flow/ddmin_rich_runs/20260921_232140_207481/coverage/coverage.jsonl",
+  "ddmin_run_directory": "/home/user/ddmin-xml-sbfl/results/libyaml_flow/ddmin_rich_runs/20260921_232140_207481",
+  "executable_line_count": 603,
+  "failing_tests": 16,
+  "jaccard": {
+    "average_rank": 9.0,
+    "best_rank": 1,
+    "exam_percentage_average": 1.492537313432836,
+    "exam_score_average": 0.014925373134328358,
+    "executable_line_count": 603,
+    "fault_lines": [
+      {
+        "average_rank": 9.0,
+        "best_rank": 1,
+        "exam_score_average": 0.014925373134328358,
+        "line": 1062,
+        "score": 1.0,
+        "source": "parser->state = POP(parser, parser->states);",
+        "worst_rank": 17
+      }
+    ],
+    "first_fault_line": 1062,
+    "first_fault_score": 1.0,
+    "first_fault_source": "parser->state = POP(parser, parser->states);",
+    "inspect_at_average_rank": {
+      "1": false,
+      "10": true,
+      "3": false,
+      "5": false
+    },
+    "worst_rank": 17
+  },
+  "known_fault_lines": [
+    1062
+  ],
+  "ochiai": {
+    "average_rank": 9.0,
+    "best_rank": 1,
+    "exam_percentage_average": 1.492537313432836,
+    "exam_score_average": 0.014925373134328358,
+    "executable_line_count": 603,
+    "fault_lines": [
+      {
+        "average_rank": 9.0,
+        "best_rank": 1,
+        "exam_score_average": 0.014925373134328358,
+        "line": 1062,
+        "score": 1.0,
+        "source": "parser->state = POP(parser, parser->states);",
+        "worst_rank": 17
+      }
+    ],
+    "first_fault_line": 1062,
+    "first_fault_score": 1.0,
+    "first_fault_source": "parser->state = POP(parser, parser->states);",
+    "inspect_at_average_rank": {
+      "1": false,
+      "10": true,
+      "3": false,
+      "5": false
+    },
+    "worst_rank": 17
+  },
+  "output_files": {
+    "jaccard_ranking": "/home/user/ddmin-xml-sbfl/results/libyaml_flow/ddmin_rich_runs/20260921_232140_207481/sbfl/jaccard_ranking.csv",
+    "ochiai_ranking": "/home/user/ddmin-xml-sbfl/results/libyaml_flow/ddmin_rich_runs/20260921_232140_207481/sbfl/ochiai_ranking.csv",
+    "spectrum": "/home/user/ddmin-xml-sbfl/results/libyaml_flow/ddmin_rich_runs/20260921_232140_207481/sbfl/spectrum.csv"
+  },
+  "passing_tests": 25,
+  "total_tests": 41
+}

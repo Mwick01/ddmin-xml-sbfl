@@ -1,0 +1,604 @@
+line,source,ef,ep,nf,np,jaccard,ochiai,faulty
+172,yaml_set_max_nest_level(int max),0,0,16,25,0.000000000000,0.000000000000,False
+174,MAX_NESTING_LEVEL = max;,0,0,16,25,0.000000000000,0.000000000000,False
+175,},0,0,16,25,0.000000000000,0.000000000000,False
+182,"yaml_parser_parse(yaml_parser_t *parser, yaml_event_t *event)",16,25,0,0,0.390243902439,0.624695047554,False
+184,assert(parser);     /* Non-NULL parser object is expected. */,16,25,0,0,0.390243902439,0.624695047554,False
+185,assert(event);      /* Non-NULL event object is expected. */,16,25,0,0,0.390243902439,0.624695047554,False
+189,"memset(event, 0, sizeof(yaml_event_t));",16,25,0,0,0.390243902439,0.624695047554,False
+193,if (parser->stream_end_produced || parser->error ||,16,25,0,0,0.390243902439,0.624695047554,False
+194,parser->state == YAML_PARSE_END_STATE) {,16,25,0,0,0.390243902439,0.624695047554,False
+195,return 1;,0,0,16,25,0.000000000000,0.000000000000,False
+200,"return yaml_parser_state_machine(parser, event);",16,25,0,0,0.390243902439,0.624695047554,False
+208,"yaml_parser_set_parser_error(yaml_parser_t *parser,",0,0,16,25,0.000000000000,0.000000000000,False
+211,parser->error = YAML_PARSER_ERROR;,0,0,16,25,0.000000000000,0.000000000000,False
+212,parser->problem = problem;,0,0,16,25,0.000000000000,0.000000000000,False
+213,parser->problem_mark = problem_mark;,0,0,16,25,0.000000000000,0.000000000000,False
+215,return 0;,0,0,16,25,0.000000000000,0.000000000000,False
+219,"yaml_parser_set_parser_error_context(yaml_parser_t *parser,",0,0,16,25,0.000000000000,0.000000000000,False
+223,parser->error = YAML_PARSER_ERROR;,0,0,16,25,0.000000000000,0.000000000000,False
+224,parser->context = context;,0,0,16,25,0.000000000000,0.000000000000,False
+225,parser->context_mark = context_mark;,0,0,16,25,0.000000000000,0.000000000000,False
+226,parser->problem = problem;,0,0,16,25,0.000000000000,0.000000000000,False
+227,parser->problem_mark = problem_mark;,0,0,16,25,0.000000000000,0.000000000000,False
+229,return 0;,0,0,16,25,0.000000000000,0.000000000000,False
+233,"yaml_maximum_level_reached(yaml_parser_t *parser,",0,0,16,25,0.000000000000,0.000000000000,False
+236,"yaml_parser_set_parser_error_context(parser,",0,0,16,25,0.000000000000,0.000000000000,False
+238,return 0;,0,0,16,25,0.000000000000,0.000000000000,False
+246,"yaml_parser_state_machine(yaml_parser_t *parser, yaml_event_t *event)",16,25,0,0,0.390243902439,0.624695047554,False
+248,switch (parser->state),16,25,0,0,0.390243902439,0.624695047554,False
+250,case YAML_PARSE_STREAM_START_STATE:,16,25,0,0,0.390243902439,0.624695047554,False
+251,"return yaml_parser_parse_stream_start(parser, event);",16,25,0,0,0.390243902439,0.624695047554,False
+253,case YAML_PARSE_IMPLICIT_DOCUMENT_START_STATE:,16,25,0,0,0.390243902439,0.624695047554,False
+254,"return yaml_parser_parse_document_start(parser, event, 1);",16,25,0,0,0.390243902439,0.624695047554,False
+256,case YAML_PARSE_DOCUMENT_START_STATE:,16,23,0,2,0.410256410256,0.640512615220,False
+257,"return yaml_parser_parse_document_start(parser, event, 0);",16,23,0,2,0.410256410256,0.640512615220,False
+259,case YAML_PARSE_DOCUMENT_CONTENT_STATE:,3,2,13,23,0.166666666667,0.335410196625,False
+260,"return yaml_parser_parse_document_content(parser, event);",3,2,13,23,0.166666666667,0.335410196625,False
+262,case YAML_PARSE_DOCUMENT_END_STATE:,16,23,0,2,0.410256410256,0.640512615220,False
+263,"return yaml_parser_parse_document_end(parser, event);",16,23,0,2,0.410256410256,0.640512615220,False
+265,case YAML_PARSE_BLOCK_NODE_STATE:,13,21,3,4,0.351351351351,0.557370401713,False
+266,"return yaml_parser_parse_node(parser, event, 1, 0);",13,21,3,4,0.351351351351,0.557370401713,False
+268,case YAML_PARSE_BLOCK_NODE_OR_INDENTLESS_SEQUENCE_STATE:,0,0,16,25,0.000000000000,0.000000000000,False
+269,"return yaml_parser_parse_node(parser, event, 1, 1);",0,0,16,25,0.000000000000,0.000000000000,False
+271,case YAML_PARSE_FLOW_NODE_STATE:,0,0,16,25,0.000000000000,0.000000000000,False
+272,"return yaml_parser_parse_node(parser, event, 0, 0);",0,0,16,25,0.000000000000,0.000000000000,False
+274,case YAML_PARSE_BLOCK_SEQUENCE_FIRST_ENTRY_STATE:,0,0,16,25,0.000000000000,0.000000000000,False
+275,"return yaml_parser_parse_block_sequence_entry(parser, event, 1);",0,0,16,25,0.000000000000,0.000000000000,False
+277,case YAML_PARSE_BLOCK_SEQUENCE_ENTRY_STATE:,0,0,16,25,0.000000000000,0.000000000000,False
+278,"return yaml_parser_parse_block_sequence_entry(parser, event, 0);",0,0,16,25,0.000000000000,0.000000000000,False
+280,case YAML_PARSE_INDENTLESS_SEQUENCE_ENTRY_STATE:,0,0,16,25,0.000000000000,0.000000000000,False
+281,"return yaml_parser_parse_indentless_sequence_entry(parser, event);",0,0,16,25,0.000000000000,0.000000000000,False
+283,case YAML_PARSE_BLOCK_MAPPING_FIRST_KEY_STATE:,0,4,16,21,0.000000000000,0.000000000000,False
+284,"return yaml_parser_parse_block_mapping_key(parser, event, 1);",0,4,16,21,0.000000000000,0.000000000000,False
+286,case YAML_PARSE_BLOCK_MAPPING_KEY_STATE:,0,4,16,21,0.000000000000,0.000000000000,False
+287,"return yaml_parser_parse_block_mapping_key(parser, event, 0);",0,4,16,21,0.000000000000,0.000000000000,False
+289,case YAML_PARSE_BLOCK_MAPPING_VALUE_STATE:,0,4,16,21,0.000000000000,0.000000000000,False
+290,"return yaml_parser_parse_block_mapping_value(parser, event);",0,4,16,21,0.000000000000,0.000000000000,False
+292,case YAML_PARSE_FLOW_SEQUENCE_FIRST_ENTRY_STATE:,16,4,0,21,0.800000000000,0.894427191000,False
+293,"return yaml_parser_parse_flow_sequence_entry(parser, event, 1);",16,4,0,21,0.800000000000,0.894427191000,False
+295,case YAML_PARSE_FLOW_SEQUENCE_ENTRY_STATE:,16,4,0,21,0.800000000000,0.894427191000,False
+296,"return yaml_parser_parse_flow_sequence_entry(parser, event, 0);",16,4,0,21,0.800000000000,0.894427191000,False
+298,case YAML_PARSE_FLOW_SEQUENCE_ENTRY_MAPPING_KEY_STATE:,16,0,0,25,1.000000000000,1.000000000000,False
+299,"return yaml_parser_parse_flow_sequence_entry_mapping_key(parser, event);",16,0,0,25,1.000000000000,1.000000000000,False
+301,case YAML_PARSE_FLOW_SEQUENCE_ENTRY_MAPPING_VALUE_STATE:,0,0,16,25,0.000000000000,0.000000000000,False
+302,"return yaml_parser_parse_flow_sequence_entry_mapping_value(parser, event);",0,0,16,25,0.000000000000,0.000000000000,False
+304,case YAML_PARSE_FLOW_SEQUENCE_ENTRY_MAPPING_END_STATE:,0,0,16,25,0.000000000000,0.000000000000,False
+305,"return yaml_parser_parse_flow_sequence_entry_mapping_end(parser, event);",0,0,16,25,0.000000000000,0.000000000000,False
+307,case YAML_PARSE_FLOW_MAPPING_FIRST_KEY_STATE:,16,4,0,21,0.800000000000,0.894427191000,False
+308,"return yaml_parser_parse_flow_mapping_key(parser, event, 1);",16,4,0,21,0.800000000000,0.894427191000,False
+310,case YAML_PARSE_FLOW_MAPPING_KEY_STATE:,16,4,0,21,0.800000000000,0.894427191000,False
+311,"return yaml_parser_parse_flow_mapping_key(parser, event, 0);",16,4,0,21,0.800000000000,0.894427191000,False
+313,case YAML_PARSE_FLOW_MAPPING_VALUE_STATE:,16,4,0,21,0.800000000000,0.894427191000,False
+314,"return yaml_parser_parse_flow_mapping_value(parser, event, 0);",16,4,0,21,0.800000000000,0.894427191000,False
+316,case YAML_PARSE_FLOW_MAPPING_EMPTY_VALUE_STATE:,5,0,11,25,0.312500000000,0.559016994375,False
+317,"return yaml_parser_parse_flow_mapping_value(parser, event, 1);",5,0,11,25,0.312500000000,0.559016994375,False
+319,default:,0,0,16,25,0.000000000000,0.000000000000,False
+323,return 0;,0,0,16,25,0.000000000000,0.000000000000,False
+333,"yaml_parser_parse_stream_start(yaml_parser_t *parser, yaml_event_t *event)",16,25,0,0,0.390243902439,0.624695047554,False
+337,token = PEEK_TOKEN(parser);,16,25,0,0,0.390243902439,0.624695047554,False
+338,if (!token) return 0;,16,25,0,0,0.390243902439,0.624695047554,False
+340,if (token->type != YAML_STREAM_START_TOKEN) {,16,25,0,0,0.390243902439,0.624695047554,False
+341,"return yaml_parser_set_parser_error(parser,",0,0,16,25,0.000000000000,0.000000000000,False
+345,parser->state = YAML_PARSE_IMPLICIT_DOCUMENT_START_STATE;,16,25,0,0,0.390243902439,0.624695047554,False
+346,"STREAM_START_EVENT_INIT(*event, token->data.stream_start.encoding,",16,25,0,0,0.390243902439,0.624695047554,False
+348,SKIP_TOKEN(parser);,16,25,0,0,0.390243902439,0.624695047554,False
+350,return 1;,16,25,0,0,0.390243902439,0.624695047554,False
+362,"yaml_parser_parse_document_start(yaml_parser_t *parser, yaml_event_t *event,",16,25,0,0,0.390243902439,0.624695047554,False
+366,yaml_version_directive_t *version_directive = NULL;,16,25,0,0,0.390243902439,0.624695047554,False
+370,"} tag_directives = { NULL, NULL };",16,25,0,0,0.390243902439,0.624695047554,False
+372,token = PEEK_TOKEN(parser);,16,25,0,0,0.390243902439,0.624695047554,False
+373,if (!token) return 0;,16,25,0,0,0.390243902439,0.624695047554,False
+377,if (!implicit),16,25,0,0,0.390243902439,0.624695047554,False
+379,while (token->type == YAML_DOCUMENT_END_TOKEN) {,16,23,0,2,0.410256410256,0.640512615220,False
+380,SKIP_TOKEN(parser);,0,0,16,25,0.000000000000,0.000000000000,False
+381,token = PEEK_TOKEN(parser);,0,0,16,25,0.000000000000,0.000000000000,False
+382,if (!token) return 0;,0,0,16,25,0.000000000000,0.000000000000,False
+388,if (implicit && token->type != YAML_VERSION_DIRECTIVE_TOKEN &&,16,25,0,0,0.390243902439,0.624695047554,False
+389,token->type != YAML_TAG_DIRECTIVE_TOKEN &&,16,25,0,0,0.390243902439,0.624695047554,False
+390,token->type != YAML_DOCUMENT_START_TOKEN &&,16,25,0,0,0.390243902439,0.624695047554,False
+391,token->type != YAML_STREAM_END_TOKEN),13,23,3,2,0.333333333333,0.541666666667,False
+393,"if (!yaml_parser_process_directives(parser, NULL, NULL, NULL))",13,21,3,4,0.351351351351,0.557370401713,False
+394,return 0;,0,0,16,25,0.000000000000,0.000000000000,False
+395,"if (!PUSH(parser, parser->states, YAML_PARSE_DOCUMENT_END_STATE))",13,21,3,4,0.351351351351,0.557370401713,False
+396,return 0;,0,0,16,25,0.000000000000,0.000000000000,False
+397,parser->state = YAML_PARSE_BLOCK_NODE_STATE;,13,21,3,4,0.351351351351,0.557370401713,False
+398,"DOCUMENT_START_EVENT_INIT(*event, NULL, NULL, NULL, 1,",13,21,3,4,0.351351351351,0.557370401713,False
+400,return 1;,13,21,3,4,0.351351351351,0.557370401713,False
+405,else if (token->type != YAML_STREAM_END_TOKEN),16,25,0,0,0.390243902439,0.624695047554,False
+408,start_mark = token->start_mark;,3,2,13,23,0.166666666667,0.335410196625,False
+409,"if (!yaml_parser_process_directives(parser, &version_directive,",3,2,13,23,0.166666666667,0.335410196625,False
+411,return 0;,3,2,13,23,0.166666666667,0.335410196625,False
+412,token = PEEK_TOKEN(parser);,3,2,13,23,0.166666666667,0.335410196625,False
+413,if (!token) goto error;,3,2,13,23,0.166666666667,0.335410196625,False
+414,if (token->type != YAML_DOCUMENT_START_TOKEN) {,3,2,13,23,0.166666666667,0.335410196625,False
+415,"yaml_parser_set_parser_error(parser,",0,0,16,25,0.000000000000,0.000000000000,False
+417,goto error;,0,0,16,25,0.000000000000,0.000000000000,False
+419,"if (!PUSH(parser, parser->states, YAML_PARSE_DOCUMENT_END_STATE))",3,2,13,23,0.166666666667,0.335410196625,False
+420,goto error;,0,0,16,25,0.000000000000,0.000000000000,False
+421,parser->state = YAML_PARSE_DOCUMENT_CONTENT_STATE;,3,2,13,23,0.166666666667,0.335410196625,False
+422,end_mark = token->end_mark;,3,2,13,23,0.166666666667,0.335410196625,False
+423,"DOCUMENT_START_EVENT_INIT(*event, version_directive,",3,2,13,23,0.166666666667,0.335410196625,False
+426,SKIP_TOKEN(parser);,3,2,13,23,0.166666666667,0.335410196625,False
+427,version_directive = NULL;,3,2,13,23,0.166666666667,0.335410196625,False
+428,tag_directives.start = tag_directives.end = NULL;,3,2,13,23,0.166666666667,0.335410196625,False
+429,return 1;,3,2,13,23,0.166666666667,0.335410196625,False
+436,parser->state = YAML_PARSE_END_STATE;,16,25,0,0,0.390243902439,0.624695047554,False
+437,"STREAM_END_EVENT_INIT(*event, token->start_mark, token->end_mark);",16,25,0,0,0.390243902439,0.624695047554,False
+438,SKIP_TOKEN(parser);,16,25,0,0,0.390243902439,0.624695047554,False
+439,return 1;,16,25,0,0,0.390243902439,0.624695047554,False
+442,error:,0,0,16,25,0.000000000000,0.000000000000,False
+443,yaml_free(version_directive);,0,0,16,25,0.000000000000,0.000000000000,False
+444,while (tag_directives.start != tag_directives.end) {,0,0,16,25,0.000000000000,0.000000000000,False
+445,yaml_free(tag_directives.end[-1].handle);,0,0,16,25,0.000000000000,0.000000000000,False
+446,yaml_free(tag_directives.end[-1].prefix);,0,0,16,25,0.000000000000,0.000000000000,False
+447,tag_directives.end --;,0,0,16,25,0.000000000000,0.000000000000,False
+449,yaml_free(tag_directives.start);,0,0,16,25,0.000000000000,0.000000000000,False
+450,return 0;,0,0,16,25,0.000000000000,0.000000000000,False
+460,"yaml_parser_parse_document_content(yaml_parser_t *parser, yaml_event_t *event)",3,2,13,23,0.166666666667,0.335410196625,False
+464,token = PEEK_TOKEN(parser);,3,2,13,23,0.166666666667,0.335410196625,False
+465,if (!token) return 0;,3,2,13,23,0.166666666667,0.335410196625,False
+467,if (token->type == YAML_VERSION_DIRECTIVE_TOKEN ||,3,2,13,23,0.166666666667,0.335410196625,False
+468,token->type == YAML_TAG_DIRECTIVE_TOKEN ||,3,2,13,23,0.166666666667,0.335410196625,False
+469,token->type == YAML_DOCUMENT_START_TOKEN ||,3,2,13,23,0.166666666667,0.335410196625,False
+470,token->type == YAML_DOCUMENT_END_TOKEN ||,3,2,13,23,0.166666666667,0.335410196625,False
+471,token->type == YAML_STREAM_END_TOKEN) {,3,2,13,23,0.166666666667,0.335410196625,False
+472,"parser->state = POP(parser, parser->states);",0,1,16,24,0.000000000000,0.000000000000,False
+473,"return yaml_parser_process_empty_scalar(parser, event,",0,1,16,24,0.000000000000,0.000000000000,False
+477,"return yaml_parser_parse_node(parser, event, 1, 0);",3,1,13,24,0.176470588235,0.375000000000,False
+490,"yaml_parser_parse_document_end(yaml_parser_t *parser, yaml_event_t *event)",16,23,0,2,0.410256410256,0.640512615220,False
+494,int implicit = 1;,16,23,0,2,0.410256410256,0.640512615220,False
+496,token = PEEK_TOKEN(parser);,16,23,0,2,0.410256410256,0.640512615220,False
+497,if (!token) return 0;,16,23,0,2,0.410256410256,0.640512615220,False
+499,start_mark = end_mark = token->start_mark;,16,23,0,2,0.410256410256,0.640512615220,False
+501,if (token->type == YAML_DOCUMENT_END_TOKEN) {,16,23,0,2,0.410256410256,0.640512615220,False
+502,end_mark = token->end_mark;,0,0,16,25,0.000000000000,0.000000000000,False
+503,SKIP_TOKEN(parser);,0,0,16,25,0.000000000000,0.000000000000,False
+504,implicit = 0;,0,0,16,25,0.000000000000,0.000000000000,False
+507,"while (!STACK_EMPTY(parser, parser->tag_directives)) {",16,23,0,2,0.410256410256,0.640512615220,False
+508,"yaml_tag_directive_t tag_directive = POP(parser, parser->tag_directives);",16,23,0,2,0.410256410256,0.640512615220,False
+509,yaml_free(tag_directive.handle);,16,23,0,2,0.410256410256,0.640512615220,False
+510,yaml_free(tag_directive.prefix);,16,23,0,2,0.410256410256,0.640512615220,False
+513,parser->state = YAML_PARSE_DOCUMENT_START_STATE;,16,23,0,2,0.410256410256,0.640512615220,False
+514,"DOCUMENT_END_EVENT_INIT(*event, implicit, start_mark, end_mark);",16,23,0,2,0.410256410256,0.640512615220,False
+516,return 1;,16,23,0,2,0.410256410256,0.640512615220,False
+549,"yaml_parser_parse_node(yaml_parser_t *parser, yaml_event_t *event,",16,22,0,3,0.421052631579,0.648885684523,False
+553,yaml_char_t *anchor = NULL;,16,22,0,3,0.421052631579,0.648885684523,False
+554,yaml_char_t *tag_handle = NULL;,16,22,0,3,0.421052631579,0.648885684523,False
+555,yaml_char_t *tag_suffix = NULL;,16,22,0,3,0.421052631579,0.648885684523,False
+556,yaml_char_t *tag = NULL;,16,22,0,3,0.421052631579,0.648885684523,False
+560,token = PEEK_TOKEN(parser);,16,22,0,3,0.421052631579,0.648885684523,False
+561,if (!token) return 0;,16,22,0,3,0.421052631579,0.648885684523,False
+563,if (token->type == YAML_ALIAS_TOKEN),16,22,0,3,0.421052631579,0.648885684523,False
+565,"parser->state = POP(parser, parser->states);",0,0,16,25,0.000000000000,0.000000000000,False
+566,"ALIAS_EVENT_INIT(*event, token->data.alias.value,",0,0,16,25,0.000000000000,0.000000000000,False
+568,SKIP_TOKEN(parser);,0,0,16,25,0.000000000000,0.000000000000,False
+569,return 1;,0,0,16,25,0.000000000000,0.000000000000,False
+574,start_mark = end_mark = token->start_mark;,16,22,0,3,0.421052631579,0.648885684523,False
+576,if (token->type == YAML_ANCHOR_TOKEN),16,22,0,3,0.421052631579,0.648885684523,False
+578,anchor = token->data.anchor.value;,0,0,16,25,0.000000000000,0.000000000000,False
+579,start_mark = token->start_mark;,0,0,16,25,0.000000000000,0.000000000000,False
+580,end_mark = token->end_mark;,0,0,16,25,0.000000000000,0.000000000000,False
+581,SKIP_TOKEN(parser);,0,0,16,25,0.000000000000,0.000000000000,False
+582,token = PEEK_TOKEN(parser);,0,0,16,25,0.000000000000,0.000000000000,False
+583,if (!token) goto error;,0,0,16,25,0.000000000000,0.000000000000,False
+584,if (token->type == YAML_TAG_TOKEN),0,0,16,25,0.000000000000,0.000000000000,False
+586,tag_handle = token->data.tag.handle;,0,0,16,25,0.000000000000,0.000000000000,False
+587,tag_suffix = token->data.tag.suffix;,0,0,16,25,0.000000000000,0.000000000000,False
+588,tag_mark = token->start_mark;,0,0,16,25,0.000000000000,0.000000000000,False
+589,end_mark = token->end_mark;,0,0,16,25,0.000000000000,0.000000000000,False
+590,SKIP_TOKEN(parser);,0,0,16,25,0.000000000000,0.000000000000,False
+591,token = PEEK_TOKEN(parser);,0,0,16,25,0.000000000000,0.000000000000,False
+592,if (!token) goto error;,0,0,16,25,0.000000000000,0.000000000000,False
+595,else if (token->type == YAML_TAG_TOKEN),16,22,0,3,0.421052631579,0.648885684523,False
+597,tag_handle = token->data.tag.handle;,0,0,16,25,0.000000000000,0.000000000000,False
+598,tag_suffix = token->data.tag.suffix;,0,0,16,25,0.000000000000,0.000000000000,False
+599,start_mark = tag_mark = token->start_mark;,0,0,16,25,0.000000000000,0.000000000000,False
+600,end_mark = token->end_mark;,0,0,16,25,0.000000000000,0.000000000000,False
+601,SKIP_TOKEN(parser);,0,0,16,25,0.000000000000,0.000000000000,False
+602,token = PEEK_TOKEN(parser);,0,0,16,25,0.000000000000,0.000000000000,False
+603,if (!token) goto error;,0,0,16,25,0.000000000000,0.000000000000,False
+604,if (token->type == YAML_ANCHOR_TOKEN),0,0,16,25,0.000000000000,0.000000000000,False
+606,anchor = token->data.anchor.value;,0,0,16,25,0.000000000000,0.000000000000,False
+607,end_mark = token->end_mark;,0,0,16,25,0.000000000000,0.000000000000,False
+608,SKIP_TOKEN(parser);,0,0,16,25,0.000000000000,0.000000000000,False
+609,token = PEEK_TOKEN(parser);,0,0,16,25,0.000000000000,0.000000000000,False
+610,if (!token) goto error;,0,0,16,25,0.000000000000,0.000000000000,False
+614,if (tag_handle) {,16,22,0,3,0.421052631579,0.648885684523,False
+615,if (!*tag_handle) {,0,0,16,25,0.000000000000,0.000000000000,False
+616,tag = tag_suffix;,0,0,16,25,0.000000000000,0.000000000000,False
+617,yaml_free(tag_handle);,0,0,16,25,0.000000000000,0.000000000000,False
+618,tag_handle = tag_suffix = NULL;,0,0,16,25,0.000000000000,0.000000000000,False
+622,for (tag_directive = parser->tag_directives.start;,0,0,16,25,0.000000000000,0.000000000000,False
+623,tag_directive != parser->tag_directives.top;,0,0,16,25,0.000000000000,0.000000000000,False
+624,tag_directive ++) {,0,0,16,25,0.000000000000,0.000000000000,False
+625,"if (strcmp((char *)tag_directive->handle, (char *)tag_handle) == 0) {",0,0,16,25,0.000000000000,0.000000000000,False
+626,size_t prefix_len = strlen((char *)tag_directive->prefix);,0,0,16,25,0.000000000000,0.000000000000,False
+627,size_t suffix_len = strlen((char *)tag_suffix);,0,0,16,25,0.000000000000,0.000000000000,False
+628,tag = YAML_MALLOC(prefix_len+suffix_len+1);,0,0,16,25,0.000000000000,0.000000000000,False
+629,if (!tag) {,0,0,16,25,0.000000000000,0.000000000000,False
+630,parser->error = YAML_MEMORY_ERROR;,0,0,16,25,0.000000000000,0.000000000000,False
+631,goto error;,0,0,16,25,0.000000000000,0.000000000000,False
+633,"memcpy(tag, tag_directive->prefix, prefix_len);",0,0,16,25,0.000000000000,0.000000000000,False
+634,"memcpy(tag+prefix_len, tag_suffix, suffix_len);",0,0,16,25,0.000000000000,0.000000000000,False
+635,tag[prefix_len+suffix_len] = '\0';,0,0,16,25,0.000000000000,0.000000000000,False
+636,yaml_free(tag_handle);,0,0,16,25,0.000000000000,0.000000000000,False
+637,yaml_free(tag_suffix);,0,0,16,25,0.000000000000,0.000000000000,False
+638,tag_handle = tag_suffix = NULL;,0,0,16,25,0.000000000000,0.000000000000,False
+639,break;,0,0,16,25,0.000000000000,0.000000000000,False
+642,if (!tag) {,0,0,16,25,0.000000000000,0.000000000000,False
+643,"yaml_parser_set_parser_error_context(parser,",0,0,16,25,0.000000000000,0.000000000000,False
+646,goto error;,0,0,16,25,0.000000000000,0.000000000000,False
+651,implicit = (!tag || !*tag);,16,22,0,3,0.421052631579,0.648885684523,False
+652,if (indentless_sequence && token->type == YAML_BLOCK_ENTRY_TOKEN) {,16,22,0,3,0.421052631579,0.648885684523,False
+653,end_mark = token->end_mark;,0,0,16,25,0.000000000000,0.000000000000,False
+654,parser->state = YAML_PARSE_INDENTLESS_SEQUENCE_ENTRY_STATE;,0,0,16,25,0.000000000000,0.000000000000,False
+655,"SEQUENCE_START_EVENT_INIT(*event, anchor, tag, implicit,",0,0,16,25,0.000000000000,0.000000000000,False
+657,return 1;,0,0,16,25,0.000000000000,0.000000000000,False
+660,if (token->type == YAML_SCALAR_TOKEN) {,16,22,0,3,0.421052631579,0.648885684523,False
+661,int plain_implicit = 0;,16,21,0,4,0.432432432432,0.657595949221,False
+662,int quoted_implicit = 0;,16,21,0,4,0.432432432432,0.657595949221,False
+663,end_mark = token->end_mark;,16,21,0,4,0.432432432432,0.657595949221,False
+664,if ((token->data.scalar.style == YAML_PLAIN_SCALAR_STYLE && !tag),16,21,0,4,0.432432432432,0.657595949221,False
+665,"|| (tag && strcmp((char *)tag, ""!"") == 0)) {",0,0,16,25,0.000000000000,0.000000000000,False
+666,plain_implicit = 1;,16,21,0,4,0.432432432432,0.657595949221,False
+668,else if (!tag) {,0,0,16,25,0.000000000000,0.000000000000,False
+669,quoted_implicit = 1;,0,0,16,25,0.000000000000,0.000000000000,False
+671,"parser->state = POP(parser, parser->states);",16,21,0,4,0.432432432432,0.657595949221,False
+672,"SCALAR_EVENT_INIT(*event, anchor, tag,",16,21,0,4,0.432432432432,0.657595949221,False
+676,SKIP_TOKEN(parser);,16,21,0,4,0.432432432432,0.657595949221,False
+677,return 1;,16,21,0,4,0.432432432432,0.657595949221,False
+679,else if (token->type == YAML_FLOW_SEQUENCE_START_TOKEN) {,16,8,0,17,0.666666666667,0.816496580928,False
+680,"if (!STACK_LIMIT(parser, parser->indents, MAX_NESTING_LEVEL - parser->flow_level)) {",16,4,0,21,0.800000000000,0.894427191000,False
+681,"yaml_maximum_level_reached(parser, start_mark, token->start_mark);",0,0,16,25,0.000000000000,0.000000000000,False
+682,goto error;,0,0,16,25,0.000000000000,0.000000000000,False
+684,end_mark = token->end_mark;,16,4,0,21,0.800000000000,0.894427191000,False
+685,parser->state = YAML_PARSE_FLOW_SEQUENCE_FIRST_ENTRY_STATE;,16,4,0,21,0.800000000000,0.894427191000,False
+686,"SEQUENCE_START_EVENT_INIT(*event, anchor, tag, implicit,",16,4,0,21,0.800000000000,0.894427191000,False
+688,return 1;,16,4,0,21,0.800000000000,0.894427191000,False
+690,else if (token->type == YAML_FLOW_MAPPING_START_TOKEN) {,16,8,0,17,0.666666666667,0.816496580928,False
+691,"if (!STACK_LIMIT(parser, parser->indents, MAX_NESTING_LEVEL - parser->flow_level)) {",16,4,0,21,0.800000000000,0.894427191000,False
+692,"yaml_maximum_level_reached(parser, start_mark, token->start_mark);",0,0,16,25,0.000000000000,0.000000000000,False
+693,goto error;,0,0,16,25,0.000000000000,0.000000000000,False
+695,end_mark = token->end_mark;,16,4,0,21,0.800000000000,0.894427191000,False
+696,parser->state = YAML_PARSE_FLOW_MAPPING_FIRST_KEY_STATE;,16,4,0,21,0.800000000000,0.894427191000,False
+697,"MAPPING_START_EVENT_INIT(*event, anchor, tag, implicit,",16,4,0,21,0.800000000000,0.894427191000,False
+699,return 1;,16,4,0,21,0.800000000000,0.894427191000,False
+701,else if (block && token->type == YAML_BLOCK_SEQUENCE_START_TOKEN) {,0,4,16,21,0.000000000000,0.000000000000,False
+702,"if (!STACK_LIMIT(parser, parser->indents, MAX_NESTING_LEVEL - parser->flow_level)) {",0,0,16,25,0.000000000000,0.000000000000,False
+703,"yaml_maximum_level_reached(parser, start_mark, token->start_mark);",0,0,16,25,0.000000000000,0.000000000000,False
+704,goto error;,0,0,16,25,0.000000000000,0.000000000000,False
+706,end_mark = token->end_mark;,0,0,16,25,0.000000000000,0.000000000000,False
+707,parser->state = YAML_PARSE_BLOCK_SEQUENCE_FIRST_ENTRY_STATE;,0,0,16,25,0.000000000000,0.000000000000,False
+708,"SEQUENCE_START_EVENT_INIT(*event, anchor, tag, implicit,",0,0,16,25,0.000000000000,0.000000000000,False
+710,return 1;,0,0,16,25,0.000000000000,0.000000000000,False
+712,else if (block && token->type == YAML_BLOCK_MAPPING_START_TOKEN) {,0,4,16,21,0.000000000000,0.000000000000,False
+713,"if (!STACK_LIMIT(parser, parser->indents, MAX_NESTING_LEVEL - parser->flow_level)) {",0,4,16,21,0.000000000000,0.000000000000,False
+714,"yaml_maximum_level_reached(parser, start_mark, token->start_mark);",0,0,16,25,0.000000000000,0.000000000000,False
+715,goto error;,0,0,16,25,0.000000000000,0.000000000000,False
+717,end_mark = token->end_mark;,0,4,16,21,0.000000000000,0.000000000000,False
+718,parser->state = YAML_PARSE_BLOCK_MAPPING_FIRST_KEY_STATE;,0,4,16,21,0.000000000000,0.000000000000,False
+719,"MAPPING_START_EVENT_INIT(*event, anchor, tag, implicit,",0,4,16,21,0.000000000000,0.000000000000,False
+721,return 1;,0,4,16,21,0.000000000000,0.000000000000,False
+723,else if (anchor || tag) {,0,0,16,25,0.000000000000,0.000000000000,False
+724,yaml_char_t *value = YAML_MALLOC(1);,0,0,16,25,0.000000000000,0.000000000000,False
+725,if (!value) {,0,0,16,25,0.000000000000,0.000000000000,False
+726,parser->error = YAML_MEMORY_ERROR;,0,0,16,25,0.000000000000,0.000000000000,False
+727,goto error;,0,0,16,25,0.000000000000,0.000000000000,False
+729,value[0] = '\0';,0,0,16,25,0.000000000000,0.000000000000,False
+730,"parser->state = POP(parser, parser->states);",0,0,16,25,0.000000000000,0.000000000000,False
+731,"SCALAR_EVENT_INIT(*event, anchor, tag, value, 0,",0,0,16,25,0.000000000000,0.000000000000,False
+734,return 1;,0,0,16,25,0.000000000000,0.000000000000,False
+737,"yaml_parser_set_parser_error_context(parser,",0,0,16,25,0.000000000000,0.000000000000,False
+741,goto error;,0,0,16,25,0.000000000000,0.000000000000,False
+746,error:,0,0,16,25,0.000000000000,0.000000000000,False
+747,yaml_free(anchor);,0,0,16,25,0.000000000000,0.000000000000,False
+748,yaml_free(tag_handle);,0,0,16,25,0.000000000000,0.000000000000,False
+749,yaml_free(tag_suffix);,0,0,16,25,0.000000000000,0.000000000000,False
+750,yaml_free(tag);,0,0,16,25,0.000000000000,0.000000000000,False
+752,return 0;,0,0,16,25,0.000000000000,0.000000000000,False
+762,"yaml_parser_parse_block_sequence_entry(yaml_parser_t *parser,",0,0,16,25,0.000000000000,0.000000000000,False
+767,if (first) {,0,0,16,25,0.000000000000,0.000000000000,False
+768,token = PEEK_TOKEN(parser);,0,0,16,25,0.000000000000,0.000000000000,False
+769,"if (!PUSH(parser, parser->marks, token->start_mark))",0,0,16,25,0.000000000000,0.000000000000,False
+770,return 0;,0,0,16,25,0.000000000000,0.000000000000,False
+771,SKIP_TOKEN(parser);,0,0,16,25,0.000000000000,0.000000000000,False
+774,token = PEEK_TOKEN(parser);,0,0,16,25,0.000000000000,0.000000000000,False
+775,if (!token) return 0;,0,0,16,25,0.000000000000,0.000000000000,False
+777,if (token->type == YAML_BLOCK_ENTRY_TOKEN),0,0,16,25,0.000000000000,0.000000000000,False
+779,yaml_mark_t mark = token->end_mark;,0,0,16,25,0.000000000000,0.000000000000,False
+780,SKIP_TOKEN(parser);,0,0,16,25,0.000000000000,0.000000000000,False
+781,token = PEEK_TOKEN(parser);,0,0,16,25,0.000000000000,0.000000000000,False
+782,if (!token) return 0;,0,0,16,25,0.000000000000,0.000000000000,False
+783,if (token->type != YAML_BLOCK_ENTRY_TOKEN &&,0,0,16,25,0.000000000000,0.000000000000,False
+784,token->type != YAML_BLOCK_END_TOKEN) {,0,0,16,25,0.000000000000,0.000000000000,False
+785,"if (!PUSH(parser, parser->states,",0,0,16,25,0.000000000000,0.000000000000,False
+787,return 0;,0,0,16,25,0.000000000000,0.000000000000,False
+788,"return yaml_parser_parse_node(parser, event, 1, 0);",0,0,16,25,0.000000000000,0.000000000000,False
+791,parser->state = YAML_PARSE_BLOCK_SEQUENCE_ENTRY_STATE;,0,0,16,25,0.000000000000,0.000000000000,False
+792,"return yaml_parser_process_empty_scalar(parser, event, mark);",0,0,16,25,0.000000000000,0.000000000000,False
+796,else if (token->type == YAML_BLOCK_END_TOKEN),0,0,16,25,0.000000000000,0.000000000000,False
+798,"parser->state = POP(parser, parser->states);",0,0,16,25,0.000000000000,0.000000000000,False
+799,"(void)POP(parser, parser->marks);",0,0,16,25,0.000000000000,0.000000000000,False
+800,"SEQUENCE_END_EVENT_INIT(*event, token->start_mark, token->end_mark);",0,0,16,25,0.000000000000,0.000000000000,False
+801,SKIP_TOKEN(parser);,0,0,16,25,0.000000000000,0.000000000000,False
+802,return 1;,0,0,16,25,0.000000000000,0.000000000000,False
+807,"return yaml_parser_set_parser_error_context(parser,",0,0,16,25,0.000000000000,0.000000000000,False
+808,"""while parsing a block collection"", POP(parser, parser->marks),",0,0,16,25,0.000000000000,0.000000000000,False
+820,"yaml_parser_parse_indentless_sequence_entry(yaml_parser_t *parser,",0,0,16,25,0.000000000000,0.000000000000,False
+825,token = PEEK_TOKEN(parser);,0,0,16,25,0.000000000000,0.000000000000,False
+826,if (!token) return 0;,0,0,16,25,0.000000000000,0.000000000000,False
+828,if (token->type == YAML_BLOCK_ENTRY_TOKEN),0,0,16,25,0.000000000000,0.000000000000,False
+830,yaml_mark_t mark = token->end_mark;,0,0,16,25,0.000000000000,0.000000000000,False
+831,SKIP_TOKEN(parser);,0,0,16,25,0.000000000000,0.000000000000,False
+832,token = PEEK_TOKEN(parser);,0,0,16,25,0.000000000000,0.000000000000,False
+833,if (!token) return 0;,0,0,16,25,0.000000000000,0.000000000000,False
+834,if (token->type != YAML_BLOCK_ENTRY_TOKEN &&,0,0,16,25,0.000000000000,0.000000000000,False
+835,token->type != YAML_KEY_TOKEN &&,0,0,16,25,0.000000000000,0.000000000000,False
+836,token->type != YAML_VALUE_TOKEN &&,0,0,16,25,0.000000000000,0.000000000000,False
+837,token->type != YAML_BLOCK_END_TOKEN) {,0,0,16,25,0.000000000000,0.000000000000,False
+838,"if (!PUSH(parser, parser->states,",0,0,16,25,0.000000000000,0.000000000000,False
+840,return 0;,0,0,16,25,0.000000000000,0.000000000000,False
+841,"return yaml_parser_parse_node(parser, event, 1, 0);",0,0,16,25,0.000000000000,0.000000000000,False
+844,parser->state = YAML_PARSE_INDENTLESS_SEQUENCE_ENTRY_STATE;,0,0,16,25,0.000000000000,0.000000000000,False
+845,"return yaml_parser_process_empty_scalar(parser, event, mark);",0,0,16,25,0.000000000000,0.000000000000,False
+851,"parser->state = POP(parser, parser->states);",0,0,16,25,0.000000000000,0.000000000000,False
+852,"SEQUENCE_END_EVENT_INIT(*event, token->start_mark, token->start_mark);",0,0,16,25,0.000000000000,0.000000000000,False
+853,return 1;,0,0,16,25,0.000000000000,0.000000000000,False
+870,"yaml_parser_parse_block_mapping_key(yaml_parser_t *parser,",0,4,16,21,0.000000000000,0.000000000000,False
+875,if (first) {,0,4,16,21,0.000000000000,0.000000000000,False
+876,token = PEEK_TOKEN(parser);,0,4,16,21,0.000000000000,0.000000000000,False
+877,"if (!PUSH(parser, parser->marks, token->start_mark))",0,4,16,21,0.000000000000,0.000000000000,False
+878,return 0;,0,0,16,25,0.000000000000,0.000000000000,False
+879,SKIP_TOKEN(parser);,0,4,16,21,0.000000000000,0.000000000000,False
+882,token = PEEK_TOKEN(parser);,0,4,16,21,0.000000000000,0.000000000000,False
+883,if (!token) return 0;,0,4,16,21,0.000000000000,0.000000000000,False
+885,if (token->type == YAML_KEY_TOKEN),0,4,16,21,0.000000000000,0.000000000000,False
+887,yaml_mark_t mark = token->end_mark;,0,4,16,21,0.000000000000,0.000000000000,False
+888,SKIP_TOKEN(parser);,0,4,16,21,0.000000000000,0.000000000000,False
+889,token = PEEK_TOKEN(parser);,0,4,16,21,0.000000000000,0.000000000000,False
+890,if (!token) return 0;,0,4,16,21,0.000000000000,0.000000000000,False
+891,if (token->type != YAML_KEY_TOKEN &&,0,4,16,21,0.000000000000,0.000000000000,False
+892,token->type != YAML_VALUE_TOKEN &&,0,4,16,21,0.000000000000,0.000000000000,False
+893,token->type != YAML_BLOCK_END_TOKEN) {,0,4,16,21,0.000000000000,0.000000000000,False
+894,"if (!PUSH(parser, parser->states,",0,3,16,22,0.000000000000,0.000000000000,False
+896,return 0;,0,0,16,25,0.000000000000,0.000000000000,False
+897,"return yaml_parser_parse_node(parser, event, 1, 1);",0,3,16,22,0.000000000000,0.000000000000,False
+900,parser->state = YAML_PARSE_BLOCK_MAPPING_VALUE_STATE;,0,1,16,24,0.000000000000,0.000000000000,False
+901,"return yaml_parser_process_empty_scalar(parser, event, mark);",0,1,16,24,0.000000000000,0.000000000000,False
+905,else if (token->type == YAML_BLOCK_END_TOKEN),0,4,16,21,0.000000000000,0.000000000000,False
+907,"parser->state = POP(parser, parser->states);",0,4,16,21,0.000000000000,0.000000000000,False
+908,"(void)POP(parser, parser->marks);",0,4,16,21,0.000000000000,0.000000000000,False
+909,"MAPPING_END_EVENT_INIT(*event, token->start_mark, token->end_mark);",0,4,16,21,0.000000000000,0.000000000000,False
+910,SKIP_TOKEN(parser);,0,4,16,21,0.000000000000,0.000000000000,False
+911,return 1;,0,4,16,21,0.000000000000,0.000000000000,False
+916,"return yaml_parser_set_parser_error_context(parser,",0,0,16,25,0.000000000000,0.000000000000,False
+917,"""while parsing a block mapping"", POP(parser, parser->marks),",0,0,16,25,0.000000000000,0.000000000000,False
+935,"yaml_parser_parse_block_mapping_value(yaml_parser_t *parser,",0,4,16,21,0.000000000000,0.000000000000,False
+940,token = PEEK_TOKEN(parser);,0,4,16,21,0.000000000000,0.000000000000,False
+941,if (!token) return 0;,0,4,16,21,0.000000000000,0.000000000000,False
+943,if (token->type == YAML_VALUE_TOKEN),0,4,16,21,0.000000000000,0.000000000000,False
+945,yaml_mark_t mark = token->end_mark;,0,3,16,22,0.000000000000,0.000000000000,False
+946,SKIP_TOKEN(parser);,0,3,16,22,0.000000000000,0.000000000000,False
+947,token = PEEK_TOKEN(parser);,0,3,16,22,0.000000000000,0.000000000000,False
+948,if (!token) return 0;,0,3,16,22,0.000000000000,0.000000000000,False
+949,if (token->type != YAML_KEY_TOKEN &&,0,3,16,22,0.000000000000,0.000000000000,False
+950,token->type != YAML_VALUE_TOKEN &&,0,3,16,22,0.000000000000,0.000000000000,False
+951,token->type != YAML_BLOCK_END_TOKEN) {,0,3,16,22,0.000000000000,0.000000000000,False
+952,"if (!PUSH(parser, parser->states,",0,2,16,23,0.000000000000,0.000000000000,False
+954,return 0;,0,0,16,25,0.000000000000,0.000000000000,False
+955,"return yaml_parser_parse_node(parser, event, 1, 1);",0,2,16,23,0.000000000000,0.000000000000,False
+958,parser->state = YAML_PARSE_BLOCK_MAPPING_KEY_STATE;,0,1,16,24,0.000000000000,0.000000000000,False
+959,"return yaml_parser_process_empty_scalar(parser, event, mark);",0,1,16,24,0.000000000000,0.000000000000,False
+965,parser->state = YAML_PARSE_BLOCK_MAPPING_KEY_STATE;,0,1,16,24,0.000000000000,0.000000000000,False
+966,"return yaml_parser_process_empty_scalar(parser, event, token->start_mark);",0,1,16,24,0.000000000000,0.000000000000,False
+985,"yaml_parser_parse_flow_sequence_entry(yaml_parser_t *parser,",16,4,0,21,0.800000000000,0.894427191000,False
+990,if (first) {,16,4,0,21,0.800000000000,0.894427191000,False
+991,token = PEEK_TOKEN(parser);,16,4,0,21,0.800000000000,0.894427191000,False
+992,"if (!PUSH(parser, parser->marks, token->start_mark))",16,4,0,21,0.800000000000,0.894427191000,False
+993,return 0;,0,0,16,25,0.000000000000,0.000000000000,False
+994,SKIP_TOKEN(parser);,16,4,0,21,0.800000000000,0.894427191000,False
+997,token = PEEK_TOKEN(parser);,16,4,0,21,0.800000000000,0.894427191000,False
+998,if (!token) return 0;,16,4,0,21,0.800000000000,0.894427191000,False
+1000,if (token->type != YAML_FLOW_SEQUENCE_END_TOKEN),16,4,0,21,0.800000000000,0.894427191000,False
+1002,if (!first) {,16,4,0,21,0.800000000000,0.894427191000,False
+1003,if (token->type == YAML_FLOW_ENTRY_TOKEN) {,16,3,0,22,0.842105263158,0.917662935482,False
+1004,SKIP_TOKEN(parser);,16,3,0,22,0.842105263158,0.917662935482,False
+1005,token = PEEK_TOKEN(parser);,16,3,0,22,0.842105263158,0.917662935482,False
+1006,if (!token) return 0;,16,3,0,22,0.842105263158,0.917662935482,False
+1009,"return yaml_parser_set_parser_error_context(parser,",0,0,16,25,0.000000000000,0.000000000000,False
+1010,"""while parsing a flow sequence"", POP(parser, parser->marks),",0,0,16,25,0.000000000000,0.000000000000,False
+1015,if (token->type == YAML_KEY_TOKEN) {,16,4,0,21,0.800000000000,0.894427191000,False
+1016,parser->state = YAML_PARSE_FLOW_SEQUENCE_ENTRY_MAPPING_KEY_STATE;,16,0,0,25,1.000000000000,1.000000000000,False
+1017,"MAPPING_START_EVENT_INIT(*event, NULL, NULL,",16,0,0,25,1.000000000000,1.000000000000,False
+1020,SKIP_TOKEN(parser);,16,0,0,25,1.000000000000,1.000000000000,False
+1021,return 1;,16,0,0,25,1.000000000000,1.000000000000,False
+1024,else if (token->type != YAML_FLOW_SEQUENCE_END_TOKEN) {,16,4,0,21,0.800000000000,0.894427191000,False
+1025,"if (!PUSH(parser, parser->states,",16,4,0,21,0.800000000000,0.894427191000,False
+1027,return 0;,0,0,16,25,0.000000000000,0.000000000000,False
+1028,"return yaml_parser_parse_node(parser, event, 0, 0);",16,4,0,21,0.800000000000,0.894427191000,False
+1032,"parser->state = POP(parser, parser->states);",16,4,0,21,0.800000000000,0.894427191000,False
+1033,"(void)POP(parser, parser->marks);",16,4,0,21,0.800000000000,0.894427191000,False
+1034,"SEQUENCE_END_EVENT_INIT(*event, token->start_mark, token->end_mark);",16,4,0,21,0.800000000000,0.894427191000,False
+1035,SKIP_TOKEN(parser);,16,4,0,21,0.800000000000,0.894427191000,False
+1036,return 1;,16,4,0,21,0.800000000000,0.894427191000,False
+1046,"yaml_parser_parse_flow_sequence_entry_mapping_key(yaml_parser_t *parser,",16,0,0,25,1.000000000000,1.000000000000,False
+1051,token = PEEK_TOKEN(parser);,16,0,0,25,1.000000000000,1.000000000000,False
+1052,if (!token) return 0;,16,0,0,25,1.000000000000,1.000000000000,False
+1054,if (token->type != YAML_VALUE_TOKEN && token->type != YAML_FLOW_ENTRY_TOKEN,16,0,0,25,1.000000000000,1.000000000000,False
+1055,&& token->type != YAML_FLOW_SEQUENCE_END_TOKEN) {,16,0,0,25,1.000000000000,1.000000000000,False
+1056,"if (!PUSH(parser, parser->states,",0,0,16,25,0.000000000000,0.000000000000,False
+1058,return 0;,0,0,16,25,0.000000000000,0.000000000000,False
+1059,"return yaml_parser_parse_node(parser, event, 0, 0);",0,0,16,25,0.000000000000,0.000000000000,False
+1061,else if (token->type == YAML_FLOW_SEQUENCE_END_TOKEN) {,16,0,0,25,1.000000000000,1.000000000000,False
+1062,"parser->state = POP(parser, parser->states);",16,0,0,25,1.000000000000,1.000000000000,True
+1063,"(void)POP(parser, parser->marks);",16,0,0,25,1.000000000000,1.000000000000,False
+1064,"SEQUENCE_END_EVENT_INIT(*event, token->start_mark, token->end_mark);",16,0,0,25,1.000000000000,1.000000000000,False
+1065,SKIP_TOKEN(parser);,16,0,0,25,1.000000000000,1.000000000000,False
+1066,return 1;,16,0,0,25,1.000000000000,1.000000000000,False
+1069,yaml_mark_t mark = token->end_mark;,0,0,16,25,0.000000000000,0.000000000000,False
+1070,SKIP_TOKEN(parser);,0,0,16,25,0.000000000000,0.000000000000,False
+1071,parser->state = YAML_PARSE_FLOW_SEQUENCE_ENTRY_MAPPING_VALUE_STATE;,0,0,16,25,0.000000000000,0.000000000000,False
+1072,"return yaml_parser_process_empty_scalar(parser, event, mark);",0,0,16,25,0.000000000000,0.000000000000,False
+1083,"yaml_parser_parse_flow_sequence_entry_mapping_value(yaml_parser_t *parser,",0,0,16,25,0.000000000000,0.000000000000,False
+1088,token = PEEK_TOKEN(parser);,0,0,16,25,0.000000000000,0.000000000000,False
+1089,if (!token) return 0;,0,0,16,25,0.000000000000,0.000000000000,False
+1091,if (token->type == YAML_VALUE_TOKEN) {,0,0,16,25,0.000000000000,0.000000000000,False
+1092,SKIP_TOKEN(parser);,0,0,16,25,0.000000000000,0.000000000000,False
+1093,token = PEEK_TOKEN(parser);,0,0,16,25,0.000000000000,0.000000000000,False
+1094,if (!token) return 0;,0,0,16,25,0.000000000000,0.000000000000,False
+1095,if (token->type != YAML_FLOW_ENTRY_TOKEN,0,0,16,25,0.000000000000,0.000000000000,False
+1096,&& token->type != YAML_FLOW_SEQUENCE_END_TOKEN) {,0,0,16,25,0.000000000000,0.000000000000,False
+1097,"if (!PUSH(parser, parser->states,",0,0,16,25,0.000000000000,0.000000000000,False
+1099,return 0;,0,0,16,25,0.000000000000,0.000000000000,False
+1100,"return yaml_parser_parse_node(parser, event, 0, 0);",0,0,16,25,0.000000000000,0.000000000000,False
+1103,parser->state = YAML_PARSE_FLOW_SEQUENCE_ENTRY_MAPPING_END_STATE;,0,0,16,25,0.000000000000,0.000000000000,False
+1104,"return yaml_parser_process_empty_scalar(parser, event, token->start_mark);",0,0,16,25,0.000000000000,0.000000000000,False
+1114,"yaml_parser_parse_flow_sequence_entry_mapping_end(yaml_parser_t *parser,",0,0,16,25,0.000000000000,0.000000000000,False
+1119,token = PEEK_TOKEN(parser);,0,0,16,25,0.000000000000,0.000000000000,False
+1120,if (!token) return 0;,0,0,16,25,0.000000000000,0.000000000000,False
+1122,parser->state = YAML_PARSE_FLOW_SEQUENCE_ENTRY_STATE;,0,0,16,25,0.000000000000,0.000000000000,False
+1124,"MAPPING_END_EVENT_INIT(*event, token->start_mark, token->start_mark);",0,0,16,25,0.000000000000,0.000000000000,False
+1125,return 1;,0,0,16,25,0.000000000000,0.000000000000,False
+1143,"yaml_parser_parse_flow_mapping_key(yaml_parser_t *parser,",16,4,0,21,0.800000000000,0.894427191000,False
+1148,if (first) {,16,4,0,21,0.800000000000,0.894427191000,False
+1149,token = PEEK_TOKEN(parser);,16,4,0,21,0.800000000000,0.894427191000,False
+1150,"if (!PUSH(parser, parser->marks, token->start_mark))",16,4,0,21,0.800000000000,0.894427191000,False
+1151,return 0;,0,0,16,25,0.000000000000,0.000000000000,False
+1152,SKIP_TOKEN(parser);,16,4,0,21,0.800000000000,0.894427191000,False
+1155,token = PEEK_TOKEN(parser);,16,4,0,21,0.800000000000,0.894427191000,False
+1156,if (!token) return 0;,16,4,0,21,0.800000000000,0.894427191000,False
+1158,if (token->type != YAML_FLOW_MAPPING_END_TOKEN),16,4,0,21,0.800000000000,0.894427191000,False
+1160,if (!first) {,16,4,0,21,0.800000000000,0.894427191000,False
+1161,if (token->type == YAML_FLOW_ENTRY_TOKEN) {,15,3,1,22,0.789473684211,0.883883476483,False
+1162,SKIP_TOKEN(parser);,15,3,1,22,0.789473684211,0.883883476483,False
+1163,token = PEEK_TOKEN(parser);,15,3,1,22,0.789473684211,0.883883476483,False
+1164,if (!token) return 0;,15,3,1,22,0.789473684211,0.883883476483,False
+1167,"return yaml_parser_set_parser_error_context(parser,",0,0,16,25,0.000000000000,0.000000000000,False
+1168,"""while parsing a flow mapping"", POP(parser, parser->marks),",0,0,16,25,0.000000000000,0.000000000000,False
+1173,if (token->type == YAML_KEY_TOKEN) {,16,4,0,21,0.800000000000,0.894427191000,False
+1174,SKIP_TOKEN(parser);,16,4,0,21,0.800000000000,0.894427191000,False
+1175,token = PEEK_TOKEN(parser);,16,4,0,21,0.800000000000,0.894427191000,False
+1176,if (!token) return 0;,16,4,0,21,0.800000000000,0.894427191000,False
+1177,if (token->type != YAML_VALUE_TOKEN,16,4,0,21,0.800000000000,0.894427191000,False
+1178,&& token->type != YAML_FLOW_ENTRY_TOKEN,16,4,0,21,0.800000000000,0.894427191000,False
+1179,&& token->type != YAML_FLOW_MAPPING_END_TOKEN) {,16,4,0,21,0.800000000000,0.894427191000,False
+1180,"if (!PUSH(parser, parser->states,",16,4,0,21,0.800000000000,0.894427191000,False
+1182,return 0;,0,0,16,25,0.000000000000,0.000000000000,False
+1183,"return yaml_parser_parse_node(parser, event, 0, 0);",16,4,0,21,0.800000000000,0.894427191000,False
+1186,parser->state = YAML_PARSE_FLOW_MAPPING_VALUE_STATE;,0,0,16,25,0.000000000000,0.000000000000,False
+1187,"return yaml_parser_process_empty_scalar(parser, event,",0,0,16,25,0.000000000000,0.000000000000,False
+1191,else if (token->type != YAML_FLOW_MAPPING_END_TOKEN) {,9,2,7,23,0.500000000000,0.678400525300,False
+1192,"if (!PUSH(parser, parser->states,",5,0,11,25,0.312500000000,0.559016994375,False
+1194,return 0;,0,0,16,25,0.000000000000,0.000000000000,False
+1195,"return yaml_parser_parse_node(parser, event, 0, 0);",5,0,11,25,0.312500000000,0.559016994375,False
+1199,"parser->state = POP(parser, parser->states);",16,4,0,21,0.800000000000,0.894427191000,False
+1200,"(void)POP(parser, parser->marks);",16,4,0,21,0.800000000000,0.894427191000,False
+1201,"MAPPING_END_EVENT_INIT(*event, token->start_mark, token->end_mark);",16,4,0,21,0.800000000000,0.894427191000,False
+1202,SKIP_TOKEN(parser);,16,4,0,21,0.800000000000,0.894427191000,False
+1203,return 1;,16,4,0,21,0.800000000000,0.894427191000,False
+1213,"yaml_parser_parse_flow_mapping_value(yaml_parser_t *parser,",16,4,0,21,0.800000000000,0.894427191000,False
+1218,token = PEEK_TOKEN(parser);,16,4,0,21,0.800000000000,0.894427191000,False
+1219,if (!token) return 0;,16,4,0,21,0.800000000000,0.894427191000,False
+1221,if (empty) {,16,4,0,21,0.800000000000,0.894427191000,False
+1222,parser->state = YAML_PARSE_FLOW_MAPPING_KEY_STATE;,5,0,11,25,0.312500000000,0.559016994375,False
+1223,"return yaml_parser_process_empty_scalar(parser, event,",5,0,11,25,0.312500000000,0.559016994375,False
+1227,if (token->type == YAML_VALUE_TOKEN) {,16,4,0,21,0.800000000000,0.894427191000,False
+1228,SKIP_TOKEN(parser);,16,4,0,21,0.800000000000,0.894427191000,False
+1229,token = PEEK_TOKEN(parser);,16,4,0,21,0.800000000000,0.894427191000,False
+1230,if (!token) return 0;,16,4,0,21,0.800000000000,0.894427191000,False
+1231,if (token->type != YAML_FLOW_ENTRY_TOKEN,16,4,0,21,0.800000000000,0.894427191000,False
+1232,&& token->type != YAML_FLOW_MAPPING_END_TOKEN) {,16,4,0,21,0.800000000000,0.894427191000,False
+1233,"if (!PUSH(parser, parser->states,",16,4,0,21,0.800000000000,0.894427191000,False
+1235,return 0;,0,0,16,25,0.000000000000,0.000000000000,False
+1236,"return yaml_parser_parse_node(parser, event, 0, 0);",16,4,0,21,0.800000000000,0.894427191000,False
+1240,parser->state = YAML_PARSE_FLOW_MAPPING_KEY_STATE;,0,0,16,25,0.000000000000,0.000000000000,False
+1241,"return yaml_parser_process_empty_scalar(parser, event, token->start_mark);",0,0,16,25,0.000000000000,0.000000000000,False
+1249,"yaml_parser_process_empty_scalar(yaml_parser_t *parser, yaml_event_t *event,",5,3,11,22,0.263157894737,0.441941738242,False
+1254,value = YAML_MALLOC(1);,5,3,11,22,0.263157894737,0.441941738242,False
+1255,if (!value) {,5,3,11,22,0.263157894737,0.441941738242,False
+1256,parser->error = YAML_MEMORY_ERROR;,0,0,16,25,0.000000000000,0.000000000000,False
+1257,return 0;,0,0,16,25,0.000000000000,0.000000000000,False
+1259,value[0] = '\0';,5,3,11,22,0.263157894737,0.441941738242,False
+1261,"SCALAR_EVENT_INIT(*event, NULL, NULL, value, 0,",5,3,11,22,0.263157894737,0.441941738242,False
+1264,return 1;,5,3,11,22,0.263157894737,0.441941738242,False
+1272,"yaml_parser_process_directives(yaml_parser_t *parser,",16,23,0,2,0.410256410256,0.640512615220,False
+1277,yaml_tag_directive_t default_tag_directives[] = {,16,23,0,2,0.410256410256,0.640512615220,False
+1283,yaml_version_directive_t *version_directive = NULL;,16,23,0,2,0.410256410256,0.640512615220,False
+1288,"} tag_directives = { NULL, NULL, NULL };",16,23,0,2,0.410256410256,0.640512615220,False
+1291,"if (!STACK_INIT(parser, tag_directives, yaml_tag_directive_t*))",16,23,0,2,0.410256410256,0.640512615220,False
+1292,goto error;,0,0,16,25,0.000000000000,0.000000000000,False
+1294,token = PEEK_TOKEN(parser);,16,23,0,2,0.410256410256,0.640512615220,False
+1295,if (!token) goto error;,16,23,0,2,0.410256410256,0.640512615220,False
+1297,while (token->type == YAML_VERSION_DIRECTIVE_TOKEN ||,16,23,0,2,0.410256410256,0.640512615220,False
+1298,token->type == YAML_TAG_DIRECTIVE_TOKEN),16,23,0,2,0.410256410256,0.640512615220,False
+1300,if (token->type == YAML_VERSION_DIRECTIVE_TOKEN) {,0,0,16,25,0.000000000000,0.000000000000,False
+1301,if (version_directive) {,0,0,16,25,0.000000000000,0.000000000000,False
+1302,"yaml_parser_set_parser_error(parser,",0,0,16,25,0.000000000000,0.000000000000,False
+1304,goto error;,0,0,16,25,0.000000000000,0.000000000000,False
+1306,if (token->data.version_directive.major != 1,0,0,16,25,0.000000000000,0.000000000000,False
+1307,|| (,0,0,16,25,0.000000000000,0.000000000000,False
+1308,token->data.version_directive.minor != 1,0,0,16,25,0.000000000000,0.000000000000,False
+1309,&& token->data.version_directive.minor != 2,0,0,16,25,0.000000000000,0.000000000000,False
+1311,"yaml_parser_set_parser_error(parser,",0,0,16,25,0.000000000000,0.000000000000,False
+1313,goto error;,0,0,16,25,0.000000000000,0.000000000000,False
+1315,version_directive = YAML_MALLOC_STATIC(yaml_version_directive_t);,0,0,16,25,0.000000000000,0.000000000000,False
+1316,if (!version_directive) {,0,0,16,25,0.000000000000,0.000000000000,False
+1317,parser->error = YAML_MEMORY_ERROR;,0,0,16,25,0.000000000000,0.000000000000,False
+1318,goto error;,0,0,16,25,0.000000000000,0.000000000000,False
+1320,version_directive->major = token->data.version_directive.major;,0,0,16,25,0.000000000000,0.000000000000,False
+1321,version_directive->minor = token->data.version_directive.minor;,0,0,16,25,0.000000000000,0.000000000000,False
+1324,else if (token->type == YAML_TAG_DIRECTIVE_TOKEN) {,0,0,16,25,0.000000000000,0.000000000000,False
+1326,value.handle = token->data.tag_directive.handle;,0,0,16,25,0.000000000000,0.000000000000,False
+1327,value.prefix = token->data.tag_directive.prefix;,0,0,16,25,0.000000000000,0.000000000000,False
+1329,"if (!yaml_parser_append_tag_directive(parser, value, 0,",0,0,16,25,0.000000000000,0.000000000000,False
+1331,goto error;,0,0,16,25,0.000000000000,0.000000000000,False
+1332,"if (!PUSH(parser, tag_directives, value))",0,0,16,25,0.000000000000,0.000000000000,False
+1333,goto error;,0,0,16,25,0.000000000000,0.000000000000,False
+1336,SKIP_TOKEN(parser);,0,0,16,25,0.000000000000,0.000000000000,False
+1337,token = PEEK_TOKEN(parser);,0,0,16,25,0.000000000000,0.000000000000,False
+1338,if (!token) goto error;,0,0,16,25,0.000000000000,0.000000000000,False
+1341,for (default_tag_directive = default_tag_directives;,16,23,0,2,0.410256410256,0.640512615220,False
+1342,default_tag_directive->handle; default_tag_directive++) {,16,23,0,2,0.410256410256,0.640512615220,False
+1343,"if (!yaml_parser_append_tag_directive(parser, *default_tag_directive, 1,",16,23,0,2,0.410256410256,0.640512615220,False
+1345,goto error;,0,0,16,25,0.000000000000,0.000000000000,False
+1348,if (version_directive_ref) {,16,23,0,2,0.410256410256,0.640512615220,False
+1349,*version_directive_ref = version_directive;,3,2,13,23,0.166666666667,0.335410196625,False
+1351,if (tag_directives_start_ref) {,16,23,0,2,0.410256410256,0.640512615220,False
+1352,"if (STACK_EMPTY(parser, tag_directives)) {",3,2,13,23,0.166666666667,0.335410196625,False
+1353,*tag_directives_start_ref = *tag_directives_end_ref = NULL;,3,2,13,23,0.166666666667,0.335410196625,False
+1354,"STACK_DEL(parser, tag_directives);",3,2,13,23,0.166666666667,0.335410196625,False
+1357,*tag_directives_start_ref = tag_directives.start;,0,0,16,25,0.000000000000,0.000000000000,False
+1358,*tag_directives_end_ref = tag_directives.top;,0,0,16,25,0.000000000000,0.000000000000,False
+1362,"STACK_DEL(parser, tag_directives);",13,21,3,4,0.351351351351,0.557370401713,False
+1365,if (!version_directive_ref),16,23,0,2,0.410256410256,0.640512615220,False
+1366,yaml_free(version_directive);,13,21,3,4,0.351351351351,0.557370401713,False
+1367,return 1;,16,23,0,2,0.410256410256,0.640512615220,False
+1369,error:,0,0,16,25,0.000000000000,0.000000000000,False
+1370,yaml_free(version_directive);,0,0,16,25,0.000000000000,0.000000000000,False
+1371,"while (!STACK_EMPTY(parser, tag_directives)) {",0,0,16,25,0.000000000000,0.000000000000,False
+1372,"yaml_tag_directive_t tag_directive = POP(parser, tag_directives);",0,0,16,25,0.000000000000,0.000000000000,False
+1373,yaml_free(tag_directive.handle);,0,0,16,25,0.000000000000,0.000000000000,False
+1374,yaml_free(tag_directive.prefix);,0,0,16,25,0.000000000000,0.000000000000,False
+1376,"STACK_DEL(parser, tag_directives);",0,0,16,25,0.000000000000,0.000000000000,False
+1377,return 0;,0,0,16,25,0.000000000000,0.000000000000,False
+1385,"yaml_parser_append_tag_directive(yaml_parser_t *parser,",16,23,0,2,0.410256410256,0.640512615220,False
+1389,"yaml_tag_directive_t copy = { NULL, NULL };",16,23,0,2,0.410256410256,0.640512615220,False
+1391,for (tag_directive = parser->tag_directives.start;,16,23,0,2,0.410256410256,0.640512615220,False
+1392,tag_directive != parser->tag_directives.top; tag_directive ++) {,16,23,0,2,0.410256410256,0.640512615220,False
+1393,"if (strcmp((char *)value.handle, (char *)tag_directive->handle) == 0) {",16,23,0,2,0.410256410256,0.640512615220,False
+1394,if (allow_duplicates),0,0,16,25,0.000000000000,0.000000000000,False
+1395,return 1;,0,0,16,25,0.000000000000,0.000000000000,False
+1396,"return yaml_parser_set_parser_error(parser,",0,0,16,25,0.000000000000,0.000000000000,False
+1401,copy.handle = yaml_strdup(value.handle);,16,23,0,2,0.410256410256,0.640512615220,False
+1402,copy.prefix = yaml_strdup(value.prefix);,16,23,0,2,0.410256410256,0.640512615220,False
+1403,if (!copy.handle || !copy.prefix) {,16,23,0,2,0.410256410256,0.640512615220,False
+1404,parser->error = YAML_MEMORY_ERROR;,0,0,16,25,0.000000000000,0.000000000000,False
+1405,goto error;,0,0,16,25,0.000000000000,0.000000000000,False
+1408,"if (!PUSH(parser, parser->tag_directives, copy))",16,23,0,2,0.410256410256,0.640512615220,False
+1409,goto error;,0,0,16,25,0.000000000000,0.000000000000,False
+1411,return 1;,16,23,0,2,0.410256410256,0.640512615220,False
+1413,error:,0,0,16,25,0.000000000000,0.000000000000,False
+1414,yaml_free(copy.handle);,0,0,16,25,0.000000000000,0.000000000000,False
+1415,yaml_free(copy.prefix);,0,0,16,25,0.000000000000,0.000000000000,False
+1416,return 0;,0,0,16,25,0.000000000000,0.000000000000,False
