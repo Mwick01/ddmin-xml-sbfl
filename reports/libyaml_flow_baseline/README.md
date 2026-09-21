@@ -69,3 +69,22 @@ Ochiai:
 The fault is tied with 16 other statements. Future augmentation is
 evaluated by whether generated spectra break this tie in a favorable
 or unfavorable direction.
+
+## Coverage-profile diversity
+
+Among the 41 usable DDMIN candidates:
+
+- PASS: 25 tests, 9 distinct coverage profiles
+- FAIL: 16 tests, 6 distinct coverage profiles
+- Total distinct profiles: 15
+- Exact PASS/FAIL profile overlap: 0
+
+PASS profile frequencies:
+`14, 2, 2, 2, 1, 1, 1, 1, 1`
+
+FAIL profile frequencies:
+`4, 4, 4, 2, 1, 1`
+
+Thus the usable DDMIN test set contains multiple distinct passing and
+failing execution spectra. No complete parser.c coverage profile occurs
+in both outcome classes.
