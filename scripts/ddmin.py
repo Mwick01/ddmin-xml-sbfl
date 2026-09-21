@@ -267,7 +267,7 @@ def ddmin(
                     },
                 )
 
-                granularity = max(granularity - 1, 2)
+                granularity = 2
                 reduction_found = True
 
                 print(
