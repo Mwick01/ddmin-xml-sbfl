@@ -1,0 +1,27 @@
+commit 8b9b972aaa4970f3983085ad59930614c5f6aa57
+Author: Nick Wellnhofer <wellnhofer@aevum.de>
+Date:   Tue Jan 30 13:25:17 2024 +0100
+
+    parser: Fix crash in xmlParseInNodeContext with HTML documents
+    
+    Ignore namespaces if we have an HTML document with namespaces added
+    manually.
+    
+    Fixes #672.
+
+diff --git a/parser.c b/parser.c
+index aeaadcdd..b7534ae3 100644
+--- a/parser.c
++++ b/parser.c
+@@ -13251,8 +13251,10 @@ xmlParseInNodeContext(xmlNodePtr node, const char *data, int datalen,
+     }
+     xmlAddChild(node, fake);
+ 
+-    if (node->type == XML_ELEMENT_NODE) {
++    if (node->type == XML_ELEMENT_NODE)
+ 	nodePush(ctxt, node);
++
++    if ((ctxt->html == 0) && (node->type == XML_ELEMENT_NODE)) {
+ 	/*
+ 	 * initialize the SAX2 namespaces stack
+ 	 */
