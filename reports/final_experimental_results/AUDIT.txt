@@ -1,0 +1,804 @@
+
+==============================================================================
+expat_resume
+==============================================================================
+OK      formal experiment root
+OK      rep01 directory
+
+expat_resume rep01 afl
+OK      metadata.json
+OK      coverage.jsonl
+OK      generated PASS directory
+OK      generated FAIL directory
+OK      AFL queue directory
+OK      fuzzer_stats
+OK      duration=300s
+OK      mode=afl
+OK      repetition=1
+OK      PASS + FAIL = usable (32)
+OK      PASS + FAIL + UNRESOLVED = unique evaluated (1636)
+OK      seed entries=16
+OK      generated queue accounting is consistent
+OK      raw queue accounting is consistent
+OK      PASS files=16
+OK      FAIL files=16
+OK      coverage records = usable tests (32)
+OK      coverage PASS count matches metadata (16)
+OK      coverage FAIL count matches metadata (16)
+OK      coverage contains only PASS/FAIL
+OK      raw queue files=1652
+OK      AFL stability=100.00%
+OK      execs_done=779723
+SUMMARY PASS=16 FAIL=16 UNRESOLVED=1604 usable=32
+
+expat_resume rep01 aflsmart-mixed
+OK      metadata.json
+OK      coverage.jsonl
+OK      generated PASS directory
+OK      generated FAIL directory
+OK      AFL queue directory
+OK      fuzzer_stats
+OK      duration=300s
+OK      mode=aflsmart-mixed
+OK      repetition=1
+OK      PASS + FAIL = usable (23)
+OK      PASS + FAIL + UNRESOLVED = unique evaluated (1352)
+OK      seed entries=16
+OK      generated queue accounting is consistent
+OK      raw queue accounting is consistent
+OK      PASS files=15
+OK      FAIL files=8
+OK      coverage records = usable tests (23)
+OK      coverage PASS count matches metadata (15)
+OK      coverage FAIL count matches metadata (8)
+OK      coverage contains only PASS/FAIL
+OK      raw queue files=1368
+OK      AFL stability=100.00%
+OK      execs_done=764263
+SUMMARY PASS=15 FAIL=8 UNRESOLVED=1329 usable=23
+
+expat_resume rep01 aflsmart-nonstack
+OK      metadata.json
+OK      coverage.jsonl
+OK      generated PASS directory
+OK      generated FAIL directory
+OK      AFL queue directory
+OK      fuzzer_stats
+OK      duration=300s
+OK      mode=aflsmart-nonstack
+OK      repetition=1
+OK      PASS + FAIL = usable (58)
+OK      PASS + FAIL + UNRESOLVED = unique evaluated (1452)
+OK      seed entries=16
+OK      generated queue accounting is consistent
+OK      raw queue accounting is consistent
+OK      PASS files=26
+OK      FAIL files=32
+OK      coverage records = usable tests (58)
+OK      coverage PASS count matches metadata (26)
+OK      coverage FAIL count matches metadata (32)
+OK      coverage contains only PASS/FAIL
+OK      raw queue files=1468
+OK      AFL stability=100.00%
+OK      execs_done=744091
+SUMMARY PASS=26 FAIL=32 UNRESOLVED=1394 usable=58
+OK      rep02 directory
+
+expat_resume rep02 afl
+OK      metadata.json
+OK      coverage.jsonl
+OK      generated PASS directory
+OK      generated FAIL directory
+OK      AFL queue directory
+OK      fuzzer_stats
+OK      duration=300s
+OK      mode=afl
+OK      repetition=2
+OK      PASS + FAIL = usable (22)
+OK      PASS + FAIL + UNRESOLVED = unique evaluated (1558)
+OK      seed entries=16
+OK      generated queue accounting is consistent
+OK      raw queue accounting is consistent
+OK      PASS files=12
+OK      FAIL files=10
+OK      coverage records = usable tests (22)
+OK      coverage PASS count matches metadata (12)
+OK      coverage FAIL count matches metadata (10)
+OK      coverage contains only PASS/FAIL
+OK      raw queue files=1574
+OK      AFL stability=100.00%
+OK      execs_done=711387
+SUMMARY PASS=12 FAIL=10 UNRESOLVED=1536 usable=22
+
+expat_resume rep02 aflsmart-mixed
+OK      metadata.json
+OK      coverage.jsonl
+OK      generated PASS directory
+OK      generated FAIL directory
+OK      AFL queue directory
+OK      fuzzer_stats
+OK      duration=300s
+OK      mode=aflsmart-mixed
+OK      repetition=2
+OK      PASS + FAIL = usable (33)
+OK      PASS + FAIL + UNRESOLVED = unique evaluated (1348)
+OK      seed entries=16
+OK      generated queue accounting is consistent
+OK      raw queue accounting is consistent
+OK      PASS files=19
+OK      FAIL files=14
+OK      coverage records = usable tests (33)
+OK      coverage PASS count matches metadata (19)
+OK      coverage FAIL count matches metadata (14)
+OK      coverage contains only PASS/FAIL
+OK      raw queue files=1364
+OK      AFL stability=100.00%
+OK      execs_done=742186
+SUMMARY PASS=19 FAIL=14 UNRESOLVED=1315 usable=33
+
+expat_resume rep02 aflsmart-nonstack
+OK      metadata.json
+OK      coverage.jsonl
+OK      generated PASS directory
+OK      generated FAIL directory
+OK      AFL queue directory
+OK      fuzzer_stats
+OK      duration=300s
+OK      mode=aflsmart-nonstack
+OK      repetition=2
+OK      PASS + FAIL = usable (30)
+OK      PASS + FAIL + UNRESOLVED = unique evaluated (1424)
+OK      seed entries=16
+OK      generated queue accounting is consistent
+OK      raw queue accounting is consistent
+OK      PASS files=17
+OK      FAIL files=13
+OK      coverage records = usable tests (30)
+OK      coverage PASS count matches metadata (17)
+OK      coverage FAIL count matches metadata (13)
+OK      coverage contains only PASS/FAIL
+OK      raw queue files=1440
+OK      AFL stability=100.00%
+OK      execs_done=751634
+SUMMARY PASS=17 FAIL=13 UNRESOLVED=1394 usable=30
+OK      rep03 directory
+
+expat_resume rep03 afl
+OK      metadata.json
+OK      coverage.jsonl
+OK      generated PASS directory
+OK      generated FAIL directory
+OK      AFL queue directory
+OK      fuzzer_stats
+OK      duration=300s
+OK      mode=afl
+OK      repetition=3
+OK      PASS + FAIL = usable (39)
+OK      PASS + FAIL + UNRESOLVED = unique evaluated (1588)
+OK      seed entries=16
+OK      generated queue accounting is consistent
+OK      raw queue accounting is consistent
+OK      PASS files=19
+OK      FAIL files=20
+OK      coverage records = usable tests (39)
+OK      coverage PASS count matches metadata (19)
+OK      coverage FAIL count matches metadata (20)
+OK      coverage contains only PASS/FAIL
+OK      raw queue files=1604
+OK      AFL stability=100.00%
+OK      execs_done=799432
+SUMMARY PASS=19 FAIL=20 UNRESOLVED=1549 usable=39
+
+expat_resume rep03 aflsmart-mixed
+OK      metadata.json
+OK      coverage.jsonl
+OK      generated PASS directory
+OK      generated FAIL directory
+OK      AFL queue directory
+OK      fuzzer_stats
+OK      duration=300s
+OK      mode=aflsmart-mixed
+OK      repetition=3
+OK      PASS + FAIL = usable (28)
+OK      PASS + FAIL + UNRESOLVED = unique evaluated (1358)
+OK      seed entries=16
+OK      generated queue accounting is consistent
+OK      raw queue accounting is consistent
+OK      PASS files=17
+OK      FAIL files=11
+OK      coverage records = usable tests (28)
+OK      coverage PASS count matches metadata (17)
+OK      coverage FAIL count matches metadata (11)
+OK      coverage contains only PASS/FAIL
+OK      raw queue files=1374
+OK      AFL stability=100.00%
+OK      execs_done=769991
+SUMMARY PASS=17 FAIL=11 UNRESOLVED=1330 usable=28
+
+expat_resume rep03 aflsmart-nonstack
+OK      metadata.json
+OK      coverage.jsonl
+OK      generated PASS directory
+OK      generated FAIL directory
+OK      AFL queue directory
+OK      fuzzer_stats
+OK      duration=300s
+OK      mode=aflsmart-nonstack
+OK      repetition=3
+OK      PASS + FAIL = usable (33)
+OK      PASS + FAIL + UNRESOLVED = unique evaluated (1371)
+OK      seed entries=16
+OK      generated queue accounting is consistent
+OK      raw queue accounting is consistent
+OK      PASS files=24
+OK      FAIL files=9
+OK      coverage records = usable tests (33)
+OK      coverage PASS count matches metadata (24)
+OK      coverage FAIL count matches metadata (9)
+OK      coverage contains only PASS/FAIL
+OK      raw queue files=1387
+OK      AFL stability=100.00%
+OK      execs_done=767502
+SUMMARY PASS=24 FAIL=9 UNRESOLVED=1338 usable=33
+OK      rep04 directory
+
+expat_resume rep04 afl
+OK      metadata.json
+OK      coverage.jsonl
+OK      generated PASS directory
+OK      generated FAIL directory
+OK      AFL queue directory
+OK      fuzzer_stats
+OK      duration=300s
+OK      mode=afl
+OK      repetition=4
+OK      PASS + FAIL = usable (18)
+OK      PASS + FAIL + UNRESOLVED = unique evaluated (1584)
+OK      seed entries=16
+OK      generated queue accounting is consistent
+OK      raw queue accounting is consistent
+OK      PASS files=11
+OK      FAIL files=7
+OK      coverage records = usable tests (18)
+OK      coverage PASS count matches metadata (11)
+OK      coverage FAIL count matches metadata (7)
+OK      coverage contains only PASS/FAIL
+OK      raw queue files=1600
+OK      AFL stability=100.00%
+OK      execs_done=792882
+SUMMARY PASS=11 FAIL=7 UNRESOLVED=1566 usable=18
+
+expat_resume rep04 aflsmart-mixed
+OK      metadata.json
+OK      coverage.jsonl
+OK      generated PASS directory
+OK      generated FAIL directory
+OK      AFL queue directory
+OK      fuzzer_stats
+OK      duration=300s
+OK      mode=aflsmart-mixed
+OK      repetition=4
+OK      PASS + FAIL = usable (22)
+OK      PASS + FAIL + UNRESOLVED = unique evaluated (1281)
+OK      seed entries=16
+OK      generated queue accounting is consistent
+OK      raw queue accounting is consistent
+OK      PASS files=13
+OK      FAIL files=9
+OK      coverage records = usable tests (22)
+OK      coverage PASS count matches metadata (13)
+OK      coverage FAIL count matches metadata (9)
+OK      coverage contains only PASS/FAIL
+OK      raw queue files=1297
+OK      AFL stability=100.00%
+OK      execs_done=742886
+SUMMARY PASS=13 FAIL=9 UNRESOLVED=1259 usable=22
+
+expat_resume rep04 aflsmart-nonstack
+OK      metadata.json
+OK      coverage.jsonl
+OK      generated PASS directory
+OK      generated FAIL directory
+OK      AFL queue directory
+OK      fuzzer_stats
+OK      duration=300s
+OK      mode=aflsmart-nonstack
+OK      repetition=4
+OK      PASS + FAIL = usable (43)
+OK      PASS + FAIL + UNRESOLVED = unique evaluated (1339)
+OK      seed entries=16
+OK      generated queue accounting is consistent
+OK      raw queue accounting is consistent
+OK      PASS files=22
+OK      FAIL files=21
+OK      coverage records = usable tests (43)
+OK      coverage PASS count matches metadata (22)
+OK      coverage FAIL count matches metadata (21)
+OK      coverage contains only PASS/FAIL
+OK      raw queue files=1355
+OK      AFL stability=100.00%
+OK      execs_done=749615
+SUMMARY PASS=22 FAIL=21 UNRESOLVED=1296 usable=43
+OK      rep05 directory
+
+expat_resume rep05 afl
+OK      metadata.json
+OK      coverage.jsonl
+OK      generated PASS directory
+OK      generated FAIL directory
+OK      AFL queue directory
+OK      fuzzer_stats
+OK      duration=300s
+OK      mode=afl
+OK      repetition=5
+OK      PASS + FAIL = usable (12)
+OK      PASS + FAIL + UNRESOLVED = unique evaluated (1576)
+OK      seed entries=16
+OK      generated queue accounting is consistent
+OK      raw queue accounting is consistent
+OK      PASS files=11
+OK      FAIL files=1
+OK      coverage records = usable tests (12)
+OK      coverage PASS count matches metadata (11)
+OK      coverage FAIL count matches metadata (1)
+OK      coverage contains only PASS/FAIL
+OK      raw queue files=1592
+OK      AFL stability=100.00%
+OK      execs_done=804412
+SUMMARY PASS=11 FAIL=1 UNRESOLVED=1564 usable=12
+
+expat_resume rep05 aflsmart-mixed
+OK      metadata.json
+OK      coverage.jsonl
+OK      generated PASS directory
+OK      generated FAIL directory
+OK      AFL queue directory
+OK      fuzzer_stats
+OK      duration=300s
+OK      mode=aflsmart-mixed
+OK      repetition=5
+OK      PASS + FAIL = usable (31)
+OK      PASS + FAIL + UNRESOLVED = unique evaluated (1373)
+OK      seed entries=16
+OK      generated queue accounting is consistent
+OK      raw queue accounting is consistent
+OK      PASS files=13
+OK      FAIL files=18
+OK      coverage records = usable tests (31)
+OK      coverage PASS count matches metadata (13)
+OK      coverage FAIL count matches metadata (18)
+OK      coverage contains only PASS/FAIL
+OK      raw queue files=1389
+OK      AFL stability=100.00%
+OK      execs_done=750360
+SUMMARY PASS=13 FAIL=18 UNRESOLVED=1342 usable=31
+
+expat_resume rep05 aflsmart-nonstack
+OK      metadata.json
+OK      coverage.jsonl
+OK      generated PASS directory
+OK      generated FAIL directory
+OK      AFL queue directory
+OK      fuzzer_stats
+OK      duration=300s
+OK      mode=aflsmart-nonstack
+OK      repetition=5
+OK      PASS + FAIL = usable (25)
+OK      PASS + FAIL + UNRESOLVED = unique evaluated (1421)
+OK      seed entries=16
+OK      generated queue accounting is consistent
+OK      raw queue accounting is consistent
+OK      PASS files=14
+OK      FAIL files=11
+OK      coverage records = usable tests (25)
+OK      coverage PASS count matches metadata (14)
+OK      coverage FAIL count matches metadata (11)
+OK      coverage contains only PASS/FAIL
+OK      raw queue files=1437
+OK      AFL stability=100.00%
+OK      execs_done=765981
+SUMMARY PASS=14 FAIL=11 UNRESOLVED=1396 usable=25
+
+==============================================================================
+libyaml_flow
+==============================================================================
+OK      formal experiment root
+OK      rep01 directory
+
+libyaml_flow rep01 afl
+OK      metadata.json
+OK      coverage.jsonl
+OK      generated PASS directory
+OK      generated FAIL directory
+OK      AFL queue directory
+OK      fuzzer_stats
+OK      duration=300s
+OK      mode=afl
+OK      repetition=1
+OK      PASS + FAIL = usable (363)
+OK      PASS + FAIL + UNRESOLVED = unique evaluated (1499)
+OK      seed entries=16
+OK      generated queue accounting is consistent
+OK      raw queue accounting is consistent
+OK      PASS files=349
+OK      FAIL files=14
+OK      coverage records = usable tests (363)
+OK      coverage PASS count matches metadata (349)
+OK      coverage FAIL count matches metadata (14)
+OK      coverage contains only PASS/FAIL
+OK      raw queue files=1516
+OK      AFL stability=100.00%
+OK      execs_done=868882
+SUMMARY PASS=349 FAIL=14 UNRESOLVED=1136 usable=363
+
+libyaml_flow rep01 aflsmart-mixed
+OK      metadata.json
+OK      coverage.jsonl
+OK      generated PASS directory
+OK      generated FAIL directory
+OK      AFL queue directory
+OK      fuzzer_stats
+OK      duration=300s
+OK      mode=aflsmart-mixed
+OK      repetition=1
+OK      PASS + FAIL = usable (316)
+OK      PASS + FAIL + UNRESOLVED = unique evaluated (1406)
+OK      seed entries=16
+OK      generated queue accounting is consistent
+OK      raw queue accounting is consistent
+OK      PASS files=304
+OK      FAIL files=12
+OK      coverage records = usable tests (316)
+OK      coverage PASS count matches metadata (304)
+OK      coverage FAIL count matches metadata (12)
+OK      coverage contains only PASS/FAIL
+OK      raw queue files=1424
+OK      AFL stability=100.00%
+OK      execs_done=845635
+SUMMARY PASS=304 FAIL=12 UNRESOLVED=1090 usable=316
+
+libyaml_flow rep01 aflsmart-nonstack
+OK      metadata.json
+OK      coverage.jsonl
+OK      generated PASS directory
+OK      generated FAIL directory
+OK      AFL queue directory
+OK      fuzzer_stats
+OK      duration=300s
+OK      mode=aflsmart-nonstack
+OK      repetition=1
+OK      PASS + FAIL = usable (340)
+OK      PASS + FAIL + UNRESOLVED = unique evaluated (1411)
+OK      seed entries=16
+OK      generated queue accounting is consistent
+OK      raw queue accounting is consistent
+OK      PASS files=330
+OK      FAIL files=10
+OK      coverage records = usable tests (340)
+OK      coverage PASS count matches metadata (330)
+OK      coverage FAIL count matches metadata (10)
+OK      coverage contains only PASS/FAIL
+OK      raw queue files=1430
+OK      AFL stability=100.00%
+OK      execs_done=861063
+SUMMARY PASS=330 FAIL=10 UNRESOLVED=1071 usable=340
+OK      rep02 directory
+
+libyaml_flow rep02 afl
+OK      metadata.json
+OK      coverage.jsonl
+OK      generated PASS directory
+OK      generated FAIL directory
+OK      AFL queue directory
+OK      fuzzer_stats
+OK      duration=300s
+OK      mode=afl
+OK      repetition=2
+OK      PASS + FAIL = usable (353)
+OK      PASS + FAIL + UNRESOLVED = unique evaluated (1471)
+OK      seed entries=16
+OK      generated queue accounting is consistent
+OK      raw queue accounting is consistent
+OK      PASS files=341
+OK      FAIL files=12
+OK      coverage records = usable tests (353)
+OK      coverage PASS count matches metadata (341)
+OK      coverage FAIL count matches metadata (12)
+OK      coverage contains only PASS/FAIL
+OK      raw queue files=1490
+OK      AFL stability=100.00%
+OK      execs_done=877224
+SUMMARY PASS=341 FAIL=12 UNRESOLVED=1118 usable=353
+
+libyaml_flow rep02 aflsmart-mixed
+OK      metadata.json
+OK      coverage.jsonl
+OK      generated PASS directory
+OK      generated FAIL directory
+OK      AFL queue directory
+OK      fuzzer_stats
+OK      duration=300s
+OK      mode=aflsmart-mixed
+OK      repetition=2
+OK      PASS + FAIL = usable (322)
+OK      PASS + FAIL + UNRESOLVED = unique evaluated (1376)
+OK      seed entries=16
+OK      generated queue accounting is consistent
+OK      raw queue accounting is consistent
+OK      PASS files=308
+OK      FAIL files=14
+OK      coverage records = usable tests (322)
+OK      coverage PASS count matches metadata (308)
+OK      coverage FAIL count matches metadata (14)
+OK      coverage contains only PASS/FAIL
+OK      raw queue files=1393
+OK      AFL stability=100.00%
+OK      execs_done=836827
+SUMMARY PASS=308 FAIL=14 UNRESOLVED=1054 usable=322
+
+libyaml_flow rep02 aflsmart-nonstack
+OK      metadata.json
+OK      coverage.jsonl
+OK      generated PASS directory
+OK      generated FAIL directory
+OK      AFL queue directory
+OK      fuzzer_stats
+OK      duration=300s
+OK      mode=aflsmart-nonstack
+OK      repetition=2
+OK      PASS + FAIL = usable (286)
+OK      PASS + FAIL + UNRESOLVED = unique evaluated (1376)
+OK      seed entries=16
+OK      generated queue accounting is consistent
+OK      raw queue accounting is consistent
+OK      PASS files=274
+OK      FAIL files=12
+OK      coverage records = usable tests (286)
+OK      coverage PASS count matches metadata (274)
+OK      coverage FAIL count matches metadata (12)
+OK      coverage contains only PASS/FAIL
+OK      raw queue files=1395
+OK      AFL stability=100.00%
+OK      execs_done=861135
+SUMMARY PASS=274 FAIL=12 UNRESOLVED=1090 usable=286
+OK      rep03 directory
+
+libyaml_flow rep03 afl
+OK      metadata.json
+OK      coverage.jsonl
+OK      generated PASS directory
+OK      generated FAIL directory
+OK      AFL queue directory
+OK      fuzzer_stats
+OK      duration=300s
+OK      mode=afl
+OK      repetition=3
+OK      PASS + FAIL = usable (290)
+OK      PASS + FAIL + UNRESOLVED = unique evaluated (1477)
+OK      seed entries=16
+OK      generated queue accounting is consistent
+OK      raw queue accounting is consistent
+OK      PASS files=276
+OK      FAIL files=14
+OK      coverage records = usable tests (290)
+OK      coverage PASS count matches metadata (276)
+OK      coverage FAIL count matches metadata (14)
+OK      coverage contains only PASS/FAIL
+OK      raw queue files=1495
+OK      AFL stability=100.00%
+OK      execs_done=874296
+SUMMARY PASS=276 FAIL=14 UNRESOLVED=1187 usable=290
+
+libyaml_flow rep03 aflsmart-mixed
+OK      metadata.json
+OK      coverage.jsonl
+OK      generated PASS directory
+OK      generated FAIL directory
+OK      AFL queue directory
+OK      fuzzer_stats
+OK      duration=300s
+OK      mode=aflsmart-mixed
+OK      repetition=3
+OK      PASS + FAIL = usable (277)
+OK      PASS + FAIL + UNRESOLVED = unique evaluated (1268)
+OK      seed entries=16
+OK      generated queue accounting is consistent
+OK      raw queue accounting is consistent
+OK      PASS files=270
+OK      FAIL files=7
+OK      coverage records = usable tests (277)
+OK      coverage PASS count matches metadata (270)
+OK      coverage FAIL count matches metadata (7)
+OK      coverage contains only PASS/FAIL
+OK      raw queue files=1286
+OK      AFL stability=100.00%
+OK      execs_done=830392
+SUMMARY PASS=270 FAIL=7 UNRESOLVED=991 usable=277
+
+libyaml_flow rep03 aflsmart-nonstack
+OK      metadata.json
+OK      coverage.jsonl
+OK      generated PASS directory
+OK      generated FAIL directory
+OK      AFL queue directory
+OK      fuzzer_stats
+OK      duration=300s
+OK      mode=aflsmart-nonstack
+OK      repetition=3
+OK      PASS + FAIL = usable (342)
+OK      PASS + FAIL + UNRESOLVED = unique evaluated (1354)
+OK      seed entries=16
+OK      generated queue accounting is consistent
+OK      raw queue accounting is consistent
+OK      PASS files=332
+OK      FAIL files=10
+OK      coverage records = usable tests (342)
+OK      coverage PASS count matches metadata (332)
+OK      coverage FAIL count matches metadata (10)
+OK      coverage contains only PASS/FAIL
+OK      raw queue files=1373
+OK      AFL stability=100.00%
+OK      execs_done=839549
+SUMMARY PASS=332 FAIL=10 UNRESOLVED=1012 usable=342
+OK      rep04 directory
+
+libyaml_flow rep04 afl
+OK      metadata.json
+OK      coverage.jsonl
+OK      generated PASS directory
+OK      generated FAIL directory
+OK      AFL queue directory
+OK      fuzzer_stats
+OK      duration=300s
+OK      mode=afl
+OK      repetition=4
+OK      PASS + FAIL = usable (326)
+OK      PASS + FAIL + UNRESOLVED = unique evaluated (1493)
+OK      seed entries=16
+OK      generated queue accounting is consistent
+OK      raw queue accounting is consistent
+OK      PASS files=307
+OK      FAIL files=19
+OK      coverage records = usable tests (326)
+OK      coverage PASS count matches metadata (307)
+OK      coverage FAIL count matches metadata (19)
+OK      coverage contains only PASS/FAIL
+OK      raw queue files=1512
+OK      AFL stability=100.00%
+OK      execs_done=861396
+SUMMARY PASS=307 FAIL=19 UNRESOLVED=1167 usable=326
+
+libyaml_flow rep04 aflsmart-mixed
+OK      metadata.json
+OK      coverage.jsonl
+OK      generated PASS directory
+OK      generated FAIL directory
+OK      AFL queue directory
+OK      fuzzer_stats
+OK      duration=300s
+OK      mode=aflsmart-mixed
+OK      repetition=4
+OK      PASS + FAIL = usable (314)
+OK      PASS + FAIL + UNRESOLVED = unique evaluated (1374)
+OK      seed entries=16
+OK      generated queue accounting is consistent
+OK      raw queue accounting is consistent
+OK      PASS files=285
+OK      FAIL files=29
+OK      coverage records = usable tests (314)
+OK      coverage PASS count matches metadata (285)
+OK      coverage FAIL count matches metadata (29)
+OK      coverage contains only PASS/FAIL
+OK      raw queue files=1393
+OK      AFL stability=100.00%
+OK      execs_done=783225
+SUMMARY PASS=285 FAIL=29 UNRESOLVED=1060 usable=314
+
+libyaml_flow rep04 aflsmart-nonstack
+OK      metadata.json
+OK      coverage.jsonl
+OK      generated PASS directory
+OK      generated FAIL directory
+OK      AFL queue directory
+OK      fuzzer_stats
+OK      duration=300s
+OK      mode=aflsmart-nonstack
+OK      repetition=4
+OK      PASS + FAIL = usable (271)
+OK      PASS + FAIL + UNRESOLVED = unique evaluated (1403)
+OK      seed entries=16
+OK      generated queue accounting is consistent
+OK      raw queue accounting is consistent
+OK      PASS files=260
+OK      FAIL files=11
+OK      coverage records = usable tests (271)
+OK      coverage PASS count matches metadata (260)
+OK      coverage FAIL count matches metadata (11)
+OK      coverage contains only PASS/FAIL
+OK      raw queue files=1422
+OK      AFL stability=100.00%
+OK      execs_done=842590
+SUMMARY PASS=260 FAIL=11 UNRESOLVED=1132 usable=271
+OK      rep05 directory
+
+libyaml_flow rep05 afl
+OK      metadata.json
+OK      coverage.jsonl
+OK      generated PASS directory
+OK      generated FAIL directory
+OK      AFL queue directory
+OK      fuzzer_stats
+OK      duration=300s
+OK      mode=afl
+OK      repetition=5
+OK      PASS + FAIL = usable (341)
+OK      PASS + FAIL + UNRESOLVED = unique evaluated (1493)
+OK      seed entries=16
+OK      generated queue accounting is consistent
+OK      raw queue accounting is consistent
+OK      PASS files=320
+OK      FAIL files=21
+OK      coverage records = usable tests (341)
+OK      coverage PASS count matches metadata (320)
+OK      coverage FAIL count matches metadata (21)
+OK      coverage contains only PASS/FAIL
+OK      raw queue files=1512
+OK      AFL stability=100.00%
+OK      execs_done=860177
+SUMMARY PASS=320 FAIL=21 UNRESOLVED=1152 usable=341
+
+libyaml_flow rep05 aflsmart-mixed
+OK      metadata.json
+OK      coverage.jsonl
+OK      generated PASS directory
+OK      generated FAIL directory
+OK      AFL queue directory
+OK      fuzzer_stats
+OK      duration=300s
+OK      mode=aflsmart-mixed
+OK      repetition=5
+OK      PASS + FAIL = usable (321)
+OK      PASS + FAIL + UNRESOLVED = unique evaluated (1343)
+OK      seed entries=16
+OK      generated queue accounting is consistent
+OK      raw queue accounting is consistent
+OK      PASS files=306
+OK      FAIL files=15
+OK      coverage records = usable tests (321)
+OK      coverage PASS count matches metadata (306)
+OK      coverage FAIL count matches metadata (15)
+OK      coverage contains only PASS/FAIL
+OK      raw queue files=1361
+OK      AFL stability=100.00%
+OK      execs_done=835663
+SUMMARY PASS=306 FAIL=15 UNRESOLVED=1022 usable=321
+
+libyaml_flow rep05 aflsmart-nonstack
+OK      metadata.json
+OK      coverage.jsonl
+OK      generated PASS directory
+OK      generated FAIL directory
+OK      AFL queue directory
+OK      fuzzer_stats
+OK      duration=300s
+OK      mode=aflsmart-nonstack
+OK      repetition=5
+OK      PASS + FAIL = usable (288)
+OK      PASS + FAIL + UNRESOLVED = unique evaluated (1421)
+OK      seed entries=16
+OK      generated queue accounting is consistent
+OK      raw queue accounting is consistent
+OK      PASS files=278
+OK      FAIL files=10
+OK      coverage records = usable tests (288)
+OK      coverage PASS count matches metadata (278)
+OK      coverage FAIL count matches metadata (10)
+OK      coverage contains only PASS/FAIL
+OK      raw queue files=1440
+OK      AFL stability=100.00%
+OK      execs_done=857239
+SUMMARY PASS=278 FAIL=10 UNRESOLVED=1133 usable=288
+
+==============================================================================
+runs checked: 30
+FORMAL RESULT AUDIT: PASS
