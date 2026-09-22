@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Peach xmlns="http://peachfuzzer.com/2012/Peach"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <!--
+      Neutral structural model for the frozen libyaml DDMIN FAIL corpus.
+
+      This is intentionally NOT a full YAML grammar.
+
+      It models only generic flow-collection structure shared by the
+      frozen failing seeds:
+
+          optional document marker
+          {
+              variable mapping material
+              [
+                  variable sequence material
+                  [
+                      mutable nested content
+                  ]
+                  variable sequence material
+              ]
+              variable mapping material
+          }
+          optional newline
+
+      The historical trigger character '?' is deliberately NOT a token.
+      It remains ordinary mutable data.
+    -->
+
+    <DataModel name="YAML_FLOW">
+
+        <String
+            name="DocumentStart"
+            value="---&#10;"
+            token="true"
+            minOccurs="0"
+            maxOccurs="1"
+        />
+
+        <Block name="FlowMapping">
+
+            <String
+                name="MappingOpen"
+                value="{"
+                token="true"
+            />
+
+            <!--
+              Examples after cracking:
+                "name: demo, items: "
+                "nam: "
+                "n: "
+                "nam, items: "
+            -->
+            <String
+                name="BeforeOuterSequence"
+                value="name: demo, items: "
+            />
+
+            <Block name="OuterSequence">
+
+                <String
+                    name="OuterSequenceOpen"
+                    value="["
+                    token="true"
+                />
+
+                <!-- Examples: "alpha, " or "a," -->
+                <String
+                    name="BeforeNestedSequence"
+                    value="alpha, "
+                />
+
+                <Block name="NestedSequence">
+
+                    <String
+                        name="NestedSequenceOpen"
+                        value="["
+                        token="true"
+                    />
+
+                    <!--
+                      Deliberately ordinary mutable data.
+                      Default happens to be "?", but it is NOT a token.
+                    -->
+                    <String
+                        name="NestedContent"
+                        value="?"
+                    />
+
+                    <String
+                        name="NestedSequenceClose"
+                        value="]"
+                        token="true"
+                    />
+
+                </Block>
+
+                <!-- Examples: ", omega", ", o", "," or empty -->
+                <String
+                    name="AfterNestedSequence"
+                    value=", omega"
+                />
+
+                <String
+                    name="OuterSequenceClose"
+                    value="]"
+                    token="true"
+                />
+
+            </Block>
+
+            <!--
+              Examples:
+                ", flag: true"
+                ", g: true"
+                ", true"
+                ", e"
+                ","
+                empty
+            -->
+            <String
+                name="AfterOuterSequence"
+                value=", flag: true"
+            />
+
+            <String
+                name="MappingClose"
+                value="}"
+                token="true"
+            />
+
+        </Block>
+
+        <String
+            name="TrailingNewline"
+            value="&#10;"
+            token="true"
+            minOccurs="0"
+            maxOccurs="1"
+        />
+
+    </DataModel>
+
+
+    <StateModel name="TheState" initialState="Initial">
+
+        <State name="Initial">
+
+            <Action type="output">
+                <DataModel ref="YAML_FLOW"/>
+                <Data fileName="/dev/null"/>
+            </Action>
+
+            <Action type="close"/>
+
+        </State>
+
+    </StateModel>
+
+
+    <Test name="Default">
+
+        <StateModel ref="TheState"/>
+
+        <Publisher class="File">
+            <Param name="FileName" value="repaired"/>
+        </Publisher>
+
+        <Logger class="Filesystem">
+            <Param name="Path" value="logs"/>
+        </Logger>
+
+    </Test>
+
+</Peach>
