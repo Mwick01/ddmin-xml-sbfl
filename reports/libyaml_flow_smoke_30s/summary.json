@@ -1,0 +1,970 @@
+{
+  "aggregate": {
+    "afl": {
+      "metrics": {
+        "added_FAIL": {
+          "max": 7,
+          "mean": 7,
+          "median": 7,
+          "min": 7,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "added_PASS": {
+          "max": 82,
+          "mean": 82,
+          "median": 82,
+          "min": 82,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "distinct_FAIL_profiles": {
+          "max": 5,
+          "mean": 5,
+          "median": 5,
+          "min": 5,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "distinct_PASS_profiles": {
+          "max": 25,
+          "mean": 25,
+          "median": 25,
+          "min": 25,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "execs_done": {
+          "max": 49409,
+          "mean": 49409,
+          "median": 49409,
+          "min": 49409,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "generated_UNRESOLVED": {
+          "max": 381,
+          "mean": 381,
+          "median": 381,
+          "min": 381,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "havoc_smart_retained": {
+          "max": 0,
+          "mean": 0,
+          "median": 0,
+          "min": 0,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "jaccard_average_rank": {
+          "max": 3.5,
+          "mean": 3.5,
+          "median": 3.5,
+          "min": 3.5,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "jaccard_baseline_tied_above": {
+          "max": 0,
+          "mean": 0,
+          "median": 0,
+          "min": 0,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "jaccard_baseline_tied_below": {
+          "max": 11,
+          "mean": 11,
+          "median": 11,
+          "min": 11,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "jaccard_best_rank": {
+          "max": 1,
+          "mean": 1,
+          "median": 1,
+          "min": 1,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "jaccard_exam_percentage": {
+          "max": 0.5804311774461028,
+          "mean": 0.5804311774461028,
+          "median": 0.5804311774461028,
+          "min": 0.5804311774461028,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "jaccard_tie_size": {
+          "max": 6,
+          "mean": 6,
+          "median": 6,
+          "min": 6,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "jaccard_worst_rank": {
+          "max": 6,
+          "mean": 6,
+          "median": 6,
+          "min": 6,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "new_FAIL_profiles": {
+          "max": 4,
+          "mean": 4,
+          "median": 4,
+          "min": 4,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "new_PASS_profiles": {
+          "max": 20,
+          "mean": 20,
+          "median": 20,
+          "min": 20,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "ochiai_average_rank": {
+          "max": 3.5,
+          "mean": 3.5,
+          "median": 3.5,
+          "min": 3.5,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "ochiai_baseline_tied_above": {
+          "max": 0,
+          "mean": 0,
+          "median": 0,
+          "min": 0,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "ochiai_baseline_tied_below": {
+          "max": 11,
+          "mean": 11,
+          "median": 11,
+          "min": 11,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "ochiai_best_rank": {
+          "max": 1,
+          "mean": 1,
+          "median": 1,
+          "min": 1,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "ochiai_exam_percentage": {
+          "max": 0.5804311774461028,
+          "mean": 0.5804311774461028,
+          "median": 0.5804311774461028,
+          "min": 0.5804311774461028,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "ochiai_tie_size": {
+          "max": 6,
+          "mean": 6,
+          "median": 6,
+          "min": 6,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "ochiai_worst_rank": {
+          "max": 6,
+          "mean": 6,
+          "median": 6,
+          "min": 6,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "paths_total": {
+          "max": 488,
+          "mean": 488,
+          "median": 488,
+          "min": 488,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "stability": {
+          "max": 100.0,
+          "mean": 100.0,
+          "median": 100.0,
+          "min": 100.0,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "usable_rate": {
+          "max": 0.18936170212765957,
+          "mean": 0.18936170212765957,
+          "median": 0.18936170212765957,
+          "min": 0.18936170212765957,
+          "n": 1,
+          "stdev": 0.0
+        }
+      },
+      "repetitions": 1
+    },
+    "aflsmart-mixed": {
+      "metrics": {
+        "added_FAIL": {
+          "max": 15,
+          "mean": 15,
+          "median": 15,
+          "min": 15,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "added_PASS": {
+          "max": 85,
+          "mean": 85,
+          "median": 85,
+          "min": 85,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "distinct_FAIL_profiles": {
+          "max": 6,
+          "mean": 6,
+          "median": 6,
+          "min": 6,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "distinct_PASS_profiles": {
+          "max": 22,
+          "mean": 22,
+          "median": 22,
+          "min": 22,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "execs_done": {
+          "max": 68312,
+          "mean": 68312,
+          "median": 68312,
+          "min": 68312,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "generated_UNRESOLVED": {
+          "max": 454,
+          "mean": 454,
+          "median": 454,
+          "min": 454,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "havoc_smart_retained": {
+          "max": 9,
+          "mean": 9,
+          "median": 9,
+          "min": 9,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "jaccard_average_rank": {
+          "max": 9.0,
+          "mean": 9.0,
+          "median": 9.0,
+          "min": 9.0,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "jaccard_baseline_tied_above": {
+          "max": 0,
+          "mean": 0,
+          "median": 0,
+          "min": 0,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "jaccard_baseline_tied_below": {
+          "max": 0,
+          "mean": 0,
+          "median": 0,
+          "min": 0,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "jaccard_best_rank": {
+          "max": 1,
+          "mean": 1,
+          "median": 1,
+          "min": 1,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "jaccard_exam_percentage": {
+          "max": 1.492537313432836,
+          "mean": 1.492537313432836,
+          "median": 1.492537313432836,
+          "min": 1.492537313432836,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "jaccard_tie_size": {
+          "max": 17,
+          "mean": 17,
+          "median": 17,
+          "min": 17,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "jaccard_worst_rank": {
+          "max": 17,
+          "mean": 17,
+          "median": 17,
+          "min": 17,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "new_FAIL_profiles": {
+          "max": 4,
+          "mean": 4,
+          "median": 4,
+          "min": 4,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "new_PASS_profiles": {
+          "max": 17,
+          "mean": 17,
+          "median": 17,
+          "min": 17,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "ochiai_average_rank": {
+          "max": 9.0,
+          "mean": 9.0,
+          "median": 9.0,
+          "min": 9.0,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "ochiai_baseline_tied_above": {
+          "max": 0,
+          "mean": 0,
+          "median": 0,
+          "min": 0,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "ochiai_baseline_tied_below": {
+          "max": 0,
+          "mean": 0,
+          "median": 0,
+          "min": 0,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "ochiai_best_rank": {
+          "max": 1,
+          "mean": 1,
+          "median": 1,
+          "min": 1,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "ochiai_exam_percentage": {
+          "max": 1.492537313432836,
+          "mean": 1.492537313432836,
+          "median": 1.492537313432836,
+          "min": 1.492537313432836,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "ochiai_tie_size": {
+          "max": 17,
+          "mean": 17,
+          "median": 17,
+          "min": 17,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "ochiai_worst_rank": {
+          "max": 17,
+          "mean": 17,
+          "median": 17,
+          "min": 17,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "paths_total": {
+          "max": 572,
+          "mean": 572,
+          "median": 572,
+          "min": 572,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "stability": {
+          "max": 100.0,
+          "mean": 100.0,
+          "median": 100.0,
+          "min": 100.0,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "usable_rate": {
+          "max": 0.18050541516245489,
+          "mean": 0.18050541516245489,
+          "median": 0.18050541516245489,
+          "min": 0.18050541516245489,
+          "n": 1,
+          "stdev": 0.0
+        }
+      },
+      "repetitions": 1
+    },
+    "aflsmart-nonstack": {
+      "metrics": {
+        "added_FAIL": {
+          "max": 5,
+          "mean": 5,
+          "median": 5,
+          "min": 5,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "added_PASS": {
+          "max": 114,
+          "mean": 114,
+          "median": 114,
+          "min": 114,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "distinct_FAIL_profiles": {
+          "max": 5,
+          "mean": 5,
+          "median": 5,
+          "min": 5,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "distinct_PASS_profiles": {
+          "max": 28,
+          "mean": 28,
+          "median": 28,
+          "min": 28,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "execs_done": {
+          "max": 56581,
+          "mean": 56581,
+          "median": 56581,
+          "min": 56581,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "generated_UNRESOLVED": {
+          "max": 363,
+          "mean": 363,
+          "median": 363,
+          "min": 363,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "havoc_smart_retained": {
+          "max": 37,
+          "mean": 37,
+          "median": 37,
+          "min": 37,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "jaccard_average_rank": {
+          "max": 9.0,
+          "mean": 9.0,
+          "median": 9.0,
+          "min": 9.0,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "jaccard_baseline_tied_above": {
+          "max": 0,
+          "mean": 0,
+          "median": 0,
+          "min": 0,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "jaccard_baseline_tied_below": {
+          "max": 0,
+          "mean": 0,
+          "median": 0,
+          "min": 0,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "jaccard_best_rank": {
+          "max": 1,
+          "mean": 1,
+          "median": 1,
+          "min": 1,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "jaccard_exam_percentage": {
+          "max": 1.492537313432836,
+          "mean": 1.492537313432836,
+          "median": 1.492537313432836,
+          "min": 1.492537313432836,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "jaccard_tie_size": {
+          "max": 17,
+          "mean": 17,
+          "median": 17,
+          "min": 17,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "jaccard_worst_rank": {
+          "max": 17,
+          "mean": 17,
+          "median": 17,
+          "min": 17,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "new_FAIL_profiles": {
+          "max": 4,
+          "mean": 4,
+          "median": 4,
+          "min": 4,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "new_PASS_profiles": {
+          "max": 24,
+          "mean": 24,
+          "median": 24,
+          "min": 24,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "ochiai_average_rank": {
+          "max": 9.0,
+          "mean": 9.0,
+          "median": 9.0,
+          "min": 9.0,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "ochiai_baseline_tied_above": {
+          "max": 0,
+          "mean": 0,
+          "median": 0,
+          "min": 0,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "ochiai_baseline_tied_below": {
+          "max": 0,
+          "mean": 0,
+          "median": 0,
+          "min": 0,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "ochiai_best_rank": {
+          "max": 1,
+          "mean": 1,
+          "median": 1,
+          "min": 1,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "ochiai_exam_percentage": {
+          "max": 1.492537313432836,
+          "mean": 1.492537313432836,
+          "median": 1.492537313432836,
+          "min": 1.492537313432836,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "ochiai_tie_size": {
+          "max": 17,
+          "mean": 17,
+          "median": 17,
+          "min": 17,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "ochiai_worst_rank": {
+          "max": 17,
+          "mean": 17,
+          "median": 17,
+          "min": 17,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "paths_total": {
+          "max": 502,
+          "mean": 502,
+          "median": 502,
+          "min": 502,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "stability": {
+          "max": 100.0,
+          "mean": 100.0,
+          "median": 100.0,
+          "min": 100.0,
+          "n": 1,
+          "stdev": 0.0
+        },
+        "usable_rate": {
+          "max": 0.24688796680497926,
+          "mean": 0.24688796680497926,
+          "median": 0.24688796680497926,
+          "min": 0.24688796680497926,
+          "n": 1,
+          "stdev": 0.0
+        }
+      },
+      "repetitions": 1
+    }
+  },
+  "baseline": {
+    "distinct_fail_profiles": 6,
+    "distinct_pass_profiles": 9,
+    "failing_tests": 16,
+    "jaccard": {
+      "average_rank": 9.0,
+      "best_rank": 1,
+      "exam_percentage": 1.492537313432836,
+      "score": 1.0,
+      "tie": {
+        "baseline_fault_tie_size": 17,
+        "baseline_tied_above_fault": 0,
+        "baseline_tied_below_fault": 0,
+        "baseline_tied_still_equal": 17,
+        "current_fault_tie_size": 17
+      },
+      "worst_rank": 17
+    },
+    "ochiai": {
+      "average_rank": 9.0,
+      "best_rank": 1,
+      "exam_percentage": 1.492537313432836,
+      "score": 1.0,
+      "tie": {
+        "baseline_fault_tie_size": 17,
+        "baseline_tied_above_fault": 0,
+        "baseline_tied_below_fault": 0,
+        "baseline_tied_still_equal": 17,
+        "current_fault_tie_size": 17
+      },
+      "worst_rank": 17
+    },
+    "passing_tests": 25,
+    "total_tests": 41
+  },
+  "baseline_run": "/home/user/ddmin-xml-sbfl/results/libyaml_flow/ddmin_rich_runs/20260921_232140_207481",
+  "duration_seconds": 30,
+  "fault_line": 1062,
+  "fuzz_root": "/home/user/ddmin-xml-sbfl/results/libyaml_flow/smoke_30s_runner",
+  "runs": [
+    {
+      "added_FAIL": 7,
+      "added_PASS": 82,
+      "added_fuzz_tests": 89,
+      "baseline_tests": 41,
+      "classification": {
+        "FAIL": 7,
+        "PASS": 82,
+        "UNRESOLVED": 381,
+        "duplicate_baseline": 2,
+        "duplicate_generated": 0,
+        "generated_queue_entries": 472,
+        "raw_queue_entries": 488,
+        "seed_entries": 16,
+        "unique_generated_evaluated": 470,
+        "usable": 89,
+        "usable_rate": 0.18936170212765957
+      },
+      "combined_FAIL": 23,
+      "combined_PASS": 107,
+      "combined_total": 130,
+      "distinct_FAIL_profiles": 5,
+      "distinct_PASS_profiles": 25,
+      "duration_seconds": 30,
+      "fuzzer_stats": {
+        "afl_banner": "flow_buggy",
+        "afl_version": "2.52b",
+        "bitmap_cvg": "1.07%",
+        "command_line": "/aflsmart/afl-fuzz -m 200 -d -i aflsmart/libyaml_flow_seeds -o results/libyaml_flow/smoke_30s_runner/rep01/afl/raw -- ./build/aflsmart/libyaml_flow/flow_buggy @@",
+        "cur_path": "58",
+        "cycles_done": "0",
+        "exec_timeout": "20",
+        "execs_done": "49409",
+        "execs_per_sec": "1242.72",
+        "execs_since_crash": "49409",
+        "fuzzer_pid": "8",
+        "last_crash": "0",
+        "last_hang": "0",
+        "last_path": "1790066911",
+        "last_update": "1790066911",
+        "max_depth": "3",
+        "paths_favored": "136",
+        "paths_found": "472",
+        "paths_imported": "0",
+        "paths_total": "488",
+        "pending_favs": "126",
+        "pending_total": "474",
+        "stability": "100.00%",
+        "start_time": "1790066881",
+        "target_mode": "default",
+        "unique_crashes": "0",
+        "unique_hangs": "0",
+        "variable_paths": "0"
+      },
+      "git_commit": "1f00cc7b174922cd6d00cf0776a7d84e853fe040",
+      "jaccard": {
+        "average_rank": 3.5,
+        "best_rank": 1,
+        "exam_percentage": 0.5804311774461028,
+        "score": 1.0,
+        "tie": {
+          "baseline_fault_tie_size": 17,
+          "baseline_tied_above_fault": 0,
+          "baseline_tied_below_fault": 11,
+          "baseline_tied_still_equal": 6,
+          "current_fault_tie_size": 6
+        },
+        "worst_rank": 6
+      },
+      "mode": "afl",
+      "mutation_counts": {
+        "havoc_retained": 328,
+        "havoc_smart_retained": 0,
+        "splice_retained": 144
+      },
+      "new_FAIL_profiles": 4,
+      "new_PASS_profiles": 20,
+      "ochiai": {
+        "average_rank": 3.5,
+        "best_rank": 1,
+        "exam_percentage": 0.5804311774461028,
+        "score": 1.0,
+        "tie": {
+          "baseline_fault_tie_size": 17,
+          "baseline_tied_above_fault": 0,
+          "baseline_tied_below_fault": 11,
+          "baseline_tied_still_equal": 6,
+          "current_fault_tie_size": 6
+        },
+        "worst_rank": 6
+      },
+      "peach_chunk_structures": 0,
+      "repetition": 1,
+      "subject": "libyaml_flow"
+    },
+    {
+      "added_FAIL": 15,
+      "added_PASS": 85,
+      "added_fuzz_tests": 100,
+      "baseline_tests": 41,
+      "classification": {
+        "FAIL": 15,
+        "PASS": 85,
+        "UNRESOLVED": 454,
+        "duplicate_baseline": 2,
+        "duplicate_generated": 0,
+        "generated_queue_entries": 556,
+        "raw_queue_entries": 572,
+        "seed_entries": 16,
+        "unique_generated_evaluated": 554,
+        "usable": 100,
+        "usable_rate": 0.18050541516245489
+      },
+      "combined_FAIL": 31,
+      "combined_PASS": 110,
+      "combined_total": 141,
+      "distinct_FAIL_profiles": 6,
+      "distinct_PASS_profiles": 22,
+      "duration_seconds": 30,
+      "fuzzer_stats": {
+        "afl_banner": "flow_buggy",
+        "afl_version": "2.52b",
+        "bitmap_cvg": "1.07%",
+        "command_line": "/aflsmart/afl-fuzz -m 200 -d -i aflsmart/libyaml_flow_seeds -o results/libyaml_flow/smoke_30s_runner/rep01/aflsmart-mixed/raw -w peach -g aflsmart/libyaml_flow.xml -h -- ./build/aflsmart/libyaml_flow/flow_buggy @@",
+        "cur_path": "55",
+        "cycles_done": "0",
+        "exec_timeout": "20",
+        "execs_done": "68312",
+        "execs_per_sec": "2098.36",
+        "execs_since_crash": "68312",
+        "fuzzer_pid": "8",
+        "last_crash": "0",
+        "last_hang": "0",
+        "last_path": "1790066845",
+        "last_update": "1790066845",
+        "max_depth": "3",
+        "paths_favored": "143",
+        "paths_found": "556",
+        "paths_imported": "0",
+        "paths_total": "572",
+        "pending_favs": "137",
+        "pending_total": "563",
+        "stability": "100.00%",
+        "start_time": "1790066815",
+        "target_mode": "default",
+        "unique_crashes": "0",
+        "unique_hangs": "0",
+        "variable_paths": "0"
+      },
+      "git_commit": "1f00cc7b174922cd6d00cf0776a7d84e853fe040",
+      "jaccard": {
+        "average_rank": 9.0,
+        "best_rank": 1,
+        "exam_percentage": 1.492537313432836,
+        "score": 1.0,
+        "tie": {
+          "baseline_fault_tie_size": 17,
+          "baseline_tied_above_fault": 0,
+          "baseline_tied_below_fault": 0,
+          "baseline_tied_still_equal": 17,
+          "current_fault_tie_size": 17
+        },
+        "worst_rank": 17
+      },
+      "mode": "aflsmart-mixed",
+      "mutation_counts": {
+        "havoc_retained": 333,
+        "havoc_smart_retained": 9,
+        "splice_retained": 214
+      },
+      "new_FAIL_profiles": 4,
+      "new_PASS_profiles": 17,
+      "ochiai": {
+        "average_rank": 9.0,
+        "best_rank": 1,
+        "exam_percentage": 1.492537313432836,
+        "score": 1.0,
+        "tie": {
+          "baseline_fault_tie_size": 17,
+          "baseline_tied_above_fault": 0,
+          "baseline_tied_below_fault": 0,
+          "baseline_tied_still_equal": 17,
+          "current_fault_tie_size": 17
+        },
+        "worst_rank": 17
+      },
+      "peach_chunk_structures": 1,
+      "repetition": 1,
+      "subject": "libyaml_flow"
+    },
+    {
+      "added_FAIL": 5,
+      "added_PASS": 114,
+      "added_fuzz_tests": 119,
+      "baseline_tests": 41,
+      "classification": {
+        "FAIL": 5,
+        "PASS": 114,
+        "UNRESOLVED": 363,
+        "duplicate_baseline": 4,
+        "duplicate_generated": 0,
+        "generated_queue_entries": 486,
+        "raw_queue_entries": 502,
+        "seed_entries": 16,
+        "unique_generated_evaluated": 482,
+        "usable": 119,
+        "usable_rate": 0.24688796680497926
+      },
+      "combined_FAIL": 21,
+      "combined_PASS": 139,
+      "combined_total": 160,
+      "distinct_FAIL_profiles": 5,
+      "distinct_PASS_profiles": 28,
+      "duration_seconds": 30,
+      "fuzzer_stats": {
+        "afl_banner": "flow_buggy",
+        "afl_version": "2.52b",
+        "bitmap_cvg": "1.07%",
+        "command_line": "/aflsmart/afl-fuzz -m 200 -d -i aflsmart/libyaml_flow_seeds -o results/libyaml_flow/smoke_30s_runner/rep01/aflsmart-nonstack/raw -w peach -g aflsmart/libyaml_flow.xml -- ./build/aflsmart/libyaml_flow/flow_buggy @@",
+        "cur_path": "63",
+        "cycles_done": "0",
+        "exec_timeout": "20",
+        "execs_done": "56581",
+        "execs_per_sec": "1777.78",
+        "execs_since_crash": "56581",
+        "fuzzer_pid": "8",
+        "last_crash": "0",
+        "last_hang": "0",
+        "last_path": "1790066877",
+        "last_update": "1790066877",
+        "max_depth": "3",
+        "paths_favored": "132",
+        "paths_found": "486",
+        "paths_imported": "0",
+        "paths_total": "502",
+        "pending_favs": "127",
+        "pending_total": "494",
+        "stability": "100.00%",
+        "start_time": "1790066847",
+        "target_mode": "default",
+        "unique_crashes": "0",
+        "unique_hangs": "0",
+        "variable_paths": "0"
+      },
+      "git_commit": "1f00cc7b174922cd6d00cf0776a7d84e853fe040",
+      "jaccard": {
+        "average_rank": 9.0,
+        "best_rank": 1,
+        "exam_percentage": 1.492537313432836,
+        "score": 1.0,
+        "tie": {
+          "baseline_fault_tie_size": 17,
+          "baseline_tied_above_fault": 0,
+          "baseline_tied_below_fault": 0,
+          "baseline_tied_still_equal": 17,
+          "current_fault_tie_size": 17
+        },
+        "worst_rank": 17
+      },
+      "mode": "aflsmart-nonstack",
+      "mutation_counts": {
+        "havoc_retained": 103,
+        "havoc_smart_retained": 37,
+        "splice_retained": 346
+      },
+      "new_FAIL_profiles": 4,
+      "new_PASS_profiles": 24,
+      "ochiai": {
+        "average_rank": 9.0,
+        "best_rank": 1,
+        "exam_percentage": 1.492537313432836,
+        "score": 1.0,
+        "tie": {
+          "baseline_fault_tie_size": 17,
+          "baseline_tied_above_fault": 0,
+          "baseline_tied_below_fault": 0,
+          "baseline_tied_still_equal": 17,
+          "current_fault_tie_size": 17
+        },
+        "worst_rank": 17
+      },
+      "peach_chunk_structures": 1,
+      "repetition": 1,
+      "subject": "libyaml_flow"
+    }
+  ],
+  "subject": "libyaml_flow"
+}
