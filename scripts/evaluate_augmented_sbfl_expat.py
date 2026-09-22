@@ -29,6 +29,16 @@ SUBJECTS = {
         ),
         "fault_line": 2912,
     },
+    "libyaml_flow": {
+        "source": (
+            PROJECT_ROOT
+            / "third_party"
+            / "libyaml-588eabf"
+            / "src"
+            / "parser.c"
+        ),
+        "fault_line": 1062,
+    },
 }
 
 

@@ -52,6 +52,50 @@ SUBJECTS = {
         coverage_object=PROJECT_ROOT / "build" / "expat-2.2.5-cov" / "CMakeFiles" / "expat.dir" / "lib" / "xmlparse.c.o",
         fault_line=2912,
     ),
+    "libyaml_flow": Subject(
+        name="libyaml_flow",
+        seed_directory=(
+            PROJECT_ROOT
+            / "aflsmart"
+            / "libyaml_flow_seeds"
+        ),
+        pit_file=(
+            PROJECT_ROOT
+            / "aflsmart"
+            / "libyaml_flow.xml"
+        ),
+        target=(
+            PROJECT_ROOT
+            / "build"
+            / "aflsmart"
+            / "libyaml_flow"
+            / "flow_buggy"
+        ),
+        oracle_module="oracle_libyaml_flow",
+        coverage_source=(
+            PROJECT_ROOT
+            / "third_party"
+            / "libyaml-588eabf"
+            / "src"
+            / "parser.c"
+        ),
+        coverage_binary=(
+            PROJECT_ROOT
+            / "build"
+            / "libyaml_flow"
+            / "flow_buggy_cov"
+        ),
+        coverage_object=(
+            PROJECT_ROOT
+            / "build"
+            / "libyaml-588eabf-cov"
+            / "CMakeFiles"
+            / "yaml.dir"
+            / "src"
+            / "parser.c.o"
+        ),
+        fault_line=1062,
+    ),
 }
 
 
