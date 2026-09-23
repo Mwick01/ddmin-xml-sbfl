@@ -1,0 +1,9 @@
+repo/
+buggy/
+fixed/
+buggy_asan
+fixed_asan
+*.o
+*.gcda
+*.gcno
+*.gcov

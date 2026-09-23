@@ -1,0 +1,3 @@
+buggy_asan: buggy/tinyxml2.cpp:550: static const char* tinyxml2::XMLUtil::GetCharacterRef(const char*, char*, int*): Assertion `digit == 0 || mult <= UINT_MAX / digit' failed.
+
+BUGGY_EXIT=134
