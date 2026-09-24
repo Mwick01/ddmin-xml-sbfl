@@ -1,10 +1,10 @@
-Candidate: Expat #566
+# Candidate: Expat #566
 Project: Expat
 Buggy release: 2.4.5
 Fixed release: 2.4.6
 Historical fix: merge 9288cd54
 
-SCREENING RESULT: REJECTED
+### SCREENING RESULT: REJECTED
 
 1. Buggy/fixed revisions known:
    PASS
@@ -83,10 +83,36 @@ SCREENING RESULT: REJECTED
 
    Screening stopped after failure of the DDMIN-usability criterion.
 
-Decision:
+### Decision:
    REJECT candidate from the formal subject set.
 
-Reason:
+### Reason:
    No usable DDMIN PASS spectrum was generated. The candidate is
    retained as evidence of structural invalidity during character-level
    reduction.
+
+### Additional DDMIN robustness check:
+  The experiment was repeated using the historical
+  experiment/ddmin-subset-reset2 implementation, which resets
+  granularity to 2 after accepting a failing subset.
+
+  Result:
+    Minimal size:          41
+    Reduction:          38.81%
+    Oracle attempts:       966
+    Unique candidates:     441
+    PASS candidates:         0
+    FAIL candidates:        14
+    UNRESOLVED candidates: 427
+
+  The results were identical to the current DDMIN implementation.
+
+  Inspection showed that all successful reductions for this subject
+  were failing complements; no failing subset was accepted.
+  Therefore the subset-reset modification was never exercised on
+  this reduction path.
+
+  Conclusion:
+    The absence of PASS candidates is a property of this subject /
+    character-level reduction trajectory, rather than an artifact of
+    the subset granularity-reset implementation.
