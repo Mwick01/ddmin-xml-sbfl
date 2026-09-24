@@ -1,0 +1,14 @@
+repo/
+buggy/
+fixed/
+build_buggy/
+build_fixed/
+buggy_driver
+fixed_driver
+*.o
+*.gcda
+*.gcno
+*.gcov
+coverage_buggy/
+semantic_buggy
+semantic_fixed

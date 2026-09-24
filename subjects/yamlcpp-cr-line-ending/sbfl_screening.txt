@@ -1,0 +1,59 @@
+PASS tests: 16
+FAIL tests: 7
+Executable lines: 207
+
+Top 20 lines using JACCARD
+------------------------------------------------------------------------------------------
+Rank 1-4 (avg 2.5)      Line 287  Score 0.368421  ef=7 ep=12 nf=0 np=4  void Stream::eat(int n) {
+Rank 1-4 (avg 2.5)      Line 288  Score 0.368421  ef=7 ep=12 nf=0 np=4  for (int i = 0; i < n; i++)
+Rank 1-4 (avg 2.5)      Line 289  Score 0.368421  ef=7 ep=12 nf=0 np=4  get();
+Rank 1-4 (avg 2.5)      Line 290  Score 0.368421  ef=7 ep=12 nf=0 np=4  }
+Rank 5-84 (avg 44.5)    Line 125  Score 0.304348  ef=7 ep=16 nf=0 np=0  inline UtfIntroCharType IntroCharTypeOf(std::istream::int_type ch) {
+Rank 5-84 (avg 44.5)    Line 126  Score 0.304348  ef=7 ep=16 nf=0 np=0  if (std::istream::traits_type::eof() == ch) {
+Rank 5-84 (avg 44.5)    Line 130  Score 0.304348  ef=7 ep=16 nf=0 np=0  switch (ch) {
+Rank 5-84 (avg 44.5)    Line 145  Score 0.304348  ef=7 ep=16 nf=0 np=0  if ((ch > 0) && (ch < 0xFF)) {
+Rank 5-84 (avg 44.5)    Line 146  Score 0.304348  ef=7 ep=16 nf=0 np=0  return uictAscii;
+Rank 5-84 (avg 44.5)    Line 185  Score 0.304348  ef=7 ep=16 nf=0 np=0  Stream::Stream(std::istream& input)
+Rank 5-84 (avg 44.5)    Line 186  Score 0.304348  ef=7 ep=16 nf=0 np=0  : m_input(input),
+Rank 5-84 (avg 44.5)    Line 187  Score 0.304348  ef=7 ep=16 nf=0 np=0  m_mark{},
+Rank 5-84 (avg 44.5)    Line 188  Score 0.304348  ef=7 ep=16 nf=0 np=0  m_charSet{},
+Rank 5-84 (avg 44.5)    Line 189  Score 0.304348  ef=7 ep=16 nf=0 np=0  m_readahead{},
+Rank 5-84 (avg 44.5)    Line 190  Score 0.304348  ef=7 ep=16 nf=0 np=0  m_pPrefetched(new unsigned char[YAML_PREFETCH_SIZE]),
+Rank 5-84 (avg 44.5)    Line 191  Score 0.304348  ef=7 ep=16 nf=0 np=0  m_nPrefetchedAvailable(0),
+Rank 5-84 (avg 44.5)    Line 192  Score 0.304348  ef=7 ep=16 nf=0 np=0  m_nPrefetchedUsed(0) {
+Rank 5-84 (avg 44.5)    Line 195  Score 0.304348  ef=7 ep=16 nf=0 np=0  if (!input)
+Rank 5-84 (avg 44.5)    Line 200  Score 0.304348  ef=7 ep=16 nf=0 np=0  char_traits::int_type intro[4]{};
+Rank 5-84 (avg 44.5)    Line 201  Score 0.304348  ef=7 ep=16 nf=0 np=0  int nIntroUsed = 0;
+
+Top 20 lines using OCHIAI
+------------------------------------------------------------------------------------------
+Rank 1-4 (avg 2.5)      Line 287  Score 0.606977  ef=7 ep=12 nf=0 np=4  void Stream::eat(int n) {
+Rank 1-4 (avg 2.5)      Line 288  Score 0.606977  ef=7 ep=12 nf=0 np=4  for (int i = 0; i < n; i++)
+Rank 1-4 (avg 2.5)      Line 289  Score 0.606977  ef=7 ep=12 nf=0 np=4  get();
+Rank 1-4 (avg 2.5)      Line 290  Score 0.606977  ef=7 ep=12 nf=0 np=4  }
+Rank 5-84 (avg 44.5)    Line 125  Score 0.551677  ef=7 ep=16 nf=0 np=0  inline UtfIntroCharType IntroCharTypeOf(std::istream::int_type ch) {
+Rank 5-84 (avg 44.5)    Line 126  Score 0.551677  ef=7 ep=16 nf=0 np=0  if (std::istream::traits_type::eof() == ch) {
+Rank 5-84 (avg 44.5)    Line 130  Score 0.551677  ef=7 ep=16 nf=0 np=0  switch (ch) {
+Rank 5-84 (avg 44.5)    Line 145  Score 0.551677  ef=7 ep=16 nf=0 np=0  if ((ch > 0) && (ch < 0xFF)) {
+Rank 5-84 (avg 44.5)    Line 146  Score 0.551677  ef=7 ep=16 nf=0 np=0  return uictAscii;
+Rank 5-84 (avg 44.5)    Line 185  Score 0.551677  ef=7 ep=16 nf=0 np=0  Stream::Stream(std::istream& input)
+Rank 5-84 (avg 44.5)    Line 186  Score 0.551677  ef=7 ep=16 nf=0 np=0  : m_input(input),
+Rank 5-84 (avg 44.5)    Line 187  Score 0.551677  ef=7 ep=16 nf=0 np=0  m_mark{},
+Rank 5-84 (avg 44.5)    Line 188  Score 0.551677  ef=7 ep=16 nf=0 np=0  m_charSet{},
+Rank 5-84 (avg 44.5)    Line 189  Score 0.551677  ef=7 ep=16 nf=0 np=0  m_readahead{},
+Rank 5-84 (avg 44.5)    Line 190  Score 0.551677  ef=7 ep=16 nf=0 np=0  m_pPrefetched(new unsigned char[YAML_PREFETCH_SIZE]),
+Rank 5-84 (avg 44.5)    Line 191  Score 0.551677  ef=7 ep=16 nf=0 np=0  m_nPrefetchedAvailable(0),
+Rank 5-84 (avg 44.5)    Line 192  Score 0.551677  ef=7 ep=16 nf=0 np=0  m_nPrefetchedUsed(0) {
+Rank 5-84 (avg 44.5)    Line 195  Score 0.551677  ef=7 ep=16 nf=0 np=0  if (!input)
+Rank 5-84 (avg 44.5)    Line 200  Score 0.551677  ef=7 ep=16 nf=0 np=0  char_traits::int_type intro[4]{};
+Rank 5-84 (avg 44.5)    Line 201  Score 0.551677  ef=7 ep=16 nf=0 np=0  int nIntroUsed = 0;
+
+Known fault results
+------------------------------------------------------------
+Jaccard: line=265, score=0.304348, rank=5-84 (average=44.50), EXAM=21.50%
+Ochiai: line=265, score=0.551677, rank=5-84 (average=44.50), EXAM=21.50%
+
+Spectrum: /home/user/ddmin-xml-sbfl/results/yamlcpp_cr_ddmin/20260924_192913_477043/sbfl/spectrum.csv
+Jaccard ranking: /home/user/ddmin-xml-sbfl/results/yamlcpp_cr_ddmin/20260924_192913_477043/sbfl/jaccard_ranking.csv
+Ochiai ranking: /home/user/ddmin-xml-sbfl/results/yamlcpp_cr_ddmin/20260924_192913_477043/sbfl/ochiai_ranking.csv
+Summary: /home/user/ddmin-xml-sbfl/results/yamlcpp_cr_ddmin/20260924_192913_477043/sbfl/summary.json

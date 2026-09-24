@@ -1,0 +1,76 @@
+commit ee9c4d19bedd660734125afed7ef6cf1822ea196
+Author:     Simon Gene Gottlieb <simon@gottliebtfreitag.de>
+AuthorDate: Thu Aug 22 10:29:29 2024 +0200
+Commit:     Jesse Beder <jbeder+github@gmail.com>
+CommitDate: Thu Aug 22 07:53:52 2024 -0500
+
+    fix: parse files with '\r' symbols as line ending correctly
+
+diff --git a/src/stream.cpp b/src/stream.cpp
+index b1aa092..72f0ec0 100644
+--- a/src/stream.cpp
++++ b/src/stream.cpp
+@@ -262,7 +262,24 @@ char Stream::get() {
+   AdvanceCurrent();
+   m_mark.column++;
+ 
+-  if (ch == '\n') {
++  // if line ending symbol is unknown, set it to the first
++  // encountered line ending.
++  // if line ending '\r' set ending symbol to '\r'
++  // other wise set it to '\n'
++  if (!m_lineEndingSymbol) {
++    if (ch == '\n') { // line ending is '\n'
++      m_lineEndingSymbol = '\n';
++    } else if (ch == '\r') {
++      auto ch2 = peek();
++      if (ch2 == '\n') { // line ending is '\r\n'
++        m_lineEndingSymbol = '\n';
++      } else { // line ending is '\r'
++        m_lineEndingSymbol = '\r';
++      }
++    }
++  }
++
++  if (ch == m_lineEndingSymbol) {
+     m_mark.column = 0;
+     m_mark.line++;
+   }
+diff --git a/src/stream.h b/src/stream.h
+index 2bc7a15..214104a 100644
+--- a/src/stream.h
++++ b/src/stream.h
+@@ -53,6 +53,7 @@ class Stream {
+   Mark m_mark;
+ 
+   CharacterSet m_charSet;
++  char m_lineEndingSymbol{}; // 0 means it is not determined yet, must be '\n' or '\r'
+   mutable std::deque<char> m_readahead;
+   unsigned char* const m_pPrefetched;
+   mutable size_t m_nPrefetchedAvailable;
+diff --git a/test/integration/load_node_test.cpp b/test/integration/load_node_test.cpp
+index 9d0c790..1cc84a4 100644
+--- a/test/integration/load_node_test.cpp
++++ b/test/integration/load_node_test.cpp
+@@ -360,5 +360,21 @@ TEST(LoadNodeTest, BlockCRNLEncoded) {
+   EXPECT_EQ(1, node["followup"].as<int>());
+ }
+ 
++TEST(LoadNodeTest, BlockCREncoded) {
++  Node node = Load(
++      "blockText: |\r"
++      "  some arbitrary text \r"
++      "  spanning some \r"
++      "  lines, that are split \r"
++      "  by CR and NL\r"
++      "followup: 1");
++  EXPECT_EQ(
++      "some arbitrary text \nspanning some \nlines, that are split \nby CR and "
++      "NL\n",
++      node["blockText"].as<std::string>());
++  EXPECT_EQ(1, node["followup"].as<int>());
++}
++
++
+ }  // namespace
+ }  // namespace YAML

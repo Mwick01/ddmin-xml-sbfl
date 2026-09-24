@@ -1,0 +1,32 @@
+Input: /home/user/ddmin-xml-sbfl/subjects/yamlcpp-cr-line-ending/input.yaml
+Original size: 104 characters
+Results: /home/user/ddmin-xml-sbfl/results/yamlcpp_cr_ddmin/20260924_192913_477043
+
+Iteration 1: size=104, granularity=2, parts=2
+  Accepted failing subset: 104 -> 52
+Iteration 2: size=52, granularity=2, parts=2
+Iteration 3: size=52, granularity=4, parts=4
+  Accepted failing complement: 52 -> 39
+Iteration 4: size=39, granularity=3, parts=3
+  Accepted failing complement: 39 -> 26
+Iteration 5: size=26, granularity=2, parts=2
+Iteration 6: size=26, granularity=4, parts=4
+  Accepted failing subset: 26 -> 7
+Iteration 7: size=7, granularity=3, parts=3
+  Accepted failing complement: 7 -> 4
+Iteration 8: size=4, granularity=2, parts=2
+Iteration 9: size=4, granularity=4, parts=4
+  Accepted failing complement: 4 -> 3
+Iteration 10: size=3, granularity=3, parts=3
+
+DDMIN completed
+Original size: 104
+Minimal size: 3
+Reduction: 97.12%
+Oracle attempts: 42
+Unique candidates: 24
+PASS candidates: 16
+FAIL candidates: 7
+UNRESOLVED candidates: 1
+Minimal failure: /home/user/ddmin-xml-sbfl/results/yamlcpp_cr_ddmin/20260924_192913_477043/minimal_failure.xml
+Summary: /home/user/ddmin-xml-sbfl/results/yamlcpp_cr_ddmin/20260924_192913_477043/summary.json

@@ -39,6 +39,17 @@ SUBJECTS = {
         ),
         "fault_line": 1062,
     },
+    "yamlcpp_cr": {
+        "source": (
+            PROJECT_ROOT
+            / "subjects"
+            / "yamlcpp-cr-line-ending"
+            / "buggy"
+            / "src"
+            / "stream.cpp"
+        ),
+        "fault_line": 265,
+    },
 }
 
 

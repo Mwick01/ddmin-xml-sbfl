@@ -1,0 +1,59 @@
+PASS tests: 271
+FAIL tests: 42
+Executable lines: 207
+
+Top 20 lines using JACCARD
+------------------------------------------------------------------------------------------
+Rank 1-4 (avg 2.5)      Line 287  Score 0.213198  ef=42 ep=155 nf=0 np=116  void Stream::eat(int n) {
+Rank 1-4 (avg 2.5)      Line 288  Score 0.213198  ef=42 ep=155 nf=0 np=116  for (int i = 0; i < n; i++)
+Rank 1-4 (avg 2.5)      Line 289  Score 0.213198  ef=42 ep=155 nf=0 np=116  get();
+Rank 1-4 (avg 2.5)      Line 290  Score 0.213198  ef=42 ep=155 nf=0 np=116  }
+Rank 5-15 (avg 10.0)    Line 220  Score 0.165354  ef=42 ep=212 nf=0 np=59  case uis_utf8:
+Rank 5-15 (avg 10.0)    Line 221  Score 0.165354  ef=42 ep=212 nf=0 np=59  m_charSet = utf8;
+Rank 5-15 (avg 10.0)    Line 222  Score 0.165354  ef=42 ep=212 nf=0 np=59  break;
+Rank 5-15 (avg 10.0)    Line 304  Score 0.165354  ef=42 ep=212 nf=0 np=59  case utf8:
+Rank 5-15 (avg 10.0)    Line 305  Score 0.165354  ef=42 ep=212 nf=0 np=59  StreamInUtf8();
+Rank 5-15 (avg 10.0)    Line 306  Score 0.165354  ef=42 ep=212 nf=0 np=59  break;
+Rank 5-15 (avg 10.0)    Line 329  Score 0.165354  ef=42 ep=212 nf=0 np=59  void Stream::StreamInUtf8() const {
+Rank 5-15 (avg 10.0)    Line 330  Score 0.165354  ef=42 ep=212 nf=0 np=59  unsigned char b = GetNextByte();
+Rank 5-15 (avg 10.0)    Line 331  Score 0.165354  ef=42 ep=212 nf=0 np=59  if (m_input.good()) {
+Rank 5-15 (avg 10.0)    Line 332  Score 0.165354  ef=42 ep=212 nf=0 np=59  m_readahead.push_back(static_cast<char>(b));
+Rank 5-15 (avg 10.0)    Line 334  Score 0.165354  ef=42 ep=212 nf=0 np=59  }
+Rank 16-30 (avg 23.0)   Line 245  Score 0.135048  ef=42 ep=269 nf=0 np=2  char Stream::peek() const {
+Rank 16-30 (avg 23.0)   Line 246  Score 0.135048  ef=42 ep=269 nf=0 np=2  if (m_readahead.empty()) {
+Rank 16-30 (avg 23.0)   Line 250  Score 0.135048  ef=42 ep=269 nf=0 np=2  return m_readahead[0];
+Rank 16-30 (avg 23.0)   Line 260  Score 0.135048  ef=42 ep=269 nf=0 np=2  char Stream::get() {
+Rank 16-30 (avg 23.0)   Line 261  Score 0.135048  ef=42 ep=269 nf=0 np=2  char ch = peek();
+
+Top 20 lines using OCHIAI
+------------------------------------------------------------------------------------------
+Rank 1-4 (avg 2.5)      Line 287  Score 0.461734  ef=42 ep=155 nf=0 np=116  void Stream::eat(int n) {
+Rank 1-4 (avg 2.5)      Line 288  Score 0.461734  ef=42 ep=155 nf=0 np=116  for (int i = 0; i < n; i++)
+Rank 1-4 (avg 2.5)      Line 289  Score 0.461734  ef=42 ep=155 nf=0 np=116  get();
+Rank 1-4 (avg 2.5)      Line 290  Score 0.461734  ef=42 ep=155 nf=0 np=116  }
+Rank 5-15 (avg 10.0)    Line 220  Score 0.406638  ef=42 ep=212 nf=0 np=59  case uis_utf8:
+Rank 5-15 (avg 10.0)    Line 221  Score 0.406638  ef=42 ep=212 nf=0 np=59  m_charSet = utf8;
+Rank 5-15 (avg 10.0)    Line 222  Score 0.406638  ef=42 ep=212 nf=0 np=59  break;
+Rank 5-15 (avg 10.0)    Line 304  Score 0.406638  ef=42 ep=212 nf=0 np=59  case utf8:
+Rank 5-15 (avg 10.0)    Line 305  Score 0.406638  ef=42 ep=212 nf=0 np=59  StreamInUtf8();
+Rank 5-15 (avg 10.0)    Line 306  Score 0.406638  ef=42 ep=212 nf=0 np=59  break;
+Rank 5-15 (avg 10.0)    Line 329  Score 0.406638  ef=42 ep=212 nf=0 np=59  void Stream::StreamInUtf8() const {
+Rank 5-15 (avg 10.0)    Line 330  Score 0.406638  ef=42 ep=212 nf=0 np=59  unsigned char b = GetNextByte();
+Rank 5-15 (avg 10.0)    Line 331  Score 0.406638  ef=42 ep=212 nf=0 np=59  if (m_input.good()) {
+Rank 5-15 (avg 10.0)    Line 332  Score 0.406638  ef=42 ep=212 nf=0 np=59  m_readahead.push_back(static_cast<char>(b));
+Rank 5-15 (avg 10.0)    Line 334  Score 0.406638  ef=42 ep=212 nf=0 np=59  }
+Rank 16-30 (avg 23.0)   Line 245  Score 0.367489  ef=42 ep=269 nf=0 np=2  char Stream::peek() const {
+Rank 16-30 (avg 23.0)   Line 246  Score 0.367489  ef=42 ep=269 nf=0 np=2  if (m_readahead.empty()) {
+Rank 16-30 (avg 23.0)   Line 250  Score 0.367489  ef=42 ep=269 nf=0 np=2  return m_readahead[0];
+Rank 16-30 (avg 23.0)   Line 260  Score 0.367489  ef=42 ep=269 nf=0 np=2  char Stream::get() {
+Rank 16-30 (avg 23.0)   Line 261  Score 0.367489  ef=42 ep=269 nf=0 np=2  char ch = peek();
+
+Known fault results
+------------------------------------------------------------
+Jaccard: line=265, score=0.135048, rank=16-30 (average=23.00), EXAM=11.11%
+Ochiai: line=265, score=0.367489, rank=16-30 (average=23.00), EXAM=11.11%
+
+Spectrum: /home/user/ddmin-xml-sbfl/results/yamlcpp_cr/ddmin_plus_afl_30s/sbfl/spectrum.csv
+Jaccard ranking: /home/user/ddmin-xml-sbfl/results/yamlcpp_cr/ddmin_plus_afl_30s/sbfl/jaccard_ranking.csv
+Ochiai ranking: /home/user/ddmin-xml-sbfl/results/yamlcpp_cr/ddmin_plus_afl_30s/sbfl/ochiai_ranking.csv
+Summary: /home/user/ddmin-xml-sbfl/results/yamlcpp_cr/ddmin_plus_afl_30s/sbfl/summary.json

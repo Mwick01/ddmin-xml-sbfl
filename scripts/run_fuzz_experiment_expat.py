@@ -31,13 +31,14 @@ MODES = ("afl", "aflsmart-mixed", "aflsmart-nonstack")
 class Subject:
     name: str
     seed_directory: Path
-    pit_file: Path
+    pit_file: Path | None
     target: Path
     oracle_module: str
     coverage_source: Path
     coverage_binary: Path
     coverage_object: Path
     fault_line: int
+    afl_memory_limit: str = "200"
 
 
 SUBJECTS = {
@@ -95,6 +96,50 @@ SUBJECTS = {
             / "parser.c.o"
         ),
         fault_line=1062,
+    ),
+    "yamlcpp_cr": Subject(
+        name="yamlcpp_cr",
+        seed_directory=(
+            PROJECT_ROOT
+            / "aflsmart"
+            / "yamlcpp_cr_seeds"
+        ),
+        pit_file=None,
+        target=(
+            PROJECT_ROOT
+            / "build"
+            / "aflsmart"
+            / "yamlcpp_cr"
+            / "yamlcpp_cr_buggy"
+        ),
+        oracle_module="oracle_yamlcpp_cr",
+        coverage_source=(
+            PROJECT_ROOT
+            / "subjects"
+            / "yamlcpp-cr-line-ending"
+            / "buggy"
+            / "src"
+            / "stream.cpp"
+        ),
+        coverage_binary=(
+            PROJECT_ROOT
+            / "subjects"
+            / "yamlcpp-cr-line-ending"
+            / "coverage_buggy"
+            / "semantic_buggy_cov"
+        ),
+        coverage_object=(
+            PROJECT_ROOT
+            / "subjects"
+            / "yamlcpp-cr-line-ending"
+            / "coverage_buggy"
+            / "CMakeFiles"
+            / "yaml-cpp.dir"
+            / "src"
+            / "stream.cpp.o"
+        ),
+        fault_line=265,
+        afl_memory_limit="none",
     ),
 }
 
@@ -163,14 +208,25 @@ def baseline_hashes(baseline_run: Path) -> set[str]:
 def build_afl_arguments(subject: Subject, mode: str, raw_directory: Path) -> list[str]:
     arguments = [
         "/aflsmart/afl-fuzz",
-        "-m", "200",
+        "-m", subject.afl_memory_limit,
         "-d",
         "-i", rel(subject.seed_directory),
         "-o", rel(raw_directory),
     ]
 
     if mode.startswith("aflsmart"):
-        arguments += ["-w", "peach", "-g", rel(subject.pit_file)]
+        if subject.pit_file is None:
+            raise RuntimeError(
+                f"Subject {subject.name!r} has no PIT model "
+                f"for mode {mode!r}."
+            )
+
+        arguments += [
+            "-w",
+            "peach",
+            "-g",
+            rel(subject.pit_file),
+        ]
 
     if mode == "aflsmart-mixed":
         arguments.append("-h")
@@ -395,20 +451,43 @@ def collect_coverage(subject: Subject, run_directory: Path) -> dict:
     return result
 
 
-def validate_subject(subject: Subject, baseline_run: Path) -> None:
+def validate_subject(
+    subject: Subject,
+    baseline_run: Path,
+    modes: list[str],
+) -> None:
     required = [
         subject.seed_directory,
-        subject.pit_file,
         subject.target,
         subject.coverage_source,
         subject.coverage_binary,
         subject.coverage_object,
         baseline_run / "coverage" / "coverage.jsonl",
     ]
-    missing = [path for path in required if not path.exists()]
+
+    if any(mode.startswith("aflsmart") for mode in modes):
+        if subject.pit_file is None:
+            raise SystemExit(
+                f"Subject {subject.name!r} has no PIT model, "
+                "so AFLsmart modes cannot be used."
+            )
+
+        required.append(subject.pit_file)
+
+    missing = [
+        path
+        for path in required
+        if not path.exists()
+    ]
+
     if missing:
-        text = "\n".join(str(path) for path in missing)
-        raise SystemExit(f"Missing required paths:\n{text}")
+        missing_text = "\n".join(
+            str(path)
+            for path in missing
+        )
+        raise SystemExit(
+            f"Missing required paths:\n{missing_text}"
+        )
 
 
 def main() -> None:
@@ -445,7 +524,11 @@ def main() -> None:
 
     subject = SUBJECTS[arguments.subject]
     baseline_run = arguments.baseline_run.resolve()
-    validate_subject(subject, baseline_run)
+    validate_subject(
+        subject,
+        baseline_run,
+        arguments.modes,
+    )
 
     dirty = git_dirty()
     if dirty and not arguments.allow_dirty:
@@ -538,8 +621,22 @@ def main() -> None:
                 "seed_corpus_sha256": corpus_sha256(subject.seed_directory),
                 "target": rel(subject.target),
                 "target_sha256": sha256_file(subject.target),
-                "pit": rel(subject.pit_file) if mode.startswith("aflsmart") else None,
-                "pit_sha256": sha256_file(subject.pit_file) if mode.startswith("aflsmart") else None,
+                "pit": (
+                    rel(subject.pit_file)
+                    if (
+                        mode.startswith("aflsmart")
+                        and subject.pit_file is not None
+                    )
+                    else None
+                ),
+                "pit_sha256": (
+                    sha256_file(subject.pit_file)
+                    if (
+                        mode.startswith("aflsmart")
+                        and subject.pit_file is not None
+                    )
+                    else None
+                ),
                 "oracle_module": subject.oracle_module,
                 "coverage_source": rel(subject.coverage_source),
                 "coverage_binary": rel(subject.coverage_binary),

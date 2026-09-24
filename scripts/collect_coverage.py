@@ -78,6 +78,8 @@ def command_version(command: str) -> str:
         [command, "--version"],
         capture_output=True,
         text=True,
+        encoding="utf-8",
+        errors="surrogateescape",
         check=False,
     )
 
@@ -105,6 +107,7 @@ def run_instrumented_program(
     candidate_file: Path,
     coverage_binary: Path,
     coverage_data: Path,
+    expected_label: str,
 ) -> subprocess.CompletedProcess[str]:
 
     try:
@@ -116,6 +119,8 @@ def run_instrumented_program(
             cwd=PROJECT_ROOT,
             capture_output=True,
             text=True,
+            encoding="utf-8",
+            errors="surrogateescape",
             timeout=TIMEOUT_SECONDS,
             check=False,
         )
@@ -126,11 +131,27 @@ def run_instrumented_program(
             f"for {candidate_file}"
         ) from error
 
-    if completed.returncode != 0:
+    # PASS executions must terminate successfully.
+    #
+    # A FAIL may legitimately terminate with a positive
+    # nonzero status when the reference accepts the input
+    # but the buggy program rejects it. Such normal exits
+    # still flush gcov data and are valid failure spectra.
+    #
+    # Negative return codes indicate signal termination and
+    # remain rejected because coverage data may be incomplete.
+    if (
+        completed.returncode != 0
+        and not (
+            expected_label == "FAIL"
+            and completed.returncode > 0
+        )
+    ):
         raise RuntimeError(
             "Instrumented buggy program returned "
-            "a nonzero exit code.\n"
+            "an incompatible exit code.\n"
             f"Candidate: {candidate_file}\n"
+            f"Expected label: {expected_label}\n"
             f"Exit code: {completed.returncode}\n"
             f"Stdout: {completed.stdout!r}\n"
             f"Stderr: {completed.stderr!r}"
@@ -162,6 +183,8 @@ def run_gcov(
         cwd=PROJECT_ROOT,
         capture_output=True,
         text=True,
+        encoding="utf-8",
+        errors="surrogateescape",
         check=False,
     )
 
@@ -317,6 +340,7 @@ def collect_candidate_coverage(
         candidate_file,
         coverage_binary,
         coverage_data,
+        expected_label,
     )
 
     gcov_output = run_gcov(

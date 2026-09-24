@@ -385,7 +385,7 @@ def main() -> int:
         return 2
 
     try:
-        original = input_file.read_text(encoding="utf-8")
+        original = input_file.read_bytes().decode("utf-8")
     except UnicodeDecodeError as error:
         print(f"Error: input is not valid UTF-8: {error}", file=sys.stderr)
         return 2
@@ -447,7 +447,7 @@ def main() -> int:
         return 1
 
     minimal_file = run_directory / "minimal_failure.xml"
-    minimal_file.write_text(minimal, encoding="utf-8")
+    minimal_file.write_bytes(minimal.encode("utf-8"))
 
     original_size = len(original)
     minimal_size = len(minimal)

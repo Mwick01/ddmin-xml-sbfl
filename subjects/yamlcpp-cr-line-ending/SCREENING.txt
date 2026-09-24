@@ -1,0 +1,100 @@
+Candidate 7: yaml-cpp CR line-ending regression
+
+Historical revisions
+--------------------
+Buggy: b38ac5b55f5b64cffce71eac9433e553b3898bd1
+Fixed: ee9c4d19bedd660734125afed7ef6cf1822ea196
+
+Ground-truth fault
+------------------
+Source: src/stream.cpp
+Buggy line: 265
+Code: if (ch == '\n') {
+
+Screening
+---------
+Buggy/fixed known:   PASS
+Reproduces:          PASS
+PASS/FAIL boundary:  PASS
+DDMIN usable:        PASS
+Coverage fault:      PASS
+Deterministic:       PASS
+PIT/augmentation:    NOT YET EVALUATED
+
+Historical reproducer
+---------------------
+Input size: 104 characters
+Line endings: CR=5, LF=0
+
+Buggy result:
+  parsed blockText incorrectly absorbs "followup: 1"
+
+Fixed result:
+  blockText and followup are separate mapping entries
+
+Determinism:
+  buggy 20/20 identical
+  fixed 20/20 identical
+
+Fault coverage
+--------------
+Historical failing input executes stream.cpp:265 104 times.
+
+DDMIN
+-----
+Run:
+results/yamlcpp_cr_ddmin/20260924_192913_477043
+
+Original size:       104
+Minimal size:          3
+Minimal bytes:        b'|\rp'
+Reduction:          97.12%
+
+Oracle attempts:       42
+Unique candidates:     24
+PASS:                  16
+FAIL:                   7
+UNRESOLVED:             1
+
+The minimal failure retains CR and preserves the semantic
+difference:
+  fixed -> TREE=SCALAR("")
+  buggy -> TREE=SCALAR("p")
+
+The minimal failure also executes historical fault line 265.
+
+Coverage / SBFL
+---------------
+Usable tests:          23
+PASS tests:            16
+FAIL tests:             7
+Executable lines:     207
+Covered lines:          85
+
+Fault line 265 spectrum:
+  ef=7 ep=16 nf=0 np=0
+
+Jaccard:
+  score=0.304348
+  rank=5-84
+  average rank=44.50
+  EXAM=21.50%
+
+Ochiai:
+  score=0.551677
+  rank=5-84
+  average rank=44.50
+  EXAM=21.50%
+
+Lines 287-290 rank above the historical fault because they are
+executed by all 7 FAIL tests but only 12 of the 16 PASS tests.
+By contrast, line 265 is executed by every PASS and every FAIL,
+so statement-level SBFL cannot discriminate it using this suite.
+
+Decision
+--------
+ACCEPTED for the formal baseline dataset.
+
+This is retained despite weak baseline localization because
+subject selection must not depend on whether the baseline
+successfully localizes the known historical fault.
