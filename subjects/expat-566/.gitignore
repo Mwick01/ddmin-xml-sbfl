@@ -1,0 +1,12 @@
+repo/
+buggy/
+fixed/
+buggy_driver
+fixed_driver
+*.o
+*.gcda
+*.gcno
+*.gcov
+coverage_buggy/
+xmlparse.c.gcov
+siphash.h.gcov

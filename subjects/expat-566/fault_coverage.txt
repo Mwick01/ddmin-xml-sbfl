@@ -1,0 +1,7 @@
+        1: 7399:  XML_Content *const stackBottom = &ret[dtd->scaffCount];
+        1: 7400:  XML_Content *stackTop = stackBottom; /* i.e. stack is initially empty */
+        1: 7404:  (--stackTop)->numchildren = 0;
+        6: 7408:    const int src_node = (int)(stackTop++)->numchildren;
+        2: 7430:      dest->children = &dest[1];
+        2: 7435:      stackTop -= dest->numchildren;
+        5: 7438:        (stackTop + i)->numchildren = (unsigned int)cn;

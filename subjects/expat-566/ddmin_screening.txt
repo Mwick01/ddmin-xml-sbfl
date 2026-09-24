@@ -1,0 +1,49 @@
+Input: /home/user/ddmin-xml-sbfl/subjects/expat-566/input.xml
+Original size: 67 characters
+Results: /home/user/ddmin-xml-sbfl/results/expat_566_ddmin/20260924_013016_462106
+
+Iteration 1: size=67, granularity=2, parts=2
+Iteration 2: size=67, granularity=4, parts=4
+Iteration 3: size=67, granularity=8, parts=8
+  Accepted failing complement: 67 -> 59
+Iteration 4: size=59, granularity=7, parts=7
+Iteration 5: size=59, granularity=14, parts=14
+  Accepted failing complement: 59 -> 55
+Iteration 6: size=55, granularity=13, parts=13
+Iteration 7: size=55, granularity=26, parts=26
+  Accepted failing complement: 55 -> 53
+Iteration 8: size=53, granularity=25, parts=25
+  Accepted failing complement: 53 -> 51
+Iteration 9: size=51, granularity=24, parts=24
+  Accepted failing complement: 51 -> 49
+Iteration 10: size=49, granularity=23, parts=23
+Iteration 11: size=49, granularity=46, parts=46
+  Accepted failing complement: 49 -> 48
+Iteration 12: size=48, granularity=45, parts=45
+  Accepted failing complement: 48 -> 47
+Iteration 13: size=47, granularity=44, parts=44
+  Accepted failing complement: 47 -> 46
+Iteration 14: size=46, granularity=43, parts=43
+  Accepted failing complement: 46 -> 45
+Iteration 15: size=45, granularity=42, parts=42
+  Accepted failing complement: 45 -> 44
+Iteration 16: size=44, granularity=41, parts=41
+  Accepted failing complement: 44 -> 43
+Iteration 17: size=43, granularity=40, parts=40
+  Accepted failing complement: 43 -> 42
+Iteration 18: size=42, granularity=39, parts=39
+  Accepted failing complement: 42 -> 41
+Iteration 19: size=41, granularity=38, parts=38
+Iteration 20: size=41, granularity=41, parts=41
+
+DDMIN completed
+Original size: 67
+Minimal size: 41
+Reduction: 38.81%
+Oracle attempts: 966
+Unique candidates: 441
+PASS candidates: 0
+FAIL candidates: 14
+UNRESOLVED candidates: 427
+Minimal failure: /home/user/ddmin-xml-sbfl/results/expat_566_ddmin/20260924_013016_462106/minimal_failure.xml
+Summary: /home/user/ddmin-xml-sbfl/results/expat_566_ddmin/20260924_013016_462106/summary.json
