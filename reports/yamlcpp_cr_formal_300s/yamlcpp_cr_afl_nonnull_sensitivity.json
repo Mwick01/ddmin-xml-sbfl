@@ -1,0 +1,74 @@
+{
+  "definition": "Exclude every usable test for which the fixed parser emits TREE=NULL.",
+  "baseline_excluded": {
+    "PASS": 2,
+    "FAIL": 0
+  },
+  "results": [
+    {
+      "rep": 1,
+      "added_PASS": 400,
+      "added_FAIL": 91,
+      "excluded_NULL_PASS": 159,
+      "excluded_NULL_FAIL": 0,
+      "j_best": 22,
+      "j_avg": 51.5,
+      "j_worst": 81,
+      "j_exam": 24.879227053140095,
+      "o_avg": 51.5,
+      "o_exam": 24.879227053140095
+    },
+    {
+      "rep": 2,
+      "added_PASS": 486,
+      "added_FAIL": 83,
+      "excluded_NULL_PASS": 149,
+      "excluded_NULL_FAIL": 1,
+      "j_best": 22,
+      "j_avg": 51.5,
+      "j_worst": 81,
+      "j_exam": 24.879227053140095,
+      "o_avg": 51.5,
+      "o_exam": 24.879227053140095
+    },
+    {
+      "rep": 3,
+      "added_PASS": 372,
+      "added_FAIL": 97,
+      "excluded_NULL_PASS": 182,
+      "excluded_NULL_FAIL": 1,
+      "j_best": 22,
+      "j_avg": 51.5,
+      "j_worst": 81,
+      "j_exam": 24.879227053140095,
+      "o_avg": 51.5,
+      "o_exam": 24.879227053140095
+    },
+    {
+      "rep": 4,
+      "added_PASS": 344,
+      "added_FAIL": 96,
+      "excluded_NULL_PASS": 157,
+      "excluded_NULL_FAIL": 1,
+      "j_best": 24,
+      "j_avg": 53.5,
+      "j_worst": 83,
+      "j_exam": 25.845410628019323,
+      "o_avg": 51.5,
+      "o_exam": 24.879227053140095
+    },
+    {
+      "rep": 5,
+      "added_PASS": 417,
+      "added_FAIL": 100,
+      "excluded_NULL_PASS": 166,
+      "excluded_NULL_FAIL": 1,
+      "j_best": 22,
+      "j_avg": 51.5,
+      "j_worst": 81,
+      "j_exam": 24.879227053140095,
+      "o_avg": 51.5,
+      "o_exam": 24.879227053140095
+    }
+  ]
+}

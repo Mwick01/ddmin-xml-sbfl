@@ -1,0 +1,1422 @@
+{
+  "aggregate": {
+    "aflsmart-mixed": {
+      "metrics": {
+        "added_FAIL": {
+          "max": 85,
+          "mean": 69.2,
+          "median": 80,
+          "min": 41,
+          "n": 5,
+          "stdev": 19.044684297724654
+        },
+        "added_PASS": {
+          "max": 650,
+          "mean": 600.6,
+          "median": 612,
+          "min": 519,
+          "n": 5,
+          "stdev": 53.60317154795973
+        },
+        "distinct_FAIL_profiles": {
+          "max": 8,
+          "mean": 6.4,
+          "median": 6,
+          "min": 5,
+          "n": 5,
+          "stdev": 1.140175425099138
+        },
+        "distinct_PASS_profiles": {
+          "max": 72,
+          "mean": 67.8,
+          "median": 67,
+          "min": 62,
+          "n": 5,
+          "stdev": 4.266145801540309
+        },
+        "execs_done": {
+          "max": 459514,
+          "mean": 401415.4,
+          "median": 410518,
+          "min": 338342,
+          "n": 5,
+          "stdev": 55314.88779524008
+        },
+        "generated_UNRESOLVED": {
+          "max": 996,
+          "mean": 813.8,
+          "median": 813,
+          "min": 578,
+          "n": 5,
+          "stdev": 162.60904033909063
+        },
+        "havoc_smart_retained": {
+          "max": 23,
+          "mean": 14.4,
+          "median": 15,
+          "min": 8,
+          "n": 5,
+          "stdev": 6.148170459575759
+        },
+        "jaccard_average_rank": {
+          "max": 51.5,
+          "mean": 37.1,
+          "median": 30.0,
+          "min": 25.0,
+          "n": 5,
+          "stdev": 13.263672191365407
+        },
+        "jaccard_baseline_tied_above": {
+          "max": 17,
+          "mean": 15.2,
+          "median": 16,
+          "min": 13,
+          "n": 5,
+          "stdev": 2.04939015319192
+        },
+        "jaccard_baseline_tied_below": {
+          "max": 52,
+          "mean": 30,
+          "median": 45,
+          "min": 3,
+          "n": 5,
+          "stdev": 24.779023386727733
+        },
+        "jaccard_best_rank": {
+          "max": 22,
+          "mean": 20.2,
+          "median": 21,
+          "min": 18,
+          "n": 5,
+          "stdev": 2.04939015319192
+        },
+        "jaccard_exam_percentage": {
+          "max": 24.879227053140095,
+          "mean": 17.92270531400966,
+          "median": 14.492753623188406,
+          "min": 12.077294685990339,
+          "n": 5,
+          "stdev": 6.407571106939809
+        },
+        "jaccard_tie_size": {
+          "max": 60,
+          "mean": 34.8,
+          "median": 20,
+          "min": 15,
+          "n": 5,
+          "stdev": 23.08029462550251
+        },
+        "jaccard_worst_rank": {
+          "max": 81,
+          "mean": 54,
+          "median": 39,
+          "min": 32,
+          "n": 5,
+          "stdev": 24.779023386727733
+        },
+        "new_FAIL_profiles": {
+          "max": 7,
+          "mean": 5.4,
+          "median": 5,
+          "min": 4,
+          "n": 5,
+          "stdev": 1.140175425099138
+        },
+        "new_PASS_profiles": {
+          "max": 68,
+          "mean": 63.8,
+          "median": 63,
+          "min": 58,
+          "n": 5,
+          "stdev": 4.266145801540309
+        },
+        "ochiai_average_rank": {
+          "max": 51.5,
+          "mean": 36.5,
+          "median": 27.5,
+          "min": 25.0,
+          "n": 5,
+          "stdev": 13.724977231310804
+        },
+        "ochiai_baseline_tied_above": {
+          "max": 17,
+          "mean": 14.6,
+          "median": 13,
+          "min": 13,
+          "n": 5,
+          "stdev": 2.1908902300206643
+        },
+        "ochiai_baseline_tied_below": {
+          "max": 52,
+          "mean": 30.6,
+          "median": 47,
+          "min": 3,
+          "n": 5,
+          "stdev": 25.264599739556534
+        },
+        "ochiai_best_rank": {
+          "max": 22,
+          "mean": 19.6,
+          "median": 18,
+          "min": 18,
+          "n": 5,
+          "stdev": 2.1908902300206643
+        },
+        "ochiai_exam_percentage": {
+          "max": 24.879227053140095,
+          "mean": 17.632850241545892,
+          "median": 13.285024154589372,
+          "min": 12.077294685990339,
+          "n": 5,
+          "stdev": 6.630423783241934
+        },
+        "ochiai_tie_size": {
+          "max": 60,
+          "mean": 34.8,
+          "median": 20,
+          "min": 15,
+          "n": 5,
+          "stdev": 23.08029462550251
+        },
+        "ochiai_worst_rank": {
+          "max": 81,
+          "mean": 53.4,
+          "median": 37,
+          "min": 32,
+          "n": 5,
+          "stdev": 25.264599739556534
+        },
+        "paths_total": {
+          "max": 1642,
+          "mean": 1492.8,
+          "median": 1498,
+          "min": 1309,
+          "n": 5,
+          "stdev": 133.0251855852868
+        },
+        "stability": {
+          "max": 100.0,
+          "mean": 100.0,
+          "median": 100.0,
+          "min": 100.0,
+          "n": 5,
+          "stdev": 0.0
+        },
+        "usable_rate": {
+          "max": 0.5557263643351268,
+          "mean": 0.45551231865649633,
+          "median": 0.42503536067892506,
+          "min": 0.3900796080832823,
+          "n": 5,
+          "stdev": 0.06811339867560486
+        }
+      },
+      "repetitions": 5
+    },
+    "aflsmart-nonstack": {
+      "metrics": {
+        "added_FAIL": {
+          "max": 90,
+          "mean": 65,
+          "median": 69,
+          "min": 37,
+          "n": 5,
+          "stdev": 24.68805379125702
+        },
+        "added_PASS": {
+          "max": 519,
+          "mean": 502,
+          "median": 509,
+          "min": 472,
+          "n": 5,
+          "stdev": 18.069310999592652
+        },
+        "distinct_FAIL_profiles": {
+          "max": 6,
+          "mean": 5,
+          "median": 6,
+          "min": 3,
+          "n": 5,
+          "stdev": 1.4142135623730951
+        },
+        "distinct_PASS_profiles": {
+          "max": 74,
+          "mean": 67.4,
+          "median": 68,
+          "min": 59,
+          "n": 5,
+          "stdev": 5.549774770204643
+        },
+        "execs_done": {
+          "max": 454590,
+          "mean": 390317,
+          "median": 374830,
+          "min": 342045,
+          "n": 5,
+          "stdev": 46295.70566478062
+        },
+        "generated_UNRESOLVED": {
+          "max": 918,
+          "mean": 808.4,
+          "median": 827,
+          "min": 659,
+          "n": 5,
+          "stdev": 97.80746392786186
+        },
+        "havoc_smart_retained": {
+          "max": 13,
+          "mean": 12.8,
+          "median": 13,
+          "min": 12,
+          "n": 5,
+          "stdev": 0.4472135954999579
+        },
+        "jaccard_average_rank": {
+          "max": 53.5,
+          "mean": 37.6,
+          "median": 29.0,
+          "min": 27.0,
+          "n": 5,
+          "stdev": 13.644595999882151
+        },
+        "jaccard_baseline_tied_above": {
+          "max": 17,
+          "mean": 15.4,
+          "median": 17,
+          "min": 13,
+          "n": 5,
+          "stdev": 2.1908902300206643
+        },
+        "jaccard_baseline_tied_below": {
+          "max": 52,
+          "mean": 30.8,
+          "median": 48,
+          "min": 3,
+          "n": 5,
+          "stdev": 25.430296891699868
+        },
+        "jaccard_best_rank": {
+          "max": 24,
+          "mean": 21.2,
+          "median": 22,
+          "min": 18,
+          "n": 5,
+          "stdev": 2.280350850198276
+        },
+        "jaccard_exam_percentage": {
+          "max": 25.845410628019323,
+          "mean": 18.164251207729468,
+          "median": 14.009661835748792,
+          "min": 13.043478260869565,
+          "n": 5,
+          "stdev": 6.591592270474469
+        },
+        "jaccard_tie_size": {
+          "max": 60,
+          "mean": 33.8,
+          "median": 19,
+          "min": 15,
+          "n": 5,
+          "stdev": 23.972901368002997
+        },
+        "jaccard_worst_rank": {
+          "max": 83,
+          "mean": 54,
+          "median": 36,
+          "min": 34,
+          "n": 5,
+          "stdev": 25.583197610932064
+        },
+        "new_FAIL_profiles": {
+          "max": 5,
+          "mean": 4,
+          "median": 5,
+          "min": 2,
+          "n": 5,
+          "stdev": 1.4142135623730951
+        },
+        "new_PASS_profiles": {
+          "max": 70,
+          "mean": 63.4,
+          "median": 64,
+          "min": 55,
+          "n": 5,
+          "stdev": 5.549774770204643
+        },
+        "ochiai_average_rank": {
+          "max": 51.5,
+          "mean": 36.8,
+          "median": 29.0,
+          "min": 25.0,
+          "n": 5,
+          "stdev": 13.49351696185987
+        },
+        "ochiai_baseline_tied_above": {
+          "max": 17,
+          "mean": 15.4,
+          "median": 17,
+          "min": 13,
+          "n": 5,
+          "stdev": 2.1908902300206643
+        },
+        "ochiai_baseline_tied_below": {
+          "max": 52,
+          "mean": 30.8,
+          "median": 48,
+          "min": 3,
+          "n": 5,
+          "stdev": 25.430296891699868
+        },
+        "ochiai_best_rank": {
+          "max": 22,
+          "mean": 20.4,
+          "median": 22,
+          "min": 18,
+          "n": 5,
+          "stdev": 2.1908902300206643
+        },
+        "ochiai_exam_percentage": {
+          "max": 24.879227053140095,
+          "mean": 17.77777777777778,
+          "median": 14.009661835748792,
+          "min": 12.077294685990339,
+          "n": 5,
+          "stdev": 6.518607227951627
+        },
+        "ochiai_tie_size": {
+          "max": 60,
+          "mean": 33.8,
+          "median": 19,
+          "min": 15,
+          "n": 5,
+          "stdev": 23.972901368002997
+        },
+        "ochiai_worst_rank": {
+          "max": 81,
+          "mean": 53.2,
+          "median": 36,
+          "min": 32,
+          "n": 5,
+          "stdev": 25.430296891699868
+        },
+        "paths_total": {
+          "max": 1478,
+          "mean": 1388.4,
+          "median": 1401,
+          "min": 1234,
+          "n": 5,
+          "stdev": 96.86227335758747
+        },
+        "stability": {
+          "max": 100.0,
+          "mean": 100.0,
+          "median": 100.0,
+          "min": 100.0,
+          "n": 5,
+          "stdev": 0.0
+        },
+        "usable_rate": {
+          "max": 0.46027846027846026,
+          "mean": 0.4139513117128915,
+          "median": 0.40566689702833447,
+          "min": 0.3733788395904437,
+          "n": 5,
+          "stdev": 0.0320461175553114
+        }
+      },
+      "repetitions": 5
+    }
+  },
+  "baseline": {
+    "distinct_fail_profiles": 1,
+    "distinct_pass_profiles": 4,
+    "failing_tests": 7,
+    "jaccard": {
+      "average_rank": 44.5,
+      "best_rank": 5,
+      "exam_percentage": 21.497584541062803,
+      "score": 0.30434782608695654,
+      "tie": {
+        "baseline_fault_tie_size": 80,
+        "baseline_tied_above_fault": 0,
+        "baseline_tied_below_fault": 0,
+        "baseline_tied_still_equal": 80,
+        "current_fault_tie_size": 80
+      },
+      "worst_rank": 84
+    },
+    "ochiai": {
+      "average_rank": 44.5,
+      "best_rank": 5,
+      "exam_percentage": 21.497584541062803,
+      "score": 0.5516772843673704,
+      "tie": {
+        "baseline_fault_tie_size": 80,
+        "baseline_tied_above_fault": 0,
+        "baseline_tied_below_fault": 0,
+        "baseline_tied_still_equal": 80,
+        "current_fault_tie_size": 80
+      },
+      "worst_rank": 84
+    },
+    "passing_tests": 16,
+    "total_tests": 23
+  },
+  "baseline_run": "/home/user/ddmin-xml-sbfl/results/yamlcpp_cr_ddmin/20260924_192913_477043",
+  "duration_seconds": 300,
+  "fault_line": 265,
+  "fuzz_root": "/home/user/ddmin-xml-sbfl/results/yamlcpp_cr/formal_aflsmart_300s",
+  "runs": [
+    {
+      "added_FAIL": 41,
+      "added_PASS": 612,
+      "added_fuzz_tests": 653,
+      "baseline_tests": 23,
+      "classification": {
+        "FAIL": 41,
+        "PASS": 612,
+        "UNRESOLVED": 929,
+        "duplicate_baseline": 3,
+        "duplicate_generated": 0,
+        "generated_queue_entries": 1585,
+        "raw_queue_entries": 1592,
+        "seed_entries": 7,
+        "unique_generated_evaluated": 1582,
+        "usable": 653,
+        "usable_rate": 0.41276864728192164
+      },
+      "combined_FAIL": 48,
+      "combined_PASS": 628,
+      "combined_total": 676,
+      "distinct_FAIL_profiles": 8,
+      "distinct_PASS_profiles": 66,
+      "duration_seconds": 300,
+      "fuzzer_stats": {
+        "afl_banner": "yamlcpp_cr_buggy",
+        "afl_version": "2.52b",
+        "bitmap_cvg": "10.03%",
+        "command_line": "/aflsmart/afl-fuzz -m none -d -i aflsmart/yamlcpp_cr_seeds -o results/yamlcpp_cr/formal_aflsmart_300s/rep01/aflsmart-mixed/raw -w peach -g aflsmart/yamlcpp_cr.xml -h -- ./build/aflsmart/yamlcpp_cr/yamlcpp_cr_buggy @@",
+        "cur_path": "752",
+        "cycles_done": "0",
+        "exec_timeout": "20",
+        "execs_done": "459514",
+        "execs_per_sec": "1455.13",
+        "execs_since_crash": "459514",
+        "fuzzer_pid": "8",
+        "last_crash": "0",
+        "last_hang": "0",
+        "last_path": "1790313367",
+        "last_update": "1790313367",
+        "max_depth": "4",
+        "paths_favored": "325",
+        "paths_found": "1585",
+        "paths_imported": "0",
+        "paths_total": "1592",
+        "pending_favs": "206",
+        "pending_total": "1429",
+        "stability": "100.00%",
+        "start_time": "1790313067",
+        "target_mode": "default",
+        "unique_crashes": "0",
+        "unique_hangs": "0",
+        "variable_paths": "0"
+      },
+      "git_commit": "55eb49944c4abd5dfe03f7e01230869a6581af84",
+      "jaccard": {
+        "average_rank": 25.0,
+        "best_rank": 18,
+        "exam_percentage": 12.077294685990339,
+        "score": 0.0713224368499257,
+        "tie": {
+          "baseline_fault_tie_size": 80,
+          "baseline_tied_above_fault": 13,
+          "baseline_tied_below_fault": 52,
+          "baseline_tied_still_equal": 15,
+          "current_fault_tie_size": 15
+        },
+        "worst_rank": 32
+      },
+      "mode": "aflsmart-mixed",
+      "mutation_counts": {
+        "havoc_retained": 545,
+        "havoc_smart_retained": 17,
+        "splice_retained": 1023
+      },
+      "new_FAIL_profiles": 7,
+      "new_PASS_profiles": 62,
+      "ochiai": {
+        "average_rank": 25.0,
+        "best_rank": 18,
+        "exam_percentage": 12.077294685990339,
+        "score": 0.26706260848333996,
+        "tie": {
+          "baseline_fault_tie_size": 80,
+          "baseline_tied_above_fault": 13,
+          "baseline_tied_below_fault": 52,
+          "baseline_tied_still_equal": 15,
+          "current_fault_tie_size": 15
+        },
+        "worst_rank": 32
+      },
+      "peach_chunk_structures": 1,
+      "repetition": 1,
+      "subject": "yamlcpp_cr"
+    },
+    {
+      "added_FAIL": 37,
+      "added_PASS": 510,
+      "added_fuzz_tests": 547,
+      "baseline_tests": 23,
+      "classification": {
+        "FAIL": 37,
+        "PASS": 510,
+        "UNRESOLVED": 918,
+        "duplicate_baseline": 6,
+        "duplicate_generated": 0,
+        "generated_queue_entries": 1471,
+        "raw_queue_entries": 1478,
+        "seed_entries": 7,
+        "unique_generated_evaluated": 1465,
+        "usable": 547,
+        "usable_rate": 0.3733788395904437
+      },
+      "combined_FAIL": 44,
+      "combined_PASS": 526,
+      "combined_total": 570,
+      "distinct_FAIL_profiles": 3,
+      "distinct_PASS_profiles": 74,
+      "duration_seconds": 300,
+      "fuzzer_stats": {
+        "afl_banner": "yamlcpp_cr_buggy",
+        "afl_version": "2.52b",
+        "bitmap_cvg": "9.71%",
+        "command_line": "/aflsmart/afl-fuzz -m none -d -i aflsmart/yamlcpp_cr_seeds -o results/yamlcpp_cr/formal_aflsmart_300s/rep01/aflsmart-nonstack/raw -w peach -g aflsmart/yamlcpp_cr.xml -- ./build/aflsmart/yamlcpp_cr/yamlcpp_cr_buggy @@",
+        "cur_path": "894",
+        "cycles_done": "0",
+        "exec_timeout": "20",
+        "execs_done": "454590",
+        "execs_per_sec": "1476.24",
+        "execs_since_crash": "454590",
+        "fuzzer_pid": "8",
+        "last_crash": "0",
+        "last_hang": "0",
+        "last_path": "1790313042",
+        "last_update": "1790313043",
+        "max_depth": "4",
+        "paths_favored": "302",
+        "paths_found": "1471",
+        "paths_imported": "0",
+        "paths_total": "1478",
+        "pending_favs": "174",
+        "pending_total": "1297",
+        "stability": "100.00%",
+        "start_time": "1790312743",
+        "target_mode": "default",
+        "unique_crashes": "0",
+        "unique_hangs": "0",
+        "variable_paths": "0"
+      },
+      "git_commit": "55eb49944c4abd5dfe03f7e01230869a6581af84",
+      "jaccard": {
+        "average_rank": 27.0,
+        "best_rank": 18,
+        "exam_percentage": 13.043478260869565,
+        "score": 0.07746478873239436,
+        "tie": {
+          "baseline_fault_tie_size": 80,
+          "baseline_tied_above_fault": 13,
+          "baseline_tied_below_fault": 48,
+          "baseline_tied_still_equal": 19,
+          "current_fault_tie_size": 19
+        },
+        "worst_rank": 36
+      },
+      "mode": "aflsmart-nonstack",
+      "mutation_counts": {
+        "havoc_retained": 398,
+        "havoc_smart_retained": 13,
+        "splice_retained": 1060
+      },
+      "new_FAIL_profiles": 2,
+      "new_PASS_profiles": 70,
+      "ochiai": {
+        "average_rank": 27.0,
+        "best_rank": 18,
+        "exam_percentage": 13.043478260869565,
+        "score": 0.2783249696530916,
+        "tie": {
+          "baseline_fault_tie_size": 80,
+          "baseline_tied_above_fault": 13,
+          "baseline_tied_below_fault": 48,
+          "baseline_tied_still_equal": 19,
+          "current_fault_tie_size": 19
+        },
+        "worst_rank": 36
+      },
+      "peach_chunk_structures": 2,
+      "repetition": 1,
+      "subject": "yamlcpp_cr"
+    },
+    {
+      "added_FAIL": 58,
+      "added_PASS": 579,
+      "added_fuzz_tests": 637,
+      "baseline_tests": 23,
+      "classification": {
+        "FAIL": 58,
+        "PASS": 579,
+        "UNRESOLVED": 996,
+        "duplicate_baseline": 2,
+        "duplicate_generated": 0,
+        "generated_queue_entries": 1635,
+        "raw_queue_entries": 1642,
+        "seed_entries": 7,
+        "unique_generated_evaluated": 1633,
+        "usable": 637,
+        "usable_rate": 0.3900796080832823
+      },
+      "combined_FAIL": 65,
+      "combined_PASS": 595,
+      "combined_total": 660,
+      "distinct_FAIL_profiles": 5,
+      "distinct_PASS_profiles": 67,
+      "duration_seconds": 300,
+      "fuzzer_stats": {
+        "afl_banner": "yamlcpp_cr_buggy",
+        "afl_version": "2.52b",
+        "bitmap_cvg": "9.88%",
+        "command_line": "/aflsmart/afl-fuzz -m none -d -i aflsmart/yamlcpp_cr_seeds -o results/yamlcpp_cr/formal_aflsmart_300s/rep02/aflsmart-mixed/raw -w peach -g aflsmart/yamlcpp_cr.xml -h -- ./build/aflsmart/yamlcpp_cr/yamlcpp_cr_buggy @@",
+        "cur_path": "919",
+        "cycles_done": "0",
+        "exec_timeout": "20",
+        "execs_done": "448310",
+        "execs_per_sec": "1339.76",
+        "execs_since_crash": "448310",
+        "fuzzer_pid": "8",
+        "last_crash": "0",
+        "last_hang": "0",
+        "last_path": "1790313694",
+        "last_update": "1790313694",
+        "max_depth": "4",
+        "paths_favored": "320",
+        "paths_found": "1635",
+        "paths_imported": "0",
+        "paths_total": "1642",
+        "pending_favs": "205",
+        "pending_total": "1475",
+        "stability": "100.00%",
+        "start_time": "1790313394",
+        "target_mode": "default",
+        "unique_crashes": "0",
+        "unique_hangs": "0",
+        "variable_paths": "0"
+      },
+      "git_commit": "55eb49944c4abd5dfe03f7e01230869a6581af84",
+      "jaccard": {
+        "average_rank": 51.5,
+        "best_rank": 22,
+        "exam_percentage": 24.879227053140095,
+        "score": 0.09848484848484848,
+        "tie": {
+          "baseline_fault_tie_size": 80,
+          "baseline_tied_above_fault": 17,
+          "baseline_tied_below_fault": 3,
+          "baseline_tied_still_equal": 60,
+          "current_fault_tie_size": 60
+        },
+        "worst_rank": 81
+      },
+      "mode": "aflsmart-mixed",
+      "mutation_counts": {
+        "havoc_retained": 622,
+        "havoc_smart_retained": 8,
+        "splice_retained": 1005
+      },
+      "new_FAIL_profiles": 4,
+      "new_PASS_profiles": 63,
+      "ochiai": {
+        "average_rank": 51.5,
+        "best_rank": 22,
+        "exam_percentage": 24.879227053140095,
+        "score": 0.31382295723042397,
+        "tie": {
+          "baseline_fault_tie_size": 80,
+          "baseline_tied_above_fault": 17,
+          "baseline_tied_below_fault": 3,
+          "baseline_tied_still_equal": 60,
+          "current_fault_tie_size": 60
+        },
+        "worst_rank": 81
+      },
+      "peach_chunk_structures": 1,
+      "repetition": 2,
+      "subject": "yamlcpp_cr"
+    },
+    {
+      "added_FAIL": 87,
+      "added_PASS": 500,
+      "added_fuzz_tests": 587,
+      "baseline_tests": 23,
+      "classification": {
+        "FAIL": 87,
+        "PASS": 500,
+        "UNRESOLVED": 860,
+        "duplicate_baseline": 6,
+        "duplicate_generated": 0,
+        "generated_queue_entries": 1453,
+        "raw_queue_entries": 1460,
+        "seed_entries": 7,
+        "unique_generated_evaluated": 1447,
+        "usable": 587,
+        "usable_rate": 0.40566689702833447
+      },
+      "combined_FAIL": 94,
+      "combined_PASS": 516,
+      "combined_total": 610,
+      "distinct_FAIL_profiles": 6,
+      "distinct_PASS_profiles": 59,
+      "duration_seconds": 300,
+      "fuzzer_stats": {
+        "afl_banner": "yamlcpp_cr_buggy",
+        "afl_version": "2.52b",
+        "bitmap_cvg": "9.68%",
+        "command_line": "/aflsmart/afl-fuzz -m none -d -i aflsmart/yamlcpp_cr_seeds -o results/yamlcpp_cr/formal_aflsmart_300s/rep02/aflsmart-nonstack/raw -w peach -g aflsmart/yamlcpp_cr.xml -- ./build/aflsmart/yamlcpp_cr/yamlcpp_cr_buggy @@",
+        "cur_path": "795",
+        "cycles_done": "0",
+        "exec_timeout": "20",
+        "execs_done": "420654",
+        "execs_per_sec": "1078.36",
+        "execs_since_crash": "420654",
+        "fuzzer_pid": "8",
+        "last_crash": "0",
+        "last_hang": "0",
+        "last_path": "1790314021",
+        "last_update": "1790314022",
+        "max_depth": "4",
+        "paths_favored": "290",
+        "paths_found": "1453",
+        "paths_imported": "0",
+        "paths_total": "1460",
+        "pending_favs": "178",
+        "pending_total": "1303",
+        "stability": "100.00%",
+        "start_time": "1790313722",
+        "target_mode": "default",
+        "unique_crashes": "0",
+        "unique_hangs": "0",
+        "variable_paths": "0"
+      },
+      "git_commit": "55eb49944c4abd5dfe03f7e01230869a6581af84",
+      "jaccard": {
+        "average_rank": 27.0,
+        "best_rank": 20,
+        "exam_percentage": 13.043478260869565,
+        "score": 0.15460526315789475,
+        "tie": {
+          "baseline_fault_tie_size": 80,
+          "baseline_tied_above_fault": 13,
+          "baseline_tied_below_fault": 52,
+          "baseline_tied_still_equal": 15,
+          "current_fault_tie_size": 15
+        },
+        "worst_rank": 34
+      },
+      "mode": "aflsmart-nonstack",
+      "mutation_counts": {
+        "havoc_retained": 394,
+        "havoc_smart_retained": 12,
+        "splice_retained": 1047
+      },
+      "new_FAIL_profiles": 5,
+      "new_PASS_profiles": 55,
+      "ochiai": {
+        "average_rank": 25.0,
+        "best_rank": 18,
+        "exam_percentage": 12.077294685990339,
+        "score": 0.3931987578285246,
+        "tie": {
+          "baseline_fault_tie_size": 80,
+          "baseline_tied_above_fault": 13,
+          "baseline_tied_below_fault": 52,
+          "baseline_tied_still_equal": 15,
+          "current_fault_tie_size": 15
+        },
+        "worst_rank": 32
+      },
+      "peach_chunk_structures": 1,
+      "repetition": 2,
+      "subject": "yamlcpp_cr"
+    },
+    {
+      "added_FAIL": 80,
+      "added_PASS": 643,
+      "added_fuzz_tests": 723,
+      "baseline_tests": 23,
+      "classification": {
+        "FAIL": 80,
+        "PASS": 643,
+        "UNRESOLVED": 578,
+        "duplicate_baseline": 1,
+        "duplicate_generated": 0,
+        "generated_queue_entries": 1302,
+        "raw_queue_entries": 1309,
+        "seed_entries": 7,
+        "unique_generated_evaluated": 1301,
+        "usable": 723,
+        "usable_rate": 0.5557263643351268
+      },
+      "combined_FAIL": 87,
+      "combined_PASS": 659,
+      "combined_total": 746,
+      "distinct_FAIL_profiles": 6,
+      "distinct_PASS_profiles": 62,
+      "duration_seconds": 300,
+      "fuzzer_stats": {
+        "afl_banner": "yamlcpp_cr_buggy",
+        "afl_version": "2.52b",
+        "bitmap_cvg": "9.47%",
+        "command_line": "/aflsmart/afl-fuzz -m none -d -i aflsmart/yamlcpp_cr_seeds -o results/yamlcpp_cr/formal_aflsmart_300s/rep03/aflsmart-mixed/raw -w peach -g aflsmart/yamlcpp_cr.xml -h -- ./build/aflsmart/yamlcpp_cr/yamlcpp_cr_buggy @@",
+        "cur_path": "589",
+        "cycles_done": "0",
+        "exec_timeout": "20",
+        "execs_done": "338342",
+        "execs_per_sec": "1192.31",
+        "execs_since_crash": "338342",
+        "fuzzer_pid": "8",
+        "last_crash": "0",
+        "last_hang": "0",
+        "last_path": "1790314352",
+        "last_update": "1790314354",
+        "max_depth": "4",
+        "paths_favored": "293",
+        "paths_found": "1302",
+        "paths_imported": "0",
+        "paths_total": "1309",
+        "pending_favs": "218",
+        "pending_total": "1202",
+        "stability": "100.00%",
+        "start_time": "1790314054",
+        "target_mode": "default",
+        "unique_crashes": "0",
+        "unique_hangs": "0",
+        "variable_paths": "0"
+      },
+      "git_commit": "55eb49944c4abd5dfe03f7e01230869a6581af84",
+      "jaccard": {
+        "average_rank": 30.0,
+        "best_rank": 21,
+        "exam_percentage": 14.492753623188406,
+        "score": 0.11693548387096774,
+        "tie": {
+          "baseline_fault_tie_size": 80,
+          "baseline_tied_above_fault": 16,
+          "baseline_tied_below_fault": 45,
+          "baseline_tied_still_equal": 19,
+          "current_fault_tie_size": 19
+        },
+        "worst_rank": 39
+      },
+      "mode": "aflsmart-mixed",
+      "mutation_counts": {
+        "havoc_retained": 629,
+        "havoc_smart_retained": 15,
+        "splice_retained": 658
+      },
+      "new_FAIL_profiles": 5,
+      "new_PASS_profiles": 58,
+      "ochiai": {
+        "average_rank": 27.0,
+        "best_rank": 18,
+        "exam_percentage": 13.043478260869565,
+        "score": 0.34195830721151915,
+        "tie": {
+          "baseline_fault_tie_size": 80,
+          "baseline_tied_above_fault": 13,
+          "baseline_tied_below_fault": 48,
+          "baseline_tied_still_equal": 19,
+          "current_fault_tie_size": 19
+        },
+        "worst_rank": 36
+      },
+      "peach_chunk_structures": 2,
+      "repetition": 3,
+      "subject": "yamlcpp_cr"
+    },
+    {
+      "added_FAIL": 42,
+      "added_PASS": 519,
+      "added_fuzz_tests": 561,
+      "baseline_tests": 23,
+      "classification": {
+        "FAIL": 42,
+        "PASS": 519,
+        "UNRESOLVED": 827,
+        "duplicate_baseline": 6,
+        "duplicate_generated": 0,
+        "generated_queue_entries": 1394,
+        "raw_queue_entries": 1401,
+        "seed_entries": 7,
+        "unique_generated_evaluated": 1388,
+        "usable": 561,
+        "usable_rate": 0.404178674351585
+      },
+      "combined_FAIL": 49,
+      "combined_PASS": 535,
+      "combined_total": 584,
+      "distinct_FAIL_profiles": 6,
+      "distinct_PASS_profiles": 66,
+      "duration_seconds": 300,
+      "fuzzer_stats": {
+        "afl_banner": "yamlcpp_cr_buggy",
+        "afl_version": "2.52b",
+        "bitmap_cvg": "9.53%",
+        "command_line": "/aflsmart/afl-fuzz -m none -d -i aflsmart/yamlcpp_cr_seeds -o results/yamlcpp_cr/formal_aflsmart_300s/rep03/aflsmart-nonstack/raw -w peach -g aflsmart/yamlcpp_cr.xml -- ./build/aflsmart/yamlcpp_cr/yamlcpp_cr_buggy @@",
+        "cur_path": "558",
+        "cycles_done": "0",
+        "exec_timeout": "20",
+        "execs_done": "342045",
+        "execs_per_sec": "51.87",
+        "execs_since_crash": "342045",
+        "fuzzer_pid": "8",
+        "last_crash": "0",
+        "last_hang": "0",
+        "last_path": "1790314687",
+        "last_update": "1790314688",
+        "max_depth": "3",
+        "paths_favored": "315",
+        "paths_found": "1394",
+        "paths_imported": "0",
+        "paths_total": "1401",
+        "pending_favs": "233",
+        "pending_total": "1281",
+        "stability": "100.00%",
+        "start_time": "1790314388",
+        "target_mode": "default",
+        "unique_crashes": "0",
+        "unique_hangs": "0",
+        "variable_paths": "0"
+      },
+      "git_commit": "55eb49944c4abd5dfe03f7e01230869a6581af84",
+      "jaccard": {
+        "average_rank": 51.5,
+        "best_rank": 22,
+        "exam_percentage": 24.879227053140095,
+        "score": 0.0839041095890411,
+        "tie": {
+          "baseline_fault_tie_size": 80,
+          "baseline_tied_above_fault": 17,
+          "baseline_tied_below_fault": 3,
+          "baseline_tied_still_equal": 60,
+          "current_fault_tie_size": 60
+        },
+        "worst_rank": 81
+      },
+      "mode": "aflsmart-nonstack",
+      "mutation_counts": {
+        "havoc_retained": 253,
+        "havoc_smart_retained": 13,
+        "splice_retained": 1128
+      },
+      "new_FAIL_profiles": 5,
+      "new_PASS_profiles": 62,
+      "ochiai": {
+        "average_rank": 51.5,
+        "best_rank": 22,
+        "exam_percentage": 24.879227053140095,
+        "score": 0.2896620610108288,
+        "tie": {
+          "baseline_fault_tie_size": 80,
+          "baseline_tied_above_fault": 17,
+          "baseline_tied_below_fault": 3,
+          "baseline_tied_still_equal": 60,
+          "current_fault_tie_size": 60
+        },
+        "worst_rank": 81
+      },
+      "peach_chunk_structures": 3,
+      "repetition": 3,
+      "subject": "yamlcpp_cr"
+    },
+    {
+      "added_FAIL": 85,
+      "added_PASS": 650,
+      "added_fuzz_tests": 735,
+      "baseline_tests": 23,
+      "classification": {
+        "FAIL": 85,
+        "PASS": 650,
+        "UNRESOLVED": 753,
+        "duplicate_baseline": 3,
+        "duplicate_generated": 0,
+        "generated_queue_entries": 1491,
+        "raw_queue_entries": 1498,
+        "seed_entries": 7,
+        "unique_generated_evaluated": 1488,
+        "usable": 735,
+        "usable_rate": 0.4939516129032258
+      },
+      "combined_FAIL": 92,
+      "combined_PASS": 666,
+      "combined_total": 758,
+      "distinct_FAIL_profiles": 7,
+      "distinct_PASS_profiles": 72,
+      "duration_seconds": 300,
+      "fuzzer_stats": {
+        "afl_banner": "yamlcpp_cr_buggy",
+        "afl_version": "2.52b",
+        "bitmap_cvg": "9.96%",
+        "command_line": "/aflsmart/afl-fuzz -m none -d -i aflsmart/yamlcpp_cr_seeds -o results/yamlcpp_cr/formal_aflsmart_300s/rep04/aflsmart-mixed/raw -w peach -g aflsmart/yamlcpp_cr.xml -h -- ./build/aflsmart/yamlcpp_cr/yamlcpp_cr_buggy @@",
+        "cur_path": "752",
+        "cycles_done": "0",
+        "exec_timeout": "20",
+        "execs_done": "410518",
+        "execs_per_sec": "1489.52",
+        "execs_since_crash": "410518",
+        "fuzzer_pid": "8",
+        "last_crash": "0",
+        "last_hang": "0",
+        "last_path": "1790315349",
+        "last_update": "1790315349",
+        "max_depth": "4",
+        "paths_favored": "321",
+        "paths_found": "1491",
+        "paths_imported": "0",
+        "paths_total": "1498",
+        "pending_favs": "213",
+        "pending_total": "1333",
+        "stability": "100.00%",
+        "start_time": "1790315049",
+        "target_mode": "default",
+        "unique_crashes": "0",
+        "unique_hangs": "0",
+        "variable_paths": "0"
+      },
+      "git_commit": "55eb49944c4abd5dfe03f7e01230869a6581af84",
+      "jaccard": {
+        "average_rank": 51.5,
+        "best_rank": 22,
+        "exam_percentage": 24.879227053140095,
+        "score": 0.12137203166226913,
+        "tie": {
+          "baseline_fault_tie_size": 80,
+          "baseline_tied_above_fault": 17,
+          "baseline_tied_below_fault": 3,
+          "baseline_tied_still_equal": 60,
+          "current_fault_tie_size": 60
+        },
+        "worst_rank": 81
+      },
+      "mode": "aflsmart-mixed",
+      "mutation_counts": {
+        "havoc_retained": 673,
+        "havoc_smart_retained": 9,
+        "splice_retained": 809
+      },
+      "new_FAIL_profiles": 6,
+      "new_PASS_profiles": 68,
+      "ochiai": {
+        "average_rank": 51.5,
+        "best_rank": 22,
+        "exam_percentage": 24.879227053140095,
+        "score": 0.34838489011762425,
+        "tie": {
+          "baseline_fault_tie_size": 80,
+          "baseline_tied_above_fault": 17,
+          "baseline_tied_below_fault": 3,
+          "baseline_tied_still_equal": 60,
+          "current_fault_tie_size": 60
+        },
+        "worst_rank": 81
+      },
+      "peach_chunk_structures": 3,
+      "repetition": 4,
+      "subject": "yamlcpp_cr"
+    },
+    {
+      "added_FAIL": 90,
+      "added_PASS": 472,
+      "added_fuzz_tests": 562,
+      "baseline_tests": 23,
+      "classification": {
+        "FAIL": 90,
+        "PASS": 472,
+        "UNRESOLVED": 659,
+        "duplicate_baseline": 6,
+        "duplicate_generated": 0,
+        "generated_queue_entries": 1227,
+        "raw_queue_entries": 1234,
+        "seed_entries": 7,
+        "unique_generated_evaluated": 1221,
+        "usable": 562,
+        "usable_rate": 0.46027846027846026
+      },
+      "combined_FAIL": 97,
+      "combined_PASS": 488,
+      "combined_total": 585,
+      "distinct_FAIL_profiles": 4,
+      "distinct_PASS_profiles": 68,
+      "duration_seconds": 300,
+      "fuzzer_stats": {
+        "afl_banner": "yamlcpp_cr_buggy",
+        "afl_version": "2.52b",
+        "bitmap_cvg": "9.43%",
+        "command_line": "/aflsmart/afl-fuzz -m none -d -i aflsmart/yamlcpp_cr_seeds -o results/yamlcpp_cr/formal_aflsmart_300s/rep04/aflsmart-nonstack/raw -w peach -g aflsmart/yamlcpp_cr.xml -- ./build/aflsmart/yamlcpp_cr/yamlcpp_cr_buggy @@",
+        "cur_path": "649",
+        "cycles_done": "0",
+        "exec_timeout": "20",
+        "execs_done": "359466",
+        "execs_per_sec": "1414.12",
+        "execs_since_crash": "359466",
+        "fuzzer_pid": "8",
+        "last_crash": "0",
+        "last_hang": "0",
+        "last_path": "1790315017",
+        "last_update": "1790315017",
+        "max_depth": "4",
+        "paths_favored": "277",
+        "paths_found": "1227",
+        "paths_imported": "0",
+        "paths_total": "1234",
+        "pending_favs": "178",
+        "pending_total": "1097",
+        "stability": "100.00%",
+        "start_time": "1790314717",
+        "target_mode": "default",
+        "unique_crashes": "0",
+        "unique_hangs": "0",
+        "variable_paths": "0"
+      },
+      "git_commit": "55eb49944c4abd5dfe03f7e01230869a6581af84",
+      "jaccard": {
+        "average_rank": 53.5,
+        "best_rank": 24,
+        "exam_percentage": 25.845410628019323,
+        "score": 0.1658119658119658,
+        "tie": {
+          "baseline_fault_tie_size": 80,
+          "baseline_tied_above_fault": 17,
+          "baseline_tied_below_fault": 3,
+          "baseline_tied_still_equal": 60,
+          "current_fault_tie_size": 60
+        },
+        "worst_rank": 83
+      },
+      "mode": "aflsmart-nonstack",
+      "mutation_counts": {
+        "havoc_retained": 357,
+        "havoc_smart_retained": 13,
+        "splice_retained": 857
+      },
+      "new_FAIL_profiles": 3,
+      "new_PASS_profiles": 64,
+      "ochiai": {
+        "average_rank": 51.5,
+        "best_rank": 22,
+        "exam_percentage": 24.879227053140095,
+        "score": 0.4072001544842116,
+        "tie": {
+          "baseline_fault_tie_size": 80,
+          "baseline_tied_above_fault": 17,
+          "baseline_tied_below_fault": 3,
+          "baseline_tied_still_equal": 60,
+          "current_fault_tie_size": 60
+        },
+        "worst_rank": 81
+      },
+      "peach_chunk_structures": 2,
+      "repetition": 4,
+      "subject": "yamlcpp_cr"
+    },
+    {
+      "added_FAIL": 82,
+      "added_PASS": 519,
+      "added_fuzz_tests": 601,
+      "baseline_tests": 23,
+      "classification": {
+        "FAIL": 82,
+        "PASS": 519,
+        "UNRESOLVED": 813,
+        "duplicate_baseline": 2,
+        "duplicate_generated": 0,
+        "generated_queue_entries": 1416,
+        "raw_queue_entries": 1423,
+        "seed_entries": 7,
+        "unique_generated_evaluated": 1414,
+        "usable": 601,
+        "usable_rate": 0.42503536067892506
+      },
+      "combined_FAIL": 89,
+      "combined_PASS": 535,
+      "combined_total": 624,
+      "distinct_FAIL_profiles": 6,
+      "distinct_PASS_profiles": 72,
+      "duration_seconds": 300,
+      "fuzzer_stats": {
+        "afl_banner": "yamlcpp_cr_buggy",
+        "afl_version": "2.52b",
+        "bitmap_cvg": "9.56%",
+        "command_line": "/aflsmart/afl-fuzz -m none -d -i aflsmart/yamlcpp_cr_seeds -o results/yamlcpp_cr/formal_aflsmart_300s/rep05/aflsmart-mixed/raw -w peach -g aflsmart/yamlcpp_cr.xml -h -- ./build/aflsmart/yamlcpp_cr/yamlcpp_cr_buggy @@",
+        "cur_path": "633",
+        "cycles_done": "0",
+        "exec_timeout": "20",
+        "execs_done": "350393",
+        "execs_per_sec": "1269.15",
+        "execs_since_crash": "350393",
+        "fuzzer_pid": "8",
+        "last_crash": "0",
+        "last_hang": "0",
+        "last_path": "1790315682",
+        "last_update": "1790315682",
+        "max_depth": "4",
+        "paths_favored": "286",
+        "paths_found": "1416",
+        "paths_imported": "0",
+        "paths_total": "1423",
+        "pending_favs": "197",
+        "pending_total": "1291",
+        "stability": "100.00%",
+        "start_time": "1790315382",
+        "target_mode": "default",
+        "unique_crashes": "0",
+        "unique_hangs": "0",
+        "variable_paths": "0"
+      },
+      "git_commit": "55eb49944c4abd5dfe03f7e01230869a6581af84",
+      "jaccard": {
+        "average_rank": 27.5,
+        "best_rank": 18,
+        "exam_percentage": 13.285024154589372,
+        "score": 0.14308681672025725,
+        "tie": {
+          "baseline_fault_tie_size": 80,
+          "baseline_tied_above_fault": 13,
+          "baseline_tied_below_fault": 47,
+          "baseline_tied_still_equal": 20,
+          "current_fault_tie_size": 20
+        },
+        "worst_rank": 37
+      },
+      "mode": "aflsmart-mixed",
+      "mutation_counts": {
+        "havoc_retained": 546,
+        "havoc_smart_retained": 23,
+        "splice_retained": 847
+      },
+      "new_FAIL_profiles": 5,
+      "new_PASS_profiles": 68,
+      "ochiai": {
+        "average_rank": 27.5,
+        "best_rank": 18,
+        "exam_percentage": 13.285024154589372,
+        "score": 0.3782681809513685,
+        "tie": {
+          "baseline_fault_tie_size": 80,
+          "baseline_tied_above_fault": 13,
+          "baseline_tied_below_fault": 47,
+          "baseline_tied_still_equal": 20,
+          "current_fault_tie_size": 20
+        },
+        "worst_rank": 37
+      },
+      "peach_chunk_structures": 3,
+      "repetition": 5,
+      "subject": "yamlcpp_cr"
+    },
+    {
+      "added_FAIL": 69,
+      "added_PASS": 509,
+      "added_fuzz_tests": 578,
+      "baseline_tests": 23,
+      "classification": {
+        "FAIL": 69,
+        "PASS": 509,
+        "UNRESOLVED": 778,
+        "duplicate_baseline": 6,
+        "duplicate_generated": 0,
+        "generated_queue_entries": 1362,
+        "raw_queue_entries": 1369,
+        "seed_entries": 7,
+        "unique_generated_evaluated": 1356,
+        "usable": 578,
+        "usable_rate": 0.42625368731563423
+      },
+      "combined_FAIL": 76,
+      "combined_PASS": 525,
+      "combined_total": 601,
+      "distinct_FAIL_profiles": 6,
+      "distinct_PASS_profiles": 70,
+      "duration_seconds": 300,
+      "fuzzer_stats": {
+        "afl_banner": "yamlcpp_cr_buggy",
+        "afl_version": "2.52b",
+        "bitmap_cvg": "9.40%",
+        "command_line": "/aflsmart/afl-fuzz -m none -d -i aflsmart/yamlcpp_cr_seeds -o results/yamlcpp_cr/formal_aflsmart_300s/rep05/aflsmart-nonstack/raw -w peach -g aflsmart/yamlcpp_cr.xml -- ./build/aflsmart/yamlcpp_cr/yamlcpp_cr_buggy @@",
+        "cur_path": "655",
+        "cycles_done": "0",
+        "exec_timeout": "20",
+        "execs_done": "374830",
+        "execs_per_sec": "1351.25",
+        "execs_since_crash": "374830",
+        "fuzzer_pid": "8",
+        "last_crash": "0",
+        "last_hang": "0",
+        "last_path": "1790316012",
+        "last_update": "1790316013",
+        "max_depth": "4",
+        "paths_favored": "287",
+        "paths_found": "1362",
+        "paths_imported": "0",
+        "paths_total": "1369",
+        "pending_favs": "191",
+        "pending_total": "1235",
+        "stability": "100.00%",
+        "start_time": "1790315713",
+        "target_mode": "default",
+        "unique_crashes": "0",
+        "unique_hangs": "0",
+        "variable_paths": "0"
+      },
+      "git_commit": "55eb49944c4abd5dfe03f7e01230869a6581af84",
+      "jaccard": {
+        "average_rank": 29.0,
+        "best_rank": 22,
+        "exam_percentage": 14.009661835748792,
+        "score": 0.12666666666666668,
+        "tie": {
+          "baseline_fault_tie_size": 80,
+          "baseline_tied_above_fault": 17,
+          "baseline_tied_below_fault": 48,
+          "baseline_tied_still_equal": 15,
+          "current_fault_tie_size": 15
+        },
+        "worst_rank": 36
+      },
+      "mode": "aflsmart-nonstack",
+      "mutation_counts": {
+        "havoc_retained": 287,
+        "havoc_smart_retained": 13,
+        "splice_retained": 1062
+      },
+      "new_FAIL_profiles": 5,
+      "new_PASS_profiles": 66,
+      "ochiai": {
+        "average_rank": 29.0,
+        "best_rank": 22,
+        "exam_percentage": 14.009661835748792,
+        "score": 0.3559026084010437,
+        "tie": {
+          "baseline_fault_tie_size": 80,
+          "baseline_tied_above_fault": 17,
+          "baseline_tied_below_fault": 48,
+          "baseline_tied_still_equal": 15,
+          "current_fault_tie_size": 15
+        },
+        "worst_rank": 36
+      },
+      "peach_chunk_structures": 2,
+      "repetition": 5,
+      "subject": "yamlcpp_cr"
+    }
+  ],
+  "subject": "yamlcpp_cr"
+}
