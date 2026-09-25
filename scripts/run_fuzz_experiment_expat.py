@@ -104,7 +104,11 @@ SUBJECTS = {
             / "aflsmart"
             / "yamlcpp_cr_seeds"
         ),
-        pit_file=None,
+        pit_file=(
+            PROJECT_ROOT
+            / "aflsmart"
+            / "yamlcpp_cr.xml"
+        ),
         target=(
             PROJECT_ROOT
             / "build"

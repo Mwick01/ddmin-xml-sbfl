@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Peach
+    xmlns="http://peachfuzzer.com/2012/Peach"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <!--
+      Block-scalar-aware structural model for the yaml-cpp
+      CR-line-ending subject.
+
+      This is intentionally NOT a complete YAML grammar and does not
+      claim to identify every logical line in a block scalar.
+
+      Structure shared by all frozen DDMIN FAIL seeds:
+
+          arbitrary prefix
+          |
+          line break
+          arbitrary trailing material
+
+      Peach reliably cracks these four regions for every seed:
+
+          Prefix
+          LiteralIndicator
+          LineBreak
+          Payload
+
+      The historical CR byte is not made immutable: the structural
+      line-break position permits CR, LF, or CRLF.
+
+      This model therefore supplies coarse YAML block-scalar structure
+      while leaving the surrounding text mutable.
+    -->
+
+    <DataModel name="YAML_CR">
+
+        <String
+            name="Prefix"
+            value="blockText: "
+        />
+
+        <String
+            name="LiteralIndicator"
+            value="|"
+            token="true"
+        />
+
+        <Choice name="LineBreak">
+
+            <String
+                name="CRLF"
+                value="&#13;&#10;"
+                token="true"
+            />
+
+            <String
+                name="LF"
+                value="&#10;"
+                token="true"
+            />
+
+            <String
+                name="CR"
+                value="&#13;"
+                token="true"
+            />
+
+        </Choice>
+
+        <String
+            name="Payload"
+            value="content"
+        />
+
+    </DataModel>
+
+
+    <StateModel
+        name="TheState"
+        initialState="Initial">
+
+        <State name="Initial">
+
+            <Action type="output">
+                <DataModel ref="YAML_CR"/>
+                <Data fileName="/dev/null"/>
+            </Action>
+
+            <Action type="close"/>
+
+        </State>
+
+    </StateModel>
+
+
+    <Test name="Default">
+
+        <StateModel ref="TheState"/>
+
+        <Publisher class="File">
+            <Param
+                name="FileName"
+                value="repaired"
+            />
+        </Publisher>
+
+        <Logger class="Filesystem">
+            <Param
+                name="Path"
+                value="logs"
+            />
+        </Logger>
+
+    </Test>
+
+</Peach>
