@@ -1,0 +1,19 @@
+Subject: libxml2-467
+
+Buggy revision:
+78c4430f4ee75aee67456b0c29074add9d280b5d
+
+Fixed revision:
+0bd4e4e032d57ecf982b57312eb6136efdd35d56
+
+Fault file:
+parser.c
+
+Primary faulty line in buggy snapshot:
+9596
+
+Buggy:
+if (nsname != defaults->values[2]) {
+
+Fixed:
+if (nsname != defaults->values[5 * i + 2]) {

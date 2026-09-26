@@ -1,0 +1,10 @@
+<!DOCTYPE root [
+<!ELEMENT root (child)>
+<!ELEMENT child EMPTY>
+<!ATTLIST child
+  xmlns:a CDATA "urn:a"
+  xmlns:b CDATA "urn:b">
+]>
+<root xmlns:b="urn:b">
+  <child/>
+</root>
