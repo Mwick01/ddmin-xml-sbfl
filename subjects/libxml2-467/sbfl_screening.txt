@@ -1,0 +1,39 @@
+PASS tests: 232
+FAIL tests: 25
+Executable lines: 7036
+
+Top 10 lines using JACCARD
+------------------------------------------------------------------------------------------
+Rank 1-2 (avg 1.5)      Line 8800 Score 0.274725  ef=25 ep=66 nf=0 np=166  if ((prefix == NULL) && (*ctxt->nsTab[i + 1] == 0))
+Rank 1-2 (avg 1.5)      Line 8802 Score 0.274725  ef=25 ep=66 nf=0 np=166  return(ctxt->nsTab[i + 1]);
+Rank 3                  Line 1598 Score 0.252525  ef=25 ep=74 nf=0 np=158  } else if (ctxt->nsNr >= ctxt->nsMax) {
+Rank 4-11 (avg 7.5)     Line 9590 Score 0.179856  ef=25 ep=114 nf=0 np=118  for (j = 1;j <= nbNs;j++)
+Rank 4-11 (avg 7.5)     Line 9593 Score 0.179856  ef=25 ep=114 nf=0 np=118  if (j <= nbNs) continue;
+Rank 4-11 (avg 7.5)     Line 9595 Score 0.179856  ef=25 ep=114 nf=0 np=118  nsname = xmlGetNamespace(ctxt, attname);
+Rank 4-11 (avg 7.5)     Line 9596 Score 0.179856  ef=25 ep=114 nf=0 np=118  if (nsname != defaults->values[2]) { <-- FAULT
+Rank 4-11 (avg 7.5)     Line 9597 Score 0.179856  ef=25 ep=114 nf=0 np=118  if (nsPush(ctxt, attname,
+Rank 4-11 (avg 7.5)     Line 9598 Score 0.179856  ef=25 ep=114 nf=0 np=118  defaults->values[5 * i + 2]) > 0)
+Rank 4-11 (avg 7.5)     Line 9599 Score 0.179856  ef=25 ep=114 nf=0 np=118  nbNs++;
+
+Top 10 lines using OCHIAI
+------------------------------------------------------------------------------------------
+Rank 1-2 (avg 1.5)      Line 8800 Score 0.524142  ef=25 ep=66 nf=0 np=166  if ((prefix == NULL) && (*ctxt->nsTab[i + 1] == 0))
+Rank 1-2 (avg 1.5)      Line 8802 Score 0.524142  ef=25 ep=66 nf=0 np=166  return(ctxt->nsTab[i + 1]);
+Rank 3                  Line 1598 Score 0.502519  ef=25 ep=74 nf=0 np=158  } else if (ctxt->nsNr >= ctxt->nsMax) {
+Rank 4-11 (avg 7.5)     Line 9590 Score 0.424094  ef=25 ep=114 nf=0 np=118  for (j = 1;j <= nbNs;j++)
+Rank 4-11 (avg 7.5)     Line 9593 Score 0.424094  ef=25 ep=114 nf=0 np=118  if (j <= nbNs) continue;
+Rank 4-11 (avg 7.5)     Line 9595 Score 0.424094  ef=25 ep=114 nf=0 np=118  nsname = xmlGetNamespace(ctxt, attname);
+Rank 4-11 (avg 7.5)     Line 9596 Score 0.424094  ef=25 ep=114 nf=0 np=118  if (nsname != defaults->values[2]) { <-- FAULT
+Rank 4-11 (avg 7.5)     Line 9597 Score 0.424094  ef=25 ep=114 nf=0 np=118  if (nsPush(ctxt, attname,
+Rank 4-11 (avg 7.5)     Line 9598 Score 0.424094  ef=25 ep=114 nf=0 np=118  defaults->values[5 * i + 2]) > 0)
+Rank 4-11 (avg 7.5)     Line 9599 Score 0.424094  ef=25 ep=114 nf=0 np=118  nbNs++;
+
+Known fault results
+------------------------------------------------------------
+Jaccard: line=9596, score=0.179856, rank=4-11 (average=7.50), EXAM=0.11%
+Ochiai: line=9596, score=0.424094, rank=4-11 (average=7.50), EXAM=0.11%
+
+Spectrum: /home/user/ddmin-xml-sbfl/results/libxml2_467_ddmin/20260926_224640_738508/sbfl/spectrum.csv
+Jaccard ranking: /home/user/ddmin-xml-sbfl/results/libxml2_467_ddmin/20260926_224640_738508/sbfl/jaccard_ranking.csv
+Ochiai ranking: /home/user/ddmin-xml-sbfl/results/libxml2_467_ddmin/20260926_224640_738508/sbfl/ochiai_ranking.csv
+Summary: /home/user/ddmin-xml-sbfl/results/libxml2_467_ddmin/20260926_224640_738508/sbfl/summary.json

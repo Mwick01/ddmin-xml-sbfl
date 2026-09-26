@@ -1,0 +1,72 @@
+Input: /home/user/ddmin-xml-sbfl/subjects/libxml2-467/inputs/failing.xml
+Original size: 174 characters
+Results: /home/user/ddmin-xml-sbfl/results/libxml2_467_ddmin/20260926_224640_738508
+
+Iteration 1: size=174, granularity=2, parts=2
+Iteration 2: size=174, granularity=4, parts=4
+Iteration 3: size=174, granularity=8, parts=8
+Iteration 4: size=174, granularity=16, parts=16
+Iteration 5: size=174, granularity=32, parts=32
+  Accepted failing complement: 174 -> 169
+Iteration 6: size=169, granularity=31, parts=31
+Iteration 7: size=169, granularity=62, parts=62
+  Accepted failing complement: 169 -> 166
+Iteration 8: size=166, granularity=61, parts=61
+  Accepted failing complement: 166 -> 163
+Iteration 9: size=163, granularity=60, parts=60
+  Accepted failing complement: 163 -> 160
+Iteration 10: size=160, granularity=59, parts=59
+  Accepted failing complement: 160 -> 157
+Iteration 11: size=157, granularity=58, parts=58
+  Accepted failing complement: 157 -> 154
+Iteration 12: size=154, granularity=57, parts=57
+  Accepted failing complement: 154 -> 152
+Iteration 13: size=152, granularity=56, parts=56
+Iteration 14: size=152, granularity=112, parts=112
+  Accepted failing complement: 152 -> 150
+Iteration 15: size=150, granularity=111, parts=111
+  Accepted failing complement: 150 -> 148
+Iteration 16: size=148, granularity=110, parts=110
+  Accepted failing complement: 148 -> 147
+Iteration 17: size=147, granularity=109, parts=109
+  Accepted failing complement: 147 -> 146
+Iteration 18: size=146, granularity=108, parts=108
+  Accepted failing complement: 146 -> 145
+Iteration 19: size=145, granularity=107, parts=107
+  Accepted failing complement: 145 -> 144
+Iteration 20: size=144, granularity=106, parts=106
+  Accepted failing complement: 144 -> 143
+Iteration 21: size=143, granularity=105, parts=105
+  Accepted failing complement: 143 -> 142
+Iteration 22: size=142, granularity=104, parts=104
+  Accepted failing complement: 142 -> 141
+Iteration 23: size=141, granularity=103, parts=103
+  Accepted failing complement: 141 -> 140
+Iteration 24: size=140, granularity=102, parts=102
+  Accepted failing complement: 140 -> 139
+Iteration 25: size=139, granularity=101, parts=101
+Iteration 26: size=139, granularity=139, parts=139
+  Accepted failing complement: 139 -> 138
+Iteration 27: size=138, granularity=138, parts=138
+  Accepted failing complement: 138 -> 137
+Iteration 28: size=137, granularity=137, parts=137
+  Accepted failing complement: 137 -> 136
+Iteration 29: size=136, granularity=136, parts=136
+  Accepted failing complement: 136 -> 135
+Iteration 30: size=135, granularity=135, parts=135
+  Accepted failing complement: 135 -> 134
+Iteration 31: size=134, granularity=134, parts=134
+  Accepted failing complement: 134 -> 133
+Iteration 32: size=133, granularity=133, parts=133
+
+DDMIN completed
+Original size: 174
+Minimal size: 133
+Reduction: 23.56%
+Oracle attempts: 4038
+Unique candidates: 1468
+PASS candidates: 232
+FAIL candidates: 25
+UNRESOLVED candidates: 1211
+Minimal failure: /home/user/ddmin-xml-sbfl/results/libxml2_467_ddmin/20260926_224640_738508/minimal_failure.xml
+Summary: /home/user/ddmin-xml-sbfl/results/libxml2_467_ddmin/20260926_224640_738508/summary.json

@@ -1,0 +1,46 @@
+Subject: libxml2-467
+Historical issue: libxml2 #467
+
+Fault:
+  file: parser.c
+  line: 9596
+
+DDMIN:
+  original_size: 174
+  minimal_size: 133
+  reduction_percentage: 23.56
+  oracle_attempts: 4038
+  unique_candidates: 1468
+  passing_candidates: 232
+  failing_candidates: 25
+  unresolved_candidates: 1211
+  unresolved_rate_percent: 82.49
+  usable_candidates: 257
+  usable_rate_percent: 17.51
+
+SBFL:
+  executable_lines: 7036
+
+  Jaccard:
+    rank: 4-11
+    average_rank: 7.50
+    suspiciousness: 0.179856
+    ef: 25
+    ep: 114
+    nf: 0
+    np: 118
+    exam_percent: 0.11
+
+  Ochiai:
+    rank: 4-11
+    average_rank: 7.50
+    suspiciousness: 0.424094
+    ef: 25
+    ep: 114
+    nf: 0
+    np: 118
+    exam_percent: 0.11
+
+Minimal failure:
+<!DOCTYPEo[<!ELEMENT t (d)><!ELEMENT d EMPTY><!ATTLIST child
+m CDATA "" xmlns:b CDATA "urn:b">]><root xmlns:b="urn:b"><child/></root>
