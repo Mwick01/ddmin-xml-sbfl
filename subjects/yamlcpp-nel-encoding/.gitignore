@@ -4,3 +4,4 @@ build_fixed/
 buggy_driver
 fixed_driver
 *.gcov
+coverage_buggy/

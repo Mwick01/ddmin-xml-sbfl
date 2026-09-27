@@ -1,0 +1,22 @@
+Input: /home/user/ddmin-xml-sbfl/subjects/yamlcpp-nel-encoding/input.yaml
+Original size: 12 characters
+Results: /home/user/ddmin-xml-sbfl/results/yamlcpp_nel_ddmin/20260927_130800_792876
+
+Iteration 1: size=12, granularity=2, parts=2
+Iteration 2: size=12, granularity=4, parts=4
+Iteration 3: size=12, granularity=8, parts=8
+  Accepted failing complement: 12 -> 11
+Iteration 4: size=11, granularity=7, parts=7
+Iteration 5: size=11, granularity=11, parts=11
+
+DDMIN completed
+Original size: 12
+Minimal size: 11
+Reduction: 8.33%
+Oracle attempts: 64
+Unique candidates: 48
+PASS candidates: 6
+FAIL candidates: 2
+UNRESOLVED candidates: 40
+Minimal failure: /home/user/ddmin-xml-sbfl/results/yamlcpp_nel_ddmin/20260927_130800_792876/minimal_failure.xml
+Summary: /home/user/ddmin-xml-sbfl/results/yamlcpp_nel_ddmin/20260927_130800_792876/summary.json

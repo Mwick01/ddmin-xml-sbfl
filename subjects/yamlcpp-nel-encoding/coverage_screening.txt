@@ -1,0 +1,20 @@
+DDMIN run: /home/user/ddmin-xml-sbfl/results/yamlcpp_nel_ddmin/20260927_130800_792876
+Candidates: 8
+Coverage output: /home/user/ddmin-xml-sbfl/results/yamlcpp_nel_ddmin/20260927_130800_792876/coverage
+
+[1/8] PASS 03a5afeabc5c... covered=0/84
+[2/8] PASS 12347b6259c6... covered=7/84
+[3/8] PASS 17b479ab7921... covered=0/84
+[4/8] PASS 7949eec2e6b4... covered=0/84
+[5/8] PASS d0ab8bf8f018... covered=0/84
+[6/8] PASS eb26d051f309... covered=0/84
+[7/8] FAIL 9904588029db... covered=7/84
+[8/8] FAIL be3ed8f85522... covered=7/84
+
+Coverage collection completed
+PASS tests: 6
+FAIL tests: 2
+Executable source lines: 84
+Lines covered by at least one test: 9
+Records: /home/user/ddmin-xml-sbfl/results/yamlcpp_nel_ddmin/20260927_130800_792876/coverage/coverage.jsonl
+Summary: /home/user/ddmin-xml-sbfl/results/yamlcpp_nel_ddmin/20260927_130800_792876/coverage/summary.json

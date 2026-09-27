@@ -1,0 +1,56 @@
+Subject: yamlcpp-nel-encoding
+Historical issue: yaml-cpp #803
+Fix PR: #1414
+Fault file: src/exp.cpp
+Fault line: 118
+
+DDMIN baseline
+--------------
+Original size: 12 characters
+Minimal size: 11 characters
+Reduction: 8.33%
+
+Oracle attempts: 64
+Unique candidates: 48
+
+PASS: 6
+FAIL: 2
+UNRESOLVED: 40
+
+Usable candidates: 8 / 48 = 16.67%
+UNRESOLVED rate: 40 / 48 = 83.33%
+
+Minimal failure:
+value: "\N
+
+Minimal failure classification: FAIL
+
+Baseline SBFL
+-------------
+PASS tests: 6
+FAIL tests: 2
+Executable lines: 84
+
+Jaccard:
+  fault line: 118
+  score: 1.000000
+  rank: 1-2
+  average rank: 1.50
+  EXAM: 1.79%
+
+Ochiai:
+  fault line: 118
+  score: 1.000000
+  rank: 1-2
+  average rank: 1.50
+  EXAM: 1.79%
+
+Top suspicious lines:
+  117  case 'N':
+  118  return "\x85";   <-- FAULT
+
+Interpretation:
+Character-level DDMIN produced a high proportion of structurally or
+semantically unusable candidates (83.33% UNRESOLVED). Despite the small
+usable spectrum, the historical fault was localized to the top tied rank
+under both Jaccard and Ochiai.

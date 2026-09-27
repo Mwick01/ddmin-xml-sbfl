@@ -1,0 +1,39 @@
+PASS tests: 6
+FAIL tests: 2
+Executable lines: 84
+
+Top 10 lines using JACCARD
+------------------------------------------------------------------------------------------
+Rank 1-2 (avg 1.5)      Line 117  Score 1.000000  ef=2 ep=0 nf=0 np=6  case 'N':
+Rank 1-2 (avg 1.5)      Line 118  Score 1.000000  ef=2 ep=0 nf=0 np=6  return "\x85"; <-- FAULT
+Rank 3-7 (avg 5.0)      Line 74   Score 0.666667  ef=2 ep=1 nf=0 np=5  std::string Escape(Stream& in) {
+Rank 3-7 (avg 5.0)      Line 76   Score 0.666667  ef=2 ep=1 nf=0 np=5  char escape = in.get();
+Rank 3-7 (avg 5.0)      Line 79   Score 0.666667  ef=2 ep=1 nf=0 np=5  char ch = in.get();
+Rank 3-7 (avg 5.0)      Line 82   Score 0.666667  ef=2 ep=1 nf=0 np=5  if (escape == '\'' && ch == '\'')
+Rank 3-7 (avg 5.0)      Line 87   Score 0.666667  ef=2 ep=1 nf=0 np=5  switch (ch) {
+Rank 8-84 (avg 46.0)    Line 13   Score 0.000000  ef=0 ep=0 nf=2 np=6  unsigned ParseHex(const std::string& str, const Mark& mark) {
+Rank 8-84 (avg 46.0)    Line 14   Score 0.000000  ef=0 ep=0 nf=2 np=6  unsigned value = 0;
+Rank 8-84 (avg 46.0)    Line 15   Score 0.000000  ef=0 ep=0 nf=2 np=6  for (char ch : str) {
+
+Top 10 lines using OCHIAI
+------------------------------------------------------------------------------------------
+Rank 1-2 (avg 1.5)      Line 117  Score 1.000000  ef=2 ep=0 nf=0 np=6  case 'N':
+Rank 1-2 (avg 1.5)      Line 118  Score 1.000000  ef=2 ep=0 nf=0 np=6  return "\x85"; <-- FAULT
+Rank 3-7 (avg 5.0)      Line 74   Score 0.816497  ef=2 ep=1 nf=0 np=5  std::string Escape(Stream& in) {
+Rank 3-7 (avg 5.0)      Line 76   Score 0.816497  ef=2 ep=1 nf=0 np=5  char escape = in.get();
+Rank 3-7 (avg 5.0)      Line 79   Score 0.816497  ef=2 ep=1 nf=0 np=5  char ch = in.get();
+Rank 3-7 (avg 5.0)      Line 82   Score 0.816497  ef=2 ep=1 nf=0 np=5  if (escape == '\'' && ch == '\'')
+Rank 3-7 (avg 5.0)      Line 87   Score 0.816497  ef=2 ep=1 nf=0 np=5  switch (ch) {
+Rank 8-84 (avg 46.0)    Line 13   Score 0.000000  ef=0 ep=0 nf=2 np=6  unsigned ParseHex(const std::string& str, const Mark& mark) {
+Rank 8-84 (avg 46.0)    Line 14   Score 0.000000  ef=0 ep=0 nf=2 np=6  unsigned value = 0;
+Rank 8-84 (avg 46.0)    Line 15   Score 0.000000  ef=0 ep=0 nf=2 np=6  for (char ch : str) {
+
+Known fault results
+------------------------------------------------------------
+Jaccard: line=118, score=1.000000, rank=1-2 (average=1.50), EXAM=1.79%
+Ochiai: line=118, score=1.000000, rank=1-2 (average=1.50), EXAM=1.79%
+
+Spectrum: /home/user/ddmin-xml-sbfl/results/yamlcpp_nel_ddmin/20260927_130800_792876/sbfl/spectrum.csv
+Jaccard ranking: /home/user/ddmin-xml-sbfl/results/yamlcpp_nel_ddmin/20260927_130800_792876/sbfl/jaccard_ranking.csv
+Ochiai ranking: /home/user/ddmin-xml-sbfl/results/yamlcpp_nel_ddmin/20260927_130800_792876/sbfl/ochiai_ranking.csv
+Summary: /home/user/ddmin-xml-sbfl/results/yamlcpp_nel_ddmin/20260927_130800_792876/sbfl/summary.json
