@@ -1,0 +1,13 @@
+diff --git a/src/exp.cpp b/src/exp.cpp
+index eae4ab1..067b29e 100644
+--- a/src/exp.cpp
++++ b/src/exp.cpp
+@@ -115,7 +115,7 @@ std::string Escape(Stream& in) {
+     case '/':
+       return "/";
+     case 'N':
+-      return "\x85";
++      return "\xC2\x85";      // NEL (U+0085)
+     case '_':
+       return "\xC2\xA0";      // NBSP (U+00A0)
+     case 'L':

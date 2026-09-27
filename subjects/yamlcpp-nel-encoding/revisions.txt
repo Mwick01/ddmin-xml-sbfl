@@ -1,0 +1,8 @@
+project: yaml-cpp
+historical_issue: 803
+fix_pr: 1414
+buggy_revision: 6ede31b891c6c01e105c3fe04a9a4e88a648bf0f
+fixed_revision: ddda0a41ccd733588c9f3ef5ff2a15f0990f39ae
+fault_file: src/exp.cpp
+fault_line_buggy: 118
+fault_description: YAML escape \N is decoded as raw byte 0x85 instead of UTF-8 C2 85
