@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Peach
+    xmlns="http://peachfuzzer.com/2012/Peach"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <!--
+      Double-quoted-scalar structural model for the yaml-cpp
+      NEL-encoding historical bug.
+
+      This is intentionally NOT a complete YAML grammar.
+
+      The model protects only the coarse structure:
+
+          value: "mutable scalar content"
+
+      The historical trigger \N is deliberately ordinary mutable
+      data rather than a token. Therefore AFLsmart may retain,
+      remove, or replace it while still preserving the surrounding
+      YAML mapping and double-quoted scalar structure.
+    -->
+
+    <DataModel name="YAML_NEL">
+
+        <String
+            name="Key"
+            value="value"
+            token="true"
+        />
+
+        <String
+            name="Separator"
+            value=": "
+            token="true"
+        />
+
+        <String
+            name="QuoteOpen"
+            value="&quot;"
+            token="true"
+        />
+
+        <String
+            name="ScalarContent"
+            value="\N"
+        />
+
+        <String
+            name="QuoteClose"
+            value="&quot;"
+            token="true"
+        />
+
+        <String
+            name="TrailingNewline"
+            value="&#10;"
+            token="true"
+            minOccurs="0"
+            maxOccurs="1"
+        />
+
+    </DataModel>
+
+
+    <StateModel
+        name="TheState"
+        initialState="Initial">
+
+        <State name="Initial">
+
+            <Action type="output">
+                <DataModel ref="YAML_NEL"/>
+                <Data fileName="/dev/null"/>
+            </Action>
+
+            <Action type="close"/>
+
+        </State>
+
+    </StateModel>
+
+
+    <Test name="Default">
+
+        <StateModel ref="TheState"/>
+
+        <Publisher class="File">
+            <Param
+                name="FileName"
+                value="repaired"
+            />
+        </Publisher>
+
+        <Logger class="Filesystem">
+            <Param
+                name="Path"
+                value="logs"
+            />
+        </Logger>
+
+    </Test>
+
+</Peach>

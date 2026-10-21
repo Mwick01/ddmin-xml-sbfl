@@ -50,6 +50,17 @@ SUBJECTS = {
         ),
         "fault_line": 265,
     },
+    "yamlcpp_nel": {
+        "source": (
+            PROJECT_ROOT
+            / "subjects"
+            / "yamlcpp-nel-encoding"
+            / "buggy"
+            / "src"
+            / "exp.cpp"
+        ),
+        "fault_line": 118,
+    },
 }
 
 

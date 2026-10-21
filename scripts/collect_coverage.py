@@ -397,6 +397,7 @@ def collect_candidate_coverage(
 
 def find_candidate_files(
     run_directory: Path,
+    allow_single_class: bool = False,
 ) -> list[tuple[str, Path]]:
     """Find all unique PASS and FAIL candidates."""
 
@@ -415,17 +416,23 @@ def find_candidate_files(
         if path.is_file()
     )
 
-    if not passing_files:
-        raise RuntimeError(
-            "No PASS candidates were found. "
-            "SBFL needs at least one passing test."
-        )
+    if allow_single_class:
+        if not passing_files and not failing_files:
+            raise RuntimeError(
+                "No PASS or FAIL candidates were found."
+            )
+    else:
+        if not passing_files:
+            raise RuntimeError(
+                "No PASS candidates were found. "
+                "SBFL needs at least one passing test."
+            )
 
-    if not failing_files:
-        raise RuntimeError(
-            "No FAIL candidates were found. "
-            "SBFL needs at least one failing test."
-        )
+        if not failing_files:
+            raise RuntimeError(
+                "No FAIL candidates were found. "
+                "SBFL needs at least one failing test."
+            )
 
     candidates: list[tuple[str, Path]] = []
 
@@ -486,6 +493,16 @@ def parse_arguments() -> argparse.Namespace:
         help=(
             "gcov object file corresponding "
             "to --source."
+        ),
+    )
+
+    parser.add_argument(
+        "--allow-single-class",
+        action="store_true",
+        help=(
+            "Allow coverage collection when usable candidates "
+            "contain only PASS or only FAIL tests. "
+            "Default behavior still requires both classes."
         ),
     )
 
@@ -562,7 +579,10 @@ def main() -> int:
             return 2
 
     try:
-        candidates = find_candidate_files(run_directory)
+        candidates = find_candidate_files(
+            run_directory,
+            allow_single_class=arguments.allow_single_class,
+        )
     except RuntimeError as error:
         print(f"Error: {error}", file=sys.stderr)
         return 1

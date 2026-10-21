@@ -145,6 +145,54 @@ SUBJECTS = {
         fault_line=265,
         afl_memory_limit="none",
     ),
+    "yamlcpp_nel": Subject(
+        name="yamlcpp_nel",
+        seed_directory=(
+            PROJECT_ROOT
+            / "aflsmart"
+            / "yamlcpp_nel_seeds"
+        ),
+        pit_file=(
+            PROJECT_ROOT
+            / "aflsmart"
+            / "yamlcpp_nel.xml"
+        ),
+        target=(
+            PROJECT_ROOT
+            / "build"
+            / "aflsmart"
+            / "yamlcpp_nel"
+            / "yamlcpp_nel_buggy"
+        ),
+        oracle_module="oracle_yamlcpp_nel",
+        coverage_source=(
+            PROJECT_ROOT
+            / "subjects"
+            / "yamlcpp-nel-encoding"
+            / "buggy"
+            / "src"
+            / "exp.cpp"
+        ),
+        coverage_binary=(
+            PROJECT_ROOT
+            / "subjects"
+            / "yamlcpp-nel-encoding"
+            / "coverage_buggy"
+            / "buggy_cov"
+        ),
+        coverage_object=(
+            PROJECT_ROOT
+            / "subjects"
+            / "yamlcpp-nel-encoding"
+            / "coverage_buggy"
+            / "CMakeFiles"
+            / "yaml-cpp.dir"
+            / "src"
+            / "exp.cpp.o"
+        ),
+        fault_line=118,
+        afl_memory_limit="none",
+    ),
 }
 
 
@@ -420,6 +468,7 @@ def collect_coverage(subject: Subject, run_directory: Path) -> dict:
             sys.executable,
             str(collector),
             str(generated_eval),
+            "--allow-single-class",
             "--oracle-module", subject.oracle_module,
             "--source", rel(subject.coverage_source),
             "--binary", rel(subject.coverage_binary),
