@@ -1,0 +1,5 @@
+mode,generated_queue_entries,contains_literal_N,PASS,FAIL,UNRESOLVED,trigger_percent
+afl,7532,3,0,0,3,0.04
+aflsmart-mixed,6279,0,0,0,0,0.00
+aflsmart-nonstack,6804,3,0,0,3,0.04
+total,20615,6,0,0,6,0.03
