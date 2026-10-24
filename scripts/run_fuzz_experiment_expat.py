@@ -14,7 +14,7 @@ import shutil
 import subprocess
 import sys
 from collections import Counter, defaultdict
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 from pathlib import Path
 
 
@@ -547,6 +547,8 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--subject", choices=sorted(SUBJECTS), default="expat_resume")
     parser.add_argument("--baseline-run", type=Path, required=True)
+    parser.add_argument("--seed-directory", type=Path, default=None,
+                        help="Seed directory inside the repository; defaults to the subject corpus")
     parser.add_argument("--duration", type=int, default=300)
     parser.add_argument("--repetitions", type=int, default=5)
     parser.add_argument(
@@ -576,6 +578,13 @@ def main() -> None:
     arguments = parser.parse_args()
 
     subject = SUBJECTS[arguments.subject]
+    if arguments.seed_directory is not None:
+        seed_directory = (PROJECT_ROOT / arguments.seed_directory).resolve()
+        try:
+            seed_directory.relative_to(PROJECT_ROOT)
+        except ValueError as exc:
+            raise SystemExit("--seed-directory must be inside the repository") from exc
+        subject = replace(subject, seed_directory=seed_directory)
     baseline_run = arguments.baseline_run.resolve()
     validate_subject(
         subject,
