@@ -1,0 +1,10 @@
+<!DOCTYPEot [
+<!ELEMENT t (ld)>
+<!ELEMENT ld EMPTY>
+<!ATTLIST child
+  xm CDATA "urn:a"
+  xmlns:b CDATA "urn:b">
+]>
+<root xmlns:b="urn:b">
+  <child/>
+</root>

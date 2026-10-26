@@ -42,6 +42,17 @@ class Subject:
 
 
 SUBJECTS = {
+    "libxml2_467": Subject(
+        name="libxml2_467",
+        seed_directory=PROJECT_ROOT / "aflsmart" / "libxml2_467_structure_seeds",
+        pit_file=PROJECT_ROOT / "aflsmart" / "libxml2_467.xml",
+        target=PROJECT_ROOT / "build" / "aflsmart" / "libxml2_467" / "libxml2_467_buggy",
+        oracle_module="oracle_libxml2_467",
+        coverage_source=PROJECT_ROOT / "subjects" / "libxml2-467" / "buggy" / "parser.c",
+        coverage_binary=PROJECT_ROOT / "subjects" / "libxml2-467" / "run_buggy_cov.sh",
+        coverage_object=PROJECT_ROOT / "build" / "libxml2_467_cov" / "CMakeFiles" / "LibXml2.dir" / "parser.c.o",
+        fault_line=9596,
+    ),
     "expat_resume": Subject(
         name="expat_resume",
         seed_directory=PROJECT_ROOT / "aflsmart" / "expat_resume_rich_seeds",

@@ -65,6 +65,8 @@ def run_program(
             cwd=PROJECT_ROOT,
             capture_output=True,
             text=True,
+            encoding="utf-8",
+            errors="surrogateescape",
             timeout=TIMEOUT_SECONDS,
             check=False,
         )
@@ -83,13 +85,13 @@ def run_program(
         if isinstance(stdout, bytes):
             stdout = stdout.decode(
                 "utf-8",
-                errors="replace",
+                errors="surrogateescape",
             )
 
         if isinstance(stderr, bytes):
             stderr = stderr.decode(
                 "utf-8",
-                errors="replace",
+                errors="surrogateescape",
             )
 
         return ExecutionResult(

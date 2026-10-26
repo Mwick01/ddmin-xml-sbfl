@@ -1,0 +1,2 @@
+<!DOCTYPEo[<!ELEMENT t (d)><!ELEMENT d EMPTY><!ATTLIST child
+m CDATA "" xmlns:b CDATA "urn:b">]><root xmlns:b="urn:b"><child/></root>
