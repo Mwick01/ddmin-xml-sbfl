@@ -1,0 +1,8 @@
+cohort,oracle_classification,structural_validator_admits,fixed_target_accepts,fixed_target_timeout,count
+character,FAIL,True,True,False,16
+character,PASS,False,True,False,2
+character,PASS,True,True,False,23
+character,UNRESOLVED,False,False,False,117
+character,UNRESOLVED,True,False,False,4
+structural,FAIL,True,True,False,4
+structural,PASS,True,True,False,8

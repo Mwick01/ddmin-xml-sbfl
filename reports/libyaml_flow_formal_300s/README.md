@@ -82,3 +82,8 @@ ranking.
 
 These results are subject-specific and should not be generalized beyond
 the evaluated subjects without further replication.
+
+## Follow-up
+
+The [structure-aware DDMIN comparison](../libyaml_flow_structure_comparison/README.md)
+compares this 16-seed experiment with the four-seed structural arm.

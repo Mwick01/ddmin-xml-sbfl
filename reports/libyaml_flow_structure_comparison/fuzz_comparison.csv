@@ -1,0 +1,7 @@
+cohort,mode,repetitions,mean_added_pass,mean_added_fail,mean_new_pass_profiles,mean_new_fail_profiles,mean_usable_rate,mean_afl_executions,mean_jaccard_average_rank,mean_jaccard_exam_percentage,mean_ochiai_average_rank,improved_runs
+character,afl,5,318.6,16,44.4,7,0.22504593920541963,868395,4.5,0.746268656716418,4.5,4
+character,aflsmart-mixed,5,294.6,15.4,41,7,0.22895278383192283,826348.4,5.5,0.9121061359867331,5.5,3
+character,aflsmart-nonstack,5,294.8,10.6,39.2,6.4,0.2194458637759296,852315.2,5.6,0.9286898839137645,5.6,3
+structural,afl,5,295.6,10,41.8,4,0.2142462984134489,806805.2,5.7,0.945273631840796,5.7,3
+structural,aflsmart-mixed,5,284.4,10.8,39.8,4.8,0.22109626340413085,800161.4,5.7,0.945273631840796,5.7,3
+structural,aflsmart-nonstack,5,280.8,8.4,46.2,6.4,0.2206679722143423,767279.2,9.0,1.492537313432836,9.0,0

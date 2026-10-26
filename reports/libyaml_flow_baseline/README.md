@@ -32,7 +32,8 @@ Minimal size: 12 characters.
 ## DDMIN
 
 - Reduction: 78.95%
-- Oracle attempts: 321
+- Candidate evaluation attempts (including 159 cache hits): 321
+- Classifier calls on unique candidates: 162
 - Unique candidates: 162
 - PASS: 25
 - FAIL: 16

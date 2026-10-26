@@ -1,0 +1,3 @@
+cohort,seed_count,original_chars,minimal_chars,reduction_percent,candidate_evaluation_attempts,cache_hits,classifier_calls,unique_candidates,pass_candidates,fail_candidates,unresolved_candidates,fixed_target_accepted,structural_validator_admitted,baseline_covered_lines,executable_lines,baseline_jaccard_best_rank,baseline_jaccard_average_rank,baseline_jaccard_worst_rank,wall_clock_seconds
+character,16,57,12,78.95,321,159,162,162,25,16,121,41,43,312,603,1,9.0,17,not_recorded
+structural,4,57,19,66.67,23,11,12,12,8,4,0,12,12,232,603,1,9.0,17,not_recorded

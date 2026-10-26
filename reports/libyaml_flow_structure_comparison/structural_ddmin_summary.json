@@ -1,0 +1,18 @@
+{
+  "failing_candidates": 4,
+  "generated_attempts": 23,
+  "input_file": "/home/user/ddmin-xml-sbfl/subjects/libyaml_flow/inputs/failing_rich.yaml",
+  "invalid_yaml_candidates": 0,
+  "iterations": 6,
+  "minimal_candidate_id": "c19d8fb7bb62e9580757e10eae9322ac2cb1cae06dcb9934a214ce427addfbae",
+  "minimal_file": "/home/user/ddmin-xml-sbfl/results/yaml_structural_ddmin_runs/20261023_110311_117063/minimal_failure.yaml",
+  "minimal_size_characters": 19,
+  "oracle_attempts": 12,
+  "oracle_module": "oracle_libyaml_flow",
+  "original_candidate_id": "ffeed55bbb9a6312d4656cd8e1a5ea11036a169847fd78590c12c1c45a77ba86",
+  "original_size_characters": 57,
+  "passing_candidates": 8,
+  "reduction_percentage": 66.67,
+  "unique_candidates": 12,
+  "unresolved_candidates": 0
+}
