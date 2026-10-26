@@ -18,6 +18,10 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 MODES = ("afl", "aflsmart-mixed", "aflsmart-nonstack")
 
 SUBJECTS = {
+    "libxml2_467": {
+        "source": PROJECT_ROOT / "subjects" / "libxml2-467" / "buggy" / "parser.c",
+        "fault_line": 9596,
+    },
     "expat_resume": {
         "source": (
             PROJECT_ROOT
