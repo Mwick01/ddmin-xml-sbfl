@@ -1,0 +1,18 @@
+{
+  "failing_candidates": 1,
+  "generated_attempts": 1,
+  "input_file": "/home/user/ddmin-xml-sbfl/subjects/yamlcpp-nel-encoding/input.yaml",
+  "invalid_yaml_candidates": 0,
+  "iterations": 0,
+  "minimal_candidate_id": "9904588029db25ffe4d383f70c9f2c0a53817970895ab54fa0a14d9a3358b7ee",
+  "minimal_file": "/home/user/ddmin-xml-sbfl/results/yamlcpp_nel_structural_ddmin/20261026_103713_222187/minimal_failure.yaml",
+  "minimal_size_characters": 12,
+  "oracle_attempts": 1,
+  "oracle_module": "oracle_yamlcpp_nel",
+  "original_candidate_id": "9904588029db25ffe4d383f70c9f2c0a53817970895ab54fa0a14d9a3358b7ee",
+  "original_size_characters": 12,
+  "passing_candidates": 0,
+  "reduction_percentage": 0.0,
+  "unique_candidates": 1,
+  "unresolved_candidates": 0
+}

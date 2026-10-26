@@ -189,3 +189,8 @@ For yaml-cpp NEL:
 5. Trigger-retention analysis explains this result: the narrow `\N` trigger was almost universally lost.
 6. Fuzz augmentation preserved the baseline fault rank rather than improving it because the baseline was already at the localization ceiling.
 7. This subject provides evidence that structural preservation and semantic trigger preservation are distinct concerns.
+
+## Structural DDMIN follow-up
+
+The [structural DDMIN feasibility report](../yamlcpp_nel_structural_feasibility/README.md) documents two exploratory runs on the 12-character input and why no
+structural fuzz comparison was performed.

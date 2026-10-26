@@ -1,0 +1,18 @@
+    elif isinstance(node, yaml.nodes.ScalarNode):
+        # Delete content while preserving double-quote syntax.
+        # Do not alter mapping keys.
+        if node.style == '"' and path.endswith(".value"):
+            start, end = span(node)
+            if (
+                end - start > 2
+                and source[start] == '"'
+                and source[end - 1] == '"'
+            ):
+                deletions.append(
+                    Deletion(
+                        path=f"{path}.content",
+                        kind="quoted_scalar_content",
+                        start=start + 1,
+                        end=end - 1,
+                    )
+                )

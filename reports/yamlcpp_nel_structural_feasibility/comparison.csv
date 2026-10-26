@@ -1,0 +1,3 @@
+variant,run_directory,original_size_characters,minimal_size_characters,reduction_percentage,iterations,generated_attempts,oracle_attempts,unique_candidates,passing_candidates,failing_candidates,unresolved_candidates,invalid_yaml_candidates
+original,results/yamlcpp_nel_structural_ddmin/20261026_103713_222187,12,12,0.0,0,1,1,1,0,1,0,0
+scalar_v2,results/yamlcpp_nel_structural_ddmin_scalar_v2/20261026_104416_223899,12,12,0.0,1,2,2,2,1,1,0,0
