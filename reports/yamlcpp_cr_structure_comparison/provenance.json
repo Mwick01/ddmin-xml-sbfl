@@ -1,0 +1,16 @@
+{
+  "character_commit": "55eb49944c4abd5dfe03f7e01230869a6581af84",
+  "character_seed_sha256": "218e289ad746afdb5ea94815455fe9e61038ac4f47769ef5d34fdd6584fbd21e",
+  "shared": {
+    "coverage_binary": "subjects/yamlcpp-cr-line-ending/coverage_buggy/semantic_buggy_cov",
+    "coverage_source": "subjects/yamlcpp-cr-line-ending/buggy/src/stream.cpp",
+    "docker_image": "ddmin-aflsmart",
+    "fault_line": 265,
+    "oracle_module": "oracle_yamlcpp_cr",
+    "order_seed": 20260920,
+    "pit_sha256": "a02edd616d5ff6a2fec562cb6e523c470053cf02ffcf4c8840fe91cf35a9d95f",
+    "target_sha256": "76fb380b64c81dbbd61ef296be1c29e2091d0a3d52aff17d87a878981ce9376a"
+  },
+  "structural_commit": "f01eb368a24eb643e60ab27cbf0ea0d7eea93668",
+  "structural_seed_sha256": "89604790771122db9fd65620fdf14b7130082a61aeca5ca1d4ce5efb79fa8e5b"
+}

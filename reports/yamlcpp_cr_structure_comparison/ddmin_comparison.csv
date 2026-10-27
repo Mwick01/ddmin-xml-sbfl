@@ -1,0 +1,3 @@
+arm,original_bytes,minimal_bytes,reduction_percent,evaluation_attempts,unique_candidates,classifier_calls,PASS,FAIL,UNRESOLVED,INVALID_YAML,baseline_jaccard_average_rank,baseline_jaccard_EXAM_percent
+character,104,3,97.12,42,24,24,16,7,1,0,44.5,21.497584541062803
+structural,104,24,76.92,11,6,5,2,3,0,1,42.5,20.531400966183575

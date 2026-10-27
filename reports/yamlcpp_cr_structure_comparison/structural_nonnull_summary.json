@@ -1,0 +1,266 @@
+{
+  "baseline": {
+    "FAIL": 3,
+    "PASS": 2,
+    "jaccard": {
+      "average_rank": 42.5,
+      "best_rank": 1,
+      "exam_percentage": 20.531400966183575,
+      "worst_rank": 84
+    },
+    "ochiai": {
+      "average_rank": 42.5,
+      "best_rank": 1,
+      "exam_percentage": 20.531400966183575,
+      "worst_rank": 84
+    }
+  },
+  "baseline_removed_TREE_NULL": {
+    "FAIL": 0,
+    "PASS": 0
+  },
+  "baseline_run": "/home/user/ddmin-xml-sbfl/results/yamlcpp_cr_structural_ddmin/20261027_154317_425518",
+  "fuzz_root": "/home/user/ddmin-xml-sbfl/results/yamlcpp_cr/formal_structure_aflsmart_300s",
+  "runs": [
+    {
+      "NONNULL_PASS_avoids_fault": 0,
+      "NULL_PASS_avoids_fault": 1,
+      "jaccard": {
+        "average_rank": 51.5,
+        "best_rank": 22,
+        "exam_percentage": 24.879227053140095,
+        "worst_rank": 81
+      },
+      "mode": "aflsmart-mixed",
+      "ochiai": {
+        "average_rank": 51.5,
+        "best_rank": 22,
+        "exam_percentage": 24.879227053140095,
+        "worst_rank": 81
+      },
+      "removed_TREE_NULL": {
+        "FAIL": 0,
+        "PASS": 107
+      },
+      "repetition": 1,
+      "retained_FAIL": 78,
+      "retained_PASS": 244
+    },
+    {
+      "NONNULL_PASS_avoids_fault": 0,
+      "NULL_PASS_avoids_fault": 0,
+      "jaccard": {
+        "average_rank": 49.5,
+        "best_rank": 18,
+        "exam_percentage": 23.91304347826087,
+        "worst_rank": 81
+      },
+      "mode": "aflsmart-nonstack",
+      "ochiai": {
+        "average_rank": 49.5,
+        "best_rank": 18,
+        "exam_percentage": 23.91304347826087,
+        "worst_rank": 81
+      },
+      "removed_TREE_NULL": {
+        "FAIL": 0,
+        "PASS": 94
+      },
+      "repetition": 1,
+      "retained_FAIL": 81,
+      "retained_PASS": 232
+    },
+    {
+      "NONNULL_PASS_avoids_fault": 0,
+      "NULL_PASS_avoids_fault": 2,
+      "jaccard": {
+        "average_rank": 53.5,
+        "best_rank": 24,
+        "exam_percentage": 25.845410628019323,
+        "worst_rank": 83
+      },
+      "mode": "aflsmart-mixed",
+      "ochiai": {
+        "average_rank": 51.5,
+        "best_rank": 22,
+        "exam_percentage": 24.879227053140095,
+        "worst_rank": 81
+      },
+      "removed_TREE_NULL": {
+        "FAIL": 1,
+        "PASS": 118
+      },
+      "repetition": 2,
+      "retained_FAIL": 132,
+      "retained_PASS": 323
+    },
+    {
+      "NONNULL_PASS_avoids_fault": 0,
+      "NULL_PASS_avoids_fault": 1,
+      "jaccard": {
+        "average_rank": 51.5,
+        "best_rank": 22,
+        "exam_percentage": 24.879227053140095,
+        "worst_rank": 81
+      },
+      "mode": "aflsmart-nonstack",
+      "ochiai": {
+        "average_rank": 51.5,
+        "best_rank": 22,
+        "exam_percentage": 24.879227053140095,
+        "worst_rank": 81
+      },
+      "removed_TREE_NULL": {
+        "FAIL": 0,
+        "PASS": 120
+      },
+      "repetition": 2,
+      "retained_FAIL": 97,
+      "retained_PASS": 269
+    },
+    {
+      "NONNULL_PASS_avoids_fault": 0,
+      "NULL_PASS_avoids_fault": 3,
+      "jaccard": {
+        "average_rank": 51.5,
+        "best_rank": 20,
+        "exam_percentage": 24.879227053140095,
+        "worst_rank": 83
+      },
+      "mode": "aflsmart-mixed",
+      "ochiai": {
+        "average_rank": 51.5,
+        "best_rank": 20,
+        "exam_percentage": 24.879227053140095,
+        "worst_rank": 83
+      },
+      "removed_TREE_NULL": {
+        "FAIL": 1,
+        "PASS": 96
+      },
+      "repetition": 3,
+      "retained_FAIL": 109,
+      "retained_PASS": 261
+    },
+    {
+      "NONNULL_PASS_avoids_fault": 0,
+      "NULL_PASS_avoids_fault": 0,
+      "jaccard": {
+        "average_rank": 51.5,
+        "best_rank": 22,
+        "exam_percentage": 24.879227053140095,
+        "worst_rank": 81
+      },
+      "mode": "aflsmart-nonstack",
+      "ochiai": {
+        "average_rank": 51.5,
+        "best_rank": 22,
+        "exam_percentage": 24.879227053140095,
+        "worst_rank": 81
+      },
+      "removed_TREE_NULL": {
+        "FAIL": 0,
+        "PASS": 95
+      },
+      "repetition": 3,
+      "retained_FAIL": 87,
+      "retained_PASS": 297
+    },
+    {
+      "NONNULL_PASS_avoids_fault": 0,
+      "NULL_PASS_avoids_fault": 2,
+      "jaccard": {
+        "average_rank": 51.5,
+        "best_rank": 20,
+        "exam_percentage": 24.879227053140095,
+        "worst_rank": 83
+      },
+      "mode": "aflsmart-mixed",
+      "ochiai": {
+        "average_rank": 51.5,
+        "best_rank": 20,
+        "exam_percentage": 24.879227053140095,
+        "worst_rank": 83
+      },
+      "removed_TREE_NULL": {
+        "FAIL": 0,
+        "PASS": 85
+      },
+      "repetition": 4,
+      "retained_FAIL": 110,
+      "retained_PASS": 222
+    },
+    {
+      "NONNULL_PASS_avoids_fault": 0,
+      "NULL_PASS_avoids_fault": 2,
+      "jaccard": {
+        "average_rank": 51.5,
+        "best_rank": 22,
+        "exam_percentage": 24.879227053140095,
+        "worst_rank": 81
+      },
+      "mode": "aflsmart-nonstack",
+      "ochiai": {
+        "average_rank": 51.5,
+        "best_rank": 22,
+        "exam_percentage": 24.879227053140095,
+        "worst_rank": 81
+      },
+      "removed_TREE_NULL": {
+        "FAIL": 0,
+        "PASS": 126
+      },
+      "repetition": 4,
+      "retained_FAIL": 69,
+      "retained_PASS": 295
+    },
+    {
+      "NONNULL_PASS_avoids_fault": 0,
+      "NULL_PASS_avoids_fault": 2,
+      "jaccard": {
+        "average_rank": 49.5,
+        "best_rank": 18,
+        "exam_percentage": 23.91304347826087,
+        "worst_rank": 81
+      },
+      "mode": "aflsmart-mixed",
+      "ochiai": {
+        "average_rank": 49.5,
+        "best_rank": 18,
+        "exam_percentage": 23.91304347826087,
+        "worst_rank": 81
+      },
+      "removed_TREE_NULL": {
+        "FAIL": 0,
+        "PASS": 129
+      },
+      "repetition": 5,
+      "retained_FAIL": 83,
+      "retained_PASS": 231
+    },
+    {
+      "NONNULL_PASS_avoids_fault": 0,
+      "NULL_PASS_avoids_fault": 0,
+      "jaccard": {
+        "average_rank": 51.5,
+        "best_rank": 22,
+        "exam_percentage": 24.879227053140095,
+        "worst_rank": 81
+      },
+      "mode": "aflsmart-nonstack",
+      "ochiai": {
+        "average_rank": 51.5,
+        "best_rank": 22,
+        "exam_percentage": 24.879227053140095,
+        "worst_rank": 81
+      },
+      "removed_TREE_NULL": {
+        "FAIL": 1,
+        "PASS": 118
+      },
+      "repetition": 5,
+      "retained_FAIL": 93,
+      "retained_PASS": 260
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+arm,mode,repetitions,seed_count,baseline_average_rank,mean_primary_average_rank,mean_primary_EXAM_percent,primary_runs_better_than_baseline,nonnull_baseline_average_rank,mean_nonnull_average_rank,nonnull_runs_better_than_baseline,mean_added_FAIL,mean_new_FAIL_profiles,NULL_PASS_avoids_fault_total,NONNULL_PASS_avoids_fault_total
+character,aflsmart-mixed,5,7,44.5,37.1,17.92270531400966,3,44.5,51.9,0,69.2,5.4,7,0
+character,aflsmart-nonstack,5,7,44.5,37.6,18.164251207729468,3,44.5,51.7,0,65,4,5,0
+structural,aflsmart-mixed,5,3,42.5,28.6,13.816425120772946,5,42.5,51.5,0,102.8,6.8,10,0
+structural,aflsmart-nonstack,5,3,42.5,41.7,20.144927536231883,2,42.5,51.1,0,85.6,5.4,3,0
