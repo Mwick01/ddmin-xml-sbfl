@@ -656,9 +656,9 @@ def main() -> int:
         )
         return 2
 
-    original = input_file.read_text(
-        encoding="utf-8"
-    )
+    # Path.read_text() translates CR to LF on input. Read bytes first so
+    # structural spans and oracle inputs retain the original line endings.
+    original = input_file.read_bytes().decode("utf-8")
 
     run_id = (
         datetime.now().strftime(
@@ -737,10 +737,7 @@ def main() -> int:
         / "minimal_failure.yaml"
     )
 
-    minimal_file.write_text(
-        minimal,
-        encoding="utf-8",
-    )
+    minimal_file.write_bytes(minimal.encode("utf-8"))
 
     original_size = len(original)
     minimal_size = len(minimal)

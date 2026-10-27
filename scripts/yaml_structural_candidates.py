@@ -131,6 +131,27 @@ def collect_deletions(
                         )
                     )
 
+        else:
+            # Keep the original line separators. In particular, yaml-cpp's
+            # CR regression depends on literal carriage returns, so a
+            # parse/dump round trip would change the test case.
+            for index, (key, value) in enumerate(node.value):
+                start = key.start_mark.index
+                if index + 1 < len(node.value):
+                    end = node.value[index + 1][0].start_mark.index
+                else:
+                    end = value.end_mark.index
+
+                if start < end:
+                    deletions.append(
+                        Deletion(
+                            path=f"{path}.entry[{index}]",
+                            kind="block_mapping_entry",
+                            start=start,
+                            end=end,
+                        )
+                    )
+
         for index, (key, value) in enumerate(node.value):
             deletions.extend(
                 collect_deletions(
@@ -149,6 +170,23 @@ def collect_deletions(
             )
 
     elif isinstance(node, yaml.nodes.ScalarNode):
+        if node.style in {"|", ">"} and path.endswith(".value"):
+            start, end = span(node)
+            lines = source[start:end].splitlines(keepends=True)
+            offset = start + (len(lines[0]) if lines else 0)
+
+            for index, line in enumerate(lines[1:]):
+                if line:
+                    deletions.append(
+                        Deletion(
+                            path=f"{path}.line[{index}]",
+                            kind="block_scalar_line",
+                            start=offset,
+                            end=offset + len(line),
+                        )
+                    )
+                offset += len(line)
+
         # Delete content while preserving double-quote syntax.
         # Do not alter mapping keys.
         if node.style == '"' and path.endswith(".value"):
@@ -211,9 +249,7 @@ def main() -> int:
 
     arguments = parser.parse_args()
 
-    source = arguments.input_file.read_text(
-        encoding="utf-8",
-    )
+    source = arguments.input_file.read_bytes().decode("utf-8")
 
     root = parse_yaml(source)
 
@@ -272,10 +308,7 @@ def main() -> int:
             / f"{index:02d}.yaml"
         )
 
-        candidate_file.write_text(
-            candidate,
-            encoding="utf-8",
-        )
+        candidate_file.write_bytes(candidate.encode("utf-8"))
 
         if parses:
             outcome = classify(
