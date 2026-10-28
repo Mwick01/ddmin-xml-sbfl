@@ -1,0 +1,146 @@
+{
+  "baseline": {
+    "FAIL": 3,
+    "PASS": 2,
+    "jaccard": {
+      "average_rank": 42.5,
+      "best_rank": 1,
+      "exam_percentage": 20.531400966183575,
+      "worst_rank": 84
+    },
+    "ochiai": {
+      "average_rank": 42.5,
+      "best_rank": 1,
+      "exam_percentage": 20.531400966183575,
+      "worst_rank": 84
+    }
+  },
+  "baseline_removed_TREE_NULL": {
+    "FAIL": 0,
+    "PASS": 0
+  },
+  "baseline_run": "/home/user/ddmin-xml-sbfl/results/yamlcpp_cr_structural_ddmin/20261027_154317_425518",
+  "fuzz_root": "/home/user/ddmin-xml-sbfl/results/yamlcpp_cr/formal_structure_afl_300s",
+  "runs": [
+    {
+      "NONNULL_PASS_avoids_fault": 0,
+      "NULL_PASS_avoids_fault": 1,
+      "jaccard": {
+        "average_rank": 51.5,
+        "best_rank": 20,
+        "exam_percentage": 24.879227053140095,
+        "worst_rank": 83
+      },
+      "mode": "afl",
+      "ochiai": {
+        "average_rank": 49.5,
+        "best_rank": 18,
+        "exam_percentage": 23.91304347826087,
+        "worst_rank": 81
+      },
+      "removed_TREE_NULL": {
+        "FAIL": 0,
+        "PASS": 105
+      },
+      "repetition": 1,
+      "retained_FAIL": 74,
+      "retained_PASS": 231
+    },
+    {
+      "NONNULL_PASS_avoids_fault": 0,
+      "NULL_PASS_avoids_fault": 0,
+      "jaccard": {
+        "average_rank": 51.5,
+        "best_rank": 22,
+        "exam_percentage": 24.879227053140095,
+        "worst_rank": 81
+      },
+      "mode": "afl",
+      "ochiai": {
+        "average_rank": 51.5,
+        "best_rank": 22,
+        "exam_percentage": 24.879227053140095,
+        "worst_rank": 81
+      },
+      "removed_TREE_NULL": {
+        "FAIL": 0,
+        "PASS": 65
+      },
+      "repetition": 2,
+      "retained_FAIL": 67,
+      "retained_PASS": 215
+    },
+    {
+      "NONNULL_PASS_avoids_fault": 0,
+      "NULL_PASS_avoids_fault": 1,
+      "jaccard": {
+        "average_rank": 49.5,
+        "best_rank": 18,
+        "exam_percentage": 23.91304347826087,
+        "worst_rank": 81
+      },
+      "mode": "afl",
+      "ochiai": {
+        "average_rank": 49.5,
+        "best_rank": 18,
+        "exam_percentage": 23.91304347826087,
+        "worst_rank": 81
+      },
+      "removed_TREE_NULL": {
+        "FAIL": 0,
+        "PASS": 135
+      },
+      "repetition": 3,
+      "retained_FAIL": 92,
+      "retained_PASS": 252
+    },
+    {
+      "NONNULL_PASS_avoids_fault": 0,
+      "NULL_PASS_avoids_fault": 0,
+      "jaccard": {
+        "average_rank": 51.5,
+        "best_rank": 22,
+        "exam_percentage": 24.879227053140095,
+        "worst_rank": 81
+      },
+      "mode": "afl",
+      "ochiai": {
+        "average_rank": 51.5,
+        "best_rank": 22,
+        "exam_percentage": 24.879227053140095,
+        "worst_rank": 81
+      },
+      "removed_TREE_NULL": {
+        "FAIL": 0,
+        "PASS": 104
+      },
+      "repetition": 4,
+      "retained_FAIL": 89,
+      "retained_PASS": 307
+    },
+    {
+      "NONNULL_PASS_avoids_fault": 0,
+      "NULL_PASS_avoids_fault": 3,
+      "jaccard": {
+        "average_rank": 51.5,
+        "best_rank": 22,
+        "exam_percentage": 24.879227053140095,
+        "worst_rank": 81
+      },
+      "mode": "afl",
+      "ochiai": {
+        "average_rank": 51.5,
+        "best_rank": 22,
+        "exam_percentage": 24.879227053140095,
+        "worst_rank": 81
+      },
+      "removed_TREE_NULL": {
+        "FAIL": 0,
+        "PASS": 117
+      },
+      "repetition": 5,
+      "retained_FAIL": 85,
+      "retained_PASS": 301
+    }
+  ]
+}

@@ -1,5 +1,7 @@
-arm,mode,repetitions,seed_count,baseline_average_rank,mean_primary_average_rank,mean_primary_EXAM_percent,primary_runs_better_than_baseline,nonnull_baseline_average_rank,mean_nonnull_average_rank,nonnull_runs_better_than_baseline,mean_added_FAIL,mean_new_FAIL_profiles,NULL_PASS_avoids_fault_total,NONNULL_PASS_avoids_fault_total
-character,aflsmart-mixed,5,7,44.5,37.1,17.92270531400966,3,44.5,51.9,0,69.2,5.4,7,0
-character,aflsmart-nonstack,5,7,44.5,37.6,18.164251207729468,3,44.5,51.7,0,65,4,5,0
-structural,aflsmart-mixed,5,3,42.5,28.6,13.816425120772946,5,42.5,51.5,0,102.8,6.8,10,0
-structural,aflsmart-nonstack,5,3,42.5,41.7,20.144927536231883,2,42.5,51.1,0,85.6,5.4,3,0
+arm,mode,repetitions,seed_count,baseline_average_rank,mean_primary_average_rank,mean_primary_EXAM_percent,primary_runs_better_than_baseline,nonnull_baseline_average_rank,mean_nonnull_average_rank,nonnull_runs_better_than_baseline,mean_added_FAIL,mean_added_PASS,mean_execs_done,mean_new_PASS_profiles,mean_new_FAIL_profiles,mean_peach_chunks,mean_havoc_smart_retained,NULL_PASS_avoids_fault_total,NONNULL_PASS_avoids_fault_total
+character,afl,5,7,44.5,37.2,17.97101449275362,3,44.5,51.9,0,94.2,566.4,464618.2,67.8,5.6,0,0,6,0
+character,aflsmart-mixed,5,7,44.5,37.1,17.92270531400966,3,44.5,51.9,0,69.2,600.6,401415.4,63.8,5.4,2,14.4,7,0
+character,aflsmart-nonstack,5,7,44.5,37.6,18.164251207729468,3,44.5,51.7,0,65,502,390317,63.4,4,2,12.8,5,0
+structural,afl,5,3,42.5,38.2,18.454106280193237,3,42.5,51.1,0,81.4,366.4,263523.8,59.8,5.8,0,0,5,0
+structural,aflsmart-mixed,5,3,42.5,28.6,13.816425120772946,5,42.5,51.5,0,102.8,363.2,353436.2,63,6.8,2,23.4,10,0
+structural,aflsmart-nonstack,5,3,42.5,41.7,20.144927536231883,2,42.5,51.1,0,85.6,381.2,347621.2,62,5.4,1.2,14.2,3,0

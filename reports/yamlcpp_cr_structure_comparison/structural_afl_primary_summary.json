@@ -1,0 +1,734 @@
+{
+  "aggregate": {
+    "afl": {
+      "metrics": {
+        "added_FAIL": {
+          "max": 92,
+          "mean": 81.4,
+          "median": 85,
+          "min": 67,
+          "n": 5,
+          "stdev": 10.549881515922348
+        },
+        "added_PASS": {
+          "max": 418,
+          "mean": 366.4,
+          "median": 387,
+          "min": 280,
+          "n": 5,
+          "stdev": 58.01982419828588
+        },
+        "distinct_FAIL_profiles": {
+          "max": 9,
+          "mean": 6.8,
+          "median": 7,
+          "min": 5,
+          "n": 5,
+          "stdev": 1.4832396974191326
+        },
+        "distinct_PASS_profiles": {
+          "max": 64,
+          "mean": 60.8,
+          "median": 61,
+          "min": 56,
+          "n": 5,
+          "stdev": 3.420526275297414
+        },
+        "execs_done": {
+          "max": 318415,
+          "mean": 263523.8,
+          "median": 255791,
+          "min": 220310,
+          "n": 5,
+          "stdev": 37939.0303342086
+        },
+        "generated_UNRESOLVED": {
+          "max": 923,
+          "mean": 826,
+          "median": 807,
+          "min": 762,
+          "n": 5,
+          "stdev": 61.87891401761993
+        },
+        "havoc_smart_retained": {
+          "max": 0,
+          "mean": 0,
+          "median": 0,
+          "min": 0,
+          "n": 5,
+          "stdev": 0.0
+        },
+        "jaccard_average_rank": {
+          "max": 53.5,
+          "mean": 38.2,
+          "median": 29.5,
+          "min": 27.5,
+          "n": 5,
+          "stdev": 13.093891705677118
+        },
+        "jaccard_baseline_tied_above": {
+          "max": 21,
+          "mean": 18.6,
+          "median": 17,
+          "min": 17,
+          "n": 5,
+          "stdev": 2.1908902300206643
+        },
+        "jaccard_baseline_tied_below": {
+          "max": 51,
+          "mean": 30.4,
+          "median": 47,
+          "min": 3,
+          "n": 5,
+          "stdev": 25.05593742010065
+        },
+        "jaccard_best_rank": {
+          "max": 24,
+          "mean": 21.2,
+          "median": 20,
+          "min": 20,
+          "n": 5,
+          "stdev": 1.7888543819998317
+        },
+        "jaccard_exam_percentage": {
+          "max": 25.845410628019323,
+          "mean": 18.454106280193237,
+          "median": 14.251207729468598,
+          "min": 13.285024154589372,
+          "n": 5,
+          "stdev": 6.325551548636287
+        },
+        "jaccard_tie_size": {
+          "max": 60,
+          "mean": 35,
+          "median": 20,
+          "min": 16,
+          "n": 5,
+          "stdev": 22.869193252058544
+        },
+        "jaccard_worst_rank": {
+          "max": 83,
+          "mean": 55.2,
+          "median": 39,
+          "min": 35,
+          "n": 5,
+          "stdev": 24.51938009004306
+        },
+        "new_FAIL_profiles": {
+          "max": 8,
+          "mean": 5.8,
+          "median": 6,
+          "min": 4,
+          "n": 5,
+          "stdev": 1.4832396974191326
+        },
+        "new_PASS_profiles": {
+          "max": 63,
+          "mean": 59.8,
+          "median": 60,
+          "min": 55,
+          "n": 5,
+          "stdev": 3.420526275297414
+        },
+        "ochiai_average_rank": {
+          "max": 51.5,
+          "mean": 36.6,
+          "median": 27.5,
+          "min": 25.5,
+          "n": 5,
+          "stdev": 13.621673905948564
+        },
+        "ochiai_baseline_tied_above": {
+          "max": 21,
+          "mean": 18.6,
+          "median": 17,
+          "min": 17,
+          "n": 5,
+          "stdev": 2.1908902300206643
+        },
+        "ochiai_baseline_tied_below": {
+          "max": 51,
+          "mean": 30.4,
+          "median": 47,
+          "min": 3,
+          "n": 5,
+          "stdev": 25.05593742010065
+        },
+        "ochiai_best_rank": {
+          "max": 22,
+          "mean": 19.6,
+          "median": 18,
+          "min": 18,
+          "n": 5,
+          "stdev": 2.1908902300206643
+        },
+        "ochiai_exam_percentage": {
+          "max": 24.879227053140095,
+          "mean": 17.681159420289855,
+          "median": 13.285024154589372,
+          "min": 12.318840579710145,
+          "n": 5,
+          "stdev": 6.580518795144233
+        },
+        "ochiai_tie_size": {
+          "max": 60,
+          "mean": 35,
+          "median": 20,
+          "min": 16,
+          "n": 5,
+          "stdev": 22.869193252058544
+        },
+        "ochiai_worst_rank": {
+          "max": 81,
+          "mean": 53.6,
+          "median": 37,
+          "min": 33,
+          "n": 5,
+          "stdev": 25.05593742010065
+        },
+        "paths_total": {
+          "max": 1429,
+          "mean": 1276.8,
+          "median": 1275,
+          "min": 1112,
+          "n": 5,
+          "stdev": 121.06072856215594
+        },
+        "stability": {
+          "max": 100.0,
+          "mean": 100.0,
+          "median": 100.0,
+          "min": 100.0,
+          "n": 5,
+          "stdev": 0.0
+        },
+        "usable_rate": {
+          "max": 0.37657232704402516,
+          "mean": 0.35016859259872296,
+          "median": 0.35273492286115005,
+          "min": 0.3128944995491434,
+          "n": 5,
+          "stdev": 0.02614838824931232
+        }
+      },
+      "repetitions": 5
+    }
+  },
+  "baseline": {
+    "distinct_fail_profiles": 1,
+    "distinct_pass_profiles": 1,
+    "failing_tests": 3,
+    "jaccard": {
+      "average_rank": 42.5,
+      "best_rank": 1,
+      "exam_percentage": 20.531400966183575,
+      "score": 0.6,
+      "tie": {
+        "baseline_fault_tie_size": 84,
+        "baseline_tied_above_fault": 0,
+        "baseline_tied_below_fault": 0,
+        "baseline_tied_still_equal": 84,
+        "current_fault_tie_size": 84
+      },
+      "worst_rank": 84
+    },
+    "ochiai": {
+      "average_rank": 42.5,
+      "best_rank": 1,
+      "exam_percentage": 20.531400966183575,
+      "score": 0.7745966692414834,
+      "tie": {
+        "baseline_fault_tie_size": 84,
+        "baseline_tied_above_fault": 0,
+        "baseline_tied_below_fault": 0,
+        "baseline_tied_still_equal": 84,
+        "current_fault_tie_size": 84
+      },
+      "worst_rank": 84
+    },
+    "passing_tests": 2,
+    "total_tests": 5
+  },
+  "baseline_run": "/home/user/ddmin-xml-sbfl/results/yamlcpp_cr_structural_ddmin/20261027_154317_425518",
+  "duration_seconds": 300,
+  "fault_line": 265,
+  "fuzz_root": "/home/user/ddmin-xml-sbfl/results/yamlcpp_cr/formal_structure_afl_300s",
+  "runs": [
+    {
+      "added_FAIL": 74,
+      "added_PASS": 336,
+      "added_fuzz_tests": 410,
+      "baseline_tests": 5,
+      "classification": {
+        "FAIL": 74,
+        "PASS": 336,
+        "UNRESOLVED": 807,
+        "duplicate_baseline": 0,
+        "duplicate_generated": 0,
+        "generated_queue_entries": 1217,
+        "raw_queue_entries": 1220,
+        "seed_entries": 3,
+        "unique_generated_evaluated": 1217,
+        "usable": 410,
+        "usable_rate": 0.3368940016433854
+      },
+      "combined_FAIL": 77,
+      "combined_PASS": 338,
+      "combined_total": 415,
+      "distinct_FAIL_profiles": 7,
+      "distinct_PASS_profiles": 59,
+      "duration_seconds": 300,
+      "fuzzer_stats": {
+        "afl_banner": "yamlcpp_cr_buggy",
+        "afl_version": "2.52b",
+        "bitmap_cvg": "9.37%",
+        "command_line": "/aflsmart/afl-fuzz -m none -d -i aflsmart/yamlcpp_cr_structure_seeds -o results/yamlcpp_cr/formal_structure_afl_300s/rep01/afl/raw -- ./build/aflsmart/yamlcpp_cr/yamlcpp_cr_buggy @@",
+        "cur_path": "582",
+        "cycles_done": "0",
+        "exec_timeout": "20",
+        "execs_done": "241434",
+        "execs_per_sec": "773.76",
+        "execs_since_crash": "241434",
+        "fuzzer_pid": "8",
+        "last_crash": "0",
+        "last_hang": "0",
+        "last_path": "1793183346",
+        "last_update": "1793183347",
+        "max_depth": "4",
+        "paths_favored": "260",
+        "paths_found": "1217",
+        "paths_imported": "0",
+        "paths_total": "1220",
+        "pending_favs": "185",
+        "pending_total": "1117",
+        "stability": "100.00%",
+        "start_time": "1793183047",
+        "target_mode": "default",
+        "unique_crashes": "0",
+        "unique_hangs": "0",
+        "variable_paths": "0"
+      },
+      "git_commit": "c25a12277324f890d23e23905ab5bc8f43de74f1",
+      "jaccard": {
+        "average_rank": 29.5,
+        "best_rank": 20,
+        "exam_percentage": 14.251207729468598,
+        "score": 0.1859903381642512,
+        "tie": {
+          "baseline_fault_tie_size": 84,
+          "baseline_tied_above_fault": 17,
+          "baseline_tied_below_fault": 47,
+          "baseline_tied_still_equal": 20,
+          "current_fault_tie_size": 20
+        },
+        "worst_rank": 39
+      },
+      "mode": "afl",
+      "mutation_counts": {
+        "havoc_retained": 660,
+        "havoc_smart_retained": 0,
+        "splice_retained": 557
+      },
+      "new_FAIL_profiles": 6,
+      "new_PASS_profiles": 58,
+      "ochiai": {
+        "average_rank": 27.5,
+        "best_rank": 18,
+        "exam_percentage": 13.285024154589372,
+        "score": 0.43126597148888435,
+        "tie": {
+          "baseline_fault_tie_size": 84,
+          "baseline_tied_above_fault": 17,
+          "baseline_tied_below_fault": 47,
+          "baseline_tied_still_equal": 20,
+          "current_fault_tie_size": 20
+        },
+        "worst_rank": 37
+      },
+      "peach_chunk_structures": 0,
+      "repetition": 1,
+      "subject": "yamlcpp_cr"
+    },
+    {
+      "added_FAIL": 67,
+      "added_PASS": 280,
+      "added_fuzz_tests": 347,
+      "baseline_tests": 5,
+      "classification": {
+        "FAIL": 67,
+        "PASS": 280,
+        "UNRESOLVED": 762,
+        "duplicate_baseline": 0,
+        "duplicate_generated": 0,
+        "generated_queue_entries": 1109,
+        "raw_queue_entries": 1112,
+        "seed_entries": 3,
+        "unique_generated_evaluated": 1109,
+        "usable": 347,
+        "usable_rate": 0.3128944995491434
+      },
+      "combined_FAIL": 70,
+      "combined_PASS": 282,
+      "combined_total": 352,
+      "distinct_FAIL_profiles": 5,
+      "distinct_PASS_profiles": 56,
+      "duration_seconds": 300,
+      "fuzzer_stats": {
+        "afl_banner": "yamlcpp_cr_buggy",
+        "afl_version": "2.52b",
+        "bitmap_cvg": "9.14%",
+        "command_line": "/aflsmart/afl-fuzz -m none -d -i aflsmart/yamlcpp_cr_structure_seeds -o results/yamlcpp_cr/formal_structure_afl_300s/rep02/afl/raw -- ./build/aflsmart/yamlcpp_cr/yamlcpp_cr_buggy @@",
+        "cur_path": "427",
+        "cycles_done": "0",
+        "exec_timeout": "20",
+        "execs_done": "220310",
+        "execs_per_sec": "761.66",
+        "execs_since_crash": "220310",
+        "fuzzer_pid": "8",
+        "last_crash": "0",
+        "last_hang": "0",
+        "last_path": "1793183678",
+        "last_update": "1793183679",
+        "max_depth": "3",
+        "paths_favored": "254",
+        "paths_found": "1109",
+        "paths_imported": "0",
+        "paths_total": "1112",
+        "pending_favs": "190",
+        "pending_total": "1024",
+        "stability": "100.00%",
+        "start_time": "1793183379",
+        "target_mode": "default",
+        "unique_crashes": "0",
+        "unique_hangs": "0",
+        "variable_paths": "0"
+      },
+      "git_commit": "c25a12277324f890d23e23905ab5bc8f43de74f1",
+      "jaccard": {
+        "average_rank": 53.5,
+        "best_rank": 24,
+        "exam_percentage": 25.845410628019323,
+        "score": 0.19886363636363635,
+        "tie": {
+          "baseline_fault_tie_size": 84,
+          "baseline_tied_above_fault": 21,
+          "baseline_tied_below_fault": 3,
+          "baseline_tied_still_equal": 60,
+          "current_fault_tie_size": 60
+        },
+        "worst_rank": 83
+      },
+      "mode": "afl",
+      "mutation_counts": {
+        "havoc_retained": 691,
+        "havoc_smart_retained": 0,
+        "splice_retained": 418
+      },
+      "new_FAIL_profiles": 4,
+      "new_PASS_profiles": 55,
+      "ochiai": {
+        "average_rank": 51.5,
+        "best_rank": 22,
+        "exam_percentage": 24.879227053140095,
+        "score": 0.44594129250792236,
+        "tie": {
+          "baseline_fault_tie_size": 84,
+          "baseline_tied_above_fault": 21,
+          "baseline_tied_below_fault": 3,
+          "baseline_tied_still_equal": 60,
+          "current_fault_tie_size": 60
+        },
+        "worst_rank": 81
+      },
+      "peach_chunk_structures": 0,
+      "repetition": 2,
+      "subject": "yamlcpp_cr"
+    },
+    {
+      "added_FAIL": 92,
+      "added_PASS": 387,
+      "added_fuzz_tests": 479,
+      "baseline_tests": 5,
+      "classification": {
+        "FAIL": 92,
+        "PASS": 387,
+        "UNRESOLVED": 793,
+        "duplicate_baseline": 0,
+        "duplicate_generated": 0,
+        "generated_queue_entries": 1272,
+        "raw_queue_entries": 1275,
+        "seed_entries": 3,
+        "unique_generated_evaluated": 1272,
+        "usable": 479,
+        "usable_rate": 0.37657232704402516
+      },
+      "combined_FAIL": 95,
+      "combined_PASS": 389,
+      "combined_total": 484,
+      "distinct_FAIL_profiles": 7,
+      "distinct_PASS_profiles": 61,
+      "duration_seconds": 300,
+      "fuzzer_stats": {
+        "afl_banner": "yamlcpp_cr_buggy",
+        "afl_version": "2.52b",
+        "bitmap_cvg": "9.43%",
+        "command_line": "/aflsmart/afl-fuzz -m none -d -i aflsmart/yamlcpp_cr_structure_seeds -o results/yamlcpp_cr/formal_structure_afl_300s/rep03/afl/raw -- ./build/aflsmart/yamlcpp_cr/yamlcpp_cr_buggy @@",
+        "cur_path": "566",
+        "cycles_done": "0",
+        "exec_timeout": "20",
+        "execs_done": "255791",
+        "execs_per_sec": "745.08",
+        "execs_since_crash": "255791",
+        "fuzzer_pid": "8",
+        "last_crash": "0",
+        "last_hang": "0",
+        "last_path": "1793183999",
+        "last_update": "1793184001",
+        "max_depth": "4",
+        "paths_favored": "278",
+        "paths_found": "1272",
+        "paths_imported": "0",
+        "paths_total": "1275",
+        "pending_favs": "195",
+        "pending_total": "1171",
+        "stability": "100.00%",
+        "start_time": "1793183701",
+        "target_mode": "default",
+        "unique_crashes": "0",
+        "unique_hangs": "0",
+        "variable_paths": "0"
+      },
+      "git_commit": "c25a12277324f890d23e23905ab5bc8f43de74f1",
+      "jaccard": {
+        "average_rank": 29.0,
+        "best_rank": 20,
+        "exam_percentage": 14.009661835748792,
+        "score": 0.19668737060041408,
+        "tie": {
+          "baseline_fault_tie_size": 84,
+          "baseline_tied_above_fault": 17,
+          "baseline_tied_below_fault": 48,
+          "baseline_tied_still_equal": 19,
+          "current_fault_tie_size": 19
+        },
+        "worst_rank": 38
+      },
+      "mode": "afl",
+      "mutation_counts": {
+        "havoc_retained": 710,
+        "havoc_smart_retained": 0,
+        "splice_retained": 562
+      },
+      "new_FAIL_profiles": 6,
+      "new_PASS_profiles": 60,
+      "ochiai": {
+        "average_rank": 27.0,
+        "best_rank": 18,
+        "exam_percentage": 13.043478260869565,
+        "score": 0.44349449895169396,
+        "tie": {
+          "baseline_fault_tie_size": 84,
+          "baseline_tied_above_fault": 17,
+          "baseline_tied_below_fault": 48,
+          "baseline_tied_still_equal": 19,
+          "current_fault_tie_size": 19
+        },
+        "worst_rank": 36
+      },
+      "peach_chunk_structures": 0,
+      "repetition": 3,
+      "subject": "yamlcpp_cr"
+    },
+    {
+      "added_FAIL": 89,
+      "added_PASS": 411,
+      "added_fuzz_tests": 500,
+      "baseline_tests": 5,
+      "classification": {
+        "FAIL": 89,
+        "PASS": 411,
+        "UNRESOLVED": 845,
+        "duplicate_baseline": 0,
+        "duplicate_generated": 0,
+        "generated_queue_entries": 1345,
+        "raw_queue_entries": 1348,
+        "seed_entries": 3,
+        "unique_generated_evaluated": 1345,
+        "usable": 500,
+        "usable_rate": 0.37174721189591076
+      },
+      "combined_FAIL": 92,
+      "combined_PASS": 413,
+      "combined_total": 505,
+      "distinct_FAIL_profiles": 9,
+      "distinct_PASS_profiles": 64,
+      "duration_seconds": 300,
+      "fuzzer_stats": {
+        "afl_banner": "yamlcpp_cr_buggy",
+        "afl_version": "2.52b",
+        "bitmap_cvg": "9.59%",
+        "command_line": "/aflsmart/afl-fuzz -m none -d -i aflsmart/yamlcpp_cr_structure_seeds -o results/yamlcpp_cr/formal_structure_afl_300s/rep04/afl/raw -- ./build/aflsmart/yamlcpp_cr/yamlcpp_cr_buggy @@",
+        "cur_path": "793",
+        "cycles_done": "0",
+        "exec_timeout": "20",
+        "execs_done": "281669",
+        "execs_per_sec": "1063.08",
+        "execs_since_crash": "281669",
+        "fuzzer_pid": "8",
+        "last_crash": "0",
+        "last_hang": "0",
+        "last_path": "1793184339",
+        "last_update": "1793184339",
+        "max_depth": "4",
+        "paths_favored": "291",
+        "paths_found": "1345",
+        "paths_imported": "0",
+        "paths_total": "1348",
+        "pending_favs": "167",
+        "pending_total": "1184",
+        "stability": "100.00%",
+        "start_time": "1793184039",
+        "target_mode": "default",
+        "unique_crashes": "0",
+        "unique_hangs": "0",
+        "variable_paths": "0"
+      },
+      "git_commit": "c25a12277324f890d23e23905ab5bc8f43de74f1",
+      "jaccard": {
+        "average_rank": 51.5,
+        "best_rank": 22,
+        "exam_percentage": 24.879227053140095,
+        "score": 0.18217821782178217,
+        "tie": {
+          "baseline_fault_tie_size": 84,
+          "baseline_tied_above_fault": 21,
+          "baseline_tied_below_fault": 3,
+          "baseline_tied_still_equal": 60,
+          "current_fault_tie_size": 60
+        },
+        "worst_rank": 81
+      },
+      "mode": "afl",
+      "mutation_counts": {
+        "havoc_retained": 728,
+        "havoc_smart_retained": 0,
+        "splice_retained": 617
+      },
+      "new_FAIL_profiles": 8,
+      "new_PASS_profiles": 63,
+      "ochiai": {
+        "average_rank": 51.5,
+        "best_rank": 22,
+        "exam_percentage": 24.879227053140095,
+        "score": 0.4268234035544234,
+        "tie": {
+          "baseline_fault_tie_size": 84,
+          "baseline_tied_above_fault": 21,
+          "baseline_tied_below_fault": 3,
+          "baseline_tied_still_equal": 60,
+          "current_fault_tie_size": 60
+        },
+        "worst_rank": 81
+      },
+      "peach_chunk_structures": 0,
+      "repetition": 4,
+      "subject": "yamlcpp_cr"
+    },
+    {
+      "added_FAIL": 85,
+      "added_PASS": 418,
+      "added_fuzz_tests": 503,
+      "baseline_tests": 5,
+      "classification": {
+        "FAIL": 85,
+        "PASS": 418,
+        "UNRESOLVED": 923,
+        "duplicate_baseline": 0,
+        "duplicate_generated": 0,
+        "generated_queue_entries": 1426,
+        "raw_queue_entries": 1429,
+        "seed_entries": 3,
+        "unique_generated_evaluated": 1426,
+        "usable": 503,
+        "usable_rate": 0.35273492286115005
+      },
+      "combined_FAIL": 88,
+      "combined_PASS": 420,
+      "combined_total": 508,
+      "distinct_FAIL_profiles": 6,
+      "distinct_PASS_profiles": 64,
+      "duration_seconds": 300,
+      "fuzzer_stats": {
+        "afl_banner": "yamlcpp_cr_buggy",
+        "afl_version": "2.52b",
+        "bitmap_cvg": "9.47%",
+        "command_line": "/aflsmart/afl-fuzz -m none -d -i aflsmart/yamlcpp_cr_structure_seeds -o results/yamlcpp_cr/formal_structure_afl_300s/rep05/afl/raw -- ./build/aflsmart/yamlcpp_cr/yamlcpp_cr_buggy @@",
+        "cur_path": "742",
+        "cycles_done": "0",
+        "exec_timeout": "20",
+        "execs_done": "318415",
+        "execs_per_sec": "1193.48",
+        "execs_since_crash": "318415",
+        "fuzzer_pid": "8",
+        "last_crash": "0",
+        "last_hang": "0",
+        "last_path": "1793184669",
+        "last_update": "1793184671",
+        "max_depth": "4",
+        "paths_favored": "284",
+        "paths_found": "1426",
+        "paths_imported": "0",
+        "paths_total": "1429",
+        "pending_favs": "199",
+        "pending_total": "1283",
+        "stability": "100.00%",
+        "start_time": "1793184371",
+        "target_mode": "default",
+        "unique_crashes": "0",
+        "unique_hangs": "0",
+        "variable_paths": "0"
+      },
+      "git_commit": "c25a12277324f890d23e23905ab5bc8f43de74f1",
+      "jaccard": {
+        "average_rank": 27.5,
+        "best_rank": 20,
+        "exam_percentage": 13.285024154589372,
+        "score": 0.17425742574257425,
+        "tie": {
+          "baseline_fault_tie_size": 84,
+          "baseline_tied_above_fault": 17,
+          "baseline_tied_below_fault": 51,
+          "baseline_tied_still_equal": 16,
+          "current_fault_tie_size": 16
+        },
+        "worst_rank": 35
+      },
+      "mode": "afl",
+      "mutation_counts": {
+        "havoc_retained": 708,
+        "havoc_smart_retained": 0,
+        "splice_retained": 718
+      },
+      "new_FAIL_profiles": 5,
+      "new_PASS_profiles": 63,
+      "ochiai": {
+        "average_rank": 25.5,
+        "best_rank": 18,
+        "exam_percentage": 12.318840579710145,
+        "score": 0.41744152374024107,
+        "tie": {
+          "baseline_fault_tie_size": 84,
+          "baseline_tied_above_fault": 17,
+          "baseline_tied_below_fault": 51,
+          "baseline_tied_still_equal": 16,
+          "current_fault_tie_size": 16
+        },
+        "worst_rank": 33
+      },
+      "peach_chunk_structures": 0,
+      "repetition": 5,
+      "subject": "yamlcpp_cr"
+    }
+  ],
+  "subject": "yamlcpp_cr"
+}
