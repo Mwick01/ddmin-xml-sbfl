@@ -1,0 +1,19 @@
+{
+  "failing_candidates": 3,
+  "generated_attempts": 29,
+  "input_file": "subjects/libxml2-467/inputs/failing.xml",
+  "invalid_xml_candidates": 0,
+  "iterations": 5,
+  "minimal_candidate_id": "e3d12b2d16f38b64d88093aad39765f4f3bc69daf6c6be16fe24c046599ab578",
+  "minimal_file": "results/libxml2_467_structural_ddmin/20261026_123127_300282/minimal_failure.xml",
+  "minimal_size_characters": 129,
+  "oracle_attempts": 18,
+  "oracle_module": "oracle_libxml2_467",
+  "original_candidate_id": "524fcee1940979e8f49f3b57e3ab2be35c0641d94f9f3189bf73c52c3db28a50",
+  "original_size_characters": 174,
+  "passing_candidates": 15,
+  "reducer_sha256": "c1c0af0f141d43473c323be749104a9aa835c5ed0125891d24f492af87b7a333",
+  "reduction_percentage": 25.86,
+  "unique_candidates": 18,
+  "unresolved_candidates": 0
+}

@@ -1,0 +1,73 @@
+{
+  "buggy_source": "subjects/libxml2-467/buggy/parser.c",
+  "coverage_records": "results/libxml2_467_ddmin/20260926_224640_738508/coverage/coverage.jsonl",
+  "ddmin_run_directory": "results/libxml2_467_ddmin/20260926_224640_738508",
+  "executable_line_count": 7036,
+  "failing_tests": 25,
+  "jaccard": {
+    "average_rank": 7.5,
+    "best_rank": 4,
+    "exam_percentage_average": 0.10659465605457646,
+    "exam_score_average": 0.0010659465605457647,
+    "executable_line_count": 7036,
+    "fault_lines": [
+      {
+        "average_rank": 7.5,
+        "best_rank": 4,
+        "exam_score_average": 0.0010659465605457647,
+        "line": 9596,
+        "score": 0.17985611510791366,
+        "source": "if (nsname != defaults->values[2]) {",
+        "worst_rank": 11
+      }
+    ],
+    "first_fault_line": 9596,
+    "first_fault_score": 0.17985611510791366,
+    "first_fault_source": "if (nsname != defaults->values[2]) {",
+    "inspect_at_average_rank": {
+      "1": false,
+      "10": true,
+      "3": false,
+      "5": false
+    },
+    "worst_rank": 11
+  },
+  "known_fault_lines": [
+    9596
+  ],
+  "ochiai": {
+    "average_rank": 7.5,
+    "best_rank": 4,
+    "exam_percentage_average": 0.10659465605457646,
+    "exam_score_average": 0.0010659465605457647,
+    "executable_line_count": 7036,
+    "fault_lines": [
+      {
+        "average_rank": 7.5,
+        "best_rank": 4,
+        "exam_score_average": 0.0010659465605457647,
+        "line": 9596,
+        "score": 0.4240944648399854,
+        "source": "if (nsname != defaults->values[2]) {",
+        "worst_rank": 11
+      }
+    ],
+    "first_fault_line": 9596,
+    "first_fault_score": 0.4240944648399854,
+    "first_fault_source": "if (nsname != defaults->values[2]) {",
+    "inspect_at_average_rank": {
+      "1": false,
+      "10": true,
+      "3": false,
+      "5": false
+    },
+    "worst_rank": 11
+  },
+  "output_files": {
+    "jaccard_ranking": "results/libxml2_467_ddmin/20260926_224640_738508/sbfl/jaccard_ranking.csv",
+    "ochiai_ranking": "results/libxml2_467_ddmin/20260926_224640_738508/sbfl/ochiai_ranking.csv",
+    "spectrum": "results/libxml2_467_ddmin/20260926_224640_738508/sbfl/spectrum.csv"
+  },
+  "passing_tests": 232,
+  "total_tests": 257
+}

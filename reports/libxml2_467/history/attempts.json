@@ -1,0 +1,377 @@
+[
+  {
+    "completed_metadata": 4,
+    "inclusion": "All trials from this partial batch are excluded from formal aggregates.",
+    "path": "results/libxml2_467/formal_character_300s_20261026_221906",
+    "peach_chunk_files": 3,
+    "stats": [
+      {
+        "command_line": "/aflsmart/afl-fuzz -m 200 -d -i aflsmart/libxml2_467_character_seeds -o results/libxml2_467/formal_character_300s_20261026_221906/rep01/afl/raw -- ./build/aflsmart/libxml2_467/libxml2_467_buggy @@",
+        "execs_done": "504619",
+        "last_update": "1793034260",
+        "path": "results/libxml2_467/formal_character_300s_20261026_221906/rep01/afl/raw/fuzzer_stats",
+        "paths_total": "1795",
+        "start_time": "1793033960"
+      },
+      {
+        "command_line": "/aflsmart/afl-fuzz -m 200 -d -i aflsmart/libxml2_467_character_seeds -o results/libxml2_467/formal_character_300s_20261026_221906/rep01/aflsmart-mixed/raw -w peach -g aflsmart/libxml2_467.xml -h -- ./build/aflsmart/libxml2_467/libxml2_467_buggy @@",
+        "execs_done": "389944",
+        "last_update": "1793033648",
+        "path": "results/libxml2_467/formal_character_300s_20261026_221906/rep01/aflsmart-mixed/raw/fuzzer_stats",
+        "paths_total": "1455",
+        "start_time": "1793033348"
+      },
+      {
+        "command_line": "/aflsmart/afl-fuzz -m 200 -d -i aflsmart/libxml2_467_character_seeds -o results/libxml2_467/formal_character_300s_20261026_221906/rep01/aflsmart-nonstack/raw -w peach -g aflsmart/libxml2_467.xml -- ./build/aflsmart/libxml2_467/libxml2_467_buggy @@",
+        "execs_done": "481500",
+        "last_update": "1793033955",
+        "path": "results/libxml2_467/formal_character_300s_20261026_221906/rep01/aflsmart-nonstack/raw/fuzzer_stats",
+        "paths_total": "1627",
+        "start_time": "1793033655"
+      },
+      {
+        "command_line": "/aflsmart/afl-fuzz -m 200 -d -i aflsmart/libxml2_467_character_seeds -o results/libxml2_467/formal_character_300s_20261026_221906/rep02/afl/raw -- ./build/aflsmart/libxml2_467/libxml2_467_buggy @@",
+        "execs_done": "507590",
+        "last_update": "1793034566",
+        "path": "results/libxml2_467/formal_character_300s_20261026_221906/rep02/afl/raw/fuzzer_stats",
+        "paths_total": "1706",
+        "start_time": "1793034266"
+      },
+      {
+        "command_line": "/aflsmart/afl-fuzz -m 200 -d -i aflsmart/libxml2_467_character_seeds -o results/libxml2_467/formal_character_300s_20261026_221906/rep02/aflsmart-mixed/raw -w peach -g aflsmart/libxml2_467.xml -h -- ./build/aflsmart/libxml2_467/libxml2_467_buggy @@",
+        "execs_done": "454675",
+        "last_update": "1793034872",
+        "path": "results/libxml2_467/formal_character_300s_20261026_221906/rep02/aflsmart-mixed/raw/fuzzer_stats",
+        "paths_total": "1684",
+        "start_time": "1793034572"
+      }
+    ],
+    "status": "Incomplete character v1 attempt; repetition 2 mixed rejected for zero Peach chunks"
+  },
+  {
+    "completed_metadata": 15,
+    "inclusion": "Included in its own versioned campaign aggregate.",
+    "path": "results/libxml2_467/formal_character_shared_v2_300s_20261027_141812",
+    "peach_chunk_files": 17,
+    "stats": [
+      {
+        "command_line": "/aflsmart/afl-fuzz -m 200 -d -i aflsmart/libxml2_467_character_seeds -o results/libxml2_467/formal_character_shared_v2_300s_20261027_141812/rep01/afl/raw -- ./build/aflsmart/libxml2_467/libxml2_467_buggy @@",
+        "execs_done": "359680",
+        "last_update": "1793091804",
+        "path": "results/libxml2_467/formal_character_shared_v2_300s_20261027_141812/rep01/afl/raw/fuzzer_stats",
+        "paths_total": "1513",
+        "start_time": "1793091504"
+      },
+      {
+        "command_line": "/aflsmart/afl-fuzz -m 200 -d -i aflsmart/libxml2_467_character_seeds -o results/libxml2_467/formal_character_shared_v2_300s_20261027_141812/rep01/aflsmart-mixed/raw -w peach -g aflsmart/libxml2_467_shared_v2.xml -h -- ./build/aflsmart/libxml2_467/libxml2_467_buggy @@",
+        "execs_done": "372251",
+        "last_update": "1793091193",
+        "path": "results/libxml2_467/formal_character_shared_v2_300s_20261027_141812/rep01/aflsmart-mixed/raw/fuzzer_stats",
+        "paths_total": "1311",
+        "start_time": "1793090893"
+      },
+      {
+        "command_line": "/aflsmart/afl-fuzz -m 200 -d -i aflsmart/libxml2_467_character_seeds -o results/libxml2_467/formal_character_shared_v2_300s_20261027_141812/rep01/aflsmart-nonstack/raw -w peach -g aflsmart/libxml2_467_shared_v2.xml -- ./build/aflsmart/libxml2_467/libxml2_467_buggy @@",
+        "execs_done": "392321",
+        "last_update": "1793091498",
+        "path": "results/libxml2_467/formal_character_shared_v2_300s_20261027_141812/rep01/aflsmart-nonstack/raw/fuzzer_stats",
+        "paths_total": "1397",
+        "start_time": "1793091198"
+      },
+      {
+        "command_line": "/aflsmart/afl-fuzz -m 200 -d -i aflsmart/libxml2_467_character_seeds -o results/libxml2_467/formal_character_shared_v2_300s_20261027_141812/rep02/afl/raw -- ./build/aflsmart/libxml2_467/libxml2_467_buggy @@",
+        "execs_done": "374501",
+        "last_update": "1793092109",
+        "path": "results/libxml2_467/formal_character_shared_v2_300s_20261027_141812/rep02/afl/raw/fuzzer_stats",
+        "paths_total": "1477",
+        "start_time": "1793091809"
+      },
+      {
+        "command_line": "/aflsmart/afl-fuzz -m 200 -d -i aflsmart/libxml2_467_character_seeds -o results/libxml2_467/formal_character_shared_v2_300s_20261027_141812/rep02/aflsmart-mixed/raw -w peach -g aflsmart/libxml2_467_shared_v2.xml -h -- ./build/aflsmart/libxml2_467/libxml2_467_buggy @@",
+        "execs_done": "386815",
+        "last_update": "1793092416",
+        "path": "results/libxml2_467/formal_character_shared_v2_300s_20261027_141812/rep02/aflsmart-mixed/raw/fuzzer_stats",
+        "paths_total": "1263",
+        "start_time": "1793092116"
+      },
+      {
+        "command_line": "/aflsmart/afl-fuzz -m 200 -d -i aflsmart/libxml2_467_character_seeds -o results/libxml2_467/formal_character_shared_v2_300s_20261027_141812/rep02/aflsmart-nonstack/raw -w peach -g aflsmart/libxml2_467_shared_v2.xml -- ./build/aflsmart/libxml2_467/libxml2_467_buggy @@",
+        "execs_done": "350542",
+        "last_update": "1793092721",
+        "path": "results/libxml2_467/formal_character_shared_v2_300s_20261027_141812/rep02/aflsmart-nonstack/raw/fuzzer_stats",
+        "paths_total": "1336",
+        "start_time": "1793092421"
+      },
+      {
+        "command_line": "/aflsmart/afl-fuzz -m 200 -d -i aflsmart/libxml2_467_character_seeds -o results/libxml2_467/formal_character_shared_v2_300s_20261027_141812/rep03/afl/raw -- ./build/aflsmart/libxml2_467/libxml2_467_buggy @@",
+        "execs_done": "365211",
+        "last_update": "1793093331",
+        "path": "results/libxml2_467/formal_character_shared_v2_300s_20261027_141812/rep03/afl/raw/fuzzer_stats",
+        "paths_total": "1499",
+        "start_time": "1793093031"
+      },
+      {
+        "command_line": "/aflsmart/afl-fuzz -m 200 -d -i aflsmart/libxml2_467_character_seeds -o results/libxml2_467/formal_character_shared_v2_300s_20261027_141812/rep03/aflsmart-mixed/raw -w peach -g aflsmart/libxml2_467_shared_v2.xml -h -- ./build/aflsmart/libxml2_467/libxml2_467_buggy @@",
+        "execs_done": "374967",
+        "last_update": "1793093638",
+        "path": "results/libxml2_467/formal_character_shared_v2_300s_20261027_141812/rep03/aflsmart-mixed/raw/fuzzer_stats",
+        "paths_total": "1449",
+        "start_time": "1793093338"
+      },
+      {
+        "command_line": "/aflsmart/afl-fuzz -m 200 -d -i aflsmart/libxml2_467_character_seeds -o results/libxml2_467/formal_character_shared_v2_300s_20261027_141812/rep03/aflsmart-nonstack/raw -w peach -g aflsmart/libxml2_467_shared_v2.xml -- ./build/aflsmart/libxml2_467/libxml2_467_buggy @@",
+        "execs_done": "325315",
+        "last_update": "1793093025",
+        "path": "results/libxml2_467/formal_character_shared_v2_300s_20261027_141812/rep03/aflsmart-nonstack/raw/fuzzer_stats",
+        "paths_total": "1482",
+        "start_time": "1793092725"
+      },
+      {
+        "command_line": "/aflsmart/afl-fuzz -m 200 -d -i aflsmart/libxml2_467_character_seeds -o results/libxml2_467/formal_character_shared_v2_300s_20261027_141812/rep04/afl/raw -- ./build/aflsmart/libxml2_467/libxml2_467_buggy @@",
+        "execs_done": "455502",
+        "last_update": "1793094554",
+        "path": "results/libxml2_467/formal_character_shared_v2_300s_20261027_141812/rep04/afl/raw/fuzzer_stats",
+        "paths_total": "1627",
+        "start_time": "1793094254"
+      },
+      {
+        "command_line": "/aflsmart/afl-fuzz -m 200 -d -i aflsmart/libxml2_467_character_seeds -o results/libxml2_467/formal_character_shared_v2_300s_20261027_141812/rep04/aflsmart-mixed/raw -w peach -g aflsmart/libxml2_467_shared_v2.xml -h -- ./build/aflsmart/libxml2_467/libxml2_467_buggy @@",
+        "execs_done": "400628",
+        "last_update": "1793093943",
+        "path": "results/libxml2_467/formal_character_shared_v2_300s_20261027_141812/rep04/aflsmart-mixed/raw/fuzzer_stats",
+        "paths_total": "1285",
+        "start_time": "1793093643"
+      },
+      {
+        "command_line": "/aflsmart/afl-fuzz -m 200 -d -i aflsmart/libxml2_467_character_seeds -o results/libxml2_467/formal_character_shared_v2_300s_20261027_141812/rep04/aflsmart-nonstack/raw -w peach -g aflsmart/libxml2_467_shared_v2.xml -- ./build/aflsmart/libxml2_467/libxml2_467_buggy @@",
+        "execs_done": "417641",
+        "last_update": "1793094249",
+        "path": "results/libxml2_467/formal_character_shared_v2_300s_20261027_141812/rep04/aflsmart-nonstack/raw/fuzzer_stats",
+        "paths_total": "1495",
+        "start_time": "1793093949"
+      },
+      {
+        "command_line": "/aflsmart/afl-fuzz -m 200 -d -i aflsmart/libxml2_467_character_seeds -o results/libxml2_467/formal_character_shared_v2_300s_20261027_141812/rep05/afl/raw -- ./build/aflsmart/libxml2_467/libxml2_467_buggy @@",
+        "execs_done": "503991",
+        "last_update": "1793095164",
+        "path": "results/libxml2_467/formal_character_shared_v2_300s_20261027_141812/rep05/afl/raw/fuzzer_stats",
+        "paths_total": "1623",
+        "start_time": "1793094864"
+      },
+      {
+        "command_line": "/aflsmart/afl-fuzz -m 200 -d -i aflsmart/libxml2_467_character_seeds -o results/libxml2_467/formal_character_shared_v2_300s_20261027_141812/rep05/aflsmart-mixed/raw -w peach -g aflsmart/libxml2_467_shared_v2.xml -h -- ./build/aflsmart/libxml2_467/libxml2_467_buggy @@",
+        "execs_done": "467062",
+        "last_update": "1793095468",
+        "path": "results/libxml2_467/formal_character_shared_v2_300s_20261027_141812/rep05/aflsmart-mixed/raw/fuzzer_stats",
+        "paths_total": "1382",
+        "start_time": "1793095168"
+      },
+      {
+        "command_line": "/aflsmart/afl-fuzz -m 200 -d -i aflsmart/libxml2_467_character_seeds -o results/libxml2_467/formal_character_shared_v2_300s_20261027_141812/rep05/aflsmart-nonstack/raw -w peach -g aflsmart/libxml2_467_shared_v2.xml -- ./build/aflsmart/libxml2_467/libxml2_467_buggy @@",
+        "execs_done": "421570",
+        "last_update": "1793094859",
+        "path": "results/libxml2_467/formal_character_shared_v2_300s_20261027_141812/rep05/aflsmart-nonstack/raw/fuzzer_stats",
+        "paths_total": "1446",
+        "start_time": "1793094559"
+      }
+    ],
+    "status": "Complete formal batch"
+  },
+  {
+    "completed_metadata": 0,
+    "inclusion": "Excluded from formal aggregates.",
+    "path": "results/libxml2_467/formal_structure_300s",
+    "peach_chunk_files": 2,
+    "stats": [
+      {
+        "command_line": "/aflsmart/afl-fuzz -m 200 -d -i aflsmart/libxml2_467_structure_seeds -o results/libxml2_467/formal_structure_300s/rep01/aflsmart-mixed/raw -w peach -g aflsmart/libxml2_467.xml -h -- ./build/aflsmart/libxml2_467/libxml2_467_buggy @@",
+        "execs_done": "493287",
+        "last_update": "1793026150",
+        "path": "results/libxml2_467/formal_structure_300s/rep01/aflsmart-mixed/raw/fuzzer_stats",
+        "paths_total": "1568",
+        "start_time": "1793021903"
+      }
+    ],
+    "status": "Interrupted structural v1 attempt; zero completed metadata records"
+  },
+  {
+    "completed_metadata": 15,
+    "inclusion": "Included in its own versioned campaign aggregate.",
+    "path": "results/libxml2_467/formal_structure_300s_20261026_203447",
+    "peach_chunk_files": 18,
+    "stats": [
+      {
+        "command_line": "/aflsmart/afl-fuzz -m 200 -d -i aflsmart/libxml2_467_structure_seeds -o results/libxml2_467/formal_structure_300s_20261026_203447/rep01/afl/raw -- ./build/aflsmart/libxml2_467/libxml2_467_buggy @@",
+        "execs_done": "271883",
+        "last_update": "1793028006",
+        "path": "results/libxml2_467/formal_structure_300s_20261026_203447/rep01/afl/raw/fuzzer_stats",
+        "paths_total": "1178",
+        "start_time": "1793027706"
+      },
+      {
+        "command_line": "/aflsmart/afl-fuzz -m 200 -d -i aflsmart/libxml2_467_structure_seeds -o results/libxml2_467/formal_structure_300s_20261026_203447/rep01/aflsmart-mixed/raw -w peach -g aflsmart/libxml2_467.xml -h -- ./build/aflsmart/libxml2_467/libxml2_467_buggy @@",
+        "execs_done": "224403",
+        "last_update": "1793027388",
+        "path": "results/libxml2_467/formal_structure_300s_20261026_203447/rep01/aflsmart-mixed/raw/fuzzer_stats",
+        "paths_total": "1173",
+        "start_time": "1793027088"
+      },
+      {
+        "command_line": "/aflsmart/afl-fuzz -m 200 -d -i aflsmart/libxml2_467_structure_seeds -o results/libxml2_467/formal_structure_300s_20261026_203447/rep01/aflsmart-nonstack/raw -w peach -g aflsmart/libxml2_467.xml -- ./build/aflsmart/libxml2_467/libxml2_467_buggy @@",
+        "execs_done": "214913",
+        "last_update": "1793027698",
+        "path": "results/libxml2_467/formal_structure_300s_20261026_203447/rep01/aflsmart-nonstack/raw/fuzzer_stats",
+        "paths_total": "1213",
+        "start_time": "1793027398"
+      },
+      {
+        "command_line": "/aflsmart/afl-fuzz -m 200 -d -i aflsmart/libxml2_467_structure_seeds -o results/libxml2_467/formal_structure_300s_20261026_203447/rep02/afl/raw -- ./build/aflsmart/libxml2_467/libxml2_467_buggy @@",
+        "execs_done": "447889",
+        "last_update": "1793028312",
+        "path": "results/libxml2_467/formal_structure_300s_20261026_203447/rep02/afl/raw/fuzzer_stats",
+        "paths_total": "1594",
+        "start_time": "1793028012"
+      },
+      {
+        "command_line": "/aflsmart/afl-fuzz -m 200 -d -i aflsmart/libxml2_467_structure_seeds -o results/libxml2_467/formal_structure_300s_20261026_203447/rep02/aflsmart-mixed/raw -w peach -g aflsmart/libxml2_467.xml -h -- ./build/aflsmart/libxml2_467/libxml2_467_buggy @@",
+        "execs_done": "412411",
+        "last_update": "1793028617",
+        "path": "results/libxml2_467/formal_structure_300s_20261026_203447/rep02/aflsmart-mixed/raw/fuzzer_stats",
+        "paths_total": "1370",
+        "start_time": "1793028317"
+      },
+      {
+        "command_line": "/aflsmart/afl-fuzz -m 200 -d -i aflsmart/libxml2_467_structure_seeds -o results/libxml2_467/formal_structure_300s_20261026_203447/rep02/aflsmart-nonstack/raw -w peach -g aflsmart/libxml2_467.xml -- ./build/aflsmart/libxml2_467/libxml2_467_buggy @@",
+        "execs_done": "411871",
+        "last_update": "1793028924",
+        "path": "results/libxml2_467/formal_structure_300s_20261026_203447/rep02/aflsmart-nonstack/raw/fuzzer_stats",
+        "paths_total": "1545",
+        "start_time": "1793028624"
+      },
+      {
+        "command_line": "/aflsmart/afl-fuzz -m 200 -d -i aflsmart/libxml2_467_structure_seeds -o results/libxml2_467/formal_structure_300s_20261026_203447/rep03/afl/raw -- ./build/aflsmart/libxml2_467/libxml2_467_buggy @@",
+        "execs_done": "451337",
+        "last_update": "1793029537",
+        "path": "results/libxml2_467/formal_structure_300s_20261026_203447/rep03/afl/raw/fuzzer_stats",
+        "paths_total": "1687",
+        "start_time": "1793029237"
+      },
+      {
+        "command_line": "/aflsmart/afl-fuzz -m 200 -d -i aflsmart/libxml2_467_structure_seeds -o results/libxml2_467/formal_structure_300s_20261026_203447/rep03/aflsmart-mixed/raw -w peach -g aflsmart/libxml2_467.xml -h -- ./build/aflsmart/libxml2_467/libxml2_467_buggy @@",
+        "execs_done": "404026",
+        "last_update": "1793029842",
+        "path": "results/libxml2_467/formal_structure_300s_20261026_203447/rep03/aflsmart-mixed/raw/fuzzer_stats",
+        "paths_total": "1310",
+        "start_time": "1793029542"
+      },
+      {
+        "command_line": "/aflsmart/afl-fuzz -m 200 -d -i aflsmart/libxml2_467_structure_seeds -o results/libxml2_467/formal_structure_300s_20261026_203447/rep03/aflsmart-nonstack/raw -w peach -g aflsmart/libxml2_467.xml -- ./build/aflsmart/libxml2_467/libxml2_467_buggy @@",
+        "execs_done": "425503",
+        "last_update": "1793029230",
+        "path": "results/libxml2_467/formal_structure_300s_20261026_203447/rep03/aflsmart-nonstack/raw/fuzzer_stats",
+        "paths_total": "1461",
+        "start_time": "1793028930"
+      },
+      {
+        "command_line": "/aflsmart/afl-fuzz -m 200 -d -i aflsmart/libxml2_467_structure_seeds -o results/libxml2_467/formal_structure_300s_20261026_203447/rep04/afl/raw -- ./build/aflsmart/libxml2_467/libxml2_467_buggy @@",
+        "execs_done": "373301",
+        "last_update": "1793030761",
+        "path": "results/libxml2_467/formal_structure_300s_20261026_203447/rep04/afl/raw/fuzzer_stats",
+        "paths_total": "1471",
+        "start_time": "1793030461"
+      },
+      {
+        "command_line": "/aflsmart/afl-fuzz -m 200 -d -i aflsmart/libxml2_467_structure_seeds -o results/libxml2_467/formal_structure_300s_20261026_203447/rep04/aflsmart-mixed/raw -w peach -g aflsmart/libxml2_467.xml -h -- ./build/aflsmart/libxml2_467/libxml2_467_buggy @@",
+        "execs_done": "340283",
+        "last_update": "1793030148",
+        "path": "results/libxml2_467/formal_structure_300s_20261026_203447/rep04/aflsmart-mixed/raw/fuzzer_stats",
+        "paths_total": "1243",
+        "start_time": "1793029848"
+      },
+      {
+        "command_line": "/aflsmart/afl-fuzz -m 200 -d -i aflsmart/libxml2_467_structure_seeds -o results/libxml2_467/formal_structure_300s_20261026_203447/rep04/aflsmart-nonstack/raw -w peach -g aflsmart/libxml2_467.xml -- ./build/aflsmart/libxml2_467/libxml2_467_buggy @@",
+        "execs_done": "351953",
+        "last_update": "1793030456",
+        "path": "results/libxml2_467/formal_structure_300s_20261026_203447/rep04/aflsmart-nonstack/raw/fuzzer_stats",
+        "paths_total": "1514",
+        "start_time": "1793030156"
+      },
+      {
+        "command_line": "/aflsmart/afl-fuzz -m 200 -d -i aflsmart/libxml2_467_structure_seeds -o results/libxml2_467/formal_structure_300s_20261026_203447/rep05/afl/raw -- ./build/aflsmart/libxml2_467/libxml2_467_buggy @@",
+        "execs_done": "418990",
+        "last_update": "1793031372",
+        "path": "results/libxml2_467/formal_structure_300s_20261026_203447/rep05/afl/raw/fuzzer_stats",
+        "paths_total": "1598",
+        "start_time": "1793031072"
+      },
+      {
+        "command_line": "/aflsmart/afl-fuzz -m 200 -d -i aflsmart/libxml2_467_structure_seeds -o results/libxml2_467/formal_structure_300s_20261026_203447/rep05/aflsmart-mixed/raw -w peach -g aflsmart/libxml2_467.xml -h -- ./build/aflsmart/libxml2_467/libxml2_467_buggy @@",
+        "execs_done": "378908",
+        "last_update": "1793031678",
+        "path": "results/libxml2_467/formal_structure_300s_20261026_203447/rep05/aflsmart-mixed/raw/fuzzer_stats",
+        "paths_total": "1435",
+        "start_time": "1793031379"
+      },
+      {
+        "command_line": "/aflsmart/afl-fuzz -m 200 -d -i aflsmart/libxml2_467_structure_seeds -o results/libxml2_467/formal_structure_300s_20261026_203447/rep05/aflsmart-nonstack/raw -w peach -g aflsmart/libxml2_467.xml -- ./build/aflsmart/libxml2_467/libxml2_467_buggy @@",
+        "execs_done": "425092",
+        "last_update": "1793031066",
+        "path": "results/libxml2_467/formal_structure_300s_20261026_203447/rep05/aflsmart-nonstack/raw/fuzzer_stats",
+        "paths_total": "1422",
+        "start_time": "1793030766"
+      }
+    ],
+    "status": "Complete formal batch"
+  },
+  {
+    "completed_metadata": 0,
+    "inclusion": "Diagnostic only; excluded from formal aggregates.",
+    "path": "results/libxml2_467/smoke_character_60s_20261026_172347",
+    "peach_chunk_files": 0,
+    "stats": [
+      {
+        "command_line": "/aflsmart/afl-fuzz -i /work/aflsmart/libxml2_467_character_seeds -o /work/results/libxml2_467/smoke_character_60s_20261026_172347 -- /work/build/aflsmart/libxml2_467/libxml2_467_buggy @@",
+        "execs_done": "123871",
+        "last_update": "1793015688",
+        "path": "results/libxml2_467/smoke_character_60s_20261026_172347/fuzzer_stats",
+        "paths_total": "973",
+        "start_time": "1793015628"
+      }
+    ],
+    "status": "AFL launch smoke; no PIT configured"
+  },
+  {
+    "completed_metadata": 0,
+    "inclusion": "Diagnostic only; excluded from formal aggregates.",
+    "path": "results/libxml2_467/smoke_peach_mixed_60s_20261026_185502",
+    "peach_chunk_files": 1,
+    "stats": [
+      {
+        "command_line": "/aflsmart/afl-fuzz -m 200 -d -i /work/aflsmart/libxml2_467_structure_seeds -o /work/results/libxml2_467/smoke_peach_mixed_60s_20261026_185502 -w peach -g /work/aflsmart/libxml2_467.xml -h -- /work/build/aflsmart/libxml2_467/libxml2_467_buggy @@",
+        "execs_done": "84968",
+        "last_update": "1793021164",
+        "path": "results/libxml2_467/smoke_peach_mixed_60s_20261026_185502/fuzzer_stats",
+        "paths_total": "788",
+        "start_time": "1793021104"
+      }
+    ],
+    "status": "Peach structural smoke"
+  },
+  {
+    "completed_metadata": 0,
+    "inclusion": "Diagnostic only; excluded from formal aggregates.",
+    "path": "results/libxml2_467/smoke_structure_60s_20261026_172751",
+    "peach_chunk_files": 0,
+    "stats": [
+      {
+        "command_line": "/aflsmart/afl-fuzz -i /work/aflsmart/libxml2_467_structure_seeds -o /work/results/libxml2_467/smoke_structure_60s_20261026_172751 -- /work/build/aflsmart/libxml2_467/libxml2_467_buggy @@",
+        "execs_done": "136610",
+        "last_update": "1793015931",
+        "path": "results/libxml2_467/smoke_structure_60s_20261026_172751/fuzzer_stats",
+        "paths_total": "957",
+        "start_time": "1793015872"
+      }
+    ],
+    "status": "AFL launch smoke; no PIT configured"
+  }
+]

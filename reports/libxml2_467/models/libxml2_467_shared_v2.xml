@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Shared v2 model for libxml2_467 character and structural seed corpora.
+  DOCTYPE names/spacing and ordinary CDATA defaults may vary. ELEMENT declarations
+  are optional/repeatable. Default namespace attributes,
+  namespace attributes on the root, and empty child elements have separate chunks.
+  This is a model of this seed family, not a complete XML grammar.
+-->
+<Peach xmlns="http://peachfuzzer.com/2012/Peach"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://peachfuzzer.com/2012/Peach /peach/peach.xsd">
+
+  <DataModel name="WhitespaceCharacter">
+    <Choice name="Character">
+      <String name="Space" value=" " token="true" mutable="false"/>
+      <String name="Tab" value="&#x9;" token="true" mutable="false"/>
+      <String name="LineFeed" value="&#xA;" token="true" mutable="false"/>
+      <String name="CarriageReturn" value="&#xD;" token="true" mutable="false"/>
+    </Choice>
+  </DataModel>
+
+  <DataModel name="ElementDeclaration">
+    <String name="Open" value="&lt;!ELEMENT " token="true" mutable="false"/>
+    <String name="NameAndContentModel" value="child EMPTY"/>
+    <String name="Close" value="&gt;" token="true" mutable="false"/>
+  </DataModel>
+
+  <DataModel name="DefaultNamespaceDeclaration">
+    <String name="NamespaceMarker" value="xmlns:" token="true" mutable="false"/>
+    <String name="Prefix" value="a"/>
+    <String name="TypeAndQuote" value=" CDATA &quot;" token="true" mutable="false"/>
+    <String name="NamespaceUri" value="urn:a"/>
+    <String name="Quote" value="&quot;" token="true" mutable="false"/>
+  </DataModel>
+
+  <DataModel name="OtherCdataDefault">
+    <Choice name="AttributeName">
+      <String name="Xm" value="xm" token="true"/>
+      <String name="M" value="m" token="true"/>
+    </Choice>
+    <String name="TypeAndQuote" value=" CDATA &quot;" token="true" mutable="false"/>
+    <String name="DefaultValue" value=""/>
+    <String name="Quote" value="&quot;" token="true" mutable="false"/>
+  </DataModel>
+
+  <DataModel name="AttributeListDeclaration">
+    <String name="Open" value="&lt;!ATTLIST " token="true" mutable="false"/>
+    <String name="ElementName" value="child"/>
+    <String name="HeaderLineFeed" value="&#xA;" token="true" mutable="false"/>
+    <Choice name="DefaultAttributes" minOccurs="1" maxOccurs="1024">
+      <Block name="NamespaceDefault" ref="DefaultNamespaceDeclaration"/>
+      <Block name="Whitespace" ref="WhitespaceCharacter"/>
+      <Block name="OtherDefault" ref="OtherCdataDefault"/>
+    </Choice>
+    <String name="Close" value="&gt;" token="true" mutable="false"/>
+  </DataModel>
+
+  <DataModel name="NamespaceAttribute">
+    <String name="Open" value=" xmlns:" token="true" mutable="false"/>
+    <String name="Prefix" value="b"/>
+    <String name="EqualsAndQuote" value="=&quot;" token="true" mutable="false"/>
+    <String name="NamespaceUri" value="urn:b"/>
+    <String name="Quote" value="&quot;" token="true" mutable="false"/>
+  </DataModel>
+
+  <DataModel name="EmptyChildElement">
+    <String name="Open" value="&lt;child" token="true" mutable="false"/>
+    <String name="Close" value="/&gt;" token="true" mutable="false"/>
+  </DataModel>
+
+  <DataModel name="Libxml2467">
+    <!-- Empty String leaves are omitted from AFLSmart's boundary files.
+         Avoid zero-length optional containers, which Peach exports as inverted ranges. -->
+    <String name="LeadingWhitespace" value=""/>
+
+    <Block name="Doctype">
+      <String name="Open" value="&lt;!DOCTYPE" token="true" mutable="false"/>
+      <String name="NameAndSpacing" value=" root "/>
+      <String name="SubsetOpen" value="[" token="true" mutable="false"/>
+      <Choice name="Declarations" minOccurs="1" maxOccurs="4096">
+        <Block name="Element" ref="ElementDeclaration"/>
+        <Block name="AttributeList" ref="AttributeListDeclaration"/>
+        <Block name="Whitespace" ref="WhitespaceCharacter"/>
+      </Choice>
+      <String name="Close" value="]&gt;" token="true" mutable="false"/>
+    </Block>
+
+    <String name="BetweenDoctypeAndRoot" value="&#xA;"/>
+
+    <Block name="RootElement">
+      <String name="Open" value="&lt;root" token="true" mutable="false"/>
+      <Block name="Namespaces" ref="NamespaceAttribute" minOccurs="1" maxOccurs="64"/>
+      <String name="StartTagClose" value="&gt;" token="true" mutable="false"/>
+      <Choice name="Children" minOccurs="1" maxOccurs="4096">
+        <Block name="Child" ref="EmptyChildElement"/>
+        <Block name="Whitespace" ref="WhitespaceCharacter"/>
+      </Choice>
+      <String name="EndTag" value="&lt;/root&gt;" token="true" mutable="false"/>
+    </Block>
+
+    <String name="TrailingWhitespace" value="&#xA;"/>
+  </DataModel>
+
+  <StateModel name="TheState" initialState="Initial">
+    <State name="Initial">
+      <Action type="output">
+        <DataModel ref="Libxml2467"/>
+        <Data fileName="/dev/null"/>
+      </Action>
+      <Action type="close"/>
+    </State>
+  </StateModel>
+
+  <Test name="Default">
+    <StateModel ref="TheState"/>
+    <Publisher class="File">
+      <Param name="FileName" value="repaired"/>
+    </Publisher>
+    <Logger class="Filesystem">
+      <Param name="Path" value="logs"/>
+    </Logger>
+  </Test>
+</Peach>

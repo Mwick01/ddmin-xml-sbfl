@@ -1,0 +1,3 @@
+baseline,run,original_characters,minimal_characters,reduction_percent,unique_candidates,PASS,FAIL,UNRESOLVED,usable_rate,executable_lines,jaccard_average_rank,ochiai_average_rank
+character,results/libxml2_467_ddmin/20260926_224640_738508,174,133,23.56,1468,232,25,1211,0.17506811989100818,7036,7.5,7.5
+structural,results/libxml2_467_structural_ddmin/20261026_123127_300282,174,129,25.86,18,15,3,0,1.0,7036,14.5,14.5

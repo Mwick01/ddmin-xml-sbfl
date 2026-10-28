@@ -1,0 +1,2110 @@
+{
+  "aggregate": {
+    "afl": {
+      "metrics": {
+        "added_FAIL": {
+          "max": 10,
+          "mean": 7.2,
+          "median": 7,
+          "min": 5,
+          "n": 5,
+          "stdev": 1.9235384061671346
+        },
+        "added_PASS": {
+          "max": 58,
+          "mean": 48.2,
+          "median": 43,
+          "min": 41,
+          "n": 5,
+          "stdev": 8.526429498916883
+        },
+        "distinct_FAIL_profiles": {
+          "max": 10,
+          "mean": 7,
+          "median": 6,
+          "min": 5,
+          "n": 5,
+          "stdev": 2.0
+        },
+        "distinct_PASS_profiles": {
+          "max": 49,
+          "mean": 43.2,
+          "median": 41,
+          "min": 39,
+          "n": 5,
+          "stdev": 4.919349550499537
+        },
+        "execs_done": {
+          "max": 451337,
+          "mean": 392680,
+          "median": 418990,
+          "min": 271883,
+          "n": 5,
+          "stdev": 74411.61582710054
+        },
+        "generated_UNRESOLVED": {
+          "max": 1636,
+          "mean": 1447.2,
+          "median": 1541,
+          "min": 1112,
+          "n": 5,
+          "stdev": 205.01634081214112
+        },
+        "havoc_smart_retained": {
+          "max": 0,
+          "mean": 0,
+          "median": 0,
+          "min": 0,
+          "n": 5,
+          "stdev": 0.0
+        },
+        "jaccard_average_rank": {
+          "max": 10.5,
+          "mean": 10.3,
+          "median": 10.5,
+          "min": 9.5,
+          "n": 5,
+          "stdev": 0.4472135954999579
+        },
+        "jaccard_baseline_tied_above": {
+          "max": 0,
+          "mean": 0,
+          "median": 0,
+          "min": 0,
+          "n": 5,
+          "stdev": 0.0
+        },
+        "jaccard_baseline_tied_below": {
+          "max": 8,
+          "mean": 8,
+          "median": 8,
+          "min": 8,
+          "n": 5,
+          "stdev": 0.0
+        },
+        "jaccard_best_rank": {
+          "max": 9,
+          "mean": 8.8,
+          "median": 9,
+          "min": 8,
+          "n": 5,
+          "stdev": 0.4472135954999579
+        },
+        "jaccard_exam_percentage": {
+          "max": 0.14923251847640706,
+          "mean": 0.1463899943149517,
+          "median": 0.14923251847640706,
+          "min": 0.1350198976691302,
+          "n": 5,
+          "stdev": 0.006356077252699802
+        },
+        "jaccard_tie_size": {
+          "max": 4,
+          "mean": 4,
+          "median": 4,
+          "min": 4,
+          "n": 5,
+          "stdev": 0.0
+        },
+        "jaccard_worst_rank": {
+          "max": 12,
+          "mean": 11.8,
+          "median": 12,
+          "min": 11,
+          "n": 5,
+          "stdev": 0.4472135954999579
+        },
+        "new_FAIL_profiles": {
+          "max": 8,
+          "mean": 6.2,
+          "median": 6,
+          "min": 4,
+          "n": 5,
+          "stdev": 1.7888543819998317
+        },
+        "new_PASS_profiles": {
+          "max": 49,
+          "mean": 42.8,
+          "median": 40,
+          "min": 38,
+          "n": 5,
+          "stdev": 5.263078946776307
+        },
+        "ochiai_average_rank": {
+          "max": 10.5,
+          "mean": 10.3,
+          "median": 10.5,
+          "min": 9.5,
+          "n": 5,
+          "stdev": 0.4472135954999579
+        },
+        "ochiai_baseline_tied_above": {
+          "max": 0,
+          "mean": 0,
+          "median": 0,
+          "min": 0,
+          "n": 5,
+          "stdev": 0.0
+        },
+        "ochiai_baseline_tied_below": {
+          "max": 8,
+          "mean": 8,
+          "median": 8,
+          "min": 8,
+          "n": 5,
+          "stdev": 0.0
+        },
+        "ochiai_best_rank": {
+          "max": 9,
+          "mean": 8.8,
+          "median": 9,
+          "min": 8,
+          "n": 5,
+          "stdev": 0.4472135954999579
+        },
+        "ochiai_exam_percentage": {
+          "max": 0.14923251847640706,
+          "mean": 0.1463899943149517,
+          "median": 0.14923251847640706,
+          "min": 0.1350198976691302,
+          "n": 5,
+          "stdev": 0.006356077252699802
+        },
+        "ochiai_tie_size": {
+          "max": 4,
+          "mean": 4,
+          "median": 4,
+          "min": 4,
+          "n": 5,
+          "stdev": 0.0
+        },
+        "ochiai_worst_rank": {
+          "max": 12,
+          "mean": 11.8,
+          "median": 12,
+          "min": 11,
+          "n": 5,
+          "stdev": 0.4472135954999579
+        },
+        "paths_total": {
+          "max": 1687,
+          "mean": 1505.6,
+          "median": 1594,
+          "min": 1178,
+          "n": 5,
+          "stdev": 198.6058911512949
+        },
+        "stability": {
+          "max": 100.0,
+          "mean": 100.0,
+          "median": 100.0,
+          "min": 100.0,
+          "n": 5,
+          "stdev": 0.0
+        },
+        "usable_rate": {
+          "max": 0.05361702127659575,
+          "mean": 0.03796004212403869,
+          "median": 0.03197492163009404,
+          "min": 0.028503562945368172,
+          "n": 5,
+          "stdev": 0.010641744803059836
+        }
+      },
+      "repetitions": 5
+    },
+    "aflsmart-mixed": {
+      "metrics": {
+        "added_FAIL": {
+          "max": 13,
+          "mean": 10.4,
+          "median": 10,
+          "min": 9,
+          "n": 5,
+          "stdev": 1.51657508881031
+        },
+        "added_PASS": {
+          "max": 68,
+          "mean": 52.2,
+          "median": 50,
+          "min": 45,
+          "n": 5,
+          "stdev": 9.148770409186143
+        },
+        "distinct_FAIL_profiles": {
+          "max": 11,
+          "mean": 8.6,
+          "median": 9,
+          "min": 6,
+          "n": 5,
+          "stdev": 1.816590212458495
+        },
+        "distinct_PASS_profiles": {
+          "max": 55,
+          "mean": 45,
+          "median": 44,
+          "min": 39,
+          "n": 5,
+          "stdev": 6.442049363362563
+        },
+        "execs_done": {
+          "max": 412411,
+          "mean": 352006.2,
+          "median": 378908,
+          "min": 224403,
+          "n": 5,
+          "stdev": 76646.12900662368
+        },
+        "generated_UNRESOLVED": {
+          "max": 1377,
+          "mean": 1239.8,
+          "median": 1249,
+          "min": 1108,
+          "n": 5,
+          "stdev": 108.95733109800368
+        },
+        "havoc_smart_retained": {
+          "max": 33,
+          "mean": 31.2,
+          "median": 31,
+          "min": 30,
+          "n": 5,
+          "stdev": 1.3038404810405297
+        },
+        "jaccard_average_rank": {
+          "max": 10.5,
+          "mean": 9.9,
+          "median": 10.5,
+          "min": 7.5,
+          "n": 5,
+          "stdev": 1.3416407864998738
+        },
+        "jaccard_baseline_tied_above": {
+          "max": 0,
+          "mean": 0,
+          "median": 0,
+          "min": 0,
+          "n": 5,
+          "stdev": 0.0
+        },
+        "jaccard_baseline_tied_below": {
+          "max": 8,
+          "mean": 8,
+          "median": 8,
+          "min": 8,
+          "n": 5,
+          "stdev": 0.0
+        },
+        "jaccard_best_rank": {
+          "max": 9,
+          "mean": 8.4,
+          "median": 9,
+          "min": 6,
+          "n": 5,
+          "stdev": 1.3416407864998738
+        },
+        "jaccard_exam_percentage": {
+          "max": 0.14923251847640706,
+          "mean": 0.14070494599204095,
+          "median": 0.14923251847640706,
+          "min": 0.10659465605457646,
+          "n": 5,
+          "stdev": 0.019068231758099404
+        },
+        "jaccard_tie_size": {
+          "max": 4,
+          "mean": 4,
+          "median": 4,
+          "min": 4,
+          "n": 5,
+          "stdev": 0.0
+        },
+        "jaccard_worst_rank": {
+          "max": 12,
+          "mean": 11.4,
+          "median": 12,
+          "min": 9,
+          "n": 5,
+          "stdev": 1.3416407864998738
+        },
+        "new_FAIL_profiles": {
+          "max": 9,
+          "mean": 7.8,
+          "median": 8,
+          "min": 6,
+          "n": 5,
+          "stdev": 1.3038404810405297
+        },
+        "new_PASS_profiles": {
+          "max": 53,
+          "mean": 43.8,
+          "median": 44,
+          "min": 37,
+          "n": 5,
+          "stdev": 6.6105975524153635
+        },
+        "ochiai_average_rank": {
+          "max": 10.5,
+          "mean": 9.7,
+          "median": 10.5,
+          "min": 7.5,
+          "n": 5,
+          "stdev": 1.3038404810405297
+        },
+        "ochiai_baseline_tied_above": {
+          "max": 0,
+          "mean": 0,
+          "median": 0,
+          "min": 0,
+          "n": 5,
+          "stdev": 0.0
+        },
+        "ochiai_baseline_tied_below": {
+          "max": 8,
+          "mean": 8,
+          "median": 8,
+          "min": 8,
+          "n": 5,
+          "stdev": 0.0
+        },
+        "ochiai_best_rank": {
+          "max": 9,
+          "mean": 8.2,
+          "median": 9,
+          "min": 6,
+          "n": 5,
+          "stdev": 1.3038404810405297
+        },
+        "ochiai_exam_percentage": {
+          "max": 0.14923251847640706,
+          "mean": 0.13786242183058556,
+          "median": 0.14923251847640706,
+          "min": 0.10659465605457646,
+          "n": 5,
+          "stdev": 0.01853099035020651
+        },
+        "ochiai_tie_size": {
+          "max": 4,
+          "mean": 4,
+          "median": 4,
+          "min": 4,
+          "n": 5,
+          "stdev": 0.0
+        },
+        "ochiai_worst_rank": {
+          "max": 12,
+          "mean": 11.2,
+          "median": 12,
+          "min": 9,
+          "n": 5,
+          "stdev": 1.3038404810405297
+        },
+        "paths_total": {
+          "max": 1435,
+          "mean": 1306.2,
+          "median": 1310,
+          "min": 1173,
+          "n": 5,
+          "stdev": 102.96941293413302
+        },
+        "stability": {
+          "max": 100.0,
+          "mean": 100.0,
+          "median": 100.0,
+          "min": 100.0,
+          "n": 5,
+          "stdev": 0.0
+        },
+        "usable_rate": {
+          "max": 0.06537530266343826,
+          "mean": 0.04856579074365264,
+          "median": 0.043891733723482075,
+          "min": 0.03773584905660377,
+          "n": 5,
+          "stdev": 0.010711948783412868
+        }
+      },
+      "repetitions": 5
+    },
+    "aflsmart-nonstack": {
+      "metrics": {
+        "added_FAIL": {
+          "max": 8,
+          "mean": 5.6,
+          "median": 6,
+          "min": 3,
+          "n": 5,
+          "stdev": 1.816590212458495
+        },
+        "added_PASS": {
+          "max": 56,
+          "mean": 40.8,
+          "median": 43,
+          "min": 28,
+          "n": 5,
+          "stdev": 10.848963084092414
+        },
+        "distinct_FAIL_profiles": {
+          "max": 8,
+          "mean": 5.2,
+          "median": 5,
+          "min": 3,
+          "n": 5,
+          "stdev": 1.7888543819998317
+        },
+        "distinct_PASS_profiles": {
+          "max": 54,
+          "mean": 38,
+          "median": 37,
+          "min": 28,
+          "n": 5,
+          "stdev": 10.124228365658293
+        },
+        "execs_done": {
+          "max": 425503,
+          "mean": 365866.4,
+          "median": 411871,
+          "min": 214913,
+          "n": 5,
+          "stdev": 89667.6232639184
+        },
+        "generated_UNRESOLVED": {
+          "max": 1479,
+          "mean": 1380.6,
+          "median": 1407,
+          "min": 1170,
+          "n": 5,
+          "stdev": 126.62661647536824
+        },
+        "havoc_smart_retained": {
+          "max": 47,
+          "mean": 42.2,
+          "median": 42,
+          "min": 39,
+          "n": 5,
+          "stdev": 3.1144823004794873
+        },
+        "jaccard_average_rank": {
+          "max": 67.5,
+          "mean": 21.9,
+          "median": 10.5,
+          "min": 10.5,
+          "n": 5,
+          "stdev": 25.4911749434976
+        },
+        "jaccard_baseline_tied_above": {
+          "max": 0,
+          "mean": 0,
+          "median": 0,
+          "min": 0,
+          "n": 5,
+          "stdev": 0.0
+        },
+        "jaccard_baseline_tied_below": {
+          "max": 8,
+          "mean": 8,
+          "median": 8,
+          "min": 8,
+          "n": 5,
+          "stdev": 0.0
+        },
+        "jaccard_best_rank": {
+          "max": 66,
+          "mean": 20.4,
+          "median": 9,
+          "min": 9,
+          "n": 5,
+          "stdev": 25.4911749434976
+        },
+        "jaccard_exam_percentage": {
+          "max": 0.9593519044911881,
+          "mean": 0.31125639567936325,
+          "median": 0.14923251847640706,
+          "min": 0.14923251847640706,
+          "n": 5,
+          "stdev": 0.3622964034038886
+        },
+        "jaccard_tie_size": {
+          "max": 4,
+          "mean": 4,
+          "median": 4,
+          "min": 4,
+          "n": 5,
+          "stdev": 0.0
+        },
+        "jaccard_worst_rank": {
+          "max": 69,
+          "mean": 23.4,
+          "median": 12,
+          "min": 12,
+          "n": 5,
+          "stdev": 25.4911749434976
+        },
+        "new_FAIL_profiles": {
+          "max": 7,
+          "mean": 4.2,
+          "median": 4,
+          "min": 3,
+          "n": 5,
+          "stdev": 1.6431676725154984
+        },
+        "new_PASS_profiles": {
+          "max": 52,
+          "mean": 37,
+          "median": 36,
+          "min": 28,
+          "n": 5,
+          "stdev": 9.273618495495704
+        },
+        "ochiai_average_rank": {
+          "max": 37.5,
+          "mean": 15.7,
+          "median": 10.5,
+          "min": 9.5,
+          "n": 5,
+          "stdev": 12.194260945215172
+        },
+        "ochiai_baseline_tied_above": {
+          "max": 0,
+          "mean": 0,
+          "median": 0,
+          "min": 0,
+          "n": 5,
+          "stdev": 0.0
+        },
+        "ochiai_baseline_tied_below": {
+          "max": 8,
+          "mean": 8,
+          "median": 8,
+          "min": 8,
+          "n": 5,
+          "stdev": 0.0
+        },
+        "ochiai_best_rank": {
+          "max": 36,
+          "mean": 14.2,
+          "median": 9,
+          "min": 8,
+          "n": 5,
+          "stdev": 12.194260945215172
+        },
+        "ochiai_exam_percentage": {
+          "max": 0.5329732802728823,
+          "mean": 0.22313814667424672,
+          "median": 0.14923251847640706,
+          "min": 0.1350198976691302,
+          "n": 5,
+          "stdev": 0.17331240683932872
+        },
+        "ochiai_tie_size": {
+          "max": 4,
+          "mean": 4,
+          "median": 4,
+          "min": 4,
+          "n": 5,
+          "stdev": 0.0
+        },
+        "ochiai_worst_rank": {
+          "max": 39,
+          "mean": 17.2,
+          "median": 12,
+          "min": 11,
+          "n": 5,
+          "stdev": 12.194260945215172
+        },
+        "paths_total": {
+          "max": 1545,
+          "mean": 1431,
+          "median": 1461,
+          "min": 1213,
+          "n": 5,
+          "stdev": 130.75740896790515
+        },
+        "stability": {
+          "max": 100.0,
+          "mean": 100.0,
+          "median": 100.0,
+          "min": 100.0,
+          "n": 5,
+          "stdev": 0.0
+        },
+        "usable_rate": {
+          "max": 0.04153147306943543,
+          "mean": 0.032497384494775156,
+          "median": 0.03385049365303244,
+          "min": 0.02052980132450331,
+          "n": 5,
+          "stdev": 0.007583490448987547
+        }
+      },
+      "repetitions": 5
+    }
+  },
+  "baseline": {
+    "distinct_fail_profiles": 3,
+    "distinct_pass_profiles": 15,
+    "failing_tests": 3,
+    "jaccard": {
+      "average_rank": 14.5,
+      "best_rank": 9,
+      "exam_percentage": 0.2060830017055145,
+      "score": 0.5,
+      "tie": {
+        "baseline_fault_tie_size": 12,
+        "baseline_tied_above_fault": 0,
+        "baseline_tied_below_fault": 0,
+        "baseline_tied_still_equal": 12,
+        "current_fault_tie_size": 12
+      },
+      "worst_rank": 20
+    },
+    "ochiai": {
+      "average_rank": 14.5,
+      "best_rank": 9,
+      "exam_percentage": 0.2060830017055145,
+      "score": 0.7071067811865476,
+      "tie": {
+        "baseline_fault_tie_size": 12,
+        "baseline_tied_above_fault": 0,
+        "baseline_tied_below_fault": 0,
+        "baseline_tied_still_equal": 12,
+        "current_fault_tie_size": 12
+      },
+      "worst_rank": 20
+    },
+    "passing_tests": 15,
+    "total_tests": 18
+  },
+  "baseline_run": "results/libxml2_467_structural_ddmin/20261026_123127_300282",
+  "duration_seconds": 300,
+  "fault_line": 9596,
+  "fuzz_root": "results/libxml2_467/formal_structure_300s_20261026_203447",
+  "runs": [
+    {
+      "added_FAIL": 5,
+      "added_PASS": 58,
+      "added_fuzz_tests": 63,
+      "baseline_tests": 18,
+      "classification": {
+        "FAIL": 5,
+        "PASS": 58,
+        "UNRESOLVED": 1112,
+        "duplicate_baseline": 0,
+        "duplicate_generated": 0,
+        "generated_queue_entries": 1175,
+        "raw_queue_entries": 1178,
+        "seed_entries": 3,
+        "unique_generated_evaluated": 1175,
+        "usable": 63,
+        "usable_rate": 0.05361702127659575
+      },
+      "combined_FAIL": 8,
+      "combined_PASS": 73,
+      "combined_total": 81,
+      "distinct_FAIL_profiles": 5,
+      "distinct_PASS_profiles": 49,
+      "duration_seconds": 300,
+      "fuzzer_stats": {
+        "afl_banner": "libxml2_467_buggy",
+        "afl_version": "2.52b",
+        "bitmap_cvg": "9.10%",
+        "command_line": "/aflsmart/afl-fuzz -m 200 -d -i aflsmart/libxml2_467_structure_seeds -o results/libxml2_467/formal_structure_300s_20261026_203447/rep01/afl/raw -- ./build/aflsmart/libxml2_467/libxml2_467_buggy @@",
+        "cur_path": "479",
+        "cycles_done": "0",
+        "exec_timeout": "20",
+        "execs_done": "271883",
+        "execs_per_sec": "1303.06",
+        "execs_since_crash": "271883",
+        "fuzzer_pid": "8",
+        "last_crash": "0",
+        "last_hang": "0",
+        "last_path": "1793028005",
+        "last_update": "1793028006",
+        "max_depth": "3",
+        "paths_favored": "316",
+        "paths_found": "1175",
+        "paths_imported": "0",
+        "paths_total": "1178",
+        "pending_favs": "224",
+        "pending_total": "1047",
+        "stability": "100.00%",
+        "start_time": "1793027706",
+        "target_mode": "default",
+        "unique_crashes": "0",
+        "unique_hangs": "0",
+        "variable_paths": "0"
+      },
+      "git_commit": "08eff71641cf8779660ade1d4dc26dc6db975d1d",
+      "jaccard": {
+        "average_rank": 10.5,
+        "best_rank": 9,
+        "exam_percentage": 0.14923251847640706,
+        "score": 0.27586206896551724,
+        "tie": {
+          "baseline_fault_tie_size": 12,
+          "baseline_tied_above_fault": 0,
+          "baseline_tied_below_fault": 8,
+          "baseline_tied_still_equal": 4,
+          "current_fault_tie_size": 4
+        },
+        "worst_rank": 12
+      },
+      "mode": "afl",
+      "mutation_counts": {
+        "havoc_retained": 841,
+        "havoc_smart_retained": 0,
+        "splice_retained": 334
+      },
+      "new_FAIL_profiles": 4,
+      "new_PASS_profiles": 49,
+      "ochiai": {
+        "average_rank": 10.5,
+        "best_rank": 9,
+        "exam_percentage": 0.14923251847640706,
+        "score": 0.5252257314388902,
+        "tie": {
+          "baseline_fault_tie_size": 12,
+          "baseline_tied_above_fault": 0,
+          "baseline_tied_below_fault": 8,
+          "baseline_tied_still_equal": 4,
+          "current_fault_tie_size": 4
+        },
+        "worst_rank": 12
+      },
+      "peach_chunk_structures": 0,
+      "repetition": 1,
+      "subject": "libxml2_467"
+    },
+    {
+      "added_FAIL": 10,
+      "added_PASS": 51,
+      "added_fuzz_tests": 61,
+      "baseline_tests": 18,
+      "classification": {
+        "FAIL": 10,
+        "PASS": 51,
+        "UNRESOLVED": 1108,
+        "duplicate_baseline": 1,
+        "duplicate_generated": 0,
+        "generated_queue_entries": 1170,
+        "raw_queue_entries": 1173,
+        "seed_entries": 3,
+        "unique_generated_evaluated": 1169,
+        "usable": 61,
+        "usable_rate": 0.05218135158254919
+      },
+      "combined_FAIL": 13,
+      "combined_PASS": 66,
+      "combined_total": 79,
+      "distinct_FAIL_profiles": 8,
+      "distinct_PASS_profiles": 44,
+      "duration_seconds": 300,
+      "fuzzer_stats": {
+        "afl_banner": "libxml2_467_buggy",
+        "afl_version": "2.52b",
+        "bitmap_cvg": "9.45%",
+        "command_line": "/aflsmart/afl-fuzz -m 200 -d -i aflsmart/libxml2_467_structure_seeds -o results/libxml2_467/formal_structure_300s_20261026_203447/rep01/aflsmart-mixed/raw -w peach -g aflsmart/libxml2_467.xml -h -- ./build/aflsmart/libxml2_467/libxml2_467_buggy @@",
+        "cur_path": "265",
+        "cycles_done": "0",
+        "exec_timeout": "20",
+        "execs_done": "224403",
+        "execs_per_sec": "727.23",
+        "execs_since_crash": "224403",
+        "fuzzer_pid": "8",
+        "last_crash": "0",
+        "last_hang": "0",
+        "last_path": "1793027387",
+        "last_update": "1793027388",
+        "max_depth": "3",
+        "paths_favored": "322",
+        "paths_found": "1170",
+        "paths_imported": "0",
+        "paths_total": "1173",
+        "pending_favs": "278",
+        "pending_total": "1114",
+        "stability": "100.00%",
+        "start_time": "1793027088",
+        "target_mode": "default",
+        "unique_crashes": "0",
+        "unique_hangs": "0",
+        "variable_paths": "0"
+      },
+      "git_commit": "08eff71641cf8779660ade1d4dc26dc6db975d1d",
+      "jaccard": {
+        "average_rank": 10.5,
+        "best_rank": 9,
+        "exam_percentage": 0.14923251847640706,
+        "score": 0.35135135135135137,
+        "tie": {
+          "baseline_fault_tie_size": 12,
+          "baseline_tied_above_fault": 0,
+          "baseline_tied_below_fault": 8,
+          "baseline_tied_still_equal": 4,
+          "current_fault_tie_size": 4
+        },
+        "worst_rank": 12
+      },
+      "mode": "aflsmart-mixed",
+      "mutation_counts": {
+        "havoc_retained": 790,
+        "havoc_smart_retained": 33,
+        "splice_retained": 347
+      },
+      "new_FAIL_profiles": 7,
+      "new_PASS_profiles": 44,
+      "ochiai": {
+        "average_rank": 9.5,
+        "best_rank": 8,
+        "exam_percentage": 0.1350198976691302,
+        "score": 0.5927489783638191,
+        "tie": {
+          "baseline_fault_tie_size": 12,
+          "baseline_tied_above_fault": 0,
+          "baseline_tied_below_fault": 8,
+          "baseline_tied_still_equal": 4,
+          "current_fault_tie_size": 4
+        },
+        "worst_rank": 11
+      },
+      "peach_chunk_structures": 2,
+      "repetition": 1,
+      "subject": "libxml2_467"
+    },
+    {
+      "added_FAIL": 6,
+      "added_PASS": 33,
+      "added_fuzz_tests": 39,
+      "baseline_tests": 18,
+      "classification": {
+        "FAIL": 6,
+        "PASS": 33,
+        "UNRESOLVED": 1170,
+        "duplicate_baseline": 1,
+        "duplicate_generated": 0,
+        "generated_queue_entries": 1210,
+        "raw_queue_entries": 1213,
+        "seed_entries": 3,
+        "unique_generated_evaluated": 1209,
+        "usable": 39,
+        "usable_rate": 0.03225806451612903
+      },
+      "combined_FAIL": 9,
+      "combined_PASS": 48,
+      "combined_total": 57,
+      "distinct_FAIL_profiles": 5,
+      "distinct_PASS_profiles": 31,
+      "duration_seconds": 300,
+      "fuzzer_stats": {
+        "afl_banner": "libxml2_467_buggy",
+        "afl_version": "2.52b",
+        "bitmap_cvg": "9.34%",
+        "command_line": "/aflsmart/afl-fuzz -m 200 -d -i aflsmart/libxml2_467_structure_seeds -o results/libxml2_467/formal_structure_300s_20261026_203447/rep01/aflsmart-nonstack/raw -w peach -g aflsmart/libxml2_467.xml -- ./build/aflsmart/libxml2_467/libxml2_467_buggy @@",
+        "cur_path": "267",
+        "cycles_done": "0",
+        "exec_timeout": "20",
+        "execs_done": "214913",
+        "execs_per_sec": "777.66",
+        "execs_since_crash": "214913",
+        "fuzzer_pid": "8",
+        "last_crash": "0",
+        "last_hang": "0",
+        "last_path": "1793027698",
+        "last_update": "1793027698",
+        "max_depth": "3",
+        "paths_favored": "312",
+        "paths_found": "1210",
+        "paths_imported": "0",
+        "paths_total": "1213",
+        "pending_favs": "256",
+        "pending_total": "1137",
+        "stability": "100.00%",
+        "start_time": "1793027398",
+        "target_mode": "default",
+        "unique_crashes": "0",
+        "unique_hangs": "0",
+        "variable_paths": "0"
+      },
+      "git_commit": "08eff71641cf8779660ade1d4dc26dc6db975d1d",
+      "jaccard": {
+        "average_rank": 10.5,
+        "best_rank": 9,
+        "exam_percentage": 0.14923251847640706,
+        "score": 0.2903225806451613,
+        "tie": {
+          "baseline_fault_tie_size": 12,
+          "baseline_tied_above_fault": 0,
+          "baseline_tied_below_fault": 8,
+          "baseline_tied_still_equal": 4,
+          "current_fault_tie_size": 4
+        },
+        "worst_rank": 12
+      },
+      "mode": "aflsmart-nonstack",
+      "mutation_counts": {
+        "havoc_retained": 464,
+        "havoc_smart_retained": 39,
+        "splice_retained": 707
+      },
+      "new_FAIL_profiles": 3,
+      "new_PASS_profiles": 31,
+      "ochiai": {
+        "average_rank": 9.5,
+        "best_rank": 8,
+        "exam_percentage": 0.1350198976691302,
+        "score": 0.5388159060803247,
+        "tie": {
+          "baseline_fault_tie_size": 12,
+          "baseline_tied_above_fault": 0,
+          "baseline_tied_below_fault": 8,
+          "baseline_tied_still_equal": 4,
+          "current_fault_tie_size": 4
+        },
+        "worst_rank": 11
+      },
+      "peach_chunk_structures": 1,
+      "repetition": 1,
+      "subject": "libxml2_467"
+    },
+    {
+      "added_FAIL": 7,
+      "added_PASS": 43,
+      "added_fuzz_tests": 50,
+      "baseline_tests": 18,
+      "classification": {
+        "FAIL": 7,
+        "PASS": 43,
+        "UNRESOLVED": 1541,
+        "duplicate_baseline": 0,
+        "duplicate_generated": 0,
+        "generated_queue_entries": 1591,
+        "raw_queue_entries": 1594,
+        "seed_entries": 3,
+        "unique_generated_evaluated": 1591,
+        "usable": 50,
+        "usable_rate": 0.03142677561282212
+      },
+      "combined_FAIL": 10,
+      "combined_PASS": 58,
+      "combined_total": 68,
+      "distinct_FAIL_profiles": 6,
+      "distinct_PASS_profiles": 39,
+      "duration_seconds": 300,
+      "fuzzer_stats": {
+        "afl_banner": "libxml2_467_buggy",
+        "afl_version": "2.52b",
+        "bitmap_cvg": "9.76%",
+        "command_line": "/aflsmart/afl-fuzz -m 200 -d -i aflsmart/libxml2_467_structure_seeds -o results/libxml2_467/formal_structure_300s_20261026_203447/rep02/afl/raw -- ./build/aflsmart/libxml2_467/libxml2_467_buggy @@",
+        "cur_path": "826",
+        "cycles_done": "0",
+        "exec_timeout": "20",
+        "execs_done": "447889",
+        "execs_per_sec": "1885.41",
+        "execs_since_crash": "447889",
+        "fuzzer_pid": "8",
+        "last_crash": "0",
+        "last_hang": "0",
+        "last_path": "1793028311",
+        "last_update": "1793028312",
+        "max_depth": "4",
+        "paths_favored": "350",
+        "paths_found": "1591",
+        "paths_imported": "0",
+        "paths_total": "1594",
+        "pending_favs": "216",
+        "pending_total": "1380",
+        "stability": "100.00%",
+        "start_time": "1793028012",
+        "target_mode": "default",
+        "unique_crashes": "0",
+        "unique_hangs": "0",
+        "variable_paths": "0"
+      },
+      "git_commit": "08eff71641cf8779660ade1d4dc26dc6db975d1d",
+      "jaccard": {
+        "average_rank": 10.5,
+        "best_rank": 9,
+        "exam_percentage": 0.14923251847640706,
+        "score": 0.2631578947368421,
+        "tie": {
+          "baseline_fault_tie_size": 12,
+          "baseline_tied_above_fault": 0,
+          "baseline_tied_below_fault": 8,
+          "baseline_tied_still_equal": 4,
+          "current_fault_tie_size": 4
+        },
+        "worst_rank": 12
+      },
+      "mode": "afl",
+      "mutation_counts": {
+        "havoc_retained": 1011,
+        "havoc_smart_retained": 0,
+        "splice_retained": 580
+      },
+      "new_FAIL_profiles": 5,
+      "new_PASS_profiles": 38,
+      "ochiai": {
+        "average_rank": 10.5,
+        "best_rank": 9,
+        "exam_percentage": 0.14923251847640706,
+        "score": 0.5129891760425771,
+        "tie": {
+          "baseline_fault_tie_size": 12,
+          "baseline_tied_above_fault": 0,
+          "baseline_tied_below_fault": 8,
+          "baseline_tied_still_equal": 4,
+          "current_fault_tie_size": 4
+        },
+        "worst_rank": 12
+      },
+      "peach_chunk_structures": 0,
+      "repetition": 2,
+      "subject": "libxml2_467"
+    },
+    {
+      "added_FAIL": 10,
+      "added_PASS": 50,
+      "added_fuzz_tests": 60,
+      "baseline_tests": 18,
+      "classification": {
+        "FAIL": 10,
+        "PASS": 50,
+        "UNRESOLVED": 1307,
+        "duplicate_baseline": 0,
+        "duplicate_generated": 0,
+        "generated_queue_entries": 1367,
+        "raw_queue_entries": 1370,
+        "seed_entries": 3,
+        "unique_generated_evaluated": 1367,
+        "usable": 60,
+        "usable_rate": 0.043891733723482075
+      },
+      "combined_FAIL": 13,
+      "combined_PASS": 65,
+      "combined_total": 78,
+      "distinct_FAIL_profiles": 9,
+      "distinct_PASS_profiles": 47,
+      "duration_seconds": 300,
+      "fuzzer_stats": {
+        "afl_banner": "libxml2_467_buggy",
+        "afl_version": "2.52b",
+        "bitmap_cvg": "9.70%",
+        "command_line": "/aflsmart/afl-fuzz -m 200 -d -i aflsmart/libxml2_467_structure_seeds -o results/libxml2_467/formal_structure_300s_20261026_203447/rep02/aflsmart-mixed/raw -w peach -g aflsmart/libxml2_467.xml -h -- ./build/aflsmart/libxml2_467/libxml2_467_buggy @@",
+        "cur_path": "607",
+        "cycles_done": "0",
+        "exec_timeout": "20",
+        "execs_done": "412411",
+        "execs_per_sec": "258.16",
+        "execs_since_crash": "412411",
+        "fuzzer_pid": "8",
+        "last_crash": "0",
+        "last_hang": "0",
+        "last_path": "1793028615",
+        "last_update": "1793028617",
+        "max_depth": "3",
+        "paths_favored": "342",
+        "paths_found": "1367",
+        "paths_imported": "0",
+        "paths_total": "1370",
+        "pending_favs": "235",
+        "pending_total": "1235",
+        "stability": "100.00%",
+        "start_time": "1793028317",
+        "target_mode": "default",
+        "unique_crashes": "0",
+        "unique_hangs": "0",
+        "variable_paths": "0"
+      },
+      "git_commit": "08eff71641cf8779660ade1d4dc26dc6db975d1d",
+      "jaccard": {
+        "average_rank": 7.5,
+        "best_rank": 6,
+        "exam_percentage": 0.10659465605457646,
+        "score": 0.38235294117647056,
+        "tie": {
+          "baseline_fault_tie_size": 12,
+          "baseline_tied_above_fault": 0,
+          "baseline_tied_below_fault": 8,
+          "baseline_tied_still_equal": 4,
+          "current_fault_tie_size": 4
+        },
+        "worst_rank": 9
+      },
+      "mode": "aflsmart-mixed",
+      "mutation_counts": {
+        "havoc_retained": 924,
+        "havoc_smart_retained": 32,
+        "splice_retained": 411
+      },
+      "new_FAIL_profiles": 8,
+      "new_PASS_profiles": 47,
+      "ochiai": {
+        "average_rank": 7.5,
+        "best_rank": 6,
+        "exam_percentage": 0.10659465605457646,
+        "score": 0.6183469424008423,
+        "tie": {
+          "baseline_fault_tie_size": 12,
+          "baseline_tied_above_fault": 0,
+          "baseline_tied_below_fault": 8,
+          "baseline_tied_still_equal": 4,
+          "current_fault_tie_size": 4
+        },
+        "worst_rank": 9
+      },
+      "peach_chunk_structures": 1,
+      "repetition": 2,
+      "subject": "libxml2_467"
+    },
+    {
+      "added_FAIL": 8,
+      "added_PASS": 56,
+      "added_fuzz_tests": 64,
+      "baseline_tests": 18,
+      "classification": {
+        "FAIL": 8,
+        "PASS": 56,
+        "UNRESOLVED": 1477,
+        "duplicate_baseline": 1,
+        "duplicate_generated": 0,
+        "generated_queue_entries": 1542,
+        "raw_queue_entries": 1545,
+        "seed_entries": 3,
+        "unique_generated_evaluated": 1541,
+        "usable": 64,
+        "usable_rate": 0.04153147306943543
+      },
+      "combined_FAIL": 11,
+      "combined_PASS": 71,
+      "combined_total": 82,
+      "distinct_FAIL_profiles": 8,
+      "distinct_PASS_profiles": 54,
+      "duration_seconds": 300,
+      "fuzzer_stats": {
+        "afl_banner": "libxml2_467_buggy",
+        "afl_version": "2.52b",
+        "bitmap_cvg": "9.85%",
+        "command_line": "/aflsmart/afl-fuzz -m 200 -d -i aflsmart/libxml2_467_structure_seeds -o results/libxml2_467/formal_structure_300s_20261026_203447/rep02/aflsmart-nonstack/raw -w peach -g aflsmart/libxml2_467.xml -- ./build/aflsmart/libxml2_467/libxml2_467_buggy @@",
+        "cur_path": "666",
+        "cycles_done": "0",
+        "exec_timeout": "20",
+        "execs_done": "411871",
+        "execs_per_sec": "1629.95",
+        "execs_since_crash": "411871",
+        "fuzzer_pid": "8",
+        "last_crash": "0",
+        "last_hang": "0",
+        "last_path": "1793028924",
+        "last_update": "1793028924",
+        "max_depth": "4",
+        "paths_favored": "350",
+        "paths_found": "1542",
+        "paths_imported": "0",
+        "paths_total": "1545",
+        "pending_favs": "252",
+        "pending_total": "1399",
+        "stability": "100.00%",
+        "start_time": "1793028624",
+        "target_mode": "default",
+        "unique_crashes": "0",
+        "unique_hangs": "0",
+        "variable_paths": "0"
+      },
+      "git_commit": "08eff71641cf8779660ade1d4dc26dc6db975d1d",
+      "jaccard": {
+        "average_rank": 67.5,
+        "best_rank": 66,
+        "exam_percentage": 0.9593519044911881,
+        "score": 0.2558139534883721,
+        "tie": {
+          "baseline_fault_tie_size": 12,
+          "baseline_tied_above_fault": 0,
+          "baseline_tied_below_fault": 8,
+          "baseline_tied_still_equal": 4,
+          "current_fault_tie_size": 4
+        },
+        "worst_rank": 69
+      },
+      "mode": "aflsmart-nonstack",
+      "mutation_counts": {
+        "havoc_retained": 529,
+        "havoc_smart_retained": 43,
+        "splice_retained": 970
+      },
+      "new_FAIL_profiles": 7,
+      "new_PASS_profiles": 52,
+      "ochiai": {
+        "average_rank": 37.5,
+        "best_rank": 36,
+        "exam_percentage": 0.5329732802728823,
+        "score": 0.5057805388588731,
+        "tie": {
+          "baseline_fault_tie_size": 12,
+          "baseline_tied_above_fault": 0,
+          "baseline_tied_below_fault": 8,
+          "baseline_tied_still_equal": 4,
+          "current_fault_tie_size": 4
+        },
+        "worst_rank": 39
+      },
+      "peach_chunk_structures": 2,
+      "repetition": 2,
+      "subject": "libxml2_467"
+    },
+    {
+      "added_FAIL": 6,
+      "added_PASS": 42,
+      "added_fuzz_tests": 48,
+      "baseline_tests": 18,
+      "classification": {
+        "FAIL": 6,
+        "PASS": 42,
+        "UNRESOLVED": 1636,
+        "duplicate_baseline": 0,
+        "duplicate_generated": 0,
+        "generated_queue_entries": 1684,
+        "raw_queue_entries": 1687,
+        "seed_entries": 3,
+        "unique_generated_evaluated": 1684,
+        "usable": 48,
+        "usable_rate": 0.028503562945368172
+      },
+      "combined_FAIL": 9,
+      "combined_PASS": 57,
+      "combined_total": 66,
+      "distinct_FAIL_profiles": 6,
+      "distinct_PASS_profiles": 41,
+      "duration_seconds": 300,
+      "fuzzer_stats": {
+        "afl_banner": "libxml2_467_buggy",
+        "afl_version": "2.52b",
+        "bitmap_cvg": "9.88%",
+        "command_line": "/aflsmart/afl-fuzz -m 200 -d -i aflsmart/libxml2_467_structure_seeds -o results/libxml2_467/formal_structure_300s_20261026_203447/rep03/afl/raw -- ./build/aflsmart/libxml2_467/libxml2_467_buggy @@",
+        "cur_path": "1023",
+        "cycles_done": "0",
+        "exec_timeout": "20",
+        "execs_done": "451337",
+        "execs_per_sec": "1575.05",
+        "execs_since_crash": "451337",
+        "fuzzer_pid": "8",
+        "last_crash": "0",
+        "last_hang": "0",
+        "last_path": "1793029536",
+        "last_update": "1793029537",
+        "max_depth": "4",
+        "paths_favored": "370",
+        "paths_found": "1684",
+        "paths_imported": "0",
+        "paths_total": "1687",
+        "pending_favs": "174",
+        "pending_total": "1432",
+        "stability": "100.00%",
+        "start_time": "1793029237",
+        "target_mode": "default",
+        "unique_crashes": "0",
+        "unique_hangs": "0",
+        "variable_paths": "0"
+      },
+      "git_commit": "08eff71641cf8779660ade1d4dc26dc6db975d1d",
+      "jaccard": {
+        "average_rank": 10.5,
+        "best_rank": 9,
+        "exam_percentage": 0.14923251847640706,
+        "score": 0.3,
+        "tie": {
+          "baseline_fault_tie_size": 12,
+          "baseline_tied_above_fault": 0,
+          "baseline_tied_below_fault": 8,
+          "baseline_tied_still_equal": 4,
+          "current_fault_tie_size": 4
+        },
+        "worst_rank": 12
+      },
+      "mode": "afl",
+      "mutation_counts": {
+        "havoc_retained": 1091,
+        "havoc_smart_retained": 0,
+        "splice_retained": 593
+      },
+      "new_FAIL_profiles": 6,
+      "new_PASS_profiles": 40,
+      "ochiai": {
+        "average_rank": 10.5,
+        "best_rank": 9,
+        "exam_percentage": 0.14923251847640706,
+        "score": 0.5477225575051662,
+        "tie": {
+          "baseline_fault_tie_size": 12,
+          "baseline_tied_above_fault": 0,
+          "baseline_tied_below_fault": 8,
+          "baseline_tied_still_equal": 4,
+          "current_fault_tie_size": 4
+        },
+        "worst_rank": 12
+      },
+      "peach_chunk_structures": 0,
+      "repetition": 3,
+      "subject": "libxml2_467"
+    },
+    {
+      "added_FAIL": 10,
+      "added_PASS": 47,
+      "added_fuzz_tests": 57,
+      "baseline_tests": 18,
+      "classification": {
+        "FAIL": 10,
+        "PASS": 47,
+        "UNRESOLVED": 1249,
+        "duplicate_baseline": 1,
+        "duplicate_generated": 0,
+        "generated_queue_entries": 1307,
+        "raw_queue_entries": 1310,
+        "seed_entries": 3,
+        "unique_generated_evaluated": 1306,
+        "usable": 57,
+        "usable_rate": 0.043644716692189896
+      },
+      "combined_FAIL": 13,
+      "combined_PASS": 62,
+      "combined_total": 75,
+      "distinct_FAIL_profiles": 9,
+      "distinct_PASS_profiles": 40,
+      "duration_seconds": 300,
+      "fuzzer_stats": {
+        "afl_banner": "libxml2_467_buggy",
+        "afl_version": "2.52b",
+        "bitmap_cvg": "9.55%",
+        "command_line": "/aflsmart/afl-fuzz -m 200 -d -i aflsmart/libxml2_467_structure_seeds -o results/libxml2_467/formal_structure_300s_20261026_203447/rep03/aflsmart-mixed/raw -w peach -g aflsmart/libxml2_467.xml -h -- ./build/aflsmart/libxml2_467/libxml2_467_buggy @@",
+        "cur_path": "516",
+        "cycles_done": "0",
+        "exec_timeout": "20",
+        "execs_done": "404026",
+        "execs_per_sec": "1478.49",
+        "execs_since_crash": "404026",
+        "fuzzer_pid": "8",
+        "last_crash": "0",
+        "last_hang": "0",
+        "last_path": "1793029842",
+        "last_update": "1793029842",
+        "max_depth": "3",
+        "paths_favored": "332",
+        "paths_found": "1307",
+        "paths_imported": "0",
+        "paths_total": "1310",
+        "pending_favs": "260",
+        "pending_total": "1195",
+        "stability": "100.00%",
+        "start_time": "1793029542",
+        "target_mode": "default",
+        "unique_crashes": "0",
+        "unique_hangs": "0",
+        "variable_paths": "0"
+      },
+      "git_commit": "08eff71641cf8779660ade1d4dc26dc6db975d1d",
+      "jaccard": {
+        "average_rank": 10.5,
+        "best_rank": 9,
+        "exam_percentage": 0.14923251847640706,
+        "score": 0.3333333333333333,
+        "tie": {
+          "baseline_fault_tie_size": 12,
+          "baseline_tied_above_fault": 0,
+          "baseline_tied_below_fault": 8,
+          "baseline_tied_still_equal": 4,
+          "current_fault_tie_size": 4
+        },
+        "worst_rank": 12
+      },
+      "mode": "aflsmart-mixed",
+      "mutation_counts": {
+        "havoc_retained": 940,
+        "havoc_smart_retained": 30,
+        "splice_retained": 337
+      },
+      "new_FAIL_profiles": 9,
+      "new_PASS_profiles": 37,
+      "ochiai": {
+        "average_rank": 10.5,
+        "best_rank": 9,
+        "exam_percentage": 0.14923251847640706,
+        "score": 0.5773502691896258,
+        "tie": {
+          "baseline_fault_tie_size": 12,
+          "baseline_tied_above_fault": 0,
+          "baseline_tied_below_fault": 8,
+          "baseline_tied_still_equal": 4,
+          "current_fault_tie_size": 4
+        },
+        "worst_rank": 12
+      },
+      "peach_chunk_structures": 2,
+      "repetition": 3,
+      "subject": "libxml2_467"
+    },
+    {
+      "added_FAIL": 6,
+      "added_PASS": 44,
+      "added_fuzz_tests": 50,
+      "baseline_tests": 18,
+      "classification": {
+        "FAIL": 6,
+        "PASS": 44,
+        "UNRESOLVED": 1407,
+        "duplicate_baseline": 1,
+        "duplicate_generated": 0,
+        "generated_queue_entries": 1458,
+        "raw_queue_entries": 1461,
+        "seed_entries": 3,
+        "unique_generated_evaluated": 1457,
+        "usable": 50,
+        "usable_rate": 0.03431708991077557
+      },
+      "combined_FAIL": 9,
+      "combined_PASS": 59,
+      "combined_total": 68,
+      "distinct_FAIL_profiles": 5,
+      "distinct_PASS_profiles": 40,
+      "duration_seconds": 300,
+      "fuzzer_stats": {
+        "afl_banner": "libxml2_467_buggy",
+        "afl_version": "2.52b",
+        "bitmap_cvg": "9.95%",
+        "command_line": "/aflsmart/afl-fuzz -m 200 -d -i aflsmart/libxml2_467_structure_seeds -o results/libxml2_467/formal_structure_300s_20261026_203447/rep03/aflsmart-nonstack/raw -w peach -g aflsmart/libxml2_467.xml -- ./build/aflsmart/libxml2_467/libxml2_467_buggy @@",
+        "cur_path": "566",
+        "cycles_done": "0",
+        "exec_timeout": "20",
+        "execs_done": "425503",
+        "execs_per_sec": "1858.23",
+        "execs_since_crash": "425503",
+        "fuzzer_pid": "8",
+        "last_crash": "0",
+        "last_hang": "0",
+        "last_path": "1793029230",
+        "last_update": "1793029230",
+        "max_depth": "3",
+        "paths_favored": "359",
+        "paths_found": "1458",
+        "paths_imported": "0",
+        "paths_total": "1461",
+        "pending_favs": "258",
+        "pending_total": "1308",
+        "stability": "100.00%",
+        "start_time": "1793028930",
+        "target_mode": "default",
+        "unique_crashes": "0",
+        "unique_hangs": "0",
+        "variable_paths": "0"
+      },
+      "git_commit": "08eff71641cf8779660ade1d4dc26dc6db975d1d",
+      "jaccard": {
+        "average_rank": 10.5,
+        "best_rank": 9,
+        "exam_percentage": 0.14923251847640706,
+        "score": 0.42857142857142855,
+        "tie": {
+          "baseline_fault_tie_size": 12,
+          "baseline_tied_above_fault": 0,
+          "baseline_tied_below_fault": 8,
+          "baseline_tied_still_equal": 4,
+          "current_fault_tie_size": 4
+        },
+        "worst_rank": 12
+      },
+      "mode": "aflsmart-nonstack",
+      "mutation_counts": {
+        "havoc_retained": 570,
+        "havoc_smart_retained": 42,
+        "splice_retained": 846
+      },
+      "new_FAIL_profiles": 4,
+      "new_PASS_profiles": 38,
+      "ochiai": {
+        "average_rank": 10.5,
+        "best_rank": 9,
+        "exam_percentage": 0.14923251847640706,
+        "score": 0.6546536707079771,
+        "tie": {
+          "baseline_fault_tie_size": 12,
+          "baseline_tied_above_fault": 0,
+          "baseline_tied_below_fault": 8,
+          "baseline_tied_still_equal": 4,
+          "current_fault_tie_size": 4
+        },
+        "worst_rank": 12
+      },
+      "peach_chunk_structures": 1,
+      "repetition": 3,
+      "subject": "libxml2_467"
+    },
+    {
+      "added_FAIL": 8,
+      "added_PASS": 57,
+      "added_fuzz_tests": 65,
+      "baseline_tests": 18,
+      "classification": {
+        "FAIL": 8,
+        "PASS": 57,
+        "UNRESOLVED": 1403,
+        "duplicate_baseline": 0,
+        "duplicate_generated": 0,
+        "generated_queue_entries": 1468,
+        "raw_queue_entries": 1471,
+        "seed_entries": 3,
+        "unique_generated_evaluated": 1468,
+        "usable": 65,
+        "usable_rate": 0.04427792915531335
+      },
+      "combined_FAIL": 11,
+      "combined_PASS": 72,
+      "combined_total": 83,
+      "distinct_FAIL_profiles": 8,
+      "distinct_PASS_profiles": 48,
+      "duration_seconds": 300,
+      "fuzzer_stats": {
+        "afl_banner": "libxml2_467_buggy",
+        "afl_version": "2.52b",
+        "bitmap_cvg": "9.68%",
+        "command_line": "/aflsmart/afl-fuzz -m 200 -d -i aflsmart/libxml2_467_structure_seeds -o results/libxml2_467/formal_structure_300s_20261026_203447/rep04/afl/raw -- ./build/aflsmart/libxml2_467/libxml2_467_buggy @@",
+        "cur_path": "737",
+        "cycles_done": "0",
+        "exec_timeout": "20",
+        "execs_done": "373301",
+        "execs_per_sec": "1231.57",
+        "execs_since_crash": "373301",
+        "fuzzer_pid": "8",
+        "last_crash": "0",
+        "last_hang": "0",
+        "last_path": "1793030761",
+        "last_update": "1793030761",
+        "max_depth": "4",
+        "paths_favored": "363",
+        "paths_found": "1468",
+        "paths_imported": "0",
+        "paths_total": "1471",
+        "pending_favs": "229",
+        "pending_total": "1287",
+        "stability": "100.00%",
+        "start_time": "1793030461",
+        "target_mode": "default",
+        "unique_crashes": "0",
+        "unique_hangs": "0",
+        "variable_paths": "0"
+      },
+      "git_commit": "08eff71641cf8779660ade1d4dc26dc6db975d1d",
+      "jaccard": {
+        "average_rank": 10.5,
+        "best_rank": 9,
+        "exam_percentage": 0.14923251847640706,
+        "score": 0.2558139534883721,
+        "tie": {
+          "baseline_fault_tie_size": 12,
+          "baseline_tied_above_fault": 0,
+          "baseline_tied_below_fault": 8,
+          "baseline_tied_still_equal": 4,
+          "current_fault_tie_size": 4
+        },
+        "worst_rank": 12
+      },
+      "mode": "afl",
+      "mutation_counts": {
+        "havoc_retained": 923,
+        "havoc_smart_retained": 0,
+        "splice_retained": 545
+      },
+      "new_FAIL_profiles": 8,
+      "new_PASS_profiles": 48,
+      "ochiai": {
+        "average_rank": 10.5,
+        "best_rank": 9,
+        "exam_percentage": 0.14923251847640706,
+        "score": 0.5057805388588731,
+        "tie": {
+          "baseline_fault_tie_size": 12,
+          "baseline_tied_above_fault": 0,
+          "baseline_tied_below_fault": 8,
+          "baseline_tied_still_equal": 4,
+          "current_fault_tie_size": 4
+        },
+        "worst_rank": 12
+      },
+      "peach_chunk_structures": 0,
+      "repetition": 4,
+      "subject": "libxml2_467"
+    },
+    {
+      "added_FAIL": 13,
+      "added_PASS": 68,
+      "added_fuzz_tests": 81,
+      "baseline_tests": 18,
+      "classification": {
+        "FAIL": 13,
+        "PASS": 68,
+        "UNRESOLVED": 1158,
+        "duplicate_baseline": 1,
+        "duplicate_generated": 0,
+        "generated_queue_entries": 1240,
+        "raw_queue_entries": 1243,
+        "seed_entries": 3,
+        "unique_generated_evaluated": 1239,
+        "usable": 81,
+        "usable_rate": 0.06537530266343826
+      },
+      "combined_FAIL": 16,
+      "combined_PASS": 83,
+      "combined_total": 99,
+      "distinct_FAIL_profiles": 11,
+      "distinct_PASS_profiles": 55,
+      "duration_seconds": 300,
+      "fuzzer_stats": {
+        "afl_banner": "libxml2_467_buggy",
+        "afl_version": "2.52b",
+        "bitmap_cvg": "9.71%",
+        "command_line": "/aflsmart/afl-fuzz -m 200 -d -i aflsmart/libxml2_467_structure_seeds -o results/libxml2_467/formal_structure_300s_20261026_203447/rep04/aflsmart-mixed/raw -w peach -g aflsmart/libxml2_467.xml -h -- ./build/aflsmart/libxml2_467/libxml2_467_buggy @@",
+        "cur_path": "463",
+        "cycles_done": "0",
+        "exec_timeout": "20",
+        "execs_done": "340283",
+        "execs_per_sec": "124.47",
+        "execs_since_crash": "340283",
+        "fuzzer_pid": "9",
+        "last_crash": "0",
+        "last_hang": "0",
+        "last_path": "1793030148",
+        "last_update": "1793030148",
+        "max_depth": "3",
+        "paths_favored": "336",
+        "paths_found": "1240",
+        "paths_imported": "0",
+        "paths_total": "1243",
+        "pending_favs": "257",
+        "pending_total": "1134",
+        "stability": "100.00%",
+        "start_time": "1793029848",
+        "target_mode": "default",
+        "unique_crashes": "0",
+        "unique_hangs": "0",
+        "variable_paths": "0"
+      },
+      "git_commit": "08eff71641cf8779660ade1d4dc26dc6db975d1d",
+      "jaccard": {
+        "average_rank": 10.5,
+        "best_rank": 9,
+        "exam_percentage": 0.14923251847640706,
+        "score": 0.32653061224489793,
+        "tie": {
+          "baseline_fault_tie_size": 12,
+          "baseline_tied_above_fault": 0,
+          "baseline_tied_below_fault": 8,
+          "baseline_tied_still_equal": 4,
+          "current_fault_tie_size": 4
+        },
+        "worst_rank": 12
+      },
+      "mode": "aflsmart-mixed",
+      "mutation_counts": {
+        "havoc_retained": 803,
+        "havoc_smart_retained": 30,
+        "splice_retained": 407
+      },
+      "new_FAIL_profiles": 9,
+      "new_PASS_profiles": 53,
+      "ochiai": {
+        "average_rank": 10.5,
+        "best_rank": 9,
+        "exam_percentage": 0.14923251847640706,
+        "score": 0.5714285714285714,
+        "tie": {
+          "baseline_fault_tie_size": 12,
+          "baseline_tied_above_fault": 0,
+          "baseline_tied_below_fault": 8,
+          "baseline_tied_still_equal": 4,
+          "current_fault_tie_size": 4
+        },
+        "worst_rank": 12
+      },
+      "peach_chunk_structures": 2,
+      "repetition": 4,
+      "subject": "libxml2_467"
+    },
+    {
+      "added_FAIL": 3,
+      "added_PASS": 28,
+      "added_fuzz_tests": 31,
+      "baseline_tests": 18,
+      "classification": {
+        "FAIL": 3,
+        "PASS": 28,
+        "UNRESOLVED": 1479,
+        "duplicate_baseline": 1,
+        "duplicate_generated": 0,
+        "generated_queue_entries": 1511,
+        "raw_queue_entries": 1514,
+        "seed_entries": 3,
+        "unique_generated_evaluated": 1510,
+        "usable": 31,
+        "usable_rate": 0.02052980132450331
+      },
+      "combined_FAIL": 6,
+      "combined_PASS": 43,
+      "combined_total": 49,
+      "distinct_FAIL_profiles": 3,
+      "distinct_PASS_profiles": 28,
+      "duration_seconds": 300,
+      "fuzzer_stats": {
+        "afl_banner": "libxml2_467_buggy",
+        "afl_version": "2.52b",
+        "bitmap_cvg": "9.70%",
+        "command_line": "/aflsmart/afl-fuzz -m 200 -d -i aflsmart/libxml2_467_structure_seeds -o results/libxml2_467/formal_structure_300s_20261026_203447/rep04/aflsmart-nonstack/raw -w peach -g aflsmart/libxml2_467.xml -- ./build/aflsmart/libxml2_467/libxml2_467_buggy @@",
+        "cur_path": "448",
+        "cycles_done": "0",
+        "exec_timeout": "20",
+        "execs_done": "351953",
+        "execs_per_sec": "1537.11",
+        "execs_since_crash": "351953",
+        "fuzzer_pid": "8",
+        "last_crash": "0",
+        "last_hang": "0",
+        "last_path": "1793030455",
+        "last_update": "1793030456",
+        "max_depth": "3",
+        "paths_favored": "335",
+        "paths_found": "1511",
+        "paths_imported": "0",
+        "paths_total": "1514",
+        "pending_favs": "271",
+        "pending_total": "1418",
+        "stability": "100.00%",
+        "start_time": "1793030156",
+        "target_mode": "default",
+        "unique_crashes": "0",
+        "unique_hangs": "0",
+        "variable_paths": "0"
+      },
+      "git_commit": "08eff71641cf8779660ade1d4dc26dc6db975d1d",
+      "jaccard": {
+        "average_rank": 10.5,
+        "best_rank": 9,
+        "exam_percentage": 0.14923251847640706,
+        "score": 0.3,
+        "tie": {
+          "baseline_fault_tie_size": 12,
+          "baseline_tied_above_fault": 0,
+          "baseline_tied_below_fault": 8,
+          "baseline_tied_still_equal": 4,
+          "current_fault_tie_size": 4
+        },
+        "worst_rank": 12
+      },
+      "mode": "aflsmart-nonstack",
+      "mutation_counts": {
+        "havoc_retained": 549,
+        "havoc_smart_retained": 47,
+        "splice_retained": 915
+      },
+      "new_FAIL_profiles": 3,
+      "new_PASS_profiles": 28,
+      "ochiai": {
+        "average_rank": 10.5,
+        "best_rank": 9,
+        "exam_percentage": 0.14923251847640706,
+        "score": 0.5477225575051661,
+        "tie": {
+          "baseline_fault_tie_size": 12,
+          "baseline_tied_above_fault": 0,
+          "baseline_tied_below_fault": 8,
+          "baseline_tied_still_equal": 4,
+          "current_fault_tie_size": 4
+        },
+        "worst_rank": 12
+      },
+      "peach_chunk_structures": 2,
+      "repetition": 4,
+      "subject": "libxml2_467"
+    },
+    {
+      "added_FAIL": 10,
+      "added_PASS": 41,
+      "added_fuzz_tests": 51,
+      "baseline_tests": 18,
+      "classification": {
+        "FAIL": 10,
+        "PASS": 41,
+        "UNRESOLVED": 1544,
+        "duplicate_baseline": 0,
+        "duplicate_generated": 0,
+        "generated_queue_entries": 1595,
+        "raw_queue_entries": 1598,
+        "seed_entries": 3,
+        "unique_generated_evaluated": 1595,
+        "usable": 51,
+        "usable_rate": 0.03197492163009404
+      },
+      "combined_FAIL": 13,
+      "combined_PASS": 56,
+      "combined_total": 69,
+      "distinct_FAIL_profiles": 10,
+      "distinct_PASS_profiles": 39,
+      "duration_seconds": 300,
+      "fuzzer_stats": {
+        "afl_banner": "libxml2_467_buggy",
+        "afl_version": "2.52b",
+        "bitmap_cvg": "10.04%",
+        "command_line": "/aflsmart/afl-fuzz -m 200 -d -i aflsmart/libxml2_467_structure_seeds -o results/libxml2_467/formal_structure_300s_20261026_203447/rep05/afl/raw -- ./build/aflsmart/libxml2_467/libxml2_467_buggy @@",
+        "cur_path": "993",
+        "cycles_done": "0",
+        "exec_timeout": "20",
+        "execs_done": "418990",
+        "execs_per_sec": "1500.71",
+        "execs_since_crash": "418990",
+        "fuzzer_pid": "8",
+        "last_crash": "0",
+        "last_hang": "0",
+        "last_path": "1793031370",
+        "last_update": "1793031372",
+        "max_depth": "4",
+        "paths_favored": "347",
+        "paths_found": "1595",
+        "paths_imported": "0",
+        "paths_total": "1598",
+        "pending_favs": "164",
+        "pending_total": "1345",
+        "stability": "100.00%",
+        "start_time": "1793031072",
+        "target_mode": "default",
+        "unique_crashes": "0",
+        "unique_hangs": "0",
+        "variable_paths": "0"
+      },
+      "git_commit": "08eff71641cf8779660ade1d4dc26dc6db975d1d",
+      "jaccard": {
+        "average_rank": 9.5,
+        "best_rank": 8,
+        "exam_percentage": 0.1350198976691302,
+        "score": 0.43333333333333335,
+        "tie": {
+          "baseline_fault_tie_size": 12,
+          "baseline_tied_above_fault": 0,
+          "baseline_tied_below_fault": 8,
+          "baseline_tied_still_equal": 4,
+          "current_fault_tie_size": 4
+        },
+        "worst_rank": 11
+      },
+      "mode": "afl",
+      "mutation_counts": {
+        "havoc_retained": 929,
+        "havoc_smart_retained": 0,
+        "splice_retained": 666
+      },
+      "new_FAIL_profiles": 8,
+      "new_PASS_profiles": 39,
+      "ochiai": {
+        "average_rank": 9.5,
+        "best_rank": 8,
+        "exam_percentage": 0.1350198976691302,
+        "score": 0.6582805886043833,
+        "tie": {
+          "baseline_fault_tie_size": 12,
+          "baseline_tied_above_fault": 0,
+          "baseline_tied_below_fault": 8,
+          "baseline_tied_still_equal": 4,
+          "current_fault_tie_size": 4
+        },
+        "worst_rank": 11
+      },
+      "peach_chunk_structures": 0,
+      "repetition": 5,
+      "subject": "libxml2_467"
+    },
+    {
+      "added_FAIL": 9,
+      "added_PASS": 45,
+      "added_fuzz_tests": 54,
+      "baseline_tests": 18,
+      "classification": {
+        "FAIL": 9,
+        "PASS": 45,
+        "UNRESOLVED": 1377,
+        "duplicate_baseline": 1,
+        "duplicate_generated": 0,
+        "generated_queue_entries": 1432,
+        "raw_queue_entries": 1435,
+        "seed_entries": 3,
+        "unique_generated_evaluated": 1431,
+        "usable": 54,
+        "usable_rate": 0.03773584905660377
+      },
+      "combined_FAIL": 12,
+      "combined_PASS": 60,
+      "combined_total": 72,
+      "distinct_FAIL_profiles": 6,
+      "distinct_PASS_profiles": 39,
+      "duration_seconds": 300,
+      "fuzzer_stats": {
+        "afl_banner": "libxml2_467_buggy",
+        "afl_version": "2.52b",
+        "bitmap_cvg": "9.72%",
+        "command_line": "/aflsmart/afl-fuzz -m 200 -d -i aflsmart/libxml2_467_structure_seeds -o results/libxml2_467/formal_structure_300s_20261026_203447/rep05/aflsmart-mixed/raw -w peach -g aflsmart/libxml2_467.xml -h -- ./build/aflsmart/libxml2_467/libxml2_467_buggy @@",
+        "cur_path": "603",
+        "cycles_done": "0",
+        "exec_timeout": "20",
+        "execs_done": "378908",
+        "execs_per_sec": "1723.59",
+        "execs_since_crash": "378908",
+        "fuzzer_pid": "8",
+        "last_crash": "0",
+        "last_hang": "0",
+        "last_path": "1793031678",
+        "last_update": "1793031678",
+        "max_depth": "3",
+        "paths_favored": "350",
+        "paths_found": "1432",
+        "paths_imported": "0",
+        "paths_total": "1435",
+        "pending_favs": "263",
+        "pending_total": "1308",
+        "stability": "100.00%",
+        "start_time": "1793031379",
+        "target_mode": "default",
+        "unique_crashes": "0",
+        "unique_hangs": "0",
+        "variable_paths": "0"
+      },
+      "git_commit": "08eff71641cf8779660ade1d4dc26dc6db975d1d",
+      "jaccard": {
+        "average_rank": 10.5,
+        "best_rank": 9,
+        "exam_percentage": 0.14923251847640706,
+        "score": 0.4,
+        "tie": {
+          "baseline_fault_tie_size": 12,
+          "baseline_tied_above_fault": 0,
+          "baseline_tied_below_fault": 8,
+          "baseline_tied_still_equal": 4,
+          "current_fault_tie_size": 4
+        },
+        "worst_rank": 12
+      },
+      "mode": "aflsmart-mixed",
+      "mutation_counts": {
+        "havoc_retained": 874,
+        "havoc_smart_retained": 31,
+        "splice_retained": 527
+      },
+      "new_FAIL_profiles": 6,
+      "new_PASS_profiles": 38,
+      "ochiai": {
+        "average_rank": 10.5,
+        "best_rank": 9,
+        "exam_percentage": 0.14923251847640706,
+        "score": 0.6324555320336759,
+        "tie": {
+          "baseline_fault_tie_size": 12,
+          "baseline_tied_above_fault": 0,
+          "baseline_tied_below_fault": 8,
+          "baseline_tied_still_equal": 4,
+          "current_fault_tie_size": 4
+        },
+        "worst_rank": 12
+      },
+      "peach_chunk_structures": 4,
+      "repetition": 5,
+      "subject": "libxml2_467"
+    },
+    {
+      "added_FAIL": 5,
+      "added_PASS": 43,
+      "added_fuzz_tests": 48,
+      "baseline_tests": 18,
+      "classification": {
+        "FAIL": 5,
+        "PASS": 43,
+        "UNRESOLVED": 1370,
+        "duplicate_baseline": 1,
+        "duplicate_generated": 0,
+        "generated_queue_entries": 1419,
+        "raw_queue_entries": 1422,
+        "seed_entries": 3,
+        "unique_generated_evaluated": 1418,
+        "usable": 48,
+        "usable_rate": 0.03385049365303244
+      },
+      "combined_FAIL": 8,
+      "combined_PASS": 58,
+      "combined_total": 66,
+      "distinct_FAIL_profiles": 5,
+      "distinct_PASS_profiles": 37,
+      "duration_seconds": 300,
+      "fuzzer_stats": {
+        "afl_banner": "libxml2_467_buggy",
+        "afl_version": "2.52b",
+        "bitmap_cvg": "9.78%",
+        "command_line": "/aflsmart/afl-fuzz -m 200 -d -i aflsmart/libxml2_467_structure_seeds -o results/libxml2_467/formal_structure_300s_20261026_203447/rep05/aflsmart-nonstack/raw -w peach -g aflsmart/libxml2_467.xml -- ./build/aflsmart/libxml2_467/libxml2_467_buggy @@",
+        "cur_path": "632",
+        "cycles_done": "0",
+        "exec_timeout": "20",
+        "execs_done": "425092",
+        "execs_per_sec": "1346.29",
+        "execs_since_crash": "425092",
+        "fuzzer_pid": "8",
+        "last_crash": "0",
+        "last_hang": "0",
+        "last_path": "1793031065",
+        "last_update": "1793031066",
+        "max_depth": "3",
+        "paths_favored": "354",
+        "paths_found": "1419",
+        "paths_imported": "0",
+        "paths_total": "1422",
+        "pending_favs": "245",
+        "pending_total": "1273",
+        "stability": "100.00%",
+        "start_time": "1793030766",
+        "target_mode": "default",
+        "unique_crashes": "0",
+        "unique_hangs": "0",
+        "variable_paths": "0"
+      },
+      "git_commit": "08eff71641cf8779660ade1d4dc26dc6db975d1d",
+      "jaccard": {
+        "average_rank": 10.5,
+        "best_rank": 9,
+        "exam_percentage": 0.14923251847640706,
+        "score": 0.25806451612903225,
+        "tie": {
+          "baseline_fault_tie_size": 12,
+          "baseline_tied_above_fault": 0,
+          "baseline_tied_below_fault": 8,
+          "baseline_tied_still_equal": 4,
+          "current_fault_tie_size": 4
+        },
+        "worst_rank": 12
+      },
+      "mode": "aflsmart-nonstack",
+      "mutation_counts": {
+        "havoc_retained": 623,
+        "havoc_smart_retained": 40,
+        "splice_retained": 756
+      },
+      "new_FAIL_profiles": 4,
+      "new_PASS_profiles": 36,
+      "ochiai": {
+        "average_rank": 10.5,
+        "best_rank": 9,
+        "exam_percentage": 0.14923251847640706,
+        "score": 0.508000508000762,
+        "tie": {
+          "baseline_fault_tie_size": 12,
+          "baseline_tied_above_fault": 0,
+          "baseline_tied_below_fault": 8,
+          "baseline_tied_still_equal": 4,
+          "current_fault_tie_size": 4
+        },
+        "worst_rank": 12
+      },
+      "peach_chunk_structures": 1,
+      "repetition": 5,
+      "subject": "libxml2_467"
+    }
+  ],
+  "subject": "libxml2_467"
+}

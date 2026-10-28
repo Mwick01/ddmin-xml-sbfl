@@ -1,0 +1,39 @@
+{
+  "criteria": [
+    "Exact input/output byte equality",
+    "Nonempty namespace chunk records",
+    "Valid nonnegative chunk byte ranges",
+    "Nonempty fuzzer-produced Peach chunks in each smoke mode"
+  ],
+  "model_equivalence": "The tested and installed XML text differ only in trailing newline; parsed model contents are identical.",
+  "model_snapshot_sha256": "0beae0bd1af7b0899b39703da0d5144a10e93ea6a694f47f6d4d455f975e1b24",
+  "model_tested_sha256": "66f87160a5368bda316a15f4698af7c9bae899f8a7dd0a0d9d3f0e35df09a340",
+  "roundtrip": {
+    "shared_v2_character": {
+      "passed": 25,
+      "total": 25
+    },
+    "shared_v2_structure": {
+      "passed": 3,
+      "total": 3
+    }
+  },
+  "smoke": {
+    "aflsmart-mixed": {
+      "peach_chunk_files": 1,
+      "retained_smart_mutations": 4,
+      "returncode": 124
+    },
+    "aflsmart-nonstack": {
+      "peach_chunk_files": 1,
+      "retained_smart_mutations": 30,
+      "returncode": 124
+    }
+  },
+  "source": "PIT troubleshooting validation recorded in this project chat; raw diagnostic queues are not included.",
+  "v1_character_compatibility": {
+    "evidence": "Recorded during troubleshooting; the original per-seed transcript is not bundled.",
+    "exact_roundtrip_passed": 1,
+    "total_seeds": 25
+  }
+}

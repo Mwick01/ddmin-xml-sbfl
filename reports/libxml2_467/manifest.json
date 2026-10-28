@@ -1,0 +1,336 @@
+{
+  "buggy_revision": "78c4430f4ee75aee67456b0c29074add9d280b5d",
+  "campaigns": [
+    {
+      "all_afl_stability_100_percent": true,
+      "all_git_clean": true,
+      "analysis_root": "results/libxml2_467/formal_structure_300s_20261026_203447_analysis",
+      "baseline_run": "results/libxml2_467_structural_ddmin/20261026_123127_300282",
+      "completed_trials": 15,
+      "duration_seconds": 300,
+      "experiment_commits": [
+        "08eff71641cf8779660ade1d4dc26dc6db975d1d"
+      ],
+      "fuzz_root": "results/libxml2_467/formal_structure_300s_20261026_203447",
+      "id": "structural_v1",
+      "order_seed": 20260920,
+      "pit_file": "aflsmart/libxml2_467.xml",
+      "pit_sha256": "cd05c62edac4f02a74af4b913b6ebb77dfc9726d8b61a7d64f63ac21d465d331",
+      "repetitions_per_mode": 5,
+      "seed_corpus_sha256": "63aa481e72d356b77e72f9c5ede5a01fc082b4a7e9382efbf3dc7bbc035a161a",
+      "seed_count": 3,
+      "seed_directory": "aflsmart/libxml2_467_structure_seeds",
+      "status": "complete",
+      "target_sha256": "877c6c91cf9dd57de37135374d7dbec38cb716d35e744b295e5a1c38e994bb4a"
+    },
+    {
+      "all_afl_stability_100_percent": true,
+      "all_git_clean": true,
+      "analysis_root": "results/libxml2_467/formal_character_shared_v2_300s_20261027_141812_analysis",
+      "baseline_run": "results/libxml2_467_ddmin/20260926_224640_738508",
+      "completed_trials": 15,
+      "duration_seconds": 300,
+      "experiment_commits": [
+        "1989bc50ba740b5c1b44d7afbfe1d55055e2631e"
+      ],
+      "fuzz_root": "results/libxml2_467/formal_character_shared_v2_300s_20261027_141812",
+      "id": "character_shared_v2",
+      "order_seed": 20260920,
+      "pit_file": "aflsmart/libxml2_467_shared_v2.xml",
+      "pit_sha256": "0beae0bd1af7b0899b39703da0d5144a10e93ea6a694f47f6d4d455f975e1b24",
+      "repetitions_per_mode": 5,
+      "seed_corpus_sha256": "b861c62f306165b6464b99f4bb37a00af7aa7c3f1c20b6b3525d17df5863ef7d",
+      "seed_count": 25,
+      "seed_directory": "aflsmart/libxml2_467_character_seeds",
+      "status": "complete",
+      "target_sha256": "877c6c91cf9dd57de37135374d7dbec38cb716d35e744b295e5a1c38e994bb4a"
+    }
+  ],
+  "export_policy": "Compact report export; raw queue files, per-test spectra, binaries, and gcov data remain outside reports. JSON paths are repository-relative.",
+  "fault_line": 9596,
+  "fault_source": "subjects/libxml2-467/buggy/parser.c",
+  "fixed_revision": "0bd4e4e032d57ecf982b57312eb6136efdd35d56",
+  "report_date": "2026-10-27",
+  "repository_snapshot_commit": "f01eb368a24eb643e60ab27cbf0ea0d7eea93668",
+  "source_files": [
+    {
+      "export": "baselines/character/ddmin_summary.json",
+      "source": "results/libxml2_467_ddmin/20260926_224640_738508/summary.json",
+      "source_sha256": "d24636b64c6065bef12f8d485c9619fdee1790c844518e74812dc0dc74734fd4",
+      "transformation": "Repository-absolute paths converted to repository-relative paths."
+    },
+    {
+      "export": "baselines/character/coverage_summary.json",
+      "source": "results/libxml2_467_ddmin/20260926_224640_738508/coverage/summary.json",
+      "source_sha256": "6c9ec5e3237a977546492186ce916ea90075bb5325b44584a10002de82d2db6e",
+      "transformation": "Repository-absolute paths converted to repository-relative paths."
+    },
+    {
+      "export": "baselines/character/sbfl_summary.json",
+      "source": "results/libxml2_467_ddmin/20260926_224640_738508/sbfl/summary.json",
+      "source_sha256": "3f23b6f20b5081cc565065be360c612accbac6b3b8cecee2d2dcc9b287c7e5c7",
+      "transformation": "Repository-absolute paths converted to repository-relative paths."
+    },
+    {
+      "export": "baselines/character/minimal_failure.xml",
+      "source": "results/libxml2_467_ddmin/20260926_224640_738508/minimal_failure.xml",
+      "source_sha256": "eeab930b981668a2d2780298d058c34c9cc52ac952fbdc283ed3ab6c4c70a768",
+      "transformation": "Exact byte copy."
+    },
+    {
+      "export": "baselines/structural/ddmin_summary.json",
+      "source": "results/libxml2_467_structural_ddmin/20261026_123127_300282/summary.json",
+      "source_sha256": "28b7c4203fba13c543394eb5aaf470f9b94707d24179370d8a9d2691e987572a",
+      "transformation": "Repository-absolute paths converted to repository-relative paths."
+    },
+    {
+      "export": "baselines/structural/coverage_summary.json",
+      "source": "results/libxml2_467_structural_ddmin/20261026_123127_300282/coverage/summary.json",
+      "source_sha256": "f5f048fb9de206829a3212173d4159c0b75c7a68cc80603572f285e77aeb7194",
+      "transformation": "Repository-absolute paths converted to repository-relative paths."
+    },
+    {
+      "export": "baselines/structural/sbfl_summary.json",
+      "source": "results/libxml2_467_structural_ddmin/20261026_123127_300282/sbfl/summary.json",
+      "source_sha256": "f0e37e0d4be51098b5638a7e14c664086ad59f19a85035fc5d5472852aaf1c66",
+      "transformation": "Repository-absolute paths converted to repository-relative paths."
+    },
+    {
+      "export": "baselines/structural/minimal_failure.xml",
+      "source": "results/libxml2_467_structural_ddmin/20261026_123127_300282/minimal_failure.xml",
+      "source_sha256": "e3d12b2d16f38b64d88093aad39765f4f3bc69daf6c6be16fe24c046599ab578",
+      "transformation": "Exact byte copy."
+    },
+    {
+      "export": "experiments/structural_v1/per_run.csv",
+      "source": "results/libxml2_467/formal_structure_300s_20261026_203447_analysis/per_run.csv",
+      "source_sha256": "16566c0f3dd71bd4fc7ba922600c087a484a9dedd39ad7bae06327eef016c5fe",
+      "transformation": "Exact byte copy."
+    },
+    {
+      "export": "experiments/structural_v1/aggregate.csv",
+      "source": "results/libxml2_467/formal_structure_300s_20261026_203447_analysis/aggregate.csv",
+      "source_sha256": "b79d654194d4ee2567d2e0213a937d996564fc59b6dd2361d12e0249c0e9323d",
+      "transformation": "Exact byte copy."
+    },
+    {
+      "export": "experiments/structural_v1/summary.json",
+      "source": "results/libxml2_467/formal_structure_300s_20261026_203447_analysis/summary.json",
+      "source_sha256": "7272ce23e0f448300335e9a788ddf3b9b48385e454185292f7ab99a539ee55de",
+      "transformation": "Repository-absolute paths converted to repository-relative paths."
+    },
+    {
+      "export": "experiments/structural_v1/run_metadata.jsonl",
+      "source": "results/libxml2_467/formal_structure_300s_20261026_203447/rep01/afl/metadata.json",
+      "source_sha256": "478fb1a16c799397b25244eb9770ba56d8e8aa1dff66c647f793ffadd25eaa4e",
+      "transformation": "Combined JSONL, repository-relative paths, collector_summary omitted."
+    },
+    {
+      "export": "experiments/structural_v1/run_metadata.jsonl",
+      "source": "results/libxml2_467/formal_structure_300s_20261026_203447/rep01/aflsmart-mixed/metadata.json",
+      "source_sha256": "5b2c370428a4f1339dff24cb2ba91ecc1b5e19668708121908eb5726419942ed",
+      "transformation": "Combined JSONL, repository-relative paths, collector_summary omitted."
+    },
+    {
+      "export": "experiments/structural_v1/run_metadata.jsonl",
+      "source": "results/libxml2_467/formal_structure_300s_20261026_203447/rep01/aflsmart-nonstack/metadata.json",
+      "source_sha256": "fe0fe75b92cd1baf2eee425975b1167f46144a58738a68ca0aa252aadd4b5a1e",
+      "transformation": "Combined JSONL, repository-relative paths, collector_summary omitted."
+    },
+    {
+      "export": "experiments/structural_v1/run_metadata.jsonl",
+      "source": "results/libxml2_467/formal_structure_300s_20261026_203447/rep02/afl/metadata.json",
+      "source_sha256": "916da53ebc778a8a4dc17e5aa3d12ac5d76aa04570834e495d87826d2a28b693",
+      "transformation": "Combined JSONL, repository-relative paths, collector_summary omitted."
+    },
+    {
+      "export": "experiments/structural_v1/run_metadata.jsonl",
+      "source": "results/libxml2_467/formal_structure_300s_20261026_203447/rep02/aflsmart-mixed/metadata.json",
+      "source_sha256": "c85b47af5dd29c647b02143505941c5e17a8a587825e3239cf36f94647af8b67",
+      "transformation": "Combined JSONL, repository-relative paths, collector_summary omitted."
+    },
+    {
+      "export": "experiments/structural_v1/run_metadata.jsonl",
+      "source": "results/libxml2_467/formal_structure_300s_20261026_203447/rep02/aflsmart-nonstack/metadata.json",
+      "source_sha256": "4ac1af17ce8526f9032c4a16d1cba5d56e8ca34c784209bccd9bbca1beca67fc",
+      "transformation": "Combined JSONL, repository-relative paths, collector_summary omitted."
+    },
+    {
+      "export": "experiments/structural_v1/run_metadata.jsonl",
+      "source": "results/libxml2_467/formal_structure_300s_20261026_203447/rep03/afl/metadata.json",
+      "source_sha256": "61bd554b924292e2137648db796a2cdfc7dec51ce7b1c9df17821d35a82f1664",
+      "transformation": "Combined JSONL, repository-relative paths, collector_summary omitted."
+    },
+    {
+      "export": "experiments/structural_v1/run_metadata.jsonl",
+      "source": "results/libxml2_467/formal_structure_300s_20261026_203447/rep03/aflsmart-mixed/metadata.json",
+      "source_sha256": "8ccb973d7b704e96e5dc4b5711e6ab71928275d90087313b9a29e36cbc01672d",
+      "transformation": "Combined JSONL, repository-relative paths, collector_summary omitted."
+    },
+    {
+      "export": "experiments/structural_v1/run_metadata.jsonl",
+      "source": "results/libxml2_467/formal_structure_300s_20261026_203447/rep03/aflsmart-nonstack/metadata.json",
+      "source_sha256": "08a1d0aaa07f21e0dfa874baaa82916d1c17731f8f532efcd06aa47a7cfb70e4",
+      "transformation": "Combined JSONL, repository-relative paths, collector_summary omitted."
+    },
+    {
+      "export": "experiments/structural_v1/run_metadata.jsonl",
+      "source": "results/libxml2_467/formal_structure_300s_20261026_203447/rep04/afl/metadata.json",
+      "source_sha256": "eca15efdb36837b16626e5e419ab5d7284b3e431912ca3104f0d6595e25bd1e2",
+      "transformation": "Combined JSONL, repository-relative paths, collector_summary omitted."
+    },
+    {
+      "export": "experiments/structural_v1/run_metadata.jsonl",
+      "source": "results/libxml2_467/formal_structure_300s_20261026_203447/rep04/aflsmart-mixed/metadata.json",
+      "source_sha256": "751f5a83e817221e1d0aa7cbaa908ff67bb0809ab6927f33d9db2ba112e2ee70",
+      "transformation": "Combined JSONL, repository-relative paths, collector_summary omitted."
+    },
+    {
+      "export": "experiments/structural_v1/run_metadata.jsonl",
+      "source": "results/libxml2_467/formal_structure_300s_20261026_203447/rep04/aflsmart-nonstack/metadata.json",
+      "source_sha256": "e193a45b9cc8ba124d529426cda52dd6e683f86278489d0031261a96244466b5",
+      "transformation": "Combined JSONL, repository-relative paths, collector_summary omitted."
+    },
+    {
+      "export": "experiments/structural_v1/run_metadata.jsonl",
+      "source": "results/libxml2_467/formal_structure_300s_20261026_203447/rep05/afl/metadata.json",
+      "source_sha256": "98a4ab9e6168cd8dc91ee2e1ed16a348308ef75236a5d700a9ff1a8455599351",
+      "transformation": "Combined JSONL, repository-relative paths, collector_summary omitted."
+    },
+    {
+      "export": "experiments/structural_v1/run_metadata.jsonl",
+      "source": "results/libxml2_467/formal_structure_300s_20261026_203447/rep05/aflsmart-mixed/metadata.json",
+      "source_sha256": "3f93ac7294f14e08970b62a9e87a01097db7d13558dd2b858a6df68fab6aab32",
+      "transformation": "Combined JSONL, repository-relative paths, collector_summary omitted."
+    },
+    {
+      "export": "experiments/structural_v1/run_metadata.jsonl",
+      "source": "results/libxml2_467/formal_structure_300s_20261026_203447/rep05/aflsmart-nonstack/metadata.json",
+      "source_sha256": "fa7594a72e4fd758f310fb7d539be19966bc91d0d54a3754884eb64c5534f804",
+      "transformation": "Combined JSONL, repository-relative paths, collector_summary omitted."
+    },
+    {
+      "export": "experiments/character_shared_v2/per_run.csv",
+      "source": "results/libxml2_467/formal_character_shared_v2_300s_20261027_141812_analysis/per_run.csv",
+      "source_sha256": "f77b8f64be5d79b0e31874542cfc08a10fc937913b71be4cd6d86e90af64ff44",
+      "transformation": "Exact byte copy."
+    },
+    {
+      "export": "experiments/character_shared_v2/aggregate.csv",
+      "source": "results/libxml2_467/formal_character_shared_v2_300s_20261027_141812_analysis/aggregate.csv",
+      "source_sha256": "3c430dfd4a97332315056050b7364f8a0175e4773c5875c7ccd7f9d5d10afb67",
+      "transformation": "Exact byte copy."
+    },
+    {
+      "export": "experiments/character_shared_v2/summary.json",
+      "source": "results/libxml2_467/formal_character_shared_v2_300s_20261027_141812_analysis/summary.json",
+      "source_sha256": "baced137f316fd61e220078161d67d1e25b0a4a3c7526c2c274e3f7a3679cd1e",
+      "transformation": "Repository-absolute paths converted to repository-relative paths."
+    },
+    {
+      "export": "experiments/character_shared_v2/run_metadata.jsonl",
+      "source": "results/libxml2_467/formal_character_shared_v2_300s_20261027_141812/rep01/afl/metadata.json",
+      "source_sha256": "aa834f46fdb40518ede2735639587cb08b8368921997952234d318d4392e6859",
+      "transformation": "Combined JSONL, repository-relative paths, collector_summary omitted."
+    },
+    {
+      "export": "experiments/character_shared_v2/run_metadata.jsonl",
+      "source": "results/libxml2_467/formal_character_shared_v2_300s_20261027_141812/rep01/aflsmart-mixed/metadata.json",
+      "source_sha256": "49b7ab4f5c49c97ba51e9796a61444ed1132f2ee74e7ead30335861eecee3696",
+      "transformation": "Combined JSONL, repository-relative paths, collector_summary omitted."
+    },
+    {
+      "export": "experiments/character_shared_v2/run_metadata.jsonl",
+      "source": "results/libxml2_467/formal_character_shared_v2_300s_20261027_141812/rep01/aflsmart-nonstack/metadata.json",
+      "source_sha256": "6c2c17d55b0cc2b24e056d26ad92133f38f9ea3b6b50feab86096df0623ea8d5",
+      "transformation": "Combined JSONL, repository-relative paths, collector_summary omitted."
+    },
+    {
+      "export": "experiments/character_shared_v2/run_metadata.jsonl",
+      "source": "results/libxml2_467/formal_character_shared_v2_300s_20261027_141812/rep02/afl/metadata.json",
+      "source_sha256": "49be4b64bce6e58ed699755f6ebebbfa544643311c47e32dda67243c020ac09d",
+      "transformation": "Combined JSONL, repository-relative paths, collector_summary omitted."
+    },
+    {
+      "export": "experiments/character_shared_v2/run_metadata.jsonl",
+      "source": "results/libxml2_467/formal_character_shared_v2_300s_20261027_141812/rep02/aflsmart-mixed/metadata.json",
+      "source_sha256": "7d0a8a8ece13c4b9e81ea737b07098c69b6e39a85cad4f2e9da94e52016b69ce",
+      "transformation": "Combined JSONL, repository-relative paths, collector_summary omitted."
+    },
+    {
+      "export": "experiments/character_shared_v2/run_metadata.jsonl",
+      "source": "results/libxml2_467/formal_character_shared_v2_300s_20261027_141812/rep02/aflsmart-nonstack/metadata.json",
+      "source_sha256": "ef73d3d53198ea1258e67307295024bc194e0be72cdb95ff2c4461d6d033df41",
+      "transformation": "Combined JSONL, repository-relative paths, collector_summary omitted."
+    },
+    {
+      "export": "experiments/character_shared_v2/run_metadata.jsonl",
+      "source": "results/libxml2_467/formal_character_shared_v2_300s_20261027_141812/rep03/afl/metadata.json",
+      "source_sha256": "5958178e240a60b604f1b697b7f8bd88d6cb0d06dba759d18a3d77308290c1a9",
+      "transformation": "Combined JSONL, repository-relative paths, collector_summary omitted."
+    },
+    {
+      "export": "experiments/character_shared_v2/run_metadata.jsonl",
+      "source": "results/libxml2_467/formal_character_shared_v2_300s_20261027_141812/rep03/aflsmart-mixed/metadata.json",
+      "source_sha256": "b85e5994b43b10f962a61e7c4c6e83934dba850bf91c9485881ac1e4f3ef268b",
+      "transformation": "Combined JSONL, repository-relative paths, collector_summary omitted."
+    },
+    {
+      "export": "experiments/character_shared_v2/run_metadata.jsonl",
+      "source": "results/libxml2_467/formal_character_shared_v2_300s_20261027_141812/rep03/aflsmart-nonstack/metadata.json",
+      "source_sha256": "1050b4810e89f8f0c2bccca6d47c2843af2c7157c4e970890a9fef516b39ca80",
+      "transformation": "Combined JSONL, repository-relative paths, collector_summary omitted."
+    },
+    {
+      "export": "experiments/character_shared_v2/run_metadata.jsonl",
+      "source": "results/libxml2_467/formal_character_shared_v2_300s_20261027_141812/rep04/afl/metadata.json",
+      "source_sha256": "15db8dbf561c65703f3521092c4fc52f4e77379ca56657aa49ccc2c213b35904",
+      "transformation": "Combined JSONL, repository-relative paths, collector_summary omitted."
+    },
+    {
+      "export": "experiments/character_shared_v2/run_metadata.jsonl",
+      "source": "results/libxml2_467/formal_character_shared_v2_300s_20261027_141812/rep04/aflsmart-mixed/metadata.json",
+      "source_sha256": "0db8ffa141c8210c448808e89adc773df90c5afc9dcdc0cc0970f17445462792",
+      "transformation": "Combined JSONL, repository-relative paths, collector_summary omitted."
+    },
+    {
+      "export": "experiments/character_shared_v2/run_metadata.jsonl",
+      "source": "results/libxml2_467/formal_character_shared_v2_300s_20261027_141812/rep04/aflsmart-nonstack/metadata.json",
+      "source_sha256": "6e1ec66b405251d594d123246453dec7065b27f436836e2cfd87942bc3bdc522",
+      "transformation": "Combined JSONL, repository-relative paths, collector_summary omitted."
+    },
+    {
+      "export": "experiments/character_shared_v2/run_metadata.jsonl",
+      "source": "results/libxml2_467/formal_character_shared_v2_300s_20261027_141812/rep05/afl/metadata.json",
+      "source_sha256": "c0ac77589e4a4e670388281ef6d09a7a603ce52ea06b7e846b68fe374f0fc8f2",
+      "transformation": "Combined JSONL, repository-relative paths, collector_summary omitted."
+    },
+    {
+      "export": "experiments/character_shared_v2/run_metadata.jsonl",
+      "source": "results/libxml2_467/formal_character_shared_v2_300s_20261027_141812/rep05/aflsmart-mixed/metadata.json",
+      "source_sha256": "6d0c889c691affa5ea9302aa3860ef2eb45a5339f2a9085fe12773bd65efb6a3",
+      "transformation": "Combined JSONL, repository-relative paths, collector_summary omitted."
+    },
+    {
+      "export": "experiments/character_shared_v2/run_metadata.jsonl",
+      "source": "results/libxml2_467/formal_character_shared_v2_300s_20261027_141812/rep05/aflsmart-nonstack/metadata.json",
+      "source_sha256": "771c358de2103d8d93120c7a40acf841975ac53280ee510fe3cedb811a844f49",
+      "transformation": "Combined JSONL, repository-relative paths, collector_summary omitted."
+    },
+    {
+      "export": "models/libxml2_467_v1.xml",
+      "source": "aflsmart/libxml2_467.xml",
+      "source_sha256": "cd05c62edac4f02a74af4b913b6ebb77dfc9726d8b61a7d64f63ac21d465d331",
+      "transformation": "Exact byte copy."
+    },
+    {
+      "export": "models/libxml2_467_shared_v2.xml",
+      "source": "aflsmart/libxml2_467_shared_v2.xml",
+      "source_sha256": "0beae0bd1af7b0899b39703da0d5144a10e93ea6a694f47f6d4d455f975e1b24",
+      "transformation": "Exact byte copy."
+    }
+  ],
+  "structural_shared_v2_status": "No complete structural shared-v2 batch was present at report generation.",
+  "subject": "libxml2_467",
+  "timezone": "Asia/Colombo"
+}

@@ -1,0 +1,39 @@
+{
+  "completed_metadata_records": 4,
+  "fuzz_root": "results/libxml2_467/formal_character_300s_20261026_221906",
+  "reason": "No Peach chunk structures; existing runner guard rejected the trial.",
+  "rejected_trial": "rep02/aflsmart-mixed",
+  "status": "incomplete; excluded",
+  "trials": [
+    {
+      "coverage_summary_present": true,
+      "metadata_complete": true,
+      "peach_chunk_files": 0,
+      "trial": "rep01/afl"
+    },
+    {
+      "coverage_summary_present": true,
+      "metadata_complete": true,
+      "peach_chunk_files": 2,
+      "trial": "rep01/aflsmart-mixed"
+    },
+    {
+      "coverage_summary_present": true,
+      "metadata_complete": true,
+      "peach_chunk_files": 1,
+      "trial": "rep01/aflsmart-nonstack"
+    },
+    {
+      "coverage_summary_present": true,
+      "metadata_complete": true,
+      "peach_chunk_files": 0,
+      "trial": "rep02/afl"
+    },
+    {
+      "coverage_summary_present": true,
+      "metadata_complete": false,
+      "peach_chunk_files": 0,
+      "trial": "rep02/aflsmart-mixed"
+    }
+  ]
+}
