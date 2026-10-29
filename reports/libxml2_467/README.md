@@ -222,3 +222,21 @@ repository-absolute paths to repository-relative paths. Compact run metadata
 omits the collector's large per-line arrays; raw source hashes and the export
 policy are recorded in the manifest. No interrupted run is included in a
 five-repetition aggregate, and no raw queues or per-test spectra are bundled.
+
+## Supplementary pooled and combined-seed analyses
+
+Two exploratory analyses follow the completed formal campaigns:
+
+- [Post-hoc pooled-suite report](experiments/pooled_posthoc_v2/report.md), with
+  [per-run results](experiments/pooled_posthoc_v2/per_run.csv) and
+  [summary](experiments/pooled_posthoc_v2/summary.csv). It pools saved
+  character and structural coverage; each paired both-fuzz suite uses two
+  300-second runs and is not a single-budget efficiency comparison.
+- [Combined-seed AFLSmart mixed pilot](experiments/combined_seed_pilot_v2/report.md),
+  with [machine-readable results](experiments/combined_seed_pilot_v2/results.json)
+  and [seed manifest](experiments/combined_seed_pilot_v2/seed_manifest.json).
+  One new 300-second run used 27 unique seeds from both DDMIN corpora. This is
+  an exploratory pilot, not a five-repetition formal comparison.
+
+The original results remain under `results/libxml2_467/` in the local WSL
+checkout. The formal campaign summaries above remain unchanged.

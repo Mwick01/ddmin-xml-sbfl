@@ -1,0 +1,4 @@
+mode,jaccard_character_original_mean,jaccard_structural_original_mean,jaccard_pooled_baseline_mean,jaccard_pooled_plus_char_fuzz_mean,jaccard_pooled_plus_struct_fuzz_mean,jaccard_pooled_plus_both_fuzz_mean,ochiai_character_original_mean,ochiai_structural_original_mean,ochiai_pooled_baseline_mean,ochiai_pooled_plus_char_fuzz_mean,ochiai_pooled_plus_struct_fuzz_mean,ochiai_pooled_plus_both_fuzz_mean,combined_PASS_mean,combined_FAIL_mean,combined_unique_tests_mean,fuzz_cross_arm_overlap_mean
+afl,7.4,11.8,9.5,9.4,9.5,9.6,7.4,10.5,9.5,9.4,9.5,9.4,333,36.6,369.6,0
+aflsmart-mixed,7.4,10.1,9.5,9.3,9.5,9.3,7.4,9.5,9.5,9.3,9.5,9.3,345.4,40.4,385.8,0
+aflsmart-nonstack,7.9,10.7,9.5,9.7,9.6,9.9,7.9,9.9,9.5,9.5,9.4,9.5,325.6,38.8,364.4,2.2

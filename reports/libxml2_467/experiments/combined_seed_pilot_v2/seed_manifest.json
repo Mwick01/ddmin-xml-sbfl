@@ -1,0 +1,171 @@
+{
+  "character_seed_count": 25,
+  "structural_seed_count": 3,
+  "unique_seed_count": 27,
+  "overlap_count": 1,
+  "seeds": [
+    {
+      "sha256": "0866462d71197b0ef4026374ef30854487327e0808becb104b9745ebcc4d4368",
+      "sources": [
+        "character:0866462d71197b0ef4026374ef30854487327e0808becb104b9745ebcc4d4368.xml"
+      ]
+    },
+    {
+      "sha256": "0b556ab7934f5709d75d8cf1b784477542612b1084ae2c5e030ad08ecec9e4f4",
+      "sources": [
+        "character:0b556ab7934f5709d75d8cf1b784477542612b1084ae2c5e030ad08ecec9e4f4.xml"
+      ]
+    },
+    {
+      "sha256": "10143a0f7944c227b63f6c75867d3f20c8b80a64df763f638c3975ec7d6056c2",
+      "sources": [
+        "character:10143a0f7944c227b63f6c75867d3f20c8b80a64df763f638c3975ec7d6056c2.xml"
+      ]
+    },
+    {
+      "sha256": "216f4fd1d4f82e45cb013e459aaf77ec809114038bd99aba5f0053b0923996da",
+      "sources": [
+        "character:216f4fd1d4f82e45cb013e459aaf77ec809114038bd99aba5f0053b0923996da.xml"
+      ]
+    },
+    {
+      "sha256": "21e2d3e594c2b6b9078e6d169a07f91c8791b71d865420167c459dda100c8f77",
+      "sources": [
+        "character:21e2d3e594c2b6b9078e6d169a07f91c8791b71d865420167c459dda100c8f77.xml"
+      ]
+    },
+    {
+      "sha256": "2d0ff642cfd8bdf84916738462675806fef3e5d4b909f34dae6e8c2f082d750a",
+      "sources": [
+        "character:2d0ff642cfd8bdf84916738462675806fef3e5d4b909f34dae6e8c2f082d750a.xml"
+      ]
+    },
+    {
+      "sha256": "391471415ae1b99b07c4fda1837d5a93864e641c6a346ca8a83db7661f14363e",
+      "sources": [
+        "character:391471415ae1b99b07c4fda1837d5a93864e641c6a346ca8a83db7661f14363e.xml"
+      ]
+    },
+    {
+      "sha256": "4296dfd5f0b050c6fb1a4011b5d8e089fa1d6d387a44bc73696b1d64754239c3",
+      "sources": [
+        "character:4296dfd5f0b050c6fb1a4011b5d8e089fa1d6d387a44bc73696b1d64754239c3.xml"
+      ]
+    },
+    {
+      "sha256": "44b88bb8dcb71598f6bb8b5e77afc8cdaa6c194064962081a4e152b818439b9f",
+      "sources": [
+        "character:44b88bb8dcb71598f6bb8b5e77afc8cdaa6c194064962081a4e152b818439b9f.xml"
+      ]
+    },
+    {
+      "sha256": "500dc89559015bc58531b6f94f329b46c8508c5fdcdc099bdba7d6d23c903d3a",
+      "sources": [
+        "character:500dc89559015bc58531b6f94f329b46c8508c5fdcdc099bdba7d6d23c903d3a.xml"
+      ]
+    },
+    {
+      "sha256": "524fcee1940979e8f49f3b57e3ab2be35c0641d94f9f3189bf73c52c3db28a50",
+      "sources": [
+        "character:524fcee1940979e8f49f3b57e3ab2be35c0641d94f9f3189bf73c52c3db28a50.xml",
+        "structural:524fcee1940979e8f49f3b57e3ab2be35c0641d94f9f3189bf73c52c3db28a50.xml"
+      ]
+    },
+    {
+      "sha256": "5bf3e2cb86e7fe772b9fda122e5b55d552117514be21c052502d04bad8be604c",
+      "sources": [
+        "character:5bf3e2cb86e7fe772b9fda122e5b55d552117514be21c052502d04bad8be604c.xml"
+      ]
+    },
+    {
+      "sha256": "657108614820aee1bb3500f30aa3a4b564d63e873a1cf28a05b32ec5b78ff147",
+      "sources": [
+        "character:657108614820aee1bb3500f30aa3a4b564d63e873a1cf28a05b32ec5b78ff147.xml"
+      ]
+    },
+    {
+      "sha256": "66d70d72889e76cccada66b0606a3f905ac0f774c4ef0c0bd5deaf471c1ef938",
+      "sources": [
+        "character:66d70d72889e76cccada66b0606a3f905ac0f774c4ef0c0bd5deaf471c1ef938.xml"
+      ]
+    },
+    {
+      "sha256": "72c23793d9dedc88c0039a12fce63cec5a3e2f7fa9c2389645c9501050da298a",
+      "sources": [
+        "character:72c23793d9dedc88c0039a12fce63cec5a3e2f7fa9c2389645c9501050da298a.xml"
+      ]
+    },
+    {
+      "sha256": "7849daece7c8574917f6b15198a5d39e8874b19d347358bbcefbc11931df0c8a",
+      "sources": [
+        "character:7849daece7c8574917f6b15198a5d39e8874b19d347358bbcefbc11931df0c8a.xml"
+      ]
+    },
+    {
+      "sha256": "807a004b9a704d0065d1abb9272d5543a37602a8485edd3d158dd3d888558b09",
+      "sources": [
+        "character:807a004b9a704d0065d1abb9272d5543a37602a8485edd3d158dd3d888558b09.xml"
+      ]
+    },
+    {
+      "sha256": "86945f306d75f63812428772480120c4bbdcfcd9dc1f9bef9ff06ccecfe0b6fa",
+      "sources": [
+        "character:86945f306d75f63812428772480120c4bbdcfcd9dc1f9bef9ff06ccecfe0b6fa.xml"
+      ]
+    },
+    {
+      "sha256": "8a00ccd9f849871d2d4b36a7d190d46ead9f2c554529dd81535e3ae8aedb582b",
+      "sources": [
+        "character:8a00ccd9f849871d2d4b36a7d190d46ead9f2c554529dd81535e3ae8aedb582b.xml"
+      ]
+    },
+    {
+      "sha256": "ac6c495b7e544b9318706a6298a870d9ea9ebf6eab763fdb5130218325b72d5f",
+      "sources": [
+        "character:ac6c495b7e544b9318706a6298a870d9ea9ebf6eab763fdb5130218325b72d5f.xml"
+      ]
+    },
+    {
+      "sha256": "c8934ea818dd4c0132537d117a85cb8f8a1f60e2c122fd205e4cec114f734042",
+      "sources": [
+        "character:c8934ea818dd4c0132537d117a85cb8f8a1f60e2c122fd205e4cec114f734042.xml"
+      ]
+    },
+    {
+      "sha256": "e6c9fce88d65b6083056e2020cd91da99e291680b4cbd6410ebd2e7834aa0845",
+      "sources": [
+        "character:e6c9fce88d65b6083056e2020cd91da99e291680b4cbd6410ebd2e7834aa0845.xml"
+      ]
+    },
+    {
+      "sha256": "eeab930b981668a2d2780298d058c34c9cc52ac952fbdc283ed3ab6c4c70a768",
+      "sources": [
+        "character:eeab930b981668a2d2780298d058c34c9cc52ac952fbdc283ed3ab6c4c70a768.xml"
+      ]
+    },
+    {
+      "sha256": "f7a2a2fe075ee393bb821c5093b4628b3dd3d6d95b021631cecfa1ee7f850c19",
+      "sources": [
+        "character:f7a2a2fe075ee393bb821c5093b4628b3dd3d6d95b021631cecfa1ee7f850c19.xml"
+      ]
+    },
+    {
+      "sha256": "fb714cc7ca430ac188292573ec766d76d456f478f416f1b703a79c49f8839290",
+      "sources": [
+        "character:fb714cc7ca430ac188292573ec766d76d456f478f416f1b703a79c49f8839290.xml"
+      ]
+    },
+    {
+      "sha256": "35ffc7e6de413aa03d883fb8e81d5227fc42f9e8a2fcff6e3e6d619514a3ed1b",
+      "sources": [
+        "structural:35ffc7e6de413aa03d883fb8e81d5227fc42f9e8a2fcff6e3e6d619514a3ed1b.xml"
+      ]
+    },
+    {
+      "sha256": "e3d12b2d16f38b64d88093aad39765f4f3bc69daf6c6be16fe24c046599ab578",
+      "sources": [
+        "structural:e3d12b2d16f38b64d88093aad39765f4f3bc69daf6c6be16fe24c046599ab578.xml"
+      ]
+    }
+  ]
+}
