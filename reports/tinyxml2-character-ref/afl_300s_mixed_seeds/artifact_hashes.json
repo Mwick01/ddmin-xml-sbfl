@@ -1,0 +1,21 @@
+{
+  "README.md": "82edd412582a3cfa133e0f505c9fb1f42c8eaf9a46f0d493c168cbadf88f8714",
+  "augmented_coverage.jsonl": "919800a48dc8fef46a4090ba55239e942b9831f9c2e1e5f53fdd2759e2cc2184",
+  "augmented_sbfl_summary.json": "fafec72a9395f5e92255764681c5de02659d243616ba5755470788d03d94186d",
+  "classification.jsonl": "e025d9b5d0c568c083f091ffcc8879fd5bb35be4f99326a47ff7e55aaea034a9",
+  "comparison.csv": "f202c8a91586ccdbaceeff53807430a0d631ed70ad46ff2c4c72b136e133ad0e",
+  "duration_comparison.csv": "e5b3cc21ba7d9417d97826144d7c0254ca35ce9ba1a084f61d0583db4d814b7c",
+  "fuzz_driver_snapshot.cpp": "37d950bcec0b61ad2b7a66692bdc2d009fc7bcb60140361b9d4ce5a2e2af8a9b",
+  "fuzzer.log": "7575008fec209df97b3b325f576e07b5d216bb4e6fa6726ca10a67cb91f237c6",
+  "fuzzer_stats.txt": "fa9bf18d55e30a9016c7da69261aecc993c1e08e997a02fb943c0858805fe2a8",
+  "generated_coverage.jsonl": "4c7aa7f33cbf5304fe6f392ebc8cf1d978b81d9a2291e5de60f05bbedd6e6986",
+  "jaccard_ranking.csv": "bfb28f24ef02c6983cda080b7e123d1c5fdfbbd552d9f5f15c7b9ec7b0edcb60",
+  "ochiai_ranking.csv": "9461a45b464d8d8f752efdcfbd991918f30288cc53031aeb479518758ab25553",
+  "retained_inputs.zip": "c4b5735b1f8652548d89e2789fd08145704d6dd62fed0b404b26b2f5e8c26eea",
+  "runner_snapshot.py": "43ea8e7f596e82a89daf57cf7ed6b99aac8953608d816ebf46233991461808d7",
+  "same_seed_validation.json": "b9724a5843ffaae9d55bc7dcbc83747fd02718c824bc6af1b58367c5bce235a5",
+  "spectrum.csv": "52534d97a670c2858aa022984b785e358c189d6891815d3bb785811e4240c2e2",
+  "summary.json": "37f51ea4bb1ded9054108eaf3500c14fea40b1a6cc7f8f65ea2ba9e8bc13ffe0",
+  "validation.csv": "96c572fac43dec7f544d0592d3d5449045edf113eaa010375aab124eac94936c",
+  "validation_summary.json": "afe3aef82eac0d5f7304461fc7d49f68f07f4b86a76ea918fc238683f13d164d"
+}

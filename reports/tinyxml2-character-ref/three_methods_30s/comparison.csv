@@ -1,0 +1,9 @@
+suite,metric,passing_tests,failing_tests,score,best_rank,average_rank,worst_rank,exam_percentage,executable_lines
+Original DDMIN,jaccard,6,29,1.0,1,46.5,92,2.9750479846449136,1563
+Original DDMIN,ochiai,6,29,1.0,1,46.5,92,2.9750479846449136,1563
+Plain AFL,jaccard,22,31,1.0,1,46.5,92,2.9750479846449136,1563
+Plain AFL,ochiai,22,31,1.0,1,46.5,92,2.9750479846449136,1563
+AFLSmart nonstack,jaccard,13,33,1.0,1,41.0,81,2.6231605886116443,1563
+AFLSmart nonstack,ochiai,13,33,1.0,1,41.0,81,2.6231605886116443,1563
+AFLSmart mixed,jaccard,15,31,1.0,1,46.5,92,2.9750479846449136,1563
+AFLSmart mixed,ochiai,15,31,1.0,1,46.5,92,2.9750479846449136,1563

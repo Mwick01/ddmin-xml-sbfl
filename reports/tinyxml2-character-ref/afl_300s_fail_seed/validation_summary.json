@@ -1,0 +1,23 @@
+{
+  "augmented_top_tie_lines": 92,
+  "baseline_records_unchanged": true,
+  "executable_lines": 1563,
+  "generated_fail_fixed_accept_count": 0,
+  "generated_fail_fixed_reject_count": 4,
+  "independent_scores_and_rank_bounds_verified": true,
+  "new_fail_demoted_original_tie_lines": [],
+  "new_pass_demoted_original_tie_lines": [],
+  "novel_candidates_validated": 7,
+  "original_tie_lines": 92,
+  "repeat_counts_identical": 7,
+  "seed_mode_verified": "fail-only",
+  "target_spectrum": {
+    "ef": 33,
+    "ep": 0,
+    "nf": 0,
+    "np": 9
+  },
+  "verified_seed_bytes": 32,
+  "verified_seed_count": 1,
+  "verified_seed_sha256": "0aabf45e688d2f7c7b5a4661be27c04e4ba58d4895efaac8ce9c3f1303dbb849"
+}

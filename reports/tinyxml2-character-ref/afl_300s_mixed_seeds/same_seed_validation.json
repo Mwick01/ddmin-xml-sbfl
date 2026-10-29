@@ -1,0 +1,32 @@
+{
+  "300s_target_sha256": "0a63177fe4618fda2305b56aedae930198c7812e192a4f842fb822816e79b664",
+  "30s_target_sha256": "7116bb50e0bcd3c64b0b5f8ff10287f63d86ff4927902f07f7b48f67b26270f7",
+  "afl_instrumentation_map_held_fixed": false,
+  "instrumentation_note": "AFL afl-as.c seeds its instrumentation RNG from time/PID and assigns random MAP_SIZE locations; the same source/build command does not preserve the instrumented binary across rebuilds.",
+  "original_30s_run": "/home/user/ddmin-xml-sbfl/results/tinyxml2_character_ref/smoke_afl_30s_20261029_155106_437805",
+  "rng_not_explicitly_seeded": true,
+  "same_afl_version_and_input_timeout": true,
+  "same_build_command": true,
+  "same_coverage_binary": true,
+  "same_docker_image": true,
+  "same_fuzz_driver": true,
+  "same_oracle_module": true,
+  "same_parser_source": true,
+  "same_target_binary": false,
+  "seed_count": 7,
+  "seed_files_and_bytes_identical_to_30s": true,
+  "seed_labels": {
+    "FAIL": 1,
+    "PASS": 6
+  },
+  "sha256": {
+    "187ae4880f30691121289b1119247e663300993767511c208233286bdc52ab1f.xml": "187ae4880f30691121289b1119247e663300993767511c208233286bdc52ab1f",
+    "4f49f4d0a29cb40b37bd970ca082d00b0221ab9f046ab6fd5094f15b7883e720.xml": "4f49f4d0a29cb40b37bd970ca082d00b0221ab9f046ab6fd5094f15b7883e720",
+    "5d783a2abb6fdb544121753b232a71d4ae2c1d651d1b6e2b974563f52c0e504c.xml": "5d783a2abb6fdb544121753b232a71d4ae2c1d651d1b6e2b974563f52c0e504c",
+    "b7c6f2f98ecca456a33fc86a3d1958a3fef2d1e8408a05c3526b1b5db41acb24.xml": "b7c6f2f98ecca456a33fc86a3d1958a3fef2d1e8408a05c3526b1b5db41acb24",
+    "b9dd86c779db140ffe4ae5d9bb5929e02cfe2486db6190d48f2f53ef98401bc8.xml": "b9dd86c779db140ffe4ae5d9bb5929e02cfe2486db6190d48f2f53ef98401bc8",
+    "fc5f83d37cd876fd93e90c919aa9ac9dd20f1ac3b851ac30140345b629c9f2a9.xml": "fc5f83d37cd876fd93e90c919aa9ac9dd20f1ac3b851ac30140345b629c9f2a9",
+    "minimal_failure.xml": "0aabf45e688d2f7c7b5a4661be27c04e4ba58d4895efaac8ce9c3f1303dbb849"
+  },
+  "target_rebuilt_for_each_run": true
+}

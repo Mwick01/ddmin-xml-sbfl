@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A permissive lexical fragment model for the exact TinyXML DDMIN seed family.
+     This is not a full XML grammar or a validity oracle. Raw bytes allow the
+     malformed original PASS/FAIL seeds to be cracked without repairing them. -->
+<Peach xmlns="http://peachfuzzer.com/2012/Peach"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://peachfuzzer.com/2012/Peach /peach/peach.xsd">
+  <DataModel name="CharacterReference">
+    <String name="Open" value="&amp;#" token="true"/>
+    <String name="Digits" value="1"/>
+    <String name="Close" value=";" token="true"/>
+  </DataModel>
+  <DataModel name="ClosingTag">
+    <String name="Open" value="&lt;/" token="true"/>
+    <String name="Name" value="m:mi"/>
+    <String name="Close" value="&gt;" token="true"/>
+  </DataModel>
+  <DataModel name="QuotedAttribute">
+    <String name="Open" value="style=&quot;" token="true"/>
+    <Choice name="Value" minOccurs="0" maxOccurs="4096">
+      <Block name="Reference" ref="CharacterReference"/>
+      <Number name="Byte" size="8" signed="false"/>
+    </Choice>
+    <String name="Close" value="&quot;" token="true"/>
+  </DataModel>
+  <DataModel name="TinyxmlFragments">
+    <Choice name="Fragments" minOccurs="1" maxOccurs="65536">
+      <Block name="Reference" ref="CharacterReference"/>
+      <Block name="EndTag" ref="ClosingTag"/>
+      <Block name="Attribute" ref="QuotedAttribute"/>
+      <String name="TagOpen" value="&lt;" token="true"/>
+      <String name="TagClose" value="&gt;" token="true"/>
+      <String name="Equals" value="=" token="true"/>
+      <String name="Quote" value="&quot;" token="true"/>
+      <Number name="RawByte" size="8" signed="false"/>
+    </Choice>
+  </DataModel>
+  <StateModel name="TheState" initialState="Initial">
+    <State name="Initial">
+      <Action type="output">
+        <DataModel ref="TinyxmlFragments"/>
+        <Data fileName="/dev/null"/>
+      </Action>
+      <Action type="close"/>
+    </State>
+  </StateModel>
+  <Test name="Default">
+    <StateModel ref="TheState"/>
+    <Publisher class="File"><Param name="FileName" value="repaired"/></Publisher>
+    <Logger class="Filesystem"><Param name="Path" value="logs"/></Logger>
+  </Test>
+</Peach>

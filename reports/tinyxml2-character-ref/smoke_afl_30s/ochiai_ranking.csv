@@ -1,0 +1,1564 @@
+best_rank,average_rank,worst_rank,line,score,ef,ep,nf,np,faulty,source
+1,41.0,81,295,1.000000000000,33,0,0,14,False,const char* p = _start;	// the read pointer
+1,41.0,81,296,1.000000000000,33,0,0,14,False,char* q = _start;	// the write pointer
+1,41.0,81,298,1.000000000000,33,0,0,14,False,while( p < _end ) {
+1,41.0,81,299,1.000000000000,33,0,0,14,False,if ( (_flags & NEEDS_NEWLINE_NORMALIZATION) && *p == CR ) {
+1,41.0,81,312,1.000000000000,33,0,0,14,False,else if ( (_flags & NEEDS_NEWLINE_NORMALIZATION) && *p == LF ) {
+1,41.0,81,322,1.000000000000,33,0,0,14,False,else if ( (_flags & NEEDS_ENTITY_PROCESSING) && *p == '&' ) {
+1,41.0,81,328,1.000000000000,33,0,0,14,False,if ( *(p+1) == '#' ) {
+1,41.0,81,329,1.000000000000,33,0,0,14,False,const int buflen = 10;
+1,41.0,81,330,1.000000000000,33,0,0,14,False,char buf[buflen] = { 0 };
+1,41.0,81,331,1.000000000000,33,0,0,14,False,int len = 0;
+1,41.0,81,332,1.000000000000,33,0,0,14,False,"const char* adjusted = const_cast<char*>( XMLUtil::GetCharacterRef( p, buf, &len ) );"
+1,41.0,81,475,1.000000000000,33,0,0,14,False,"const char* XMLUtil::GetCharacterRef( const char* p, char* value, int* length )"
+1,41.0,81,478,1.000000000000,33,0,0,14,False,*length = 0;
+1,41.0,81,480,1.000000000000,33,0,0,14,False,if ( *(p+1) == '#' && *(p+2) ) {
+1,41.0,81,481,1.000000000000,33,0,0,14,False,unsigned long ucs = 0;
+1,41.0,81,483,1.000000000000,33,0,0,14,False,ptrdiff_t delta = 0;
+1,41.0,81,484,1.000000000000,33,0,0,14,False,unsigned mult = 1;
+1,41.0,81,487,1.000000000000,33,0,0,14,False,if ( *(p+2) == 'x' ) {
+1,41.0,81,531,1.000000000000,33,0,0,14,False,const char* q = p+2;
+1,41.0,81,532,1.000000000000,33,0,0,14,False,if ( !(*q) ) {
+1,41.0,81,536,1.000000000000,33,0,0,14,False,"q = strchr( q, SEMICOLON );"
+1,41.0,81,538,1.000000000000,33,0,0,14,False,if ( !q ) {
+1,41.0,81,541,1.000000000000,33,0,0,14,False,TIXMLASSERT( *q == SEMICOLON );
+1,41.0,81,543,1.000000000000,33,0,0,14,False,delta = q-p;
+1,41.0,81,544,1.000000000000,33,0,0,14,False,--q;
+1,41.0,81,546,1.000000000000,33,0,0,14,False,while ( *q != '#' ) {
+1,41.0,81,547,1.000000000000,33,0,0,14,False,if ( *q >= '0' && *q <= '9' ) {
+1,41.0,81,548,1.000000000000,33,0,0,14,False,const unsigned int digit = *q - '0';
+1,41.0,81,549,1.000000000000,33,0,0,14,False,TIXMLASSERT( digit < 10 );
+1,41.0,81,550,1.000000000000,33,0,0,14,True,TIXMLASSERT( digit == 0 || mult <= UINT_MAX / digit );
+1,41.0,81,551,1.000000000000,33,0,0,14,False,const unsigned int digitScaled = mult * digit;
+1,41.0,81,552,1.000000000000,33,0,0,14,False,TIXMLASSERT( ucs <= ULONG_MAX - digitScaled );
+1,41.0,81,553,1.000000000000,33,0,0,14,False,ucs += digitScaled;
+1,41.0,81,554,1.000000000000,33,0,0,14,False,}
+1,41.0,81,558,1.000000000000,33,0,0,14,False,TIXMLASSERT( mult <= UINT_MAX / 10 );
+1,41.0,81,559,1.000000000000,33,0,0,14,False,mult *= 10;
+1,41.0,81,560,1.000000000000,33,0,0,14,False,--q;
+1,41.0,81,1445,1.000000000000,33,0,0,14,False,const char* XMLAttribute::Name() const
+1,41.0,81,1447,1.000000000000,33,0,0,14,False,return _name.GetStr();
+1,41.0,81,1450,1.000000000000,33,0,0,14,False,const char* XMLAttribute::Value() const
+1,41.0,81,1452,1.000000000000,33,0,0,14,False,return _value.GetStr();
+1,41.0,81,1455,1.000000000000,33,0,0,14,False,"char* XMLAttribute::ParseDeep( char* p, bool processEntities, int* curLineNumPtr )"
+1,41.0,81,1458,1.000000000000,33,0,0,14,False,p = _name.ParseName( p );
+1,41.0,81,1459,1.000000000000,33,0,0,14,False,if ( !p || !*p ) {
+1,41.0,81,1464,1.000000000000,33,0,0,14,False,"p = XMLUtil::SkipWhiteSpace( p, curLineNumPtr );"
+1,41.0,81,1465,1.000000000000,33,0,0,14,False,if ( *p != '=' ) {
+1,41.0,81,1469,1.000000000000,33,0,0,14,False,++p;	// move up to opening quote
+1,41.0,81,1470,1.000000000000,33,0,0,14,False,"p = XMLUtil::SkipWhiteSpace( p, curLineNumPtr );"
+1,41.0,81,1471,1.000000000000,33,0,0,14,False,"if ( *p != '\""' && *p != '\'' ) {"
+1,41.0,81,1475,1.000000000000,33,0,0,14,False,"const char endTag[2] = { *p, 0 };"
+1,41.0,81,1476,1.000000000000,33,0,0,14,False,++p;	// move past opening quote
+1,41.0,81,1478,1.000000000000,33,0,0,14,False,"p = _value.ParseText( p, endTag, processEntities ? StrPair::ATTRIBUTE_VALUE : StrPair::ATTRIBUTE_VALUE_LEAVE_ENTITIES, curLineNumPtr );"
+1,41.0,81,1479,1.000000000000,33,0,0,14,False,return p;
+1,41.0,81,1629,1.000000000000,33,0,0,14,False,const XMLAttribute* XMLElement::FindAttribute( const char* name ) const
+1,41.0,81,1631,1.000000000000,33,0,0,14,False,for( XMLAttribute* a = _rootAttribute; a; a = a->_next ) {
+1,41.0,81,1632,1.000000000000,33,0,0,14,False,"if ( XMLUtil::StringEqual( a->Name(), name ) ) {"
+1,41.0,81,1633,1.000000000000,33,0,0,14,False,return a;
+1,41.0,81,1636,1.000000000000,33,0,0,14,False,return 0;
+1,41.0,81,1640,1.000000000000,33,0,0,14,False,"const char* XMLElement::Attribute( const char* name, const char* value ) const"
+1,41.0,81,1642,1.000000000000,33,0,0,14,False,const XMLAttribute* a = FindAttribute( name );
+1,41.0,81,1643,1.000000000000,33,0,0,14,False,if ( !a ) {
+1,41.0,81,1644,1.000000000000,33,0,0,14,False,return 0;
+1,41.0,81,1646,1.000000000000,33,0,0,14,False,"if ( !value || XMLUtil::StringEqual( a->Value(), value )) {"
+1,41.0,81,1647,1.000000000000,33,0,0,14,False,return a->Value();
+1,41.0,81,1986,1.000000000000,33,0,0,14,False,XMLAttribute* attrib = CreateAttribute();
+1,41.0,81,1987,1.000000000000,33,0,0,14,False,TIXMLASSERT( attrib );
+1,41.0,81,1988,1.000000000000,33,0,0,14,False,attrib->_parseLineNum = _document->_parseCurLineNum;
+1,41.0,81,1990,1.000000000000,33,0,0,14,False,const int attrLineNum = attrib->_parseLineNum;
+1,41.0,81,1992,1.000000000000,33,0,0,14,False,"p = attrib->ParseDeep( p, _document->ProcessEntities(), curLineNumPtr );"
+1,41.0,81,1993,1.000000000000,33,0,0,14,False,if ( !p || Attribute( attrib->Name() ) ) {
+1,41.0,81,2003,1.000000000000,33,0,0,14,False,if ( prevAttribute ) {
+1,41.0,81,2008,1.000000000000,33,0,0,14,False,TIXMLASSERT( _rootAttribute == 0 );
+1,41.0,81,2009,1.000000000000,33,0,0,14,False,_rootAttribute = attrib;
+1,41.0,81,2011,1.000000000000,33,0,0,14,False,prevAttribute = attrib;
+1,41.0,81,2041,1.000000000000,33,0,0,14,False,XMLAttribute* XMLElement::CreateAttribute()
+1,41.0,81,2043,1.000000000000,33,0,0,14,False,TIXMLASSERT( sizeof( XMLAttribute ) == _document->_attributePool.ItemSize() );
+1,41.0,81,2044,1.000000000000,33,0,0,14,False,XMLAttribute* attrib = new (_document->_attributePool.Alloc() ) XMLAttribute();
+1,41.0,81,2045,1.000000000000,33,0,0,14,False,TIXMLASSERT( attrib );
+1,41.0,81,2046,1.000000000000,33,0,0,14,False,attrib->_memPool = &_document->_attributePool;
+1,41.0,81,2047,1.000000000000,33,0,0,14,False,attrib->_memPool->SetTracked();
+1,41.0,81,2048,1.000000000000,33,0,0,14,False,return attrib;
+82,87.0,92,286,0.985184366144,33,1,0,13,False,const char* StrPair::GetStr()
+82,87.0,92,288,0.985184366144,33,1,0,13,False,TIXMLASSERT( _start );
+82,87.0,92,289,0.985184366144,33,1,0,13,False,TIXMLASSERT( _end );
+82,87.0,92,290,0.985184366144,33,1,0,13,False,if ( _flags & NEEDS_FLUSH ) {
+82,87.0,92,291,0.985184366144,33,1,0,13,False,*_end = 0;
+82,87.0,92,292,0.985184366144,33,1,0,13,False,_flags ^= NEEDS_FLUSH;
+82,87.0,92,294,0.985184366144,33,1,0,13,False,if ( _flags ) {
+82,87.0,92,377,0.985184366144,33,1,0,13,False,if ( _flags & NEEDS_WHITESPACE_COLLAPSING ) {
+82,87.0,92,380,0.985184366144,33,1,0,13,False,_flags = (_flags & NEEDS_DELETE);
+82,87.0,92,382,0.985184366144,33,1,0,13,False,TIXMLASSERT( _start );
+82,87.0,92,383,0.985184366144,33,1,0,13,False,return _start;
+93,94.0,95,368,0.887625364599,26,0,7,14,False,*q = *p;
+93,94.0,95,369,0.887625364599,26,0,7,14,False,++p;
+93,94.0,95,370,0.887625364599,26,0,7,14,False,++q;
+96,112.0,128,237,0.846989553860,33,13,0,1,False,char* StrPair::ParseName( char* p )
+96,112.0,128,239,0.846989553860,33,13,0,1,False,if ( !p || !(*p) ) {
+96,112.0,128,242,0.846989553860,33,13,0,1,False,if ( !XMLUtil::IsNameStartChar( (unsigned char) *p ) ) {
+96,112.0,128,246,0.846989553860,33,13,0,1,False,char* const start = p;
+96,112.0,128,247,0.846989553860,33,13,0,1,False,++p;
+96,112.0,128,248,0.846989553860,33,13,0,1,False,while ( *p && XMLUtil::IsNameChar( (unsigned char) *p ) ) {
+96,112.0,128,249,0.846989553860,33,13,0,1,False,++p;
+96,112.0,128,252,0.846989553860,33,13,0,1,False,"Set( start, p, 0 );"
+96,112.0,128,253,0.846989553860,33,13,0,1,False,return p;
+96,112.0,128,749,0.846989553860,33,13,0,1,False,"else if ( XMLUtil::StringEqual( p, commentHeader, commentHeaderLen ) ) {"
+96,112.0,128,754,0.846989553860,33,13,0,1,False,"else if ( XMLUtil::StringEqual( p, cdataHeader, cdataHeaderLen ) ) {"
+96,112.0,128,761,0.846989553860,33,13,0,1,False,"else if ( XMLUtil::StringEqual( p, dtdHeader, dtdHeaderLen ) ) {"
+96,112.0,128,766,0.846989553860,33,13,0,1,False,"else if ( XMLUtil::StringEqual( p, elementHeader, elementHeaderLen ) ) {"
+96,112.0,128,769,0.846989553860,33,13,0,1,False,if (WhitespaceMode() == PEDANTIC_WHITESPACE && first && p != start && *(p + elementHeaderLen) == '/') {
+96,112.0,128,776,0.846989553860,33,13,0,1,False,returnNode = CreateUnlinkedNode<XMLElement>(_elementPool);
+96,112.0,128,777,0.846989553860,33,13,0,1,False,returnNode->_parseLineNum = _parseCurLineNum;
+96,112.0,128,778,0.846989553860,33,13,0,1,False,p += elementHeaderLen;
+96,112.0,128,1612,0.846989553860,33,13,0,1,False,"XMLElement::XMLElement( XMLDocument* doc ) : XMLNode( doc ),"
+96,112.0,128,1613,0.846989553860,33,13,0,1,False,"_closingType( OPEN ),"
+96,112.0,128,1614,0.846989553860,33,13,0,1,False,_rootAttribute( 0 )
+96,112.0,128,1616,0.846989553860,33,13,0,1,False,}
+96,112.0,128,1972,0.846989553860,33,13,0,1,False,"char* XMLElement::ParseAttributes( char* p, int* curLineNumPtr )"
+96,112.0,128,1974,0.846989553860,33,13,0,1,False,XMLAttribute* prevAttribute = 0;
+96,112.0,128,1977,0.846989553860,33,13,0,1,False,while( p ) {
+96,112.0,128,1978,0.846989553860,33,13,0,1,False,"p = XMLUtil::SkipWhiteSpace( p, curLineNumPtr );"
+96,112.0,128,1979,0.846989553860,33,13,0,1,False,if ( !(*p) ) {
+96,112.0,128,1985,0.846989553860,33,13,0,1,False,if (XMLUtil::IsNameStartChar( (unsigned char) *p ) ) {
+96,112.0,128,2088,0.846989553860,33,13,0,1,False,"char* XMLElement::ParseDeep( char* p, StrPair* parentEndTag, int* curLineNumPtr )"
+96,112.0,128,2091,0.846989553860,33,13,0,1,False,"p = XMLUtil::SkipWhiteSpace( p, curLineNumPtr );"
+96,112.0,128,2096,0.846989553860,33,13,0,1,False,if ( *p == '/' ) {
+96,112.0,128,2101,0.846989553860,33,13,0,1,False,p = _value.ParseName( p );
+96,112.0,128,2102,0.846989553860,33,13,0,1,False,if ( _value.Empty() ) {
+96,112.0,128,2106,0.846989553860,33,13,0,1,False,"p = ParseAttributes( p, curLineNumPtr );"
+129,203.0,277,188,0.837930581596,33,14,0,0,False,void StrPair::Reset()
+129,203.0,277,190,0.837930581596,33,14,0,0,False,if ( _flags & NEEDS_DELETE ) {
+129,203.0,277,193,0.837930581596,33,14,0,0,False,_flags = 0;
+129,203.0,277,194,0.837930581596,33,14,0,0,False,_start = 0;
+129,203.0,277,195,0.837930581596,33,14,0,0,False,_end = 0;
+129,203.0,277,196,0.837930581596,33,14,0,0,False,}
+129,203.0,277,212,0.837930581596,33,14,0,0,False,"char* StrPair::ParseText( char* p, const char* endTag, int strFlags, int* curLineNumPtr )"
+129,203.0,277,214,0.837930581596,33,14,0,0,False,TIXMLASSERT( p );
+129,203.0,277,215,0.837930581596,33,14,0,0,False,TIXMLASSERT( endTag && *endTag );
+129,203.0,277,216,0.837930581596,33,14,0,0,False,TIXMLASSERT(curLineNumPtr);
+129,203.0,277,218,0.837930581596,33,14,0,0,False,char* start = p;
+129,203.0,277,219,0.837930581596,33,14,0,0,False,const char  endChar = *endTag;
+129,203.0,277,220,0.837930581596,33,14,0,0,False,size_t length = strlen( endTag );
+129,203.0,277,223,0.837930581596,33,14,0,0,False,while ( *p ) {
+129,203.0,277,224,0.837930581596,33,14,0,0,False,"if ( *p == endChar && strncmp( p, endTag, length ) == 0 ) {"
+129,203.0,277,225,0.837930581596,33,14,0,0,False,"Set( start, p, strFlags );"
+129,203.0,277,226,0.837930581596,33,14,0,0,False,return p + length;
+129,203.0,277,227,0.837930581596,33,14,0,0,False,} else if (*p == '\n') {
+129,203.0,277,230,0.837930581596,33,14,0,0,False,++p;
+129,203.0,277,231,0.837930581596,33,14,0,0,False,TIXMLASSERT( p );
+129,203.0,277,404,0.837930581596,33,14,0,0,False,"const char* XMLUtil::ReadBOM( const char* p, bool* bom )"
+129,203.0,277,406,0.837930581596,33,14,0,0,False,TIXMLASSERT( p );
+129,203.0,277,407,0.837930581596,33,14,0,0,False,TIXMLASSERT( bom );
+129,203.0,277,408,0.837930581596,33,14,0,0,False,*bom = false;
+129,203.0,277,409,0.837930581596,33,14,0,0,False,const unsigned char* pu = reinterpret_cast<const unsigned char*>(p);
+129,203.0,277,411,0.837930581596,33,14,0,0,False,if (    *(pu+0) == TIXML_UTF_LEAD_0
+129,203.0,277,417,0.837930581596,33,14,0,0,False,TIXMLASSERT( p );
+129,203.0,277,418,0.837930581596,33,14,0,0,False,return p;
+129,203.0,277,715,0.837930581596,33,14,0,0,False,"char* XMLDocument::Identify( char* p, XMLNode** node, bool first )"
+129,203.0,277,717,0.837930581596,33,14,0,0,False,TIXMLASSERT( node );
+129,203.0,277,718,0.837930581596,33,14,0,0,False,TIXMLASSERT( p );
+129,203.0,277,719,0.837930581596,33,14,0,0,False,char* const start = p;
+129,203.0,277,720,0.837930581596,33,14,0,0,False,int const startLine = _parseCurLineNum;
+129,203.0,277,721,0.837930581596,33,14,0,0,False,"p = XMLUtil::SkipWhiteSpace( p, &_parseCurLineNum );"
+129,203.0,277,722,0.837930581596,33,14,0,0,False,if( !*p ) {
+129,203.0,277,743,0.837930581596,33,14,0,0,False,XMLNode* returnNode = 0;
+129,203.0,277,744,0.837930581596,33,14,0,0,False,"if ( XMLUtil::StringEqual( p, xmlHeader, xmlHeaderLen ) ) {"
+129,203.0,277,788,0.837930581596,33,14,0,0,False,TIXMLASSERT( returnNode );
+129,203.0,277,789,0.837930581596,33,14,0,0,False,TIXMLASSERT( p );
+129,203.0,277,790,0.837930581596,33,14,0,0,False,*node = returnNode;
+129,203.0,277,791,0.837930581596,33,14,0,0,False,return p;
+129,203.0,277,811,0.837930581596,33,14,0,0,False,XMLNode::XMLNode( XMLDocument* doc ) :
+129,203.0,277,812,0.837930581596,33,14,0,0,False,"_document( doc ),"
+129,203.0,277,813,0.837930581596,33,14,0,0,False,"_parent( 0 ),"
+129,203.0,277,814,0.837930581596,33,14,0,0,False,"_value(),"
+129,203.0,277,815,0.837930581596,33,14,0,0,False,"_parseLineNum( 0 ),"
+129,203.0,277,816,0.837930581596,33,14,0,0,False,"_firstChild( 0 ), _lastChild( 0 ),"
+129,203.0,277,817,0.837930581596,33,14,0,0,False,"_prev( 0 ), _next( 0 ),"
+129,203.0,277,818,0.837930581596,33,14,0,0,False,"_userData( 0 ),"
+129,203.0,277,819,0.837930581596,33,14,0,0,False,_memPool( 0 )
+129,203.0,277,821,0.837930581596,33,14,0,0,False,}
+129,203.0,277,891,0.837930581596,33,14,0,0,False,void XMLNode::DeleteChildren()
+129,203.0,277,893,0.837930581596,33,14,0,0,False,while( _firstChild ) {
+129,203.0,277,897,0.837930581596,33,14,0,0,False,_firstChild = _lastChild = 0;
+129,203.0,277,898,0.837930581596,33,14,0,0,False,}
+129,203.0,277,1085,0.837930581596,33,14,0,0,False,"char* XMLNode::ParseDeep( char* p, StrPair* parentEndTag, int* curLineNumPtr )"
+129,203.0,277,1104,0.837930581596,33,14,0,0,False,XMLDocument::DepthTracker tracker(_document);
+129,203.0,277,1105,0.837930581596,33,14,0,0,False,if (_document->Error())
+129,203.0,277,1108,0.837930581596,33,14,0,0,False,bool first = true;
+129,203.0,277,1109,0.837930581596,33,14,0,0,False,while( p && *p ) {
+129,203.0,277,1110,0.837930581596,33,14,0,0,False,XMLNode* node = 0;
+129,203.0,277,1112,0.837930581596,33,14,0,0,False,"p = _document->Identify( p, &node, first );"
+129,203.0,277,1113,0.837930581596,33,14,0,0,False,TIXMLASSERT( p );
+129,203.0,277,1114,0.837930581596,33,14,0,0,False,if ( node == 0 ) {
+129,203.0,277,1117,0.837930581596,33,14,0,0,False,first = false;
+129,203.0,277,1119,0.837930581596,33,14,0,0,False,const int initialLineNum = node->_parseLineNum;
+129,203.0,277,1121,0.837930581596,33,14,0,0,False,StrPair endTag;
+129,203.0,277,1122,0.837930581596,33,14,0,0,False,"p = node->ParseDeep( p, &endTag, curLineNumPtr );"
+129,203.0,277,2196,0.837930581596,33,14,0,0,False,"XMLDocument::XMLDocument( bool processEntities, Whitespace whitespaceMode ) :"
+129,203.0,277,2198,0.837930581596,33,14,0,0,False,"_writeBOM( false ),"
+129,203.0,277,2199,0.837930581596,33,14,0,0,False,"_processEntities( processEntities ),"
+129,203.0,277,2200,0.837930581596,33,14,0,0,False,"_errorID(XML_SUCCESS),"
+129,203.0,277,2201,0.837930581596,33,14,0,0,False,"_whitespaceMode( whitespaceMode ),"
+129,203.0,277,2202,0.837930581596,33,14,0,0,False,"_errorStr(),"
+129,203.0,277,2203,0.837930581596,33,14,0,0,False,"_errorLineNum( 0 ),"
+129,203.0,277,2204,0.837930581596,33,14,0,0,False,"_charBuffer( 0 ),"
+129,203.0,277,2205,0.837930581596,33,14,0,0,False,"_parseCurLineNum( 0 ),"
+129,203.0,277,2206,0.837930581596,33,14,0,0,False,"_parsingDepth(0),"
+129,203.0,277,2207,0.837930581596,33,14,0,0,False,"_unlinked(),"
+129,203.0,277,2208,0.837930581596,33,14,0,0,False,"_elementPool(),"
+129,203.0,277,2209,0.837930581596,33,14,0,0,False,"_attributePool(),"
+129,203.0,277,2210,0.837930581596,33,14,0,0,False,"_textPool(),"
+129,203.0,277,2211,0.837930581596,33,14,0,0,False,_commentPool()
+129,203.0,277,2214,0.837930581596,33,14,0,0,False,_document = this;
+129,203.0,277,2215,0.837930581596,33,14,0,0,False,}
+129,203.0,277,2237,0.837930581596,33,14,0,0,False,void XMLDocument::Clear()
+129,203.0,277,2239,0.837930581596,33,14,0,0,False,DeleteChildren();
+129,203.0,277,2240,0.837930581596,33,14,0,0,False,while( _unlinked.Size()) {
+129,203.0,277,2245,0.837930581596,33,14,0,0,False,const bool hadError = Error();
+129,203.0,277,2247,0.837930581596,33,14,0,0,False,ClearError();
+129,203.0,277,2249,0.837930581596,33,14,0,0,False,delete [] _charBuffer;
+129,203.0,277,2250,0.837930581596,33,14,0,0,False,_charBuffer = 0;
+129,203.0,277,2251,0.837930581596,33,14,0,0,False,_parsingDepth = 0;
+129,203.0,277,2261,0.837930581596,33,14,0,0,False,if ( !hadError ) {
+129,203.0,277,2262,0.837930581596,33,14,0,0,False,TIXMLASSERT( _elementPool.CurrentAllocs()   == _elementPool.Untracked() );
+129,203.0,277,2263,0.837930581596,33,14,0,0,False,TIXMLASSERT( _attributePool.CurrentAllocs() == _attributePool.Untracked() );
+129,203.0,277,2264,0.837930581596,33,14,0,0,False,TIXMLASSERT( _textPool.CurrentAllocs()      == _textPool.Untracked() );
+129,203.0,277,2265,0.837930581596,33,14,0,0,False,TIXMLASSERT( _commentPool.CurrentAllocs()   == _commentPool.Untracked() );
+129,203.0,277,2268,0.837930581596,33,14,0,0,False,}
+129,203.0,277,2323,0.837930581596,33,14,0,0,False,"static FILE* callfopen( const char* filepath, const char* mode )"
+129,203.0,277,2325,0.837930581596,33,14,0,0,False,TIXMLASSERT( filepath );
+129,203.0,277,2326,0.837930581596,33,14,0,0,False,TIXMLASSERT( mode );
+129,203.0,277,2334,0.837930581596,33,14,0,0,False,"FILE* fp = fopen( filepath, mode );"
+129,203.0,277,2336,0.837930581596,33,14,0,0,False,return fp;
+129,203.0,277,2357,0.837930581596,33,14,0,0,False,XMLError XMLDocument::LoadFile( const char* filename )
+129,203.0,277,2359,0.837930581596,33,14,0,0,False,if ( !filename ) {
+129,203.0,277,2365,0.837930581596,33,14,0,0,False,Clear();
+129,203.0,277,2366,0.837930581596,33,14,0,0,False,"FILE* fp = callfopen( filename, ""rb"" );"
+129,203.0,277,2367,0.837930581596,33,14,0,0,False,if ( !fp ) {
+129,203.0,277,2371,0.837930581596,33,14,0,0,False,LoadFile( fp );
+129,203.0,277,2376,0.837930581596,33,14,0,0,False,XMLError XMLDocument::LoadFile( FILE* fp )
+129,203.0,277,2378,0.837930581596,33,14,0,0,False,Clear();
+129,203.0,277,2380,0.837930581596,33,14,0,0,False,"TIXML_FSEEK( fp, 0, SEEK_SET );"
+129,203.0,277,2381,0.837930581596,33,14,0,0,False,if ( fgetc( fp ) == EOF && ferror( fp ) != 0 ) {
+129,203.0,277,2386,0.837930581596,33,14,0,0,False,"TIXML_FSEEK( fp, 0, SEEK_END );"
+129,203.0,277,2390,0.837930581596,33,14,0,0,False,const long long fileLengthSigned = TIXML_FTELL( fp );
+129,203.0,277,2391,0.837930581596,33,14,0,0,False,"TIXML_FSEEK( fp, 0, SEEK_SET );"
+129,203.0,277,2392,0.837930581596,33,14,0,0,False,if ( fileLengthSigned == -1L ) {
+129,203.0,277,2396,0.837930581596,33,14,0,0,False,TIXMLASSERT( fileLengthSigned >= 0 );
+129,203.0,277,2397,0.837930581596,33,14,0,0,False,filelength = static_cast<unsigned long long>(fileLengthSigned);
+129,203.0,277,2400,0.837930581596,33,14,0,0,False,const size_t maxSizeT = static_cast<size_t>(-1);
+129,203.0,277,2403,0.837930581596,33,14,0,0,False,if ( filelength >= static_cast<unsigned long long>(maxSizeT) ) {
+129,203.0,277,2409,0.837930581596,33,14,0,0,False,if ( filelength == 0 ) {
+129,203.0,277,2414,0.837930581596,33,14,0,0,False,const size_t size = static_cast<size_t>(filelength);
+129,203.0,277,2415,0.837930581596,33,14,0,0,False,TIXMLASSERT( _charBuffer == 0 );
+129,203.0,277,2416,0.837930581596,33,14,0,0,False,_charBuffer = new char[size+1];
+129,203.0,277,2417,0.837930581596,33,14,0,0,False,"const size_t read = fread( _charBuffer, 1, size, fp );"
+129,203.0,277,2418,0.837930581596,33,14,0,0,False,if ( read != size ) {
+129,203.0,277,2423,0.837930581596,33,14,0,0,False,_charBuffer[size] = 0;
+129,203.0,277,2425,0.837930581596,33,14,0,0,False,Parse();
+129,203.0,277,2503,0.837930581596,33,14,0,0,False,void XMLDocument::ClearError() {
+129,203.0,277,2504,0.837930581596,33,14,0,0,False,_errorID = XML_SUCCESS;
+129,203.0,277,2505,0.837930581596,33,14,0,0,False,_errorLineNum = 0;
+129,203.0,277,2506,0.837930581596,33,14,0,0,False,_errorStr.Reset();
+129,203.0,277,2507,0.837930581596,33,14,0,0,False,}
+129,203.0,277,2562,0.837930581596,33,14,0,0,False,void XMLDocument::Parse()
+129,203.0,277,2564,0.837930581596,33,14,0,0,False,TIXMLASSERT( NoChildren() ); // Clear() must have been called previously
+129,203.0,277,2565,0.837930581596,33,14,0,0,False,TIXMLASSERT( _charBuffer );
+129,203.0,277,2566,0.837930581596,33,14,0,0,False,_parseCurLineNum = 1;
+129,203.0,277,2567,0.837930581596,33,14,0,0,False,_parseLineNum = 1;
+129,203.0,277,2568,0.837930581596,33,14,0,0,False,char* p = _charBuffer;
+129,203.0,277,2569,0.837930581596,33,14,0,0,False,"p = XMLUtil::SkipWhiteSpace( p, &_parseCurLineNum );"
+129,203.0,277,2570,0.837930581596,33,14,0,0,False,"p = const_cast<char*>( XMLUtil::ReadBOM( p, &_writeBOM ) );"
+129,203.0,277,2571,0.837930581596,33,14,0,0,False,if ( !*p ) {
+129,203.0,277,2575,0.837930581596,33,14,0,0,False,"ParseDeep(p, 0, &_parseCurLineNum );"
+129,203.0,277,2578,0.837930581596,33,14,0,0,False,void XMLDocument::PushDepth()
+129,203.0,277,2580,0.837930581596,33,14,0,0,False,_parsingDepth++;
+129,203.0,277,2581,0.837930581596,33,14,0,0,False,if (_parsingDepth == TINYXML2_MAX_ELEMENT_DEPTH) {
+129,203.0,277,2584,0.837930581596,33,14,0,0,False,}
+278,283.5,289,228,0.174077655956,1,0,32,14,False,++(*curLineNumPtr);
+278,283.5,289,750,0.174077655956,1,0,32,14,False,returnNode = CreateUnlinkedNode<XMLComment>( _commentPool );
+278,283.5,289,751,0.174077655956,1,0,32,14,False,returnNode->_parseLineNum = _parseCurLineNum;
+278,283.5,289,752,0.174077655956,1,0,32,14,False,p += commentHeaderLen;
+278,283.5,289,1301,0.174077655956,1,0,32,14,False,XMLComment::XMLComment( XMLDocument* doc ) : XMLNode( doc )
+278,283.5,289,1303,0.174077655956,1,0,32,14,False,}
+278,283.5,289,1311,0.174077655956,1,0,32,14,False,"char* XMLComment::ParseDeep( char* p, StrPair*, int* curLineNumPtr )"
+278,283.5,289,1314,0.174077655956,1,0,32,14,False,"p = _value.ParseText( p, ""-->"", StrPair::COMMENT, curLineNumPtr );"
+278,283.5,289,1315,0.174077655956,1,0,32,14,False,if ( p == 0 ) {
+278,283.5,289,1318,0.174077655956,1,0,32,14,False,return p;
+278,283.5,289,2004,0.174077655956,1,0,32,14,False,TIXMLASSERT( prevAttribute->_next == 0 );
+278,283.5,289,2005,0.174077655956,1,0,32,14,False,prevAttribute->_next = attrib;
+290,307.5,325,157,0.164121987972,4,14,29,0,False,StrPair::~StrPair()
+290,307.5,325,159,0.164121987972,4,14,29,0,False,Reset();
+290,307.5,325,160,0.164121987972,4,14,29,0,False,}
+290,307.5,325,938,0.164121987972,4,14,29,0,False,XMLNode* XMLNode::InsertEndChild( XMLNode* addThis )
+290,307.5,325,940,0.164121987972,4,14,29,0,False,TIXMLASSERT( addThis );
+290,307.5,325,941,0.164121987972,4,14,29,0,False,if ( addThis->_document != _document ) {
+290,307.5,325,945,0.164121987972,4,14,29,0,False,InsertChildPreamble( addThis );
+290,307.5,325,947,0.164121987972,4,14,29,0,False,if ( _lastChild ) {
+290,307.5,325,957,0.164121987972,4,14,29,0,False,TIXMLASSERT( _firstChild == 0 );
+290,307.5,325,958,0.164121987972,4,14,29,0,False,_firstChild = _lastChild = addThis;
+290,307.5,325,960,0.164121987972,4,14,29,0,False,addThis->_prev = 0;
+290,307.5,325,961,0.164121987972,4,14,29,0,False,addThis->_next = 0;
+290,307.5,325,963,0.164121987972,4,14,29,0,False,addThis->_parent = this;
+290,307.5,325,964,0.164121987972,4,14,29,0,False,return addThis;
+290,307.5,325,1123,0.164121987972,4,14,29,0,False,if ( !p ) {
+290,307.5,325,1131,0.164121987972,4,14,29,0,False,const XMLDeclaration* const decl = node->ToDeclaration();
+290,307.5,325,1132,0.164121987972,4,14,29,0,False,if ( decl ) {
+290,307.5,325,1162,0.164121987972,4,14,29,0,False,XMLElement* ele = node->ToElement();
+290,307.5,325,1163,0.164121987972,4,14,29,0,False,if ( ele ) {
+290,307.5,325,1196,0.164121987972,4,14,29,0,False,InsertEndChild( node );
+290,307.5,325,1197,0.164121987972,4,14,29,0,False,}
+290,307.5,325,1216,0.164121987972,4,14,29,0,False,void XMLNode::InsertChildPreamble( XMLNode* insertThis ) const
+290,307.5,325,1218,0.164121987972,4,14,29,0,False,TIXMLASSERT( insertThis );
+290,307.5,325,1219,0.164121987972,4,14,29,0,False,TIXMLASSERT( insertThis->_document == _document );
+290,307.5,325,1221,0.164121987972,4,14,29,0,False,if (insertThis->_parent) {
+290,307.5,325,1225,0.164121987972,4,14,29,0,False,insertThis->_document->MarkInUse(insertThis);
+290,307.5,325,1226,0.164121987972,4,14,29,0,False,insertThis->_memPool->SetTracked();
+290,307.5,325,1228,0.164121987972,4,14,29,0,False,}
+290,307.5,325,2224,0.164121987972,4,14,29,0,False,void XMLDocument::MarkInUse(const XMLNode* const node)
+290,307.5,325,2226,0.164121987972,4,14,29,0,False,TIXMLASSERT(node);
+290,307.5,325,2227,0.164121987972,4,14,29,0,False,TIXMLASSERT(node->_parent == 0);
+290,307.5,325,2229,0.164121987972,4,14,29,0,False,for (int i = 0; i < _unlinked.Size(); ++i) {
+290,307.5,325,2230,0.164121987972,4,14,29,0,False,if (node == _unlinked[i]) {
+290,307.5,325,2231,0.164121987972,4,14,29,0,False,_unlinked.SwapRemove(i);
+290,307.5,325,2232,0.164121987972,4,14,29,0,False,break;
+290,307.5,325,2235,0.164121987972,4,14,29,0,False,}
+326,331.0,336,782,0.130558241967,3,13,30,1,False,returnNode = CreateUnlinkedNode<XMLText>( _textPool );
+326,331.0,336,783,0.130558241967,3,13,30,1,False,returnNode->_parseLineNum = _parseCurLineNum; // Report line of first non-whitespace character
+326,331.0,336,784,0.130558241967,3,13,30,1,False,"p = start;	// Back it up, all the text counts."
+326,331.0,336,785,0.130558241967,3,13,30,1,False,_parseCurLineNum = startLine;
+326,331.0,336,1246,0.130558241967,3,13,30,1,False,"char* XMLText::ParseDeep( char* p, StrPair*, int* curLineNumPtr )"
+326,331.0,336,1248,0.130558241967,3,13,30,1,False,if ( this->CData() ) {
+326,331.0,336,1256,0.130558241967,3,13,30,1,False,int flags = _document->ProcessEntities() ? StrPair::TEXT_ELEMENT : StrPair::TEXT_ELEMENT_LEAVE_ENTITIES;
+326,331.0,336,1257,0.130558241967,3,13,30,1,False,if ( _document->WhitespaceMode() == COLLAPSE_WHITESPACE ) {
+326,331.0,336,1261,0.130558241967,3,13,30,1,False,"p = _value.ParseText( p, ""<"", flags, curLineNumPtr );"
+326,331.0,336,1262,0.130558241967,3,13,30,1,False,if ( p && *p ) {
+326,331.0,336,1263,0.130558241967,3,13,30,1,False,return p-1;
+337,337.0,337,2111,0.123091490979,1,1,32,13,False,"p = XMLNode::ParseDeep( p, parentEndTag, curLineNumPtr );"
+338,340.0,342,2014,0.046524210520,1,13,32,1,False,else if ( *p == '>' ) {
+338,340.0,342,2015,0.046524210520,1,13,32,1,False,++p;
+338,340.0,342,2016,0.046524210520,1,13,32,1,False,break;
+338,340.0,342,2028,0.046524210520,1,13,32,1,False,return p;
+338,340.0,342,2107,0.046524210520,1,13,32,1,False,if ( !p || !*p || _closingType != OPEN ) {
+343,953.0,1563,94,0.000000000000,0,0,33,14,False,"static inline int TIXML_VSCPRINTF( const char* format, va_list va )"
+343,953.0,1563,96,0.000000000000,0,0,33,14,False,"int len = vsnprintf( 0, 0, format, va );"
+343,953.0,1563,97,0.000000000000,0,0,33,14,False,TIXMLASSERT( len >= 0 );
+343,953.0,1563,98,0.000000000000,0,0,33,14,False,return len;
+343,953.0,1563,163,0.000000000000,0,1,33,13,False,void StrPair::TransferTo( StrPair* other )
+343,953.0,1563,165,0.000000000000,0,1,33,13,False,if ( this == other ) {
+343,953.0,1563,166,0.000000000000,0,0,33,14,False,return;
+343,953.0,1563,171,0.000000000000,0,1,33,13,False,TIXMLASSERT( other != 0 );
+343,953.0,1563,172,0.000000000000,0,1,33,13,False,TIXMLASSERT( other->_flags == 0 );
+343,953.0,1563,173,0.000000000000,0,1,33,13,False,TIXMLASSERT( other->_start == 0 );
+343,953.0,1563,174,0.000000000000,0,1,33,13,False,TIXMLASSERT( other->_end == 0 );
+343,953.0,1563,176,0.000000000000,0,1,33,13,False,other->Reset();
+343,953.0,1563,178,0.000000000000,0,1,33,13,False,other->_flags = _flags;
+343,953.0,1563,179,0.000000000000,0,1,33,13,False,other->_start = _start;
+343,953.0,1563,180,0.000000000000,0,1,33,13,False,other->_end = _end;
+343,953.0,1563,182,0.000000000000,0,1,33,13,False,_flags = 0;
+343,953.0,1563,183,0.000000000000,0,1,33,13,False,_start = 0;
+343,953.0,1563,184,0.000000000000,0,1,33,13,False,_end = 0;
+343,953.0,1563,191,0.000000000000,0,0,33,14,False,delete [] _start;
+343,953.0,1563,199,0.000000000000,0,0,33,14,False,"void StrPair::SetStr( const char* str, int flags )"
+343,953.0,1563,201,0.000000000000,0,0,33,14,False,TIXMLASSERT( str );
+343,953.0,1563,202,0.000000000000,0,0,33,14,False,Reset();
+343,953.0,1563,203,0.000000000000,0,0,33,14,False,size_t len = strlen( str );
+343,953.0,1563,204,0.000000000000,0,0,33,14,False,TIXMLASSERT( _start == 0 );
+343,953.0,1563,205,0.000000000000,0,0,33,14,False,_start = new char[ len+1 ];
+343,953.0,1563,206,0.000000000000,0,0,33,14,False,"memcpy( _start, str, len+1 );"
+343,953.0,1563,207,0.000000000000,0,0,33,14,False,_end = _start + len;
+343,953.0,1563,208,0.000000000000,0,0,33,14,False,_flags = flags | NEEDS_DELETE;
+343,953.0,1563,209,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,233,0.000000000000,0,0,33,14,False,return 0;
+343,953.0,1563,240,0.000000000000,0,0,33,14,False,return 0;
+343,953.0,1563,243,0.000000000000,0,0,33,14,False,return 0;
+343,953.0,1563,257,0.000000000000,0,0,33,14,False,void StrPair::CollapseWhitespace()
+343,953.0,1563,260,0.000000000000,0,0,33,14,False,TIXMLASSERT( ( _flags & NEEDS_DELETE ) == 0 );
+343,953.0,1563,262,0.000000000000,0,0,33,14,False,"_start = XMLUtil::SkipWhiteSpace( _start, 0 );"
+343,953.0,1563,264,0.000000000000,0,0,33,14,False,if ( *_start ) {
+343,953.0,1563,265,0.000000000000,0,0,33,14,False,const char* p = _start;	// the read pointer
+343,953.0,1563,266,0.000000000000,0,0,33,14,False,char* q = _start;	// the write pointer
+343,953.0,1563,268,0.000000000000,0,0,33,14,False,while( *p ) {
+343,953.0,1563,269,0.000000000000,0,0,33,14,False,if ( XMLUtil::IsWhiteSpace( *p )) {
+343,953.0,1563,270,0.000000000000,0,0,33,14,False,"p = XMLUtil::SkipWhiteSpace( p, 0 );"
+343,953.0,1563,271,0.000000000000,0,0,33,14,False,if ( *p == 0 ) {
+343,953.0,1563,272,0.000000000000,0,0,33,14,False,break;    // don't write to q; this trims the trailing space.
+343,953.0,1563,274,0.000000000000,0,0,33,14,False,*q = ' ';
+343,953.0,1563,275,0.000000000000,0,0,33,14,False,++q;
+343,953.0,1563,277,0.000000000000,0,0,33,14,False,*q = *p;
+343,953.0,1563,278,0.000000000000,0,0,33,14,False,++q;
+343,953.0,1563,279,0.000000000000,0,0,33,14,False,++p;
+343,953.0,1563,281,0.000000000000,0,0,33,14,False,*q = 0;
+343,953.0,1563,283,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,303,0.000000000000,0,0,33,14,False,if ( *(p+1) == LF ) {
+343,953.0,1563,304,0.000000000000,0,0,33,14,False,p += 2;
+343,953.0,1563,307,0.000000000000,0,0,33,14,False,++p;
+343,953.0,1563,309,0.000000000000,0,0,33,14,False,*q = LF;
+343,953.0,1563,310,0.000000000000,0,0,33,14,False,++q;
+343,953.0,1563,313,0.000000000000,0,0,33,14,False,if ( *(p+1) == CR ) {
+343,953.0,1563,314,0.000000000000,0,0,33,14,False,p += 2;
+343,953.0,1563,317,0.000000000000,0,0,33,14,False,++p;
+343,953.0,1563,319,0.000000000000,0,0,33,14,False,*q = LF;
+343,953.0,1563,320,0.000000000000,0,0,33,14,False,++q;
+343,953.0,1563,333,0.000000000000,0,0,33,14,False,if ( adjusted == 0 ) {
+343,953.0,1563,334,0.000000000000,0,0,33,14,False,*q = *p;
+343,953.0,1563,335,0.000000000000,0,0,33,14,False,++p;
+343,953.0,1563,336,0.000000000000,0,0,33,14,False,++q;
+343,953.0,1563,339,0.000000000000,0,0,33,14,False,TIXMLASSERT( 0 <= len && len <= buflen );
+343,953.0,1563,340,0.000000000000,0,0,33,14,False,TIXMLASSERT( q + len <= adjusted );
+343,953.0,1563,341,0.000000000000,0,0,33,14,False,p = adjusted;
+343,953.0,1563,342,0.000000000000,0,0,33,14,False,"memcpy( q, buf, len );"
+343,953.0,1563,343,0.000000000000,0,0,33,14,False,q += len;
+343,953.0,1563,347,0.000000000000,0,0,33,14,False,bool entityFound = false;
+343,953.0,1563,348,0.000000000000,0,0,33,14,False,for( int i = 0; i < NUM_ENTITIES; ++i ) {
+343,953.0,1563,349,0.000000000000,0,0,33,14,False,const Entity& entity = entities[i];
+343,953.0,1563,350,0.000000000000,0,0,33,14,False,"if ( strncmp( p + 1, entity.pattern, entity.length ) == 0"
+343,953.0,1563,351,0.000000000000,0,0,33,14,False,&& *( p + entity.length + 1 ) == ';' ) {
+343,953.0,1563,353,0.000000000000,0,0,33,14,False,*q = entity.value;
+343,953.0,1563,354,0.000000000000,0,0,33,14,False,++q;
+343,953.0,1563,355,0.000000000000,0,0,33,14,False,p += entity.length + 2;
+343,953.0,1563,356,0.000000000000,0,0,33,14,False,entityFound = true;
+343,953.0,1563,357,0.000000000000,0,0,33,14,False,break;
+343,953.0,1563,360,0.000000000000,0,0,33,14,False,if ( !entityFound ) {
+343,953.0,1563,362,0.000000000000,0,0,33,14,False,++p;
+343,953.0,1563,363,0.000000000000,0,0,33,14,False,++q;
+343,953.0,1563,366,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,373,0.000000000000,0,0,33,14,False,*q = 0;
+343,953.0,1563,378,0.000000000000,0,0,33,14,False,CollapseWhitespace();
+343,953.0,1563,394,0.000000000000,0,0,33,14,False,"void XMLUtil::SetBoolSerialization(const char* writeTrue, const char* writeFalse)"
+343,953.0,1563,399,0.000000000000,0,0,33,14,False,writeBoolTrue = (writeTrue) ? writeTrue : defTrue;
+343,953.0,1563,400,0.000000000000,0,0,33,14,False,writeBoolFalse = (writeFalse) ? writeFalse : defFalse;
+343,953.0,1563,401,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,412,0.000000000000,0,0,33,14,False,&& *(pu+1) == TIXML_UTF_LEAD_1
+343,953.0,1563,413,0.000000000000,0,0,33,14,False,&& *(pu+2) == TIXML_UTF_LEAD_2 ) {
+343,953.0,1563,414,0.000000000000,0,0,33,14,False,*bom = true;
+343,953.0,1563,415,0.000000000000,0,0,33,14,False,p += 3;
+343,953.0,1563,422,0.000000000000,0,0,33,14,False,"void XMLUtil::ConvertUTF32ToUTF8( unsigned long input, char* output, int* length )"
+343,953.0,1563,424,0.000000000000,0,0,33,14,False,const unsigned long BYTE_MASK = 0xBF;
+343,953.0,1563,425,0.000000000000,0,0,33,14,False,const unsigned long BYTE_MARK = 0x80;
+343,953.0,1563,426,0.000000000000,0,0,33,14,False,"const unsigned long FIRST_BYTE_MARK[7] = { 0x00, 0x00, 0xC0, 0xE0, 0xF0, 0xF8, 0xFC };"
+343,953.0,1563,428,0.000000000000,0,0,33,14,False,if (input < 0x80) {
+343,953.0,1563,429,0.000000000000,0,0,33,14,False,*length = 1;
+343,953.0,1563,431,0.000000000000,0,0,33,14,False,else if ( input < 0x800 ) {
+343,953.0,1563,432,0.000000000000,0,0,33,14,False,*length = 2;
+343,953.0,1563,434,0.000000000000,0,0,33,14,False,else if ( input < 0x10000 ) {
+343,953.0,1563,435,0.000000000000,0,0,33,14,False,*length = 3;
+343,953.0,1563,437,0.000000000000,0,0,33,14,False,else if ( input < 0x200000 ) {
+343,953.0,1563,438,0.000000000000,0,0,33,14,False,*length = 4;
+343,953.0,1563,441,0.000000000000,0,0,33,14,False,*length = 0;    // This code won't convert this correctly anyway.
+343,953.0,1563,442,0.000000000000,0,0,33,14,False,return;
+343,953.0,1563,445,0.000000000000,0,0,33,14,False,output += *length;
+343,953.0,1563,449,0.000000000000,0,0,33,14,False,switch (*length) {
+343,953.0,1563,450,0.000000000000,0,0,33,14,False,case 4:
+343,953.0,1563,451,0.000000000000,0,0,33,14,False,--output;
+343,953.0,1563,452,0.000000000000,0,0,33,14,False,*output = static_cast<char>((input | BYTE_MARK) & BYTE_MASK);
+343,953.0,1563,453,0.000000000000,0,0,33,14,False,input >>= 6;
+343,953.0,1563,455,0.000000000000,0,0,33,14,False,case 3:
+343,953.0,1563,456,0.000000000000,0,0,33,14,False,--output;
+343,953.0,1563,457,0.000000000000,0,0,33,14,False,*output = static_cast<char>((input | BYTE_MARK) & BYTE_MASK);
+343,953.0,1563,458,0.000000000000,0,0,33,14,False,input >>= 6;
+343,953.0,1563,460,0.000000000000,0,0,33,14,False,case 2:
+343,953.0,1563,461,0.000000000000,0,0,33,14,False,--output;
+343,953.0,1563,462,0.000000000000,0,0,33,14,False,*output = static_cast<char>((input | BYTE_MARK) & BYTE_MASK);
+343,953.0,1563,463,0.000000000000,0,0,33,14,False,input >>= 6;
+343,953.0,1563,465,0.000000000000,0,0,33,14,False,case 1:
+343,953.0,1563,466,0.000000000000,0,0,33,14,False,--output;
+343,953.0,1563,467,0.000000000000,0,0,33,14,False,*output = static_cast<char>(input | FIRST_BYTE_MARK[*length]);
+343,953.0,1563,468,0.000000000000,0,0,33,14,False,break;
+343,953.0,1563,469,0.000000000000,0,0,33,14,False,default:
+343,953.0,1563,470,0.000000000000,0,0,33,14,False,TIXMLASSERT( false );
+343,953.0,1563,489,0.000000000000,0,0,33,14,False,const char* q = p+3;
+343,953.0,1563,490,0.000000000000,0,0,33,14,False,if ( !(*q) ) {
+343,953.0,1563,491,0.000000000000,0,0,33,14,False,return 0;
+343,953.0,1563,494,0.000000000000,0,0,33,14,False,"q = strchr( q, SEMICOLON );"
+343,953.0,1563,496,0.000000000000,0,0,33,14,False,if ( !q ) {
+343,953.0,1563,497,0.000000000000,0,0,33,14,False,return 0;
+343,953.0,1563,499,0.000000000000,0,0,33,14,False,TIXMLASSERT( *q == SEMICOLON );
+343,953.0,1563,501,0.000000000000,0,0,33,14,False,delta = q-p;
+343,953.0,1563,502,0.000000000000,0,0,33,14,False,--q;
+343,953.0,1563,504,0.000000000000,0,0,33,14,False,while ( *q != 'x' ) {
+343,953.0,1563,505,0.000000000000,0,0,33,14,False,unsigned int digit = 0;
+343,953.0,1563,507,0.000000000000,0,0,33,14,False,if ( *q >= '0' && *q <= '9' ) {
+343,953.0,1563,508,0.000000000000,0,0,33,14,False,digit = *q - '0';
+343,953.0,1563,510,0.000000000000,0,0,33,14,False,else if ( *q >= 'a' && *q <= 'f' ) {
+343,953.0,1563,511,0.000000000000,0,0,33,14,False,digit = *q - 'a' + 10;
+343,953.0,1563,513,0.000000000000,0,0,33,14,False,else if ( *q >= 'A' && *q <= 'F' ) {
+343,953.0,1563,514,0.000000000000,0,0,33,14,False,digit = *q - 'A' + 10;
+343,953.0,1563,517,0.000000000000,0,0,33,14,False,return 0;
+343,953.0,1563,519,0.000000000000,0,0,33,14,False,TIXMLASSERT( digit < 16 );
+343,953.0,1563,520,0.000000000000,0,0,33,14,False,TIXMLASSERT( digit == 0 || mult <= UINT_MAX / digit );
+343,953.0,1563,521,0.000000000000,0,0,33,14,False,const unsigned int digitScaled = mult * digit;
+343,953.0,1563,522,0.000000000000,0,0,33,14,False,TIXMLASSERT( ucs <= ULONG_MAX - digitScaled );
+343,953.0,1563,523,0.000000000000,0,0,33,14,False,ucs += digitScaled;
+343,953.0,1563,524,0.000000000000,0,0,33,14,False,TIXMLASSERT( mult <= UINT_MAX / 16 );
+343,953.0,1563,525,0.000000000000,0,0,33,14,False,mult *= 16;
+343,953.0,1563,526,0.000000000000,0,0,33,14,False,--q;
+343,953.0,1563,533,0.000000000000,0,0,33,14,False,return 0;
+343,953.0,1563,539,0.000000000000,0,0,33,14,False,return 0;
+343,953.0,1563,556,0.000000000000,0,0,33,14,False,return 0;
+343,953.0,1563,564,0.000000000000,0,0,33,14,False,"ConvertUTF32ToUTF8( ucs, value, length );"
+343,953.0,1563,565,0.000000000000,0,0,33,14,False,return p + delta + 1;
+343,953.0,1563,567,0.000000000000,0,0,33,14,False,return p+1;
+343,953.0,1563,571,0.000000000000,0,0,33,14,False,"void XMLUtil::ToStr( int v, char* buffer, int bufferSize )"
+343,953.0,1563,573,0.000000000000,0,0,33,14,False,"TIXML_SNPRINTF( buffer, bufferSize, ""%d"", v );"
+343,953.0,1563,574,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,577,0.000000000000,0,0,33,14,False,"void XMLUtil::ToStr( unsigned v, char* buffer, int bufferSize )"
+343,953.0,1563,579,0.000000000000,0,0,33,14,False,"TIXML_SNPRINTF( buffer, bufferSize, ""%u"", v );"
+343,953.0,1563,580,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,583,0.000000000000,0,0,33,14,False,"void XMLUtil::ToStr( bool v, char* buffer, int bufferSize )"
+343,953.0,1563,585,0.000000000000,0,0,33,14,False,"TIXML_SNPRINTF( buffer, bufferSize, ""%s"", v ? writeBoolTrue : writeBoolFalse);"
+343,953.0,1563,586,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,592,0.000000000000,0,0,33,14,False,"void XMLUtil::ToStr( float v, char* buffer, int bufferSize )"
+343,953.0,1563,594,0.000000000000,0,0,33,14,False,"TIXML_SNPRINTF( buffer, bufferSize, ""%.8g"", v );"
+343,953.0,1563,595,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,598,0.000000000000,0,0,33,14,False,"void XMLUtil::ToStr( double v, char* buffer, int bufferSize )"
+343,953.0,1563,600,0.000000000000,0,0,33,14,False,"TIXML_SNPRINTF( buffer, bufferSize, ""%.17g"", v );"
+343,953.0,1563,601,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,604,0.000000000000,0,0,33,14,False,"void XMLUtil::ToStr( int64_t v, char* buffer, int bufferSize )"
+343,953.0,1563,607,0.000000000000,0,0,33,14,False,"TIXML_SNPRINTF(buffer, bufferSize, ""%lld"", static_cast<long long>(v));"
+343,953.0,1563,608,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,610,0.000000000000,0,0,33,14,False,"void XMLUtil::ToStr( uint64_t v, char* buffer, int bufferSize )"
+343,953.0,1563,613,0.000000000000,0,0,33,14,False,"TIXML_SNPRINTF(buffer, bufferSize, ""%llu"", (long long)v);"
+343,953.0,1563,614,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,616,0.000000000000,0,0,33,14,False,"bool XMLUtil::ToInt(const char* str, int* value)"
+343,953.0,1563,618,0.000000000000,0,0,33,14,False,if (IsPrefixHex(str)) {
+343,953.0,1563,620,0.000000000000,0,0,33,14,False,"if (TIXML_SSCANF(str, ""%x"", &v) == 1) {"
+343,953.0,1563,621,0.000000000000,0,0,33,14,False,*value = static_cast<int>(v);
+343,953.0,1563,622,0.000000000000,0,0,33,14,False,return true;
+343,953.0,1563,626,0.000000000000,0,0,33,14,False,"if (TIXML_SSCANF(str, ""%d"", value) == 1) {"
+343,953.0,1563,627,0.000000000000,0,0,33,14,False,return true;
+343,953.0,1563,630,0.000000000000,0,0,33,14,False,return false;
+343,953.0,1563,633,0.000000000000,0,0,33,14,False,"bool XMLUtil::ToUnsigned(const char* str, unsigned* value)"
+343,953.0,1563,635,0.000000000000,0,0,33,14,False,"if (TIXML_SSCANF(str, IsPrefixHex(str) ? ""%x"" : ""%u"", value) == 1) {"
+343,953.0,1563,636,0.000000000000,0,0,33,14,False,return true;
+343,953.0,1563,638,0.000000000000,0,0,33,14,False,return false;
+343,953.0,1563,641,0.000000000000,0,0,33,14,False,"bool XMLUtil::ToBool( const char* str, bool* value )"
+343,953.0,1563,643,0.000000000000,0,0,33,14,False,int ival = 0;
+343,953.0,1563,644,0.000000000000,0,0,33,14,False,"if ( ToInt( str, &ival )) {"
+343,953.0,1563,645,0.000000000000,0,0,33,14,False,*value = (ival==0) ? false : true;
+343,953.0,1563,646,0.000000000000,0,0,33,14,False,return true;
+343,953.0,1563,651,0.000000000000,0,0,33,14,False,for (int i = 0; TRUE_VALS[i]; ++i) {
+343,953.0,1563,652,0.000000000000,0,0,33,14,False,"if (StringEqual(str, TRUE_VALS[i])) {"
+343,953.0,1563,653,0.000000000000,0,0,33,14,False,*value = true;
+343,953.0,1563,654,0.000000000000,0,0,33,14,False,return true;
+343,953.0,1563,657,0.000000000000,0,0,33,14,False,for (int i = 0; FALSE_VALS[i]; ++i) {
+343,953.0,1563,658,0.000000000000,0,0,33,14,False,"if (StringEqual(str, FALSE_VALS[i])) {"
+343,953.0,1563,659,0.000000000000,0,0,33,14,False,*value = false;
+343,953.0,1563,660,0.000000000000,0,0,33,14,False,return true;
+343,953.0,1563,663,0.000000000000,0,0,33,14,False,return false;
+343,953.0,1563,667,0.000000000000,0,0,33,14,False,"bool XMLUtil::ToFloat( const char* str, float* value )"
+343,953.0,1563,669,0.000000000000,0,0,33,14,False,"if ( TIXML_SSCANF( str, ""%f"", value ) == 1 ) {"
+343,953.0,1563,670,0.000000000000,0,0,33,14,False,return true;
+343,953.0,1563,672,0.000000000000,0,0,33,14,False,return false;
+343,953.0,1563,676,0.000000000000,0,0,33,14,False,"bool XMLUtil::ToDouble( const char* str, double* value )"
+343,953.0,1563,678,0.000000000000,0,0,33,14,False,"if ( TIXML_SSCANF( str, ""%lf"", value ) == 1 ) {"
+343,953.0,1563,679,0.000000000000,0,0,33,14,False,return true;
+343,953.0,1563,681,0.000000000000,0,0,33,14,False,return false;
+343,953.0,1563,685,0.000000000000,0,0,33,14,False,"bool XMLUtil::ToInt64(const char* str, int64_t* value)"
+343,953.0,1563,687,0.000000000000,0,0,33,14,False,if (IsPrefixHex(str)) {
+343,953.0,1563,688,0.000000000000,0,0,33,14,False,unsigned long long v = 0;	// horrible syntax trick to make the compiler happy about %llx
+343,953.0,1563,689,0.000000000000,0,0,33,14,False,"if (TIXML_SSCANF(str, ""%llx"", &v) == 1) {"
+343,953.0,1563,690,0.000000000000,0,0,33,14,False,*value = static_cast<int64_t>(v);
+343,953.0,1563,691,0.000000000000,0,0,33,14,False,return true;
+343,953.0,1563,695,0.000000000000,0,0,33,14,False,long long v = 0;	// horrible syntax trick to make the compiler happy about %lld
+343,953.0,1563,696,0.000000000000,0,0,33,14,False,"if (TIXML_SSCANF(str, ""%lld"", &v) == 1) {"
+343,953.0,1563,697,0.000000000000,0,0,33,14,False,*value = static_cast<int64_t>(v);
+343,953.0,1563,698,0.000000000000,0,0,33,14,False,return true;
+343,953.0,1563,701,0.000000000000,0,0,33,14,False,return false;
+343,953.0,1563,705,0.000000000000,0,0,33,14,False,"bool XMLUtil::ToUnsigned64(const char* str, uint64_t* value) {"
+343,953.0,1563,706,0.000000000000,0,0,33,14,False,unsigned long long v = 0;	// horrible syntax trick to make the compiler happy about %llu
+343,953.0,1563,707,0.000000000000,0,0,33,14,False,"if(TIXML_SSCANF(str, IsPrefixHex(str) ? ""%llx"" : ""%llu"", &v) == 1) {"
+343,953.0,1563,708,0.000000000000,0,0,33,14,False,*value = (uint64_t)v;
+343,953.0,1563,709,0.000000000000,0,0,33,14,False,return true;
+343,953.0,1563,711,0.000000000000,0,0,33,14,False,return false;
+343,953.0,1563,723,0.000000000000,0,0,33,14,False,*node = 0;
+343,953.0,1563,724,0.000000000000,0,0,33,14,False,TIXMLASSERT( p );
+343,953.0,1563,725,0.000000000000,0,0,33,14,False,return p;
+343,953.0,1563,745,0.000000000000,0,1,33,13,False,returnNode = CreateUnlinkedNode<XMLDeclaration>( _commentPool );
+343,953.0,1563,746,0.000000000000,0,1,33,13,False,returnNode->_parseLineNum = _parseCurLineNum;
+343,953.0,1563,747,0.000000000000,0,1,33,13,False,p += xmlHeaderLen;
+343,953.0,1563,755,0.000000000000,0,0,33,14,False,XMLText* text = CreateUnlinkedNode<XMLText>( _textPool );
+343,953.0,1563,756,0.000000000000,0,0,33,14,False,returnNode = text;
+343,953.0,1563,757,0.000000000000,0,0,33,14,False,returnNode->_parseLineNum = _parseCurLineNum;
+343,953.0,1563,758,0.000000000000,0,0,33,14,False,p += cdataHeaderLen;
+343,953.0,1563,759,0.000000000000,0,0,33,14,False,text->SetCData( true );
+343,953.0,1563,762,0.000000000000,0,0,33,14,False,returnNode = CreateUnlinkedNode<XMLUnknown>( _commentPool );
+343,953.0,1563,763,0.000000000000,0,0,33,14,False,returnNode->_parseLineNum = _parseCurLineNum;
+343,953.0,1563,764,0.000000000000,0,0,33,14,False,p += dtdHeaderLen;
+343,953.0,1563,770,0.000000000000,0,0,33,14,False,returnNode = CreateUnlinkedNode<XMLText>(_textPool);
+343,953.0,1563,771,0.000000000000,0,0,33,14,False,returnNode->_parseLineNum = startLine;
+343,953.0,1563,772,0.000000000000,0,0,33,14,False,"p = start;	// Back it up, all the text counts."
+343,953.0,1563,773,0.000000000000,0,0,33,14,False,_parseCurLineNum = startLine;
+343,953.0,1563,795,0.000000000000,0,0,33,14,False,bool XMLDocument::Accept( XMLVisitor* visitor ) const
+343,953.0,1563,797,0.000000000000,0,0,33,14,False,TIXMLASSERT( visitor );
+343,953.0,1563,798,0.000000000000,0,0,33,14,False,if ( visitor->VisitEnter( *this ) ) {
+343,953.0,1563,799,0.000000000000,0,0,33,14,False,for ( const XMLNode* node=FirstChild(); node; node=node->NextSibling() ) {
+343,953.0,1563,800,0.000000000000,0,0,33,14,False,if ( !node->Accept( visitor ) ) {
+343,953.0,1563,801,0.000000000000,0,0,33,14,False,break;
+343,953.0,1563,805,0.000000000000,0,0,33,14,False,return visitor->VisitExit( *this );
+343,953.0,1563,824,0.000000000000,0,14,33,0,False,XMLNode::~XMLNode()
+343,953.0,1563,826,0.000000000000,0,14,33,0,False,DeleteChildren();
+343,953.0,1563,827,0.000000000000,0,14,33,0,False,if ( _parent ) {
+343,953.0,1563,828,0.000000000000,0,0,33,14,False,_parent->Unlink( this );
+343,953.0,1563,830,0.000000000000,0,14,33,0,False,}
+343,953.0,1563,834,0.000000000000,0,0,33,14,False,int XMLNode::ChildElementCount(const char *value) const {
+343,953.0,1563,835,0.000000000000,0,0,33,14,False,int count = 0;
+343,953.0,1563,837,0.000000000000,0,0,33,14,False,const XMLElement *e = FirstChildElement(value);
+343,953.0,1563,839,0.000000000000,0,0,33,14,False,while (e) {
+343,953.0,1563,840,0.000000000000,0,0,33,14,False,e = e->NextSiblingElement(value);
+343,953.0,1563,841,0.000000000000,0,0,33,14,False,count++;
+343,953.0,1563,844,0.000000000000,0,0,33,14,False,return count;
+343,953.0,1563,847,0.000000000000,0,0,33,14,False,int XMLNode::ChildElementCount() const {
+343,953.0,1563,848,0.000000000000,0,0,33,14,False,int count = 0;
+343,953.0,1563,850,0.000000000000,0,0,33,14,False,const XMLElement *e = FirstChildElement();
+343,953.0,1563,852,0.000000000000,0,0,33,14,False,while (e) {
+343,953.0,1563,853,0.000000000000,0,0,33,14,False,e = e->NextSiblingElement();
+343,953.0,1563,854,0.000000000000,0,0,33,14,False,count++;
+343,953.0,1563,857,0.000000000000,0,0,33,14,False,return count;
+343,953.0,1563,860,0.000000000000,0,1,33,13,False,const char* XMLNode::Value() const
+343,953.0,1563,863,0.000000000000,0,1,33,13,False,if ( this->ToDocument() )
+343,953.0,1563,864,0.000000000000,0,0,33,14,False,return 0;
+343,953.0,1563,865,0.000000000000,0,1,33,13,False,return _value.GetStr();
+343,953.0,1563,868,0.000000000000,0,0,33,14,False,"void XMLNode::SetValue( const char* str, bool staticMem )"
+343,953.0,1563,870,0.000000000000,0,0,33,14,False,if ( staticMem ) {
+343,953.0,1563,871,0.000000000000,0,0,33,14,False,_value.SetInternedStr( str );
+343,953.0,1563,874,0.000000000000,0,0,33,14,False,_value.SetStr( str );
+343,953.0,1563,876,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,878,0.000000000000,0,0,33,14,False,XMLNode* XMLNode::DeepClone(XMLDocument* target) const
+343,953.0,1563,880,0.000000000000,0,0,33,14,False,XMLNode* clone = this->ShallowClone(target);
+343,953.0,1563,881,0.000000000000,0,0,33,14,False,if (!clone) return 0;
+343,953.0,1563,883,0.000000000000,0,0,33,14,False,for (const XMLNode* child = this->FirstChild(); child; child = child->NextSibling()) {
+343,953.0,1563,884,0.000000000000,0,0,33,14,False,XMLNode* childClone = child->DeepClone(target);
+343,953.0,1563,885,0.000000000000,0,0,33,14,False,TIXMLASSERT(childClone);
+343,953.0,1563,886,0.000000000000,0,0,33,14,False,clone->InsertEndChild(childClone);
+343,953.0,1563,888,0.000000000000,0,0,33,14,False,return clone;
+343,953.0,1563,894,0.000000000000,0,14,33,0,False,TIXMLASSERT( _lastChild );
+343,953.0,1563,895,0.000000000000,0,14,33,0,False,DeleteChild( _firstChild );
+343,953.0,1563,901,0.000000000000,0,14,33,0,False,void XMLNode::Unlink( XMLNode* child )
+343,953.0,1563,903,0.000000000000,0,14,33,0,False,TIXMLASSERT( child );
+343,953.0,1563,904,0.000000000000,0,14,33,0,False,TIXMLASSERT( child->_document == _document );
+343,953.0,1563,905,0.000000000000,0,14,33,0,False,TIXMLASSERT( child->_parent == this );
+343,953.0,1563,906,0.000000000000,0,14,33,0,False,if ( child == _firstChild ) {
+343,953.0,1563,907,0.000000000000,0,14,33,0,False,_firstChild = _firstChild->_next;
+343,953.0,1563,909,0.000000000000,0,14,33,0,False,if ( child == _lastChild ) {
+343,953.0,1563,910,0.000000000000,0,14,33,0,False,_lastChild = _lastChild->_prev;
+343,953.0,1563,913,0.000000000000,0,14,33,0,False,if ( child->_prev ) {
+343,953.0,1563,914,0.000000000000,0,0,33,14,False,child->_prev->_next = child->_next;
+343,953.0,1563,916,0.000000000000,0,14,33,0,False,if ( child->_next ) {
+343,953.0,1563,917,0.000000000000,0,1,33,13,False,child->_next->_prev = child->_prev;
+343,953.0,1563,919,0.000000000000,0,14,33,0,False,child->_next = 0;
+343,953.0,1563,920,0.000000000000,0,14,33,0,False,child->_prev = 0;
+343,953.0,1563,921,0.000000000000,0,14,33,0,False,child->_parent = 0;
+343,953.0,1563,922,0.000000000000,0,14,33,0,False,}
+343,953.0,1563,925,0.000000000000,0,14,33,0,False,void XMLNode::DeleteChild( XMLNode* node )
+343,953.0,1563,927,0.000000000000,0,14,33,0,False,TIXMLASSERT( node );
+343,953.0,1563,928,0.000000000000,0,14,33,0,False,TIXMLASSERT( node->_document == _document );
+343,953.0,1563,929,0.000000000000,0,14,33,0,False,TIXMLASSERT( node->_parent == this );
+343,953.0,1563,930,0.000000000000,0,14,33,0,False,Unlink( node );
+343,953.0,1563,931,0.000000000000,0,14,33,0,False,TIXMLASSERT(node->_prev == 0);
+343,953.0,1563,932,0.000000000000,0,14,33,0,False,TIXMLASSERT(node->_next == 0);
+343,953.0,1563,933,0.000000000000,0,14,33,0,False,TIXMLASSERT(node->_parent == 0);
+343,953.0,1563,934,0.000000000000,0,14,33,0,False,DeleteNode( node );
+343,953.0,1563,935,0.000000000000,0,14,33,0,False,}
+343,953.0,1563,942,0.000000000000,0,0,33,14,False,TIXMLASSERT( false );
+343,953.0,1563,948,0.000000000000,0,1,33,13,False,TIXMLASSERT( _firstChild );
+343,953.0,1563,949,0.000000000000,0,1,33,13,False,TIXMLASSERT( _lastChild->_next == 0 );
+343,953.0,1563,950,0.000000000000,0,1,33,13,False,_lastChild->_next = addThis;
+343,953.0,1563,951,0.000000000000,0,1,33,13,False,addThis->_prev = _lastChild;
+343,953.0,1563,952,0.000000000000,0,1,33,13,False,_lastChild = addThis;
+343,953.0,1563,954,0.000000000000,0,1,33,13,False,addThis->_next = 0;
+343,953.0,1563,968,0.000000000000,0,0,33,14,False,XMLNode* XMLNode::InsertFirstChild( XMLNode* addThis )
+343,953.0,1563,970,0.000000000000,0,0,33,14,False,TIXMLASSERT( addThis );
+343,953.0,1563,971,0.000000000000,0,0,33,14,False,if ( addThis->_document != _document ) {
+343,953.0,1563,972,0.000000000000,0,0,33,14,False,TIXMLASSERT( false );
+343,953.0,1563,975,0.000000000000,0,0,33,14,False,InsertChildPreamble( addThis );
+343,953.0,1563,977,0.000000000000,0,0,33,14,False,if ( _firstChild ) {
+343,953.0,1563,978,0.000000000000,0,0,33,14,False,TIXMLASSERT( _lastChild );
+343,953.0,1563,979,0.000000000000,0,0,33,14,False,TIXMLASSERT( _firstChild->_prev == 0 );
+343,953.0,1563,981,0.000000000000,0,0,33,14,False,_firstChild->_prev = addThis;
+343,953.0,1563,982,0.000000000000,0,0,33,14,False,addThis->_next = _firstChild;
+343,953.0,1563,983,0.000000000000,0,0,33,14,False,_firstChild = addThis;
+343,953.0,1563,985,0.000000000000,0,0,33,14,False,addThis->_prev = 0;
+343,953.0,1563,988,0.000000000000,0,0,33,14,False,TIXMLASSERT( _lastChild == 0 );
+343,953.0,1563,989,0.000000000000,0,0,33,14,False,_firstChild = _lastChild = addThis;
+343,953.0,1563,991,0.000000000000,0,0,33,14,False,addThis->_prev = 0;
+343,953.0,1563,992,0.000000000000,0,0,33,14,False,addThis->_next = 0;
+343,953.0,1563,994,0.000000000000,0,0,33,14,False,addThis->_parent = this;
+343,953.0,1563,995,0.000000000000,0,0,33,14,False,return addThis;
+343,953.0,1563,999,0.000000000000,0,0,33,14,False,"XMLNode* XMLNode::InsertAfterChild( XMLNode* afterThis, XMLNode* addThis )"
+343,953.0,1563,1001,0.000000000000,0,0,33,14,False,TIXMLASSERT( addThis );
+343,953.0,1563,1002,0.000000000000,0,0,33,14,False,if ( addThis->_document != _document ) {
+343,953.0,1563,1003,0.000000000000,0,0,33,14,False,TIXMLASSERT( false );
+343,953.0,1563,1007,0.000000000000,0,0,33,14,False,TIXMLASSERT( afterThis );
+343,953.0,1563,1009,0.000000000000,0,0,33,14,False,if ( afterThis->_parent != this ) {
+343,953.0,1563,1010,0.000000000000,0,0,33,14,False,TIXMLASSERT( false );
+343,953.0,1563,1013,0.000000000000,0,0,33,14,False,if ( afterThis == addThis ) {
+343,953.0,1563,1018,0.000000000000,0,0,33,14,False,return addThis;
+343,953.0,1563,1021,0.000000000000,0,0,33,14,False,if ( afterThis->_next == 0 ) {
+343,953.0,1563,1023,0.000000000000,0,0,33,14,False,return InsertEndChild( addThis );
+343,953.0,1563,1025,0.000000000000,0,0,33,14,False,InsertChildPreamble( addThis );
+343,953.0,1563,1026,0.000000000000,0,0,33,14,False,addThis->_prev = afterThis;
+343,953.0,1563,1027,0.000000000000,0,0,33,14,False,addThis->_next = afterThis->_next;
+343,953.0,1563,1028,0.000000000000,0,0,33,14,False,afterThis->_next->_prev = addThis;
+343,953.0,1563,1029,0.000000000000,0,0,33,14,False,afterThis->_next = addThis;
+343,953.0,1563,1030,0.000000000000,0,0,33,14,False,addThis->_parent = this;
+343,953.0,1563,1031,0.000000000000,0,0,33,14,False,return addThis;
+343,953.0,1563,1037,0.000000000000,0,0,33,14,False,const XMLElement* XMLNode::FirstChildElement( const char* name ) const
+343,953.0,1563,1039,0.000000000000,0,0,33,14,False,for( const XMLNode* node = _firstChild; node; node = node->_next ) {
+343,953.0,1563,1040,0.000000000000,0,0,33,14,False,const XMLElement* element = node->ToElementWithName( name );
+343,953.0,1563,1041,0.000000000000,0,0,33,14,False,if ( element ) {
+343,953.0,1563,1042,0.000000000000,0,0,33,14,False,return element;
+343,953.0,1563,1045,0.000000000000,0,0,33,14,False,return 0;
+343,953.0,1563,1049,0.000000000000,0,0,33,14,False,const XMLElement* XMLNode::LastChildElement( const char* name ) const
+343,953.0,1563,1051,0.000000000000,0,0,33,14,False,for( const XMLNode* node = _lastChild; node; node = node->_prev ) {
+343,953.0,1563,1052,0.000000000000,0,0,33,14,False,const XMLElement* element = node->ToElementWithName( name );
+343,953.0,1563,1053,0.000000000000,0,0,33,14,False,if ( element ) {
+343,953.0,1563,1054,0.000000000000,0,0,33,14,False,return element;
+343,953.0,1563,1057,0.000000000000,0,0,33,14,False,return 0;
+343,953.0,1563,1061,0.000000000000,0,0,33,14,False,const XMLElement* XMLNode::NextSiblingElement( const char* name ) const
+343,953.0,1563,1063,0.000000000000,0,0,33,14,False,for( const XMLNode* node = _next; node; node = node->_next ) {
+343,953.0,1563,1064,0.000000000000,0,0,33,14,False,const XMLElement* element = node->ToElementWithName( name );
+343,953.0,1563,1065,0.000000000000,0,0,33,14,False,if ( element ) {
+343,953.0,1563,1066,0.000000000000,0,0,33,14,False,return element;
+343,953.0,1563,1069,0.000000000000,0,0,33,14,False,return 0;
+343,953.0,1563,1073,0.000000000000,0,0,33,14,False,const XMLElement* XMLNode::PreviousSiblingElement( const char* name ) const
+343,953.0,1563,1075,0.000000000000,0,0,33,14,False,for( const XMLNode* node = _prev; node; node = node->_prev ) {
+343,953.0,1563,1076,0.000000000000,0,0,33,14,False,const XMLElement* element = node->ToElementWithName( name );
+343,953.0,1563,1077,0.000000000000,0,0,33,14,False,if ( element ) {
+343,953.0,1563,1078,0.000000000000,0,0,33,14,False,return element;
+343,953.0,1563,1081,0.000000000000,0,0,33,14,False,return 0;
+343,953.0,1563,1106,0.000000000000,0,0,33,14,False,return 0;
+343,953.0,1563,1115,0.000000000000,0,0,33,14,False,break;
+343,953.0,1563,1124,0.000000000000,0,0,33,14,False,_document->DeleteNode( node );
+343,953.0,1563,1125,0.000000000000,0,0,33,14,False,if ( !_document->Error() ) {
+343,953.0,1563,1126,0.000000000000,0,0,33,14,False,"_document->SetError( XML_ERROR_PARSING, initialLineNum, 0);"
+343,953.0,1563,1128,0.000000000000,0,0,33,14,False,break;
+343,953.0,1563,1141,0.000000000000,0,1,33,13,False,bool wellLocated = false;
+343,953.0,1563,1143,0.000000000000,0,1,33,13,False,if (ToDocument()) {
+343,953.0,1563,1144,0.000000000000,0,1,33,13,False,if (FirstChild()) {
+343,953.0,1563,1145,0.000000000000,0,0,33,14,False,wellLocated =
+343,953.0,1563,1146,0.000000000000,0,0,33,14,False,FirstChild() &&
+343,953.0,1563,1147,0.000000000000,0,0,33,14,False,FirstChild()->ToDeclaration() &&
+343,953.0,1563,1148,0.000000000000,0,0,33,14,False,LastChild() &&
+343,953.0,1563,1149,0.000000000000,0,0,33,14,False,LastChild()->ToDeclaration();
+343,953.0,1563,1152,0.000000000000,0,1,33,13,False,wellLocated = true;
+343,953.0,1563,1155,0.000000000000,0,1,33,13,False,if ( !wellLocated ) {
+343,953.0,1563,1156,0.000000000000,0,0,33,14,False,"_document->SetError( XML_ERROR_PARSING_DECLARATION, initialLineNum, ""XMLDeclaration value=%s"", decl->Value());"
+343,953.0,1563,1157,0.000000000000,0,0,33,14,False,_document->DeleteNode( node );
+343,953.0,1563,1158,0.000000000000,0,0,33,14,False,break;
+343,953.0,1563,1165,0.000000000000,0,13,33,1,False,if ( ele->ClosingType() == XMLElement::CLOSING ) {
+343,953.0,1563,1166,0.000000000000,0,13,33,1,False,if ( parentEndTag ) {
+343,953.0,1563,1167,0.000000000000,0,1,33,13,False,ele->_value.TransferTo( parentEndTag );
+343,953.0,1563,1169,0.000000000000,0,13,33,1,False,node->_memPool->SetTracked();   // created and then immediately deleted.
+343,953.0,1563,1170,0.000000000000,0,13,33,1,False,DeleteNode( node );
+343,953.0,1563,1171,0.000000000000,0,13,33,1,False,return p;
+343,953.0,1563,1176,0.000000000000,0,1,33,13,False,bool mismatch = false;
+343,953.0,1563,1177,0.000000000000,0,1,33,13,False,if ( endTag.Empty() ) {
+343,953.0,1563,1178,0.000000000000,0,0,33,14,False,if ( ele->ClosingType() == XMLElement::OPEN ) {
+343,953.0,1563,1179,0.000000000000,0,0,33,14,False,mismatch = true;
+343,953.0,1563,1183,0.000000000000,0,1,33,13,False,if ( ele->ClosingType() != XMLElement::OPEN ) {
+343,953.0,1563,1184,0.000000000000,0,0,33,14,False,mismatch = true;
+343,953.0,1563,1186,0.000000000000,0,1,33,13,False,"else if ( !XMLUtil::StringEqual( endTag.GetStr(), ele->Name() ) ) {"
+343,953.0,1563,1187,0.000000000000,0,0,33,14,False,mismatch = true;
+343,953.0,1563,1190,0.000000000000,0,1,33,13,False,if ( mismatch ) {
+343,953.0,1563,1191,0.000000000000,0,0,33,14,False,"_document->SetError( XML_ERROR_MISMATCHED_ELEMENT, initialLineNum, ""XMLElement name=%s"", ele->Name());"
+343,953.0,1563,1192,0.000000000000,0,0,33,14,False,_document->DeleteNode( node );
+343,953.0,1563,1193,0.000000000000,0,0,33,14,False,break;
+343,953.0,1563,1198,0.000000000000,0,1,33,13,False,return 0;
+343,953.0,1563,1199,0.000000000000,0,14,33,0,False,}
+343,953.0,1563,1201,0.000000000000,0,14,33,0,False,/*static*/ void XMLNode::DeleteNode( XMLNode* node )
+343,953.0,1563,1203,0.000000000000,0,14,33,0,False,if ( node == 0 ) {
+343,953.0,1563,1204,0.000000000000,0,0,33,14,False,return;
+343,953.0,1563,1206,0.000000000000,0,14,33,0,False,TIXMLASSERT(node->_document);
+343,953.0,1563,1207,0.000000000000,0,14,33,0,False,if (!node->ToDocument()) {
+343,953.0,1563,1208,0.000000000000,0,14,33,0,False,node->_document->MarkInUse(node);
+343,953.0,1563,1211,0.000000000000,0,14,33,0,False,MemPool* pool = node->_memPool;
+343,953.0,1563,1212,0.000000000000,0,14,33,0,False,node->~XMLNode();
+343,953.0,1563,1213,0.000000000000,0,14,33,0,False,pool->Free( node );
+343,953.0,1563,1222,0.000000000000,0,0,33,14,False,insertThis->_parent->Unlink( insertThis );
+343,953.0,1563,1230,0.000000000000,0,0,33,14,False,const XMLElement* XMLNode::ToElementWithName( const char* name ) const
+343,953.0,1563,1232,0.000000000000,0,0,33,14,False,const XMLElement* element = this->ToElement();
+343,953.0,1563,1233,0.000000000000,0,0,33,14,False,if ( element == 0 ) {
+343,953.0,1563,1234,0.000000000000,0,0,33,14,False,return 0;
+343,953.0,1563,1236,0.000000000000,0,0,33,14,False,if ( name == 0 ) {
+343,953.0,1563,1237,0.000000000000,0,0,33,14,False,return element;
+343,953.0,1563,1239,0.000000000000,0,0,33,14,False,"if ( XMLUtil::StringEqual( element->Name(), name ) ) {"
+343,953.0,1563,1240,0.000000000000,0,0,33,14,False,return element;
+343,953.0,1563,1242,0.000000000000,0,0,33,14,False,return 0;
+343,953.0,1563,1249,0.000000000000,0,0,33,14,False,"p = _value.ParseText( p, ""]]>"", StrPair::NEEDS_NEWLINE_NORMALIZATION, curLineNumPtr );"
+343,953.0,1563,1250,0.000000000000,0,0,33,14,False,if ( !p ) {
+343,953.0,1563,1251,0.000000000000,0,0,33,14,False,"_document->SetError( XML_ERROR_PARSING_CDATA, _parseLineNum, 0 );"
+343,953.0,1563,1253,0.000000000000,0,0,33,14,False,return p;
+343,953.0,1563,1258,0.000000000000,0,0,33,14,False,flags |= StrPair::NEEDS_WHITESPACE_COLLAPSING;
+343,953.0,1563,1265,0.000000000000,0,0,33,14,False,if ( !p ) {
+343,953.0,1563,1266,0.000000000000,0,0,33,14,False,"_document->SetError( XML_ERROR_PARSING_TEXT, _parseLineNum, 0 );"
+343,953.0,1563,1269,0.000000000000,0,0,33,14,False,return 0;
+343,953.0,1563,1273,0.000000000000,0,0,33,14,False,XMLNode* XMLText::ShallowClone( XMLDocument* doc ) const
+343,953.0,1563,1275,0.000000000000,0,0,33,14,False,if ( !doc ) {
+343,953.0,1563,1276,0.000000000000,0,0,33,14,False,doc = _document;
+343,953.0,1563,1278,0.000000000000,0,0,33,14,False,XMLText* text = doc->NewText( Value() );	// fixme: this will always allocate memory. Intern?
+343,953.0,1563,1279,0.000000000000,0,0,33,14,False,text->SetCData( this->CData() );
+343,953.0,1563,1280,0.000000000000,0,0,33,14,False,return text;
+343,953.0,1563,1284,0.000000000000,0,0,33,14,False,bool XMLText::ShallowEqual( const XMLNode* compare ) const
+343,953.0,1563,1286,0.000000000000,0,0,33,14,False,TIXMLASSERT( compare );
+343,953.0,1563,1287,0.000000000000,0,0,33,14,False,const XMLText* text = compare->ToText();
+343,953.0,1563,1288,0.000000000000,0,0,33,14,False,"return ( text && XMLUtil::StringEqual( text->Value(), Value() ) );"
+343,953.0,1563,1292,0.000000000000,0,0,33,14,False,bool XMLText::Accept( XMLVisitor* visitor ) const
+343,953.0,1563,1294,0.000000000000,0,0,33,14,False,TIXMLASSERT( visitor );
+343,953.0,1563,1295,0.000000000000,0,0,33,14,False,return visitor->Visit( *this );
+343,953.0,1563,1306,0.000000000000,0,0,33,14,False,XMLComment::~XMLComment()
+343,953.0,1563,1308,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,1316,0.000000000000,0,0,33,14,False,"_document->SetError( XML_ERROR_PARSING_COMMENT, _parseLineNum, 0 );"
+343,953.0,1563,1322,0.000000000000,0,0,33,14,False,XMLNode* XMLComment::ShallowClone( XMLDocument* doc ) const
+343,953.0,1563,1324,0.000000000000,0,0,33,14,False,if ( !doc ) {
+343,953.0,1563,1325,0.000000000000,0,0,33,14,False,doc = _document;
+343,953.0,1563,1327,0.000000000000,0,0,33,14,False,XMLComment* comment = doc->NewComment( Value() );	// fixme: this will always allocate memory. Intern?
+343,953.0,1563,1328,0.000000000000,0,0,33,14,False,return comment;
+343,953.0,1563,1332,0.000000000000,0,0,33,14,False,bool XMLComment::ShallowEqual( const XMLNode* compare ) const
+343,953.0,1563,1334,0.000000000000,0,0,33,14,False,TIXMLASSERT( compare );
+343,953.0,1563,1335,0.000000000000,0,0,33,14,False,const XMLComment* comment = compare->ToComment();
+343,953.0,1563,1336,0.000000000000,0,0,33,14,False,"return ( comment && XMLUtil::StringEqual( comment->Value(), Value() ));"
+343,953.0,1563,1340,0.000000000000,0,0,33,14,False,bool XMLComment::Accept( XMLVisitor* visitor ) const
+343,953.0,1563,1342,0.000000000000,0,0,33,14,False,TIXMLASSERT( visitor );
+343,953.0,1563,1343,0.000000000000,0,0,33,14,False,return visitor->Visit( *this );
+343,953.0,1563,1349,0.000000000000,0,1,33,13,False,XMLDeclaration::XMLDeclaration( XMLDocument* doc ) : XMLNode( doc )
+343,953.0,1563,1351,0.000000000000,0,1,33,13,False,}
+343,953.0,1563,1354,0.000000000000,0,1,33,13,False,XMLDeclaration::~XMLDeclaration()
+343,953.0,1563,1357,0.000000000000,0,1,33,13,False,}
+343,953.0,1563,1360,0.000000000000,0,1,33,13,False,"char* XMLDeclaration::ParseDeep( char* p, StrPair*, int* curLineNumPtr )"
+343,953.0,1563,1363,0.000000000000,0,1,33,13,False,"p = _value.ParseText( p, ""?>"", StrPair::NEEDS_NEWLINE_NORMALIZATION, curLineNumPtr );"
+343,953.0,1563,1364,0.000000000000,0,1,33,13,False,if ( p == 0 ) {
+343,953.0,1563,1365,0.000000000000,0,0,33,14,False,"_document->SetError( XML_ERROR_PARSING_DECLARATION, _parseLineNum, 0 );"
+343,953.0,1563,1367,0.000000000000,0,1,33,13,False,return p;
+343,953.0,1563,1371,0.000000000000,0,0,33,14,False,XMLNode* XMLDeclaration::ShallowClone( XMLDocument* doc ) const
+343,953.0,1563,1373,0.000000000000,0,0,33,14,False,if ( !doc ) {
+343,953.0,1563,1374,0.000000000000,0,0,33,14,False,doc = _document;
+343,953.0,1563,1376,0.000000000000,0,0,33,14,False,XMLDeclaration* dec = doc->NewDeclaration( Value() );	// fixme: this will always allocate memory. Intern?
+343,953.0,1563,1377,0.000000000000,0,0,33,14,False,return dec;
+343,953.0,1563,1381,0.000000000000,0,0,33,14,False,bool XMLDeclaration::ShallowEqual( const XMLNode* compare ) const
+343,953.0,1563,1383,0.000000000000,0,0,33,14,False,TIXMLASSERT( compare );
+343,953.0,1563,1384,0.000000000000,0,0,33,14,False,const XMLDeclaration* declaration = compare->ToDeclaration();
+343,953.0,1563,1385,0.000000000000,0,0,33,14,False,"return ( declaration && XMLUtil::StringEqual( declaration->Value(), Value() ));"
+343,953.0,1563,1390,0.000000000000,0,0,33,14,False,bool XMLDeclaration::Accept( XMLVisitor* visitor ) const
+343,953.0,1563,1392,0.000000000000,0,0,33,14,False,TIXMLASSERT( visitor );
+343,953.0,1563,1393,0.000000000000,0,0,33,14,False,return visitor->Visit( *this );
+343,953.0,1563,1398,0.000000000000,0,0,33,14,False,XMLUnknown::XMLUnknown( XMLDocument* doc ) : XMLNode( doc )
+343,953.0,1563,1400,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,1403,0.000000000000,0,0,33,14,False,XMLUnknown::~XMLUnknown()
+343,953.0,1563,1405,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,1408,0.000000000000,0,0,33,14,False,"char* XMLUnknown::ParseDeep( char* p, StrPair*, int* curLineNumPtr )"
+343,953.0,1563,1411,0.000000000000,0,0,33,14,False,"p = _value.ParseText( p, "">"", StrPair::NEEDS_NEWLINE_NORMALIZATION, curLineNumPtr );"
+343,953.0,1563,1412,0.000000000000,0,0,33,14,False,if ( !p ) {
+343,953.0,1563,1413,0.000000000000,0,0,33,14,False,"_document->SetError( XML_ERROR_PARSING_UNKNOWN, _parseLineNum, 0 );"
+343,953.0,1563,1415,0.000000000000,0,0,33,14,False,return p;
+343,953.0,1563,1419,0.000000000000,0,0,33,14,False,XMLNode* XMLUnknown::ShallowClone( XMLDocument* doc ) const
+343,953.0,1563,1421,0.000000000000,0,0,33,14,False,if ( !doc ) {
+343,953.0,1563,1422,0.000000000000,0,0,33,14,False,doc = _document;
+343,953.0,1563,1424,0.000000000000,0,0,33,14,False,XMLUnknown* text = doc->NewUnknown( Value() );	// fixme: this will always allocate memory. Intern?
+343,953.0,1563,1425,0.000000000000,0,0,33,14,False,return text;
+343,953.0,1563,1429,0.000000000000,0,0,33,14,False,bool XMLUnknown::ShallowEqual( const XMLNode* compare ) const
+343,953.0,1563,1431,0.000000000000,0,0,33,14,False,TIXMLASSERT( compare );
+343,953.0,1563,1432,0.000000000000,0,0,33,14,False,const XMLUnknown* unknown = compare->ToUnknown();
+343,953.0,1563,1433,0.000000000000,0,0,33,14,False,"return ( unknown && XMLUtil::StringEqual( unknown->Value(), Value() ));"
+343,953.0,1563,1437,0.000000000000,0,0,33,14,False,bool XMLUnknown::Accept( XMLVisitor* visitor ) const
+343,953.0,1563,1439,0.000000000000,0,0,33,14,False,TIXMLASSERT( visitor );
+343,953.0,1563,1440,0.000000000000,0,0,33,14,False,return visitor->Visit( *this );
+343,953.0,1563,1460,0.000000000000,0,0,33,14,False,return 0;
+343,953.0,1563,1466,0.000000000000,0,0,33,14,False,return 0;
+343,953.0,1563,1472,0.000000000000,0,0,33,14,False,return 0;
+343,953.0,1563,1483,0.000000000000,0,0,33,14,False,void XMLAttribute::SetName( const char* n )
+343,953.0,1563,1485,0.000000000000,0,0,33,14,False,_name.SetStr( n );
+343,953.0,1563,1486,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,1489,0.000000000000,0,0,33,14,False,XMLError XMLAttribute::QueryIntValue( int* value ) const
+343,953.0,1563,1491,0.000000000000,0,0,33,14,False,"if ( XMLUtil::ToInt( Value(), value )) {"
+343,953.0,1563,1492,0.000000000000,0,0,33,14,False,return XML_SUCCESS;
+343,953.0,1563,1494,0.000000000000,0,0,33,14,False,return XML_WRONG_ATTRIBUTE_TYPE;
+343,953.0,1563,1498,0.000000000000,0,0,33,14,False,XMLError XMLAttribute::QueryUnsignedValue( unsigned int* value ) const
+343,953.0,1563,1500,0.000000000000,0,0,33,14,False,"if ( XMLUtil::ToUnsigned( Value(), value )) {"
+343,953.0,1563,1501,0.000000000000,0,0,33,14,False,return XML_SUCCESS;
+343,953.0,1563,1503,0.000000000000,0,0,33,14,False,return XML_WRONG_ATTRIBUTE_TYPE;
+343,953.0,1563,1507,0.000000000000,0,0,33,14,False,XMLError XMLAttribute::QueryInt64Value(int64_t* value) const
+343,953.0,1563,1509,0.000000000000,0,0,33,14,False,"if (XMLUtil::ToInt64(Value(), value)) {"
+343,953.0,1563,1510,0.000000000000,0,0,33,14,False,return XML_SUCCESS;
+343,953.0,1563,1512,0.000000000000,0,0,33,14,False,return XML_WRONG_ATTRIBUTE_TYPE;
+343,953.0,1563,1516,0.000000000000,0,0,33,14,False,XMLError XMLAttribute::QueryUnsigned64Value(uint64_t* value) const
+343,953.0,1563,1518,0.000000000000,0,0,33,14,False,"if(XMLUtil::ToUnsigned64(Value(), value)) {"
+343,953.0,1563,1519,0.000000000000,0,0,33,14,False,return XML_SUCCESS;
+343,953.0,1563,1521,0.000000000000,0,0,33,14,False,return XML_WRONG_ATTRIBUTE_TYPE;
+343,953.0,1563,1525,0.000000000000,0,0,33,14,False,XMLError XMLAttribute::QueryBoolValue( bool* value ) const
+343,953.0,1563,1527,0.000000000000,0,0,33,14,False,"if ( XMLUtil::ToBool( Value(), value )) {"
+343,953.0,1563,1528,0.000000000000,0,0,33,14,False,return XML_SUCCESS;
+343,953.0,1563,1530,0.000000000000,0,0,33,14,False,return XML_WRONG_ATTRIBUTE_TYPE;
+343,953.0,1563,1534,0.000000000000,0,0,33,14,False,XMLError XMLAttribute::QueryFloatValue( float* value ) const
+343,953.0,1563,1536,0.000000000000,0,0,33,14,False,"if ( XMLUtil::ToFloat( Value(), value )) {"
+343,953.0,1563,1537,0.000000000000,0,0,33,14,False,return XML_SUCCESS;
+343,953.0,1563,1539,0.000000000000,0,0,33,14,False,return XML_WRONG_ATTRIBUTE_TYPE;
+343,953.0,1563,1543,0.000000000000,0,0,33,14,False,XMLError XMLAttribute::QueryDoubleValue( double* value ) const
+343,953.0,1563,1545,0.000000000000,0,0,33,14,False,"if ( XMLUtil::ToDouble( Value(), value )) {"
+343,953.0,1563,1546,0.000000000000,0,0,33,14,False,return XML_SUCCESS;
+343,953.0,1563,1548,0.000000000000,0,0,33,14,False,return XML_WRONG_ATTRIBUTE_TYPE;
+343,953.0,1563,1552,0.000000000000,0,0,33,14,False,void XMLAttribute::SetAttribute( const char* v )
+343,953.0,1563,1554,0.000000000000,0,0,33,14,False,_value.SetStr( v );
+343,953.0,1563,1555,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,1558,0.000000000000,0,0,33,14,False,void XMLAttribute::SetAttribute( int v )
+343,953.0,1563,1561,0.000000000000,0,0,33,14,False,"XMLUtil::ToStr( v, buf, BUF_SIZE );"
+343,953.0,1563,1562,0.000000000000,0,0,33,14,False,_value.SetStr( buf );
+343,953.0,1563,1563,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,1566,0.000000000000,0,0,33,14,False,void XMLAttribute::SetAttribute( unsigned v )
+343,953.0,1563,1569,0.000000000000,0,0,33,14,False,"XMLUtil::ToStr( v, buf, BUF_SIZE );"
+343,953.0,1563,1570,0.000000000000,0,0,33,14,False,_value.SetStr( buf );
+343,953.0,1563,1571,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,1574,0.000000000000,0,0,33,14,False,void XMLAttribute::SetAttribute(int64_t v)
+343,953.0,1563,1577,0.000000000000,0,0,33,14,False,"XMLUtil::ToStr(v, buf, BUF_SIZE);"
+343,953.0,1563,1578,0.000000000000,0,0,33,14,False,_value.SetStr(buf);
+343,953.0,1563,1579,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,1581,0.000000000000,0,0,33,14,False,void XMLAttribute::SetAttribute(uint64_t v)
+343,953.0,1563,1584,0.000000000000,0,0,33,14,False,"XMLUtil::ToStr(v, buf, BUF_SIZE);"
+343,953.0,1563,1585,0.000000000000,0,0,33,14,False,_value.SetStr(buf);
+343,953.0,1563,1586,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,1589,0.000000000000,0,0,33,14,False,void XMLAttribute::SetAttribute( bool v )
+343,953.0,1563,1592,0.000000000000,0,0,33,14,False,"XMLUtil::ToStr( v, buf, BUF_SIZE );"
+343,953.0,1563,1593,0.000000000000,0,0,33,14,False,_value.SetStr( buf );
+343,953.0,1563,1594,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,1596,0.000000000000,0,0,33,14,False,void XMLAttribute::SetAttribute( double v )
+343,953.0,1563,1599,0.000000000000,0,0,33,14,False,"XMLUtil::ToStr( v, buf, BUF_SIZE );"
+343,953.0,1563,1600,0.000000000000,0,0,33,14,False,_value.SetStr( buf );
+343,953.0,1563,1601,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,1603,0.000000000000,0,0,33,14,False,void XMLAttribute::SetAttribute( float v )
+343,953.0,1563,1606,0.000000000000,0,0,33,14,False,"XMLUtil::ToStr( v, buf, BUF_SIZE );"
+343,953.0,1563,1607,0.000000000000,0,0,33,14,False,_value.SetStr( buf );
+343,953.0,1563,1608,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,1619,0.000000000000,0,13,33,1,False,XMLElement::~XMLElement()
+343,953.0,1563,1621,0.000000000000,0,13,33,1,False,while( _rootAttribute ) {
+343,953.0,1563,1622,0.000000000000,0,0,33,14,False,XMLAttribute* next = _rootAttribute->_next;
+343,953.0,1563,1623,0.000000000000,0,0,33,14,False,DeleteAttribute( _rootAttribute );
+343,953.0,1563,1624,0.000000000000,0,0,33,14,False,_rootAttribute = next;
+343,953.0,1563,1626,0.000000000000,0,13,33,1,False,}
+343,953.0,1563,1649,0.000000000000,0,0,33,14,False,return 0;
+343,953.0,1563,1652,0.000000000000,0,0,33,14,False,"int XMLElement::IntAttribute(const char* name, int defaultValue) const"
+343,953.0,1563,1654,0.000000000000,0,0,33,14,False,int i = defaultValue;
+343,953.0,1563,1655,0.000000000000,0,0,33,14,False,"QueryIntAttribute(name, &i);"
+343,953.0,1563,1656,0.000000000000,0,0,33,14,False,return i;
+343,953.0,1563,1659,0.000000000000,0,0,33,14,False,"unsigned XMLElement::UnsignedAttribute(const char* name, unsigned defaultValue) const"
+343,953.0,1563,1661,0.000000000000,0,0,33,14,False,unsigned i = defaultValue;
+343,953.0,1563,1662,0.000000000000,0,0,33,14,False,"QueryUnsignedAttribute(name, &i);"
+343,953.0,1563,1663,0.000000000000,0,0,33,14,False,return i;
+343,953.0,1563,1666,0.000000000000,0,0,33,14,False,"int64_t XMLElement::Int64Attribute(const char* name, int64_t defaultValue) const"
+343,953.0,1563,1668,0.000000000000,0,0,33,14,False,int64_t i = defaultValue;
+343,953.0,1563,1669,0.000000000000,0,0,33,14,False,"QueryInt64Attribute(name, &i);"
+343,953.0,1563,1670,0.000000000000,0,0,33,14,False,return i;
+343,953.0,1563,1673,0.000000000000,0,0,33,14,False,"uint64_t XMLElement::Unsigned64Attribute(const char* name, uint64_t defaultValue) const"
+343,953.0,1563,1675,0.000000000000,0,0,33,14,False,uint64_t i = defaultValue;
+343,953.0,1563,1676,0.000000000000,0,0,33,14,False,"QueryUnsigned64Attribute(name, &i);"
+343,953.0,1563,1677,0.000000000000,0,0,33,14,False,return i;
+343,953.0,1563,1680,0.000000000000,0,0,33,14,False,"bool XMLElement::BoolAttribute(const char* name, bool defaultValue) const"
+343,953.0,1563,1682,0.000000000000,0,0,33,14,False,bool b = defaultValue;
+343,953.0,1563,1683,0.000000000000,0,0,33,14,False,"QueryBoolAttribute(name, &b);"
+343,953.0,1563,1684,0.000000000000,0,0,33,14,False,return b;
+343,953.0,1563,1687,0.000000000000,0,0,33,14,False,"double XMLElement::DoubleAttribute(const char* name, double defaultValue) const"
+343,953.0,1563,1689,0.000000000000,0,0,33,14,False,double d = defaultValue;
+343,953.0,1563,1690,0.000000000000,0,0,33,14,False,"QueryDoubleAttribute(name, &d);"
+343,953.0,1563,1691,0.000000000000,0,0,33,14,False,return d;
+343,953.0,1563,1694,0.000000000000,0,0,33,14,False,"float XMLElement::FloatAttribute(const char* name, float defaultValue) const"
+343,953.0,1563,1696,0.000000000000,0,0,33,14,False,float f = defaultValue;
+343,953.0,1563,1697,0.000000000000,0,0,33,14,False,"QueryFloatAttribute(name, &f);"
+343,953.0,1563,1698,0.000000000000,0,0,33,14,False,return f;
+343,953.0,1563,1701,0.000000000000,0,0,33,14,False,const char* XMLElement::GetText() const
+343,953.0,1563,1704,0.000000000000,0,0,33,14,False,const XMLNode* node = FirstChild();
+343,953.0,1563,1705,0.000000000000,0,0,33,14,False,while (node) {
+343,953.0,1563,1706,0.000000000000,0,0,33,14,False,if (node->ToComment()) {
+343,953.0,1563,1707,0.000000000000,0,0,33,14,False,node = node->NextSibling();
+343,953.0,1563,1708,0.000000000000,0,0,33,14,False,continue;
+343,953.0,1563,1710,0.000000000000,0,0,33,14,False,break;
+343,953.0,1563,1713,0.000000000000,0,0,33,14,False,if ( node && node->ToText() ) {
+343,953.0,1563,1714,0.000000000000,0,0,33,14,False,return node->Value();
+343,953.0,1563,1716,0.000000000000,0,0,33,14,False,return 0;
+343,953.0,1563,1720,0.000000000000,0,0,33,14,False,void	XMLElement::SetText( const char* inText )
+343,953.0,1563,1722,0.000000000000,0,0,33,14,False,if ( FirstChild() && FirstChild()->ToText() )
+343,953.0,1563,1723,0.000000000000,0,0,33,14,False,FirstChild()->SetValue( inText );
+343,953.0,1563,1725,0.000000000000,0,0,33,14,False,XMLText*	theText = GetDocument()->NewText( inText );
+343,953.0,1563,1726,0.000000000000,0,0,33,14,False,InsertFirstChild( theText );
+343,953.0,1563,1728,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,1731,0.000000000000,0,0,33,14,False,void XMLElement::SetText( int v )
+343,953.0,1563,1734,0.000000000000,0,0,33,14,False,"XMLUtil::ToStr( v, buf, BUF_SIZE );"
+343,953.0,1563,1735,0.000000000000,0,0,33,14,False,SetText( buf );
+343,953.0,1563,1736,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,1739,0.000000000000,0,0,33,14,False,void XMLElement::SetText( unsigned v )
+343,953.0,1563,1742,0.000000000000,0,0,33,14,False,"XMLUtil::ToStr( v, buf, BUF_SIZE );"
+343,953.0,1563,1743,0.000000000000,0,0,33,14,False,SetText( buf );
+343,953.0,1563,1744,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,1747,0.000000000000,0,0,33,14,False,void XMLElement::SetText(int64_t v)
+343,953.0,1563,1750,0.000000000000,0,0,33,14,False,"XMLUtil::ToStr(v, buf, BUF_SIZE);"
+343,953.0,1563,1751,0.000000000000,0,0,33,14,False,SetText(buf);
+343,953.0,1563,1752,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,1754,0.000000000000,0,0,33,14,False,void XMLElement::SetText(uint64_t v) {
+343,953.0,1563,1756,0.000000000000,0,0,33,14,False,"XMLUtil::ToStr(v, buf, BUF_SIZE);"
+343,953.0,1563,1757,0.000000000000,0,0,33,14,False,SetText(buf);
+343,953.0,1563,1758,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,1761,0.000000000000,0,0,33,14,False,void XMLElement::SetText( bool v )
+343,953.0,1563,1764,0.000000000000,0,0,33,14,False,"XMLUtil::ToStr( v, buf, BUF_SIZE );"
+343,953.0,1563,1765,0.000000000000,0,0,33,14,False,SetText( buf );
+343,953.0,1563,1766,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,1769,0.000000000000,0,0,33,14,False,void XMLElement::SetText( float v )
+343,953.0,1563,1772,0.000000000000,0,0,33,14,False,"XMLUtil::ToStr( v, buf, BUF_SIZE );"
+343,953.0,1563,1773,0.000000000000,0,0,33,14,False,SetText( buf );
+343,953.0,1563,1774,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,1777,0.000000000000,0,0,33,14,False,void XMLElement::SetText( double v )
+343,953.0,1563,1780,0.000000000000,0,0,33,14,False,"XMLUtil::ToStr( v, buf, BUF_SIZE );"
+343,953.0,1563,1781,0.000000000000,0,0,33,14,False,SetText( buf );
+343,953.0,1563,1782,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,1785,0.000000000000,0,0,33,14,False,XMLError XMLElement::QueryIntText( int* ival ) const
+343,953.0,1563,1787,0.000000000000,0,0,33,14,False,if ( FirstChild() && FirstChild()->ToText() ) {
+343,953.0,1563,1788,0.000000000000,0,0,33,14,False,const char* t = FirstChild()->Value();
+343,953.0,1563,1789,0.000000000000,0,0,33,14,False,"if ( XMLUtil::ToInt( t, ival ) ) {"
+343,953.0,1563,1790,0.000000000000,0,0,33,14,False,return XML_SUCCESS;
+343,953.0,1563,1792,0.000000000000,0,0,33,14,False,return XML_CAN_NOT_CONVERT_TEXT;
+343,953.0,1563,1794,0.000000000000,0,0,33,14,False,return XML_NO_TEXT_NODE;
+343,953.0,1563,1798,0.000000000000,0,0,33,14,False,XMLError XMLElement::QueryUnsignedText( unsigned* uval ) const
+343,953.0,1563,1800,0.000000000000,0,0,33,14,False,if ( FirstChild() && FirstChild()->ToText() ) {
+343,953.0,1563,1801,0.000000000000,0,0,33,14,False,const char* t = FirstChild()->Value();
+343,953.0,1563,1802,0.000000000000,0,0,33,14,False,"if ( XMLUtil::ToUnsigned( t, uval ) ) {"
+343,953.0,1563,1803,0.000000000000,0,0,33,14,False,return XML_SUCCESS;
+343,953.0,1563,1805,0.000000000000,0,0,33,14,False,return XML_CAN_NOT_CONVERT_TEXT;
+343,953.0,1563,1807,0.000000000000,0,0,33,14,False,return XML_NO_TEXT_NODE;
+343,953.0,1563,1811,0.000000000000,0,0,33,14,False,XMLError XMLElement::QueryInt64Text(int64_t* ival) const
+343,953.0,1563,1813,0.000000000000,0,0,33,14,False,if (FirstChild() && FirstChild()->ToText()) {
+343,953.0,1563,1814,0.000000000000,0,0,33,14,False,const char* t = FirstChild()->Value();
+343,953.0,1563,1815,0.000000000000,0,0,33,14,False,"if (XMLUtil::ToInt64(t, ival)) {"
+343,953.0,1563,1816,0.000000000000,0,0,33,14,False,return XML_SUCCESS;
+343,953.0,1563,1818,0.000000000000,0,0,33,14,False,return XML_CAN_NOT_CONVERT_TEXT;
+343,953.0,1563,1820,0.000000000000,0,0,33,14,False,return XML_NO_TEXT_NODE;
+343,953.0,1563,1824,0.000000000000,0,0,33,14,False,XMLError XMLElement::QueryUnsigned64Text(uint64_t* uval) const
+343,953.0,1563,1826,0.000000000000,0,0,33,14,False,if(FirstChild() && FirstChild()->ToText()) {
+343,953.0,1563,1827,0.000000000000,0,0,33,14,False,const char* t = FirstChild()->Value();
+343,953.0,1563,1828,0.000000000000,0,0,33,14,False,"if(XMLUtil::ToUnsigned64(t, uval)) {"
+343,953.0,1563,1829,0.000000000000,0,0,33,14,False,return XML_SUCCESS;
+343,953.0,1563,1831,0.000000000000,0,0,33,14,False,return XML_CAN_NOT_CONVERT_TEXT;
+343,953.0,1563,1833,0.000000000000,0,0,33,14,False,return XML_NO_TEXT_NODE;
+343,953.0,1563,1837,0.000000000000,0,0,33,14,False,XMLError XMLElement::QueryBoolText( bool* bval ) const
+343,953.0,1563,1839,0.000000000000,0,0,33,14,False,if ( FirstChild() && FirstChild()->ToText() ) {
+343,953.0,1563,1840,0.000000000000,0,0,33,14,False,const char* t = FirstChild()->Value();
+343,953.0,1563,1841,0.000000000000,0,0,33,14,False,"if ( XMLUtil::ToBool( t, bval ) ) {"
+343,953.0,1563,1842,0.000000000000,0,0,33,14,False,return XML_SUCCESS;
+343,953.0,1563,1844,0.000000000000,0,0,33,14,False,return XML_CAN_NOT_CONVERT_TEXT;
+343,953.0,1563,1846,0.000000000000,0,0,33,14,False,return XML_NO_TEXT_NODE;
+343,953.0,1563,1850,0.000000000000,0,0,33,14,False,XMLError XMLElement::QueryDoubleText( double* dval ) const
+343,953.0,1563,1852,0.000000000000,0,0,33,14,False,if ( FirstChild() && FirstChild()->ToText() ) {
+343,953.0,1563,1853,0.000000000000,0,0,33,14,False,const char* t = FirstChild()->Value();
+343,953.0,1563,1854,0.000000000000,0,0,33,14,False,"if ( XMLUtil::ToDouble( t, dval ) ) {"
+343,953.0,1563,1855,0.000000000000,0,0,33,14,False,return XML_SUCCESS;
+343,953.0,1563,1857,0.000000000000,0,0,33,14,False,return XML_CAN_NOT_CONVERT_TEXT;
+343,953.0,1563,1859,0.000000000000,0,0,33,14,False,return XML_NO_TEXT_NODE;
+343,953.0,1563,1863,0.000000000000,0,0,33,14,False,XMLError XMLElement::QueryFloatText( float* fval ) const
+343,953.0,1563,1865,0.000000000000,0,0,33,14,False,if ( FirstChild() && FirstChild()->ToText() ) {
+343,953.0,1563,1866,0.000000000000,0,0,33,14,False,const char* t = FirstChild()->Value();
+343,953.0,1563,1867,0.000000000000,0,0,33,14,False,"if ( XMLUtil::ToFloat( t, fval ) ) {"
+343,953.0,1563,1868,0.000000000000,0,0,33,14,False,return XML_SUCCESS;
+343,953.0,1563,1870,0.000000000000,0,0,33,14,False,return XML_CAN_NOT_CONVERT_TEXT;
+343,953.0,1563,1872,0.000000000000,0,0,33,14,False,return XML_NO_TEXT_NODE;
+343,953.0,1563,1875,0.000000000000,0,0,33,14,False,int XMLElement::IntText(int defaultValue) const
+343,953.0,1563,1877,0.000000000000,0,0,33,14,False,int i = defaultValue;
+343,953.0,1563,1878,0.000000000000,0,0,33,14,False,QueryIntText(&i);
+343,953.0,1563,1879,0.000000000000,0,0,33,14,False,return i;
+343,953.0,1563,1882,0.000000000000,0,0,33,14,False,unsigned XMLElement::UnsignedText(unsigned defaultValue) const
+343,953.0,1563,1884,0.000000000000,0,0,33,14,False,unsigned i = defaultValue;
+343,953.0,1563,1885,0.000000000000,0,0,33,14,False,QueryUnsignedText(&i);
+343,953.0,1563,1886,0.000000000000,0,0,33,14,False,return i;
+343,953.0,1563,1889,0.000000000000,0,0,33,14,False,int64_t XMLElement::Int64Text(int64_t defaultValue) const
+343,953.0,1563,1891,0.000000000000,0,0,33,14,False,int64_t i = defaultValue;
+343,953.0,1563,1892,0.000000000000,0,0,33,14,False,QueryInt64Text(&i);
+343,953.0,1563,1893,0.000000000000,0,0,33,14,False,return i;
+343,953.0,1563,1896,0.000000000000,0,0,33,14,False,uint64_t XMLElement::Unsigned64Text(uint64_t defaultValue) const
+343,953.0,1563,1898,0.000000000000,0,0,33,14,False,uint64_t i = defaultValue;
+343,953.0,1563,1899,0.000000000000,0,0,33,14,False,QueryUnsigned64Text(&i);
+343,953.0,1563,1900,0.000000000000,0,0,33,14,False,return i;
+343,953.0,1563,1903,0.000000000000,0,0,33,14,False,bool XMLElement::BoolText(bool defaultValue) const
+343,953.0,1563,1905,0.000000000000,0,0,33,14,False,bool b = defaultValue;
+343,953.0,1563,1906,0.000000000000,0,0,33,14,False,QueryBoolText(&b);
+343,953.0,1563,1907,0.000000000000,0,0,33,14,False,return b;
+343,953.0,1563,1910,0.000000000000,0,0,33,14,False,double XMLElement::DoubleText(double defaultValue) const
+343,953.0,1563,1912,0.000000000000,0,0,33,14,False,double d = defaultValue;
+343,953.0,1563,1913,0.000000000000,0,0,33,14,False,QueryDoubleText(&d);
+343,953.0,1563,1914,0.000000000000,0,0,33,14,False,return d;
+343,953.0,1563,1917,0.000000000000,0,0,33,14,False,float XMLElement::FloatText(float defaultValue) const
+343,953.0,1563,1919,0.000000000000,0,0,33,14,False,float f = defaultValue;
+343,953.0,1563,1920,0.000000000000,0,0,33,14,False,QueryFloatText(&f);
+343,953.0,1563,1921,0.000000000000,0,0,33,14,False,return f;
+343,953.0,1563,1925,0.000000000000,0,0,33,14,False,XMLAttribute* XMLElement::FindOrCreateAttribute( const char* name )
+343,953.0,1563,1927,0.000000000000,0,0,33,14,False,XMLAttribute* last = 0;
+343,953.0,1563,1928,0.000000000000,0,0,33,14,False,XMLAttribute* attrib = 0;
+343,953.0,1563,1929,0.000000000000,0,0,33,14,False,for( attrib = _rootAttribute;
+343,953.0,1563,1930,0.000000000000,0,0,33,14,False,attrib;
+343,953.0,1563,1931,0.000000000000,0,0,33,14,False,"last = attrib, attrib = attrib->_next ) {"
+343,953.0,1563,1932,0.000000000000,0,0,33,14,False,"if ( XMLUtil::StringEqual( attrib->Name(), name ) ) {"
+343,953.0,1563,1933,0.000000000000,0,0,33,14,False,break;
+343,953.0,1563,1936,0.000000000000,0,0,33,14,False,if ( !attrib ) {
+343,953.0,1563,1937,0.000000000000,0,0,33,14,False,attrib = CreateAttribute();
+343,953.0,1563,1938,0.000000000000,0,0,33,14,False,TIXMLASSERT( attrib );
+343,953.0,1563,1939,0.000000000000,0,0,33,14,False,if ( last ) {
+343,953.0,1563,1940,0.000000000000,0,0,33,14,False,TIXMLASSERT( last->_next == 0 );
+343,953.0,1563,1941,0.000000000000,0,0,33,14,False,last->_next = attrib;
+343,953.0,1563,1944,0.000000000000,0,0,33,14,False,TIXMLASSERT( _rootAttribute == 0 );
+343,953.0,1563,1945,0.000000000000,0,0,33,14,False,_rootAttribute = attrib;
+343,953.0,1563,1947,0.000000000000,0,0,33,14,False,attrib->SetName( name );
+343,953.0,1563,1949,0.000000000000,0,0,33,14,False,return attrib;
+343,953.0,1563,1953,0.000000000000,0,0,33,14,False,void XMLElement::DeleteAttribute( const char* name )
+343,953.0,1563,1955,0.000000000000,0,0,33,14,False,XMLAttribute* prev = 0;
+343,953.0,1563,1956,0.000000000000,0,0,33,14,False,for( XMLAttribute* a=_rootAttribute; a; a=a->_next ) {
+343,953.0,1563,1957,0.000000000000,0,0,33,14,False,"if ( XMLUtil::StringEqual( name, a->Name() ) ) {"
+343,953.0,1563,1958,0.000000000000,0,0,33,14,False,if ( prev ) {
+343,953.0,1563,1959,0.000000000000,0,0,33,14,False,prev->_next = a->_next;
+343,953.0,1563,1962,0.000000000000,0,0,33,14,False,_rootAttribute = a->_next;
+343,953.0,1563,1964,0.000000000000,0,0,33,14,False,DeleteAttribute( a );
+343,953.0,1563,1965,0.000000000000,0,0,33,14,False,break;
+343,953.0,1563,1967,0.000000000000,0,0,33,14,False,prev = a;
+343,953.0,1563,1969,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,1980,0.000000000000,0,0,33,14,False,"_document->SetError( XML_ERROR_PARSING_ELEMENT, _parseLineNum, ""XMLElement name=%s"", Name() );"
+343,953.0,1563,1981,0.000000000000,0,0,33,14,False,return 0;
+343,953.0,1563,1994,0.000000000000,0,0,33,14,False,DeleteAttribute( attrib );
+343,953.0,1563,1995,0.000000000000,0,0,33,14,False,"_document->SetError( XML_ERROR_PARSING_ATTRIBUTE, attrLineNum, ""XMLElement name=%s"", Name() );"
+343,953.0,1563,1996,0.000000000000,0,0,33,14,False,return 0;
+343,953.0,1563,2019,0.000000000000,0,0,33,14,False,else if ( *p == '/' && *(p+1) == '>' ) {
+343,953.0,1563,2020,0.000000000000,0,0,33,14,False,_closingType = CLOSED;
+343,953.0,1563,2021,0.000000000000,0,0,33,14,False,return p+2;	// done; sealed element.
+343,953.0,1563,2024,0.000000000000,0,0,33,14,False,"_document->SetError( XML_ERROR_PARSING_ELEMENT, _parseLineNum, 0 );"
+343,953.0,1563,2025,0.000000000000,0,0,33,14,False,return 0;
+343,953.0,1563,2031,0.000000000000,0,0,33,14,False,void XMLElement::DeleteAttribute( XMLAttribute* attribute )
+343,953.0,1563,2033,0.000000000000,0,0,33,14,False,if ( attribute == 0 ) {
+343,953.0,1563,2034,0.000000000000,0,0,33,14,False,return;
+343,953.0,1563,2036,0.000000000000,0,0,33,14,False,MemPool* pool = attribute->_memPool;
+343,953.0,1563,2037,0.000000000000,0,0,33,14,False,attribute->~XMLAttribute();
+343,953.0,1563,2038,0.000000000000,0,0,33,14,False,pool->Free( attribute );
+343,953.0,1563,2052,0.000000000000,0,0,33,14,False,XMLElement* XMLElement::InsertNewChildElement(const char* name)
+343,953.0,1563,2054,0.000000000000,0,0,33,14,False,XMLElement* node = _document->NewElement(name);
+343,953.0,1563,2055,0.000000000000,0,0,33,14,False,return InsertEndChild(node) ? node : 0;
+343,953.0,1563,2058,0.000000000000,0,0,33,14,False,XMLComment* XMLElement::InsertNewComment(const char* comment)
+343,953.0,1563,2060,0.000000000000,0,0,33,14,False,XMLComment* node = _document->NewComment(comment);
+343,953.0,1563,2061,0.000000000000,0,0,33,14,False,return InsertEndChild(node) ? node : 0;
+343,953.0,1563,2064,0.000000000000,0,0,33,14,False,XMLText* XMLElement::InsertNewText(const char* text)
+343,953.0,1563,2066,0.000000000000,0,0,33,14,False,XMLText* node = _document->NewText(text);
+343,953.0,1563,2067,0.000000000000,0,0,33,14,False,return InsertEndChild(node) ? node : 0;
+343,953.0,1563,2070,0.000000000000,0,0,33,14,False,XMLDeclaration* XMLElement::InsertNewDeclaration(const char* text)
+343,953.0,1563,2072,0.000000000000,0,0,33,14,False,XMLDeclaration* node = _document->NewDeclaration(text);
+343,953.0,1563,2073,0.000000000000,0,0,33,14,False,return InsertEndChild(node) ? node : 0;
+343,953.0,1563,2076,0.000000000000,0,0,33,14,False,XMLUnknown* XMLElement::InsertNewUnknown(const char* text)
+343,953.0,1563,2078,0.000000000000,0,0,33,14,False,XMLUnknown* node = _document->NewUnknown(text);
+343,953.0,1563,2079,0.000000000000,0,0,33,14,False,return InsertEndChild(node) ? node : 0;
+343,953.0,1563,2097,0.000000000000,0,13,33,1,False,_closingType = CLOSING;
+343,953.0,1563,2098,0.000000000000,0,13,33,1,False,++p;
+343,953.0,1563,2103,0.000000000000,0,0,33,14,False,return 0;
+343,953.0,1563,2108,0.000000000000,0,13,33,1,False,return p;
+343,953.0,1563,2112,0.000000000000,0,1,33,13,False,return p;
+343,953.0,1563,2117,0.000000000000,0,0,33,14,False,XMLNode* XMLElement::ShallowClone( XMLDocument* doc ) const
+343,953.0,1563,2119,0.000000000000,0,0,33,14,False,if ( !doc ) {
+343,953.0,1563,2120,0.000000000000,0,0,33,14,False,doc = _document;
+343,953.0,1563,2122,0.000000000000,0,0,33,14,False,XMLElement* element = doc->NewElement( Value() );					// fixme: this will always allocate memory. Intern?
+343,953.0,1563,2123,0.000000000000,0,0,33,14,False,for( const XMLAttribute* a=FirstAttribute(); a; a=a->Next() ) {
+343,953.0,1563,2124,0.000000000000,0,0,33,14,False,"element->SetAttribute( a->Name(), a->Value() );					// fixme: this will always allocate memory. Intern?"
+343,953.0,1563,2126,0.000000000000,0,0,33,14,False,return element;
+343,953.0,1563,2130,0.000000000000,0,0,33,14,False,bool XMLElement::ShallowEqual( const XMLNode* compare ) const
+343,953.0,1563,2132,0.000000000000,0,0,33,14,False,TIXMLASSERT( compare );
+343,953.0,1563,2133,0.000000000000,0,0,33,14,False,const XMLElement* other = compare->ToElement();
+343,953.0,1563,2134,0.000000000000,0,0,33,14,False,"if ( other && XMLUtil::StringEqual( other->Name(), Name() )) {"
+343,953.0,1563,2136,0.000000000000,0,0,33,14,False,const XMLAttribute* a=FirstAttribute();
+343,953.0,1563,2137,0.000000000000,0,0,33,14,False,const XMLAttribute* b=other->FirstAttribute();
+343,953.0,1563,2139,0.000000000000,0,0,33,14,False,while ( a && b ) {
+343,953.0,1563,2140,0.000000000000,0,0,33,14,False,"if ( !XMLUtil::StringEqual( a->Value(), b->Value() ) ) {"
+343,953.0,1563,2141,0.000000000000,0,0,33,14,False,return false;
+343,953.0,1563,2143,0.000000000000,0,0,33,14,False,a = a->Next();
+343,953.0,1563,2144,0.000000000000,0,0,33,14,False,b = b->Next();
+343,953.0,1563,2146,0.000000000000,0,0,33,14,False,if ( a || b ) {
+343,953.0,1563,2148,0.000000000000,0,0,33,14,False,return false;
+343,953.0,1563,2150,0.000000000000,0,0,33,14,False,return true;
+343,953.0,1563,2152,0.000000000000,0,0,33,14,False,return false;
+343,953.0,1563,2156,0.000000000000,0,0,33,14,False,bool XMLElement::Accept( XMLVisitor* visitor ) const
+343,953.0,1563,2158,0.000000000000,0,0,33,14,False,TIXMLASSERT( visitor );
+343,953.0,1563,2159,0.000000000000,0,0,33,14,False,"if ( visitor->VisitEnter( *this, _rootAttribute ) ) {"
+343,953.0,1563,2160,0.000000000000,0,0,33,14,False,for ( const XMLNode* node=FirstChild(); node; node=node->NextSibling() ) {
+343,953.0,1563,2161,0.000000000000,0,0,33,14,False,if ( !node->Accept( visitor ) ) {
+343,953.0,1563,2162,0.000000000000,0,0,33,14,False,break;
+343,953.0,1563,2166,0.000000000000,0,0,33,14,False,return visitor->VisitExit( *this );
+343,953.0,1563,2218,0.000000000000,0,14,33,0,False,XMLDocument::~XMLDocument()
+343,953.0,1563,2220,0.000000000000,0,14,33,0,False,Clear();
+343,953.0,1563,2221,0.000000000000,0,14,33,0,False,}
+343,953.0,1563,2241,0.000000000000,0,0,33,14,False,DeleteNode(_unlinked[0]);	// Will remove from _unlinked as part of delete.
+343,953.0,1563,2271,0.000000000000,0,0,33,14,False,void XMLDocument::DeepCopy(XMLDocument* target) const
+343,953.0,1563,2273,0.000000000000,0,0,33,14,False,TIXMLASSERT(target);
+343,953.0,1563,2274,0.000000000000,0,0,33,14,False,if (target == this) {
+343,953.0,1563,2275,0.000000000000,0,0,33,14,False,return; // technically success - a no-op.
+343,953.0,1563,2278,0.000000000000,0,0,33,14,False,target->Clear();
+343,953.0,1563,2279,0.000000000000,0,0,33,14,False,for (const XMLNode* node = this->FirstChild(); node; node = node->NextSibling()) {
+343,953.0,1563,2280,0.000000000000,0,0,33,14,False,target->InsertEndChild(node->DeepClone(target));
+343,953.0,1563,2284,0.000000000000,0,0,33,14,False,XMLElement* XMLDocument::NewElement( const char* name )
+343,953.0,1563,2286,0.000000000000,0,0,33,14,False,XMLElement* ele = CreateUnlinkedNode<XMLElement>( _elementPool );
+343,953.0,1563,2287,0.000000000000,0,0,33,14,False,ele->SetName( name );
+343,953.0,1563,2288,0.000000000000,0,0,33,14,False,return ele;
+343,953.0,1563,2292,0.000000000000,0,0,33,14,False,XMLComment* XMLDocument::NewComment( const char* str )
+343,953.0,1563,2294,0.000000000000,0,0,33,14,False,XMLComment* comment = CreateUnlinkedNode<XMLComment>( _commentPool );
+343,953.0,1563,2295,0.000000000000,0,0,33,14,False,comment->SetValue( str );
+343,953.0,1563,2296,0.000000000000,0,0,33,14,False,return comment;
+343,953.0,1563,2300,0.000000000000,0,0,33,14,False,XMLText* XMLDocument::NewText( const char* str )
+343,953.0,1563,2302,0.000000000000,0,0,33,14,False,XMLText* text = CreateUnlinkedNode<XMLText>( _textPool );
+343,953.0,1563,2303,0.000000000000,0,0,33,14,False,text->SetValue( str );
+343,953.0,1563,2304,0.000000000000,0,0,33,14,False,return text;
+343,953.0,1563,2308,0.000000000000,0,0,33,14,False,XMLDeclaration* XMLDocument::NewDeclaration( const char* str )
+343,953.0,1563,2310,0.000000000000,0,0,33,14,False,XMLDeclaration* dec = CreateUnlinkedNode<XMLDeclaration>( _commentPool );
+343,953.0,1563,2311,0.000000000000,0,0,33,14,False,"dec->SetValue( str ? str : ""xml version=\""1.0\"" encoding=\""UTF-8\"""" );"
+343,953.0,1563,2312,0.000000000000,0,0,33,14,False,return dec;
+343,953.0,1563,2316,0.000000000000,0,0,33,14,False,XMLUnknown* XMLDocument::NewUnknown( const char* str )
+343,953.0,1563,2318,0.000000000000,0,0,33,14,False,XMLUnknown* unk = CreateUnlinkedNode<XMLUnknown>( _commentPool );
+343,953.0,1563,2319,0.000000000000,0,0,33,14,False,unk->SetValue( str );
+343,953.0,1563,2320,0.000000000000,0,0,33,14,False,return unk;
+343,953.0,1563,2339,0.000000000000,0,0,33,14,False,void XMLDocument::DeleteNode( XMLNode* node )	{
+343,953.0,1563,2340,0.000000000000,0,0,33,14,False,TIXMLASSERT( node );
+343,953.0,1563,2341,0.000000000000,0,0,33,14,False,TIXMLASSERT(node->_document == this );
+343,953.0,1563,2342,0.000000000000,0,0,33,14,False,if (node->_parent) {
+343,953.0,1563,2343,0.000000000000,0,0,33,14,False,node->_parent->DeleteChild( node );
+343,953.0,1563,2350,0.000000000000,0,0,33,14,False,node->_memPool->SetTracked();
+343,953.0,1563,2352,0.000000000000,0,0,33,14,False,XMLNode::DeleteNode(node);
+343,953.0,1563,2354,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,2360,0.000000000000,0,0,33,14,False,TIXMLASSERT( false );
+343,953.0,1563,2368,0.000000000000,0,0,33,14,False,"SetError( XML_ERROR_FILE_NOT_FOUND, 0, ""filename=%s"", filename );"
+343,953.0,1563,2369,0.000000000000,0,0,33,14,False,return _errorID;
+343,953.0,1563,2372,0.000000000000,0,14,33,0,False,fclose( fp );
+343,953.0,1563,2373,0.000000000000,0,14,33,0,False,return _errorID;
+343,953.0,1563,2382,0.000000000000,0,0,33,14,False,"SetError( XML_ERROR_FILE_READ_ERROR, 0, 0 );"
+343,953.0,1563,2383,0.000000000000,0,0,33,14,False,return _errorID;
+343,953.0,1563,2393,0.000000000000,0,0,33,14,False,"SetError( XML_ERROR_FILE_READ_ERROR, 0, 0 );"
+343,953.0,1563,2394,0.000000000000,0,0,33,14,False,return _errorID;
+343,953.0,1563,2405,0.000000000000,0,0,33,14,False,"SetError( XML_ERROR_FILE_READ_ERROR, 0, 0 );"
+343,953.0,1563,2406,0.000000000000,0,0,33,14,False,return _errorID;
+343,953.0,1563,2410,0.000000000000,0,0,33,14,False,"SetError( XML_ERROR_EMPTY_DOCUMENT, 0, 0 );"
+343,953.0,1563,2411,0.000000000000,0,0,33,14,False,return _errorID;
+343,953.0,1563,2419,0.000000000000,0,0,33,14,False,"SetError( XML_ERROR_FILE_READ_ERROR, 0, 0 );"
+343,953.0,1563,2420,0.000000000000,0,0,33,14,False,return _errorID;
+343,953.0,1563,2426,0.000000000000,0,14,33,0,False,return _errorID;
+343,953.0,1563,2430,0.000000000000,0,0,33,14,False,"XMLError XMLDocument::SaveFile( const char* filename, bool compact )"
+343,953.0,1563,2432,0.000000000000,0,0,33,14,False,if ( !filename ) {
+343,953.0,1563,2433,0.000000000000,0,0,33,14,False,TIXMLASSERT( false );
+343,953.0,1563,2438,0.000000000000,0,0,33,14,False,"FILE* fp = callfopen( filename, ""w"" );"
+343,953.0,1563,2439,0.000000000000,0,0,33,14,False,if ( !fp ) {
+343,953.0,1563,2440,0.000000000000,0,0,33,14,False,"SetError( XML_ERROR_FILE_COULD_NOT_BE_OPENED, 0, ""filename=%s"", filename );"
+343,953.0,1563,2441,0.000000000000,0,0,33,14,False,return _errorID;
+343,953.0,1563,2443,0.000000000000,0,0,33,14,False,"SaveFile(fp, compact);"
+343,953.0,1563,2444,0.000000000000,0,0,33,14,False,fclose( fp );
+343,953.0,1563,2445,0.000000000000,0,0,33,14,False,return _errorID;
+343,953.0,1563,2449,0.000000000000,0,0,33,14,False,"XMLError XMLDocument::SaveFile( FILE* fp, bool compact )"
+343,953.0,1563,2453,0.000000000000,0,0,33,14,False,ClearError();
+343,953.0,1563,2454,0.000000000000,0,0,33,14,False,"XMLPrinter stream( fp, compact );"
+343,953.0,1563,2455,0.000000000000,0,0,33,14,False,Print( &stream );
+343,953.0,1563,2456,0.000000000000,0,0,33,14,False,return _errorID;
+343,953.0,1563,2457,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,2460,0.000000000000,0,0,33,14,False,"XMLError XMLDocument::Parse( const char* xml, size_t nBytes )"
+343,953.0,1563,2462,0.000000000000,0,0,33,14,False,Clear();
+343,953.0,1563,2464,0.000000000000,0,0,33,14,False,if ( nBytes == 0 || !xml || !*xml ) {
+343,953.0,1563,2465,0.000000000000,0,0,33,14,False,"SetError( XML_ERROR_EMPTY_DOCUMENT, 0, 0 );"
+343,953.0,1563,2466,0.000000000000,0,0,33,14,False,return _errorID;
+343,953.0,1563,2468,0.000000000000,0,0,33,14,False,if ( nBytes == static_cast<size_t>(-1) ) {
+343,953.0,1563,2469,0.000000000000,0,0,33,14,False,nBytes = strlen( xml );
+343,953.0,1563,2471,0.000000000000,0,0,33,14,False,TIXMLASSERT( _charBuffer == 0 );
+343,953.0,1563,2472,0.000000000000,0,0,33,14,False,_charBuffer = new char[ nBytes+1 ];
+343,953.0,1563,2473,0.000000000000,0,0,33,14,False,"memcpy( _charBuffer, xml, nBytes );"
+343,953.0,1563,2474,0.000000000000,0,0,33,14,False,_charBuffer[nBytes] = 0;
+343,953.0,1563,2476,0.000000000000,0,0,33,14,False,Parse();
+343,953.0,1563,2477,0.000000000000,0,0,33,14,False,if ( Error() ) {
+343,953.0,1563,2481,0.000000000000,0,0,33,14,False,DeleteChildren();
+343,953.0,1563,2482,0.000000000000,0,0,33,14,False,_elementPool.Clear();
+343,953.0,1563,2483,0.000000000000,0,0,33,14,False,_attributePool.Clear();
+343,953.0,1563,2484,0.000000000000,0,0,33,14,False,_textPool.Clear();
+343,953.0,1563,2485,0.000000000000,0,0,33,14,False,_commentPool.Clear();
+343,953.0,1563,2487,0.000000000000,0,0,33,14,False,return _errorID;
+343,953.0,1563,2491,0.000000000000,0,0,33,14,False,void XMLDocument::Print( XMLPrinter* streamer ) const
+343,953.0,1563,2493,0.000000000000,0,0,33,14,False,if ( streamer ) {
+343,953.0,1563,2494,0.000000000000,0,0,33,14,False,Accept( streamer );
+343,953.0,1563,2497,0.000000000000,0,0,33,14,False,XMLPrinter stdoutStreamer( stdout );
+343,953.0,1563,2498,0.000000000000,0,0,33,14,False,Accept( &stdoutStreamer );
+343,953.0,1563,2499,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,2500,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,2510,0.000000000000,0,0,33,14,False,"void XMLDocument::SetError( XMLError error, int lineNum, const char* format, ... )"
+343,953.0,1563,2512,0.000000000000,0,0,33,14,False,TIXMLASSERT( error >= 0 && error < XML_ERROR_COUNT );
+343,953.0,1563,2513,0.000000000000,0,0,33,14,False,_errorID = error;
+343,953.0,1563,2514,0.000000000000,0,0,33,14,False,_errorLineNum = lineNum;
+343,953.0,1563,2515,0.000000000000,0,0,33,14,False,_errorStr.Reset();
+343,953.0,1563,2517,0.000000000000,0,0,33,14,False,const size_t BUFFER_SIZE = 1000;
+343,953.0,1563,2518,0.000000000000,0,0,33,14,False,char* buffer = new char[BUFFER_SIZE];
+343,953.0,1563,2521,0.000000000000,0,0,33,14,False,"TIXML_SNPRINTF(buffer, BUFFER_SIZE, ""Error=%s ErrorID=%d (0x%x) Line number=%d"", ErrorIDToName(error), int(error), int(error), lineNum);"
+343,953.0,1563,2523,0.000000000000,0,0,33,14,False,if (format) {
+343,953.0,1563,2524,0.000000000000,0,0,33,14,False,size_t len = strlen(buffer);
+343,953.0,1563,2525,0.000000000000,0,0,33,14,False,"TIXML_SNPRINTF(buffer + len, BUFFER_SIZE - len, "": "");"
+343,953.0,1563,2526,0.000000000000,0,0,33,14,False,len = strlen(buffer);
+343,953.0,1563,2529,0.000000000000,0,0,33,14,False,"va_start(va, format);"
+343,953.0,1563,2530,0.000000000000,0,0,33,14,False,"TIXML_VSNPRINTF(buffer + len, BUFFER_SIZE - len, format, va);"
+343,953.0,1563,2531,0.000000000000,0,0,33,14,False,va_end(va);
+343,953.0,1563,2533,0.000000000000,0,0,33,14,False,_errorStr.SetStr(buffer);
+343,953.0,1563,2534,0.000000000000,0,0,33,14,False,delete[] buffer;
+343,953.0,1563,2535,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,2538,0.000000000000,0,0,33,14,False,/*static*/ const char* XMLDocument::ErrorIDToName(XMLError errorID)
+343,953.0,1563,2540,0.000000000000,0,0,33,14,False,TIXMLASSERT( errorID >= 0 && errorID < XML_ERROR_COUNT );
+343,953.0,1563,2541,0.000000000000,0,0,33,14,False,const char* errorName = _errorNames[errorID];
+343,953.0,1563,2542,0.000000000000,0,0,33,14,False,TIXMLASSERT( errorName && errorName[0] );
+343,953.0,1563,2543,0.000000000000,0,0,33,14,False,return errorName;
+343,953.0,1563,2546,0.000000000000,0,0,33,14,False,const char* XMLDocument::ErrorStr() const
+343,953.0,1563,2548,0.000000000000,0,0,33,14,False,"return _errorStr.Empty() ? """" : _errorStr.GetStr();"
+343,953.0,1563,2552,0.000000000000,0,0,33,14,False,void XMLDocument::PrintError() const
+343,953.0,1563,2554,0.000000000000,0,0,33,14,False,"printf(""%s\n"", ErrorStr());"
+343,953.0,1563,2555,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,2557,0.000000000000,0,0,33,14,False,const char* XMLDocument::ErrorName() const
+343,953.0,1563,2559,0.000000000000,0,0,33,14,False,return ErrorIDToName(_errorID);
+343,953.0,1563,2572,0.000000000000,0,0,33,14,False,"SetError( XML_ERROR_EMPTY_DOCUMENT, 0, 0 );"
+343,953.0,1563,2573,0.000000000000,0,0,33,14,False,return;
+343,953.0,1563,2582,0.000000000000,0,0,33,14,False,"SetError(XML_ELEMENT_DEPTH_EXCEEDED, _parseCurLineNum, ""Element nesting is too deep."" );"
+343,953.0,1563,2586,0.000000000000,0,14,33,0,False,void XMLDocument::PopDepth()
+343,953.0,1563,2588,0.000000000000,0,14,33,0,False,TIXMLASSERT(_parsingDepth > 0);
+343,953.0,1563,2589,0.000000000000,0,14,33,0,False,--_parsingDepth;
+343,953.0,1563,2590,0.000000000000,0,14,33,0,False,}
+343,953.0,1563,2592,0.000000000000,0,0,33,14,False,"XMLPrinter::XMLPrinter( FILE* file, bool compact, int depth ) :"
+343,953.0,1563,2593,0.000000000000,0,0,33,14,False,"_elementJustOpened( false ),"
+343,953.0,1563,2594,0.000000000000,0,0,33,14,False,"_stack(),"
+343,953.0,1563,2595,0.000000000000,0,0,33,14,False,"_firstElement( true ),"
+343,953.0,1563,2596,0.000000000000,0,0,33,14,False,"_fp( file ),"
+343,953.0,1563,2597,0.000000000000,0,0,33,14,False,"_depth( depth ),"
+343,953.0,1563,2598,0.000000000000,0,0,33,14,False,"_textDepth( -1 ),"
+343,953.0,1563,2599,0.000000000000,0,0,33,14,False,"_processEntities( true ),"
+343,953.0,1563,2600,0.000000000000,0,0,33,14,False,"_compactMode( compact ),"
+343,953.0,1563,2601,0.000000000000,0,0,33,14,False,_buffer()
+343,953.0,1563,2603,0.000000000000,0,0,33,14,False,for( int i=0; i<ENTITY_RANGE; ++i ) {
+343,953.0,1563,2604,0.000000000000,0,0,33,14,False,_entityFlag[i] = false;
+343,953.0,1563,2605,0.000000000000,0,0,33,14,False,_restrictedEntityFlag[i] = false;
+343,953.0,1563,2607,0.000000000000,0,0,33,14,False,for( int i=0; i<NUM_ENTITIES; ++i ) {
+343,953.0,1563,2608,0.000000000000,0,0,33,14,False,const char entityValue = entities[i].value;
+343,953.0,1563,2609,0.000000000000,0,0,33,14,False,const unsigned char flagIndex = static_cast<unsigned char>(entityValue);
+343,953.0,1563,2610,0.000000000000,0,0,33,14,False,TIXMLASSERT( flagIndex < ENTITY_RANGE );
+343,953.0,1563,2611,0.000000000000,0,0,33,14,False,_entityFlag[flagIndex] = true;
+343,953.0,1563,2613,0.000000000000,0,0,33,14,False,_restrictedEntityFlag[static_cast<unsigned char>('&')] = true;
+343,953.0,1563,2614,0.000000000000,0,0,33,14,False,_restrictedEntityFlag[static_cast<unsigned char>('<')] = true;
+343,953.0,1563,2615,0.000000000000,0,0,33,14,False,"_restrictedEntityFlag[static_cast<unsigned char>('>')] = true;	// not required, but consistency is nice"
+343,953.0,1563,2616,0.000000000000,0,0,33,14,False,_buffer.Push( 0 );
+343,953.0,1563,2617,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,2620,0.000000000000,0,0,33,14,False,"void XMLPrinter::Print( const char* format, ... )"
+343,953.0,1563,2623,0.000000000000,0,0,33,14,False,"va_start( va, format );"
+343,953.0,1563,2625,0.000000000000,0,0,33,14,False,if ( _fp ) {
+343,953.0,1563,2626,0.000000000000,0,0,33,14,False,"vfprintf( _fp, format, va );"
+343,953.0,1563,2629,0.000000000000,0,0,33,14,False,"const int len = TIXML_VSCPRINTF( format, va );"
+343,953.0,1563,2631,0.000000000000,0,0,33,14,False,va_end( va );
+343,953.0,1563,2632,0.000000000000,0,0,33,14,False,TIXMLASSERT( len >= 0 );
+343,953.0,1563,2633,0.000000000000,0,0,33,14,False,"va_start( va, format );"
+343,953.0,1563,2634,0.000000000000,0,0,33,14,False,TIXMLASSERT( _buffer.Size() > 0 && _buffer[_buffer.Size() - 1] == 0 );
+343,953.0,1563,2635,0.000000000000,0,0,33,14,False,char* p = _buffer.PushArr( len ) - 1;	// back up over the null terminator.
+343,953.0,1563,2636,0.000000000000,0,0,33,14,False,"TIXML_VSNPRINTF( p, len+1, format, va );"
+343,953.0,1563,2638,0.000000000000,0,0,33,14,False,va_end( va );
+343,953.0,1563,2639,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,2642,0.000000000000,0,0,33,14,False,"void XMLPrinter::Write( const char* data, size_t size )"
+343,953.0,1563,2644,0.000000000000,0,0,33,14,False,if ( _fp ) {
+343,953.0,1563,2645,0.000000000000,0,0,33,14,False,"fwrite ( data , sizeof(char), size, _fp);"
+343,953.0,1563,2648,0.000000000000,0,0,33,14,False,char* p = _buffer.PushArr( static_cast<int>(size) ) - 1;   // back up over the null terminator.
+343,953.0,1563,2649,0.000000000000,0,0,33,14,False,"memcpy( p, data, size );"
+343,953.0,1563,2650,0.000000000000,0,0,33,14,False,p[size] = 0;
+343,953.0,1563,2652,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,2655,0.000000000000,0,0,33,14,False,void XMLPrinter::Putc( char ch )
+343,953.0,1563,2657,0.000000000000,0,0,33,14,False,if ( _fp ) {
+343,953.0,1563,2658,0.000000000000,0,0,33,14,False,"fputc ( ch, _fp);"
+343,953.0,1563,2661,0.000000000000,0,0,33,14,False,char* p = _buffer.PushArr( sizeof(char) ) - 1;   // back up over the null terminator.
+343,953.0,1563,2662,0.000000000000,0,0,33,14,False,p[0] = ch;
+343,953.0,1563,2663,0.000000000000,0,0,33,14,False,p[1] = 0;
+343,953.0,1563,2665,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,2668,0.000000000000,0,0,33,14,False,void XMLPrinter::PrintSpace( int depth )
+343,953.0,1563,2670,0.000000000000,0,0,33,14,False,for( int i=0; i<depth; ++i ) {
+343,953.0,1563,2671,0.000000000000,0,0,33,14,False,"Write( ""    "" );"
+343,953.0,1563,2673,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,2676,0.000000000000,0,0,33,14,False,"void XMLPrinter::PrintString( const char* p, bool restricted )"
+343,953.0,1563,2679,0.000000000000,0,0,33,14,False,const char* q = p;
+343,953.0,1563,2681,0.000000000000,0,0,33,14,False,if ( _processEntities ) {
+343,953.0,1563,2682,0.000000000000,0,0,33,14,False,const bool* flag = restricted ? _restrictedEntityFlag : _entityFlag;
+343,953.0,1563,2683,0.000000000000,0,0,33,14,False,while ( *q ) {
+343,953.0,1563,2684,0.000000000000,0,0,33,14,False,TIXMLASSERT( p <= q );
+343,953.0,1563,2686,0.000000000000,0,0,33,14,False,if ( *q > 0 && *q < ENTITY_RANGE ) {
+343,953.0,1563,2690,0.000000000000,0,0,33,14,False,if ( flag[static_cast<unsigned char>(*q)] ) {
+343,953.0,1563,2691,0.000000000000,0,0,33,14,False,while ( p < q ) {
+343,953.0,1563,2692,0.000000000000,0,0,33,14,False,const size_t delta = q - p;
+343,953.0,1563,2693,0.000000000000,0,0,33,14,False,const int toPrint = ( INT_MAX < delta ) ? INT_MAX : static_cast<int>(delta);
+343,953.0,1563,2694,0.000000000000,0,0,33,14,False,"Write( p, toPrint );"
+343,953.0,1563,2695,0.000000000000,0,0,33,14,False,p += toPrint;
+343,953.0,1563,2697,0.000000000000,0,0,33,14,False,bool entityPatternPrinted = false;
+343,953.0,1563,2698,0.000000000000,0,0,33,14,False,for( int i=0; i<NUM_ENTITIES; ++i ) {
+343,953.0,1563,2699,0.000000000000,0,0,33,14,False,if ( entities[i].value == *q ) {
+343,953.0,1563,2700,0.000000000000,0,0,33,14,False,Putc( '&' );
+343,953.0,1563,2701,0.000000000000,0,0,33,14,False,"Write( entities[i].pattern, entities[i].length );"
+343,953.0,1563,2702,0.000000000000,0,0,33,14,False,Putc( ';' );
+343,953.0,1563,2703,0.000000000000,0,0,33,14,False,entityPatternPrinted = true;
+343,953.0,1563,2704,0.000000000000,0,0,33,14,False,break;
+343,953.0,1563,2707,0.000000000000,0,0,33,14,False,if ( !entityPatternPrinted ) {
+343,953.0,1563,2709,0.000000000000,0,0,33,14,False,TIXMLASSERT( false );
+343,953.0,1563,2711,0.000000000000,0,0,33,14,False,++p;
+343,953.0,1563,2714,0.000000000000,0,0,33,14,False,++q;
+343,953.0,1563,2715,0.000000000000,0,0,33,14,False,TIXMLASSERT( p <= q );
+343,953.0,1563,2719,0.000000000000,0,0,33,14,False,if ( p < q ) {
+343,953.0,1563,2720,0.000000000000,0,0,33,14,False,const size_t delta = q - p;
+343,953.0,1563,2721,0.000000000000,0,0,33,14,False,const int toPrint = ( INT_MAX < delta ) ? INT_MAX : static_cast<int>(delta);
+343,953.0,1563,2722,0.000000000000,0,0,33,14,False,"Write( p, toPrint );"
+343,953.0,1563,2726,0.000000000000,0,0,33,14,False,Write( p );
+343,953.0,1563,2728,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,2731,0.000000000000,0,0,33,14,False,"void XMLPrinter::PushHeader( bool writeBOM, bool writeDec )"
+343,953.0,1563,2733,0.000000000000,0,0,33,14,False,if ( writeBOM ) {
+343,953.0,1563,2735,0.000000000000,0,0,33,14,False,Write( reinterpret_cast< const char* >( bom ) );
+343,953.0,1563,2737,0.000000000000,0,0,33,14,False,if ( writeDec ) {
+343,953.0,1563,2738,0.000000000000,0,0,33,14,False,"PushDeclaration( ""xml version=\""1.0\"""" );"
+343,953.0,1563,2740,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,2742,0.000000000000,0,0,33,14,False,void XMLPrinter::PrepareForNewNode( bool compactMode )
+343,953.0,1563,2744,0.000000000000,0,0,33,14,False,SealElementIfJustOpened();
+343,953.0,1563,2746,0.000000000000,0,0,33,14,False,if ( compactMode ) {
+343,953.0,1563,2747,0.000000000000,0,0,33,14,False,return;
+343,953.0,1563,2750,0.000000000000,0,0,33,14,False,if ( _firstElement ) {
+343,953.0,1563,2751,0.000000000000,0,0,33,14,False,PrintSpace (_depth);
+343,953.0,1563,2752,0.000000000000,0,0,33,14,False,} else if ( _textDepth < 0) {
+343,953.0,1563,2753,0.000000000000,0,0,33,14,False,Putc( '\n' );
+343,953.0,1563,2754,0.000000000000,0,0,33,14,False,PrintSpace( _depth );
+343,953.0,1563,2757,0.000000000000,0,0,33,14,False,_firstElement = false;
+343,953.0,1563,2760,0.000000000000,0,0,33,14,False,"void XMLPrinter::OpenElement( const char* name, bool compactMode )"
+343,953.0,1563,2762,0.000000000000,0,0,33,14,False,PrepareForNewNode( compactMode );
+343,953.0,1563,2763,0.000000000000,0,0,33,14,False,_stack.Push( name );
+343,953.0,1563,2765,0.000000000000,0,0,33,14,False,"Write ( ""<"" );"
+343,953.0,1563,2766,0.000000000000,0,0,33,14,False,Write ( name );
+343,953.0,1563,2768,0.000000000000,0,0,33,14,False,_elementJustOpened = true;
+343,953.0,1563,2769,0.000000000000,0,0,33,14,False,++_depth;
+343,953.0,1563,2770,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,2773,0.000000000000,0,0,33,14,False,"void XMLPrinter::PushAttribute( const char* name, const char* value )"
+343,953.0,1563,2775,0.000000000000,0,0,33,14,False,TIXMLASSERT( _elementJustOpened );
+343,953.0,1563,2776,0.000000000000,0,0,33,14,False,Putc ( ' ' );
+343,953.0,1563,2777,0.000000000000,0,0,33,14,False,Write( name );
+343,953.0,1563,2778,0.000000000000,0,0,33,14,False,"Write( ""=\"""" );"
+343,953.0,1563,2779,0.000000000000,0,0,33,14,False,"PrintString( value, false );"
+343,953.0,1563,2780,0.000000000000,0,0,33,14,False,"Putc ( '\""' );"
+343,953.0,1563,2781,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,2784,0.000000000000,0,0,33,14,False,"void XMLPrinter::PushAttribute( const char* name, int v )"
+343,953.0,1563,2787,0.000000000000,0,0,33,14,False,"XMLUtil::ToStr( v, buf, BUF_SIZE );"
+343,953.0,1563,2788,0.000000000000,0,0,33,14,False,"PushAttribute( name, buf );"
+343,953.0,1563,2789,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,2792,0.000000000000,0,0,33,14,False,"void XMLPrinter::PushAttribute( const char* name, unsigned v )"
+343,953.0,1563,2795,0.000000000000,0,0,33,14,False,"XMLUtil::ToStr( v, buf, BUF_SIZE );"
+343,953.0,1563,2796,0.000000000000,0,0,33,14,False,"PushAttribute( name, buf );"
+343,953.0,1563,2797,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,2800,0.000000000000,0,0,33,14,False,"void XMLPrinter::PushAttribute(const char* name, int64_t v)"
+343,953.0,1563,2803,0.000000000000,0,0,33,14,False,"XMLUtil::ToStr(v, buf, BUF_SIZE);"
+343,953.0,1563,2804,0.000000000000,0,0,33,14,False,"PushAttribute(name, buf);"
+343,953.0,1563,2805,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,2808,0.000000000000,0,0,33,14,False,"void XMLPrinter::PushAttribute(const char* name, uint64_t v)"
+343,953.0,1563,2811,0.000000000000,0,0,33,14,False,"XMLUtil::ToStr(v, buf, BUF_SIZE);"
+343,953.0,1563,2812,0.000000000000,0,0,33,14,False,"PushAttribute(name, buf);"
+343,953.0,1563,2813,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,2816,0.000000000000,0,0,33,14,False,"void XMLPrinter::PushAttribute( const char* name, bool v )"
+343,953.0,1563,2819,0.000000000000,0,0,33,14,False,"XMLUtil::ToStr( v, buf, BUF_SIZE );"
+343,953.0,1563,2820,0.000000000000,0,0,33,14,False,"PushAttribute( name, buf );"
+343,953.0,1563,2821,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,2824,0.000000000000,0,0,33,14,False,"void XMLPrinter::PushAttribute( const char* name, double v )"
+343,953.0,1563,2827,0.000000000000,0,0,33,14,False,"XMLUtil::ToStr( v, buf, BUF_SIZE );"
+343,953.0,1563,2828,0.000000000000,0,0,33,14,False,"PushAttribute( name, buf );"
+343,953.0,1563,2829,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,2832,0.000000000000,0,0,33,14,False,void XMLPrinter::CloseElement( bool compactMode )
+343,953.0,1563,2834,0.000000000000,0,0,33,14,False,--_depth;
+343,953.0,1563,2835,0.000000000000,0,0,33,14,False,const char* name = _stack.Pop();
+343,953.0,1563,2837,0.000000000000,0,0,33,14,False,if ( _elementJustOpened ) {
+343,953.0,1563,2838,0.000000000000,0,0,33,14,False,"Write( ""/>"" );"
+343,953.0,1563,2841,0.000000000000,0,0,33,14,False,if ( _textDepth < 0 && !compactMode) {
+343,953.0,1563,2842,0.000000000000,0,0,33,14,False,Putc( '\n' );
+343,953.0,1563,2843,0.000000000000,0,0,33,14,False,PrintSpace( _depth );
+343,953.0,1563,2845,0.000000000000,0,0,33,14,False,"Write ( ""</"" );"
+343,953.0,1563,2846,0.000000000000,0,0,33,14,False,Write ( name );
+343,953.0,1563,2847,0.000000000000,0,0,33,14,False,"Write ( "">"" );"
+343,953.0,1563,2850,0.000000000000,0,0,33,14,False,if ( _textDepth == _depth ) {
+343,953.0,1563,2851,0.000000000000,0,0,33,14,False,_textDepth = -1;
+343,953.0,1563,2853,0.000000000000,0,0,33,14,False,if ( _depth == 0 && !compactMode) {
+343,953.0,1563,2854,0.000000000000,0,0,33,14,False,Putc( '\n' );
+343,953.0,1563,2856,0.000000000000,0,0,33,14,False,_elementJustOpened = false;
+343,953.0,1563,2857,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,2860,0.000000000000,0,0,33,14,False,void XMLPrinter::SealElementIfJustOpened()
+343,953.0,1563,2862,0.000000000000,0,0,33,14,False,if ( !_elementJustOpened ) {
+343,953.0,1563,2863,0.000000000000,0,0,33,14,False,return;
+343,953.0,1563,2865,0.000000000000,0,0,33,14,False,_elementJustOpened = false;
+343,953.0,1563,2866,0.000000000000,0,0,33,14,False,Putc( '>' );
+343,953.0,1563,2870,0.000000000000,0,0,33,14,False,"void XMLPrinter::PushText( const char* text, bool cdata )"
+343,953.0,1563,2872,0.000000000000,0,0,33,14,False,_textDepth = _depth-1;
+343,953.0,1563,2874,0.000000000000,0,0,33,14,False,SealElementIfJustOpened();
+343,953.0,1563,2875,0.000000000000,0,0,33,14,False,if ( cdata ) {
+343,953.0,1563,2876,0.000000000000,0,0,33,14,False,"Write( ""<![CDATA["" );"
+343,953.0,1563,2877,0.000000000000,0,0,33,14,False,Write( text );
+343,953.0,1563,2878,0.000000000000,0,0,33,14,False,"Write( ""]]>"" );"
+343,953.0,1563,2881,0.000000000000,0,0,33,14,False,"PrintString( text, true );"
+343,953.0,1563,2883,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,2886,0.000000000000,0,0,33,14,False,void XMLPrinter::PushText( int64_t value )
+343,953.0,1563,2889,0.000000000000,0,0,33,14,False,"XMLUtil::ToStr( value, buf, BUF_SIZE );"
+343,953.0,1563,2890,0.000000000000,0,0,33,14,False,"PushText( buf, false );"
+343,953.0,1563,2891,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,2894,0.000000000000,0,0,33,14,False,void XMLPrinter::PushText( uint64_t value )
+343,953.0,1563,2897,0.000000000000,0,0,33,14,False,"XMLUtil::ToStr(value, buf, BUF_SIZE);"
+343,953.0,1563,2898,0.000000000000,0,0,33,14,False,"PushText(buf, false);"
+343,953.0,1563,2899,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,2902,0.000000000000,0,0,33,14,False,void XMLPrinter::PushText( int value )
+343,953.0,1563,2905,0.000000000000,0,0,33,14,False,"XMLUtil::ToStr( value, buf, BUF_SIZE );"
+343,953.0,1563,2906,0.000000000000,0,0,33,14,False,"PushText( buf, false );"
+343,953.0,1563,2907,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,2910,0.000000000000,0,0,33,14,False,void XMLPrinter::PushText( unsigned value )
+343,953.0,1563,2913,0.000000000000,0,0,33,14,False,"XMLUtil::ToStr( value, buf, BUF_SIZE );"
+343,953.0,1563,2914,0.000000000000,0,0,33,14,False,"PushText( buf, false );"
+343,953.0,1563,2915,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,2918,0.000000000000,0,0,33,14,False,void XMLPrinter::PushText( bool value )
+343,953.0,1563,2921,0.000000000000,0,0,33,14,False,"XMLUtil::ToStr( value, buf, BUF_SIZE );"
+343,953.0,1563,2922,0.000000000000,0,0,33,14,False,"PushText( buf, false );"
+343,953.0,1563,2923,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,2926,0.000000000000,0,0,33,14,False,void XMLPrinter::PushText( float value )
+343,953.0,1563,2929,0.000000000000,0,0,33,14,False,"XMLUtil::ToStr( value, buf, BUF_SIZE );"
+343,953.0,1563,2930,0.000000000000,0,0,33,14,False,"PushText( buf, false );"
+343,953.0,1563,2931,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,2934,0.000000000000,0,0,33,14,False,void XMLPrinter::PushText( double value )
+343,953.0,1563,2937,0.000000000000,0,0,33,14,False,"XMLUtil::ToStr( value, buf, BUF_SIZE );"
+343,953.0,1563,2938,0.000000000000,0,0,33,14,False,"PushText( buf, false );"
+343,953.0,1563,2939,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,2942,0.000000000000,0,0,33,14,False,void XMLPrinter::PushComment( const char* comment )
+343,953.0,1563,2944,0.000000000000,0,0,33,14,False,PrepareForNewNode( _compactMode );
+343,953.0,1563,2946,0.000000000000,0,0,33,14,False,"Write( ""<!--"" );"
+343,953.0,1563,2947,0.000000000000,0,0,33,14,False,Write( comment );
+343,953.0,1563,2948,0.000000000000,0,0,33,14,False,"Write( ""-->"" );"
+343,953.0,1563,2949,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,2952,0.000000000000,0,0,33,14,False,void XMLPrinter::PushDeclaration( const char* value )
+343,953.0,1563,2954,0.000000000000,0,0,33,14,False,PrepareForNewNode( _compactMode );
+343,953.0,1563,2956,0.000000000000,0,0,33,14,False,"Write( ""<?"" );"
+343,953.0,1563,2957,0.000000000000,0,0,33,14,False,Write( value );
+343,953.0,1563,2958,0.000000000000,0,0,33,14,False,"Write( ""?>"" );"
+343,953.0,1563,2959,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,2962,0.000000000000,0,0,33,14,False,void XMLPrinter::PushUnknown( const char* value )
+343,953.0,1563,2964,0.000000000000,0,0,33,14,False,PrepareForNewNode( _compactMode );
+343,953.0,1563,2966,0.000000000000,0,0,33,14,False,"Write( ""<!"" );"
+343,953.0,1563,2967,0.000000000000,0,0,33,14,False,Write( value );
+343,953.0,1563,2968,0.000000000000,0,0,33,14,False,Putc( '>' );
+343,953.0,1563,2969,0.000000000000,0,0,33,14,False,}
+343,953.0,1563,2972,0.000000000000,0,0,33,14,False,bool XMLPrinter::VisitEnter( const XMLDocument& doc )
+343,953.0,1563,2974,0.000000000000,0,0,33,14,False,_processEntities = doc.ProcessEntities();
+343,953.0,1563,2975,0.000000000000,0,0,33,14,False,if ( doc.HasBOM() ) {
+343,953.0,1563,2976,0.000000000000,0,0,33,14,False,"PushHeader( true, false );"
+343,953.0,1563,2978,0.000000000000,0,0,33,14,False,return true;
+343,953.0,1563,2982,0.000000000000,0,0,33,14,False,"bool XMLPrinter::VisitEnter( const XMLElement& element, const XMLAttribute* attribute )"
+343,953.0,1563,2984,0.000000000000,0,0,33,14,False,const XMLElement* parentElem = 0;
+343,953.0,1563,2985,0.000000000000,0,0,33,14,False,if ( element.Parent() ) {
+343,953.0,1563,2986,0.000000000000,0,0,33,14,False,parentElem = element.Parent()->ToElement();
+343,953.0,1563,2988,0.000000000000,0,0,33,14,False,const bool compactMode = parentElem ? CompactMode( *parentElem ) : _compactMode;
+343,953.0,1563,2989,0.000000000000,0,0,33,14,False,"OpenElement( element.Name(), compactMode );"
+343,953.0,1563,2990,0.000000000000,0,0,33,14,False,while ( attribute ) {
+343,953.0,1563,2991,0.000000000000,0,0,33,14,False,"PushAttribute( attribute->Name(), attribute->Value() );"
+343,953.0,1563,2992,0.000000000000,0,0,33,14,False,attribute = attribute->Next();
+343,953.0,1563,2994,0.000000000000,0,0,33,14,False,return true;
+343,953.0,1563,2998,0.000000000000,0,0,33,14,False,bool XMLPrinter::VisitExit( const XMLElement& element )
+343,953.0,1563,3000,0.000000000000,0,0,33,14,False,CloseElement( CompactMode(element) );
+343,953.0,1563,3001,0.000000000000,0,0,33,14,False,return true;
+343,953.0,1563,3005,0.000000000000,0,0,33,14,False,bool XMLPrinter::Visit( const XMLText& text )
+343,953.0,1563,3007,0.000000000000,0,0,33,14,False,"PushText( text.Value(), text.CData() );"
+343,953.0,1563,3008,0.000000000000,0,0,33,14,False,return true;
+343,953.0,1563,3012,0.000000000000,0,0,33,14,False,bool XMLPrinter::Visit( const XMLComment& comment )
+343,953.0,1563,3014,0.000000000000,0,0,33,14,False,PushComment( comment.Value() );
+343,953.0,1563,3015,0.000000000000,0,0,33,14,False,return true;
+343,953.0,1563,3018,0.000000000000,0,0,33,14,False,bool XMLPrinter::Visit( const XMLDeclaration& declaration )
+343,953.0,1563,3020,0.000000000000,0,0,33,14,False,PushDeclaration( declaration.Value() );
+343,953.0,1563,3021,0.000000000000,0,0,33,14,False,return true;
+343,953.0,1563,3025,0.000000000000,0,0,33,14,False,bool XMLPrinter::Visit( const XMLUnknown& unknown )
+343,953.0,1563,3027,0.000000000000,0,0,33,14,False,PushUnknown( unknown.Value() );
+343,953.0,1563,3028,0.000000000000,0,0,33,14,False,return true;

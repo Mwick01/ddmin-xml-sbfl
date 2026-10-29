@@ -1,0 +1,314 @@
+{
+  "augmented": {
+    "buggy_source": "/home/user/ddmin-xml-sbfl/subjects/tinyxml2-character-ref/buggy/tinyxml2.cpp",
+    "coverage_records": "/home/user/ddmin-xml-sbfl/results/tinyxml2_character_ref/smoke_afl_30s_20261029_155106_437805/augmented_eval/coverage/coverage.jsonl",
+    "ddmin_run_directory": "/home/user/ddmin-xml-sbfl/results/tinyxml2_character_ref/smoke_afl_30s_20261029_155106_437805/augmented_eval",
+    "executable_line_count": 1563,
+    "failing_tests": 33,
+    "jaccard": {
+      "average_rank": 41.0,
+      "best_rank": 1,
+      "exam_percentage_average": 2.6231605886116443,
+      "exam_score_average": 0.026231605886116442,
+      "executable_line_count": 1563,
+      "fault_lines": [
+        {
+          "average_rank": 41.0,
+          "best_rank": 1,
+          "exam_score_average": 0.026231605886116442,
+          "line": 550,
+          "score": 1.0,
+          "source": "TIXMLASSERT( digit == 0 || mult <= UINT_MAX / digit );",
+          "worst_rank": 81
+        }
+      ],
+      "first_fault_line": 550,
+      "first_fault_score": 1.0,
+      "first_fault_source": "TIXMLASSERT( digit == 0 || mult <= UINT_MAX / digit );",
+      "inspect_at_average_rank": {
+        "1": false,
+        "10": false,
+        "3": false,
+        "5": false
+      },
+      "worst_rank": 81
+    },
+    "known_fault_lines": [
+      550
+    ],
+    "ochiai": {
+      "average_rank": 41.0,
+      "best_rank": 1,
+      "exam_percentage_average": 2.6231605886116443,
+      "exam_score_average": 0.026231605886116442,
+      "executable_line_count": 1563,
+      "fault_lines": [
+        {
+          "average_rank": 41.0,
+          "best_rank": 1,
+          "exam_score_average": 0.026231605886116442,
+          "line": 550,
+          "score": 1.0,
+          "source": "TIXMLASSERT( digit == 0 || mult <= UINT_MAX / digit );",
+          "worst_rank": 81
+        }
+      ],
+      "first_fault_line": 550,
+      "first_fault_score": 1.0,
+      "first_fault_source": "TIXMLASSERT( digit == 0 || mult <= UINT_MAX / digit );",
+      "inspect_at_average_rank": {
+        "1": false,
+        "10": false,
+        "3": false,
+        "5": false
+      },
+      "worst_rank": 81
+    },
+    "output_files": {
+      "jaccard_ranking": "/home/user/ddmin-xml-sbfl/results/tinyxml2_character_ref/smoke_afl_30s_20261029_155106_437805/augmented_eval/sbfl/jaccard_ranking.csv",
+      "ochiai_ranking": "/home/user/ddmin-xml-sbfl/results/tinyxml2_character_ref/smoke_afl_30s_20261029_155106_437805/augmented_eval/sbfl/ochiai_ranking.csv",
+      "spectrum": "/home/user/ddmin-xml-sbfl/results/tinyxml2_character_ref/smoke_afl_30s_20261029_155106_437805/augmented_eval/sbfl/spectrum.csv"
+    },
+    "passing_tests": 14,
+    "total_tests": 47
+  },
+  "augmented_profiles": {
+    "FAIL": 5,
+    "PASS": 3
+  },
+  "baseline": {
+    "buggy_source": "/home/user/ddmin-xml-sbfl/subjects/tinyxml2-character-ref/buggy/tinyxml2.cpp",
+    "coverage_records": "/home/user/ddmin-xml-sbfl/results/tinyxml2_character_ref/smoke_afl_30s_20261029_155106_437805/baseline_eval/coverage/coverage.jsonl",
+    "ddmin_run_directory": "/home/user/ddmin-xml-sbfl/results/tinyxml2_character_ref/smoke_afl_30s_20261029_155106_437805/baseline_eval",
+    "executable_line_count": 1563,
+    "failing_tests": 29,
+    "jaccard": {
+      "average_rank": 46.5,
+      "best_rank": 1,
+      "exam_percentage_average": 2.9750479846449136,
+      "exam_score_average": 0.029750479846449136,
+      "executable_line_count": 1563,
+      "fault_lines": [
+        {
+          "average_rank": 46.5,
+          "best_rank": 1,
+          "exam_score_average": 0.029750479846449136,
+          "line": 550,
+          "score": 1.0,
+          "source": "TIXMLASSERT( digit == 0 || mult <= UINT_MAX / digit );",
+          "worst_rank": 92
+        }
+      ],
+      "first_fault_line": 550,
+      "first_fault_score": 1.0,
+      "first_fault_source": "TIXMLASSERT( digit == 0 || mult <= UINT_MAX / digit );",
+      "inspect_at_average_rank": {
+        "1": false,
+        "10": false,
+        "3": false,
+        "5": false
+      },
+      "worst_rank": 92
+    },
+    "known_fault_lines": [
+      550
+    ],
+    "ochiai": {
+      "average_rank": 46.5,
+      "best_rank": 1,
+      "exam_percentage_average": 2.9750479846449136,
+      "exam_score_average": 0.029750479846449136,
+      "executable_line_count": 1563,
+      "fault_lines": [
+        {
+          "average_rank": 46.5,
+          "best_rank": 1,
+          "exam_score_average": 0.029750479846449136,
+          "line": 550,
+          "score": 1.0,
+          "source": "TIXMLASSERT( digit == 0 || mult <= UINT_MAX / digit );",
+          "worst_rank": 92
+        }
+      ],
+      "first_fault_line": 550,
+      "first_fault_score": 1.0,
+      "first_fault_source": "TIXMLASSERT( digit == 0 || mult <= UINT_MAX / digit );",
+      "inspect_at_average_rank": {
+        "1": false,
+        "10": false,
+        "3": false,
+        "5": false
+      },
+      "worst_rank": 92
+    },
+    "output_files": {
+      "jaccard_ranking": "/home/user/ddmin-xml-sbfl/results/tinyxml2_character_ref/smoke_afl_30s_20261029_155106_437805/baseline_eval/sbfl/jaccard_ranking.csv",
+      "ochiai_ranking": "/home/user/ddmin-xml-sbfl/results/tinyxml2_character_ref/smoke_afl_30s_20261029_155106_437805/baseline_eval/sbfl/ochiai_ranking.csv",
+      "spectrum": "/home/user/ddmin-xml-sbfl/results/tinyxml2_character_ref/smoke_afl_30s_20261029_155106_437805/baseline_eval/sbfl/spectrum.csv"
+    },
+    "passing_tests": 6,
+    "total_tests": 35
+  },
+  "baseline_profiles": {
+    "FAIL": 4,
+    "PASS": 1
+  },
+  "baseline_records_unchanged": true,
+  "baseline_run": "/home/user/ddmin-xml-sbfl/results/tinyxml2_character_ref/character_ddmin_exploratory/20261029_145029_5923",
+  "build_command": [
+    "docker",
+    "run",
+    "--rm",
+    "--network",
+    "none",
+    "--user",
+    "1000:1000",
+    "-e",
+    "HOME=/tmp",
+    "-e",
+    "TMPDIR=/tmp",
+    "-e",
+    "AFL_PATH=/aflsmart",
+    "-e",
+    "AFL_SKIP_CPUFREQ=1",
+    "-e",
+    "AFL_NO_AFFINITY=1",
+    "-e",
+    "AFL_NO_UI=1",
+    "-e",
+    "AFL_DONT_OPTIMIZE=1",
+    "-v",
+    "/home/user/ddmin-xml-sbfl:/work",
+    "-w",
+    "/work",
+    "ddmin-aflsmart",
+    "/aflsmart/afl-g++",
+    "-std=c++11",
+    "-O0",
+    "-g",
+    "-DTINYXML2_DEBUG",
+    "-I",
+    "subjects/tinyxml2-character-ref/buggy",
+    "subjects/tinyxml2-character-ref/buggy/tinyxml2.cpp",
+    "subjects/tinyxml2-character-ref/fuzz_driver.cpp",
+    "-o",
+    "build/aflsmart/tinyxml2_character_ref/tinyxml_buggy"
+  ],
+  "classification_counts": {
+    "FAIL": 4,
+    "PASS": 8,
+    "UNRESOLVED": 177
+  },
+  "classification_scope": "retained queue, crash, and hang inputs; original seeds and byte duplicates excluded",
+  "coverage_build_unchanged": true,
+  "docker_fuzz_elapsed_seconds": 30.30605001099957,
+  "docker_image_id": "sha256:77d92806705f2e318bd27a9ed04a8cf4a21a54a200f06bb4c9b840e6cf3021de",
+  "duration_budget_seconds": 30,
+  "excluded_counts": {
+    "seed_entry": 7
+  },
+  "fuzz_abort_handling": "Fuzz-only SIGABRT handler exits 134; original buggy/fixed oracle determines outcomes, target assertion checked in coverage",
+  "fuzz_build_flags": "-std=c++11 -O0 -g -DTINYXML2_DEBUG, AFL_DONT_OPTIMIZE=1",
+  "fuzz_command": [
+    "docker",
+    "run",
+    "--rm",
+    "--network",
+    "none",
+    "--user",
+    "1000:1000",
+    "-e",
+    "HOME=/tmp",
+    "-e",
+    "TMPDIR=/tmp",
+    "-e",
+    "AFL_PATH=/aflsmart",
+    "-e",
+    "AFL_SKIP_CPUFREQ=1",
+    "-e",
+    "AFL_NO_AFFINITY=1",
+    "-e",
+    "AFL_NO_UI=1",
+    "-e",
+    "AFL_DONT_OPTIMIZE=1",
+    "-v",
+    "/home/user/ddmin-xml-sbfl:/work",
+    "-w",
+    "/work",
+    "ddmin-aflsmart",
+    "timeout",
+    "-s",
+    "INT",
+    "-k",
+    "5s",
+    "30s",
+    "/aflsmart/afl-fuzz",
+    "-m",
+    "200",
+    "-t",
+    "1000",
+    "-d",
+    "-i",
+    "/work/results/tinyxml2_character_ref/smoke_afl_30s_20261029_155106_437805/seeds",
+    "-o",
+    "/work/results/tinyxml2_character_ref/smoke_afl_30s_20261029_155106_437805/raw",
+    "--",
+    "/work/build/aflsmart/tinyxml2_character_ref/tinyxml_buggy",
+    "@@"
+  ],
+  "fuzzer": "AFL 2.52b from ddmin-aflsmart, plain byte mutation, -d",
+  "fuzzer_returncode": 124,
+  "fuzzer_stats": {
+    "afl_banner": "tinyxml_buggy",
+    "afl_version": "2.52b",
+    "bitmap_cvg": "0.83%",
+    "command_line": "/aflsmart/afl-fuzz -m 200 -t 1000 -d -i /work/results/tinyxml2_character_ref/smoke_afl_30s_20261029_155106_437805/seeds -o /work/results/tinyxml2_character_ref/smoke_afl_30s_20261029_155106_437805/raw -- /work/build/aflsmart/tinyxml2_character_ref/tinyxml_buggy @@",
+    "cur_path": "164",
+    "cycles_done": "0",
+    "exec_timeout": "1000",
+    "execs_done": "78017",
+    "execs_per_sec": "1244.44",
+    "execs_since_crash": "78017",
+    "fuzzer_pid": "7",
+    "last_crash": "0",
+    "last_hang": "0",
+    "last_path": "1793269296",
+    "last_update": "1793269297",
+    "max_depth": "5",
+    "paths_favored": "42",
+    "paths_found": "189",
+    "paths_imported": "0",
+    "paths_total": "196",
+    "pending_favs": "12",
+    "pending_total": "150",
+    "stability": "100.00%",
+    "start_time": "1793269267",
+    "target_mode": "default",
+    "unique_crashes": "0",
+    "unique_hangs": "0",
+    "variable_paths": "0"
+  },
+  "generated_fail_fixed_accept_count": 0,
+  "generated_fail_fixed_reject_count": 4,
+  "generated_profiles": {
+    "FAIL": 2,
+    "PASS": 3
+  },
+  "handwritten_probe_inputs_used": false,
+  "novel_usable_tests": 12,
+  "retained_entries": 196,
+  "run_directory": "/home/user/ddmin-xml-sbfl/results/tinyxml2_character_ref/smoke_afl_30s_20261029_155106_437805",
+  "seed_inputs": 7,
+  "seed_method": "six original DDMIN PASS candidates plus minimized DDMIN FAIL",
+  "sha256": {
+    "build/aflsmart/tinyxml2_character_ref/tinyxml_buggy": "7116bb50e0bcd3c64b0b5f8ff10287f63d86ff4927902f07f7b48f67b26270f7",
+    "build/tinyxml2_character_ref_cov/tinyxml_cov": "30adc4cfb9d3743df186b337722a8dcfb427929e72917df20665a54e0cf025cb",
+    "results/tinyxml2_character_ref/character_ddmin_exploratory/20261029_145029_5923/coverage/coverage.jsonl": "b3324b6e4f9b39d06282d1d8db0d9c0868f70f68245fc110bd28dcfabcd23f24",
+    "scripts/oracle_tinyxml2_character_ref.py": "23041daa58df693e0bc76292aaa689e3ebb241b8158499172a3c07dcc8b7ea91",
+    "scripts/smoke_tinyxml2_character_ref.py": "5410cf46b05e8795f06f3de87a214ca877abd3f22e91b6c59e08576808e8dee7",
+    "subjects/tinyxml2-character-ref/buggy/tinyxml2.cpp": "d5a7fd2ad255d716c4d2a64d5686f90c7e27a8285c49c59a5d105cb400bdf703",
+    "subjects/tinyxml2-character-ref/fuzz_driver.cpp": "37d950bcec0b61ad2b7a66692bdc2d009fc7bcb60140361b9d4ce5a2e2af8a9b"
+  },
+  "status": "EXPLORATORY_SINGLE_RUN_SMOKE",
+  "subject": "TinyXML-2 #997"
+}

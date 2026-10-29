@@ -1,0 +1,5 @@
+suite,metric,passing_tests,failing_tests,score,best_rank,average_rank,worst_rank,exam_percentage,executable_lines
+baseline,jaccard,6,29,1.0,1,46.5,92,2.9750479846449136,1563
+baseline,ochiai,6,29,1.0,1,46.5,92,2.9750479846449136,1563
+augmented,jaccard,20,30,1.0,1,41.0,81,2.6231605886116443,1563
+augmented,ochiai,20,30,1.0,1,41.0,81,2.6231605886116443,1563

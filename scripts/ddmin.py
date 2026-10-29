@@ -40,10 +40,10 @@ def append_json_line(path: Path, record: dict[str, Any]) -> None:
         file.write("\n")
 
 
-def candidate_hash(candidate: str) -> str:
+def candidate_hash(candidate: str, encoding: str = "utf-8") -> str:
     """Create a stable identifier for a candidate."""
 
-    return hashlib.sha256(candidate.encode("utf-8")).hexdigest()
+    return hashlib.sha256(candidate.encode(encoding)).hexdigest()
 
 
 def split_ranges(length: int, number_of_parts: int) -> list[tuple[int, int]]:
@@ -91,10 +91,12 @@ class CandidateRecorder:
         temporary_file: Path,
         output_directory: Path,
         classifier: Classifier,
+        encoding: str = "utf-8",
     ) -> None:
         self.temporary_file = temporary_file
         self.output_directory = output_directory
         self.classifier = classifier
+        self.encoding = encoding
 
         self.cache: dict[str, Outcome] = {}
 
@@ -133,7 +135,7 @@ class CandidateRecorder:
         if context is None:
             context = {}
 
-        encoded_candidate = candidate.encode("utf-8")
+        encoded_candidate = candidate.encode(self.encoding)
         digest = hashlib.sha256(encoded_candidate).hexdigest()
 
         cached = digest in self.cache
@@ -263,7 +265,7 @@ def ddmin(
                         "part_index": part_index,
                         "previous_size": previous_size,
                         "new_size": len(current),
-                        "candidate_id": candidate_hash(current),
+                        "candidate_id": candidate_hash(current, recorder.encoding),
                     },
                 )
 
@@ -309,7 +311,7 @@ def ddmin(
                         "part_index": part_index,
                         "previous_size": previous_size,
                         "new_size": len(current),
-                        "candidate_id": candidate_hash(current),
+                        "candidate_id": candidate_hash(current, recorder.encoding),
                     },
                 )
 
@@ -372,6 +374,15 @@ def parse_arguments() -> argparse.Namespace:
         ),
     )
 
+    parser.add_argument(
+        "--input-encoding",
+        default="utf-8",
+        help=(
+            "Codec used to map input bytes to reduction units. "
+            "Use latin-1 for a one-to-one byte mapping. Default: utf-8"
+        ),
+    )
+
     return parser.parse_args()
 
 
@@ -385,9 +396,9 @@ def main() -> int:
         return 2
 
     try:
-        original = input_file.read_bytes().decode("utf-8")
-    except UnicodeDecodeError as error:
-        print(f"Error: input is not valid UTF-8: {error}", file=sys.stderr)
+        original = input_file.read_bytes().decode(arguments.input_encoding)
+    except (UnicodeDecodeError, LookupError) as error:
+        print(f"Error decoding input: {error}", file=sys.stderr)
         return 2
 
     run_id = (
@@ -427,6 +438,7 @@ def main() -> int:
         temporary_file=arguments.temporary_file.resolve(),
         output_directory=run_directory,
         classifier=classifier,
+        encoding=arguments.input_encoding,
     )
 
     reduction_log = run_directory / "reductions.jsonl"
@@ -447,7 +459,7 @@ def main() -> int:
         return 1
 
     minimal_file = run_directory / "minimal_failure.xml"
-    minimal_file.write_bytes(minimal.encode("utf-8"))
+    minimal_file.write_bytes(minimal.encode(arguments.input_encoding))
 
     original_size = len(original)
     minimal_size = len(minimal)
@@ -461,8 +473,9 @@ def main() -> int:
 
     summary = {
         "input_file": str(input_file),
-        "original_candidate_id": candidate_hash(original),
-        "minimal_candidate_id": candidate_hash(minimal),
+        "original_candidate_id": candidate_hash(original, arguments.input_encoding),
+        "minimal_candidate_id": candidate_hash(minimal, arguments.input_encoding),
+        "input_encoding": arguments.input_encoding,
         "original_size_characters": original_size,
         "minimal_size_characters": minimal_size,
         "reduction_percentage": round(reduction_percentage, 2),

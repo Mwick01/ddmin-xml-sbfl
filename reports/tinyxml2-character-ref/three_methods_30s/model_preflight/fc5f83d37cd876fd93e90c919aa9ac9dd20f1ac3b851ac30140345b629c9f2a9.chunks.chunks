@@ -1,0 +1,15 @@
+0,10,TinyxmlFragments,Enabled
+0,10,TinyxmlFragments~Fragments,Enabled
+0,0,TinyxmlFragments~Fragments~Fragments,Enabled
+0,0,TinyxmlFragments~Fragments~Fragments~RawByte,Enabled
+1,7,TinyxmlFragments~Fragments~Fragments_1,Enabled
+1,7,TinyxmlFragments~Fragments~Fragments_1~EndTag,Enabled
+1,2,TinyxmlFragments~Fragments~Fragments_1~EndTag~Open,Enabled
+3,6,TinyxmlFragments~Fragments~Fragments_1~EndTag~Name,Enabled
+7,7,TinyxmlFragments~Fragments~Fragments_1~EndTag~Close,Enabled
+8,8,TinyxmlFragments~Fragments~Fragments_2,Enabled
+8,8,TinyxmlFragments~Fragments~Fragments_2~RawByte,Enabled
+9,9,TinyxmlFragments~Fragments~Fragments_3,Enabled
+9,9,TinyxmlFragments~Fragments~Fragments_3~RawByte,Enabled
+10,10,TinyxmlFragments~Fragments~Fragments_4,Enabled
+10,10,TinyxmlFragments~Fragments~Fragments_4~RawByte,Enabled

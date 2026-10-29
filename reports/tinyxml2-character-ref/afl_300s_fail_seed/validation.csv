@@ -1,0 +1,8 @@
+candidate_id,classification,original_buggy_exit_code,fixed_exit_code,fixed_stdout,coverage_exit_code,fault_line_covered,repeat_counts_identical
+35942b95dbd0349f3f0d6fff117ce2356dbbeeaa5bb3530578c7a6fa39eeb5e5,PASS,0,0,PARSE_OK,0,False,True
+420493cfe635626cae8072c77bb7c02584bb45bc54627b996ca528dd60aa4ff8,PASS,0,0,PARSE_OK,0,False,True
+aa5c5ffc71bd0f71d75a60733b3ebc8dc88aa077097364fe91570421903ee64c,PASS,0,0,PARSE_OK,0,False,True
+27b84780dcbbd7642e0f6c455b96ea9edbd3368b92696a0aa27ca2471c481001,FAIL,-6,2,"PARSE_ERROR code=7 name=""XML_ERROR_PARSING_ATTRIBUTE""",134,True,True
+3b07402645ebdf214a0acca9e865dd79f4d66ec2a22e5da53b3fcdf8d6b718bb,FAIL,-6,2,"PARSE_ERROR code=7 name=""XML_ERROR_PARSING_ATTRIBUTE""",134,True,True
+9d5b8749259c6c21ecdd26361fa59a1c262fb0348925aee9c29fdf1d4b809338,FAIL,-6,2,"PARSE_ERROR code=7 name=""XML_ERROR_PARSING_ATTRIBUTE""",134,True,True
+ad1fee5625463596fbae8f6d8a77427ad2572b0c9319f48d4df57ca8387e4a1b,FAIL,-6,2,"PARSE_ERROR code=7 name=""XML_ERROR_PARSING_ATTRIBUTE""",134,True,True

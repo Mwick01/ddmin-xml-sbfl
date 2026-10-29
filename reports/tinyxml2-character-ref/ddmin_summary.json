@@ -1,0 +1,17 @@
+{
+  "failing_candidates": 29,
+  "input_encoding": "latin-1",
+  "input_file": "/home/user/ddmin-xml-sbfl/subjects/tinyxml2-character-ref/poc.xml",
+  "iterations": 36,
+  "minimal_candidate_id": "0aabf45e688d2f7c7b5a4661be27c04e4ba58d4895efaac8ce9c3f1303dbb849",
+  "minimal_file": "/home/user/ddmin-xml-sbfl/results/tinyxml2_character_ref/character_ddmin_exploratory/20261029_145029_5923/minimal_failure.xml",
+  "minimal_size_characters": 32,
+  "oracle_attempts": 1092,
+  "oracle_module": "oracle_tinyxml2_character_ref",
+  "original_candidate_id": "e6b4cf9a6c2c8734e4869658860fcf5481d51a2d15f9c2e3c6db6263b51f80bc",
+  "original_size_characters": 341,
+  "passing_candidates": 6,
+  "reduction_percentage": 90.62,
+  "unique_candidates": 426,
+  "unresolved_candidates": 391
+}

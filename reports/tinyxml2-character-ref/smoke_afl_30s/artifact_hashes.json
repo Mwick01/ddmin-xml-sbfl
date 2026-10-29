@@ -1,0 +1,17 @@
+{
+  "README.md": "82f52a7d91251d52e9b6bc865e419630d90787d91b6a94ae55b87dea7000a9d8",
+  "augmented_coverage.jsonl": "86604ff40fdcc568791fad18a0efbddf047317c6132a53d6387b86c357821c5e",
+  "augmented_sbfl_summary.json": "49c7c244d60e7427cae30563558d8294df559cad48ca8c86bb8c13ac47114e7f",
+  "classification.jsonl": "d4aaa495ebe5a7c592070d37b5f9ef19ecf1fe0ceb46cfda362b51cb14300a56",
+  "comparison.csv": "dce818227e9c03e01915a8133f54fcad413fd40020d92936db18bff75fffcb00",
+  "fuzzer.log": "4f2ed781137ff5567652a67aa6be5125a8b7fc4c059beea530f1e2640308b47e",
+  "fuzzer_stats.txt": "ad1c66dc8634b99d2444232d1702a4ef3f6b5653222071a24e402fa88c4c72c8",
+  "generated_coverage.jsonl": "5c1316ed383cb2250a8c35aad99d0ce1e39e0a1035f3623f1ca11761caed51c7",
+  "jaccard_ranking.csv": "12cbfa129b4158bef0b7f7d49ba634ae48cdc7d46b6e54671ad3c88a8239af12",
+  "ochiai_ranking.csv": "cdd59fed94d6752f9e1ef629b58d77033b137e5f49823c419d286f8952d8b06b",
+  "retained_inputs.zip": "372d0333aaf461fef13fa6e6f4121c8fd7e634382a5ed8868cda9e6029874491",
+  "spectrum.csv": "fc223d1518e60ee74bdf505ce84be88c6f2368af9a2df06632716070e8a6d9e2",
+  "summary.json": "aedbd33711c0f5c547c47b2d8b0e03230f6218f554177e61ffc1dae86ded5e1b",
+  "validation.csv": "5f4f55a9b313ff6d212a72153515872438182a6de5e24558c8d85ca01b2ed692",
+  "validation_summary.json": "de5ee5ce3dc44c881b69a73c60aafe3b2f6508f8945ee10e933f46fc09f281e0"
+}

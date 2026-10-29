@@ -1,0 +1,73 @@
+{
+  "buggy_source": "/home/user/ddmin-xml-sbfl/subjects/tinyxml2-character-ref/buggy/tinyxml2.cpp",
+  "coverage_records": "/home/user/ddmin-xml-sbfl/results/tinyxml2_character_ref/three_methods_30s_20261029_164014_650117/aflsmart-nonstack/augmented_eval/coverage/coverage.jsonl",
+  "ddmin_run_directory": "/home/user/ddmin-xml-sbfl/results/tinyxml2_character_ref/three_methods_30s_20261029_164014_650117/aflsmart-nonstack/augmented_eval",
+  "executable_line_count": 1563,
+  "failing_tests": 33,
+  "jaccard": {
+    "average_rank": 41.0,
+    "best_rank": 1,
+    "exam_percentage_average": 2.6231605886116443,
+    "exam_score_average": 0.026231605886116442,
+    "executable_line_count": 1563,
+    "fault_lines": [
+      {
+        "average_rank": 41.0,
+        "best_rank": 1,
+        "exam_score_average": 0.026231605886116442,
+        "line": 550,
+        "score": 1.0,
+        "source": "TIXMLASSERT( digit == 0 || mult <= UINT_MAX / digit );",
+        "worst_rank": 81
+      }
+    ],
+    "first_fault_line": 550,
+    "first_fault_score": 1.0,
+    "first_fault_source": "TIXMLASSERT( digit == 0 || mult <= UINT_MAX / digit );",
+    "inspect_at_average_rank": {
+      "1": false,
+      "10": false,
+      "3": false,
+      "5": false
+    },
+    "worst_rank": 81
+  },
+  "known_fault_lines": [
+    550
+  ],
+  "ochiai": {
+    "average_rank": 41.0,
+    "best_rank": 1,
+    "exam_percentage_average": 2.6231605886116443,
+    "exam_score_average": 0.026231605886116442,
+    "executable_line_count": 1563,
+    "fault_lines": [
+      {
+        "average_rank": 41.0,
+        "best_rank": 1,
+        "exam_score_average": 0.026231605886116442,
+        "line": 550,
+        "score": 1.0,
+        "source": "TIXMLASSERT( digit == 0 || mult <= UINT_MAX / digit );",
+        "worst_rank": 81
+      }
+    ],
+    "first_fault_line": 550,
+    "first_fault_score": 1.0,
+    "first_fault_source": "TIXMLASSERT( digit == 0 || mult <= UINT_MAX / digit );",
+    "inspect_at_average_rank": {
+      "1": false,
+      "10": false,
+      "3": false,
+      "5": false
+    },
+    "worst_rank": 81
+  },
+  "output_files": {
+    "jaccard_ranking": "/home/user/ddmin-xml-sbfl/results/tinyxml2_character_ref/three_methods_30s_20261029_164014_650117/aflsmart-nonstack/augmented_eval/sbfl/jaccard_ranking.csv",
+    "ochiai_ranking": "/home/user/ddmin-xml-sbfl/results/tinyxml2_character_ref/three_methods_30s_20261029_164014_650117/aflsmart-nonstack/augmented_eval/sbfl/ochiai_ranking.csv",
+    "spectrum": "/home/user/ddmin-xml-sbfl/results/tinyxml2_character_ref/three_methods_30s_20261029_164014_650117/aflsmart-nonstack/augmented_eval/sbfl/spectrum.csv"
+  },
+  "passing_tests": 13,
+  "total_tests": 46
+}

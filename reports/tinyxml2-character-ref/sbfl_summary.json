@@ -1,0 +1,73 @@
+{
+  "buggy_source": "/home/user/ddmin-xml-sbfl/subjects/tinyxml2-character-ref/buggy/tinyxml2.cpp",
+  "coverage_records": "/home/user/ddmin-xml-sbfl/results/tinyxml2_character_ref/character_ddmin_exploratory/20261029_145029_5923/coverage/coverage.jsonl",
+  "ddmin_run_directory": "/home/user/ddmin-xml-sbfl/results/tinyxml2_character_ref/character_ddmin_exploratory/20261029_145029_5923",
+  "executable_line_count": 1563,
+  "failing_tests": 29,
+  "jaccard": {
+    "average_rank": 46.5,
+    "best_rank": 1,
+    "exam_percentage_average": 2.9750479846449136,
+    "exam_score_average": 0.029750479846449136,
+    "executable_line_count": 1563,
+    "fault_lines": [
+      {
+        "average_rank": 46.5,
+        "best_rank": 1,
+        "exam_score_average": 0.029750479846449136,
+        "line": 550,
+        "score": 1.0,
+        "source": "TIXMLASSERT( digit == 0 || mult <= UINT_MAX / digit );",
+        "worst_rank": 92
+      }
+    ],
+    "first_fault_line": 550,
+    "first_fault_score": 1.0,
+    "first_fault_source": "TIXMLASSERT( digit == 0 || mult <= UINT_MAX / digit );",
+    "inspect_at_average_rank": {
+      "1": false,
+      "10": false,
+      "3": false,
+      "5": false
+    },
+    "worst_rank": 92
+  },
+  "known_fault_lines": [
+    550
+  ],
+  "ochiai": {
+    "average_rank": 46.5,
+    "best_rank": 1,
+    "exam_percentage_average": 2.9750479846449136,
+    "exam_score_average": 0.029750479846449136,
+    "executable_line_count": 1563,
+    "fault_lines": [
+      {
+        "average_rank": 46.5,
+        "best_rank": 1,
+        "exam_score_average": 0.029750479846449136,
+        "line": 550,
+        "score": 1.0,
+        "source": "TIXMLASSERT( digit == 0 || mult <= UINT_MAX / digit );",
+        "worst_rank": 92
+      }
+    ],
+    "first_fault_line": 550,
+    "first_fault_score": 1.0,
+    "first_fault_source": "TIXMLASSERT( digit == 0 || mult <= UINT_MAX / digit );",
+    "inspect_at_average_rank": {
+      "1": false,
+      "10": false,
+      "3": false,
+      "5": false
+    },
+    "worst_rank": 92
+  },
+  "output_files": {
+    "jaccard_ranking": "/home/user/ddmin-xml-sbfl/results/tinyxml2_character_ref/character_ddmin_exploratory/20261029_145029_5923/sbfl/jaccard_ranking.csv",
+    "ochiai_ranking": "/home/user/ddmin-xml-sbfl/results/tinyxml2_character_ref/character_ddmin_exploratory/20261029_145029_5923/sbfl/ochiai_ranking.csv",
+    "spectrum": "/home/user/ddmin-xml-sbfl/results/tinyxml2_character_ref/character_ddmin_exploratory/20261029_145029_5923/sbfl/spectrum.csv"
+  },
+  "passing_tests": 6,
+  "total_tests": 35
+}

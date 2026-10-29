@@ -1,0 +1,51 @@
+[
+  {
+    "seed": "187ae4880f30691121289b1119247e663300993767511c208233286bdc52ab1f.xml",
+    "returncode": 0,
+    "chunk_bytes": 11322,
+    "repaired_identical": true,
+    "peach_ok": true
+  },
+  {
+    "seed": "4f49f4d0a29cb40b37bd970ca082d00b0221ab9f046ab6fd5094f15b7883e720.xml",
+    "returncode": 0,
+    "chunk_bytes": 9361,
+    "repaired_identical": true,
+    "peach_ok": true
+  },
+  {
+    "seed": "5d783a2abb6fdb544121753b232a71d4ae2c1d651d1b6e2b974563f52c0e504c.xml",
+    "returncode": 0,
+    "chunk_bytes": 13983,
+    "repaired_identical": true,
+    "peach_ok": true
+  },
+  {
+    "seed": "b7c6f2f98ecca456a33fc86a3d1958a3fef2d1e8408a05c3526b1b5db41acb24.xml",
+    "returncode": 0,
+    "chunk_bytes": 1945,
+    "repaired_identical": true,
+    "peach_ok": true
+  },
+  {
+    "seed": "b9dd86c779db140ffe4ae5d9bb5929e02cfe2486db6190d48f2f53ef98401bc8.xml",
+    "returncode": 0,
+    "chunk_bytes": 4498,
+    "repaired_identical": true,
+    "peach_ok": true
+  },
+  {
+    "seed": "fc5f83d37cd876fd93e90c919aa9ac9dd20f1ac3b851ac30140345b629c9f2a9.xml",
+    "returncode": 0,
+    "chunk_bytes": 809,
+    "repaired_identical": true,
+    "peach_ok": true
+  },
+  {
+    "seed": "minimal_failure.xml",
+    "returncode": 0,
+    "chunk_bytes": 2528,
+    "repaired_identical": true,
+    "peach_ok": true
+  }
+]

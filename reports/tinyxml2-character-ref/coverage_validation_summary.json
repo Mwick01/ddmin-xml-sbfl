@@ -1,0 +1,79 @@
+{
+  "artifact_sha256": {
+    "coverage_records.jsonl": "b3324b6e4f9b39d06282d1d8db0d9c0868f70f68245fc110bd28dcfabcd23f24",
+    "coverage_summary.json": "76cee0af0796113e008c024b3627779d60e2b65b2ffc4d3e21f5af0fecf20639",
+    "coverage_validation.csv": "dc6e37dd255ec05de37c6cd70e7db89ea7473f293e7b0e7fa03b71c265298bb9",
+    "ddmin_summary.json": "c0b2273ef214c363263d926944d98ec7cdde1947e9f5c6e2a58405ca489433b9",
+    "jaccard_ranking.csv": "d3d3fe7939a86da05aa96259e990adc840b274fb100cb9e23a7e885b5367a97e",
+    "minimal_failure.xml": "0aabf45e688d2f7c7b5a4661be27c04e4ba58d4895efaac8ce9c3f1303dbb849",
+    "ochiai_ranking.csv": "b16aee0421fdf80570ea2b5205038c2de9352fa772d247f64abe3d03d6a0d45a",
+    "sbfl_summary.json": "2e1fe20b333eaa00d4b28f5d0e434fbb2b1233d186b1f7add13a70c9214a91a1",
+    "spectrum.csv": "1eb9808bfea55c66771c2e127ef9774fe2030db73ed4445c0c8afa6690b01a9f"
+  },
+  "buggy_revision": "321ea883b7190d4e85cae5512a12e5eaa8f8731f",
+  "candidate_sha256_verified": 35,
+  "compiler": "g++ (Ubuntu 15.2.0-16ubuntu1) 15.2.0",
+  "compiler_flags": "-O0 -g --coverage -DTINYXML2_DEBUG",
+  "coverage_abort_handling": "SIGABRT handler calls __gcov_dump then std::_Exit(134); only the coverage driver changes",
+  "coverage_abort_handling_limitation": "__gcov_dump is not guaranteed async-signal-safe; this is an exploratory single-threaded harness, checked by repeated spectra",
+  "coverage_fail_exit_134_with_target_assertion": 29,
+  "covered_line_union": 402,
+  "executable_lines": 1563,
+  "failing_tests": 29,
+  "fault_location_role": "target assertion / crash-site representative",
+  "fault_spectrum": {
+    "ef": 29,
+    "ep": 0,
+    "nf": 0,
+    "np": 6
+  },
+  "fixed_fail_error_name": "XML_ERROR_PARSING_ATTRIBUTE",
+  "fixed_fail_parse_error_exit_2": 29,
+  "fixed_fail_success_exit_0": 0,
+  "fixed_revision": "57eea48c5bfc354ac45d53b2eb499e66c80d63e0",
+  "gcov": "gcov (Ubuntu 15.2.0-16ubuntu1) 15.2.0",
+  "git_head": "e772857444dcd26e5a6e8a74bd66d8145eae6856",
+  "independent_rank_recalculation_passed": true,
+  "known_fault_line": 550,
+  "original_buggy_fail_signal_6": 29,
+  "pass_fail_profile_overlap": 0,
+  "passing_tests": 6,
+  "profiles": {
+    "FAIL": {
+      "distinct_profiles": 4,
+      "profile_frequencies": [
+        23,
+        3,
+        2,
+        1
+      ]
+    },
+    "PASS": {
+      "distinct_profiles": 1,
+      "profile_frequencies": [
+        6
+      ]
+    }
+  },
+  "python": "3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]",
+  "repeat_count_per_candidate": 1,
+  "repeated_coverage_counts_identical_tests": 35,
+  "run_id": "20261029_145029_5923",
+  "sha256": {
+    "build/tinyxml2_character_ref_cov/tinyxml2.gcno": "f747db455f6b607b5da0365013dbc221ae2178b228bf61edb82bb1599b386eb0",
+    "build/tinyxml2_character_ref_cov/tinyxml2.o": "8a3607aa0c407a39952707c72414a567bc86956a444accc3af701dee537aff4f",
+    "build/tinyxml2_character_ref_cov/tinyxml_cov": "30adc4cfb9d3743df186b337722a8dcfb427929e72917df20665a54e0cf025cb",
+    "results/tinyxml2_character_ref/character_ddmin_exploratory/20261029_145029_5923/unique_candidates.jsonl": "99fac36cf485ea0295d83c842ad3e299ed189cbd574038c14e9682a672773393",
+    "scripts/build_tinyxml2_character_ref_coverage.sh": "2ea1fe45df453c5dda4a90ee75f5829c8dac815389ee437618340c515b237636",
+    "scripts/collect_coverage.py": "2074637425706003bbf9c016b36a2ff5e403c7546edebc7dcbb903857261651b",
+    "scripts/oracle_tinyxml2_character_ref.py": "23041daa58df693e0bc76292aaa689e3ebb241b8158499172a3c07dcc8b7ea91",
+    "scripts/sbfl.py": "216cd4c21de5ea3a25633463f9ebe9b1c42d74eb936216a7c0ca4dcafc51f523",
+    "subjects/tinyxml2-character-ref/buggy/tinyxml2.cpp": "d5a7fd2ad255d716c4d2a64d5686f90c7e27a8285c49c59a5d105cb400bdf703",
+    "subjects/tinyxml2-character-ref/buggy/tinyxml2.h": "02f2389feb67fbb3efe42aaa6942034bc7d54695f357c5aac3cbd2f78a06ca4a",
+    "subjects/tinyxml2-character-ref/buggy_asan": "fdf19d84bdc15c732879801d866c987400d581cfe5f00eed33d121b5cf0efd0f",
+    "subjects/tinyxml2-character-ref/coverage_driver.cpp": "05c6b04b20fe65b6594da6b11c03e938e476200dcb912a9c78121a95dffdda2a",
+    "subjects/tinyxml2-character-ref/fixed_asan": "e5b4b5e111e110aab848deedb318aea6e044a41488f55561c890951180832891"
+  },
+  "status": "EXPLORATORY_ONLY",
+  "verification_date": "2026-10-29"
+}
