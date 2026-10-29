@@ -1,0 +1,4 @@
+<!DOCTYPE foo [
+<!ELEMENT junk ((bar|foo),zebra)>
+]>
+<foo/>

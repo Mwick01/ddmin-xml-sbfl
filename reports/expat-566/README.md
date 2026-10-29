@@ -87,7 +87,7 @@ Historical fix: merge 9288cd54
    REJECT candidate from the formal subject set.
 
 ### Reason:
-   No usable DDMIN PASS spectrum was generated. The candidate is
+   No usable character-level DDMIN PASS spectrum was generated. The candidate is
    retained as evidence of structural invalidity during character-level
    reduction.
 
@@ -116,3 +116,18 @@ Historical fix: merge 9288cd54
     The absence of PASS candidates is a property of this subject /
     character-level reduction trajectory, rather than an artifact of
     the subset granularity-reset implementation.
+
+### Structural DDMIN follow-up (2026-10-29)
+
+A DTD content-model-aware structural DDMIN run on the same historical input
+generated 13 unique candidates: 6 PASS, 3 FAIL, 2 UNRESOLVED, and 2 invalid
+XML. The minimal FAIL is 60 characters, down from 67. This supplies a valid
+PASS/FAIL SBFL baseline, but all nine usable tests execute the seven known
+fault lines. The first known fault ranks 395.5 by Jaccard and 394 by Ochiai
+among 4,473 executable lines. The tiny reproducer and weak discrimination
+keep Expat #566 outside the formal fuzzing subject set.
+
+See the [structural screening report](structural_screening/report.md),
+[reduction summary](structural_screening/reduction_summary.json),
+[SBFL summary](structural_screening/sbfl_summary.json), and
+[minimal failure](structural_screening/minimal_failure.xml).

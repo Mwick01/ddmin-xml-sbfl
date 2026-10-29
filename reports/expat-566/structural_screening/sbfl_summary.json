@@ -1,0 +1,187 @@
+{
+  "buggy_source": "/home/user/ddmin-xml-sbfl/subjects/expat-566/buggy/expat/lib/xmlparse.c",
+  "coverage_records": "/home/user/ddmin-xml-sbfl/results/expat_566_structural_ddmin/20261029_140924_971716/coverage/coverage.jsonl",
+  "ddmin_run_directory": "/home/user/ddmin-xml-sbfl/results/expat_566_structural_ddmin/20261029_140924_971716",
+  "executable_line_count": 4473,
+  "failing_tests": 3,
+  "jaccard": {
+    "average_rank": 395.5,
+    "best_rank": 28,
+    "exam_percentage_average": 8.841940532081377,
+    "exam_score_average": 0.08841940532081377,
+    "executable_line_count": 4473,
+    "fault_lines": [
+      {
+        "average_rank": 395.5,
+        "best_rank": 28,
+        "exam_score_average": 0.08841940532081377,
+        "line": 7399,
+        "score": 0.3333333333333333,
+        "source": "XML_Content *const stackBottom = &ret[dtd->scaffCount];",
+        "worst_rank": 763
+      },
+      {
+        "average_rank": 395.5,
+        "best_rank": 28,
+        "exam_score_average": 0.08841940532081377,
+        "line": 7400,
+        "score": 0.3333333333333333,
+        "source": "XML_Content *stackTop = stackBottom; /* i.e. stack is initially empty */",
+        "worst_rank": 763
+      },
+      {
+        "average_rank": 395.5,
+        "best_rank": 28,
+        "exam_score_average": 0.08841940532081377,
+        "line": 7404,
+        "score": 0.3333333333333333,
+        "source": "(--stackTop)->numchildren = 0;",
+        "worst_rank": 763
+      },
+      {
+        "average_rank": 395.5,
+        "best_rank": 28,
+        "exam_score_average": 0.08841940532081377,
+        "line": 7408,
+        "score": 0.3333333333333333,
+        "source": "const int src_node = (int)(stackTop++)->numchildren;",
+        "worst_rank": 763
+      },
+      {
+        "average_rank": 395.5,
+        "best_rank": 28,
+        "exam_score_average": 0.08841940532081377,
+        "line": 7430,
+        "score": 0.3333333333333333,
+        "source": "dest->children = &dest[1];",
+        "worst_rank": 763
+      },
+      {
+        "average_rank": 395.5,
+        "best_rank": 28,
+        "exam_score_average": 0.08841940532081377,
+        "line": 7435,
+        "score": 0.3333333333333333,
+        "source": "stackTop -= dest->numchildren;",
+        "worst_rank": 763
+      },
+      {
+        "average_rank": 395.5,
+        "best_rank": 28,
+        "exam_score_average": 0.08841940532081377,
+        "line": 7438,
+        "score": 0.3333333333333333,
+        "source": "(stackTop + i)->numchildren = (unsigned int)cn;",
+        "worst_rank": 763
+      }
+    ],
+    "first_fault_line": 7399,
+    "first_fault_score": 0.3333333333333333,
+    "first_fault_source": "XML_Content *const stackBottom = &ret[dtd->scaffCount];",
+    "inspect_at_average_rank": {
+      "1": false,
+      "10": false,
+      "3": false,
+      "5": false
+    },
+    "worst_rank": 763
+  },
+  "known_fault_lines": [
+    7399,
+    7400,
+    7404,
+    7408,
+    7430,
+    7435,
+    7438
+  ],
+  "ochiai": {
+    "average_rank": 394.0,
+    "best_rank": 28,
+    "exam_percentage_average": 8.808405991504584,
+    "exam_score_average": 0.08808405991504584,
+    "executable_line_count": 4473,
+    "fault_lines": [
+      {
+        "average_rank": 394.0,
+        "best_rank": 28,
+        "exam_score_average": 0.08808405991504584,
+        "line": 7399,
+        "score": 0.5773502691896257,
+        "source": "XML_Content *const stackBottom = &ret[dtd->scaffCount];",
+        "worst_rank": 760
+      },
+      {
+        "average_rank": 394.0,
+        "best_rank": 28,
+        "exam_score_average": 0.08808405991504584,
+        "line": 7400,
+        "score": 0.5773502691896257,
+        "source": "XML_Content *stackTop = stackBottom; /* i.e. stack is initially empty */",
+        "worst_rank": 760
+      },
+      {
+        "average_rank": 394.0,
+        "best_rank": 28,
+        "exam_score_average": 0.08808405991504584,
+        "line": 7404,
+        "score": 0.5773502691896257,
+        "source": "(--stackTop)->numchildren = 0;",
+        "worst_rank": 760
+      },
+      {
+        "average_rank": 394.0,
+        "best_rank": 28,
+        "exam_score_average": 0.08808405991504584,
+        "line": 7408,
+        "score": 0.5773502691896257,
+        "source": "const int src_node = (int)(stackTop++)->numchildren;",
+        "worst_rank": 760
+      },
+      {
+        "average_rank": 394.0,
+        "best_rank": 28,
+        "exam_score_average": 0.08808405991504584,
+        "line": 7430,
+        "score": 0.5773502691896257,
+        "source": "dest->children = &dest[1];",
+        "worst_rank": 760
+      },
+      {
+        "average_rank": 394.0,
+        "best_rank": 28,
+        "exam_score_average": 0.08808405991504584,
+        "line": 7435,
+        "score": 0.5773502691896257,
+        "source": "stackTop -= dest->numchildren;",
+        "worst_rank": 760
+      },
+      {
+        "average_rank": 394.0,
+        "best_rank": 28,
+        "exam_score_average": 0.08808405991504584,
+        "line": 7438,
+        "score": 0.5773502691896257,
+        "source": "(stackTop + i)->numchildren = (unsigned int)cn;",
+        "worst_rank": 760
+      }
+    ],
+    "first_fault_line": 7399,
+    "first_fault_score": 0.5773502691896257,
+    "first_fault_source": "XML_Content *const stackBottom = &ret[dtd->scaffCount];",
+    "inspect_at_average_rank": {
+      "1": false,
+      "10": false,
+      "3": false,
+      "5": false
+    },
+    "worst_rank": 760
+  },
+  "output_files": {
+    "jaccard_ranking": "/home/user/ddmin-xml-sbfl/results/expat_566_structural_ddmin/20261029_140924_971716/sbfl/jaccard_ranking.csv",
+    "ochiai_ranking": "/home/user/ddmin-xml-sbfl/results/expat_566_structural_ddmin/20261029_140924_971716/sbfl/ochiai_ranking.csv",
+    "spectrum": "/home/user/ddmin-xml-sbfl/results/expat_566_structural_ddmin/20261029_140924_971716/sbfl/spectrum.csv"
+  },
+  "passing_tests": 6,
+  "total_tests": 9
+}

@@ -1,0 +1,20 @@
+{
+  "failing_candidates": 3,
+  "generated_attempts": 40,
+  "input_file": "/home/user/ddmin-xml-sbfl/subjects/expat-566/input.xml",
+  "invalid_xml_candidates": 2,
+  "iterations": 6,
+  "minimal_candidate_id": "3f912d3370a066fa3b922805b4c8c178eaa921b8ecf7b658de3bc92b7a6ed722",
+  "minimal_file": "/home/user/ddmin-xml-sbfl/results/expat_566_structural_ddmin/20261029_140924_971716/minimal_failure.xml",
+  "minimal_size_characters": 60,
+  "oracle_attempts": 11,
+  "oracle_module": "oracle_expat_566",
+  "original_candidate_id": "3b010bf87947675b730e0ba156507da6e74bbf13509ba73dafd2c1254c7f2513",
+  "original_size_characters": 67,
+  "passing_candidates": 6,
+  "reducer_file": "/home/user/ddmin-xml-sbfl/scripts/expat566_structural_ddmin.py",
+  "reducer_sha256": "47417e475e39e880054ba82fab2a55417579e014a06d173b4d2cb6d5ea7479be",
+  "reduction_percentage": 10.45,
+  "unique_candidates": 13,
+  "unresolved_candidates": 2
+}
