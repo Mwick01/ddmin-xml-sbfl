@@ -1,0 +1,9 @@
+{
+  "completed_metadata_records": 0,
+  "evidence": "Terminal output supplied by the user in this project chat; current results directory has zero completed metadata records.",
+  "fuzz_root": "results/libxml2_467/formal_structure_shared_v2_300s_20261028_155044",
+  "replacement_fuzz_root": "results/libxml2_467/formal_structure_shared_v2_300s_20261029_105143",
+  "reported_error": "/usr/bin/docker: Input/output error",
+  "reported_exit_code": 126,
+  "status": "Failed at Docker startup before the fuzzer started; excluded from formal results."
+}

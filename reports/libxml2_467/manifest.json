@@ -44,14 +44,55 @@
       "seed_directory": "aflsmart/libxml2_467_character_seeds",
       "status": "complete",
       "target_sha256": "877c6c91cf9dd57de37135374d7dbec38cb716d35e744b295e5a1c38e994bb4a"
+    },
+    {
+      "all_afl_stability_100_percent": true,
+      "all_git_clean": true,
+      "analysis_root": "results/libxml2_467/formal_structure_shared_v2_300s_20261029_105143_analysis",
+      "baseline_run": "results/libxml2_467_structural_ddmin/20261026_123127_300282",
+      "completed_trials": 15,
+      "duration_seconds": 300,
+      "experiment_commits": [
+        "a09ac21fdfc41841334fab344a5892d9dfd1cb66"
+      ],
+      "fuzz_root": "results/libxml2_467/formal_structure_shared_v2_300s_20261029_105143",
+      "id": "structural_shared_v2",
+      "order_seed": 20260920,
+      "pit_file": "aflsmart/libxml2_467_shared_v2.xml",
+      "pit_sha256": "0beae0bd1af7b0899b39703da0d5144a10e93ea6a694f47f6d4d455f975e1b24",
+      "repetitions_per_mode": 5,
+      "seed_corpus_sha256": "63aa481e72d356b77e72f9c5ede5a01fc082b4a7e9382efbf3dc7bbc035a161a",
+      "seed_count": 3,
+      "seed_directory": "aflsmart/libxml2_467_structure_seeds",
+      "status": "complete",
+      "target_sha256": "877c6c91cf9dd57de37135374d7dbec38cb716d35e744b295e5a1c38e994bb4a"
     }
   ],
+  "comparison": {
+    "campaigns": [
+      "character_shared_v2",
+      "structural_shared_v2"
+    ],
+    "limitations": [
+      "Different DDMIN baselines: character rank 7.5, structural rank 14.5.",
+      "Different corpus sizes: 25 character seeds and 3 structural seeds.",
+      "Campaigns ran on different dates; order seed controls mode order, not fuzzer randomness.",
+      "One fault and five trials per mode; descriptive results without a significance claim."
+    ],
+    "same_target_sha256": "877c6c91cf9dd57de37135374d7dbec38cb716d35e744b295e5a1c38e994bb4a",
+    "shared_pit_sha256": "0beae0bd1af7b0899b39703da0d5144a10e93ea6a694f47f6d4d455f975e1b24",
+    "total_trials": 30
+  },
   "export_policy": "Compact report export; raw queue files, per-test spectra, binaries, and gcov data remain outside reports. JSON paths are repository-relative.",
   "fault_line": 9596,
   "fault_source": "subjects/libxml2-467/buggy/parser.c",
+  "final_validation": "validation/final_campaigns.json",
   "fixed_revision": "0bd4e4e032d57ecf982b57312eb6136efdd35d56",
-  "report_date": "2026-10-27",
-  "repository_snapshot_commit": "f01eb368a24eb643e60ab27cbf0ea0d7eea93668",
+  "previous_report_date": "2026-10-27",
+  "previous_repository_snapshot_commit": "f01eb368a24eb643e60ab27cbf0ea0d7eea93668",
+  "report_date": "2026-10-29",
+  "report_status": "Complete: character and structural shared-v2 campaigns and SBFL analyses; structural-v1 campaign retained as history.",
+  "repository_snapshot_commit": "a09ac21fdfc41841334fab344a5892d9dfd1cb66",
   "source_files": [
     {
       "export": "baselines/character/ddmin_summary.json",
@@ -328,9 +369,117 @@
       "source": "aflsmart/libxml2_467_shared_v2.xml",
       "source_sha256": "0beae0bd1af7b0899b39703da0d5144a10e93ea6a694f47f6d4d455f975e1b24",
       "transformation": "Exact byte copy."
+    },
+    {
+      "export": "experiments/structural_shared_v2/per_run.csv",
+      "source": "results/libxml2_467/formal_structure_shared_v2_300s_20261029_105143_analysis/per_run.csv",
+      "source_sha256": "6638ef284f3a93faf92fc2b46b4e11c8d68a4fb810424d94b409cdffd800a85e",
+      "transformation": "Exact byte copy."
+    },
+    {
+      "export": "experiments/structural_shared_v2/aggregate.csv",
+      "source": "results/libxml2_467/formal_structure_shared_v2_300s_20261029_105143_analysis/aggregate.csv",
+      "source_sha256": "7ec5f0e4781bf1b1a0e50f9215453e7b6869aecc7259f4098786d4f353a88c56",
+      "transformation": "Exact byte copy."
+    },
+    {
+      "export": "experiments/structural_shared_v2/summary.json",
+      "source": "results/libxml2_467/formal_structure_shared_v2_300s_20261029_105143_analysis/summary.json",
+      "source_sha256": "3ca7e18392d98702bf0ac770b953b89b0abbf4365d5de7e70999abe950a13573",
+      "transformation": "Repository-absolute paths converted to repository-relative paths."
+    },
+    {
+      "export": "experiments/structural_shared_v2/run_metadata.jsonl",
+      "source": "results/libxml2_467/formal_structure_shared_v2_300s_20261029_105143/rep01/afl/metadata.json",
+      "source_sha256": "1c8808a752158cb07b4eb05475642b18a0d748cf2f3fbb031caaf24a89c6c3a1",
+      "transformation": "Combined JSONL, repository-relative paths, collector_summary omitted."
+    },
+    {
+      "export": "experiments/structural_shared_v2/run_metadata.jsonl",
+      "source": "results/libxml2_467/formal_structure_shared_v2_300s_20261029_105143/rep01/aflsmart-mixed/metadata.json",
+      "source_sha256": "b7e8bcd0442245bde17868047b71f9aa159192c1e81af96eefbb7a98a936bf43",
+      "transformation": "Combined JSONL, repository-relative paths, collector_summary omitted."
+    },
+    {
+      "export": "experiments/structural_shared_v2/run_metadata.jsonl",
+      "source": "results/libxml2_467/formal_structure_shared_v2_300s_20261029_105143/rep01/aflsmart-nonstack/metadata.json",
+      "source_sha256": "e3c1034122007fd0204a374a3a0adec021c18be7bb516b2b4ce2443a4b891627",
+      "transformation": "Combined JSONL, repository-relative paths, collector_summary omitted."
+    },
+    {
+      "export": "experiments/structural_shared_v2/run_metadata.jsonl",
+      "source": "results/libxml2_467/formal_structure_shared_v2_300s_20261029_105143/rep02/afl/metadata.json",
+      "source_sha256": "cf32ef403918d84463d192e4e5683ff83c2d0a2ae47c28c8d90f62793af18ef8",
+      "transformation": "Combined JSONL, repository-relative paths, collector_summary omitted."
+    },
+    {
+      "export": "experiments/structural_shared_v2/run_metadata.jsonl",
+      "source": "results/libxml2_467/formal_structure_shared_v2_300s_20261029_105143/rep02/aflsmart-mixed/metadata.json",
+      "source_sha256": "4f2c952bee2ad5d0a8f16a9428a144c2e8ddfdc3f494d7cab6ec250af3061e8c",
+      "transformation": "Combined JSONL, repository-relative paths, collector_summary omitted."
+    },
+    {
+      "export": "experiments/structural_shared_v2/run_metadata.jsonl",
+      "source": "results/libxml2_467/formal_structure_shared_v2_300s_20261029_105143/rep02/aflsmart-nonstack/metadata.json",
+      "source_sha256": "f9798dbd62819e478afb4fadfba1da61e8408d17d8bed2fb6073a84bc3d05bab",
+      "transformation": "Combined JSONL, repository-relative paths, collector_summary omitted."
+    },
+    {
+      "export": "experiments/structural_shared_v2/run_metadata.jsonl",
+      "source": "results/libxml2_467/formal_structure_shared_v2_300s_20261029_105143/rep03/afl/metadata.json",
+      "source_sha256": "8908df5c3dcc3f46c2cacaee84785f6bd0b9a2fb7f6fdea59bfed6476a343d9e",
+      "transformation": "Combined JSONL, repository-relative paths, collector_summary omitted."
+    },
+    {
+      "export": "experiments/structural_shared_v2/run_metadata.jsonl",
+      "source": "results/libxml2_467/formal_structure_shared_v2_300s_20261029_105143/rep03/aflsmart-mixed/metadata.json",
+      "source_sha256": "6d6b718310736f07de0d038d0c4497a0cb160e9ccf0f40419e00cd4dceac1bfb",
+      "transformation": "Combined JSONL, repository-relative paths, collector_summary omitted."
+    },
+    {
+      "export": "experiments/structural_shared_v2/run_metadata.jsonl",
+      "source": "results/libxml2_467/formal_structure_shared_v2_300s_20261029_105143/rep03/aflsmart-nonstack/metadata.json",
+      "source_sha256": "55e94dba616e6e6a14bb91116d761f5515f0542113a80ff02d5a23a4c2f6ff62",
+      "transformation": "Combined JSONL, repository-relative paths, collector_summary omitted."
+    },
+    {
+      "export": "experiments/structural_shared_v2/run_metadata.jsonl",
+      "source": "results/libxml2_467/formal_structure_shared_v2_300s_20261029_105143/rep04/afl/metadata.json",
+      "source_sha256": "d626c2889f68eb1664a8ef974c962de5142538b0270c9d208915afdae3a6c3d5",
+      "transformation": "Combined JSONL, repository-relative paths, collector_summary omitted."
+    },
+    {
+      "export": "experiments/structural_shared_v2/run_metadata.jsonl",
+      "source": "results/libxml2_467/formal_structure_shared_v2_300s_20261029_105143/rep04/aflsmart-mixed/metadata.json",
+      "source_sha256": "52022fb9d19027a695dc8e49cebb2a0669782a54cf42c27878136d617f9fbb97",
+      "transformation": "Combined JSONL, repository-relative paths, collector_summary omitted."
+    },
+    {
+      "export": "experiments/structural_shared_v2/run_metadata.jsonl",
+      "source": "results/libxml2_467/formal_structure_shared_v2_300s_20261029_105143/rep04/aflsmart-nonstack/metadata.json",
+      "source_sha256": "38e94cfbea53bf89cdef80d009bdf04c28b679ea542744796391cf13fd040ce9",
+      "transformation": "Combined JSONL, repository-relative paths, collector_summary omitted."
+    },
+    {
+      "export": "experiments/structural_shared_v2/run_metadata.jsonl",
+      "source": "results/libxml2_467/formal_structure_shared_v2_300s_20261029_105143/rep05/afl/metadata.json",
+      "source_sha256": "1eb93cc7a0f49efdb260f0144f448088e81d023b3f652cbd609babeea22444f4",
+      "transformation": "Combined JSONL, repository-relative paths, collector_summary omitted."
+    },
+    {
+      "export": "experiments/structural_shared_v2/run_metadata.jsonl",
+      "source": "results/libxml2_467/formal_structure_shared_v2_300s_20261029_105143/rep05/aflsmart-mixed/metadata.json",
+      "source_sha256": "005de4d50059ee4eda58049262fb0aeb818443c785d02aaab4ae1dea7bfe7559",
+      "transformation": "Combined JSONL, repository-relative paths, collector_summary omitted."
+    },
+    {
+      "export": "experiments/structural_shared_v2/run_metadata.jsonl",
+      "source": "results/libxml2_467/formal_structure_shared_v2_300s_20261029_105143/rep05/aflsmart-nonstack/metadata.json",
+      "source_sha256": "73a5cc6d19b98f1d724773cf6657ecaa9edcabf256d653b7e838bdab9248ece7",
+      "transformation": "Combined JSONL, repository-relative paths, collector_summary omitted."
     }
   ],
-  "structural_shared_v2_status": "No complete structural shared-v2 batch was present at report generation.",
+  "structural_shared_v2_status": "Complete: 15 trials and SBFL analysis; exported under experiments/structural_shared_v2/.",
   "subject": "libxml2_467",
   "timezone": "Asia/Colombo"
 }

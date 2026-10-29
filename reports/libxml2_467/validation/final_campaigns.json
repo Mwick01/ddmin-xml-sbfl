@@ -1,0 +1,125 @@
+{
+  "campaigns": [
+    {
+      "baseline_run": "results/libxml2_467_structural_ddmin/20261026_123127_300282",
+      "completed_trials": 15,
+      "fuzzer_stats_elapsed_range_seconds": [
+        299,
+        300
+      ],
+      "id": "structural_v1",
+      "peach_chunks_by_mode": {
+        "aflsmart-mixed": [
+          2,
+          1,
+          2,
+          2,
+          4
+        ],
+        "aflsmart-nonstack": [
+          1,
+          2,
+          1,
+          2,
+          1
+        ]
+      },
+      "pit_sha256": "cd05c62edac4f02a74af4b913b6ebb77dfc9726d8b61a7d64f63ac21d465d331"
+    },
+    {
+      "baseline_run": "results/libxml2_467_ddmin/20260926_224640_738508",
+      "completed_trials": 15,
+      "fuzzer_stats_elapsed_range_seconds": [
+        300,
+        300
+      ],
+      "id": "character_shared_v2",
+      "peach_chunks_by_mode": {
+        "aflsmart-mixed": [
+          2,
+          2,
+          1,
+          1,
+          2
+        ],
+        "aflsmart-nonstack": [
+          1,
+          2,
+          1,
+          3,
+          2
+        ]
+      },
+      "pit_sha256": "0beae0bd1af7b0899b39703da0d5144a10e93ea6a694f47f6d4d455f975e1b24"
+    },
+    {
+      "baseline_run": "results/libxml2_467_structural_ddmin/20261026_123127_300282",
+      "completed_trials": 15,
+      "fuzzer_stats_elapsed_range_seconds": [
+        299,
+        300
+      ],
+      "id": "structural_shared_v2",
+      "peach_chunks_by_mode": {
+        "aflsmart-mixed": [
+          2,
+          5,
+          3,
+          1,
+          3
+        ],
+        "aflsmart-nonstack": [
+          1,
+          1,
+          1,
+          3,
+          2
+        ]
+      },
+      "pit_sha256": "0beae0bd1af7b0899b39703da0d5144a10e93ea6a694f47f6d4d455f975e1b24"
+    }
+  ],
+  "checks": [
+    "15 unique repetition/mode pairs per campaign",
+    "300 configured seconds per trial",
+    "Completed usable coverage for every trial",
+    "Clean recorded Git state and 100% AFL stability",
+    "Nonzero Peach chunks in every AFLSmart trial",
+    "PIT, target, source and seed-corpus hashes",
+    "Recomputed means and sample standard deviations match exported analyses",
+    "Identical executable-line sets checked by the SBFL evaluator",
+    "All failed or partial attempts excluded from aggregates"
+  ],
+  "complete_campaigns": 3,
+  "completed_trials": 45,
+  "same_code_in_both_v2_commits": [
+    {
+      "current_sha256": "8403b4eedcc605c7f66cc64cc58b0c8c29fa705aef05b4c73349083da387d4be",
+      "git_blob": "3e22952312b9a6c4f1ff231b64b759db1a966dae",
+      "path": "scripts/run_fuzz_experiment_expat.py"
+    },
+    {
+      "current_sha256": "966a18b8c1b3ea9836dcd7fb28571156f2ea7c2e54c6ad7c8faffd067daaf6e9",
+      "git_blob": "c6b0227506473945079065c8caf56199b072d47f",
+      "path": "scripts/evaluate_augmented_sbfl_expat.py"
+    },
+    {
+      "current_sha256": "0702499b10b3df556ed2cfa34d15e8cc483565324bd4d2d432c20fbe31bf444d",
+      "git_blob": "b0915e0e0fdba26b452626db65216b5f23b062c6",
+      "path": "scripts/oracle_libxml2_467.py"
+    },
+    {
+      "current_sha256": "027b22cc2c902a979727c639aaad602743ed61476e480beb74c77787f71cde0f",
+      "git_blob": "00e618de12f0afd4ff4fb4abde693b016f911a89",
+      "path": "scripts/run_libxml2_467_shared_v2_formal.sh"
+    },
+    {
+      "current_sha256": "0beae0bd1af7b0899b39703da0d5144a10e93ea6a694f47f6d4d455f975e1b24",
+      "git_blob": "6cd588ebe9a0f6e470bc179882ffbae6faf1f3ff",
+      "path": "aflsmart/libxml2_467_shared_v2.xml"
+    }
+  ],
+  "shared_v2_trials": 30,
+  "subject": "libxml2_467",
+  "validation_date": "2026-10-29"
+}

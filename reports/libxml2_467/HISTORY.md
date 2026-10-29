@@ -3,7 +3,8 @@
 This history preserves the sequence of baselines, smoke checks, interrupted
 attempts, completed campaigns, and model changes. Dates below are taken from
 run identifiers and recorded Git commits; run identifiers are retained verbatim.
-Only the two explicitly complete campaigns contribute to formal summaries.
+Only the three explicitly complete campaigns contribute to formal summaries.
+The character-v2 and structural-v2 campaigns form the final shared-PIT comparison.
 
 ## 2026-09-26: character DDMIN baseline
 
@@ -75,13 +76,40 @@ exported under `experiments/character_shared_v2/`.
 AFL and mixed each have mean Jaccard/Ochiai rank 7.4 against the 7.5
 character baseline. Nonstack has mean rank 7.9. The median is 7.5 for all modes.
 
-## Current comparison status
+## 2026-10-28: structural-v2 startup failure
 
-The structural-v1 and character-v2 results are complete individual campaigns.
-The AFLSmart PIT versions differ, so these are not a comparison that holds the
-model constant. No completed structural shared-v2 campaign was present in the
-repository when this report was generated. The existing structural-v1 results
-remain valid evidence for that recorded configuration.
+Attempt `formal_structure_shared_v2_300s_20261028_155044` stopped before fuzzing.
+The terminal transcript reported `/usr/bin/docker: Input/output error` and exit
+126. The directory has zero completed trial metadata records and contributes
+nothing to the formal aggregates. See the
+[startup failure record](history/failed_structural_v2_startup.json).
+
+## 2026-10-29: completed structural campaign with shared v2
+
+Replacement batch `formal_structure_shared_v2_300s_20261029_105143` completed
+all 15 trials at commit `a09ac21fdfc41841334fab344a5892d9dfd1cb66`.
+All trials recorded completed coverage, a clean Git state and 100% AFL
+stability. The ten AFLSmart trials all produced nonzero Peach chunk files and
+used the same PIT SHA256 as the completed character-v2 campaign.
+
+SBFL was computed for all 15 trials against the structural DDMIN baseline.
+The mean Jaccard/Ochiai ranks are AFL 11.8/10.5, mixed 10.1/9.5, and nonstack
+10.7/9.9, against baseline 14.5/14.5. No trial was discarded. The new analysis
+and compact metadata are exported under `experiments/structural_shared_v2/`.
+
+## Final comparison status: 2026-10-29
+
+Both shared-v2 corpora have complete formal campaigns and SBFL analyses.
+Relevant runner, evaluator, oracle, launcher, and PIT Git blobs are identical
+between the two v2 experiment commits; the compiled AFL target hash also
+matches. The comparison retains each corpus's own DDMIN baseline and notes
+the differing baseline ranks, corpus sizes, and campaign dates.
+
+The structural-v1 campaign remains valid for its recorded configuration and
+is retained as history. It is not pooled with structural v2. The
+[final summary](SUMMARY.md) and [comparison CSV](shared_v2_comparison.csv)
+report the v2 results. All failed, interrupted, and diagnostic runs remain
+excluded from formal aggregates.
 
 ## Local attempt inventory
 
@@ -91,6 +119,8 @@ remain valid evidence for that recorded configuration.
 | `formal_character_shared_v2_300s_20261027_141812` | 15 | Complete formal batch |
 | `formal_structure_300s` | 0 | Interrupted structural v1 attempt; zero completed metadata records |
 | `formal_structure_300s_20261026_203447` | 15 | Complete formal batch |
+| `formal_structure_shared_v2_300s_20261028_155044` | 0 | Docker startup failure before fuzzing; exit 126; zero completed trial metadata |
+| `formal_structure_shared_v2_300s_20261029_105143` | 15 | Complete formal batch; shared PIT v2 |
 | `smoke_character_60s_20261026_172347` | 0 | AFL launch smoke; no PIT configured |
 | `smoke_peach_mixed_60s_20261026_185502` | 0 | Peach structural smoke |
 | `smoke_structure_60s_20261026_172751` | 0 | AFL launch smoke; no PIT configured |
