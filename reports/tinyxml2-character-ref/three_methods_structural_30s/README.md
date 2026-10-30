@@ -58,3 +58,6 @@ All 8 generated FAILs were rejected by the fixed parser (exit 2); no fixed-PASS/
 - [Fuzz runner snapshot](run_three_methods_snapshot.py), [analysis snapshot](analysis_snapshot.py), [fuzz driver](fuzz_driver_snapshot.cpp), [PIT model](tinyxml2_character_ref_fragments.xml), [seed corpus](seeds/), [Peach preflight](model_preflight/summary.json), and [artifact hashes](artifact_hashes.json).
 
 Raw campaign: `/home/user/ddmin-xml-sbfl/results/tinyxml2_character_ref/three_methods_structural_30s_20261030_101751_068716`. Saved coverage records retain WSL absolute paths as provenance.
+
+
+See the [character/structural pipeline comparison](../pipeline_comparison_30s/README.md) for the paired presentation of the two saved campaigns.

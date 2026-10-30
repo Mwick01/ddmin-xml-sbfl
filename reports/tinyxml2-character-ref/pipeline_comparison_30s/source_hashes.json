@@ -1,0 +1,22 @@
+{
+  "character": {
+    "baseline_summary": "3796019c33a80864c34cbf5a821033137b85da361cc2b92405be5ecb93afa375",
+    "campaign": "b3c61fc7b71bbe1978875b145c7a0f7313aa90660f444397ce95f5f8f08daca5",
+    "comparison": "af7255ffdb711e81a78389adcb3a463dbf5a633a4cdadd7ba7a0bc33ab79276e",
+    "method_summaries": {
+      "afl": "2468845b79792ffda7e65f6dca9b5780709704c847a714726ec6563da9f29339",
+      "aflsmart-mixed": "4da3b9dbb07faaa9d5eefa58b7a67417058bb3661e8a24e04dfd9b07b01f1d93",
+      "aflsmart-nonstack": "8d4fc40832e8f5b1d4699979ee2f3e0ec1998b58d815767d4d0fd1092fa1753f"
+    }
+  },
+  "structural_fragment": {
+    "baseline_summary": "433af3489b8dfbbc6396b912f62da1c92a44ebe6e44516681870997cad764945",
+    "campaign": "612d5f5dfb721a819207acdbb5647b9344fa9b91bb8b6a52862744797ea9754f",
+    "comparison": "7e7b306d1bb3b1aa8406930f0f92ef5e40499db41fc489aec1bc2ddcad879d2a",
+    "method_summaries": {
+      "afl": "6da5e204b15a6d9efd35b2080937630e133eb06cc378d02bdd8934506f89bdb9",
+      "aflsmart-mixed": "dc7024d548ed7f0c09a391310c5085292bd25849b19b4fd2db3ab6f6a6752ff9",
+      "aflsmart-nonstack": "16845c918cc4779192f0a145be0114300007d83e6faef71a4aafa5abbb11a6aa"
+    }
+  }
+}

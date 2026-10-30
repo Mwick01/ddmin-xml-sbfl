@@ -1,0 +1,17 @@
+pipeline,suite,metric,seed_pass,seed_fail,baseline_pass,baseline_fail,new_pass,new_fail,new_unresolved,combined_pass,combined_fail,executions,fault_score,best_rank,average_rank,worst_rank,tie_width,exam_percentage,rank_improvement,exam_improvement_percentage_points,relative_improvement_percent
+character,baseline,jaccard,6,1,6,29,0,0,0,6,29,,1.0,1,46.5,92,92,2.9750479846449136,0.0,0.0,0.0
+character,baseline,ochiai,6,1,6,29,0,0,0,6,29,,1.0,1,46.5,92,92,2.9750479846449136,0.0,0.0,0.0
+character,afl,jaccard,6,1,6,29,16,2,163,22,31,73916,1.0,1,46.5,92,92,2.9750479846449136,0.0,0.0,0.0
+character,afl,ochiai,6,1,6,29,16,2,163,22,31,73916,1.0,1,46.5,92,92,2.9750479846449136,0.0,0.0,0.0
+character,aflsmart-nonstack,jaccard,6,1,6,29,7,4,142,13,33,76299,1.0,1,41.0,81,81,2.6231605886116443,5.5,0.35188739603326935,11.827956989247312
+character,aflsmart-nonstack,ochiai,6,1,6,29,7,4,142,13,33,76299,1.0,1,41.0,81,81,2.6231605886116443,5.5,0.35188739603326935,11.827956989247312
+character,aflsmart-mixed,jaccard,6,1,6,29,9,2,131,15,31,68570,1.0,1,46.5,92,92,2.9750479846449136,0.0,0.0,0.0
+character,aflsmart-mixed,ochiai,6,1,6,29,9,2,131,15,31,68570,1.0,1,46.5,92,92,2.9750479846449136,0.0,0.0,0.0
+structural_fragment,baseline,jaccard,1,7,1,7,0,0,0,1,7,,1.0,1,62.5,124,124,3.99872040946897,0.0,0.0,0.0
+structural_fragment,baseline,ochiai,1,7,1,7,0,0,0,1,7,,1.0,1,62.5,124,124,3.99872040946897,0.0,0.0,0.0
+structural_fragment,afl,jaccard,1,7,1,7,5,3,184,6,10,71929,1.0,1,46.5,92,92,2.9750479846449136,16.0,1.0236724248240563,25.6
+structural_fragment,afl,ochiai,1,7,1,7,5,3,184,6,10,71929,1.0,1,46.5,92,92,2.9750479846449136,16.0,1.0236724248240563,25.6
+structural_fragment,aflsmart-nonstack,jaccard,1,7,1,7,8,1,144,9,8,62174,1.0,1,41.0,81,81,2.6231605886116443,21.5,1.3755598208573256,34.4
+structural_fragment,aflsmart-nonstack,ochiai,1,7,1,7,8,1,144,9,8,62174,1.0,1,41.0,81,81,2.6231605886116443,21.5,1.3755598208573256,34.4
+structural_fragment,aflsmart-mixed,jaccard,1,7,1,7,5,4,124,6,11,46278,1.0,1,41.0,81,81,2.6231605886116443,21.5,1.3755598208573256,34.4
+structural_fragment,aflsmart-mixed,ochiai,1,7,1,7,5,4,124,6,11,46278,1.0,1,41.0,81,81,2.6231605886116443,21.5,1.3755598208573256,34.4

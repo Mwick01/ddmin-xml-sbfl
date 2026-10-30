@@ -1,0 +1,12 @@
+{
+  "README.md": "bec841b7b6f37e27c82cc3663bdf6d729f68d0cd7bd71340e6cbcb780c2a55b7",
+  "analysis_snapshot.py": "61803acecc424ffb4074d3fe44c1006e2a7eb4c51f665258ce10fc3557b49b5d",
+  "character_campaign.json": "b3c61fc7b71bbe1978875b145c7a0f7313aa90660f444397ce95f5f8f08daca5",
+  "character_source_comparison.csv": "af7255ffdb711e81a78389adcb3a463dbf5a633a4cdadd7ba7a0bc33ab79276e",
+  "comparison.csv": "c7b3309e69c6b2ea578462371be8947a1315e33fc39c060a914cde2595656934",
+  "provenance.json": "dfa3928852c8f9d54a0c20e4677679c21e1327c4a357573fffdfebf919257e52",
+  "source_hashes.json": "bc5222befd2a64571bd9ba03ad64a0f58cf5e88e29f21326f071bb98c885b0db",
+  "structural_campaign.json": "612d5f5dfb721a819207acdbb5647b9344fa9b91bb8b6a52862744797ea9754f",
+  "structural_source_comparison.csv": "7e7b306d1bb3b1aa8406930f0f92ef5e40499db41fc489aec1bc2ddcad879d2a",
+  "tie_overlap.json": "c917bdf731473b1de043f3a37fc2c4805e12d9b46e5af42dbf754b0650908e43"
+}

@@ -155,3 +155,9 @@ See the [structural-fragment report](structural_ddmin_exploratory/README.md), [c
 ------------------------------------------------------------
 
 Three one-trial fuzzing methods used the same 1 PASS and 7 FAIL structural DDMIN seeds. Each method's generated usable inputs augmented the structural baseline independently. See the [structural-seed comparison](three_methods_structural_30s/README.md) and [metric table](three_methods_structural_30s/comparison.csv). The malformed-input oracle keeps this subject exploratory.
+
+
+Character versus structural 30-second pipeline comparison
+---------------------------------------------------------
+
+A [side-by-side comparison](pipeline_comparison_30s/README.md) now puts the two DDMIN baselines and all three 30-second methods on the same rank and EXAM table. The structural baseline starts at rank 62.5 versus character 46.5. After fuzzing, plain AFL reaches 46.5 in both pipelines, nonstack 41.0 in both, and mixed 41.0 from structural seeds versus 46.5 from character seeds. The two seed sets have no byte-identical files and each method was run once per pipeline, so this is a descriptive comparison. See [both-metric CSV](pipeline_comparison_30s/comparison.csv) and [seed/configuration provenance](pipeline_comparison_30s/provenance.json).

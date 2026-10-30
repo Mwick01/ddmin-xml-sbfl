@@ -57,3 +57,6 @@ All **40/40 usable generated spectra** reproduced every line execution count on 
 - [Fuzz runner](run_three_methods_snapshot.py), [analysis and validation script](analysis_snapshot.py), [fuzz driver](fuzz_driver_snapshot.cpp), and [artifact hashes](artifact_hashes.json).
 
 Raw campaign: `/home/user/ddmin-xml-sbfl/results/tinyxml2_character_ref/three_methods_30s_20261029_164014_650117`. Saved JSON/JSONL records retain their original WSL paths as provenance.
+
+
+See the [character/structural pipeline comparison](../pipeline_comparison_30s/README.md) for the paired presentation of the two saved campaigns.

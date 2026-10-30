@@ -1,0 +1,52 @@
+{
+  "one_trial_per_mode_per_pipeline": true,
+  "same_baseline_suite": false,
+  "same_compiled_afl_target": true,
+  "same_mutation_rng_state": false,
+  "same_run_date": false,
+  "same_seed_corpus": false,
+  "seed_hashes": {
+    "character": [
+      "0aabf45e688d2f7c7b5a4661be27c04e4ba58d4895efaac8ce9c3f1303dbb849",
+      "187ae4880f30691121289b1119247e663300993767511c208233286bdc52ab1f",
+      "4f49f4d0a29cb40b37bd970ca082d00b0221ab9f046ab6fd5094f15b7883e720",
+      "5d783a2abb6fdb544121753b232a71d4ae2c1d651d1b6e2b974563f52c0e504c",
+      "b7c6f2f98ecca456a33fc86a3d1958a3fef2d1e8408a05c3526b1b5db41acb24",
+      "b9dd86c779db140ffe4ae5d9bb5929e02cfe2486db6190d48f2f53ef98401bc8",
+      "fc5f83d37cd876fd93e90c919aa9ac9dd20f1ac3b851ac30140345b629c9f2a9"
+    ],
+    "structural_fragment": [
+      "03830acf99299a5d50d3daeb38b566de01966f3a0c49e2bc8a9ac96eaf65b55d",
+      "067040f01960d1a995045a8e7620acaa5405bb36b7256ac33460998784c888dd",
+      "0dde0e524214925fb60b048728fc78bbc4b9863ef34f17ce67931f8b3f9ff714",
+      "91b72936cd206b0d1168da0e3fcbfc505b43f0e01d9131db0bdcb9fbb168b667",
+      "ae27a4231bbfc8626302fb773067ddc5b687ea2a4d46b54fb7d642a32885ef11",
+      "b3eebddad07d4be4c5419bf2c3fc147274e65a253939e2c33eaca835ca15a1b0",
+      "e6b4cf9a6c2c8734e4869658860fcf5481d51a2d15f9c2e3c6db6263b51f80bc",
+      "e7ee27e06c2d4ecbe16edfcae2c20dccfd378778a5642b026ceff761342b17bd"
+    ]
+  },
+  "seed_overlap_count": 0,
+  "seed_overlap_sha256": [],
+  "seed_selection": {
+    "character": "all 6 DDMIN PASS candidates plus only its 32-byte minimized FAIL",
+    "structural_fragment": "all 1 PASS and 7 FAIL structural DDMIN candidates, including its 63-byte minimized FAIL"
+  },
+  "shared_docker_image_id": "sha256:77d92806705f2e318bd27a9ed04a8cf4a21a54a200f06bb4c9b840e6cf3021de",
+  "shared_model_sha256": "9b8900b875e972d41b813df495a17bcfa45908c468ac6ba65f2ce59362df5539",
+  "source_reports": {
+    "character": "/home/user/ddmin-xml-sbfl/reports/tinyxml2-character-ref/three_methods_30s/README.md",
+    "structural_fragment": "/home/user/ddmin-xml-sbfl/reports/tinyxml2-character-ref/three_methods_structural_30s/README.md"
+  },
+  "verified_shared_file_sha256": {
+    "build/aflsmart/tinyxml2_character_ref/tinyxml_buggy": "0a63177fe4618fda2305b56aedae930198c7812e192a4f842fb822816e79b664",
+    "build/tinyxml2_character_ref_cov/tinyxml2.gcno": "f747db455f6b607b5da0365013dbc221ae2178b228bf61edb82bb1599b386eb0",
+    "build/tinyxml2_character_ref_cov/tinyxml2.o": "8a3607aa0c407a39952707c72414a567bc86956a444accc3af701dee537aff4f",
+    "build/tinyxml2_character_ref_cov/tinyxml_cov": "30adc4cfb9d3743df186b337722a8dcfb427929e72917df20665a54e0cf025cb",
+    "scripts/oracle_tinyxml2_character_ref.py": "23041daa58df693e0bc76292aaa689e3ebb241b8158499172a3c07dcc8b7ea91",
+    "subjects/tinyxml2-character-ref/buggy/tinyxml2.cpp": "d5a7fd2ad255d716c4d2a64d5686f90c7e27a8285c49c59a5d105cb400bdf703",
+    "subjects/tinyxml2-character-ref/buggy_asan": "fdf19d84bdc15c732879801d866c987400d581cfe5f00eed33d121b5cf0efd0f",
+    "subjects/tinyxml2-character-ref/fixed_asan": "e5b4b5e111e110aab848deedb318aea6e044a41488f55561c890951180832891",
+    "subjects/tinyxml2-character-ref/fuzz_driver.cpp": "37d950bcec0b61ad2b7a66692bdc2d009fc7bcb60140361b9d4ce5a2e2af8a9b"
+  }
+}
