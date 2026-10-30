@@ -139,3 +139,19 @@ Three-method 30-second comparison
 One 30-second trial each used the same original six PASS and one FAIL seeds and an identical shared AFL target binary. Both Jaccard and Ochiai gave plain AFL average rank 46.5 / EXAM 2.975048%, AFLSmart nonstack 41.0 / 2.623161%, and AFLSmart mixed 46.5 / 2.975048%. Nonstack shrank the tie from 92 to 81 lines through new PASS coverage; the other two matched the DDMIN baseline. All 40 usable spectra reproduced on a second collection. All 8 generated FAILs were rejected by the fixed parser, so the result remains exploratory and does not establish a reliable ordering from one trial per method.
 
 See the [three-method report](three_methods_30s/README.md), [comparison CSV](three_methods_30s/comparison.csv), and [campaign provenance](three_methods_30s/campaign.json). The smart modes use a new permissive TinyXML fragment PIT, with successful byte-preserving preflight on all seven original seeds and structural mutations confirmed during both smart runs.
+
+
+Exploratory structural-fragment DDMIN
+-----------------------------------
+
+A tolerant, byte-preserving structural-fragment reduction of the same original 341-byte PoC produced a 63-byte FAIL and 20 unique candidates: 1 PASS, 7 FAIL and 12 UNRESOLVED. The malformed, non-UTF-8 original cannot enter the existing strict-XML structural reducer. The separate fragment reducer deletes whole document nodes, quoted attributes and attribute-value fragments, with no character reduction or input repair.
+
+Both Jaccard and Ochiai worsened from the character baseline's average rank 46.5 / EXAM 2.975048% / 92-line tie to structural average rank 62.5 / EXAM 3.998720% / 124-line tie. All eight usable spectra reproduced exactly. All seven FAILs were rejected by the fixed parser. The result remains exploratory; no new fuzzing or manual PASS probes were included.
+
+See the [structural-fragment report](structural_ddmin_exploratory/README.md), [comparison](structural_ddmin_exploratory/comparison.csv), and [validation](structural_ddmin_exploratory/validation_summary.json).
+
+
+30-second AFL and AFLSmart trials from structural DDMIN seeds
+------------------------------------------------------------
+
+Three one-trial fuzzing methods used the same 1 PASS and 7 FAIL structural DDMIN seeds. Each method's generated usable inputs augmented the structural baseline independently. See the [structural-seed comparison](three_methods_structural_30s/README.md) and [metric table](three_methods_structural_30s/comparison.csv). The malformed-input oracle keeps this subject exploratory.

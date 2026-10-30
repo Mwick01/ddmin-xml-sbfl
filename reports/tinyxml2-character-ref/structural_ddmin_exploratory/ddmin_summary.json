@@ -1,0 +1,110 @@
+{
+  "attempts": 51,
+  "byte_preserving_deletion_only": true,
+  "character_reduction_used": false,
+  "counts": {
+    "FAIL": 7,
+    "PASS": 1,
+    "UNRESOLVED": 12
+  },
+  "final_structure": [
+    {
+      "kind": "document_nodes",
+      "path": "document.children",
+      "units": [
+        {
+          "end": 63,
+          "kind": "incomplete_markup",
+          "start": 0
+        }
+      ]
+    },
+    {
+      "kind": "attributes",
+      "path": "document.node[0].attributes",
+      "units": [
+        {
+          "end": 55,
+          "kind": "quoted_attribute",
+          "start": 5
+        },
+        {
+          "end": 63,
+          "kind": "quoted_attribute",
+          "start": 55
+        }
+      ]
+    },
+    {
+      "kind": "value_fragments",
+      "path": "document.node[0].attribute[0].value",
+      "units": [
+        {
+          "end": 54,
+          "kind": "reference_fragment",
+          "start": 13
+        }
+      ]
+    }
+  ],
+  "input_file": "/home/user/ddmin-xml-sbfl/subjects/tinyxml2-character-ref/poc.xml",
+  "iterations": 7,
+  "minimal_bytes": 63,
+  "minimal_sha256": "ae27a4231bbfc8626302fb773067ddc5b687ea2a4d46b54fb7d642a32885ef11",
+  "minimality_audit": [
+    {
+      "candidate_id": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "classification": "UNRESOLVED",
+      "group": "document.children",
+      "phase": "one_unit_minimality_audit",
+      "unit": {
+        "end": 63,
+        "kind": "incomplete_markup",
+        "start": 0
+      }
+    },
+    {
+      "candidate_id": "78d53f2f9275523c14058e9ff296c7f9ccf221fb122c439035964f0c5bf247a4",
+      "classification": "UNRESOLVED",
+      "group": "document.node[0].attributes",
+      "phase": "one_unit_minimality_audit",
+      "unit": {
+        "end": 55,
+        "kind": "quoted_attribute",
+        "start": 5
+      }
+    },
+    {
+      "candidate_id": "edc9587a57997ab298aaad573ab810d57513de1217ad1d61754708686c848f7d",
+      "classification": "UNRESOLVED",
+      "group": "document.node[0].attributes",
+      "phase": "one_unit_minimality_audit",
+      "unit": {
+        "end": 63,
+        "kind": "quoted_attribute",
+        "start": 55
+      }
+    },
+    {
+      "candidate_id": "77158944a6aeb4b1eb9d3c0f88b38dd0c3eb326b2b22686b461e4b04a2ac9103",
+      "classification": "UNRESOLVED",
+      "group": "document.node[0].attribute[0].value",
+      "phase": "one_unit_minimality_audit",
+      "unit": {
+        "end": 54,
+        "kind": "reference_fragment",
+        "start": 13
+      }
+    }
+  ],
+  "minimality_scope": "recomputed document nodes, complete quoted attributes, reference/raw attribute-value fragments",
+  "one_unit_minimality_verified": true,
+  "original_bytes": 341,
+  "original_sha256": "e6b4cf9a6c2c8734e4869658860fcf5481d51a2d15f9c2e3c6db6263b51f80bc",
+  "reducer_sha256": "2eecadb1b5633758f5a98336a4a73e28bed0f12851db4d45c537b64f80ff4616",
+  "reduction_percentage": 81.52492668621701,
+  "run_directory": "/home/user/ddmin-xml-sbfl/results/tinyxml2_character_ref/structural_ddmin_exploratory_20261029_170147_990273",
+  "status": "EXPLORATORY_MALFORMED_FRAGMENT_STRUCTURAL_DDMIN",
+  "strict_xml_validation_used": false,
+  "unique_candidates": 20
+}

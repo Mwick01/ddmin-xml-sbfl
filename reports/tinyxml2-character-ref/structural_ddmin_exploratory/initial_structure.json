@@ -1,0 +1,144 @@
+[
+  {
+    "path": "document.children",
+    "kind": "document_nodes",
+    "units": [
+      {
+        "start": 0,
+        "end": 30,
+        "kind": "markup"
+      },
+      {
+        "start": 30,
+        "end": 36,
+        "kind": "markup"
+      },
+      {
+        "start": 36,
+        "end": 37,
+        "kind": "text"
+      },
+      {
+        "start": 37,
+        "end": 181,
+        "kind": "comment"
+      },
+      {
+        "start": 181,
+        "end": 182,
+        "kind": "text"
+      },
+      {
+        "start": 182,
+        "end": 341,
+        "kind": "incomplete_markup"
+      }
+    ]
+  },
+  {
+    "path": "document.node[0].attributes",
+    "kind": "attributes",
+    "units": [
+      {
+        "start": 5,
+        "end": 18,
+        "kind": "quoted_attribute"
+      },
+      {
+        "start": 18,
+        "end": 29,
+        "kind": "quoted_attribute"
+      }
+    ]
+  },
+  {
+    "path": "document.node[5].attributes",
+    "kind": "attributes",
+    "units": [
+      {
+        "start": 187,
+        "end": 318,
+        "kind": "quoted_attribute"
+      },
+      {
+        "start": 318,
+        "end": 341,
+        "kind": "quoted_attribute"
+      }
+    ]
+  },
+  {
+    "path": "document.node[0].attribute[0].value",
+    "kind": "value_fragments",
+    "units": [
+      {
+        "start": 13,
+        "end": 17,
+        "kind": "raw_value_run"
+      }
+    ]
+  },
+  {
+    "path": "document.node[0].attribute[1].value",
+    "kind": "value_fragments",
+    "units": [
+      {
+        "start": 26,
+        "end": 28,
+        "kind": "raw_value_run"
+      }
+    ]
+  },
+  {
+    "path": "document.node[5].attribute[0].value",
+    "kind": "value_fragments",
+    "units": [
+      {
+        "start": 195,
+        "end": 205,
+        "kind": "raw_value_run"
+      },
+      {
+        "start": 205,
+        "end": 246,
+        "kind": "reference_fragment"
+      },
+      {
+        "start": 246,
+        "end": 266,
+        "kind": "raw_value_run"
+      },
+      {
+        "start": 266,
+        "end": 271,
+        "kind": "reference_fragment"
+      },
+      {
+        "start": 271,
+        "end": 280,
+        "kind": "raw_value_run"
+      },
+      {
+        "start": 280,
+        "end": 284,
+        "kind": "reference_fragment"
+      },
+      {
+        "start": 284,
+        "end": 317,
+        "kind": "raw_value_run"
+      }
+    ]
+  },
+  {
+    "path": "document.node[5].attribute[1].value",
+    "kind": "value_fragments",
+    "units": [
+      {
+        "start": 325,
+        "end": 340,
+        "kind": "raw_value_run"
+      }
+    ]
+  }
+]

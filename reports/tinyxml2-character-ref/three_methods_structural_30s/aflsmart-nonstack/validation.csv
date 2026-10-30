@@ -1,0 +1,10 @@
+sha256,label,buggy_exit,fixed_exit,coverage_exit,line_550_covered,repeated_counts_identical
+33ab2acc4ac21c9a1b909f83c46bfeefe1d25ee25db63724070d4fd1fe6e118b,PASS,0,0,0,False,True
+49134c26ff6142c0b4116ad019dbe539e979fdb4a75e6f66b27fc6c0649b0915,PASS,0,0,0,False,True
+5a8a629f3253768835ee8f7fca221764ddfe388f4b8f972c8586e51bc0f5a30f,PASS,0,0,0,False,True
+5d998b3bdff96e3d1e9257ba62d871e87bb8677f4c3a1cd65c2b53dd86b5286c,PASS,0,0,0,False,True
+987a7a6a8e6259e4ee25a4da4430d754c22206044550da9dc4e22f843d1ec424,PASS,0,0,0,False,True
+ab697824359ad7ad45ffc88b22fddae0fdcfd66b7bcd009142c983ade5808ca8,PASS,0,0,0,False,True
+bbdc46e3c039ae898641b27ca6b4cde5428c0116e09c681cfe47c370e27526fc,PASS,0,0,0,False,True
+e566ee4a7bcf5479e65299b9045b2324f408d11d25fe1235342de4b0ac45d1dc,PASS,0,0,0,False,True
+6f9a4a9f2a186098db9161b386f9396adbc9400e6a64abeefc1771df10dc6d31,FAIL,-6,2,134,True,True

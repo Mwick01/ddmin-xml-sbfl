@@ -1,0 +1,5 @@
+suite,metric,passing_tests,failing_tests,score,best_rank,average_rank,worst_rank,exam_percentage,executable_lines
+character_ddmin,jaccard,6,29,1.0,1,46.5,92,2.9750479846449136,1563
+character_ddmin,ochiai,6,29,1.0,1,46.5,92,2.9750479846449136,1563
+structural_fragment_ddmin,jaccard,1,7,1.0,1,62.5,124,3.99872040946897,1563
+structural_fragment_ddmin,ochiai,1,7,1.0,1,62.5,124,3.99872040946897,1563
