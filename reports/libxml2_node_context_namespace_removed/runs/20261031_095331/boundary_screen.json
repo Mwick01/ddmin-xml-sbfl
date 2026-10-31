@@ -1,0 +1,1010 @@
+[
+  {
+    "fragment": "",
+    "mode": "original",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=2 list=null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 2,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=2 list=null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 2,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=2 list=null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 2,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=2 list=null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 2,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": " ",
+    "mode": "original",
+    "classification": "FAIL",
+    "buggy": {
+      "returncode": -11,
+      "stdout": "",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": null,
+      "list": null
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": " ",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "x",
+    "mode": "original",
+    "classification": "FAIL",
+    "buggy": {
+      "returncode": -11,
+      "stdout": "",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": null,
+      "list": null
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "x",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "&amp;",
+    "mode": "original",
+    "classification": "FAIL",
+    "buggy": {
+      "returncode": -11,
+      "stdout": "",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": null,
+      "list": null
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "&amp;",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<!--x-->",
+    "mode": "original",
+    "classification": "FAIL",
+    "buggy": {
+      "returncode": -11,
+      "stdout": "",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": null,
+      "list": null
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<!--x-->",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<?p x?>",
+    "mode": "original",
+    "classification": "FAIL",
+    "buggy": {
+      "returncode": -11,
+      "stdout": "",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": null,
+      "list": null
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<?p x?>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<b/>",
+    "mode": "original",
+    "classification": "FAIL",
+    "buggy": {
+      "returncode": -11,
+      "stdout": "",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": null,
+      "list": null
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "Entity: line 1: parser error : Memory allocation failed\n<b/>\n    ^\n",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<b/>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "Entity: line 1: parser error : Memory allocation failed\n<b/>\n    ^\n",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "Entity: line 1: parser error : Memory allocation failed\n<b/>\n    ^\n",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<b>x</b>",
+    "mode": "original",
+    "classification": "FAIL",
+    "buggy": {
+      "returncode": -11,
+      "stdout": "",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": null,
+      "list": null
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<b>x</b>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<div><em>x</em></div>",
+    "mode": "original",
+    "classification": "FAIL",
+    "buggy": {
+      "returncode": -11,
+      "stdout": "",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": null,
+      "list": null
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<div><em>x</em></div>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>probe</span>",
+    "mode": "original",
+    "classification": "FAIL",
+    "buggy": {
+      "returncode": -11,
+      "stdout": "",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": null,
+      "list": null
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>probe</span>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "hello world",
+    "mode": "original",
+    "classification": "FAIL",
+    "buggy": {
+      "returncode": -11,
+      "stdout": "",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": null,
+      "list": null
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "hello world",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "123",
+    "mode": "original",
+    "classification": "FAIL",
+    "buggy": {
+      "returncode": -11,
+      "stdout": "",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": null,
+      "list": null
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "123",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "\n",
+    "mode": "original",
+    "classification": "FAIL",
+    "buggy": {
+      "returncode": -11,
+      "stdout": "",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": null,
+      "list": null
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "\n",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<a></a>",
+    "mode": "original",
+    "classification": "FAIL",
+    "buggy": {
+      "returncode": -11,
+      "stdout": "",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": null,
+      "list": null
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<a></a>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<a x=\"1\"/>",
+    "mode": "original",
+    "classification": "FAIL",
+    "buggy": {
+      "returncode": -11,
+      "stdout": "",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": null,
+      "list": null
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "Entity: line 1: parser error : Memory allocation failed\n<a x=\"1\"/>\n          ^\n",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<a x=\"1\"/>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "Entity: line 1: parser error : Memory allocation failed\n<a x=\"1\"/>\n          ^\n",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "Entity: line 1: parser error : Memory allocation failed\n<a x=\"1\"/>\n          ^\n",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<![CDATA[x]]>",
+    "mode": "original",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": -11,
+      "stdout": "",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": null,
+      "list": null
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=802 list=null\n",
+      "stderr": "HTML parser error : Incorrectly opened comment\n<![CDATA[x]]>\n^\n",
+      "timed_out": false,
+      "parse_result": 802,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<![CDATA[x]]>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=802 list=null\n",
+      "stderr": "HTML parser error : Incorrectly opened comment\n<![CDATA[x]]>\n^\n",
+      "timed_out": false,
+      "parse_result": 802,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=802 list=null\n",
+      "stderr": "HTML parser error : Incorrectly opened comment\n<![CDATA[x]]>\n^\n",
+      "timed_out": false,
+      "parse_result": 802,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<a/>text",
+    "mode": "original",
+    "classification": "FAIL",
+    "buggy": {
+      "returncode": -11,
+      "stdout": "",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": null,
+      "list": null
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "Entity: line 1: parser error : Memory allocation failed\n<a/>text\n    ^\n",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<a/>text",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "Entity: line 1: parser error : Memory allocation failed\n<a/>text\n    ^\n",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "Entity: line 1: parser error : Memory allocation failed\n<a/>text\n    ^\n",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<a/><b/>",
+    "mode": "original",
+    "classification": "FAIL",
+    "buggy": {
+      "returncode": -11,
+      "stdout": "",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": null,
+      "list": null
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "Entity: line 1: parser error : Memory allocation failed\n<a/><b/>\n    ^\n",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<a/><b/>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "Entity: line 1: parser error : Memory allocation failed\n<a/><b/>\n    ^\n",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "Entity: line 1: parser error : Memory allocation failed\n<a/><b/>\n    ^\n",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<b>",
+    "mode": "original",
+    "classification": "FAIL",
+    "buggy": {
+      "returncode": -11,
+      "stdout": "",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": null,
+      "list": null
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<b>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "</b>",
+    "mode": "original",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": -11,
+      "stdout": "",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": null,
+      "list": null
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Unexpected end tag : b\n</b>\n    ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "</b>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Unexpected end tag : b\n</b>\n    ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Unexpected end tag : b\n</b>\n    ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<",
+    "mode": "original",
+    "classification": "FAIL",
+    "buggy": {
+      "returncode": -11,
+      "stdout": "",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": null,
+      "list": null
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "&",
+    "mode": "original",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": -11,
+      "stdout": "",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": null,
+      "list": null
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=68 list=null\n",
+      "stderr": "HTML parser error : htmlParseEntityRef: no name\n&\n ^\n",
+      "timed_out": false,
+      "parse_result": 68,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "&",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=68 list=null\n",
+      "stderr": "HTML parser error : htmlParseEntityRef: no name\n&\n ^\n",
+      "timed_out": false,
+      "parse_result": 68,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=68 list=null\n",
+      "stderr": "HTML parser error : htmlParseEntityRef: no name\n&\n ^\n",
+      "timed_out": false,
+      "parse_result": 68,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "&unknown;",
+    "mode": "original",
+    "classification": "FAIL",
+    "buggy": {
+      "returncode": -11,
+      "stdout": "",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": null,
+      "list": null
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "&unknown;",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<?xml version=\"1.0\"?>",
+    "mode": "original",
+    "classification": "FAIL",
+    "buggy": {
+      "returncode": -11,
+      "stdout": "",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": null,
+      "list": null
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<?xml version=\"1.0\"?>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  }
+]

@@ -1,0 +1,4 @@
+{"candidate_id": "8b8fef6cfa0fb968d575e0cdc02e15f86bcb13443a54bd177f2ede6e8092a844", "iteration": 1, "new_size": 9, "part_index": 0, "phase": "subset", "previous_size": 18}
+{"candidate_id": "fcec9cd248b93d34497cf6773564e35ca5484605d95b092948ed1c54ee52a309", "iteration": 2, "new_size": 4, "part_index": 1, "phase": "subset", "previous_size": 9}
+{"candidate_id": "ed31469d5be23db8e5a59b373b8c5e3e3dae19d697db53dfb89406c65e0f3262", "iteration": 3, "new_size": 2, "part_index": 0, "phase": "subset", "previous_size": 4}
+{"candidate_id": "62b67e1f685b7fef51102005dddd27774be3fee38c42965c53aab035d0b6b221", "iteration": 4, "new_size": 1, "part_index": 0, "phase": "subset", "previous_size": 2}

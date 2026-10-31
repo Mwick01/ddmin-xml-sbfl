@@ -1,0 +1,62 @@
+{
+  "fragment": "&gt;",
+  "pass": {
+    "buggy": {
+      "list": "non-null",
+      "parse_result": 0,
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "result=0 list=non-null\n",
+      "timed_out": false
+    },
+    "candidate_id": "31f23141f9176e11e6bfba309e16034d0e6df3acfdc5da84b4c2b7cf277bb321",
+    "classification": "PASS",
+    "decoded": {
+      "envelope_name": "case",
+      "fragment": "&gt;",
+      "namespaces": []
+    },
+    "fixed": {
+      "list": "non-null",
+      "parse_result": 0,
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "result=0 list=non-null\n",
+      "timed_out": false
+    },
+    "input": "<case xmlnsp=\"u\">></case>",
+    "stage": "probe"
+  },
+  "fail": {
+    "buggy": {
+      "list": null,
+      "parse_result": null,
+      "returncode": -11,
+      "stderr": "",
+      "stdout": "",
+      "timed_out": false
+    },
+    "candidate_id": "29948d40318da0b4e4322d3ef67bbf34fd3b48b2fbf7456b46dc444a9e41c4b5",
+    "classification": "FAIL",
+    "decoded": {
+      "envelope_name": "case",
+      "fragment": "&gt;",
+      "namespaces": [
+        {
+          "prefix": "p",
+          "uri": "u"
+        }
+      ]
+    },
+    "fixed": {
+      "list": "non-null",
+      "parse_result": 0,
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "result=0 list=non-null\n",
+      "timed_out": false
+    },
+    "input": "<case xmlns:p=\"u\">></case>",
+    "stage": "probe"
+  }
+}

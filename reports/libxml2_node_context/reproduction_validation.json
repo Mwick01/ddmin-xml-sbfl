@@ -1,0 +1,86 @@
+{
+  "timestamp": "2026-10-31T10:14:55.643538+05:30",
+  "launcher_sha256": "f2066145b929fba9c32d2b3f25a4d2b3f98b8cf157d6f5da396f13c50fed7fb7",
+  "archived_evidence_checksums": "passed for both report snapshots",
+  "source_build_default_workflow": "passed; rebuilt both versions from pinned commits",
+  "modes": [
+    {
+      "mode": "mutable",
+      "status": "completed",
+      "counts": {
+        "PASS": 4,
+        "FAIL": 7,
+        "UNRESOLVED": 149
+      },
+      "unique_candidates": 160,
+      "results": "results/libxml2_node_context/mutable/20261031_101432_176282",
+      "driver_sha256": "13e6531f8070509292e70132f4095e7a52c008e747c10fd77dbee67fb5bc65e8",
+      "oracle_sha256": "01fa7b6834bcd7a61fd3e8fe5eec1655ff1bbc01c2da3f17098391e1aec8b21a",
+      "reducer_sha256": "cd78293163c71ba68774146f54dd24735d7c4f8b69905792733e3cc9a5745d86",
+      "libraries": [
+        {
+          "version": "2.12.4",
+          "sha256": "4cc0842e028117ab1cd3a451edf85eebdcc750be68a3e910ffeb3a63efaacbb2",
+          "binary_sha256": "da1addaf3fe772561bb45deb72ceacdf93921748a0141f8c0fad5e861023f5cb"
+        },
+        {
+          "version": "2.12.5",
+          "sha256": "6bdbf82e1571d815f9235e2c6554e35e40872886d6a7faf8c8228a75d2f96d8e",
+          "binary_sha256": "c8f8bbaf731faaa9009c3ec867ecd4a28dd2709261de1f5fa1a031654b37d346"
+        }
+      ]
+    },
+    {
+      "mode": "original",
+      "status": "completed",
+      "counts": {
+        "PASS": 0,
+        "FAIL": 5,
+        "UNRESOLVED": 1
+      },
+      "unique_candidates": 6,
+      "results": "results/libxml2_node_context/original/20261031_101335_176069",
+      "driver_sha256": "a67ff9311bbafd0dd4d6c0da352207dbc5730de8a30dd59881662f15d10936a9",
+      "oracle_sha256": "e1579125d41b67f5cb652c85114ca0d38d554a860e6bbf707888856871ed86a9",
+      "reducer_sha256": "cd78293163c71ba68774146f54dd24735d7c4f8b69905792733e3cc9a5745d86",
+      "libraries": [
+        {
+          "version": "2.12.4",
+          "sha256": "9fc1871a2e567fcc244152659d761057201ac976313f4cc7419b1f4bb9b02cda",
+          "binary_sha256": "ddf34228d25602f27466ddc0b733f5a2e64ee35eaf0a44da70879f7e63e1dfdd"
+        },
+        {
+          "version": "2.12.5",
+          "sha256": "51abaed0d751cac961cf2f254173f974c3c951d73c7e4f79bc7c3a8e001d3ffc",
+          "binary_sha256": "792d502cfb2b80c6fb257ab596ac406285be89db2cdba6bca0ced3f4161adcd5"
+        }
+      ]
+    },
+    {
+      "mode": "namespace-removed",
+      "status": "stopped_initial_input_PASS",
+      "counts": {
+        "PASS": 1,
+        "FAIL": 0,
+        "UNRESOLVED": 0
+      },
+      "unique_candidates": 1,
+      "results": "results/libxml2_node_context/namespace-removed/20261031_101341_176129",
+      "driver_sha256": "b17792d149ab669a2f3faa2668ee27702dfe8abefe51abac068443bbc84643fe",
+      "oracle_sha256": "e1579125d41b67f5cb652c85114ca0d38d554a860e6bbf707888856871ed86a9",
+      "reducer_sha256": "cd78293163c71ba68774146f54dd24735d7c4f8b69905792733e3cc9a5745d86",
+      "libraries": [
+        {
+          "version": "2.12.4",
+          "sha256": "9fc1871a2e567fcc244152659d761057201ac976313f4cc7419b1f4bb9b02cda",
+          "binary_sha256": "3d672f66bf9531188a8eac9840af5038b4a15f847c30915a04cb00e7f12c739c"
+        },
+        {
+          "version": "2.12.5",
+          "sha256": "51abaed0d751cac961cf2f254173f974c3c951d73c7e4f79bc7c3a8e001d3ffc",
+          "binary_sha256": "be2248fc99b220c12b7f61d02de383bd0b4f566479d4d01090ea6bcf9310eb86"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "failing_candidates": 5,
+  "input_file": "/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/outputs/libxml2_node_context_namespace_removed/runs/20261031_095331/seed.xml",
+  "iterations": 4,
+  "minimal_candidate_id": "62b67e1f685b7fef51102005dddd27774be3fee38c42965c53aab035d0b6b221",
+  "minimal_file": "/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/outputs/libxml2_node_context_namespace_removed/runs/20261031_095331/character_ddmin_original/20261031_095333_171279/minimal_failure.xml",
+  "minimal_size_characters": 1,
+  "oracle_attempts": 6,
+  "oracle_module": "oracle_node_context",
+  "original_candidate_id": "11a6365da4efc79bf781a0d685e1e05bb15ed3d70ebe87bfd286543d51222cea",
+  "original_size_characters": 18,
+  "passing_candidates": 0,
+  "reduction_percentage": 94.44,
+  "unique_candidates": 6,
+  "unresolved_candidates": 1
+}

@@ -1,0 +1,8 @@
+{
+  "unique_candidate_counts_match_oracle_log": true,
+  "all_saved_candidate_hashes_verified": true,
+  "both_outcomes_observed_in_actual_ddmin": true,
+  "same_fragment_pass_fail_pair_is_from_ddmin": true,
+  "archived_reducer_sha256": "cd78293163c71ba68774146f54dd24735d7c4f8b69905792733e3cc9a5745d86",
+  "checkout_preserved": true
+}

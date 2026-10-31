@@ -1,0 +1,632 @@
+[
+  {
+    "label": "namespace_present",
+    "repetition": 1,
+    "candidate_id": "dc7a4870947511b69b5c55c9fc40538c28df5e538040f6ba567cf1a8dc3e4e4d",
+    "input": "<case xmlns:p=\"urn:probe\"><span>probe</span></case>",
+    "decoded": {
+      "namespaces": [
+        {
+          "prefix": "p",
+          "uri": "urn:probe"
+        }
+      ],
+      "fragment": "<span>probe</span>",
+      "envelope_name": "case"
+    },
+    "classification": "FAIL",
+    "stage": "probe",
+    "buggy": {
+      "returncode": -11,
+      "stdout": "",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": null,
+      "list": null
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "label": "namespace_present",
+    "repetition": 2,
+    "candidate_id": "dc7a4870947511b69b5c55c9fc40538c28df5e538040f6ba567cf1a8dc3e4e4d",
+    "input": "<case xmlns:p=\"urn:probe\"><span>probe</span></case>",
+    "decoded": {
+      "namespaces": [
+        {
+          "prefix": "p",
+          "uri": "urn:probe"
+        }
+      ],
+      "fragment": "<span>probe</span>",
+      "envelope_name": "case"
+    },
+    "classification": "FAIL",
+    "stage": "probe",
+    "buggy": {
+      "returncode": -11,
+      "stdout": "",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": null,
+      "list": null
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "label": "namespace_present",
+    "repetition": 3,
+    "candidate_id": "dc7a4870947511b69b5c55c9fc40538c28df5e538040f6ba567cf1a8dc3e4e4d",
+    "input": "<case xmlns:p=\"urn:probe\"><span>probe</span></case>",
+    "decoded": {
+      "namespaces": [
+        {
+          "prefix": "p",
+          "uri": "urn:probe"
+        }
+      ],
+      "fragment": "<span>probe</span>",
+      "envelope_name": "case"
+    },
+    "classification": "FAIL",
+    "stage": "probe",
+    "buggy": {
+      "returncode": -11,
+      "stdout": "",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": null,
+      "list": null
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "label": "namespace_present",
+    "repetition": 4,
+    "candidate_id": "dc7a4870947511b69b5c55c9fc40538c28df5e538040f6ba567cf1a8dc3e4e4d",
+    "input": "<case xmlns:p=\"urn:probe\"><span>probe</span></case>",
+    "decoded": {
+      "namespaces": [
+        {
+          "prefix": "p",
+          "uri": "urn:probe"
+        }
+      ],
+      "fragment": "<span>probe</span>",
+      "envelope_name": "case"
+    },
+    "classification": "FAIL",
+    "stage": "probe",
+    "buggy": {
+      "returncode": -11,
+      "stdout": "",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": null,
+      "list": null
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "label": "namespace_present",
+    "repetition": 5,
+    "candidate_id": "dc7a4870947511b69b5c55c9fc40538c28df5e538040f6ba567cf1a8dc3e4e4d",
+    "input": "<case xmlns:p=\"urn:probe\"><span>probe</span></case>",
+    "decoded": {
+      "namespaces": [
+        {
+          "prefix": "p",
+          "uri": "urn:probe"
+        }
+      ],
+      "fragment": "<span>probe</span>",
+      "envelope_name": "case"
+    },
+    "classification": "FAIL",
+    "stage": "probe",
+    "buggy": {
+      "returncode": -11,
+      "stdout": "",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": null,
+      "list": null
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "label": "namespace_present",
+    "repetition": 6,
+    "candidate_id": "dc7a4870947511b69b5c55c9fc40538c28df5e538040f6ba567cf1a8dc3e4e4d",
+    "input": "<case xmlns:p=\"urn:probe\"><span>probe</span></case>",
+    "decoded": {
+      "namespaces": [
+        {
+          "prefix": "p",
+          "uri": "urn:probe"
+        }
+      ],
+      "fragment": "<span>probe</span>",
+      "envelope_name": "case"
+    },
+    "classification": "FAIL",
+    "stage": "probe",
+    "buggy": {
+      "returncode": -11,
+      "stdout": "",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": null,
+      "list": null
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "label": "namespace_present",
+    "repetition": 7,
+    "candidate_id": "dc7a4870947511b69b5c55c9fc40538c28df5e538040f6ba567cf1a8dc3e4e4d",
+    "input": "<case xmlns:p=\"urn:probe\"><span>probe</span></case>",
+    "decoded": {
+      "namespaces": [
+        {
+          "prefix": "p",
+          "uri": "urn:probe"
+        }
+      ],
+      "fragment": "<span>probe</span>",
+      "envelope_name": "case"
+    },
+    "classification": "FAIL",
+    "stage": "probe",
+    "buggy": {
+      "returncode": -11,
+      "stdout": "",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": null,
+      "list": null
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "label": "namespace_present",
+    "repetition": 8,
+    "candidate_id": "dc7a4870947511b69b5c55c9fc40538c28df5e538040f6ba567cf1a8dc3e4e4d",
+    "input": "<case xmlns:p=\"urn:probe\"><span>probe</span></case>",
+    "decoded": {
+      "namespaces": [
+        {
+          "prefix": "p",
+          "uri": "urn:probe"
+        }
+      ],
+      "fragment": "<span>probe</span>",
+      "envelope_name": "case"
+    },
+    "classification": "FAIL",
+    "stage": "probe",
+    "buggy": {
+      "returncode": -11,
+      "stdout": "",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": null,
+      "list": null
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "label": "namespace_present",
+    "repetition": 9,
+    "candidate_id": "dc7a4870947511b69b5c55c9fc40538c28df5e538040f6ba567cf1a8dc3e4e4d",
+    "input": "<case xmlns:p=\"urn:probe\"><span>probe</span></case>",
+    "decoded": {
+      "namespaces": [
+        {
+          "prefix": "p",
+          "uri": "urn:probe"
+        }
+      ],
+      "fragment": "<span>probe</span>",
+      "envelope_name": "case"
+    },
+    "classification": "FAIL",
+    "stage": "probe",
+    "buggy": {
+      "returncode": -11,
+      "stdout": "",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": null,
+      "list": null
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "label": "namespace_present",
+    "repetition": 10,
+    "candidate_id": "dc7a4870947511b69b5c55c9fc40538c28df5e538040f6ba567cf1a8dc3e4e4d",
+    "input": "<case xmlns:p=\"urn:probe\"><span>probe</span></case>",
+    "decoded": {
+      "namespaces": [
+        {
+          "prefix": "p",
+          "uri": "urn:probe"
+        }
+      ],
+      "fragment": "<span>probe</span>",
+      "envelope_name": "case"
+    },
+    "classification": "FAIL",
+    "stage": "probe",
+    "buggy": {
+      "returncode": -11,
+      "stdout": "",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": null,
+      "list": null
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "label": "namespace_absent",
+    "repetition": 1,
+    "candidate_id": "4a28b755d2c29c8067448fcee0fec24d408d07dcb26d73498bb289afae14f7eb",
+    "input": "<case><span>probe</span></case>",
+    "decoded": {
+      "namespaces": [],
+      "fragment": "<span>probe</span>",
+      "envelope_name": "case"
+    },
+    "classification": "PASS",
+    "stage": "probe",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "label": "namespace_absent",
+    "repetition": 2,
+    "candidate_id": "4a28b755d2c29c8067448fcee0fec24d408d07dcb26d73498bb289afae14f7eb",
+    "input": "<case><span>probe</span></case>",
+    "decoded": {
+      "namespaces": [],
+      "fragment": "<span>probe</span>",
+      "envelope_name": "case"
+    },
+    "classification": "PASS",
+    "stage": "probe",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "label": "namespace_absent",
+    "repetition": 3,
+    "candidate_id": "4a28b755d2c29c8067448fcee0fec24d408d07dcb26d73498bb289afae14f7eb",
+    "input": "<case><span>probe</span></case>",
+    "decoded": {
+      "namespaces": [],
+      "fragment": "<span>probe</span>",
+      "envelope_name": "case"
+    },
+    "classification": "PASS",
+    "stage": "probe",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "label": "namespace_absent",
+    "repetition": 4,
+    "candidate_id": "4a28b755d2c29c8067448fcee0fec24d408d07dcb26d73498bb289afae14f7eb",
+    "input": "<case><span>probe</span></case>",
+    "decoded": {
+      "namespaces": [],
+      "fragment": "<span>probe</span>",
+      "envelope_name": "case"
+    },
+    "classification": "PASS",
+    "stage": "probe",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "label": "namespace_absent",
+    "repetition": 5,
+    "candidate_id": "4a28b755d2c29c8067448fcee0fec24d408d07dcb26d73498bb289afae14f7eb",
+    "input": "<case><span>probe</span></case>",
+    "decoded": {
+      "namespaces": [],
+      "fragment": "<span>probe</span>",
+      "envelope_name": "case"
+    },
+    "classification": "PASS",
+    "stage": "probe",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "label": "namespace_absent",
+    "repetition": 6,
+    "candidate_id": "4a28b755d2c29c8067448fcee0fec24d408d07dcb26d73498bb289afae14f7eb",
+    "input": "<case><span>probe</span></case>",
+    "decoded": {
+      "namespaces": [],
+      "fragment": "<span>probe</span>",
+      "envelope_name": "case"
+    },
+    "classification": "PASS",
+    "stage": "probe",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "label": "namespace_absent",
+    "repetition": 7,
+    "candidate_id": "4a28b755d2c29c8067448fcee0fec24d408d07dcb26d73498bb289afae14f7eb",
+    "input": "<case><span>probe</span></case>",
+    "decoded": {
+      "namespaces": [],
+      "fragment": "<span>probe</span>",
+      "envelope_name": "case"
+    },
+    "classification": "PASS",
+    "stage": "probe",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "label": "namespace_absent",
+    "repetition": 8,
+    "candidate_id": "4a28b755d2c29c8067448fcee0fec24d408d07dcb26d73498bb289afae14f7eb",
+    "input": "<case><span>probe</span></case>",
+    "decoded": {
+      "namespaces": [],
+      "fragment": "<span>probe</span>",
+      "envelope_name": "case"
+    },
+    "classification": "PASS",
+    "stage": "probe",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "label": "namespace_absent",
+    "repetition": 9,
+    "candidate_id": "4a28b755d2c29c8067448fcee0fec24d408d07dcb26d73498bb289afae14f7eb",
+    "input": "<case><span>probe</span></case>",
+    "decoded": {
+      "namespaces": [],
+      "fragment": "<span>probe</span>",
+      "envelope_name": "case"
+    },
+    "classification": "PASS",
+    "stage": "probe",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "label": "namespace_absent",
+    "repetition": 10,
+    "candidate_id": "4a28b755d2c29c8067448fcee0fec24d408d07dcb26d73498bb289afae14f7eb",
+    "input": "<case><span>probe</span></case>",
+    "decoded": {
+      "namespaces": [],
+      "fragment": "<span>probe</span>",
+      "envelope_name": "case"
+    },
+    "classification": "PASS",
+    "stage": "probe",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  }
+]

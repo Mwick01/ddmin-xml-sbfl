@@ -1,0 +1,83 @@
+{
+  "experiment_commit": "28b33554441e7fafe4a8f9f3b61f6b894b839c6c",
+  "input_model": "mutable XML envelope: root xmlns declarations + serialized children",
+  "versions": {
+    "2.12.4": {
+      "commit": "8292f361458fcffe0bff515a385be02e9d35582c",
+      "cmake_options": [
+        "-DCMAKE_BUILD_TYPE=Debug",
+        "-DBUILD_SHARED_LIBS=OFF",
+        "-DLIBXML2_WITH_PYTHON=OFF",
+        "-DLIBXML2_WITH_PROGRAMS=OFF",
+        "-DLIBXML2_WITH_TESTS=OFF",
+        "-DLIBXML2_WITH_ICONV=OFF",
+        "-DLIBXML2_WITH_LZMA=OFF",
+        "-DLIBXML2_WITH_ZLIB=OFF",
+        "-DLIBXML2_WITH_HTTP=OFF",
+        "-DLIBXML2_WITH_ICU=OFF"
+      ],
+      "static_library_sha256": "9fc1871a2e567fcc244152659d761057201ac976313f4cc7419b1f4bb9b02cda",
+      "binary": "/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/work/node_context_mutable/build-2.12.4/probe_mutable",
+      "binary_sha256": "87e07996d38a9e3022e34c6edab51915ad5b358881c6eb1f829fd4bb194e3d28"
+    },
+    "2.12.5": {
+      "commit": "e189e9945317ad4c8603fa2300d11d11f5e2e335",
+      "cmake_options": [
+        "-DCMAKE_BUILD_TYPE=Debug",
+        "-DBUILD_SHARED_LIBS=OFF",
+        "-DLIBXML2_WITH_PYTHON=OFF",
+        "-DLIBXML2_WITH_PROGRAMS=OFF",
+        "-DLIBXML2_WITH_TESTS=OFF",
+        "-DLIBXML2_WITH_ICONV=OFF",
+        "-DLIBXML2_WITH_LZMA=OFF",
+        "-DLIBXML2_WITH_ZLIB=OFF",
+        "-DLIBXML2_WITH_HTTP=OFF",
+        "-DLIBXML2_WITH_ICU=OFF"
+      ],
+      "static_library_sha256": "51abaed0d751cac961cf2f254173f974c3c951d73c7e4f79bc7c3a8e001d3ffc",
+      "binary": "/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/work/node_context_mutable/build-2.12.5/probe_mutable",
+      "binary_sha256": "488e9b1ce79bc9e28c24f95544036cfaf1339196878b07452f4b9e5f4825da75"
+    }
+  },
+  "commands": [
+    [
+      "gcc",
+      "-g",
+      "-O0",
+      "-DLIBXML_STATIC",
+      "-I/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/work/node_context/build-2.12.4",
+      "-I/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/work/node_context/src-2.12.4/include",
+      "/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/outputs/libxml2_node_context_mutable_namespace/probe_mutable.c",
+      "/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/work/node_context/build-2.12.4/libxml2.a",
+      "-lm",
+      "-ldl",
+      "-lpthread",
+      "-o",
+      "/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/work/node_context_mutable/build-2.12.4/probe_mutable"
+    ],
+    [
+      "gcc",
+      "-g",
+      "-O0",
+      "-DLIBXML_STATIC",
+      "-I/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/work/node_context/build-2.12.5",
+      "-I/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/work/node_context/src-2.12.5/include",
+      "/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/outputs/libxml2_node_context_mutable_namespace/probe_mutable.c",
+      "/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/work/node_context/build-2.12.5/libxml2.a",
+      "-lm",
+      "-ldl",
+      "-lpthread",
+      "-o",
+      "/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/work/node_context_mutable/build-2.12.5/probe_mutable"
+    ]
+  ],
+  "source_sha256": {
+    "probe_mutable.c": "13e6531f8070509292e70132f4095e7a52c008e747c10fd77dbee67fb5bc65e8",
+    "ddmin.py": "cd78293163c71ba68774146f54dd24735d7c4f8b69905792733e3cc9a5745d86",
+    "oracle_mutable_namespace.py": "01fa7b6834bcd7a61fd3e8fe5eec1655ff1bbc01c2da3f17098391e1aec8b21a"
+  },
+  "tool_versions": {
+    "gcc": "gcc (Ubuntu 15.2.0-16ubuntu1) 15.2.0",
+    "python": "Python 3.14.4"
+  }
+}

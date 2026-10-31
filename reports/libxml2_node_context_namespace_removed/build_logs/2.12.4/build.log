@@ -1,0 +1,99 @@
+[  4%] Building C object CMakeFiles/LibXml2.dir/buf.c.o
+[  6%] Building C object CMakeFiles/LibXml2.dir/c14n.c.o
+[  8%] Building C object CMakeFiles/LibXml2.dir/catalog.c.o
+[  8%] Building C object CMakeFiles/LibXml2.dir/chvalid.c.o
+[ 11%] Building C object CMakeFiles/LibXml2.dir/debugXML.c.o
+[ 13%] Building C object CMakeFiles/LibXml2.dir/dict.c.o
+[ 15%] Building C object CMakeFiles/LibXml2.dir/encoding.c.o
+[ 17%] Building C object CMakeFiles/LibXml2.dir/entities.c.o
+[ 20%] Building C object CMakeFiles/LibXml2.dir/error.c.o
+/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/work/node_context/src-2.12.4/encoding.c:2784:72: warning: initializer-string for array of ‘unsigned char’ truncates NUL terminator but destination lacks ‘nonstring’ attribute (433 chars into 432 available) [-Wunterminated-string-initialization]
+ 2784 | static const unsigned char xmltranscodetable_ISO8859_2 [48 + 6 * 64] = {
+      |                                                                        ^
+/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/work/node_context/src-2.12.4/encoding.c:2833:72: warning: initializer-string for array of ‘unsigned char’ truncates NUL terminator but destination lacks ‘nonstring’ attribute (497 chars into 496 available) [-Wunterminated-string-initialization]
+ 2833 | static const unsigned char xmltranscodetable_ISO8859_3 [48 + 7 * 64] = {
+      |                                                                        ^
+/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/work/node_context/src-2.12.4/encoding.c:2886:72: warning: initializer-string for array of ‘unsigned char’ truncates NUL terminator but destination lacks ‘nonstring’ attribute (433 chars into 432 available) [-Wunterminated-string-initialization]
+ 2886 | static const unsigned char xmltranscodetable_ISO8859_4 [48 + 6 * 64] = {
+      |                                                                        ^
+/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/work/node_context/src-2.12.4/encoding.c:2935:72: warning: initializer-string for array of ‘unsigned char’ truncates NUL terminator but destination lacks ‘nonstring’ attribute (433 chars into 432 available) [-Wunterminated-string-initialization]
+ 2935 | static const unsigned char xmltranscodetable_ISO8859_5 [48 + 6 * 64] = {
+      |                                                                        ^
+/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/work/node_context/src-2.12.4/encoding.c:2984:72: warning: initializer-string for array of ‘unsigned char’ truncates NUL terminator but destination lacks ‘nonstring’ attribute (369 chars into 368 available) [-Wunterminated-string-initialization]
+ 2984 | static const unsigned char xmltranscodetable_ISO8859_6 [48 + 5 * 64] = {
+      |                                                                        ^
+/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/work/node_context/src-2.12.4/encoding.c:3029:72: warning: initializer-string for array of ‘unsigned char’ truncates NUL terminator but destination lacks ‘nonstring’ attribute (497 chars into 496 available) [-Wunterminated-string-initialization]
+ 3029 | static const unsigned char xmltranscodetable_ISO8859_7 [48 + 7 * 64] = {
+      |                                                                        ^
+/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/work/node_context/src-2.12.4/encoding.c:3082:72: warning: initializer-string for array of ‘unsigned char’ truncates NUL terminator but destination lacks ‘nonstring’ attribute (497 chars into 496 available) [-Wunterminated-string-initialization]
+ 3082 | static const unsigned char xmltranscodetable_ISO8859_8 [48 + 7 * 64] = {
+      |                                                                        ^
+/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/work/node_context/src-2.12.4/encoding.c:3135:72: warning: initializer-string for array of ‘unsigned char’ truncates NUL terminator but destination lacks ‘nonstring’ attribute (369 chars into 368 available) [-Wunterminated-string-initialization]
+ 3135 | static const unsigned char xmltranscodetable_ISO8859_9 [48 + 5 * 64] = {
+      |                                                                        ^
+/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/work/node_context/src-2.12.4/encoding.c:3180:73: warning: initializer-string for array of ‘unsigned char’ truncates NUL terminator but destination lacks ‘nonstring’ attribute (497 chars into 496 available) [-Wunterminated-string-initialization]
+ 3180 | static const unsigned char xmltranscodetable_ISO8859_10 [48 + 7 * 64] = {
+      |                                                                         ^
+/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/work/node_context/src-2.12.4/encoding.c:3233:73: warning: initializer-string for array of ‘unsigned char’ truncates NUL terminator but destination lacks ‘nonstring’ attribute (433 chars into 432 available) [-Wunterminated-string-initialization]
+ 3233 | static const unsigned char xmltranscodetable_ISO8859_11 [48 + 6 * 64] = {
+      |                                                                         ^
+/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/work/node_context/src-2.12.4/encoding.c:3282:73: warning: initializer-string for array of ‘unsigned char’ truncates NUL terminator but destination lacks ‘nonstring’ attribute (497 chars into 496 available) [-Wunterminated-string-initialization]
+ 3282 | static const unsigned char xmltranscodetable_ISO8859_13 [48 + 7 * 64] = {
+      |                                                                         ^
+/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/work/node_context/src-2.12.4/encoding.c:3335:74: warning: initializer-string for array of ‘unsigned char’ truncates NUL terminator but destination lacks ‘nonstring’ attribute (689 chars into 688 available) [-Wunterminated-string-initialization]
+ 3335 | static const unsigned char xmltranscodetable_ISO8859_14 [48 + 10 * 64] = {
+      |                                                                          ^
+/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/work/node_context/src-2.12.4/encoding.c:3400:73: warning: initializer-string for array of ‘unsigned char’ truncates NUL terminator but destination lacks ‘nonstring’ attribute (433 chars into 432 available) [-Wunterminated-string-initialization]
+ 3400 | static const unsigned char xmltranscodetable_ISO8859_15 [48 + 6 * 64] = {
+      |                                                                         ^
+/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/work/node_context/src-2.12.4/encoding.c:3449:73: warning: initializer-string for array of ‘unsigned char’ truncates NUL terminator but destination lacks ‘nonstring’ attribute (625 chars into 624 available) [-Wunterminated-string-initialization]
+ 3449 | static const unsigned char xmltranscodetable_ISO8859_16 [48 + 9 * 64] = {
+      |                                                                         ^
+[ 22%] Building C object CMakeFiles/LibXml2.dir/globals.c.o
+[ 24%] Building C object CMakeFiles/LibXml2.dir/hash.c.o
+[ 26%] Building C object CMakeFiles/LibXml2.dir/HTMLparser.c.o
+[ 28%] Building C object CMakeFiles/LibXml2.dir/HTMLtree.c.o
+[ 31%] Building C object CMakeFiles/LibXml2.dir/legacy.c.o
+[ 33%] Building C object CMakeFiles/LibXml2.dir/list.c.o
+/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/work/node_context/src-2.12.4/HTMLparser.c: In function ‘htmlCheckAutoClose’:
+/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/work/node_context/src-2.12.4/HTMLparser.c:1449:9: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 1449 |     res = bsearch(&key, htmlStartClose,
+      |         ^
+[ 35%] Building C object CMakeFiles/LibXml2.dir/nanoftp.c.o
+[ 37%] Building C object CMakeFiles/LibXml2.dir/nanohttp.c.o
+[ 40%] Building C object CMakeFiles/LibXml2.dir/parser.c.o
+[ 42%] Building C object CMakeFiles/LibXml2.dir/parserInternals.c.o
+[ 44%] Building C object CMakeFiles/LibXml2.dir/pattern.c.o
+[ 46%] Building C object CMakeFiles/LibXml2.dir/relaxng.c.o
+[ 48%] Building C object CMakeFiles/LibXml2.dir/SAX.c.o
+[ 51%] Building C object CMakeFiles/LibXml2.dir/SAX2.c.o
+[ 53%] Building C object CMakeFiles/LibXml2.dir/schematron.c.o
+[ 55%] Building C object CMakeFiles/LibXml2.dir/threads.c.o
+[ 57%] Building C object CMakeFiles/LibXml2.dir/tree.c.o
+[ 60%] Building C object CMakeFiles/LibXml2.dir/uri.c.o
+[ 62%] Building C object CMakeFiles/LibXml2.dir/valid.c.o
+[ 64%] Building C object CMakeFiles/LibXml2.dir/xinclude.c.o
+[ 66%] Building C object CMakeFiles/LibXml2.dir/xlink.c.o
+[ 68%] Building C object CMakeFiles/LibXml2.dir/xmlIO.c.o
+[ 71%] Building C object CMakeFiles/LibXml2.dir/xmlmemory.c.o
+[ 73%] Building C object CMakeFiles/LibXml2.dir/xmlmodule.c.o
+[ 75%] Building C object CMakeFiles/LibXml2.dir/xmlreader.c.o
+[ 77%] Building C object CMakeFiles/LibXml2.dir/xmlregexp.c.o
+[ 80%] Building C object CMakeFiles/LibXml2.dir/xmlsave.c.o
+[ 82%] Building C object CMakeFiles/LibXml2.dir/xmlschemas.c.o
+[ 84%] Building C object CMakeFiles/LibXml2.dir/xmlschemastypes.c.o
+[ 86%] Building C object CMakeFiles/LibXml2.dir/xmlstring.c.o
+[ 88%] Building C object CMakeFiles/LibXml2.dir/xmlunicode.c.o
+/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/work/node_context/src-2.12.4/xmlschemas.c: In function ‘xmlSchemaVAttributesComplex’:
+/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/work/node_context/src-2.12.4/xmlschemas.c:25543:63: warning: ‘snprintf’ output may be truncated before the last format character [-Wformat-truncation=]
+25543 |                             snprintf((char *) prefix, 12, "p%d", counter++);
+      |                                                               ^
+/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/work/node_context/src-2.12.4/xmlschemas.c:25543:29: note: ‘snprintf’ output between 3 and 13 bytes into a destination of size 12
+25543 |                             snprintf((char *) prefix, 12, "p%d", counter++);
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ 91%] Building C object CMakeFiles/LibXml2.dir/xmlwriter.c.o
+[ 93%] Building C object CMakeFiles/LibXml2.dir/xpath.c.o
+[ 95%] Building C object CMakeFiles/LibXml2.dir/xpointer.c.o
+[ 97%] Building C object CMakeFiles/LibXml2.dir/xzlib.c.o
+[100%] Linking C static library libxml2.a
+[100%] Built target LibXml2

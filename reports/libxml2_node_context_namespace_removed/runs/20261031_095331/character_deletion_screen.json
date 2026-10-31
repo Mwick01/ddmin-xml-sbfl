@@ -1,0 +1,5945 @@
+[
+  {
+    "fragment": "",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=2 list=null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 2,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=2 list=null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 2,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "/",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": ">",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "a",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "b",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "e",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "n",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "o",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "p",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "r",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "s",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "/s",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "</",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<s",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=2 list=null\n",
+      "stderr": "HTML parser error : Couldn't find end of Start Tag s\n<s\n  ^\nEntity: line 1: parser error : Memory allocation failed\n<s\n  ^\n",
+      "timed_out": false,
+      "parse_result": 2,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=2 list=null\n",
+      "stderr": "HTML parser error : Couldn't find end of Start Tag s\n<s\n  ^\nEntity: line 1: parser error : Memory allocation failed\n<s\n  ^\n",
+      "timed_out": false,
+      "parse_result": 2,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": ">p",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "an",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "be",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "e<",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "n>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "ob",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "pa",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "pr",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "ro",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "sp",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "/sp",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "</s",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\n</s\n   ^\nHTML parser error : Unexpected end tag : s\n</s\n   ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\n</s\n   ^\nHTML parser error : Unexpected end tag : s\n</s\n   ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<n>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : Tag n invalid\n<n>\n  ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : Tag n invalid\n<n>\n  ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<s>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<sp",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=2 list=null\n",
+      "stderr": "HTML parser error : Tag sp invalid\n<sp\n   ^\nHTML parser error : Couldn't find end of Start Tag sp\n<sp\n   ^\nEntity: line 1: parser error : Memory allocation failed\n<sp\n   ^\n",
+      "timed_out": false,
+      "parse_result": 2,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=2 list=null\n",
+      "stderr": "HTML parser error : Tag sp invalid\n<sp\n   ^\nHTML parser error : Couldn't find end of Start Tag sp\n<sp\n   ^\nEntity: line 1: parser error : Memory allocation failed\n<sp\n   ^\n",
+      "timed_out": false,
+      "parse_result": 2,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": ">pr",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "an>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "be<",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "e</",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "n>p",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "obe",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "pan",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "pro",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "rob",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "spa",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "/spa",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "</sp",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\n</sp\n    ^\nHTML parser error : Unexpected end tag : sp\n</sp\n    ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\n</sp\n    ^\nHTML parser error : Unexpected end tag : sp\n</sp\n    ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<an>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : Tag an invalid\n<an>\n   ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : Tag an invalid\n<an>\n   ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<sn>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : Tag sn invalid\n<sn>\n   ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : Tag sn invalid\n<sn>\n   ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<sp>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : Tag sp invalid\n<sp>\n   ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : Tag sp invalid\n<sp>\n   ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<spa",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=2 list=null\n",
+      "stderr": "HTML parser error : Tag spa invalid\n<spa\n    ^\nHTML parser error : Couldn't find end of Start Tag spa\n<spa\n    ^\nEntity: line 1: parser error : Memory allocation failed\n<spa\n    ^\n",
+      "timed_out": false,
+      "parse_result": 2,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=2 list=null\n",
+      "stderr": "HTML parser error : Tag spa invalid\n<spa\n    ^\nHTML parser error : Couldn't find end of Start Tag spa\n<spa\n    ^\nEntity: line 1: parser error : Memory allocation failed\n<spa\n    ^\n",
+      "timed_out": false,
+      "parse_result": 2,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": ">pro",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "an>p",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "be</",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "e</s",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\ne</s\n    ^\nHTML parser error : Unexpected end tag : s\ne</s\n    ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\ne</s\n    ^\nHTML parser error : Unexpected end tag : s\ne</s\n    ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "n>pr",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "obe<",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "pan>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "prob",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "robe",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "span",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "/span",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "</spa",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\n</spa\n     ^\nHTML parser error : Unexpected end tag : spa\n</spa\n     ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\n</spa\n     ^\nHTML parser error : Unexpected end tag : spa\n</spa\n     ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<pan>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : Tag pan invalid\n<pan>\n    ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : Tag pan invalid\n<pan>\n    ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<san>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : Tag san invalid\n<san>\n    ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : Tag san invalid\n<san>\n    ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<spa>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : Tag spa invalid\n<spa>\n    ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : Tag spa invalid\n<spa>\n    ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<span",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=2 list=null\n",
+      "stderr": "HTML parser error : Couldn't find end of Start Tag span\n<span\n     ^\nEntity: line 1: parser error : Memory allocation failed\n<span\n     ^\n",
+      "timed_out": false,
+      "parse_result": 2,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=2 list=null\n",
+      "stderr": "HTML parser error : Couldn't find end of Start Tag span\n<span\n     ^\nEntity: line 1: parser error : Memory allocation failed\n<span\n     ^\n",
+      "timed_out": false,
+      "parse_result": 2,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<spn>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : Tag spn invalid\n<spn>\n    ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : Tag spn invalid\n<spn>\n    ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": ">prob",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "an>pr",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "be</s",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\nbe</s\n     ^\nHTML parser error : Unexpected end tag : s\nbe</s\n     ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\nbe</s\n     ^\nHTML parser error : Unexpected end tag : s\nbe</s\n     ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "e</sp",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\ne</sp\n     ^\nHTML parser error : Unexpected end tag : sp\ne</sp\n     ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\ne</sp\n     ^\nHTML parser error : Unexpected end tag : sp\ne</sp\n     ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "n>pro",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "obe</",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "pan>p",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "probe",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "robe<",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "span>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "/span>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "</span",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\n</span\n      ^\nHTML parser error : Unexpected end tag : span\n</span\n      ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\n</span\n      ^\nHTML parser error : Unexpected end tag : span\n</span\n      ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<span>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": ">probe",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "an>pro",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "be</sp",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\nbe</sp\n      ^\nHTML parser error : Unexpected end tag : sp\nbe</sp\n      ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\nbe</sp\n      ^\nHTML parser error : Unexpected end tag : sp\nbe</sp\n      ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "e</spa",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\ne</spa\n      ^\nHTML parser error : Unexpected end tag : spa\ne</spa\n      ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\ne</spa\n      ^\nHTML parser error : Unexpected end tag : spa\ne</spa\n      ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "n>prob",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "obe</s",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\nobe</s\n      ^\nHTML parser error : Unexpected end tag : s\nobe</s\n      ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\nobe</s\n      ^\nHTML parser error : Unexpected end tag : s\nobe</s\n      ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "pan>pr",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "probe<",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "robe</",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "span>p",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "</span>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Unexpected end tag : span\n</span>\n       ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Unexpected end tag : span\n</span>\n       ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<spaan>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : Tag spaan invalid\n<spaan>\n      ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : Tag spaan invalid\n<spaan>\n      ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<span>>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>p",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<spann>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : Tag spann invalid\n<spann>\n      ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : Tag spann invalid\n<spann>\n      ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<sppan>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : Tag sppan invalid\n<sppan>\n      ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : Tag sppan invalid\n<sppan>\n      ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<sspan>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : Tag sspan invalid\n<sspan>\n      ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : Tag sspan invalid\n<sspan>\n      ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": ">probe<",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "an>prob",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "be</spa",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\nbe</spa\n       ^\nHTML parser error : Unexpected end tag : spa\nbe</spa\n       ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\nbe</spa\n       ^\nHTML parser error : Unexpected end tag : spa\nbe</spa\n       ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "e</span",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\ne</span\n       ^\nHTML parser error : Unexpected end tag : span\ne</span\n       ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\ne</span\n       ^\nHTML parser error : Unexpected end tag : span\ne</span\n       ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "n>probe",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "obe</sp",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\nobe</sp\n       ^\nHTML parser error : Unexpected end tag : sp\nobe</sp\n       ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\nobe</sp\n       ^\nHTML parser error : Unexpected end tag : sp\nobe</sp\n       ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "pan>pro",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "probe</",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "robe</s",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\nrobe</s\n       ^\nHTML parser error : Unexpected end tag : s\nrobe</s\n       ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\nrobe</s\n       ^\nHTML parser error : Unexpected end tag : s\nrobe</s\n       ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "span>pr",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<</span>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Unexpected end tag : span\n<</span>\n        ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Unexpected end tag : span\n<</span>\n        ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<s/span>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=68 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<s/span>\n  ^\n",
+      "timed_out": false,
+      "parse_result": 68,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=68 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<s/span>\n  ^\n",
+      "timed_out": false,
+      "parse_result": 68,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<span>n>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>p>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>pr",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<spanan>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : Tag spanan invalid\n<spanan>\n       ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : Tag spanan invalid\n<spanan>\n       ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<spapan>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : Tag spapan invalid\n<spapan>\n       ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : Tag spapan invalid\n<spapan>\n       ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<spspan>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : Tag spspan invalid\n<spspan>\n       ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : Tag spspan invalid\n<spspan>\n       ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": ">probe</",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "an>probe",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "be</span",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\nbe</span\n        ^\nHTML parser error : Unexpected end tag : span\nbe</span\n        ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\nbe</span\n        ^\nHTML parser error : Unexpected end tag : span\nbe</span\n        ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "e</span>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Unexpected end tag : span\ne</span>\n        ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Unexpected end tag : span\ne</span>\n        ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "n>probe<",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "obe</spa",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\nobe</spa\n        ^\nHTML parser error : Unexpected end tag : spa\nobe</spa\n        ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\nobe</spa\n        ^\nHTML parser error : Unexpected end tag : spa\nobe</spa\n        ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "pan>prob",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "probe</s",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\nprobe</s\n        ^\nHTML parser error : Unexpected end tag : s\nprobe</s\n        ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\nprobe</s\n        ^\nHTML parser error : Unexpected end tag : s\nprobe</s\n        ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "robe</sp",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\nrobe</sp\n        ^\nHTML parser error : Unexpected end tag : sp\nrobe</sp\n        ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\nrobe</sp\n        ^\nHTML parser error : Unexpected end tag : sp\nrobe</sp\n        ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "span>pro",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<e</span>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<e</span>\n  ^\nHTML parser error : Tag e invalid\n<e</span>\n        ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<e</span>\n  ^\nHTML parser error : Tag e invalid\n<e</span>\n        ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<s</span>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=68 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<s</span>\n  ^\n",
+      "timed_out": false,
+      "parse_result": 68,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=68 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<s</span>\n  ^\n",
+      "timed_out": false,
+      "parse_result": 68,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<sp/span>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<sp/span>\n   ^\nHTML parser error : Tag sp invalid\n<sp/span>\n        ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<sp/span>\n   ^\nHTML parser error : Tag sp invalid\n<sp/span>\n        ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<span>an>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>pn>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>pr>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>pro",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<spanpan>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : Tag spanpan invalid\n<spanpan>\n        ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : Tag spanpan invalid\n<spanpan>\n        ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<spaspan>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : Tag spaspan invalid\n<spaspan>\n        ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : Tag spaspan invalid\n<spaspan>\n        ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": ">probe</s",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\n>probe</s\n         ^\nHTML parser error : Unexpected end tag : s\n>probe</s\n         ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\n>probe</s\n         ^\nHTML parser error : Unexpected end tag : s\n>probe</s\n         ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "an>probe<",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "be</span>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Unexpected end tag : span\nbe</span>\n         ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Unexpected end tag : span\nbe</span>\n         ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "n>probe</",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "obe</span",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\nobe</span\n         ^\nHTML parser error : Unexpected end tag : span\nobe</span\n         ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\nobe</span\n         ^\nHTML parser error : Unexpected end tag : span\nobe</span\n         ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "pan>probe",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "probe</sp",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\nprobe</sp\n         ^\nHTML parser error : Unexpected end tag : sp\nprobe</sp\n         ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\nprobe</sp\n         ^\nHTML parser error : Unexpected end tag : sp\nprobe</sp\n         ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "robe</spa",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\nrobe</spa\n         ^\nHTML parser error : Unexpected end tag : spa\nrobe</spa\n         ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\nrobe</spa\n         ^\nHTML parser error : Unexpected end tag : spa\nrobe</spa\n         ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "span>prob",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<be</span>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<be</span>\n   ^\nHTML parser error : Tag be invalid\n<be</span>\n         ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<be</span>\n   ^\nHTML parser error : Tag be invalid\n<be</span>\n         ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<se</span>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<se</span>\n   ^\nHTML parser error : Tag se invalid\n<se</span>\n         ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<se</span>\n   ^\nHTML parser error : Tag se invalid\n<se</span>\n         ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<sp</span>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<sp</span>\n   ^\nHTML parser error : Tag sp invalid\n<sp</span>\n         ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<sp</span>\n   ^\nHTML parser error : Tag sp invalid\n<sp</span>\n         ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<spa/span>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<spa/span>\n    ^\nHTML parser error : Tag spa invalid\n<spa/span>\n         ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<spa/span>\n    ^\nHTML parser error : Tag spa invalid\n<spa/span>\n         ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<span>pan>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>prn>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>pro>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>prob",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<spanspan>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : Tag spanspan invalid\n<spanspan>\n         ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : Tag spanspan invalid\n<spanspan>\n         ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": ">probe</sp",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\n>probe</sp\n          ^\nHTML parser error : Unexpected end tag : sp\n>probe</sp\n          ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\n>probe</sp\n          ^\nHTML parser error : Unexpected end tag : sp\n>probe</sp\n          ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "an>probe</",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "n>probe</s",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\nn>probe</s\n          ^\nHTML parser error : Unexpected end tag : s\nn>probe</s\n          ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\nn>probe</s\n          ^\nHTML parser error : Unexpected end tag : s\nn>probe</s\n          ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "obe</span>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Unexpected end tag : span\nobe</span>\n          ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Unexpected end tag : span\nobe</span>\n          ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "pan>probe<",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "probe</spa",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\nprobe</spa\n          ^\nHTML parser error : Unexpected end tag : spa\nprobe</spa\n          ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\nprobe</spa\n          ^\nHTML parser error : Unexpected end tag : spa\nprobe</spa\n          ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "robe</span",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\nrobe</span\n          ^\nHTML parser error : Unexpected end tag : span\nrobe</span\n          ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\nrobe</span\n          ^\nHTML parser error : Unexpected end tag : span\nrobe</span\n          ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "span>probe",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<obe</span>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<obe</span>\n    ^\nHTML parser error : Tag obe invalid\n<obe</span>\n          ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<obe</span>\n    ^\nHTML parser error : Tag obe invalid\n<obe</span>\n          ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<sbe</span>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<sbe</span>\n    ^\nHTML parser error : Tag sbe invalid\n<sbe</span>\n          ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<sbe</span>\n    ^\nHTML parser error : Tag sbe invalid\n<sbe</span>\n          ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<spa</span>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<spa</span>\n    ^\nHTML parser error : Tag spa invalid\n<spa</span>\n          ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<spa</span>\n    ^\nHTML parser error : Tag spa invalid\n<spa</span>\n          ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<span/span>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=68 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<span/span>\n     ^\n",
+      "timed_out": false,
+      "parse_result": 68,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=68 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<span/span>\n     ^\n",
+      "timed_out": false,
+      "parse_result": 68,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<span>ppan>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>pran>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>prob>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>probe",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>pron>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>span>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<spe</span>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<spe</span>\n    ^\nHTML parser error : Tag spe invalid\n<spe</span>\n          ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<spe</span>\n    ^\nHTML parser error : Tag spe invalid\n<spe</span>\n          ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": ">probe</spa",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\n>probe</spa\n           ^\nHTML parser error : Unexpected end tag : spa\n>probe</spa\n           ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\n>probe</spa\n           ^\nHTML parser error : Unexpected end tag : spa\n>probe</spa\n           ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "an>probe</s",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\nan>probe</s\n           ^\nHTML parser error : Unexpected end tag : s\nan>probe</s\n           ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\nan>probe</s\n           ^\nHTML parser error : Unexpected end tag : s\nan>probe</s\n           ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "n>probe</sp",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\nn>probe</sp\n           ^\nHTML parser error : Unexpected end tag : sp\nn>probe</sp\n           ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\nn>probe</sp\n           ^\nHTML parser error : Unexpected end tag : sp\nn>probe</sp\n           ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "pan>probe</",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "probe</span",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\nprobe</span\n           ^\nHTML parser error : Unexpected end tag : span\nprobe</span\n           ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\nprobe</span\n           ^\nHTML parser error : Unexpected end tag : span\nprobe</span\n           ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "robe</span>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Unexpected end tag : span\nrobe</span>\n           ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Unexpected end tag : span\nrobe</span>\n           ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "span>probe<",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<robe</span>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<robe</span>\n     ^\nHTML parser error : Tag robe invalid\n<robe</span>\n           ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<robe</span>\n     ^\nHTML parser error : Tag robe invalid\n<robe</span>\n           ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<sobe</span>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<sobe</span>\n     ^\nHTML parser error : Tag sobe invalid\n<sobe</span>\n           ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<sobe</span>\n     ^\nHTML parser error : Tag sobe invalid\n<sobe</span>\n           ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<spae</span>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<spae</span>\n     ^\nHTML parser error : Tag spae invalid\n<spae</span>\n           ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<spae</span>\n     ^\nHTML parser error : Tag spae invalid\n<spae</span>\n           ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<span</span>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=68 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<span</span>\n     ^\n",
+      "timed_out": false,
+      "parse_result": 68,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=68 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<span</span>\n     ^\n",
+      "timed_out": false,
+      "parse_result": 68,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<span>/span>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>proan>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>probe<",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>probe>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>probn>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>prpan>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>pspan>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<spbe</span>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<spbe</span>\n     ^\nHTML parser error : Tag spbe invalid\n<spbe</span>\n           ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<spbe</span>\n     ^\nHTML parser error : Tag spbe invalid\n<spbe</span>\n           ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": ">probe</span",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\n>probe</span\n            ^\nHTML parser error : Unexpected end tag : span\n>probe</span\n            ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\n>probe</span\n            ^\nHTML parser error : Unexpected end tag : span\n>probe</span\n            ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "an>probe</sp",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\nan>probe</sp\n            ^\nHTML parser error : Unexpected end tag : sp\nan>probe</sp\n            ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\nan>probe</sp\n            ^\nHTML parser error : Unexpected end tag : sp\nan>probe</sp\n            ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "n>probe</spa",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\nn>probe</spa\n            ^\nHTML parser error : Unexpected end tag : spa\nn>probe</spa\n            ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\nn>probe</spa\n            ^\nHTML parser error : Unexpected end tag : spa\nn>probe</spa\n            ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "pan>probe</s",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\npan>probe</s\n            ^\nHTML parser error : Unexpected end tag : s\npan>probe</s\n            ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\npan>probe</s\n            ^\nHTML parser error : Unexpected end tag : s\npan>probe</s\n            ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "probe</span>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Unexpected end tag : span\nprobe</span>\n            ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Unexpected end tag : span\nprobe</span>\n            ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "span>probe</",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<probe</span>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<probe</span>\n      ^\nHTML parser error : Tag probe invalid\n<probe</span>\n            ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<probe</span>\n      ^\nHTML parser error : Tag probe invalid\n<probe</span>\n            ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<spabe</span>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<spabe</span>\n      ^\nHTML parser error : Tag spabe invalid\n<spabe</span>\n            ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<spabe</span>\n      ^\nHTML parser error : Tag spabe invalid\n<spabe</span>\n            ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<span></span>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>p/span>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>proban>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>probe</",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>probe<>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>proben>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>propan>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>prspan>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<spane</span>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<spane</span>\n      ^\nHTML parser error : Tag spane invalid\n<spane</span>\n            ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<spane</span>\n      ^\nHTML parser error : Tag spane invalid\n<spane</span>\n            ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<spobe</span>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<spobe</span>\n      ^\nHTML parser error : Tag spobe invalid\n<spobe</span>\n            ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<spobe</span>\n      ^\nHTML parser error : Tag spobe invalid\n<spobe</span>\n            ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<srobe</span>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<srobe</span>\n      ^\nHTML parser error : Tag srobe invalid\n<srobe</span>\n            ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<srobe</span>\n      ^\nHTML parser error : Tag srobe invalid\n<srobe</span>\n            ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": ">probe</span>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Unexpected end tag : span\n>probe</span>\n             ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Unexpected end tag : span\n>probe</span>\n             ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "an>probe</spa",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\nan>probe</spa\n             ^\nHTML parser error : Unexpected end tag : spa\nan>probe</spa\n             ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\nan>probe</spa\n             ^\nHTML parser error : Unexpected end tag : spa\nan>probe</spa\n             ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "n>probe</span",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\nn>probe</span\n             ^\nHTML parser error : Unexpected end tag : span\nn>probe</span\n             ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\nn>probe</span\n             ^\nHTML parser error : Unexpected end tag : span\nn>probe</span\n             ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "pan>probe</sp",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\npan>probe</sp\n             ^\nHTML parser error : Unexpected end tag : sp\npan>probe</sp\n             ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\npan>probe</sp\n             ^\nHTML parser error : Unexpected end tag : sp\npan>probe</sp\n             ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "span>probe</s",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\nspan>probe</s\n             ^\nHTML parser error : Unexpected end tag : s\nspan>probe</s\n             ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\nspan>probe</s\n             ^\nHTML parser error : Unexpected end tag : s\nspan>probe</s\n             ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<>probe</span>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Unexpected end tag : span\n<>probe</span>\n              ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Unexpected end tag : span\n<>probe</span>\n              ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<span>e</span>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>p</span>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>pr/span>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>probe</>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>probe</s",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\n<span>probe</s\n              ^\nHTML parser error : Unexpected end tag : s\n<span>probe</s\n              ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\n<span>probe</s\n              ^\nHTML parser error : Unexpected end tag : s\n<span>probe</s\n              ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<span>probe<n>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : Tag n invalid\n<span>probe<n>\n             ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : Tag n invalid\n<span>probe<n>\n             ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<span>probean>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>probpan>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>prospan>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<spanbe</span>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<spanbe</span>\n       ^\nHTML parser error : Tag spanbe invalid\n<spanbe</span>\n             ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<spanbe</span>\n       ^\nHTML parser error : Tag spanbe invalid\n<spanbe</span>\n             ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<spaobe</span>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<spaobe</span>\n       ^\nHTML parser error : Tag spaobe invalid\n<spaobe</span>\n             ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<spaobe</span>\n       ^\nHTML parser error : Tag spaobe invalid\n<spaobe</span>\n             ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<sprobe</span>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<sprobe</span>\n       ^\nHTML parser error : Tag sprobe invalid\n<sprobe</span>\n             ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<sprobe</span>\n       ^\nHTML parser error : Tag sprobe invalid\n<sprobe</span>\n             ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "an>probe</span",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\nan>probe</span\n              ^\nHTML parser error : Unexpected end tag : span\nan>probe</span\n              ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\nan>probe</span\n              ^\nHTML parser error : Unexpected end tag : span\nan>probe</span\n              ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "n>probe</span>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Unexpected end tag : span\nn>probe</span>\n              ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Unexpected end tag : span\nn>probe</span>\n              ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "pan>probe</spa",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\npan>probe</spa\n              ^\nHTML parser error : Unexpected end tag : spa\npan>probe</spa\n              ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\npan>probe</spa\n              ^\nHTML parser error : Unexpected end tag : spa\npan>probe</spa\n              ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "span>probe</sp",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\nspan>probe</sp\n              ^\nHTML parser error : Unexpected end tag : sp\nspan>probe</sp\n              ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\nspan>probe</sp\n              ^\nHTML parser error : Unexpected end tag : sp\nspan>probe</sp\n              ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<n>probe</span>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Tag n invalid\n<n>probe</span>\n  ^\nHTML parser error : Unexpected end tag : span\n<n>probe</span>\n               ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Tag n invalid\n<n>probe</span>\n  ^\nHTML parser error : Unexpected end tag : span\n<n>probe</span>\n               ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<s>probe</span>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Unexpected end tag : span\n<s>probe</span>\n               ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Unexpected end tag : span\n<s>probe</span>\n               ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<span>be</span>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>pe</span>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>pr</span>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>pro/span>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>probe</n>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Unexpected end tag : n\n<span>probe</n>\n               ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Unexpected end tag : n\n<span>probe</n>\n               ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<span>probe</s>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Unexpected end tag : s\n<span>probe</s>\n               ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Unexpected end tag : s\n<span>probe</s>\n               ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<span>probe</sp",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\n<span>probe</sp\n               ^\nHTML parser error : Unexpected end tag : sp\n<span>probe</sp\n               ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\n<span>probe</sp\n               ^\nHTML parser error : Unexpected end tag : sp\n<span>probe</sp\n               ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<span>probe<an>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : Tag an invalid\n<span>probe<an>\n              ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : Tag an invalid\n<span>probe<an>\n              ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<span>probepan>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>probspan>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<spanobe</span>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<spanobe</span>\n        ^\nHTML parser error : Tag spanobe invalid\n<spanobe</span>\n              ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<spanobe</span>\n        ^\nHTML parser error : Tag spanobe invalid\n<spanobe</span>\n              ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<sparobe</span>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<sparobe</span>\n        ^\nHTML parser error : Tag sparobe invalid\n<sparobe</span>\n              ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<sparobe</span>\n        ^\nHTML parser error : Tag sparobe invalid\n<sparobe</span>\n              ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<spprobe</span>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<spprobe</span>\n        ^\nHTML parser error : Tag spprobe invalid\n<spprobe</span>\n              ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<spprobe</span>\n        ^\nHTML parser error : Tag spprobe invalid\n<spprobe</span>\n              ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "an>probe</span>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Unexpected end tag : span\nan>probe</span>\n               ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Unexpected end tag : span\nan>probe</span>\n               ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "pan>probe</span",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\npan>probe</span\n               ^\nHTML parser error : Unexpected end tag : span\npan>probe</span\n               ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\npan>probe</span\n               ^\nHTML parser error : Unexpected end tag : span\npan>probe</span\n               ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "span>probe</spa",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\nspan>probe</spa\n               ^\nHTML parser error : Unexpected end tag : spa\nspan>probe</spa\n               ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\nspan>probe</spa\n               ^\nHTML parser error : Unexpected end tag : spa\nspan>probe</spa\n               ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<an>probe</span>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Tag an invalid\n<an>probe</span>\n   ^\nHTML parser error : Unexpected end tag : span\n<an>probe</span>\n                ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Tag an invalid\n<an>probe</span>\n   ^\nHTML parser error : Unexpected end tag : span\n<an>probe</span>\n                ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<sn>probe</span>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Tag sn invalid\n<sn>probe</span>\n   ^\nHTML parser error : Unexpected end tag : span\n<sn>probe</span>\n                ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Tag sn invalid\n<sn>probe</span>\n   ^\nHTML parser error : Unexpected end tag : span\n<sn>probe</span>\n                ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<sp>probe</span>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Tag sp invalid\n<sp>probe</span>\n   ^\nHTML parser error : Unexpected end tag : span\n<sp>probe</span>\n                ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Tag sp invalid\n<sp>probe</span>\n   ^\nHTML parser error : Unexpected end tag : span\n<sp>probe</span>\n                ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<span>obe</span>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>pbe</span>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>pre</span>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>pro</span>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>prob/span>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>probe</an>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Unexpected end tag : an\n<span>probe</an>\n                ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Unexpected end tag : an\n<span>probe</an>\n                ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<span>probe</sn>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Unexpected end tag : sn\n<span>probe</sn>\n                ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Unexpected end tag : sn\n<span>probe</sn>\n                ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<span>probe</sp>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Unexpected end tag : sp\n<span>probe</sp>\n                ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Unexpected end tag : sp\n<span>probe</sp>\n                ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<span>probe</spa",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\n<span>probe</spa\n                ^\nHTML parser error : Unexpected end tag : spa\n<span>probe</spa\n                ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\n<span>probe</spa\n                ^\nHTML parser error : Unexpected end tag : spa\n<span>probe</spa\n                ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<span>probe<pan>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : Tag pan invalid\n<span>probe<pan>\n               ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : Tag pan invalid\n<span>probe<pan>\n               ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<span>probespan>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<spanrobe</span>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<spanrobe</span>\n         ^\nHTML parser error : Tag spanrobe invalid\n<spanrobe</span>\n               ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<spanrobe</span>\n         ^\nHTML parser error : Tag spanrobe invalid\n<spanrobe</span>\n               ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<spaprobe</span>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<spaprobe</span>\n         ^\nHTML parser error : Tag spaprobe invalid\n<spaprobe</span>\n               ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<spaprobe</span>\n         ^\nHTML parser error : Tag spaprobe invalid\n<spaprobe</span>\n               ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "pan>probe</span>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Unexpected end tag : span\npan>probe</span>\n                ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Unexpected end tag : span\npan>probe</span>\n                ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "span>probe</span",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\nspan>probe</span\n                ^\nHTML parser error : Unexpected end tag : span\nspan>probe</span\n                ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\nspan>probe</span\n                ^\nHTML parser error : Unexpected end tag : span\nspan>probe</span\n                ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<pan>probe</span>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Tag pan invalid\n<pan>probe</span>\n    ^\nHTML parser error : Unexpected end tag : span\n<pan>probe</span>\n                 ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Tag pan invalid\n<pan>probe</span>\n    ^\nHTML parser error : Unexpected end tag : span\n<pan>probe</span>\n                 ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<san>probe</span>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Tag san invalid\n<san>probe</span>\n    ^\nHTML parser error : Unexpected end tag : span\n<san>probe</span>\n                 ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Tag san invalid\n<san>probe</span>\n    ^\nHTML parser error : Unexpected end tag : span\n<san>probe</span>\n                 ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<spa>probe</span>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Tag spa invalid\n<spa>probe</span>\n    ^\nHTML parser error : Unexpected end tag : span\n<spa>probe</span>\n                 ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Tag spa invalid\n<spa>probe</span>\n    ^\nHTML parser error : Unexpected end tag : span\n<spa>probe</span>\n                 ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<span>pobe</span>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>prbe</span>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>prob</span>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>probe/span>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>probe</pan>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Unexpected end tag : pan\n<span>probe</pan>\n                 ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Unexpected end tag : pan\n<span>probe</pan>\n                 ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<span>probe</san>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Unexpected end tag : san\n<span>probe</san>\n                 ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Unexpected end tag : san\n<span>probe</san>\n                 ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<span>probe</spa>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Unexpected end tag : spa\n<span>probe</spa>\n                 ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Unexpected end tag : spa\n<span>probe</spa>\n                 ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<span>probe</span",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=73 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\n<span>probe</span\n                 ^\n",
+      "timed_out": false,
+      "parse_result": 73,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=73 list=null\n",
+      "stderr": "HTML parser error : End tag : expected '>'\n<span>probe</span\n                 ^\n",
+      "timed_out": false,
+      "parse_result": 73,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<span>probe</spn>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Unexpected end tag : spn\n<span>probe</spn>\n                 ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Unexpected end tag : spn\n<span>probe</spn>\n                 ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<span>probe<span>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>proe</span>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>robe</span>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<spanprobe</span>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<spanprobe</span>\n          ^\nHTML parser error : Tag spanprobe invalid\n<spanprobe</span>\n                ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=801 list=null\n",
+      "stderr": "HTML parser error : error parsing attribute name\n<spanprobe</span>\n          ^\nHTML parser error : Tag spanprobe invalid\n<spanprobe</span>\n                ^\n",
+      "timed_out": false,
+      "parse_result": 801,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<spn>probe</span>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Tag spn invalid\n<spn>probe</span>\n    ^\nHTML parser error : Unexpected end tag : span\n<spn>probe</span>\n                 ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Tag spn invalid\n<spn>probe</span>\n    ^\nHTML parser error : Unexpected end tag : span\n<spn>probe</span>\n                 ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "span>probe</span>",
+    "mode": "no_namespace",
+    "classification": "UNRESOLVED",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Unexpected end tag : span\nspan>probe</span>\n                 ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=76 list=null\n",
+      "stderr": "HTML parser error : Unexpected end tag : span\nspan>probe</span>\n                 ^\n",
+      "timed_out": false,
+      "parse_result": 76,
+      "list": "null"
+    }
+  },
+  {
+    "fragment": "<span>probe</span>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  }
+]

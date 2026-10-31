@@ -1,0 +1,164 @@
+[
+  {
+    "candidate_id": "11a6365da4efc79bf781a0d685e1e05bb15ed3d70ebe87bfd286543d51222cea",
+    "fragment": "<span>probe</span>",
+    "original": "FAIL",
+    "no_namespace": "PASS",
+    "no_namespace_details": {
+      "fragment": "<span>probe</span>",
+      "mode": "no_namespace",
+      "classification": "PASS",
+      "buggy": {
+        "returncode": 0,
+        "stdout": "result=0 list=non-null\n",
+        "stderr": "",
+        "timed_out": false,
+        "parse_result": 0,
+        "list": "non-null"
+      },
+      "fixed": {
+        "returncode": 0,
+        "stdout": "result=0 list=non-null\n",
+        "stderr": "",
+        "timed_out": false,
+        "parse_result": 0,
+        "list": "non-null"
+      }
+    }
+  },
+  {
+    "candidate_id": "8b8fef6cfa0fb968d575e0cdc02e15f86bcb13443a54bd177f2ede6e8092a844",
+    "fragment": "<span>pro",
+    "original": "FAIL",
+    "no_namespace": "PASS",
+    "no_namespace_details": {
+      "fragment": "<span>pro",
+      "mode": "no_namespace",
+      "classification": "PASS",
+      "buggy": {
+        "returncode": 0,
+        "stdout": "result=0 list=non-null\n",
+        "stderr": "",
+        "timed_out": false,
+        "parse_result": 0,
+        "list": "non-null"
+      },
+      "fixed": {
+        "returncode": 0,
+        "stdout": "result=0 list=non-null\n",
+        "stderr": "",
+        "timed_out": false,
+        "parse_result": 0,
+        "list": "non-null"
+      }
+    }
+  },
+  {
+    "candidate_id": "06f2bed01ae9f680b645fd8143b66b6f0a4c224df6c547a9e7079d85d6e323b7",
+    "fragment": "<span",
+    "original": "UNRESOLVED",
+    "no_namespace": "UNRESOLVED",
+    "no_namespace_details": {
+      "fragment": "<span",
+      "mode": "no_namespace",
+      "classification": "UNRESOLVED",
+      "buggy": {
+        "returncode": 0,
+        "stdout": "result=2 list=null\n",
+        "stderr": "HTML parser error : Couldn't find end of Start Tag span\n<span\n     ^\nEntity: line 1: parser error : Memory allocation failed\n<span\n     ^\n",
+        "timed_out": false,
+        "parse_result": 2,
+        "list": "null"
+      },
+      "fixed": {
+        "returncode": 0,
+        "stdout": "result=2 list=null\n",
+        "stderr": "HTML parser error : Couldn't find end of Start Tag span\n<span\n     ^\nEntity: line 1: parser error : Memory allocation failed\n<span\n     ^\n",
+        "timed_out": false,
+        "parse_result": 2,
+        "list": "null"
+      }
+    }
+  },
+  {
+    "candidate_id": "fcec9cd248b93d34497cf6773564e35ca5484605d95b092948ed1c54ee52a309",
+    "fragment": ">pro",
+    "original": "FAIL",
+    "no_namespace": "PASS",
+    "no_namespace_details": {
+      "fragment": ">pro",
+      "mode": "no_namespace",
+      "classification": "PASS",
+      "buggy": {
+        "returncode": 0,
+        "stdout": "result=0 list=non-null\n",
+        "stderr": "",
+        "timed_out": false,
+        "parse_result": 0,
+        "list": "non-null"
+      },
+      "fixed": {
+        "returncode": 0,
+        "stdout": "result=0 list=non-null\n",
+        "stderr": "",
+        "timed_out": false,
+        "parse_result": 0,
+        "list": "non-null"
+      }
+    }
+  },
+  {
+    "candidate_id": "ed31469d5be23db8e5a59b373b8c5e3e3dae19d697db53dfb89406c65e0f3262",
+    "fragment": ">p",
+    "original": "FAIL",
+    "no_namespace": "PASS",
+    "no_namespace_details": {
+      "fragment": ">p",
+      "mode": "no_namespace",
+      "classification": "PASS",
+      "buggy": {
+        "returncode": 0,
+        "stdout": "result=0 list=non-null\n",
+        "stderr": "",
+        "timed_out": false,
+        "parse_result": 0,
+        "list": "non-null"
+      },
+      "fixed": {
+        "returncode": 0,
+        "stdout": "result=0 list=non-null\n",
+        "stderr": "",
+        "timed_out": false,
+        "parse_result": 0,
+        "list": "non-null"
+      }
+    }
+  },
+  {
+    "candidate_id": "62b67e1f685b7fef51102005dddd27774be3fee38c42965c53aab035d0b6b221",
+    "fragment": ">",
+    "original": "FAIL",
+    "no_namespace": "PASS",
+    "no_namespace_details": {
+      "fragment": ">",
+      "mode": "no_namespace",
+      "classification": "PASS",
+      "buggy": {
+        "returncode": 0,
+        "stdout": "result=0 list=non-null\n",
+        "stderr": "",
+        "timed_out": false,
+        "parse_result": 0,
+        "list": "non-null"
+      },
+      "fixed": {
+        "returncode": 0,
+        "stdout": "result=0 list=non-null\n",
+        "stderr": "",
+        "timed_out": false,
+        "parse_result": 0,
+        "list": "non-null"
+      }
+    }
+  }
+]

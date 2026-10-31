@@ -1,0 +1,422 @@
+[
+  {
+    "fragment": "<span>probe</span>",
+    "mode": "original",
+    "classification": "FAIL",
+    "buggy": {
+      "returncode": -11,
+      "stdout": "",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": null,
+      "list": null
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>probe</span>",
+    "mode": "original",
+    "classification": "FAIL",
+    "buggy": {
+      "returncode": -11,
+      "stdout": "",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": null,
+      "list": null
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>probe</span>",
+    "mode": "original",
+    "classification": "FAIL",
+    "buggy": {
+      "returncode": -11,
+      "stdout": "",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": null,
+      "list": null
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>probe</span>",
+    "mode": "original",
+    "classification": "FAIL",
+    "buggy": {
+      "returncode": -11,
+      "stdout": "",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": null,
+      "list": null
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>probe</span>",
+    "mode": "original",
+    "classification": "FAIL",
+    "buggy": {
+      "returncode": -11,
+      "stdout": "",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": null,
+      "list": null
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>probe</span>",
+    "mode": "original",
+    "classification": "FAIL",
+    "buggy": {
+      "returncode": -11,
+      "stdout": "",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": null,
+      "list": null
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>probe</span>",
+    "mode": "original",
+    "classification": "FAIL",
+    "buggy": {
+      "returncode": -11,
+      "stdout": "",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": null,
+      "list": null
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>probe</span>",
+    "mode": "original",
+    "classification": "FAIL",
+    "buggy": {
+      "returncode": -11,
+      "stdout": "",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": null,
+      "list": null
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>probe</span>",
+    "mode": "original",
+    "classification": "FAIL",
+    "buggy": {
+      "returncode": -11,
+      "stdout": "",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": null,
+      "list": null
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>probe</span>",
+    "mode": "original",
+    "classification": "FAIL",
+    "buggy": {
+      "returncode": -11,
+      "stdout": "",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": null,
+      "list": null
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>probe</span>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>probe</span>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>probe</span>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>probe</span>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>probe</span>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>probe</span>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>probe</span>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>probe</span>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>probe</span>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  },
+  {
+    "fragment": "<span>probe</span>",
+    "mode": "no_namespace",
+    "classification": "PASS",
+    "buggy": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    },
+    "fixed": {
+      "returncode": 0,
+      "stdout": "result=0 list=non-null\n",
+      "stderr": "",
+      "timed_out": false,
+      "parse_result": 0,
+      "list": "non-null"
+    }
+  }
+]

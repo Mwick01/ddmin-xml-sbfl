@@ -1,0 +1,24 @@
+Input: /mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/outputs/libxml2_node_context_namespace_removed/runs/20261031_095331/seed.xml
+Original size: 18 characters
+Results: /mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/outputs/libxml2_node_context_namespace_removed/runs/20261031_095331/character_ddmin_original/20261031_095333_171279
+
+Iteration 1: size=18, granularity=2, parts=2
+  Accepted failing subset: 18 -> 9
+Iteration 2: size=9, granularity=2, parts=2
+  Accepted failing subset: 9 -> 4
+Iteration 3: size=4, granularity=2, parts=2
+  Accepted failing subset: 4 -> 2
+Iteration 4: size=2, granularity=2, parts=2
+  Accepted failing subset: 2 -> 1
+
+DDMIN completed
+Original size: 18
+Minimal size: 1
+Reduction: 94.44%
+Oracle attempts: 6
+Unique candidates: 6
+PASS candidates: 0
+FAIL candidates: 5
+UNRESOLVED candidates: 1
+Minimal failure: /mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/outputs/libxml2_node_context_namespace_removed/runs/20261031_095331/character_ddmin_original/20261031_095333_171279/minimal_failure.xml
+Summary: /mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/outputs/libxml2_node_context_namespace_removed/runs/20261031_095331/character_ddmin_original/20261031_095333_171279/summary.json

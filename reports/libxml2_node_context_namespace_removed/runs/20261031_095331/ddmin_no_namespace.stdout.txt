@@ -1,0 +1,4 @@
+Input: /mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/outputs/libxml2_node_context_namespace_removed/runs/20261031_095331/seed.xml
+Original size: 18 characters
+Results: /mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/outputs/libxml2_node_context_namespace_removed/runs/20261031_095331/character_ddmin_no_namespace/20261031_095336_171302
+

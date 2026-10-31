@@ -1,0 +1,1 @@
+{"buggy": {"list": "non-null", "parse_result": 0, "returncode": 0, "stderr": "", "stdout": "result=0 list=non-null\n", "timed_out": false}, "classification": "PASS", "fixed": {"list": "non-null", "parse_result": 0, "returncode": 0, "stderr": "", "stdout": "result=0 list=non-null\n", "timed_out": false}, "fragment": "<span>probe</span>", "mode": "no_namespace"}

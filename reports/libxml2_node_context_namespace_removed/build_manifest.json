@@ -1,0 +1,176 @@
+{
+  "experiment_commit": "28b33554441e7fafe4a8f9f3b61f6b894b839c6c",
+  "checkout_head_before": "607f81a0bcf137c2a45bb132f34cfc87da4f9c14",
+  "checkout_status_before": "",
+  "source_repository": "/home/user/ddmin-xml-sbfl/temporary/libxml2-467-source",
+  "versions": {
+    "2.12.4": {
+      "tag": "v2.12.4",
+      "commit": "8292f361458fcffe0bff515a385be02e9d35582c",
+      "build": "/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/work/node_context/build-2.12.4",
+      "cmake_options": [
+        "-DCMAKE_BUILD_TYPE=Debug",
+        "-DBUILD_SHARED_LIBS=OFF",
+        "-DLIBXML2_WITH_PYTHON=OFF",
+        "-DLIBXML2_WITH_PROGRAMS=OFF",
+        "-DLIBXML2_WITH_TESTS=OFF",
+        "-DLIBXML2_WITH_ICONV=OFF",
+        "-DLIBXML2_WITH_LZMA=OFF",
+        "-DLIBXML2_WITH_ZLIB=OFF",
+        "-DLIBXML2_WITH_HTTP=OFF",
+        "-DLIBXML2_WITH_ICU=OFF"
+      ],
+      "static_library_sha256": "9fc1871a2e567fcc244152659d761057201ac976313f4cc7419b1f4bb9b02cda",
+      "probe_sha256": {
+        "original": "c50bee201e7f8cdb1404b5752cd77ccc5db630837a4ae21df6cf5b4199c7231b",
+        "no_namespace": "b135a4a31af624b5c537a9477c53a3cc321eecab21e02ac60085c89c8971f43b"
+      }
+    },
+    "2.12.5": {
+      "tag": "v2.12.5",
+      "commit": "e189e9945317ad4c8603fa2300d11d11f5e2e335",
+      "build": "/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/work/node_context/build-2.12.5",
+      "cmake_options": [
+        "-DCMAKE_BUILD_TYPE=Debug",
+        "-DBUILD_SHARED_LIBS=OFF",
+        "-DLIBXML2_WITH_PYTHON=OFF",
+        "-DLIBXML2_WITH_PROGRAMS=OFF",
+        "-DLIBXML2_WITH_TESTS=OFF",
+        "-DLIBXML2_WITH_ICONV=OFF",
+        "-DLIBXML2_WITH_LZMA=OFF",
+        "-DLIBXML2_WITH_ZLIB=OFF",
+        "-DLIBXML2_WITH_HTTP=OFF",
+        "-DLIBXML2_WITH_ICU=OFF"
+      ],
+      "static_library_sha256": "51abaed0d751cac961cf2f254173f974c3c951d73c7e4f79bc7c3a8e001d3ffc",
+      "probe_sha256": {
+        "original": "861e84951813c540f8ff53277c9b6ba89c4b9f3f2af8f2e4d6d9a160acaff38b",
+        "no_namespace": "127e17eb473fa088c51d4d720f30ca8ca0993ed84576c909827961d6fa155357"
+      }
+    }
+  },
+  "commands": [
+    [
+      "cmake",
+      "-S",
+      "/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/work/node_context/src-2.12.4",
+      "-B",
+      "/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/work/node_context/build-2.12.4",
+      "-DCMAKE_BUILD_TYPE=Debug",
+      "-DBUILD_SHARED_LIBS=OFF",
+      "-DLIBXML2_WITH_PYTHON=OFF",
+      "-DLIBXML2_WITH_PROGRAMS=OFF",
+      "-DLIBXML2_WITH_TESTS=OFF",
+      "-DLIBXML2_WITH_ICONV=OFF",
+      "-DLIBXML2_WITH_LZMA=OFF",
+      "-DLIBXML2_WITH_ZLIB=OFF",
+      "-DLIBXML2_WITH_HTTP=OFF",
+      "-DLIBXML2_WITH_ICU=OFF"
+    ],
+    [
+      "cmake",
+      "--build",
+      "/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/work/node_context/build-2.12.4",
+      "--target",
+      "LibXml2",
+      "--parallel",
+      "4"
+    ],
+    [
+      "gcc",
+      "-g",
+      "-O0",
+      "-DLIBXML_STATIC",
+      "-I/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/work/node_context/build-2.12.4",
+      "-I/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/work/node_context/src-2.12.4/include",
+      "/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/outputs/libxml2_node_context_namespace_removed/probe_original.c",
+      "/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/work/node_context/build-2.12.4/libxml2.a",
+      "-lm",
+      "-ldl",
+      "-lpthread",
+      "-o",
+      "/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/work/node_context/build-2.12.4/probe_original"
+    ],
+    [
+      "gcc",
+      "-g",
+      "-O0",
+      "-DLIBXML_STATIC",
+      "-I/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/work/node_context/build-2.12.4",
+      "-I/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/work/node_context/src-2.12.4/include",
+      "/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/outputs/libxml2_node_context_namespace_removed/probe_no_namespace.c",
+      "/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/work/node_context/build-2.12.4/libxml2.a",
+      "-lm",
+      "-ldl",
+      "-lpthread",
+      "-o",
+      "/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/work/node_context/build-2.12.4/probe_no_namespace"
+    ],
+    [
+      "cmake",
+      "-S",
+      "/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/work/node_context/src-2.12.5",
+      "-B",
+      "/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/work/node_context/build-2.12.5",
+      "-DCMAKE_BUILD_TYPE=Debug",
+      "-DBUILD_SHARED_LIBS=OFF",
+      "-DLIBXML2_WITH_PYTHON=OFF",
+      "-DLIBXML2_WITH_PROGRAMS=OFF",
+      "-DLIBXML2_WITH_TESTS=OFF",
+      "-DLIBXML2_WITH_ICONV=OFF",
+      "-DLIBXML2_WITH_LZMA=OFF",
+      "-DLIBXML2_WITH_ZLIB=OFF",
+      "-DLIBXML2_WITH_HTTP=OFF",
+      "-DLIBXML2_WITH_ICU=OFF"
+    ],
+    [
+      "cmake",
+      "--build",
+      "/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/work/node_context/build-2.12.5",
+      "--target",
+      "LibXml2",
+      "--parallel",
+      "4"
+    ],
+    [
+      "gcc",
+      "-g",
+      "-O0",
+      "-DLIBXML_STATIC",
+      "-I/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/work/node_context/build-2.12.5",
+      "-I/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/work/node_context/src-2.12.5/include",
+      "/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/outputs/libxml2_node_context_namespace_removed/probe_original.c",
+      "/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/work/node_context/build-2.12.5/libxml2.a",
+      "-lm",
+      "-ldl",
+      "-lpthread",
+      "-o",
+      "/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/work/node_context/build-2.12.5/probe_original"
+    ],
+    [
+      "gcc",
+      "-g",
+      "-O0",
+      "-DLIBXML_STATIC",
+      "-I/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/work/node_context/build-2.12.5",
+      "-I/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/work/node_context/src-2.12.5/include",
+      "/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/outputs/libxml2_node_context_namespace_removed/probe_no_namespace.c",
+      "/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/work/node_context/build-2.12.5/libxml2.a",
+      "-lm",
+      "-ldl",
+      "-lpthread",
+      "-o",
+      "/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/work/node_context/build-2.12.5/probe_no_namespace"
+    ]
+  ],
+  "source_sha256": {
+    "probe_original.c": "a67ff9311bbafd0dd4d6c0da352207dbc5730de8a30dd59881662f15d10936a9",
+    "probe_no_namespace.c": "b17792d149ab669a2f3faa2668ee27702dfe8abefe51abac068443bbc84643fe",
+    "ddmin.py": "cd78293163c71ba68774146f54dd24735d7c4f8b69905792733e3cc9a5745d86"
+  },
+  "tool_versions": {
+    "gcc": "gcc (Ubuntu 15.2.0-16ubuntu1) 15.2.0",
+    "cmake": "cmake version 4.2.3",
+    "python": "Python 3.14.4"
+  }
+}

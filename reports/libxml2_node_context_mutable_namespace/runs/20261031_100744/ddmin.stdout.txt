@@ -1,0 +1,34 @@
+Input: /mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/outputs/libxml2_node_context_mutable_namespace/runs/20261031_100744/seed.xml
+Original size: 51 characters
+Results: /mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/outputs/libxml2_node_context_mutable_namespace/runs/20261031_100744/character_ddmin/20261031_100745_174676
+
+Iteration 1: size=51, granularity=2, parts=2
+Iteration 2: size=51, granularity=4, parts=4
+  Accepted failing complement: 51 -> 38
+Iteration 3: size=38, granularity=3, parts=3
+Iteration 4: size=38, granularity=6, parts=6
+Iteration 5: size=38, granularity=12, parts=12
+  Accepted failing complement: 38 -> 35
+Iteration 6: size=35, granularity=11, parts=11
+  Accepted failing complement: 35 -> 32
+Iteration 7: size=32, granularity=10, parts=10
+  Accepted failing complement: 32 -> 29
+Iteration 8: size=29, granularity=9, parts=9
+Iteration 9: size=29, granularity=18, parts=18
+  Accepted failing complement: 29 -> 27
+Iteration 10: size=27, granularity=17, parts=17
+Iteration 11: size=27, granularity=27, parts=27
+  Accepted failing complement: 27 -> 26
+Iteration 12: size=26, granularity=26, parts=26
+
+DDMIN completed
+Original size: 51
+Minimal size: 26
+Reduction: 49.02%
+Oracle attempts: 259
+Unique candidates: 160
+PASS candidates: 4
+FAIL candidates: 7
+UNRESOLVED candidates: 149
+Minimal failure: /mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/outputs/libxml2_node_context_mutable_namespace/runs/20261031_100744/character_ddmin/20261031_100745_174676/minimal_failure.xml
+Summary: /mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/outputs/libxml2_node_context_mutable_namespace/runs/20261031_100744/character_ddmin/20261031_100745_174676/summary.json

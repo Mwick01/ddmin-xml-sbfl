@@ -1,0 +1,51 @@
+fragment,mode,classification,buggy_returncode,fixed_returncode,buggy_parse_result,fixed_parse_result
+,original,UNRESOLVED,0,0,2,2
+,no_namespace,UNRESOLVED,0,0,2,2
+ ,original,FAIL,-11,0,,0
+ ,no_namespace,PASS,0,0,0,0
+x,original,FAIL,-11,0,,0
+x,no_namespace,PASS,0,0,0,0
+&amp;,original,FAIL,-11,0,,0
+&amp;,no_namespace,PASS,0,0,0,0
+<!--x-->,original,FAIL,-11,0,,0
+<!--x-->,no_namespace,PASS,0,0,0,0
+<?p x?>,original,FAIL,-11,0,,0
+<?p x?>,no_namespace,PASS,0,0,0,0
+<b/>,original,FAIL,-11,0,,0
+<b/>,no_namespace,PASS,0,0,0,0
+<b>x</b>,original,FAIL,-11,0,,0
+<b>x</b>,no_namespace,PASS,0,0,0,0
+<div><em>x</em></div>,original,FAIL,-11,0,,0
+<div><em>x</em></div>,no_namespace,PASS,0,0,0,0
+<span>probe</span>,original,FAIL,-11,0,,0
+<span>probe</span>,no_namespace,PASS,0,0,0,0
+hello world,original,FAIL,-11,0,,0
+hello world,no_namespace,PASS,0,0,0,0
+123,original,FAIL,-11,0,,0
+123,no_namespace,PASS,0,0,0,0
+"
+",original,FAIL,-11,0,,0
+"
+",no_namespace,PASS,0,0,0,0
+<a></a>,original,FAIL,-11,0,,0
+<a></a>,no_namespace,PASS,0,0,0,0
+"<a x=""1""/>",original,FAIL,-11,0,,0
+"<a x=""1""/>",no_namespace,PASS,0,0,0,0
+<![CDATA[x]]>,original,UNRESOLVED,-11,0,,802
+<![CDATA[x]]>,no_namespace,UNRESOLVED,0,0,802,802
+<a/>text,original,FAIL,-11,0,,0
+<a/>text,no_namespace,PASS,0,0,0,0
+<a/><b/>,original,FAIL,-11,0,,0
+<a/><b/>,no_namespace,PASS,0,0,0,0
+<b>,original,FAIL,-11,0,,0
+<b>,no_namespace,PASS,0,0,0,0
+</b>,original,UNRESOLVED,-11,0,,76
+</b>,no_namespace,UNRESOLVED,0,0,76,76
+<,original,FAIL,-11,0,,0
+<,no_namespace,PASS,0,0,0,0
+&,original,UNRESOLVED,-11,0,,68
+&,no_namespace,UNRESOLVED,0,0,68,68
+&unknown;,original,FAIL,-11,0,,0
+&unknown;,no_namespace,PASS,0,0,0,0
+"<?xml version=""1.0""?>",original,FAIL,-11,0,,0
+"<?xml version=""1.0""?>",no_namespace,PASS,0,0,0,0

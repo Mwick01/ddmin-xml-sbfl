@@ -1,0 +1,107 @@
+{
+  "timestamp": "2026-10-31T09:53:31.321333+05:30",
+  "seed": "<span>probe</span>",
+  "seed_characters": 18,
+  "seed_source": "default fragment in archived probe.c; no separate historical DDMIN seed was recorded",
+  "reducer": "byte-for-byte scripts/ddmin.py from experiment commit 28b3355",
+  "input_model": "fragment characters only; HTML context fixed; namespace presence varied between runs",
+  "oracle": "fixed accepts + buggy SIGSEGV => FAIL; both accept with equal result/list summaries => PASS; otherwise UNRESOLVED",
+  "ddmin": {
+    "original": {
+      "exit_code": 0,
+      "counts": {
+        "FAIL": 5,
+        "UNRESOLVED": 1
+      },
+      "unique_candidates": 6,
+      "results": "runs/20261031_095331/character_ddmin_original/20261031_095333_171279",
+      "command": [
+        "/usr/bin/python3",
+        "/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/outputs/libxml2_node_context_namespace_removed/ddmin.py",
+        "/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/outputs/libxml2_node_context_namespace_removed/runs/20261031_095331/seed.xml",
+        "--oracle-module",
+        "oracle_node_context",
+        "--results-root",
+        "/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/outputs/libxml2_node_context_namespace_removed/runs/20261031_095331/character_ddmin_original",
+        "--temporary-file",
+        "/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/outputs/libxml2_node_context_namespace_removed/runs/20261031_095331/candidate_original.xml"
+      ],
+      "summary": {
+        "failing_candidates": 5,
+        "input_file": "/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/outputs/libxml2_node_context_namespace_removed/runs/20261031_095331/seed.xml",
+        "iterations": 4,
+        "minimal_candidate_id": "62b67e1f685b7fef51102005dddd27774be3fee38c42965c53aab035d0b6b221",
+        "minimal_file": "/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/outputs/libxml2_node_context_namespace_removed/runs/20261031_095331/character_ddmin_original/20261031_095333_171279/minimal_failure.xml",
+        "minimal_size_characters": 1,
+        "oracle_attempts": 6,
+        "oracle_module": "oracle_node_context",
+        "original_candidate_id": "11a6365da4efc79bf781a0d685e1e05bb15ed3d70ebe87bfd286543d51222cea",
+        "original_size_characters": 18,
+        "passing_candidates": 0,
+        "reduction_percentage": 94.44,
+        "unique_candidates": 6,
+        "unresolved_candidates": 1
+      }
+    },
+    "no_namespace": {
+      "exit_code": 1,
+      "counts": {
+        "PASS": 1
+      },
+      "unique_candidates": 1,
+      "results": "runs/20261031_095331/character_ddmin_no_namespace/20261031_095336_171302",
+      "command": [
+        "/usr/bin/python3",
+        "/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/outputs/libxml2_node_context_namespace_removed/ddmin.py",
+        "/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/outputs/libxml2_node_context_namespace_removed/runs/20261031_095331/seed.xml",
+        "--oracle-module",
+        "oracle_node_context",
+        "--results-root",
+        "/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/outputs/libxml2_node_context_namespace_removed/runs/20261031_095331/character_ddmin_no_namespace",
+        "--temporary-file",
+        "/mnt/c/Users/user/Documents/Codex/2026-10-31/experiment-libxml2-node-context-https-github/outputs/libxml2_node_context_namespace_removed/runs/20261031_095331/candidate_no_namespace.xml"
+      ],
+      "status": "stopped_initial_input_PASS; no minimization performed"
+    }
+  },
+  "checks": {
+    "seed_repeat_counts": {
+      "original": {
+        "FAIL": 10
+      },
+      "no_namespace": {
+        "PASS": 10
+      }
+    }
+  },
+  "paired_ddmin_candidates": {
+    "original": {
+      "FAIL": 5,
+      "UNRESOLVED": 1
+    },
+    "no_namespace": {
+      "PASS": 5,
+      "UNRESOLVED": 1
+    }
+  },
+  "fresh_24_fragment_screen": {
+    "original": {
+      "UNRESOLVED": 4,
+      "FAIL": 20
+    },
+    "no_namespace": {
+      "UNRESOLVED": 4,
+      "PASS": 20
+    }
+  },
+  "supplementary_character_deletion_screen": {
+    "kind": "diagnostic screen, not DDMIN",
+    "unique_candidates": 283,
+    "counts": {
+      "UNRESOLVED": 137,
+      "PASS": 146
+    }
+  },
+  "checkout_head_after": "607f81a0bcf137c2a45bb132f34cfc87da4f9c14",
+  "checkout_status_after": ""
+}
